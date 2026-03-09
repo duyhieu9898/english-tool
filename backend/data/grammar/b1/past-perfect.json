@@ -1,0 +1,70 @@
+{
+  "id": "b1-past-perfect",
+  "title": "Thì Quá Khứ Hoàn Thành (Past Perfect)",
+  "level": "b1",
+  "description": "Thì Quá Khứ Hoàn Thành giúp chúng ta kể về một hành động đã xảy ra và hoàn tất TRƯỚC một hành động khác hoặc một thời điểm cụ thể trong quá khứ. Nó giúp sắp xếp các sự kiện theo đúng trình tự trong quá khứ.",
+  "theory": "Tưởng tượng bạn đang kể một câu chuyện trong quá khứ. Nếu có hai hành động xảy ra, hành động nào XẢY RA TRƯỚC và ĐÃ KẾT THÚC TRƯỚC hành động kia thì chúng ta dùng Thì Quá Khứ Hoàn Thành. Hành động còn lại (xảy ra sau) thường dùng Thì Quá Khứ Đơn.",
+  "structures": [
+    {
+      "name": "Khẳng định (+)",
+      "formula": "S + had + V3/ed (Quá khứ phân từ)",
+      "example": "She had finished her homework before her friends arrived. (Cô ấy đã hoàn thành bài tập trước khi bạn bè cô ấy đến.)"
+    },
+    {
+      "name": "Phủ định (-)",
+      "formula": "S + had not (hadn't) + V3/ed",
+      "example": "I hadn't eaten anything before the party started. (Tôi đã không ăn gì trước khi bữa tiệc bắt đầu.)"
+    },
+    {
+      "name": "Nghi vấn (?)",
+      "formula": "Had + S + V3/ed ...?",
+      "example": "Had you seen that movie before last night? (Bạn đã xem bộ phim đó trước tối qua chưa?)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo dòng thời gian: Luôn có 2 hành động trong quá khứ. Hành động nào 'xảy ra SỚM HƠN nữa' thì dùng Past Perfect (had + V3/ed). Hành động xảy ra 'sau đó một chút' thì dùng Simple Past (V2/ed).",
+    "💡 Dấu hiệu nhận biết: Thường đi kèm với các từ như 'before', 'after', 'by the time', 'when', 'already', 'never'. Nếu thấy 'before' hoặc 'by the time' + Simple Past, thì vế kia thường là Past Perfect."
+  ],
+  "practice": [
+    {
+      "question": "By the time I arrived at the airport, the plane ___.",
+      "options": [
+        "left",
+        "had left",
+        "was leaving"
+      ],
+      "answer": "had left",
+      "explanation": "Máy bay đã rời đi (had left) trước khi tôi đến (arrived). Hành động máy bay đi xảy ra trước."
+    },
+    {
+      "question": "She only understood the lesson after she ___ the explanation several times.",
+      "options": [
+        "read",
+        "had read",
+        "reads"
+      ],
+      "answer": "had read",
+      "explanation": "Cô ấy hiểu bài (understood) sau khi đã đọc (had read) lời giải thích. Hành động đọc xảy ra trước."
+    },
+    {
+      "question": "When I called him, he ___ already ___ for work.",
+      "options": [
+        "has / left",
+        "had / left",
+        "was / leaving"
+      ],
+      "answer": "had / left",
+      "explanation": "Anh ấy đã rời đi (had left) trước khi tôi gọi (called). Hành động rời đi xảy ra trước và hoàn tất."
+    },
+    {
+      "question": "They ___ never ___ sushi before they visited Japan.",
+      "options": [
+        "haven't / eaten",
+        "had / eaten",
+        "didn't / eat"
+      ],
+      "answer": "had / eaten",
+      "explanation": "Họ chưa bao giờ ăn sushi (had never eaten) trước chuyến thăm Nhật Bản (visited). Hành động không ăn sushi xảy ra trong suốt khoảng thời gian trước khi đến Nhật."
+    }
+  ]
+}

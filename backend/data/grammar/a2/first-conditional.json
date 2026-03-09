@@ -1,0 +1,69 @@
+{
+  "id": "a2-first-conditional",
+  "title": "Câu điều kiện loại 1 (First Conditional)",
+  "level": "a2",
+  "description": "Dùng để nói về những sự việc có thể xảy ra ở hiện tại hoặc tương lai, và kết quả có thể xảy ra theo.",
+  "theory": "Câu điều kiện loại 1 dùng để diễn tả một điều kiện có thật hoặc rất có thể xảy ra trong hiện tại hoặc tương lai, và kết quả của nó cũng có thể xảy ra. Đơn giản là 'nếu điều này xảy ra, thì điều kia sẽ xảy ra'.",
+  "structures": [
+    {
+      "name": "Cấu trúc chính (Nếu... thì...)",
+      "formula": "If + S + V(hiện tại đơn), S + will + V(nguyên mẫu)",
+      "example": "If it rains tomorrow, I will stay at home. (Nếu ngày mai trời mưa, tôi sẽ ở nhà.)"
+    },
+    {
+      "name": "Đổi vị trí (Kết quả... nếu...)",
+      "formula": "S + will + V(nguyên mẫu) if + S + V(hiện tại đơn)",
+      "example": "I will stay at home if it rains tomorrow. (Tôi sẽ ở nhà nếu ngày mai trời mưa.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ nhanh 'Công thức IF':",
+    "- Mệnh đề IF (điều kiện) luôn dùng thì HIỆN TẠI ĐƠN.",
+    "- Mệnh đề chính (kết quả) luôn dùng TƯƠNG LAI ĐƠN (will + V nguyên mẫu).",
+    "💡 Mẹo dấu phẩy:",
+    "- Nếu mệnh đề 'If' đứng đầu câu, luôn có dấu phẩy (,) ngăn cách hai mệnh đề.",
+    "- Nếu mệnh đề 'If' đứng sau, không cần dấu phẩy."
+  ],
+  "practice": [
+    {
+      "question": "If I study hard, I ____ the exam.",
+      "options": [
+        "will pass",
+        "pass",
+        "passed"
+      ],
+      "answer": "will pass",
+      "explanation": "Mệnh đề 'If' dùng thì hiện tại đơn ('study'), nên mệnh đề chính phải dùng tương lai đơn ('will pass')."
+    },
+    {
+      "question": "She will be happy if you ____ her.",
+      "options": [
+        "call",
+        "will call",
+        "called"
+      ],
+      "answer": "call",
+      "explanation": "Mệnh đề chính dùng tương lai đơn ('will be'), nên mệnh đề 'if' phải dùng thì hiện tại đơn ('call')."
+    },
+    {
+      "question": "If it ____ sunny tomorrow, we will go to the beach.",
+      "options": [
+        "is",
+        "will be",
+        "was"
+      ],
+      "answer": "is",
+      "explanation": "Mệnh đề 'If' luôn dùng thì hiện tại đơn. 'It' là chủ ngữ số ít nên dùng 'is'."
+    },
+    {
+      "question": "They ____ late if they don't leave now.",
+      "options": [
+        "are",
+        "will be",
+        "were"
+      ],
+      "answer": "will be",
+      "explanation": "Mệnh đề 'if' dùng hiện tại đơn ('don't leave'), nên mệnh đề chính phải dùng tương lai đơn ('will be')."
+    }
+  ]
+}

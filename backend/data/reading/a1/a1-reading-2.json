@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-2",
+  "title": "My Wonderful Family",
+  "level": "a1",
+  "topic": "My Family",
+  "content": "Hello! My name is Lily. I have a small family.\nThis is my father. His name is Tom. He is a doctor.\nThis is my mother. Her name is Anna. She is a teacher.\nI also have a brother. His name is Max. Max is 5 years old. He likes to play with his toy car.\nMy family likes to eat dinner together every evening. We talk and laugh a lot.\nI love my family very much!",
+  "vocabulary_highlights": [
+    {
+      "word": "family",
+      "meaning": "gia đình"
+    },
+    {
+      "word": "father",
+      "meaning": "bố"
+    },
+    {
+      "word": "mother",
+      "meaning": "mẹ"
+    },
+    {
+      "word": "brother",
+      "meaning": "anh trai/em trai"
+    },
+    {
+      "word": "doctor",
+      "meaning": "bác sĩ"
+    },
+    {
+      "word": "teacher",
+      "meaning": "giáo viên"
+    },
+    {
+      "word": "likes to play",
+      "meaning": "thích chơi"
+    },
+    {
+      "word": "together",
+      "meaning": "cùng nhau"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the girl's name?",
+      "options": [
+        "Anna",
+        "Lily",
+        "Max"
+      ],
+      "answer": "Lily",
+      "explanation": "Đoạn văn có ghi: 'My name is Lily'."
+    },
+    {
+      "question": "What does Lily's father do?",
+      "options": [
+        "He is a teacher.",
+        "He is a doctor.",
+        "He is a student."
+      ],
+      "answer": "He is a doctor.",
+      "explanation": "Đoạn văn có ghi: 'His name is Tom. He is a doctor'."
+    },
+    {
+      "question": "Who likes to play with a toy car?",
+      "options": [
+        "Lily",
+        "Anna",
+        "Max"
+      ],
+      "answer": "Max",
+      "explanation": "Đoạn văn có ghi: 'Max is 5 years old. He likes to play with his toy car'."
+    }
+  ],
+  "translation": "Chào bạn! Tên tôi là Lily. Tôi có một gia đình nhỏ.\nĐây là bố tôi. Bố tôi tên là Tom. Ông ấy là một bác sĩ.\nĐây là mẹ tôi. Mẹ tôi tên là Anna. Bà ấy là một giáo viên.\nTôi cũng có một người em trai. Tên em ấy là Max. Max 5 tuổi. Em ấy thích chơi ô tô đồ chơi của mình.\nGia đình tôi thích ăn tối cùng nhau mỗi tối. Chúng tôi nói chuyện và cười rất nhiều.\nTôi yêu gia đình mình rất nhiều!"
+}

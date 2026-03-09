@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-19",
+  "title": "A Fun Day at the Park",
+  "level": "a1",
+  "topic": "A Visit to the Park",
+  "content": "Today is a sunny day. I go to the park with my mom. The park is very big and green. I see many tall trees and colorful flowers. There are children playing with a red ball. Some kids are on the swings. Others go down the slide. I like the park very much! I play with my small blue ball. My mom sits on a bench under a tree. She reads a book. I see a happy dog. It runs fast. I also eat an apple. I feel very happy at the park. It is a very fun day!",
+  "vocabulary_highlights": [
+    {
+      "word": "sunny",
+      "meaning": "nắng"
+    },
+    {
+      "word": "park",
+      "meaning": "công viên"
+    },
+    {
+      "word": "flowers",
+      "meaning": "hoa"
+    },
+    {
+      "word": "swings",
+      "meaning": "xích đu"
+    },
+    {
+      "word": "slide",
+      "meaning": "cầu trượt"
+    },
+    {
+      "word": "bench",
+      "meaning": "ghế dài/ghế đá"
+    },
+    {
+      "word": "happy",
+      "meaning": "vui vẻ"
+    },
+    {
+      "word": "fun",
+      "meaning": "vui"
+    }
+  ],
+  "questions": [
+    {
+      "question": "Who goes to the park with the narrator?",
+      "options": [
+        "Her dad",
+        "Her friend",
+        "Her mom"
+      ],
+      "answer": "Her mom",
+      "explanation": "Đoạn văn có ghi: 'I go to the park with my mom.'"
+    },
+    {
+      "question": "What does the narrator see at the park?",
+      "options": [
+        "Houses and cars",
+        "Trees and flowers",
+        "A big supermarket"
+      ],
+      "answer": "Trees and flowers",
+      "explanation": "Đoạn văn có ghi: 'I see many tall trees and colorful flowers.'"
+    },
+    {
+      "question": "How does the narrator feel at the park?",
+      "options": [
+        "Sad",
+        "Happy",
+        "Tired"
+      ],
+      "answer": "Happy",
+      "explanation": "Đoạn văn có ghi: 'I feel very happy at the park.'"
+    }
+  ],
+  "translation": "Hôm nay là một ngày nắng đẹp. Tôi đi đến công viên với mẹ. Công viên rất rộng và xanh. Tôi thấy nhiều cây cao và những bông hoa đầy màu sắc. Có những đứa trẻ đang chơi với một quả bóng màu đỏ. Một số bạn nhỏ đang chơi xích đu. Những bạn khác thì trượt cầu trượt. Tôi rất thích công viên! Tôi chơi với quả bóng nhỏ màu xanh của mình. Mẹ tôi ngồi trên ghế đá dưới một gốc cây. Bà đọc sách. Tôi thấy một chú chó vui vẻ. Nó chạy nhanh. Tôi cũng ăn một quả táo. Tôi cảm thấy rất vui ở công viên. Đó là một ngày rất vui!"
+}

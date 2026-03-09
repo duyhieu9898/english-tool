@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-5",
+  "title": "My Fun School Day",
+  "level": "a1",
+  "topic": "A Day at School",
+  "content": "Hello! My name is Lily. I am a student. Every morning, I wake up at 7 o'clock. I eat breakfast with my family. Then, I go to school. My school is big. I see my friends at school. We say, 'Hello!'\n\nOur first class is English. We learn new words. Then we have Math class. I like numbers! At 12 o'clock, we eat lunch. I eat a sandwich and an apple. After lunch, we play in the playground. I like to run and jump. In the afternoon, we have Art class. I like to draw. School finishes at 3 o'clock. I go home and do my homework. My school day is fun!",
+  "vocabulary_highlights": [
+    {
+      "word": "wake up",
+      "meaning": "thức dậy"
+    },
+    {
+      "word": "breakfast",
+      "meaning": "bữa sáng"
+    },
+    {
+      "word": "school",
+      "meaning": "trường học"
+    },
+    {
+      "word": "learn",
+      "meaning": "học"
+    },
+    {
+      "word": "lunch",
+      "meaning": "bữa trưa"
+    },
+    {
+      "word": "playground",
+      "meaning": "sân chơi"
+    },
+    {
+      "word": "draw",
+      "meaning": "vẽ"
+    },
+    {
+      "word": "homework",
+      "meaning": "bài tập về nhà"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the girl's name?",
+      "options": [
+        "Anna",
+        "Lily",
+        "Mary"
+      ],
+      "answer": "Lily",
+      "explanation": "Đoạn văn có ghi: 'My name is Lily'."
+    },
+    {
+      "question": "What does Lily eat for lunch?",
+      "options": [
+        "pizza",
+        "a sandwich and an apple",
+        "rice"
+      ],
+      "answer": "a sandwich and an apple",
+      "explanation": "Đoạn văn có ghi: 'I eat a sandwich and an apple'."
+    },
+    {
+      "question": "What time does school finish?",
+      "options": [
+        "2 o'clock",
+        "3 o'clock",
+        "4 o'clock"
+      ],
+      "answer": "3 o'clock",
+      "explanation": "Đoạn văn có ghi: 'School finishes at 3 o'clock'."
+    }
+  ],
+  "translation": "Chào bạn! Tên tôi là Lily. Tôi là một học sinh. Mỗi sáng, tôi thức dậy lúc 7 giờ. Tôi ăn sáng với gia đình. Sau đó, tôi đi học. Trường tôi lớn. Tôi gặp bạn bè ở trường. Chúng tôi nói, 'Chào bạn!'\n\nTiết học đầu tiên của chúng tôi là tiếng Anh. Chúng tôi học từ mới. Sau đó chúng tôi có tiết Toán. Tôi thích các con số! Lúc 12 giờ, chúng tôi ăn trưa. Tôi ăn một cái bánh mì kẹp và một quả táo. Sau bữa trưa, chúng tôi chơi ở sân chơi. Tôi thích chạy và nhảy. Buổi chiều, chúng tôi có tiết Mỹ thuật. Tôi thích vẽ. Trường học kết thúc lúc 3 giờ. Tôi về nhà và làm bài tập về nhà. Ngày học của tôi thật vui!"
+}

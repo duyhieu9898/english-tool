@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-15",
+  "title": "Buying New Clothes",
+  "level": "a1",
+  "topic": "Shopping for Clothes",
+  "content": "Today is Saturday. I want to buy new clothes. I go to the clothes shop with my mom. The shop has many shirts and dresses. I like a red shirt, but it is too big. I try on a blue shirt. It is too small. Then, I see a yellow dress. It is very nice! I try it on. It fits me well. My mom likes it too. We go to the cashier. My mom pays for the dress. I am happy with my new yellow dress. We go home.",
+  "vocabulary_highlights": [
+    {
+      "word": "buy",
+      "meaning": "mua"
+    },
+    {
+      "word": "clothes",
+      "meaning": "quần áo"
+    },
+    {
+      "word": "shop",
+      "meaning": "cửa hàng"
+    },
+    {
+      "word": "try on",
+      "meaning": "thử đồ"
+    },
+    {
+      "word": "dress",
+      "meaning": "váy"
+    },
+    {
+      "word": "fits",
+      "meaning": "vừa vặn"
+    },
+    {
+      "word": "pay",
+      "meaning": "thanh toán"
+    },
+    {
+      "word": "happy",
+      "meaning": "vui vẻ"
+    }
+  ],
+  "questions": [
+    {
+      "question": "When does the person go shopping?",
+      "options": [
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answer": "Saturday",
+      "explanation": "Đoạn văn có ghi: 'Today is Saturday'."
+    },
+    {
+      "question": "What color shirt does the person try on first?",
+      "options": [
+        "Red",
+        "Blue",
+        "Yellow"
+      ],
+      "answer": "Blue",
+      "explanation": "Đoạn văn có ghi: 'I try on a blue shirt.' (trước đó thì thích áo đỏ nhưng nó quá to)"
+    },
+    {
+      "question": "What does the person buy?",
+      "options": [
+        "A red shirt",
+        "A blue shirt",
+        "A yellow dress"
+      ],
+      "answer": "A yellow dress",
+      "explanation": "Đoạn văn có ghi: 'I am happy with my new yellow dress.'"
+    }
+  ],
+  "translation": "Hôm nay là thứ Bảy. Tôi muốn mua quần áo mới. Tôi đi đến cửa hàng quần áo với mẹ tôi. Cửa hàng có nhiều áo sơ mi và váy. Tôi thích một chiếc áo sơ mi màu đỏ, nhưng nó quá to. Tôi thử một chiếc áo sơ mi màu xanh. Nó quá nhỏ. Sau đó, tôi nhìn thấy một chiếc váy màu vàng. Nó rất đẹp! Tôi thử nó. Nó vừa vặn với tôi. Mẹ tôi cũng thích nó. Chúng tôi đi đến quầy thu ngân. Mẹ tôi trả tiền cho chiếc váy. Tôi rất vui với chiếc váy vàng mới của mình. Chúng tôi về nhà."
+}

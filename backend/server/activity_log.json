@@ -1,0 +1,353 @@
+[
+  {
+    "ts": "2026-03-03T03:03:40.925Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T03:03:40.941Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=0"
+  },
+  {
+    "ts": "2026-03-03T03:03:46.342Z",
+    "fn": "handleContinue",
+    "lesson": "4",
+    "detail": "arm"
+  },
+  {
+    "ts": "2026-03-03T03:03:57.683Z",
+    "fn": "lesson:loaded",
+    "lesson": "23",
+    "detail": "words=6 (original=6)"
+  },
+  {
+    "ts": "2026-03-03T03:03:57.701Z",
+    "fn": "session:new",
+    "lesson": "23"
+  },
+  {
+    "ts": "2026-03-03T03:04:01.081Z",
+    "fn": "handleContinue",
+    "lesson": "23",
+    "detail": "bill"
+  },
+  {
+    "ts": "2026-03-03T03:04:01.822Z",
+    "fn": "handleContinue",
+    "lesson": "23",
+    "detail": "business"
+  },
+  {
+    "ts": "2026-03-03T03:04:03.954Z",
+    "fn": "lesson:loaded",
+    "lesson": "23",
+    "detail": "words=6 (original=6)"
+  },
+  {
+    "ts": "2026-03-03T03:04:38.346Z",
+    "fn": "lesson:loaded",
+    "lesson": "23",
+    "detail": "words=6 (original=6)"
+  },
+  {
+    "ts": "2026-03-03T03:04:38.365Z",
+    "fn": "session:resume",
+    "lesson": "23",
+    "detail": "fromIndex=0"
+  },
+  {
+    "ts": "2026-03-03T03:04:39.748Z",
+    "fn": "handleContinue",
+    "lesson": "23",
+    "detail": "bill"
+  },
+  {
+    "ts": "2026-03-03T03:04:40.163Z",
+    "fn": "handleContinue",
+    "lesson": "23",
+    "detail": "business"
+  },
+  {
+    "ts": "2026-03-03T03:04:40.579Z",
+    "fn": "handleContinue",
+    "lesson": "23",
+    "detail": "cent"
+  },
+  {
+    "ts": "2026-03-03T03:04:41.722Z",
+    "fn": "handleContinue",
+    "lesson": "23",
+    "detail": "dollar"
+  },
+  {
+    "ts": "2026-03-03T03:05:10.674Z",
+    "fn": "handleContinue",
+    "lesson": "23",
+    "detail": "euro"
+  },
+  {
+    "ts": "2026-03-03T03:05:14.079Z",
+    "fn": "lesson:loaded",
+    "lesson": "23",
+    "detail": "words=6 (original=6)"
+  },
+  {
+    "ts": "2026-03-03T03:05:14.093Z",
+    "fn": "session:resume",
+    "lesson": "23",
+    "detail": "fromIndex=5"
+  },
+  {
+    "ts": "2026-03-03T03:05:16.787Z",
+    "fn": "handleContinue",
+    "lesson": "23",
+    "detail": "money"
+  },
+  {
+    "ts": "2026-03-03T03:05:16.790Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "23",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-03-03T03:05:31.613Z",
+    "fn": "lesson:loaded",
+    "lesson": "23",
+    "detail": "words=6 (original=6)"
+  },
+  {
+    "ts": "2026-03-03T03:05:31.620Z",
+    "fn": "session:resume",
+    "lesson": "23",
+    "detail": "fromIndex=5"
+  },
+  {
+    "ts": "2026-03-03T03:55:53.347Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T03:55:53.362Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=1"
+  },
+  {
+    "ts": "2026-03-03T04:02:01.010Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T04:02:01.022Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=3"
+  },
+  {
+    "ts": "2026-03-03T04:02:03.650Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T04:02:03.670Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=3"
+  },
+  {
+    "ts": "2026-03-03T04:02:07.310Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T04:02:07.343Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=3"
+  },
+  {
+    "ts": "2026-03-03T04:02:08.291Z",
+    "fn": "handleContinue",
+    "lesson": "4",
+    "detail": "ear"
+  },
+  {
+    "ts": "2026-03-03T04:02:09.172Z",
+    "fn": "handleContinue",
+    "lesson": "4",
+    "detail": "exercise"
+  },
+  {
+    "ts": "2026-03-03T04:02:09.881Z",
+    "fn": "handleContinue",
+    "lesson": "4",
+    "detail": "eye"
+  },
+  {
+    "ts": "2026-03-03T04:02:11.108Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T04:02:11.125Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=6"
+  },
+  {
+    "ts": "2026-03-03T04:02:15.154Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T04:02:15.165Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=6"
+  },
+  {
+    "ts": "2026-03-03T04:02:16.347Z",
+    "fn": "handleContinue",
+    "lesson": "4",
+    "detail": "face"
+  },
+  {
+    "ts": "2026-03-03T04:02:26.723Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T04:02:26.737Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=7"
+  },
+  {
+    "ts": "2026-03-03T04:02:27.826Z",
+    "fn": "handleContinue",
+    "lesson": "4",
+    "detail": "hungry"
+  },
+  {
+    "ts": "2026-03-03T04:02:29.498Z",
+    "fn": "handleContinue",
+    "lesson": "4",
+    "detail": "leg"
+  },
+  {
+    "ts": "2026-03-03T04:02:29.499Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "4",
+    "detail": "queue=2"
+  },
+  {
+    "ts": "2026-03-03T04:02:33.210Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T04:02:33.230Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=8"
+  },
+  {
+    "ts": "2026-03-03T04:02:35.258Z",
+    "fn": "handleContinue",
+    "lesson": "4",
+    "detail": "leg"
+  },
+  {
+    "ts": "2026-03-03T04:02:35.272Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "4",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-03-03T04:02:48.401Z",
+    "fn": "lesson:loaded",
+    "lesson": "8",
+    "detail": "words=5 (original=7)"
+  },
+  {
+    "ts": "2026-03-03T04:02:48.414Z",
+    "fn": "session:new",
+    "lesson": "8"
+  },
+  {
+    "ts": "2026-03-03T04:02:52.365Z",
+    "fn": "handleContinue",
+    "lesson": "8",
+    "detail": "computer"
+  },
+  {
+    "ts": "2026-03-03T04:02:53.029Z",
+    "fn": "handleContinue",
+    "lesson": "8",
+    "detail": "email"
+  },
+  {
+    "ts": "2026-03-03T04:02:54.463Z",
+    "fn": "lesson:loaded",
+    "lesson": "8",
+    "detail": "words=5 (original=7)"
+  },
+  {
+    "ts": "2026-03-03T04:02:54.521Z",
+    "fn": "session:resume",
+    "lesson": "8",
+    "detail": "fromIndex=2"
+  },
+  {
+    "ts": "2026-03-03T04:02:56.008Z",
+    "fn": "handleContinue",
+    "lesson": "8",
+    "detail": "internet"
+  },
+  {
+    "ts": "2026-03-03T04:04:39.864Z",
+    "fn": "lesson:loaded",
+    "lesson": "4",
+    "detail": "words=9 (original=10)"
+  },
+  {
+    "ts": "2026-03-03T04:04:39.883Z",
+    "fn": "session:resume",
+    "lesson": "4",
+    "detail": "fromIndex=8"
+  },
+  {
+    "ts": "2026-03-03T04:20:11.130Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16 (original=17)"
+  },
+  {
+    "ts": "2026-03-03T04:20:11.139Z",
+    "fn": "session:new",
+    "lesson": "1"
+  },
+  {
+    "ts": "2026-03-03T07:21:40.016Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16 (original=17)"
+  },
+  {
+    "ts": "2026-03-03T07:21:40.022Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=0"
+  }
+]

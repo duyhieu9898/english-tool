@@ -1,0 +1,74 @@
+{
+  "id": "b2-reading-1",
+  "title": "The Art and Science of Choosing: Understanding Decision Making",
+  "level": "b2",
+  "topic": "The Psychology of Decision Making",
+  "content": "Every day, from the moment we wake up, we are faced with a continuous stream of decisions. Should I hit the snooze button? What should I wear? What route should I take to work? While many of these choices seem trivial, others, like career paths, financial investments, or major life changes, carry significant weight. The fascinating field of psychology helps us understand the complex processes behind these choices, revealing that our decisions are often less rational than we believe.\n\nPsychologists Daniel Kahneman and Amos Tversky introduced the concept of two primary systems of thinking. System 1 is fast, intuitive, and emotional. It operates automatically and unconsciously, allowing us to make quick judgments without much effort. For instance, recognizing a friend’s face or reacting to a sudden sound involves System 1. This system is efficient but prone to errors and biases.\n\nSystem 2, on the other hand, is slower, more deliberate, and logical. It requires conscious effort and attention, coming into play when we solve complex problems, learn a new skill, or analyze detailed information. When you’re carefully weighing the pros and cons of buying a new car or choosing a university, you are engaging System 2. While more analytical, even System 2 can be swayed by our emotions and ingrained biases.\n\nOne of the most significant discoveries in decision psychology is the prevalence of cognitive biases. These are systematic errors in thinking that affect the decisions and judgments people make. For example, confirmation bias leads us to seek out and interpret information in a way that confirms our existing beliefs, ignoring contradictory evidence. The anchoring effect describes our tendency to rely too heavily on the first piece of information offered (the \"anchor\") when making decisions. Another common bias is the framing effect, where the way information is presented, or \"framed,\" significantly influences our choices, even if the underlying facts remain the same.\n\nEmotions also play a crucial, often underestimated, role. Stress, happiness, fear, or excitement can dramatically alter our decision-making process. A decision made under pressure might differ greatly from one made in a calm, reflective state. Our mood can influence our willingness to take risks or our perception of potential outcomes.\n\nUnderstanding these psychological mechanisms is the first step towards making better decisions. By becoming aware of our inherent biases and the influence of our emotions, we can pause, reflect, and engage System 2 more effectively. We can actively seek diverse perspectives, gather comprehensive information, and question our initial intuitions. While completely eliminating biases might be impossible, recognizing them allows us to mitigate their impact, leading to more thoughtful and potentially more successful outcomes in both trivial and life-altering choices.",
+  "vocabulary_highlights": [
+    {
+      "word": "trivial",
+      "meaning": "tầm thường, không quan trọng"
+    },
+    {
+      "word": "intuitive",
+      "meaning": "theo trực giác, trực giác"
+    },
+    {
+      "word": "deliberate",
+      "meaning": "có chủ ý, có suy nghĩ kỹ"
+    },
+    {
+      "word": "cognitive biases",
+      "meaning": "thiên kiến nhận thức, sai lệch nhận thức"
+    },
+    {
+      "word": "prevalence",
+      "meaning": "sự phổ biến, sự thịnh hành"
+    },
+    {
+      "word": "confirmation bias",
+      "meaning": "thiên kiến xác nhận"
+    },
+    {
+      "word": "anchoring effect",
+      "meaning": "hiệu ứng neo"
+    },
+    {
+      "word": "mitigate",
+      "meaning": "làm giảm nhẹ, làm dịu bớt"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the primary characteristic of System 1 thinking according to the passage?",
+      "options": [
+        "A) It is slow and logical.",
+        "B) It is automatic and intuitive.",
+        "C) It requires conscious effort."
+      ],
+      "answer": "B) It is automatic and intuitive.",
+      "explanation": "Đoạn văn có ghi: \"System 1 is fast, intuitive, and emotional. It operates automatically and unconsciously...\""
+    },
+    {
+      "question": "Which of the following is NOT mentioned as a cognitive bias in the passage?",
+      "options": [
+        "A) Confirmation bias.",
+        "B) Availability heuristic.",
+        "C) Framing effect."
+      ],
+      "answer": "B) Availability heuristic.",
+      "explanation": "Đoạn văn đề cập đến \"confirmation bias,\" \"anchoring effect,\" và \"framing effect\" nhưng không nói về \"availability heuristic.\""
+    },
+    {
+      "question": "What is suggested as a way to improve decision-making?",
+      "options": [
+        "A) Always relying on System 1 for quick choices.",
+        "B) Ignoring emotions when making important decisions.",
+        "C) Becoming aware of biases and seeking diverse perspectives."
+      ],
+      "answer": "C) Becoming aware of biases and seeking diverse perspectives.",
+      "explanation": "Đoạn văn kết luận: \"By becoming aware of our inherent biases and the influence of our emotions, we can pause, reflect, and engage System 2 more effectively. We can actively seek diverse perspectives...\""
+    }
+  ],
+  "translation": "Nghệ thuật và Khoa học của Sự Lựa Chọn: Hiểu về Ra Quyết Định\n\nMỗi ngày, từ giây phút thức dậy, chúng ta đối mặt với một dòng chảy liên tục của các quyết định. Tôi có nên tắt báo thức không? Tôi nên mặc gì? Tôi nên đi đường nào để đến chỗ làm? Mặc dù nhiều lựa chọn trong số này có vẻ tầm thường, nhưng những lựa chọn khác, như con đường sự nghiệp, đầu tư tài chính hoặc những thay đổi lớn trong cuộc đời, lại mang sức nặng đáng kể. Lĩnh vực tâm lý học hấp dẫn giúp chúng ta hiểu các quá trình phức tạp đằng sau những lựa chọn này, tiết lộ rằng các quyết định của chúng ta thường ít lý trí hơn chúng ta tin.\n\nCác nhà tâm lý học Daniel Kahneman và Amos Tversky đã giới thiệu khái niệm về hai hệ thống tư duy chính. Hệ thống 1 nhanh, trực giác và cảm tính. Nó hoạt động tự động và vô thức, cho phép chúng ta đưa ra phán đoán nhanh chóng mà không cần nhiều nỗ lực. Ví dụ, nhận ra khuôn mặt của một người bạn hoặc phản ứng với một âm thanh đột ngột đều liên quan đến Hệ thống 1. Hệ thống này hiệu quả nhưng dễ mắc lỗi và thiên kiến.\n\nHệ thống 2, mặt khác, chậm hơn, có chủ ý hơn và logic hơn. Nó đòi hỏi nỗ lực và sự chú ý có ý thức, được sử dụng khi chúng ta giải quyết các vấn đề phức tạp, học một kỹ năng mới hoặc phân tích thông tin chi tiết. Khi bạn đang cân nhắc kỹ lưỡng những ưu và nhược điểm của việc mua một chiếc ô tô mới hoặc chọn một trường đại học, bạn đang sử dụng Hệ thống 2. Mặc dù phân tích hơn, ngay cả Hệ thống 2 cũng có thể bị ảnh hưởng bởi cảm xúc và những thiên kiến đã ăn sâu của chúng ta.\n\nMột trong những khám phá quan trọng nhất trong tâm lý học ra quyết định là sự phổ biến của các thiên kiến nhận thức. Đây là những lỗi tư duy có hệ thống ảnh hưởng đến các quyết định và phán đoán của con người. Ví dụ, thiên kiến xác nhận khiến chúng ta tìm kiếm và diễn giải thông tin theo cách xác nhận niềm tin hiện có của mình, bỏ qua bằng chứng mâu thuẫn. Hiệu ứng neo mô tả xu hướng của chúng ta dựa quá nhiều vào mẩu thông tin đầu tiên được đưa ra (cái \"neo\") khi đưa ra quyết định. Một thiên kiến phổ biến khác là hiệu ứng khung, trong đó cách thông tin được trình bày, hay \"đóng khung\", ảnh hưởng đáng kể đến các lựa chọn của chúng ta, ngay cả khi các sự kiện cơ bản vẫn giữ nguyên.\n\nCảm xúc cũng đóng một vai trò quan trọng, thường bị đánh giá thấp. Căng thẳng, hạnh phúc, sợ hãi hoặc phấn khích có thể làm thay đổi đáng kể quá trình ra quyết định của chúng ta. Một quyết định được đưa ra dưới áp lực có thể khác rất nhiều so với một quyết định được đưa ra trong trạng thái bình tĩnh, suy nghĩ thấu đáo. Tâm trạng của chúng ta có thể ảnh hưởng đến mức độ sẵn lòng chấp nhận rủi ro hoặc nhận thức của chúng ta về các kết quả tiềm năng.\n\nHiểu các cơ chế tâm lý này là bước đầu tiên để đưa ra các quyết định tốt hơn. Bằng cách nhận thức được những thiên kiến cố hữu và ảnh hưởng của cảm xúc, chúng ta có thể tạm dừng, suy ngẫm và sử dụng Hệ thống 2 một cách hiệu quả hơn. Chúng ta có thể chủ động tìm kiếm các góc nhìn đa dạng, thu thập thông tin toàn diện và đặt câu hỏi về những trực giác ban đầu của mình. Mặc dù việc loại bỏ hoàn toàn các thiên kiến có thể là không thể, nhưng việc nhận diện chúng cho phép chúng ta giảm nhẹ tác động của chúng, dẫn đến những kết quả chu đáo và có khả năng thành công hơn trong cả những lựa chọn tầm thường và những lựa chọn thay đổi cuộc đời."
+}

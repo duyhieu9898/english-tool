@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-14",
+  "title": "My Bus Ride to School",
+  "level": "a1",
+  "topic": "Taking a Bus",
+  "content": "I go to school every day. I take the bus. The bus stop is near my house. I wait for the bus in the morning. Many people wait for the bus too. The bus comes. It is big and red. I get on the bus. I buy a ticket from the driver. Then I find a seat. I like to sit next to the window. From the window, I can see trees and other cars. The bus goes to my school. It takes about 20 minutes. In the afternoon, I take the bus home. Taking the bus is easy and good for the city!",
+  "vocabulary_highlights": [
+    {
+      "word": "take the bus",
+      "meaning": "đi xe buýt"
+    },
+    {
+      "word": "bus stop",
+      "meaning": "điểm dừng xe buýt"
+    },
+    {
+      "word": "wait for",
+      "meaning": "chờ đợi"
+    },
+    {
+      "word": "get on",
+      "meaning": "lên xe"
+    },
+    {
+      "word": "buy a ticket",
+      "meaning": "mua vé"
+    },
+    {
+      "word": "driver",
+      "meaning": "tài xế"
+    },
+    {
+      "word": "window",
+      "meaning": "cửa sổ"
+    },
+    {
+      "word": "easy",
+      "meaning": "dễ dàng"
+    }
+  ],
+  "questions": [
+    {
+      "question": "How does the person go to school?",
+      "options": [
+        "By car",
+        "By bus",
+        "By bike"
+      ],
+      "answer": "By bus",
+      "explanation": "Đoạn văn có ghi: 'I take the bus.'"
+    },
+    {
+      "question": "What color is the bus?",
+      "options": [
+        "Blue",
+        "Red",
+        "Yellow"
+      ],
+      "answer": "Red",
+      "explanation": "Đoạn văn có câu: 'It is big and red.'"
+    },
+    {
+      "question": "Where does the person like to sit on the bus?",
+      "options": [
+        "Next to the driver",
+        "Next to the window",
+        "At the back"
+      ],
+      "answer": "Next to the window",
+      "explanation": "Đoạn văn nói: 'I like to sit next to the window.'"
+    }
+  ],
+  "translation": "Tôi đi học mỗi ngày. Tôi đi xe buýt. Trạm xe buýt gần nhà tôi. Tôi chờ xe buýt vào buổi sáng. Nhiều người cũng chờ xe buýt. Xe buýt đến. Nó to và màu đỏ. Tôi lên xe buýt. Tôi mua vé từ tài xế. Sau đó tôi tìm một chỗ ngồi. Tôi thích ngồi cạnh cửa sổ. Từ cửa sổ, tôi có thể nhìn thấy cây cối và những chiếc xe khác. Xe buýt đi đến trường của tôi. Mất khoảng 20 phút. Vào buổi chiều, tôi đi xe buýt về nhà. Đi xe buýt thật dễ dàng và tốt cho thành phố!"
+}

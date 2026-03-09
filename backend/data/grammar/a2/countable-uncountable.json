@@ -1,0 +1,75 @@
+{
+  "id": "a2-countable-uncountable",
+  "title": "Danh từ đếm được & không đếm được: Bạn có đếm được 'nước' không?",
+  "level": "a2",
+  "description": "Nắm vững danh từ đếm được (countable nouns) và không đếm được (uncountable nouns) là chìa khóa để dùng 'a/an', 'some/any' hay 'how much/many' thật chuẩn xác. Bài này sẽ giúp bạn phân biệt chúng cực kỳ đơn giản!",
+  "theory": "Trong tiếng Anh, danh từ được chia thành 2 loại chính: \n-   **Danh từ đếm được (Countable Nouns):** Là những thứ bạn có thể đếm bằng số lượng (một, hai, ba...). Chúng có thể ở dạng số ít (singular) hoặc số nhiều (plural). Ví dụ: *a cat, two cats, three chairs.* \n-   **Danh từ không đếm được (Uncountable Nouns):** Là những thứ bạn không thể đếm từng cái một mà thường chỉ đong đếm bằng khối lượng, thể tích hoặc là các khái niệm trừu tượng. Chúng luôn ở dạng số ít và không có dạng số nhiều. Ví dụ: *water, information, rice, happiness.*",
+  "structures": [
+    {
+      "name": "Với danh từ đếm được số ít",
+      "formula": "a / an + Danh từ đếm được (số ít)",
+      "example": "I have **a cat**. (Tôi có một con mèo.)"
+    },
+    {
+      "name": "Với danh từ đếm được số nhiều",
+      "formula": "Số lượng (two, many, a few) + Danh từ đếm được (số nhiều)",
+      "example": "There are **many books** on the table. (Có nhiều quyển sách trên bàn.)"
+    },
+    {
+      "name": "Với danh từ không đếm được",
+      "formula": "some / any / much / a little + Danh từ không đếm được",
+      "example": "We need **some water**. (Chúng ta cần một ít nước.)"
+    },
+    {
+      "name": "Cách hỏi số lượng",
+      "formula": "How many + Danh từ đếm được (số nhiều)? \nHow much + Danh từ không đếm được?",
+      "example": "**How many apples** do you want? (Bạn muốn bao nhiêu quả táo?)\n**How much money** do you have? (Bạn có bao nhiêu tiền?)"
+    }
+  ],
+  "tips": [
+    "💡 **Mẹo \"Hình dung & Đếm\"**: Thử tưởng tượng vật đó trong đầu. Nếu bạn có thể đếm 1, 2, 3 cái/con/chiếc... thì là đếm được. Nếu nó là một khối, chất lỏng, bột, khí, hoặc một ý tưởng trừu tượng không thể đếm riêng lẻ từng phần thì là không đếm được. (Ví dụ: 'sand' (cát) - không đếm được từng hạt; 'chair' (ghế) - đếm được từng cái).",
+    "💡 **Mẹo \"Thêm 's' hay không?\"**: Danh từ đếm được số ít có thể thêm '-s' hoặc '-es' để thành số nhiều. Danh từ không đếm được thì **KHÔNG BAO GIỜ** thêm '-s' hoặc '-es' ở cuối (không có 'waters', 'informations' khi nói về nước hoặc thông tin chung)."
+  ],
+  "practice": [
+    {
+      "question": "I need ___ advice from you.",
+      "options": [
+        "a",
+        "an",
+        "some"
+      ],
+      "answer": "some",
+      "explanation": "'Advice' (lời khuyên) là danh từ không đếm được, nên chúng ta dùng 'some' để chỉ một lượng không xác định, không dùng 'a' hay 'an'."
+    },
+    {
+      "question": "How ___ books did you buy?",
+      "options": [
+        "much",
+        "many",
+        "a little"
+      ],
+      "answer": "many",
+      "explanation": "'Books' (sách) là danh từ đếm được số nhiều, nên chúng ta dùng 'how many' để hỏi số lượng."
+    },
+    {
+      "question": "There is ___ water in the bottle.",
+      "options": [
+        "a",
+        "an",
+        "some"
+      ],
+      "answer": "some",
+      "explanation": "'Water' (nước) là danh từ không đếm được, nên chúng ta dùng 'some' để chỉ một lượng không xác định. Không dùng 'a' hay 'an' trực tiếp với danh từ không đếm được."
+    },
+    {
+      "question": "She wants to buy a new ___.",
+      "options": [
+        "furniture",
+        "advices",
+        "dress"
+      ],
+      "answer": "dress",
+      "explanation": "'Dress' (váy) là danh từ đếm được số ít, có thể dùng với 'a new'. 'Furniture' (đồ nội thất) là danh từ không đếm được (không dùng 'a new furniture'). 'Advices' là dạng sai của danh từ không đếm được 'advice'."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-6",
+  "title": "My Best Friend, Tom",
+  "level": "a1",
+  "topic": "My Best Friend",
+  "content": "My best friend is Tom. He is 7 years old. Tom has short brown hair and blue eyes. He is very kind. We live in the same building. Every day, after school, we play together. We like to play with toy cars in the park. Sometimes, we draw pictures. Tom draws funny animals. I draw houses. We always laugh a lot. Tom is a very good friend. I am happy when I am with Tom. He makes me smile. We share our toys and snacks. Having Tom as my friend is the best!",
+  "vocabulary_highlights": [
+    {
+      "word": "best friend",
+      "meaning": "bạn thân nhất"
+    },
+    {
+      "word": "kind",
+      "meaning": "tốt bụng"
+    },
+    {
+      "word": "play together",
+      "meaning": "chơi cùng nhau"
+    },
+    {
+      "word": "toy cars",
+      "meaning": "ô tô đồ chơi"
+    },
+    {
+      "word": "draw pictures",
+      "meaning": "vẽ tranh"
+    },
+    {
+      "word": "laugh",
+      "meaning": "cười"
+    },
+    {
+      "word": "smile",
+      "meaning": "mỉm cười"
+    },
+    {
+      "word": "share",
+      "meaning": "chia sẻ"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the best friend's name?",
+      "options": [
+        "Mike",
+        "Tom",
+        "John"
+      ],
+      "answer": "Tom",
+      "explanation": "Đoạn văn nói: 'My best friend is Tom.'"
+    },
+    {
+      "question": "What do they like to play with in the park?",
+      "options": [
+        "balls",
+        "bikes",
+        "toy cars"
+      ],
+      "answer": "toy cars",
+      "explanation": "Đoạn văn có ghi: 'We like to play with toy cars in the park.'"
+    },
+    {
+      "question": "What does Tom make the narrator do?",
+      "options": [
+        "cry",
+        "sleep",
+        "smile"
+      ],
+      "answer": "smile",
+      "explanation": "Đoạn văn có câu: 'He makes me smile.'"
+    }
+  ],
+  "translation": "Bạn thân nhất của tôi là Tom. Cậu ấy 7 tuổi. Tom có mái tóc ngắn màu nâu và đôi mắt xanh. Cậu ấy rất tốt bụng. Chúng tôi sống cùng một tòa nhà. Mỗi ngày, sau giờ học, chúng tôi chơi cùng nhau. Chúng tôi thích chơi ô tô đồ chơi trong công viên. Đôi khi, chúng tôi vẽ tranh. Tom vẽ những con vật ngộ nghĩnh. Tôi vẽ những ngôi nhà. Chúng tôi luôn cười rất nhiều. Tom là một người bạn rất tốt. Tôi vui khi ở bên Tom. Cậu ấy khiến tôi mỉm cười. Chúng tôi chia sẻ đồ chơi và đồ ăn vặt của mình. Có Tom làm bạn là tuyệt vời nhất!"
+}

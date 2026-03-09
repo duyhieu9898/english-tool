@@ -1,0 +1,74 @@
+{
+  "id": "c1-reading-6",
+  "title": "Universal Basic Income: Unraveling Its Economic Tapestry",
+  "level": "c1",
+  "topic": "The Economic Ramifications of Universal Basic Income",
+  "content": "Universal Basic Income (UBI), a concept once relegated to the fringes of economic discourse, has progressively moved into mainstream policy debates. It posits a governmental program where every citizen receives a regular, unconditional sum of money, irrespective of their income, wealth, or employment status. Proponents envision UBI as a potent tool to address the pervasive challenges of poverty, income inequality, and the impending disruption of automation. However, its economic ramifications are multifaceted, sparking vigorous debate among economists, policymakers, and the public alike.\n\nOne of the most compelling arguments for UBI lies in its potential to eradicate extreme poverty and ameliorate income insecurity. By providing a reliable safety net, individuals would be less vulnerable to economic shocks, potentially leading to improved health outcomes, reduced stress, and greater educational attainment. This stable financial foundation could also foster a surge in entrepreneurial activity, as individuals would possess the security to pursue innovative ventures without the existential fear of failure. Furthermore, the administrative overhead associated with means-tested welfare programs could be drastically reduced, streamlining the disbursement of aid and cutting bureaucratic costs. From a macroeconomic perspective, UBI could stimulate local economies by injecting purchasing power directly into communities, particularly during recessions, thus acting as an automatic stabilizer. The argument is also made that UBI could empower workers in negotiations, giving them the leverage to refuse exploitative labor conditions, as their basic needs would already be met.\n\nConversely, the economic landscape under a UBI system is fraught with potential pitfalls and complex trade-offs. The most prominent concern revolves around its colossal fiscal cost. Funding a nationwide UBI program would necessitate either substantial tax increases, drastic cuts to existing welfare provisions, or a combination of both. Economists debate the optimal funding mechanisms, from progressive income taxes and wealth taxes to consumption taxes or even new forms of digital taxation. The sheer scale of such an undertaking presents an unprecedented fiscal challenge for any government.\n\nAnother significant apprehension is the potential for UBI to act as a disincentive to work. Critics argue that if individuals can meet their basic needs without working, a portion of the population might choose to reduce their working hours or withdraw from the labor force entirely. This could lead to labor shortages in essential low-wage sectors, driving up wages and potentially exacerbating inflation. The impact on labor supply is a hotly contested area, with some pilot programs suggesting minimal effects on work engagement, while others highlight the withdrawal of certain demographics, particularly those with caregiving responsibilities or pursuing education.\n\nInflationary pressures represent another critical economic risk. If a large sum of money is injected into the economy without a corresponding increase in the supply of goods and services, the inevitable outcome could be a general rise in prices, eroding the purchasing power of the UBI itself. This concern is particularly acute in sectors with inelastic supply or where demand already outstrips supply, such as housing. The long-term effects on price stability and the overall value of currency would require careful macroeconomic management.\n\nFurthermore, the introduction of UBI would necessitate a fundamental rethinking of existing social welfare structures. Integrating UBI with healthcare, housing subsidies, and unemployment benefits would be a complex policy puzzle, requiring careful calibration to avoid unintended consequences or the creation of new forms of inequality. There are also concerns about the potential for UBI to displace the role of unions or collective bargaining, subtly altering the power dynamics between employers and employees in ways that might not always be beneficial for workers.\n\nUltimately, the economic ramifications of Universal Basic Income are far from straightforward. While offering tantalizing prospects for poverty reduction, health improvement, and economic resilience, it simultaneously presents formidable challenges related to fiscal sustainability, labor market dynamics, and inflationary risks. Pilot programs globally offer valuable insights, yet the leap from localized experiments to national implementation involves navigating an intricate web of economic, social, and political considerations. The debate surrounding UBI continues to evolve, pushing societies to confront fundamental questions about work, wealth distribution, and the very architecture of our future economies. It remains a fascinating, albeit contentious, proposal, promising a paradigm shift for better or worse, depending on one's perspective and the meticulousness of its eventual design and execution.",
+  "vocabulary_highlights": [
+    {
+      "word": "relegated",
+      "meaning": "bị xếp xó, bị gạt sang một bên"
+    },
+    {
+      "word": "ameliorate",
+      "meaning": "cải thiện, làm tốt hơn"
+    },
+    {
+      "word": "fiscal cost",
+      "meaning": "chi phí tài chính, chi phí ngân sách"
+    },
+    {
+      "word": "disincentive",
+      "meaning": "yếu tố làm nản lòng, yếu tố ngăn cản"
+    },
+    {
+      "word": "exacerbate",
+      "meaning": "làm trầm trọng thêm, làm tồi tệ hơn"
+    },
+    {
+      "word": "inflationary pressures",
+      "meaning": "áp lực lạm phát"
+    },
+    {
+      "word": "paradigm shift",
+      "meaning": "sự thay đổi mô hình, sự chuyển dịch mô hình"
+    },
+    {
+      "word": "meticulousness",
+      "meaning": "sự tỉ mỉ, sự cẩn trọng"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is a core tenet of Universal Basic Income (UBI)?",
+      "options": [
+        "a) Payments are conditional on employment status and income level.",
+        "b) Every citizen receives a regular, unconditional sum of money.",
+        "c) It is a program exclusively for those below the poverty line."
+      ],
+      "answer": "b) Every citizen receives a regular, unconditional sum of money.",
+      "explanation": "Đoạn văn định nghĩa UBI là 'a governmental program where every citizen receives a regular, unconditional sum of money, irrespective of their income, wealth, or employment status.'"
+    },
+    {
+      "question": "According to the passage, which of the following is NOT presented as a potential economic benefit of UBI?",
+      "options": [
+        "a) Stimulation of entrepreneurial activity.",
+        "b) Reduction of bureaucratic overhead in welfare programs.",
+        "c) Guaranteed full employment across all sectors."
+      ],
+      "answer": "c) Guaranteed full employment across all sectors.",
+      "explanation": "Đoạn văn đề cập đến việc UBI có thể thúc đẩy tinh thần khởi nghiệp và giảm chi phí hành chính, nhưng không hề nói rằng nó sẽ đảm bảo việc làm đầy đủ cho mọi người. Ngược lại, việc giảm động lực làm việc là một trong những lo ngại."
+    },
+    {
+      "question": "What is a major fiscal challenge associated with implementing a national UBI program?",
+      "options": [
+        "a) Difficulty in finding enough recipients for the payments.",
+        "b) The colossal fiscal cost requiring substantial tax increases or welfare cuts.",
+        "c) The risk of oversupply of goods and services in the market."
+      ],
+      "answer": "b) The colossal fiscal cost requiring substantial tax increases or welfare cuts.",
+      "explanation": "Đoạn văn nêu rõ: 'The most prominent concern revolves around its colossal fiscal cost. Funding a nationwide UBI program would necessitate either substantial tax increases, drastic cuts to existing welfare provisions, or a combination of both.'"
+    }
+  ],
+  "translation": "Thu nhập cơ bản phổ quát (UBI), một khái niệm từng bị gạt ra rìa các cuộc thảo luận kinh tế, đã dần dần đi vào các cuộc tranh luận chính sách chủ đạo. Nó đề xuất một chương trình của chính phủ, trong đó mọi công dân nhận được một khoản tiền định kỳ, vô điều kiện, bất kể thu nhập, tài sản hay tình trạng việc làm của họ. Những người ủng hộ coi UBI là một công cụ mạnh mẽ để giải quyết các thách thức phổ biến về nghèo đói, bất bình đẳng thu nhập và sự gián đoạn sắp xảy ra do tự động hóa. Tuy nhiên, những hệ quả kinh tế của nó rất đa diện, gây ra tranh luận sôi nổi giữa các nhà kinh tế, nhà hoạch định chính sách và công chúng.\n\nMột trong những lập luận thuyết phục nhất cho UBI nằm ở tiềm năng xóa bỏ nghèo đói cùng cực và cải thiện tình trạng mất an ninh thu nhập. Bằng cách cung cấp một mạng lưới an toàn đáng tin cậy, các cá nhân sẽ ít bị tổn thương hơn trước các cú sốc kinh tế, có khả năng dẫn đến kết quả sức khỏe tốt hơn, giảm căng thẳng và trình độ học vấn cao hơn. Nền tảng tài chính ổn định này cũng có thể thúc đẩy sự gia tăng hoạt động khởi nghiệp, vì các cá nhân sẽ có sự an toàn để theo đuổi các dự án đổi mới mà không sợ hãi sự thất bại mang tính sinh tử. Hơn nữa, chi phí hành chính liên quan đến các chương trình phúc lợi dựa trên thu nhập có thể được giảm đáng kể, hợp lý hóa việc phân phối viện trợ và cắt giảm chi phí hành chính. Từ góc độ kinh tế vĩ mô, UBI có thể kích thích kinh tế địa phương bằng cách bơm sức mua trực tiếp vào cộng đồng, đặc biệt trong thời kỳ suy thoái, từ đó đóng vai trò như một bộ ổn định tự động. Lập luận cũng cho rằng UBI có thể trao quyền cho người lao động trong các cuộc đàm phán, cho họ đòn bẩy để từ chối các điều kiện lao động bóc lột, vì nhu cầu cơ bản của họ đã được đáp ứng.\n\nNgược lại, bối cảnh kinh tế dưới hệ thống UBI đầy rẫy những cạm bẫy tiềm ẩn và những đánh đổi phức tạp. Mối lo ngại nổi bật nhất xoay quanh chi phí tài chính khổng lồ của nó. Việc tài trợ một chương trình UBI toàn quốc sẽ đòi hỏi phải tăng thuế đáng kể, cắt giảm mạnh các khoản phúc lợi hiện có, hoặc kết hợp cả hai. Các nhà kinh tế tranh luận về các cơ chế tài trợ tối ưu, từ thuế thu nhập lũy tiến và thuế tài sản đến thuế tiêu dùng hoặc thậm chí các hình thức thuế kỹ thuật số mới. Quy mô tuyệt đối của một dự án như vậy đặt ra một thách thức tài chính chưa từng có đối với bất kỳ chính phủ nào.\n\nMột mối lo ngại đáng kể khác là khả năng UBI có thể đóng vai trò như một yếu tố làm giảm động lực làm việc. Các nhà phê bình lập luận rằng nếu các cá nhân có thể đáp ứng nhu cầu cơ bản của mình mà không cần làm việc, một bộ phận dân số có thể chọn giảm giờ làm việc hoặc rút khỏi lực lượng lao động hoàn toàn. Điều này có thể dẫn đến thiếu hụt lao động trong các ngành lương thấp thiết yếu, đẩy tiền lương lên cao và có khả năng làm trầm trọng thêm lạm phát. Tác động đến nguồn cung lao động là một lĩnh vực gây tranh cãi gay gắt, với một số chương trình thử nghiệm cho thấy tác động tối thiểu đến sự tham gia làm việc, trong khi những chương trình khác nhấn mạnh sự rút lui của một số nhóm nhân khẩu học nhất định, đặc biệt là những người có trách nhiệm chăm sóc hoặc đang theo đuổi giáo dục.\n\nÁp lực lạm phát đại diện cho một rủi ro kinh tế quan trọng khác. Nếu một khoản tiền lớn được bơm vào nền kinh tế mà không có sự gia tăng tương ứng về nguồn cung hàng hóa và dịch vụ, kết quả không thể tránh khỏi có thể là sự gia tăng giá cả chung, làm xói mòn sức mua của chính khoản UBI. Mối lo ngại này đặc biệt nghiêm trọng trong các lĩnh vực có nguồn cung không co giãn hoặc nơi cầu đã vượt cung, chẳng hạn như nhà ở. Những tác động lâu dài đến sự ổn định giá cả và giá trị tổng thể của tiền tệ sẽ đòi hỏi quản lý kinh tế vĩ mô cẩn thận.\n\nHơn nữa, việc giới thiệu UBI sẽ đòi hỏi phải xem xét lại một cách căn bản các cấu trúc phúc lợi xã hội hiện có. Việc tích hợp UBI với chăm sóc sức khỏe, trợ cấp nhà ở và trợ cấp thất nghiệp sẽ là một bài toán chính sách phức tạp, đòi hỏi sự điều chỉnh cẩn thận để tránh những hậu quả không mong muốn hoặc tạo ra các hình thức bất bình đẳng mới. Cũng có những lo ngại về khả năng UBI có thể thay thế vai trò của các công đoàn hoặc thương lượng tập thể, làm thay đổi một cách tinh tế động lực quyền lực giữa người sử dụng lao động và người lao động theo những cách có thể không phải lúc nào cũng có lợi cho người lao động.\n\nCuối cùng, những hệ quả kinh tế của Thu nhập cơ bản phổ quát không hề đơn giản. Mặc dù mang đến những triển vọng hấp dẫn về giảm nghèo, cải thiện sức khỏe và khả năng phục hồi kinh tế, nhưng đồng thời nó cũng đặt ra những thách thức ghê gớm liên quan đến bền vững tài chính, động lực thị trường lao động và rủi ro lạm phát. Các chương trình thử nghiệm trên toàn cầu mang lại những hiểu biết có giá trị, nhưng bước nhảy từ các thí nghiệm cục bộ sang triển khai cấp quốc gia đòi hỏi phải điều hướng một mạng lưới phức tạp gồm các cân nhắc kinh tế, xã hội và chính trị. Cuộc tranh luận xung quanh UBI tiếp tục phát triển, thúc đẩy các xã hội đối mặt với những câu hỏi cơ bản về công việc, phân phối tài sản và kiến trúc của các nền kinh tế tương lai của chúng ta. Nó vẫn là một đề xuất hấp dẫn, dù gây tranh cãi, hứa hẹn một sự thay đổi mô hình tốt hơn hay tệ hơn, tùy thuộc vào quan điểm của mỗi người và sự tỉ mỉ trong thiết kế và thực hiện cuối cùng của nó."
+}

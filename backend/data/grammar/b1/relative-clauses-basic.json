@@ -1,0 +1,79 @@
+{
+  "id": "b1-relative-clauses-basic",
+  "title": "Mệnh đề quan hệ cơ bản (Who, Which, That, Where)",
+  "level": "b1",
+  "description": "Bạn muốn làm cho câu văn của mình mượt mà và cung cấp thêm thông tin mà không bị lặp từ? Bài học này sẽ giúp bạn dùng 'who', 'which', 'that', 'where' để miêu tả người, vật, và nơi chốn một cách tự nhiên nhất!",
+  "theory": "Mệnh đề quan hệ (Relative Clauses) là những phần thêm vào câu để bổ sung thông tin, giúp người nghe/đọc hiểu rõ hơn về danh từ đứng trước nó (người, vật, hay địa điểm). Thay vì dùng hai câu ngắn, chúng ta có thể nối chúng lại một cách mượt mà hơn. Các từ dùng để nối gọi là đại từ/trạng từ quan hệ như 'who', 'which', 'that', 'where'.",
+  "structures": [
+    {
+      "name": "Who (dùng cho người)",
+      "formula": "Danh từ (người) + who + Động từ / S + V...",
+      "example": "The girl who is wearing a red dress is my sister. (Cô gái đang mặc váy đỏ là chị gái tôi.)"
+    },
+    {
+      "name": "Which (dùng cho vật/động vật)",
+      "formula": "Danh từ (vật/động vật) + which + S + V / V...",
+      "example": "I bought a new phone which has a very good camera. (Tôi đã mua một chiếc điện thoại mới có camera rất tốt.)"
+    },
+    {
+      "name": "That (thay thế cho who/which)",
+      "formula": "Danh từ (người/vật) + that + S + V / V...",
+      "example": "She is the student that passed the exam. (Cô ấy là học sinh đã đỗ kỳ thi.) -> có thể dùng 'who'\nThis is the book that I lent you. (Đây là cuốn sách mà tôi đã cho bạn mượn.) -> có thể dùng 'which'"
+    },
+    {
+      "name": "Where (dùng cho nơi chốn)",
+      "formula": "Danh từ (nơi chốn) + where + S + V...",
+      "example": "This is the restaurant where we had our first date. (Đây là nhà hàng nơi chúng ta có buổi hẹn hò đầu tiên.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ 'Ai - Cái gì - Ở đâu':",
+    "- `Who` (có 'ho' trong 'h_o_a' -> hoa là người đẹp, hoặc 'hu' trong 'hu_man' -> người): Luôn dùng cho người.",
+    "- `Which` (có 'ch' trong 'ch_ọn' -> chọn cái gì đó): Luôn dùng cho vật hoặc động vật.",
+    "- `Where` (liên tưởng đến câu hỏi 'Where are you?' -> bạn ở đâu?): Luôn dùng cho nơi chốn.",
+    "💡 `That` là 'người hùng' đa năng:",
+    "- Nếu bạn không chắc chắn giữa `who` và `which` (trong mệnh đề quan hệ xác định - Defining Relative Clauses), hãy cứ dùng `that`! Nó có thể thay thế cho cả người và vật."
+  ],
+  "practice": [
+    {
+      "question": "Do you know the man ____ works at the bank?",
+      "options": [
+        "which",
+        "who",
+        "where"
+      ],
+      "answer": "who",
+      "explanation": "'The man' là danh từ chỉ người, vì vậy ta dùng 'who'."
+    },
+    {
+      "question": "The car ____ I bought last month is very fast.",
+      "options": [
+        "who",
+        "where",
+        "which"
+      ],
+      "answer": "which",
+      "explanation": "'The car' là danh từ chỉ vật, vì vậy ta dùng 'which'."
+    },
+    {
+      "question": "This is the coffee shop ____ we usually meet.",
+      "options": [
+        "who",
+        "where",
+        "which"
+      ],
+      "answer": "where",
+      "explanation": "'The coffee shop' là danh từ chỉ nơi chốn, vì vậy ta dùng 'where'."
+    },
+    {
+      "question": "I like the song ____ is playing right now.",
+      "options": [
+        "who",
+        "that",
+        "where"
+      ],
+      "answer": "that",
+      "explanation": "'The song' là danh từ chỉ vật. Ta có thể dùng 'which' hoặc 'that'. Trong các lựa chọn, 'that' là đáp án đúng."
+    }
+  ]
+}

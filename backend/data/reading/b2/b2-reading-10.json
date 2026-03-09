@@ -1,0 +1,74 @@
+{
+  "id": "b2-reading-10",
+  "title": "Powering Tomorrow: The Global Renewable Energy Transition",
+  "level": "b2",
+  "topic": "The Shift Towards Renewable Energy",
+  "content": "The global energy landscape is undergoing a profound transformation, driven by an urgent need to address climate change, enhance energy security, and foster sustainable development. For centuries, humanity has relied heavily on fossil fuels – coal, oil, and natural gas – to power industries, transport, and homes. However, the environmental repercussions of burning these finite resources, primarily the emission of greenhouse gases, have made a compelling case for a swift and decisive shift towards renewable energy sources.\n\nThis transition is not merely an environmental imperative; it is also a strategic economic and geopolitical move. Relying on fossil fuels often subjects nations to the volatility of international markets and political instabilities in major producing regions. Renewable energy, conversely, offers a path to greater energy independence and stability, harnessing abundant natural resources like sunlight, wind, water, and geothermal heat, which are freely available in many parts of the world.\n\nSolar and wind power are at the forefront of this revolution. Advances in photovoltaic technology have made solar panels significantly more efficient and affordable, allowing for widespread adoption, from large-scale solar farms to rooftop installations. Similarly, wind turbines, both onshore and increasingly offshore, are now capable of generating immense amounts of electricity, competing effectively with conventional power plants in terms of cost. Hydropower remains a significant renewable source, particularly in regions with suitable river systems, while geothermal energy taps into the Earth's internal heat. Biomass, derived from organic matter, also contributes, though its sustainability is often debated depending on its sourcing.\n\nDespite the undeniable advantages, the shift presents its own set of challenges. One major hurdle is the intermittency of sources like solar and wind; they only generate power when the sun shines or the wind blows. This necessitates robust energy storage solutions, such as advanced battery technologies, and smart grid systems that can manage fluctuating supply and demand. Furthermore, integrating a high proportion of renewables requires substantial upgrades to existing electrical infrastructure and significant initial investments. Political will, regulatory frameworks, and public acceptance also play crucial roles in accelerating this transition.\n\nNevertheless, the momentum is undeniable. Governments worldwide are implementing policies to incentivize renewable energy development, including subsidies, tax breaks, and carbon pricing mechanisms. Corporate commitments to 100% renewable energy are also growing, reflecting a broader societal understanding of its importance. As technology continues to evolve and economies of scale drive down costs even further, the vision of a future powered predominantly by clean, inexhaustible energy sources moves closer to reality. This ongoing shift represents not just a change in how we generate electricity, but a fundamental redesign of our relationship with the planet's resources.",
+  "vocabulary_highlights": [
+    {
+      "word": "profound transformation",
+      "meaning": "sự chuyển đổi sâu sắc"
+    },
+    {
+      "word": "imperative",
+      "meaning": "cấp bách, rất quan trọng"
+    },
+    {
+      "word": "volatility",
+      "meaning": "sự biến động"
+    },
+    {
+      "word": "harness",
+      "meaning": "khai thác"
+    },
+    {
+      "word": "photovoltaic technology",
+      "meaning": "công nghệ quang điện"
+    },
+    {
+      "word": "intermittency",
+      "meaning": "tính gián đoạn"
+    },
+    {
+      "word": "robust",
+      "meaning": "mạnh mẽ, kiên cố"
+    },
+    {
+      "word": "incentivize",
+      "meaning": "khuyến khích"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is one of the primary drivers mentioned for the shift towards renewable energy?",
+      "options": [
+        "The desire to increase reliance on international fossil fuel markets.",
+        "The urgent need to address climate change.",
+        "The goal of reducing global energy consumption entirely."
+      ],
+      "answer": "The urgent need to address climate change.",
+      "explanation": "Đoạn văn nêu rõ: \"The global energy landscape is undergoing a profound transformation, driven by an urgent need to address climate change...\" (Bức tranh năng lượng toàn cầu đang trải qua một sự chuyển đổi sâu sắc, được thúc đẩy bởi nhu cầu cấp bách phải giải quyết biến đổi khí hậu...)"
+    },
+    {
+      "question": "Which of the following is NOT listed as a major challenge in the transition to renewable energy?",
+      "options": [
+        "The intermittency of sources like solar and wind.",
+        "The lack of suitable natural resources for renewable energy production globally.",
+        "The need for substantial upgrades to existing electrical infrastructure."
+      ],
+      "answer": "The lack of suitable natural resources for renewable energy production globally.",
+      "explanation": "Đoạn văn nói rằng năng lượng tái tạo khai thác \"abundant natural resources like sunlight, wind, water...\" (các nguồn tài nguyên thiên nhiên dồi dào như ánh sáng mặt trời, gió, nước...), ngụ ý về sự sẵn có, và liệt kê tính gián đoạn cùng việc nâng cấp cơ sở hạ tầng là những thách thức."
+    },
+    {
+      "question": "What kind of policies are governments worldwide implementing to support renewable energy development?",
+      "options": [
+        "Policies that restrict access to renewable energy technologies.",
+        "Policies that promote increased consumption of fossil fuels.",
+        "Policies such as subsidies, tax breaks, and carbon pricing mechanisms."
+      ],
+      "answer": "Policies such as subsidies, tax breaks, and carbon pricing mechanisms.",
+      "explanation": "Đoạn văn nói: \"Governments worldwide are implementing policies to incentivize renewable energy development, including subsidies, tax breaks, and carbon pricing mechanisms.\" (Các chính phủ trên toàn thế giới đang thực hiện các chính sách để khuyến khích phát triển năng lượng tái tạo, bao gồm trợ cấp, miễn giảm thuế và cơ chế định giá carbon.)"
+    }
+  ],
+  "translation": "Bức tranh năng lượng toàn cầu đang trải qua một sự chuyển đổi sâu sắc, được thúc đẩy bởi nhu cầu cấp bách phải giải quyết biến đổi khí hậu, tăng cường an ninh năng lượng và thúc đẩy phát triển bền vững. Trong nhiều thế kỷ, nhân loại đã phụ thuộc rất nhiều vào nhiên liệu hóa thạch – than đá, dầu mỏ và khí đốt tự nhiên – để cung cấp năng lượng cho các ngành công nghiệp, giao thông và nhà cửa. Tuy nhiên, những hậu quả môi trường của việc đốt cháy các nguồn tài nguyên hữu hạn này, chủ yếu là việc phát thải khí nhà kính, đã tạo ra một lập luận mạnh mẽ cho sự dịch chuyển nhanh chóng và dứt khoát sang các nguồn năng lượng tái tạo.\n\nSự chuyển đổi này không chỉ đơn thuần là một mệnh lệnh môi trường; đó còn là một động thái kinh tế và địa chính trị chiến lược. Việc phụ thuộc vào nhiên liệu hóa thạch thường khiến các quốc gia phải chịu sự biến động của thị trường quốc tế và sự bất ổn chính trị ở các khu vực sản xuất lớn. Ngược lại, năng lượng tái tạo mang đến một con đường dẫn đến sự độc lập và ổn định năng lượng lớn hơn, khai thác các nguồn tài nguyên thiên nhiên dồi dào như ánh sáng mặt trời, gió, nước và nhiệt địa nhiệt, vốn có sẵn miễn phí ở nhiều nơi trên thế giới.\n\nNăng lượng mặt trời và năng lượng gió đang dẫn đầu cuộc cách mạng này. Những tiến bộ trong công nghệ quang điện đã làm cho các tấm pin mặt trời hiệu quả hơn đáng kể và giá cả phải chăng hơn, cho phép áp dụng rộng rãi, từ các trang trại năng lượng mặt trời quy mô lớn đến các lắp đặt trên mái nhà. Tương tự, các tua-bin gió, cả trên đất liền và ngày càng nhiều ngoài khơi, hiện có khả năng tạo ra lượng điện khổng lồ, cạnh tranh hiệu quả với các nhà máy điện thông thường về chi phí. Thủy điện vẫn là một nguồn tái tạo quan trọng, đặc biệt ở các khu vực có hệ thống sông phù hợp, trong khi năng lượng địa nhiệt khai thác nhiệt bên trong Trái đất. Sinh khối, có nguồn gốc từ vật chất hữu cơ, cũng đóng góp, mặc dù tính bền vững của nó thường được tranh luận tùy thuộc vào nguồn cung cấp.\n\nMặc dù có những lợi thế không thể phủ nhận, sự dịch chuyển này cũng mang đến những thách thức riêng. Một trở ngại lớn là tính gián đoạn của các nguồn như năng lượng mặt trời và gió; chúng chỉ tạo ra điện khi mặt trời chiếu sáng hoặc gió thổi. Điều này đòi hỏi các giải pháp lưu trữ năng lượng mạnh mẽ, chẳng hạn như công nghệ pin tiên tiến và hệ thống lưới điện thông minh có thể quản lý sự dao động của cung và cầu. Hơn nữa, việc tích hợp tỷ lệ năng lượng tái tạo cao đòi hỏi nâng cấp đáng kể cơ sở hạ tầng điện hiện có và các khoản đầu tư ban đầu lớn. Ý chí chính trị, khung pháp lý và sự chấp nhận của công chúng cũng đóng vai trò quan trọng trong việc đẩy nhanh quá trình chuyển đổi này.\n\nTuy nhiên, động lực là không thể phủ nhận. Các chính phủ trên toàn thế giới đang thực hiện các chính sách để khuyến khích phát triển năng lượng tái tạo, bao gồm trợ cấp, miễn giảm thuế và cơ chế định giá carbon. Cam kết của các công ty đối với 100% năng lượng tái tạo cũng ngày càng tăng, phản ánh sự hiểu biết rộng rãi hơn trong xã hội về tầm quan trọng của nó. Khi công nghệ tiếp tục phát triển và quy mô kinh tế làm giảm chi phí hơn nữa, tầm nhìn về một tương lai được cung cấp năng lượng chủ yếu từ các nguồn năng lượng sạch, vô tận đang đến gần hơn với hiện thực. Sự dịch chuyển liên tục này không chỉ đại diện cho một sự thay đổi trong cách chúng ta tạo ra điện, mà còn là một sự thiết kế lại cơ bản mối quan hệ của chúng ta với tài nguyên của hành tinh."
+}

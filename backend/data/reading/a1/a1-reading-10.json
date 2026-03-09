@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-10",
+  "title": "Lily's Simple Meal",
+  "level": "a1",
+  "topic": "Cooking a Simple Meal",
+  "content": "Hello! My name is Lily. Today, I want to cook a simple meal. I am hungry.\nI will make eggs and vegetables. First, I take a pan. I put a little oil in it. The oil gets hot.\nThen, I crack two eggs. I put them in the hot pan and stir.\nNext, I cut a tomato. I add the tomato to the pan. I mix everything.\nI cook for a few minutes. The food looks good.\nFinally, I put the meal on a plate. I eat it with rice. It is delicious! I like my simple meal.",
+  "vocabulary_highlights": [
+    {
+      "word": "cook",
+      "meaning": "nấu ăn"
+    },
+    {
+      "word": "meal",
+      "meaning": "bữa ăn"
+    },
+    {
+      "word": "pan",
+      "meaning": "cái chảo"
+    },
+    {
+      "word": "oil",
+      "meaning": "dầu ăn"
+    },
+    {
+      "word": "crack",
+      "meaning": "đập (trứng)"
+    },
+    {
+      "word": "stir",
+      "meaning": "khuấy"
+    },
+    {
+      "word": "vegetables",
+      "meaning": "rau củ"
+    },
+    {
+      "word": "delicious",
+      "meaning": "ngon"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What does Lily want to cook today?",
+      "options": [
+        "A big cake",
+        "A simple meal",
+        "A sandwich"
+      ],
+      "answer": "A simple meal",
+      "explanation": "Đoạn văn có ghi: 'Today, I want to cook a simple meal.'"
+    },
+    {
+      "question": "What does Lily put in the pan first?",
+      "options": [
+        "Eggs",
+        "Oil",
+        "Rice"
+      ],
+      "answer": "Oil",
+      "explanation": "Đoạn văn có ghi: 'First, I take a pan. I put a little oil in it.'"
+    },
+    {
+      "question": "What does Lily eat her meal with?",
+      "options": [
+        "Bread",
+        "Rice",
+        "Noodles"
+      ],
+      "answer": "Rice",
+      "explanation": "Đoạn văn có ghi: 'I eat it with rice.'"
+    }
+  ],
+  "translation": "Chào bạn! Tên tôi là Lily. Hôm nay, tôi muốn nấu một bữa ăn đơn giản. Tôi đói bụng.\nTôi sẽ làm trứng và rau củ. Đầu tiên, tôi lấy một cái chảo. Tôi cho một ít dầu vào đó. Dầu nóng lên.\nSau đó, tôi đập hai quả trứng. Tôi cho chúng vào chảo nóng và khuấy.\nTiếp theo, tôi cắt một quả cà chua. Tôi cho cà chua vào chảo. Tôi trộn mọi thứ lại với nhau.\nTôi nấu trong vài phút. Món ăn trông ngon mắt.\nCuối cùng, tôi đặt bữa ăn lên đĩa. Tôi ăn nó với cơm. Nó rất ngon! Tôi thích bữa ăn đơn giản của mình."
+}

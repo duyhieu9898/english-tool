@@ -1,0 +1,75 @@
+{
+  "id": "a1-demonstratives",
+  "title": "Đại từ chỉ định (This, That, These, Those)",
+  "level": "a1",
+  "description": "Học cách chỉ và nói về đồ vật, người ở gần hoặc xa. Cực kỳ đơn giản để sử dụng trong giao tiếp hàng ngày!",
+  "theory": "Đại từ chỉ định (This, That, These, Those) dùng để chỉ rõ một người, một vật, hoặc một nhóm người/vật. Chúng giúp bạn xác định 'cái này', 'cái kia', 'những cái này', 'những cái kia' trong cuộc sống hàng ngày.\n\nĐơn giản là:\n-   **This** và **That** dùng cho **SỐ ÍT** (một vật/người).\n-   **These** và **Those** dùng cho **SỐ NHIỀU** (nhiều vật/người).\n\n-   **This** và **These** dùng để chỉ vật/người **Ở GẦN** bạn.\n-   **That** và **Those** dùng để chỉ vật/người **Ở XA** bạn.",
+  "structures": [
+    {
+      "name": "Chỉ số ít, ở gần",
+      "formula": "This + is + Danh từ số ít / Tính từ",
+      "example": "This is my book. (Đây là cuốn sách của tôi.)"
+    },
+    {
+      "name": "Chỉ số ít, ở xa",
+      "formula": "That + is + Danh từ số ít / Tính từ",
+      "example": "That is a cat. (Kia là một con mèo.)"
+    },
+    {
+      "name": "Chỉ số nhiều, ở gần",
+      "formula": "These + are + Danh từ số nhiều / Tính từ",
+      "example": "These are my friends. (Đây là những người bạn của tôi.)"
+    },
+    {
+      "name": "Chỉ số nhiều, ở xa",
+      "formula": "Those + are + Danh từ số nhiều / Tính từ",
+      "example": "Those are tall trees. (Kia là những cái cây cao.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ 'T và S':\n- 'T' (This, These) là 'T'ay gần (chỉ vật gần trong tầm tay).\n- 'S' (That, Those) là 'S'a xa (chỉ vật ở xa, không với tới được).",
+    "💡 Mẹo nhớ 'Số lượng':\n- 'This' và 'That' (ngắn gọn) cho 1 vật (số ít).\n- 'These' và 'Those' (dài hơn) cho nhiều vật (số nhiều)."
+  ],
+  "practice": [
+    {
+      "question": "Look! ____ is my new phone. (It's in my hand.)",
+      "options": [
+        "That",
+        "These",
+        "This"
+      ],
+      "answer": "This",
+      "explanation": "Điện thoại ở 'trong tay' nghĩa là ở gần và là số ít, nên dùng 'This'."
+    },
+    {
+      "question": "____ are beautiful flowers over there. (Point to a garden across the street.)",
+      "options": [
+        "This",
+        "Those",
+        "These"
+      ],
+      "answer": "Those",
+      "explanation": "Hoa ở 'over there' (đằng kia) nghĩa là ở xa và là số nhiều, nên dùng 'Those'."
+    },
+    {
+      "question": "Can you pass me ____ pen on the table, please? (The pen is just out of reach.)",
+      "options": [
+        "This",
+        "These",
+        "That"
+      ],
+      "answer": "That",
+      "explanation": "Cây bút 'on the table' nhưng lại 'pass me' (đưa cho tôi) ngụ ý nó hơi xa tầm tay một chút và là số ít, nên dùng 'That'."
+    },
+    {
+      "question": "____ shoes I'm wearing are very comfortable.",
+      "options": [
+        "That",
+        "These",
+        "Those"
+      ],
+      "answer": "These",
+      "explanation": "Giày 'I'm wearing' (tôi đang mang) nghĩa là ở gần bạn và là số nhiều (đôi giày), nên dùng 'These'."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-ssr
+.cache
+*.min.js
+*.min.css
+public
+.env*
+coverage

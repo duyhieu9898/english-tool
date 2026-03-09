@@ -1,0 +1,70 @@
+{
+  "id": "a1-reading-13",
+  "title": "My Delicious Pizza",
+  "level": "a1",
+  "topic": "My Favorite Food",
+  "content": "My name is Lily. I want to talk about my favorite food. My favorite food is pizza! I love pizza very much. It is so delicious. Pizza has bread, tomato sauce, and cheese. Sometimes it has meat like chicken, or vegetables. I like mine with a lot of cheese. I eat pizza for lunch or dinner. It is good when it is hot. My family also likes pizza. We often eat it together on Fridays. It makes me happy. Pizza is the best!",
+  "vocabulary_highlights": [
+    {
+      "word": "favorite",
+      "meaning": "yêu thích"
+    },
+    {
+      "word": "delicious",
+      "meaning": "ngon tuyệt"
+    },
+    {
+      "word": "sauce",
+      "meaning": "sốt"
+    },
+    {
+      "word": "cheese",
+      "meaning": "phô mai"
+    },
+    {
+      "word": "vegetables",
+      "meaning": "rau củ"
+    },
+    {
+      "word": "often",
+      "meaning": "thường xuyên"
+    },
+    {
+      "word": "happy",
+      "meaning": "vui vẻ"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is Lily's favorite food?",
+      "options": [
+        "Sandwich",
+        "Pizza",
+        "Pasta"
+      ],
+      "answer": "Pizza",
+      "explanation": "Đoạn văn có ghi: 'My favorite food is pizza!'"
+    },
+    {
+      "question": "What does pizza often have?",
+      "options": [
+        "Rice and fruit",
+        "Tomato sauce and cheese",
+        "Milk and sugar"
+      ],
+      "answer": "Tomato sauce and cheese",
+      "explanation": "Đoạn văn có ghi: 'Pizza has bread, tomato sauce, and cheese.'"
+    },
+    {
+      "question": "When does Lily's family often eat pizza together?",
+      "options": [
+        "On Mondays",
+        "On Wednesdays",
+        "On Fridays"
+      ],
+      "answer": "On Fridays",
+      "explanation": "Đoạn văn có ghi: 'We often eat it together on Fridays.'"
+    }
+  ],
+  "translation": "Tên tôi là Lily. Tôi muốn nói về món ăn yêu thích của mình. Món ăn yêu thích của tôi là pizza! Tôi rất yêu pizza. Nó ngon tuyệt. Pizza có bánh mì, sốt cà chua và phô mai. Đôi khi nó có thịt như gà, hoặc rau củ. Tôi thích pizza của mình có nhiều phô mai. Tôi ăn pizza vào bữa trưa hoặc bữa tối. Nó ngon khi còn nóng. Gia đình tôi cũng thích pizza. Chúng tôi thường ăn nó cùng nhau vào các ngày thứ Sáu. Nó làm tôi vui vẻ. Pizza là ngon nhất!"
+}

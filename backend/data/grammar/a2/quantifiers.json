@@ -1,0 +1,81 @@
+{
+  "id": "a2-quantifiers",
+  "title": "Lượng từ (Much, Many, A lot of, Some, Any)",
+  "level": "a2",
+  "description": "Bạn muốn nói 'bao nhiêu', 'một ít', 'một vài' trong tiếng Anh? Bài học này sẽ giúp bạn hiểu và dùng đúng các lượng từ như Much, Many, A lot of, Some, Any cho cả danh từ đếm được và không đếm được. Thật đơn giản và dễ áp dụng!",
+  "theory": "Lượng từ là những từ dùng để nói về số lượng của sự vật (danh từ). Chúng ta sẽ dùng các lượng từ khác nhau tùy thuộc vào danh từ đó 'đếm được' (ví dụ: apples, books) hay 'không đếm được' (ví dụ: water, time, money).",
+  "structures": [
+    {
+      "name": "Much (cho Danh từ KHÔNG ĐẾM ĐƯỢC - trong câu phủ định và nghi vấn)",
+      "formula": "S + don't/doesn't + V + much + N (không đếm được)\nHow much + N (không đếm được) + trợ động từ + S + V?",
+      "example": "I don't have much money. (Tôi không có nhiều tiền.)\nHow much time do you need? (Bạn cần bao nhiêu thời gian?)"
+    },
+    {
+      "name": "Many (cho Danh từ ĐẾM ĐƯỢC số nhiều - trong câu phủ định và nghi vấn)",
+      "formula": "S + don't/doesn't + V + many + N (đếm được số nhiều)\nHow many + N (đếm được số nhiều) + trợ động từ + S + V?",
+      "example": "They don't have many books. (Họ không có nhiều sách.)\nHow many people are there? (Có bao nhiêu người ở đó?)"
+    },
+    {
+      "name": "A lot of / Lots of (dùng được cho CẢ hai loại danh từ và MỌI loại câu)",
+      "formula": "S + V + a lot of / lots of + N (đếm được số nhiều / không đếm được)",
+      "example": "We have a lot of food. (Chúng tôi có rất nhiều đồ ăn.)\nShe has lots of friends. (Cô ấy có rất nhiều bạn bè.)"
+    },
+    {
+      "name": "Some (khẳng định, mời/đề nghị) & Any (phủ định, nghi vấn)",
+      "formula": "Some + N (đếm được số nhiều / không đếm được)\nAny + N (đếm được số nhiều / không đếm được)",
+      "example": "I want some water. (Tôi muốn một ít nước.) - khẳng định\nWould you like some coffee? (Bạn có muốn một ít cà phê không?) - mời\nI don't have any pets. (Tôi không có bất kỳ con vật nuôi nào.) - phủ định\nDo you have any questions? (Bạn có bất kỳ câu hỏi nào không?) - nghi vấn"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ Much vs Many (M/M = Minus/More):",
+    "- **Much** (Mức) = Dùng với danh từ KHÔNG ĐẾM ĐƯỢC (không thể đếm 1,2,3... như nước, thời gian). Thường dùng trong câu phủ định hoặc nghi vấn.",
+    "- **Many** (Many things) = Dùng với danh từ ĐẾM ĐƯỢC số nhiều (có thể đếm 1,2,3... như quả táo, cái ghế). Thường dùng trong câu phủ định hoặc nghi vấn.",
+    "💡 A lot of là \"Vua\" của lượng từ:",
+    "- 'A lot of' (hoặc 'lots of') dùng được cho TẤT CẢ các loại danh từ (đếm được số nhiều và không đếm được) và TẤT CẢ các loại câu (khẳng định, phủ định, nghi vấn). Khi không chắc chắn, dùng 'a lot of'!",
+    "💡 Quy tắc \"Some (S+) và Any (A-?)\":",
+    "- **Some** thường dùng trong câu **khẳng định (+)** và câu hỏi mời/yêu cầu lịch sự.",
+    "- **Any** thường dùng trong câu **phủ định (-)** và câu **nghi vấn (?)** thông thường."
+  ],
+  "practice": [
+    {
+      "question": "How ___ sugar do you want in your coffee?",
+      "options": [
+        "many",
+        "much",
+        "a lot"
+      ],
+      "answer": "much",
+      "explanation": "'Sugar' (đường) là danh từ không đếm được, nên chúng ta dùng 'much' trong câu hỏi về số lượng."
+    },
+    {
+      "question": "There aren't ___ good restaurants in this area.",
+      "options": [
+        "some",
+        "much",
+        "many"
+      ],
+      "answer": "many",
+      "explanation": "'Restaurants' (nhà hàng) là danh từ đếm được số nhiều. Đây là câu phủ định, và chúng ta đang nói về số lượng không nhiều, nên 'many' là phù hợp."
+    },
+    {
+      "question": "I have ___ friends in my new school.",
+      "options": [
+        "any",
+        "much",
+        "a lot of"
+      ],
+      "answer": "a lot of",
+      "explanation": "'Friends' (bạn bè) là danh từ đếm được số nhiều. 'A lot of' dùng được cho cả danh từ đếm được và không đếm được trong câu khẳng định, rất linh hoạt."
+    },
+    {
+      "question": "Do you have ___ questions for me?",
+      "options": [
+        "some",
+        "any",
+        "much"
+      ],
+      "answer": "any",
+      "explanation": "Đây là câu hỏi nghi vấn ('Do you have...?'). Với danh từ đếm được số nhiều ('questions'), chúng ta thường dùng 'any' trong câu hỏi thông thường."
+    }
+  ]
+}

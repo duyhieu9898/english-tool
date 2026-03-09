@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-3",
+  "title": "My Supermarket Trip",
+  "level": "a1",
+  "topic": "At the Supermarket",
+  "content": "My name is Lily. Today is Saturday. I go to the supermarket with my mom. The supermarket is big. We take a shopping cart. First, we buy some fruit. We get red apples and green bananas. Then, we buy some vegetables. We need carrots and potatoes. My mom also buys milk and bread for breakfast. I like milk. We put everything in the cart. The cart is full. We go to the cashier. My mom pays for the food. We carry the bags home. Shopping at the supermarket is fun! I am happy to help my mom.",
+  "vocabulary_highlights": [
+    {
+      "word": "supermarket",
+      "meaning": "siêu thị"
+    },
+    {
+      "word": "shopping cart",
+      "meaning": "xe đẩy hàng"
+    },
+    {
+      "word": "buy",
+      "meaning": "mua"
+    },
+    {
+      "word": "fruit",
+      "meaning": "trái cây"
+    },
+    {
+      "word": "vegetables",
+      "meaning": "rau củ"
+    },
+    {
+      "word": "milk",
+      "meaning": "sữa"
+    },
+    {
+      "word": "bread",
+      "meaning": "bánh mì"
+    },
+    {
+      "word": "cashier",
+      "meaning": "nhân viên thu ngân"
+    }
+  ],
+  "questions": [
+    {
+      "question": "Who does Lily go to the supermarket with?",
+      "options": [
+        "Her dad",
+        "Her mom",
+        "Her friend"
+      ],
+      "answer": "Her mom",
+      "explanation": "Đoạn văn có ghi: 'I go to the supermarket with my mom'."
+    },
+    {
+      "question": "What fruit do Lily and her mom buy?",
+      "options": [
+        "Oranges and grapes",
+        "Red apples and green bananas",
+        "Pears and strawberries"
+      ],
+      "answer": "Red apples and green bananas",
+      "explanation": "Đoạn văn có ghi: 'We get red apples and green bananas'."
+    },
+    {
+      "question": "What does Lily's mom buy for breakfast?",
+      "options": [
+        "Eggs and rice",
+        "Cereal and juice",
+        "Milk and bread"
+      ],
+      "answer": "Milk and bread",
+      "explanation": "Đoạn văn có ghi: 'My mom also buys milk and bread for breakfast'."
+    }
+  ],
+  "translation": "Tên tôi là Lily. Hôm nay là thứ Bảy. Tôi đi siêu thị với mẹ tôi. Siêu thị rất lớn. Chúng tôi lấy một chiếc xe đẩy hàng. Đầu tiên, chúng tôi mua một ít trái cây. Chúng tôi mua táo đỏ và chuối xanh. Sau đó, chúng tôi mua một ít rau củ. Chúng tôi cần cà rốt và khoai tây. Mẹ tôi cũng mua sữa và bánh mì cho bữa sáng. Tôi thích sữa. Chúng tôi cho mọi thứ vào xe đẩy. Chiếc xe đầy ắp. Chúng tôi đến quầy thu ngân. Mẹ tôi thanh toán tiền thực phẩm. Chúng tôi mang túi về nhà. Mua sắm ở siêu thị thật vui! Tôi rất vui khi giúp mẹ tôi."
+}

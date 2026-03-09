@@ -1,0 +1,76 @@
+{
+  "id": "b2-reported-speech-questions",
+  "title": "Câu tường thuật (Câu hỏi & Mệnh lệnh)",
+  "level": "b2",
+  "description": "Nắm vững cách kể lại những gì người khác đã hỏi hoặc yêu cầu một cách tự nhiên và chính xác. Đây là kỹ năng giao tiếp rất quan trọng ở trình độ B2 giúp bạn linh hoạt hơn trong cách kể chuyện.",
+  "theory": "Câu tường thuật (Reported Speech) dùng để kể lại lời nói, câu hỏi, hoặc yêu cầu của người khác mà không trích dẫn nguyên văn. Khi tường thuật câu hỏi và mệnh lệnh, chúng ta thường thay đổi cấu trúc câu, lùi thì của động từ, và điều chỉnh đại từ/trạng từ cho phù hợp để nội dung được tường thuật chuẩn xác.",
+  "structures": [
+    {
+      "name": "Câu hỏi Yes/No (Reported Yes/No Questions)",
+      "formula": "S + asked / wanted to know / inquired + if/whether + S + V (lùi thì) + ...",
+      "example": "She asked, \"Are you ready?\" -> She asked if I was ready. (Cô ấy hỏi liệu tôi đã sẵn sàng chưa.)"
+    },
+    {
+      "name": "Câu hỏi Wh- (Reported Wh- Questions)",
+      "formula": "S + asked / wanted to know / inquired + Wh-word + S + V (lùi thì) + ...",
+      "example": "He asked me, \"Where do you live?\" -> He asked me where I lived. (Anh ấy hỏi tôi sống ở đâu.)"
+    },
+    {
+      "name": "Câu mệnh lệnh/Yêu cầu (Reported Commands/Requests)",
+      "formula": "S + told / asked / ordered / advised + O + (not) to-V + ...",
+      "example": "He told me, \"Close the door!\" -> He told me to close the door. (Anh ấy bảo tôi đóng cửa.)"
+    },
+    {
+      "name": "Câu mệnh lệnh/Yêu cầu (Phủ định)",
+      "formula": "S + told / asked / ordered / advised + O + not to-V + ...",
+      "example": "She warned, \"Don't touch it!\" -> She warned me not to touch it. (Cô ấy cảnh báo tôi đừng chạm vào nó.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ thứ tự từ (Câu hỏi): Khi tường thuật câu hỏi, câu không còn là câu hỏi nữa! Luôn dùng thứ tự từ `chủ ngữ (S) + động từ (V)`, không phải `trợ động từ/động từ + S` như câu hỏi trực tiếp. (VD: She asked where I *lived*, KHÔNG PHẢI where *did I live*).",
+    "💡 Mẹo \"Lùi thì là bạn\": Hầu hết các câu tường thuật đều cần LÙI THÌ (backshift tense). Hiện tại đơn -> Quá khứ đơn, Hiện tại tiếp diễn -> Quá khứ tiếp diễn, v.v. Cứ nhớ lùi lại 1 thì là đúng đa số trường hợp! (VD: \"I am busy\" -> He said he *was* busy).",
+    "💡 Mẹo chọn động từ tường thuật (Câu mệnh lệnh): Hãy chọn động từ phù hợp để thể hiện sắc thái: `told` (nói/yêu cầu), `asked` (lịch sự), `ordered` (ra lệnh), `advised` (khuyên), `warned` (cảnh báo)."
+  ],
+  "practice": [
+    {
+      "question": "He asked me, \"Where did you go last night?\"\nHe asked me where I _________ the previous night.",
+      "options": [
+        "went",
+        "had gone",
+        "have gone"
+      ],
+      "answer": "had gone",
+      "explanation": "Câu gốc là quá khứ đơn (\"did you go\"), khi tường thuật cần lùi thì thành quá khứ hoàn thành (\"had gone\"). \"Last night\" cũng đổi thành \"the previous night\"."
+    },
+    {
+      "question": "\"Please help me with my homework,\" she said to her brother.\nShe asked her brother _________ her with her homework.",
+      "options": [
+        "to help",
+        "helping",
+        "that he helped"
+      ],
+      "answer": "to help",
+      "explanation": "Câu yêu cầu/mệnh lệnh được tường thuật bằng cấu trúc `asked + O + to-V`."
+    },
+    {
+      "question": "My mother asked, \"Have you finished your dinner?\"\nMy mother wanted to know _________ my dinner.",
+      "options": [
+        "if I finished",
+        "if I had finished",
+        "if I have finished"
+      ],
+      "answer": "if I had finished",
+      "explanation": "Câu gốc là hiện tại hoàn thành (\"Have you finished\"), khi lùi thì sẽ thành quá khứ hoàn thành (\"had finished\"). Đây là câu hỏi Yes/No nên dùng \"if\"."
+    },
+    {
+      "question": "The teacher told us, \"Don't make noise in the class.\"\nThe teacher told us _________ noise in the class.",
+      "options": [
+        "to not make",
+        "not to make",
+        "don't make"
+      ],
+      "answer": "not to make",
+      "explanation": "Câu mệnh lệnh phủ định được tường thuật bằng cấu trúc `told + O + not to-V`."
+    }
+  ]
+}

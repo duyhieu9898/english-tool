@@ -1,0 +1,76 @@
+{
+  "id": "b2-gerunds-infinitives",
+  "title": "Danh động từ & Động từ nguyên thể (Gerunds & Infinitives)",
+  "level": "b2",
+  "description": "Hiểu và sử dụng đúng Gerunds (V-ing) và Infinitives (to + V) là chìa khóa để nói tiếng Anh tự nhiên và chính xác hơn ở trình độ B2. Bài này sẽ giúp bạn nắm vững cách dùng quan trọng nhất và tránh nhầm lẫn nhé!",
+  "theory": "Gerunds (Danh động từ) là dạng động từ thêm '-ing' (V-ing) và hoạt động như một danh từ. Infinitives (Động từ nguyên thể) là dạng 'to + động từ nguyên mẫu' và có thể đóng nhiều vai trò khác nhau (danh từ, tính từ, trạng từ). Việc chọn dùng V-ing hay 'to V' thường phụ thuộc vào động từ hoặc giới từ đứng trước nó.",
+  "structures": [
+    {
+      "name": "Động từ + Gerund",
+      "formula": "S + Verb (nhóm 1) + V-ing",
+      "example": "I enjoy `reading` books. (Tôi thích đọc sách.)"
+    },
+    {
+      "name": "Động từ + Infinitive",
+      "formula": "S + Verb (nhóm 2) + to V",
+      "example": "She decided `to study` abroad. (Cô ấy đã quyết định đi du học.)"
+    },
+    {
+      "name": "Gerund đứng sau giới từ",
+      "formula": "Giới từ + V-ing",
+      "example": "He is good `at playing` chess. (Anh ấy giỏi chơi cờ vua.)"
+    },
+    {
+      "name": "Infinitive để diễn tả mục đích",
+      "formula": "S + V + ... + to V (mục đích)",
+      "example": "We went to the market `to buy` some fresh vegetables. (Chúng tôi đi chợ để mua rau tươi.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ Gerunds: 'AVOID F.L.E.E.S.' (Avoid, Finish, Like, Enjoy, Stop). Các động từ như vậy thường đi với V-ing. Hoặc nhớ các từ chỉ sự 'thích thú', 'tránh né', 'tiếp tục' thường dùng Gerund.",
+    "💡 Mẹo nhớ Infinitives: 'W.A.N.T. D.E.C.I.D.E.' (Want, Agree, Need, Try, Decide). Các động từ này thường đi với 'to V'. Hoặc nhớ các từ chỉ 'mong muốn', 'kế hoạch', 'quyết định' thường dùng Infinitive.",
+    "💡 Nhớ GIỚI TỪ + V-ing: Sau TẤT CẢ các giới từ (in, on, at, for, about, with...), chúng ta luôn dùng Gerund (V-ing). Đây là quy tắc cực kỳ chắc chắn và dễ áp dụng!"
+  ],
+  "practice": [
+    {
+      "question": "She avoids ___ to crowded places.",
+      "options": [
+        "go",
+        "to go",
+        "going"
+      ],
+      "answer": "going",
+      "explanation": "Động từ 'avoid' (tránh) luôn đi kèm với danh động từ (Gerund - V-ing)."
+    },
+    {
+      "question": "They plan ___ their vacation in July.",
+      "options": [
+        "take",
+        "taking",
+        "to take"
+      ],
+      "answer": "to take",
+      "explanation": "Động từ 'plan' (lên kế hoạch) luôn đi kèm với động từ nguyên thể có 'to' (Infinitive - to V)."
+    },
+    {
+      "question": "___ is good for your health.",
+      "options": [
+        "Exercise",
+        "To exercise",
+        "Exercising"
+      ],
+      "answer": "Exercising",
+      "explanation": "Khi một hành động làm chủ ngữ của câu, chúng ta thường dùng danh động từ (Gerund - V-ing) như một danh từ."
+    },
+    {
+      "question": "He saved money ___ a new car.",
+      "options": [
+        "buy",
+        "to buy",
+        "buying"
+      ],
+      "answer": "to buy",
+      "explanation": "Ở đây, 'to buy' diễn tả mục đích của việc 'saved money' (để mua một chiếc xe mới). Khi diễn tả mục đích, ta dùng Infinitive (to V)."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "c1-relative-clauses-advanced",
+  "title": "Mệnh đề quan hệ nâng cao: Lược bỏ đại từ và Giới từ lên trước",
+  "level": "c1",
+  "description": "Nâng cao kỹ năng viết và nói tiếng Anh của bạn bằng cách học cách rút gọn mệnh đề quan hệ để câu văn trở nên ngắn gọn, súc tích và trang trọng hơn.",
+  "theory": "Mệnh đề quan hệ nâng cao giúp câu văn gọn gàng và trang trọng hơn bằng ba cách chính:\n1.  **Lược bỏ đại từ quan hệ**: Khi đại từ quan hệ (who, whom, which, that) đóng vai trò TÂN NGỮ của mệnh đề quan hệ. Tức là, sau đại từ quan hệ có một chủ ngữ (S) và động từ (V) riêng.\n2.  **Đưa giới từ lên trước đại từ quan hệ**: Thay vì đặt giới từ ở cuối mệnh đề, ta có thể đặt nó ngay trước 'whom' (cho người) hoặc 'which' (cho vật). Cách này làm câu trang trọng hơn.\n3.  **Rút gọn mệnh đề quan hệ**: Biến mệnh đề thành cụm phân từ (V-ing hoặc V-ed/V3) để làm câu ngắn gọn và tự nhiên hơn.",
+  "structures": [
+    {
+      "name": "Lược bỏ Đại từ Quan hệ (khi là tân ngữ)",
+      "formula": "S + V + Noun + (who/whom/which/that) + S + V...",
+      "example": "This is the book (which) I bought yesterday. (Đây là cuốn sách tôi đã mua hôm qua.)"
+    },
+    {
+      "name": "Giới từ + Đại từ Quan hệ (trang trọng)",
+      "formula": "S + V + Noun + Preposition + whom/which + S + V...",
+      "example": "This is the house *in which* I grew up. (Đây là ngôi nhà mà tôi đã lớn lên trong đó.)"
+    },
+    {
+      "name": "Rút gọn Mệnh đề quan hệ (chủ động với V-ing)",
+      "formula": "Noun + V-ing + ... (thay cho Noun + who/which + V-ing...)",
+      "example": "The man *speaking* on the phone is my boss. (Người đàn ông đang nói chuyện điện thoại là sếp tôi.)"
+    },
+    {
+      "name": "Rút gọn Mệnh đề quan hệ (bị động với V-ed/V3)",
+      "formula": "Noun + V-ed/V3 + ... (thay cho Noun + who/which + is/was + V-ed/V3...)",
+      "example": "The car *repaired* yesterday belongs to him. (Chiếc xe được sửa ngày hôm qua thuộc về anh ấy.)"
+    }
+  ],
+  "tips": [
+    "💡 **Mẹo lược bỏ đại từ**: \"Sau đại từ quan hệ mà CÓ CHỦ NGỮ + ĐỘNG TỪ riêng, thì lược bỏ được.\"",
+    "💡 **Mẹo dùng giới từ**: \"Khi muốn câu VĂN PHONG TRANG TRỌNG và NGẮN GỌN, hãy đưa giới từ lên trước 'whom' (người) hoặc 'which' (vật).\"",
+    "💡 **Mẹo rút gọn phân từ**: \"Hành động CHỦ ĐỘNG dùng V-ing; hành động BỊ ĐỘNG dùng V-ed/V3.\""
+  ],
+  "practice": [
+    {
+      "question": "The woman ___ you spoke to is my aunt.",
+      "options": [
+        "whom",
+        "who",
+        "(no word needed)"
+      ],
+      "answer": "(no word needed)",
+      "explanation": "'whom' là tân ngữ của 'spoke to' và sau nó có chủ ngữ 'you' nên có thể lược bỏ đại từ quan hệ để câu gọn hơn."
+    },
+    {
+      "question": "The topic ___ they were discussing was very complex.",
+      "options": [
+        "which about",
+        "about which",
+        "about whom"
+      ],
+      "answer": "about which",
+      "explanation": "Để câu trang trọng hơn, giới từ 'about' được đưa lên trước đại từ quan hệ 'which' (dùng cho vật/chủ đề)."
+    },
+    {
+      "question": "The students ___ for the exam are very nervous.",
+      "options": [
+        "prepared",
+        "preparing",
+        "prepare"
+      ],
+      "answer": "preparing",
+      "explanation": "Câu gốc là 'The students *who are preparing* for the exam'. Đây là hành động chủ động (học sinh tự chuẩn bị) nên rút gọn thành cụm phân từ hiện tại (V-ing)."
+    },
+    {
+      "question": "The article ___ by the professor was published last month.",
+      "options": [
+        "writing",
+        "wrote",
+        "written"
+      ],
+      "answer": "written",
+      "explanation": "Câu gốc là 'The article *which was written* by the professor'. Đây là hành động bị động (bài báo được viết) nên rút gọn thành cụm phân từ quá khứ (V-ed/V3)."
+    }
+  ]
+}

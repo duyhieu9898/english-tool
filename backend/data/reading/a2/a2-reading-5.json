@@ -1,0 +1,70 @@
+{
+  "id": "a2-reading-5",
+  "title": "My Healthy Day",
+  "level": "a2",
+  "topic": "Healthy Habits",
+  "content": "Hi, I'm Maya. Every day, I try to live a healthy life. It helps me feel good and have lots of energy.\nIn the morning, I always eat breakfast. I usually have some fruit like a banana and milk. For lunch, I often eat a sandwich with lots of vegetables, like lettuce and tomato. I drink a lot of water throughout the day. Water is very important for our bodies.\nIn the afternoon, I like to exercise. Sometimes I go for a walk in the park, or I play soccer with my friends. Moving my body makes me happy and strong.\nIn the evening, I eat dinner with my family. We often have fish or chicken with rice and more vegetables. Before bed, I try to read a book, not watch TV. I go to sleep early, usually around 9:30 PM. Getting enough sleep is very important. When I sleep well, I wake up feeling fresh and ready for a new day. Healthy habits make me happy!",
+  "vocabulary_highlights": [
+    {
+      "word": "healthy",
+      "meaning": "khỏe mạnh"
+    },
+    {
+      "word": "energy",
+      "meaning": "năng lượng"
+    },
+    {
+      "word": "vegetables",
+      "meaning": "rau củ"
+    },
+    {
+      "word": "exercise",
+      "meaning": "tập thể dục"
+    },
+    {
+      "word": "throughout the day",
+      "meaning": "suốt cả ngày"
+    },
+    {
+      "word": "enough sleep",
+      "meaning": "ngủ đủ giấc"
+    },
+    {
+      "word": "fresh",
+      "meaning": "tươi tỉnh"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What does Maya eat for breakfast?",
+      "options": [
+        "A sandwich and water",
+        "Fruit and milk",
+        "Fish and rice"
+      ],
+      "answer": "Fruit and milk",
+      "explanation": "Đoạn văn có ghi: 'I usually have some fruit like a banana and milk' cho bữa sáng."
+    },
+    {
+      "question": "What does Maya like to do in the afternoon?",
+      "options": [
+        "Watch TV",
+        "Go for a walk or play soccer",
+        "Read a book"
+      ],
+      "answer": "Go for a walk or play soccer",
+      "explanation": "Đoạn văn có ghi: 'Sometimes I go for a walk in the park, or I play soccer with my friends'."
+    },
+    {
+      "question": "What time does Maya usually go to sleep?",
+      "options": [
+        "Around 7:00 PM",
+        "Around 9:30 PM",
+        "Around 11:00 PM"
+      ],
+      "answer": "Around 9:30 PM",
+      "explanation": "Đoạn văn có ghi: 'I go to sleep early, usually around 9:30 PM'."
+    }
+  ],
+  "translation": "Chào, tôi là Maya. Mỗi ngày, tôi cố gắng sống một cuộc sống lành mạnh. Điều đó giúp tôi cảm thấy khỏe mạnh và có nhiều năng lượng.\nVào buổi sáng, tôi luôn ăn bữa sáng. Tôi thường ăn một ít trái cây như chuối và uống sữa. Đối với bữa trưa, tôi thường ăn một chiếc bánh mì kẹp với nhiều rau củ, như xà lách và cà chua. Tôi uống rất nhiều nước suốt cả ngày. Nước rất quan trọng cho cơ thể của chúng ta.\nVào buổi chiều, tôi thích tập thể dục. Đôi khi tôi đi bộ trong công viên, hoặc tôi chơi bóng đá với bạn bè. Việc vận động cơ thể khiến tôi vui vẻ và khỏe mạnh.\nVào buổi tối, tôi ăn tối với gia đình. Chúng tôi thường ăn cá hoặc gà với cơm và thêm rau củ. Trước khi đi ngủ, tôi cố gắng đọc sách, không xem TV. Tôi đi ngủ sớm, thường khoảng 9 giờ 30 tối. Ngủ đủ giấc rất quan trọng. Khi tôi ngủ ngon, tôi thức dậy cảm thấy tươi tỉnh và sẵn sàng cho một ngày mới. Những thói quen lành mạnh khiến tôi hạnh phúc!"
+}

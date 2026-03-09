@@ -1,0 +1,74 @@
+{
+  "id": "c1-reading-20",
+  "title": "Cosmic Shadows: The Enigma of Dark Matter and Dark Energy",
+  "level": "c1",
+  "topic": "The Dark Matter and Dark Energy Enigma",
+  "content": "For centuries, humanity has gazed upon the cosmos, charting the stars, planets, and galaxies that compose our observable universe. Yet, what we perceive through our most powerful telescopes—the dazzling nebulae, the spiralling galaxies, the luminous stars—constitutes merely a fraction of the universe's total mass-energy density. The overwhelming majority, an astonishing 95%, remains shrouded in mystery, comprising two elusive components: dark matter and dark energy. These cosmic shadows, neither emitting nor reflecting light, dictate the universe's structure and ultimate fate, presenting physicists with perhaps the most profound conundrum of our age.\n\nDark matter, though invisible, exerts a potent gravitational influence. Its existence was first inferred in the 1930s by astronomer Fritz Zwicky, who observed that galaxies within the Coma Cluster were moving too rapidly to remain bound together by their visible mass alone. This anomaly suggested the presence of an unseen gravitational glue. Decades later, Vera Rubin's meticulous studies of galaxy rotation curves solidified this hypothesis: stars at the outskirts of galaxies orbit far faster than expected, implying a vast halo of unseen material enveloping them. Further evidence comes from gravitational lensing, where the paths of light from distant galaxies are bent and distorted by the gravity of foreground galaxy clusters, revealing far more mass than is visible. Whatever dark matter is, it doesn't interact with the electromagnetic force, meaning it doesn't absorb, reflect, or emit light, making it fundamentally different from the 'baryonic' matter that makes up everything we can touch and see. Leading candidates for its identity include Weakly Interacting Massive Particles (WIMPs) or axions, exotic particles yet to be directly detected, despite extensive experimental efforts worldwide.\n\nThe enigma deepens with dark energy, an even more perplexing constituent that dominates the universe. In the late 1990s, observations of distant Type Ia supernovae revealed an astonishing truth: the expansion of the universe is not slowing down due to gravity, as previously assumed, but is, in fact, accelerating. This groundbreaking discovery, which earned a Nobel Prize, necessitated a repulsive force acting on cosmic scales, pushing galaxies further apart at an ever-increasing rate. This unseen force is what we term dark energy. Unlike dark matter, which clumps together under gravity, dark energy appears to be uniformly distributed throughout space, acting as an intrinsic property of space itself. Einstein's cosmological constant, once considered his \"biggest blunder\" when he introduced it to maintain a static universe, has made a remarkable resurgence as a potential explanation for dark energy. If confirmed, it suggests that empty space isn't truly empty but possesses an inherent energy density that drives cosmic acceleration.\n\nThe implications of these discoveries are profound. Our prevailing cosmological model, Lambda-CDM, incorporates both dark matter and dark energy to explain the large-scale structure and evolution of the universe. Dark matter provides the gravitational scaffolding upon which galaxies form, while dark energy dictates the universe's ultimate destiny. Should dark energy continue to dominate, the universe faces a future of ever-increasing expansion, potentially leading to a \"Big Freeze\" or \"heat death,\" where galaxies drift so far apart that the cosmos becomes cold, dark, and utterly desolate. Conversely, if dark energy is not a constant but a dynamic field, other fates, such as a \"Big Rip,\" are conceivable.\n\nUnravelling the mysteries of dark matter and dark energy remains at the forefront of modern physics and cosmology. From underground laboratories searching for WIMPs to space-based telescopes mapping the cosmos, scientists are relentlessly pursuing direct and indirect evidence. The solutions to these riddles promise to rewrite our fundamental understanding of reality, revealing the true nature of the universe's hidden components and perhaps, our own place within its grand, enigmatic design.",
+  "vocabulary_highlights": [
+    {
+      "word": "enigma",
+      "meaning": "bí ẩn, điều khó hiểu"
+    },
+    {
+      "word": "elusive",
+      "meaning": "khó nắm bắt, khó tìm ra"
+    },
+    {
+      "word": "conundrum",
+      "meaning": "vấn đề nan giải, câu đố khó"
+    },
+    {
+      "word": "inferred",
+      "meaning": "được suy ra, được kết luận"
+    },
+    {
+      "word": "anomaly",
+      "meaning": "sự bất thường"
+    },
+    {
+      "word": "solidity",
+      "meaning": "củng cố, làm vững chắc"
+    },
+    {
+      "word": "perplexing",
+      "meaning": "gây bối rối, khó hiểu"
+    },
+    {
+      "word": "resurgence",
+      "meaning": "sự trỗi dậy, sự phục hồi"
+    }
+  ],
+  "questions": [
+    {
+      "question": "Which of the following is NOT a piece of evidence supporting the existence of dark matter?",
+      "options": [
+        "The accelerating expansion of the universe.",
+        "The rapid movement of galaxies within clusters.",
+        "Stars orbiting faster than expected at the edges of galaxies."
+      ],
+      "answer": "The accelerating expansion of the universe.",
+      "explanation": "Đoạn văn giải thích rằng sự giãn nở tăng tốc của vũ trụ là bằng chứng cho năng lượng tối, không phải vật chất tối. Các lựa chọn khác đều được đề cập là bằng chứng cho vật chất tối."
+    },
+    {
+      "question": "What is the primary difference between dark matter and dark energy, according to the passage?",
+      "options": [
+        "Dark matter clumps together under gravity, while dark energy is uniformly distributed.",
+        "Dark matter interacts with light, while dark energy does not.",
+        "Dark matter slows down the universe's expansion, while dark energy speeds it up."
+      ],
+      "answer": "Dark matter clumps together under gravity, while dark energy is uniformly distributed.",
+      "explanation": "Đoạn văn nói rằng 'Unlike dark matter, which clumps together under gravity, dark energy appears to be uniformly distributed throughout space'. Các lựa chọn khác không chính xác: vật chất tối không tương tác với ánh sáng, và cả hai đều không trực tiếp làm chậm sự giãn nở."
+    },
+    {
+      "question": "What is a potential ultimate fate of the universe if dark energy continues to dominate?",
+      "options": [
+        "A 'Big Crunch' where the universe collapses in on itself.",
+        "A 'Big Freeze' or 'heat death' where the cosmos becomes cold and desolate.",
+        "A 'Big Bang' leading to a new cycle of creation."
+      ],
+      "answer": "A 'Big Freeze' or 'heat death' where the cosmos becomes cold and desolate.",
+      "explanation": "Đoạn văn nêu rõ: 'Should dark energy continue to dominate, the universe faces a future of ever-increasing expansion, potentially leading to a \"Big Freeze\" or \"heat death,\" where galaxies drift so far apart that the cosmos becomes cold, dark, and utterly desolate.'"
+    }
+  ],
+  "translation": "Trong nhiều thế kỷ, nhân loại đã ngắm nhìn vũ trụ, lập bản đồ các ngôi sao, hành tinh và thiên hà tạo nên vũ trụ có thể quan sát được của chúng ta. Tuy nhiên, những gì chúng ta nhận thấy qua kính thiên văn mạnh nhất của mình – các tinh vân rực rỡ, các thiên hà xoắn ốc, các ngôi sao phát sáng – chỉ chiếm một phần nhỏ trong tổng mật độ khối lượng-năng lượng của vũ trụ. Phần lớn còn lại, một con số đáng kinh ngạc 95%, vẫn bị bao phủ trong bí ẩn, bao gồm hai thành phần khó nắm bắt: vật chất tối và năng lượng tối. Những bóng ma vũ trụ này, không phát ra cũng không phản xạ ánh sáng, quyết định cấu trúc và số phận cuối cùng của vũ trụ, đặt ra cho các nhà vật lý có lẽ là câu đố sâu sắc nhất trong thời đại của chúng ta.\n\nVật chất tối, dù vô hình, lại tạo ra một lực hấp dẫn mạnh mẽ. Sự tồn tại của nó lần đầu tiên được suy ra vào những năm 1930 bởi nhà thiên văn học Fritz Zwicky, người đã quan sát thấy các thiên hà trong Cụm Coma đang chuyển động quá nhanh để có thể duy trì liên kết chỉ bằng khối lượng nhìn thấy của chúng. Sự bất thường này gợi ý sự hiện diện của một chất keo hấp dẫn vô hình. Nhiều thập kỷ sau, các nghiên cứu tỉ mỉ của Vera Rubin về đường cong quay của thiên hà đã củng cố giả thuyết này: các ngôi sao ở rìa thiên hà quay nhanh hơn nhiều so với dự kiến, ngụ ý một quầng vật chất vô hình khổng lồ bao quanh chúng. Bằng chứng xa hơn đến từ thấu kính hấp dẫn, nơi đường đi của ánh sáng từ các thiên hà xa xôi bị bẻ cong và biến dạng bởi trọng lực của các cụm thiên hà tiền cảnh, cho thấy khối lượng lớn hơn nhiều so với những gì có thể nhìn thấy. Dù vật chất tối là gì, nó không tương tác với lực điện từ, nghĩa là nó không hấp thụ, phản xạ hay phát ra ánh sáng, khiến nó khác biệt cơ bản so với vật chất 'baryonic' tạo nên mọi thứ chúng ta có thể chạm và nhìn thấy. Các ứng cử viên hàng đầu cho danh tính của nó bao gồm Các Hạt Khối Lượng Lớn Tương Tác Yếu (WIMPs) hoặc axion, các hạt lạ chưa được phát hiện trực tiếp, mặc dù có nhiều nỗ lực thử nghiệm rộng rãi trên toàn thế giới.\n\nBí ẩn sâu sắc hơn với năng lượng tối, một thành phần thậm chí còn khó hiểu hơn và chiếm ưu thế trong vũ trụ. Vào cuối những năm 1990, các quan sát về siêu tân tinh loại Ia ở xa đã tiết lộ một sự thật đáng kinh ngạc: sự giãn nở của vũ trụ không chậm lại do trọng lực, như đã giả định trước đây, mà trên thực tế, đang tăng tốc. Phát hiện đột phá này, đã mang lại giải Nobel, đòi hỏi một lực đẩy tác động trên quy mô vũ trụ, đẩy các thiên hà ra xa nhau với tốc độ ngày càng tăng. Lực vô hình này là thứ chúng ta gọi là năng lượng tối. Không giống như vật chất tối, vốn tụ lại dưới tác dụng của trọng lực, năng lượng tối dường như được phân bố đều khắp không gian, hoạt động như một thuộc tính nội tại của chính không gian. Hằng số vũ trụ của Einstein, từng được coi là \"sai lầm lớn nhất\" của ông khi ông đưa ra để duy trì một vũ trụ tĩnh, đã có một sự trỗi dậy đáng kể như một lời giải thích tiềm năng cho năng lượng tối. Nếu được xác nhận, nó cho thấy rằng không gian trống rỗng không thực sự trống rỗng mà sở hữu một mật độ năng lượng cố hữu thúc đẩy sự tăng tốc vũ trụ.\n\nNhững hàm ý của những khám phá này là sâu sắc. Mô hình vũ trụ học hiện hành của chúng ta, Lambda-CDM, kết hợp cả vật chất tối và năng lượng tối để giải thích cấu trúc và sự tiến hóa quy mô lớn của vũ trụ. Vật chất tối cung cấp giàn giáo hấp dẫn để các thiên hà hình thành, trong khi năng lượng tối quyết định số phận cuối cùng của vũ trụ. Nếu năng lượng tối tiếp tục chiếm ưu thế, vũ trụ sẽ đối mặt với một tương lai giãn nở ngày càng tăng, có khả năng dẫn đến một \"Đại Đóng Băng\" hoặc \"cái chết nhiệt,\" nơi các thiên hà trôi dạt quá xa nhau đến mức vũ trụ trở nên lạnh lẽo, tối tăm và hoàn toàn hoang vắng. Ngược lại, nếu năng lượng tối không phải là hằng số mà là một trường động lực, các số phận khác, chẳng hạn như \"Đại Xé Toạc,\" là có thể hình dung được.\n\nGỡ rối những bí ẩn về vật chất tối và năng lượng tối vẫn là ưu tiên hàng đầu của vật lý và vũ trụ học hiện đại. Từ các phòng thí nghiệm dưới lòng đất tìm kiếm WIMPs đến kính thiên văn không gian lập bản đồ vũ trụ, các nhà khoa học đang không ngừng theo đuổi bằng chứng trực tiếp và gián tiếp. Các giải pháp cho những câu đố này hứa hẹn sẽ viết lại sự hiểu biết cơ bản của chúng ta về thực tại, tiết lộ bản chất thực sự của các thành phần ẩn giấu trong vũ trụ và có lẽ là vị trí của chính chúng ta trong thiết kế vĩ đại, bí ẩn của nó."
+}

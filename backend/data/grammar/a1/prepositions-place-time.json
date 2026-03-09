@@ -1,0 +1,91 @@
+{
+  "id": "a1-prepositions-place-time",
+  "title": "Giới từ chỉ thời gian & nơi chốn (In, On, At)",
+  "level": "a1",
+  "description": "Bài học này giúp bạn hiểu và sử dụng đúng các giới từ 'In', 'On', 'At' để nói về thời gian (khi nào) và nơi chốn (ở đâu) một cách đơn giản nhất. Hãy cùng khám phá nhé!",
+  "theory": "Giới từ (prepositions) là những từ nhỏ nhưng rất quan trọng, giúp kết nối các từ khác trong câu. 'In', 'On', 'At' là 3 giới từ cực kỳ phổ biến được dùng để chỉ THỜI GIAN (khi nào việc gì đó xảy ra) và NƠI CHỐN (ở đâu). Quy tắc chung là: AT dùng cho cái NHỎ NHẤT, cụ thể nhất; ON dùng cho cái TRUNG BÌNH; và IN dùng cho cái LỚN NHẤT, bao quát nhất.",
+  "structures": [
+    {
+      "name": "AT (chỉ thời gian)",
+      "formula": "At + giờ cụ thể / thời điểm chính xác",
+      "example": "Let's meet **at 7 PM**. (Chúng ta hãy gặp nhau lúc 7 giờ tối.)"
+    },
+    {
+      "name": "AT (chỉ nơi chốn)",
+      "formula": "At + địa điểm cụ thể / chính xác (nhà, trường, trạm xe buýt, địa chỉ)",
+      "example": "She is **at the bus stop**. (Cô ấy đang ở trạm xe buýt.)"
+    },
+    {
+      "name": "ON (chỉ thời gian)",
+      "formula": "On + ngày trong tuần / ngày tháng cụ thể",
+      "example": "My birthday is **on October 20th**. (Sinh nhật tôi vào ngày 20 tháng Mười.)"
+    },
+    {
+      "name": "ON (chỉ nơi chốn)",
+      "formula": "On + bề mặt / đường phố / phương tiện công cộng (lớn)",
+      "example": "The book is **on the table**. (Cuốn sách ở trên bàn.)"
+    },
+    {
+      "name": "IN (chỉ thời gian)",
+      "formula": "In + tháng / năm / mùa / buổi trong ngày (trừ 'at night')",
+      "example": "We often go on vacation **in summer**. (Chúng tôi thường đi nghỉ mát vào mùa hè.)"
+    },
+    {
+      "name": "IN (chỉ nơi chốn)",
+      "formula": "In + không gian lớn (thành phố, quốc gia, phòng, tòa nhà)",
+      "example": "I live **in Vietnam**. (Tôi sống ở Việt Nam.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ NƠI CHỐN (Kim tự tháp ngược):",
+    "- **AT** (Điểm nhỏ nhất): Địa điểm rất cụ thể, chính xác như đỉnh kim tự tháp (at the corner, at the airport, at home).",
+    "- **ON** (Bề mặt / Đường): Rộng hơn một chút, như bề mặt của kim tự tháp (on the street, on the floor, on the train).",
+    "- **IN** (Không gian lớn): Khu vực rộng lớn, bao trùm, như đáy kim tự tháp (in the city, in the room, in Vietnam).",
+    "💡 Mẹo nhớ THỜI GIAN (Quy tắc 'Thời gian từ lớn đến nhỏ'):",
+    "- **IN:** Khoảng thời gian LỚN nhất (in years, in months, in seasons: in 2023, in July, in winter).",
+    "- **ON:** Khoảng thời gian TRUNG BÌNH (on days, specific dates: on Monday, on May 1st).",
+    "- **AT:** Khoảng thời gian NHỎ nhất, cụ thể nhất (at specific hours, exact moments: at 8 AM, at noon, at night)."
+  ],
+  "practice": [
+    {
+      "question": "My father works ___ a hospital.",
+      "options": [
+        "at",
+        "on",
+        "in"
+      ],
+      "answer": "in",
+      "explanation": "Bệnh viện là một tòa nhà, không gian lớn nên dùng 'in'."
+    },
+    {
+      "question": "The concert starts ___ 8 PM.",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ],
+      "answer": "at",
+      "explanation": "Dùng 'at' cho giờ cụ thể (8 PM)."
+    },
+    {
+      "question": "We usually go to the beach ___ Sundays.",
+      "options": [
+        "at",
+        "on",
+        "in"
+      ],
+      "answer": "on",
+      "explanation": "Dùng 'on' cho các ngày trong tuần (Sundays)."
+    },
+    {
+      "question": "She lives ___ Tran Hung Dao Street.",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ],
+      "answer": "on",
+      "explanation": "Dùng 'on' khi nói về sống trên một con đường (street)."
+    }
+  ]
+}

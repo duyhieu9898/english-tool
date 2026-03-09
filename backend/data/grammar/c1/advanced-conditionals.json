@@ -1,0 +1,70 @@
+{
+  "id": "c1-advanced-conditionals",
+  "title": "Câu điều kiện nâng cao (Đảo ngữ trong câu điều kiện)",
+  "level": "c1",
+  "description": "Nâng cấp kỹ năng viết và nói tiếng Anh của bạn bằng cách học cách rút gọn câu điều kiện và làm cho chúng trở nên trang trọng, ấn tượng hơn thông qua kỹ thuật đảo ngữ.",
+  "theory": "Đảo ngữ trong câu điều kiện (Inversion in Conditional Sentences) là một cách để loại bỏ từ 'if' và đảo vị trí của trợ động từ lên đầu câu điều kiện. Kỹ thuật này giúp câu văn trở nên trang trọng, lịch sự hơn hoặc nhấn mạnh ý nghĩa, thường được sử dụng trong văn viết hoặc các tình huống giao tiếp trang trọng.",
+  "structures": [
+    {
+      "name": "Đảo ngữ loại 1 (Should)",
+      "formula": "Should + S + V(nguyên mẫu), S + will/can/may + V(nguyên mẫu)",
+      "example": "Should you need any assistance, please contact us. (Nếu bạn cần bất kỳ sự hỗ trợ nào, vui lòng liên hệ với chúng tôi.)"
+    },
+    {
+      "name": "Đảo ngữ loại 2 (Were)",
+      "formula": "Were + S + (to V / Danh từ / Tính từ)..., S + would/could + V(nguyên mẫu)",
+      "example": "Were I a millionaire, I would buy a private jet. (Nếu tôi là triệu phú, tôi sẽ mua một chiếc máy bay riêng.)"
+    },
+    {
+      "name": "Đảo ngữ loại 3 (Had)",
+      "formula": "Had + S + PII, S + would/could/might + have + PII",
+      "example": "Had I known about the party, I would have come. (Nếu tôi biết về bữa tiệc, tôi đã đến rồi.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ nhanh '3 Trợ Động Từ Vàng': Chỉ có 3 trợ động từ chính được dùng trong đảo ngữ câu điều kiện là Should (Loại 1), Were (Loại 2), Had (Loại 3).",
+    "✨ Đừng quên 'Dấu hiệu trang trọng': Đảo ngữ làm câu văn nghe 'nghiêm túc' và 'lịch sự' hơn, nên hãy dùng nó trong văn viết, phát biểu hoặc các tình huống yêu cầu sự trang trọng."
+  ],
+  "practice": [
+    {
+      "question": "___ you have any questions, feel free to ask.",
+      "options": [
+        "If",
+        "Should",
+        "Were"
+      ],
+      "answer": "Should",
+      "explanation": "Đây là đảo ngữ câu điều kiện loại 1. 'Should' thay thế 'If' và đứng trước chủ ngữ, theo sau là động từ nguyên mẫu."
+    },
+    {
+      "question": "___ I rich, I would travel the world.",
+      "options": [
+        "Had",
+        "Were",
+        "Should"
+      ],
+      "answer": "Were",
+      "explanation": "Đây là đảo ngữ câu điều kiện loại 2, thể hiện một điều không có thật ở hiện tại. 'Were' thay thế 'If' và đứng trước chủ ngữ 'I' (dù 'I' thường đi với 'was' nhưng trong câu điều kiện loại 2 luôn dùng 'were')."
+    },
+    {
+      "question": "___ she listened to my advice, she would have avoided that mistake.",
+      "options": [
+        "Were",
+        "Had",
+        "Should"
+      ],
+      "answer": "Had",
+      "explanation": "Đây là đảo ngữ câu điều kiện loại 3, nói về một điều không có thật trong quá khứ. 'Had' thay thế 'If' và đứng trước chủ ngữ, theo sau là quá khứ phân từ (PII)."
+    },
+    {
+      "question": "___ it not for his warning, we would have been in serious trouble.",
+      "options": [
+        "Should",
+        "Were",
+        "Had"
+      ],
+      "answer": "Were",
+      "explanation": "Cụm 'Were it not for...' là dạng đảo ngữ của 'If it were not for...' (Nếu không nhờ...). Đây là cấu trúc câu điều kiện loại 2 cố định thường dùng để diễn đạt tình huống giả định ở hiện tại hoặc quá khứ mà kết quả đã xảy ra."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "a1-articles-a-an-the",
+  "title": "Mạo từ (A, An, The)",
+  "level": "a1",
+  "description": "Học cách dùng 'A, An' và 'The' để nói về 'một' thứ gì đó bất kỳ, hoặc 'cái đó, người đó' đã rõ ràng. Đây là những từ nhỏ nhưng rất quan trọng để câu nói của bạn chuẩn xác và tự nhiên hơn!",
+  "theory": "Mạo từ (Articles) là các từ 'a', 'an' và 'the'. Chúng giống như những 'người chỉ đường' nhỏ, giúp bạn biết danh từ mình đang nói đến là một cái gì đó chung chung (a/an) hay một cái gì đó cụ thể, đã được xác định rõ rồi (the).",
+  "structures": [
+    {
+      "name": "A / An (Một cái... bất kỳ)",
+      "formula": "A / An + Danh từ số ít đếm được",
+      "example": "I have a book. (Tôi có một cuốn sách. *Một cuốn sách bất kỳ, chưa rõ cuốn nào.*)\nShe eats an apple. (Cô ấy ăn một quả táo. *Một quả táo bất kỳ.*)"
+    },
+    {
+      "name": "The (Cái... đó, người... đó)",
+      "formula": "The + Danh từ (số ít/số nhiều, đếm được/không đếm được)",
+      "example": "I have a book. The book is old. (Tôi có một cuốn sách. Cuốn sách đó cũ rồi. *Cuốn sách đã được nhắc đến, giờ đã xác định rõ.*)\nLook at the sun! (Nhìn mặt trời kìa! *Mặt trời là duy nhất, ai cũng biết.*)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo 'Nghe âm đầu':",
+    "- Dùng 'An' khi từ phía sau bắt đầu bằng **âm nguyên âm** (uể oải: u, ê, o, a, i). Ví dụ: an apple, an hour (chữ 'h' câm, đọc là 'our').",
+    "- Dùng 'A' khi từ phía sau bắt đầu bằng **âm phụ âm**. Ví dụ: a book, a university (chữ 'u' đọc là 'yoo', không phải nguyên âm).",
+    "💡 Mẹo 'Biết hay Không biết?':",
+    "- Dùng 'A/An' khi nói về một thứ **chung chung**, **lần đầu nhắc đến**, người nghe/đọc **chưa biết** đó là cái gì. (Một cái gì đó *bất kỳ*).",
+    "- Dùng 'The' khi nói về một thứ **đã xác định**, **đã nhắc đến trước đó**, hoặc **duy nhất**, người nghe/đọc **đã biết** đó là cái gì. (Cái đó/người đó *cụ thể*)."
+  ],
+  "practice": [
+    {
+      "question": "I need ___ new pen.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "answer": "a",
+      "explanation": "'New' bắt đầu bằng âm phụ âm 'n', và đây là một cây bút mới bất kỳ."
+    },
+    {
+      "question": "She is reading ___ interesting book.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "answer": "an",
+      "explanation": "'Interesting' bắt đầu bằng âm nguyên âm 'i'."
+    },
+    {
+      "question": "Look at ___ sky! It's so blue.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "answer": "the",
+      "explanation": "'Sky' (bầu trời) là vật thể duy nhất, ai cũng biết là cái nào."
+    },
+    {
+      "question": "I saw ___ cat. ___ cat was black.",
+      "options": [
+        "a / The",
+        "an / A",
+        "The / An"
+      ],
+      "answer": "a / The",
+      "explanation": "Lần đầu nhắc đến 'cat' dùng 'a' (một con mèo bất kỳ). Lần thứ hai nhắc đến cùng con mèo đó thì dùng 'the' (con mèo đã xác định)."
+    }
+  ]
+}

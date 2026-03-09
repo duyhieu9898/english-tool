@@ -1,0 +1,74 @@
+{
+  "id": "b1-reading-9",
+  "title": "Understanding Artificial Intelligence: A Basic Introduction",
+  "level": "b1",
+  "topic": "Artificial Intelligence Basics",
+  "content": "Artificial Intelligence (AI) is a fascinating field that is changing our world rapidly. Simply put, AI refers to machines or computer systems that can think and learn like humans. It's about creating \"smart\" technology that can perform tasks that usually require human intelligence.\n\nYou probably use AI every day without even realizing it. For example, when you ask your phone a question, or when a music app suggests new songs you might like, that's AI at work. Another common example is online shopping websites recommending products based on what you've bought before. These systems learn from a lot of data and make predictions about what you might want or need.\n\nHow does AI work? At its core, AI uses algorithms, which are like step-by-step instructions. These algorithms allow computers to analyze large amounts of information, find patterns, and then use those patterns to make decisions or solve problems. For instance, AI can learn to recognize faces in photos, understand spoken language, or even play complex games like chess against human players. It's constantly improving by processing more data.\n\nAI has a huge impact on many areas, from healthcare to transportation. In hospitals, AI can help doctors identify diseases earlier, sometimes even better than humans. In cars, AI is developing self-driving technology that aims to make roads safer and more efficient. It also helps businesses automate routine tasks. While AI offers many benefits, it also raises important questions about its future and how we manage its development responsibly. Understanding AI basics helps us prepare for and participate in this exciting technological future.",
+  "vocabulary_highlights": [
+    {
+      "word": "fascinating field",
+      "meaning": "lĩnh vực hấp dẫn"
+    },
+    {
+      "word": "perform tasks",
+      "meaning": "thực hiện các nhiệm vụ"
+    },
+    {
+      "word": "without even realizing it",
+      "meaning": "mà không hề nhận ra"
+    },
+    {
+      "word": "algorithms",
+      "meaning": "thuật toán"
+    },
+    {
+      "word": "analyze",
+      "meaning": "phân tích"
+    },
+    {
+      "word": "huge impact",
+      "meaning": "tác động lớn"
+    },
+    {
+      "word": "automate",
+      "meaning": "tự động hóa"
+    },
+    {
+      "word": "responsibly",
+      "meaning": "một cách có trách nhiệm"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is a simple definition of Artificial Intelligence (AI)?",
+      "options": [
+        "A) Machines that can only play games.",
+        "B) Computer systems that can think and learn like humans.",
+        "C) Technology that only works with music apps."
+      ],
+      "answer": "B) Computer systems that can think and learn like humans.",
+      "explanation": "Đoạn văn định nghĩa AI là \"machines or computer systems that can think and learn like humans.\""
+    },
+    {
+      "question": "Which of these is NOT given as an example of AI in daily life?",
+      "options": [
+        "A) Asking your phone a question.",
+        "B) Online shopping recommendations.",
+        "C) Writing a traditional letter by hand."
+      ],
+      "answer": "C) Writing a traditional letter by hand.",
+      "explanation": "Đoạn văn nhắc đến việc hỏi điện thoại và gợi ý mua sắm trực tuyến là ví dụ của AI, nhưng không đề cập đến việc viết thư tay truyền thống."
+    },
+    {
+      "question": "How do algorithms help AI systems?",
+      "options": [
+        "A) They make computers physically bigger.",
+        "B) They provide step-by-step instructions to analyze data and make decisions.",
+        "C) They only allow computers to play chess."
+      ],
+      "answer": "B) They provide step-by-step instructions to analyze data and make decisions.",
+      "explanation": "Đoạn văn giải thích rằng \"AI uses algorithms, which are like step-by-step instructions... to analyze large amounts of information, find patterns, and then use those patterns to make decisions or solve problems.\""
+    }
+  ],
+  "translation": "Trí tuệ nhân tạo (AI) là một lĩnh vực hấp dẫn đang thay đổi thế giới của chúng ta một cách nhanh chóng. Nói một cách đơn giản, AI đề cập đến các cỗ máy hoặc hệ thống máy tính có thể suy nghĩ và học hỏi như con người. Đó là việc tạo ra công nghệ \"thông minh\" có thể thực hiện các nhiệm vụ mà thường đòi hỏi trí thông minh của con người.\n\nBạn có thể sử dụng AI hàng ngày mà không hề nhận ra. Ví dụ, khi bạn hỏi điện thoại của mình một câu hỏi, hoặc khi một ứng dụng âm nhạc gợi ý những bài hát mới mà bạn có thể thích, đó là AI đang hoạt động. Một ví dụ phổ biến khác là các trang web mua sắm trực tuyến đề xuất sản phẩm dựa trên những gì bạn đã mua trước đó. Những hệ thống này học hỏi từ rất nhiều dữ liệu và đưa ra dự đoán về những gì bạn có thể muốn hoặc cần.\n\nAI hoạt động như thế nào? Về cơ bản, AI sử dụng các thuật toán, giống như các hướng dẫn từng bước. Các thuật toán này cho phép máy tính phân tích lượng lớn thông tin, tìm ra các mẫu và sau đó sử dụng các mẫu đó để đưa ra quyết định hoặc giải quyết vấn đề. Chẳng hạn, AI có thể học cách nhận diện khuôn mặt trong ảnh, hiểu ngôn ngữ nói, hoặc thậm chí chơi các trò chơi phức tạp như cờ vua với người chơi. Nó không ngừng cải thiện bằng cách xử lý nhiều dữ liệu hơn.\n\nAI có tác động lớn đến nhiều lĩnh vực, từ chăm sóc sức khỏe đến giao thông vận tải. Trong bệnh viện, AI có thể giúp bác sĩ xác định bệnh sớm hơn, đôi khi thậm chí tốt hơn con người. Trong ô tô, AI đang phát triển công nghệ tự lái nhằm mục đích làm cho đường sá an toàn và hiệu quả hơn. Nó cũng giúp các doanh nghiệp tự động hóa các công việc thường ngày. Mặc dù AI mang lại nhiều lợi ích, nó cũng đặt ra những câu hỏi quan trọng về tương lai của nó và cách chúng ta quản lý sự phát triển của nó một cách có trách nhiệm. Hiểu biết về các kiến thức cơ bản của AI giúp chúng ta chuẩn bị và tham gia vào tương lai công nghệ thú vị này."
+}

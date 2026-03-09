@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-7",
+  "title": "My Animal Friends",
+  "level": "a1",
+  "topic": "My Pets",
+  "content": "I have two pets. Their names are Max and Luna. Max is a dog. He is brown and white. Max loves to play. He likes to run in the park. Luna is a cat. She is black and soft. Luna likes to sleep a lot. She sleeps on my bed. Every morning, I feed Max and Luna. I give them food and water. In the afternoon, I play with Max. We throw a ball. I cuddle Luna in the evening. My pets are my best friends. I love them very much.",
+  "vocabulary_highlights": [
+    {
+      "word": "pets",
+      "meaning": "thú cưng"
+    },
+    {
+      "word": "dog",
+      "meaning": "chó"
+    },
+    {
+      "word": "cat",
+      "meaning": "mèo"
+    },
+    {
+      "word": "play",
+      "meaning": "chơi, đùa"
+    },
+    {
+      "word": "run",
+      "meaning": "chạy"
+    },
+    {
+      "word": "sleep",
+      "meaning": "ngủ"
+    },
+    {
+      "word": "feed",
+      "meaning": "cho ăn"
+    },
+    {
+      "word": "friends",
+      "meaning": "bạn bè"
+    }
+  ],
+  "questions": [
+    {
+      "question": "How many pets does the writer have?",
+      "options": [
+        "One",
+        "Two",
+        "Three"
+      ],
+      "answer": "Two",
+      "explanation": "Đoạn văn có ghi: 'I have two pets'."
+    },
+    {
+      "question": "What color is Max?",
+      "options": [
+        "Black",
+        "Brown and white",
+        "White and black"
+      ],
+      "answer": "Brown and white",
+      "explanation": "Đoạn văn có ghi: 'Max is a dog. He is brown and white'."
+    },
+    {
+      "question": "Where does Luna like to sleep?",
+      "options": [
+        "In the park",
+        "On the floor",
+        "On my bed"
+      ],
+      "answer": "On my bed",
+      "explanation": "Đoạn văn có ghi: 'She sleeps on my bed'."
+    }
+  ],
+  "translation": "Tôi có hai thú cưng. Tên của chúng là Max và Luna. Max là một chú chó. Cậu ấy có màu nâu và trắng. Max thích chơi đùa. Cậu ấy thích chạy trong công viên. Luna là một cô mèo. Cô ấy có màu đen và mềm mại. Luna thích ngủ rất nhiều. Cô ấy ngủ trên giường của tôi. Mỗi sáng, tôi cho Max và Luna ăn. Tôi cho chúng thức ăn và nước uống. Vào buổi chiều, tôi chơi với Max. Chúng tôi ném bóng. Tôi ôm ấp Luna vào buổi tối. Các thú cưng của tôi là những người bạn tốt nhất của tôi. Tôi yêu chúng rất nhiều."
+}

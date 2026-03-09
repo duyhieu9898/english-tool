@@ -1,0 +1,67 @@
+{
+  "id": "a1-possessives",
+  "title": "Tính từ & Đại từ sở hữu (Possessives)",
+  "level": "a1",
+  "description": "Học cách nói 'của ai đó' trong tiếng Anh một cách đơn giản nhất! Bài học này sẽ giúp bạn dùng đúng các từ như 'my, your, his, her' và 'mine, yours, his, hers' để nói về vật thuộc sở hữu của ai.",
+  "theory": "Trong tiếng Anh, chúng ta dùng các từ sở hữu để chỉ ra cái gì thuộc về ai đó. Có hai loại chính: \n- **Tính từ sở hữu (Possessive Adjectives):** Luôn đi kèm với một danh từ. Ví dụ: *my book* (sách của tôi), *your car* (xe của bạn).\n- **Đại từ sở hữu (Possessive Pronouns):** Đứng một mình và thay thế cho cả 'tính từ sở hữu + danh từ'. Ví dụ: *The book is mine.* (Cuốn sách là của tôi - thay cho 'my book').",
+  "structures": [
+    {
+      "name": "Tính từ sở hữu + Danh từ",
+      "formula": "Tính từ sở hữu + Danh từ",
+      "example": "This is **my** book. (Đây là sách của tôi.)\nThat is **her** cat. (Đó là con mèo của cô ấy.)"
+    },
+    {
+      "name": "Đại từ sở hữu (đứng một mình)",
+      "formula": "Đại từ sở hữu (thay thế cho tính từ sở hữu + danh từ)",
+      "example": "This book is **mine**. (Cuốn sách này là của tôi.)\nIs that pen **yours**? (Cây bút đó là của bạn phải không?)"
+    }
+  ],
+  "tips": [
+    "💡 **Mẹo 'Kẻ bảo vệ và Kẻ độc lập':**",
+    "- **Tính từ sở hữu** (my, your, his, her...) giống như 'kẻ bảo vệ': luôn cần có một 'người được bảo vệ' (danh từ) đi theo sau nó. Ví dụ: 'my *phone*'.",
+    "- **Đại từ sở hữu** (mine, yours, his, hers...) giống như 'kẻ độc lập': nó đứng một mình và không cần danh từ phía sau. Ví dụ: 'The phone is *mine*'.",
+    "💡 **Mẹo 'S' thường ở cuối':** Hầu hết các đại từ sở hữu đều kết thúc bằng 's' (yours, hers, ours, theirs), trừ 'mine' và 'his'. Rất dễ nhớ đúng không?"
+  ],
+  "practice": [
+    {
+      "question": "This is my dog. _____ name is Max.",
+      "options": [
+        "It's",
+        "Its",
+        "His"
+      ],
+      "answer": "Its",
+      "explanation": "'Its' (tính từ sở hữu) dùng cho vật hoặc động vật, chỉ 'tên của nó'. 'It's' là viết tắt của 'it is'."
+    },
+    {
+      "question": "That red car is not _____. It's mine.",
+      "options": [
+        "your",
+        "yours",
+        "you"
+      ],
+      "answer": "yours",
+      "explanation": "Câu này cần một đại từ sở hữu đứng một mình để chỉ 'của bạn'. 'Your' là tính từ sở hữu và cần danh từ đi sau."
+    },
+    {
+      "question": "She lives with _____ family in a small house.",
+      "options": [
+        "her",
+        "hers",
+        "she"
+      ],
+      "answer": "her",
+      "explanation": "Ở đây cần một tính từ sở hữu đi kèm với danh từ 'family' (gia đình). 'Her' là tính từ sở hữu, 'hers' là đại từ sở hữu."
+    },
+    {
+      "question": "We bought a new house. The house is _____.",
+      "options": [
+        "our",
+        "ours",
+        "we"
+      ],
+      "answer": "ours",
+      "explanation": "Cần một đại từ sở hữu đứng một mình để nói 'ngôi nhà là của chúng tôi'. 'Our' là tính từ sở hữu và cần danh từ theo sau."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-9",
+  "title": "My Cozy Home",
+  "level": "a1",
+  "topic": "My Home",
+  "content": "My name is Lily. I live in a nice house. It is not very big, but it is cozy. I love my home!\n\nMy house has three rooms. There is a living room, a kitchen, and a bedroom. In the living room, I watch TV with my family. We have a soft sofa. The kitchen is where my mom cooks yummy food. I help her sometimes.\n\nMy bedroom is my favorite place. It has a bed, a small table, and a chair. I sleep here every night. I also have a small garden outside. There are pretty flowers in it. I like to play with my dog, Max, in the garden. My home makes me happy.",
+  "vocabulary_highlights": [
+    {
+      "word": "house",
+      "meaning": "ngôi nhà"
+    },
+    {
+      "word": "cozy",
+      "meaning": "ấm cúng"
+    },
+    {
+      "word": "living room",
+      "meaning": "phòng khách"
+    },
+    {
+      "word": "kitchen",
+      "meaning": "nhà bếp"
+    },
+    {
+      "word": "bedroom",
+      "meaning": "phòng ngủ"
+    },
+    {
+      "word": "garden",
+      "meaning": "khu vườn"
+    },
+    {
+      "word": "flowers",
+      "meaning": "bông hoa"
+    },
+    {
+      "word": "happy",
+      "meaning": "vui vẻ"
+    }
+  ],
+  "questions": [
+    {
+      "question": "How many rooms does Lily's house have?",
+      "options": [
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": "Three",
+      "explanation": "Đoạn văn có ghi: 'My house has three rooms'."
+    },
+    {
+      "question": "Where does Lily watch TV?",
+      "options": [
+        "In the kitchen",
+        "In the bedroom",
+        "In the living room"
+      ],
+      "answer": "In the living room",
+      "explanation": "Đoạn văn có ghi: 'In the living room, I watch TV with my family'."
+    },
+    {
+      "question": "What does Lily have outside her house?",
+      "options": [
+        "A big tree",
+        "A small garden",
+        "A swimming pool"
+      ],
+      "answer": "A small garden",
+      "explanation": "Đoạn văn có ghi: 'I also have a small garden outside'."
+    }
+  ],
+  "translation": "Tên tôi là Lily. Tôi sống trong một ngôi nhà đẹp. Nó không quá lớn, nhưng rất ấm cúng. Tôi yêu ngôi nhà của mình!\n\nNhà tôi có ba phòng. Có một phòng khách, một nhà bếp và một phòng ngủ. Trong phòng khách, tôi xem TV với gia đình mình. Chúng tôi có một chiếc ghế sofa mềm mại. Nhà bếp là nơi mẹ tôi nấu những món ăn ngon. Thỉnh thoảng tôi giúp mẹ.\n\nPhòng ngủ là nơi tôi yêu thích nhất. Nó có một chiếc giường, một cái bàn nhỏ và một cái ghế. Tôi ngủ ở đây mỗi đêm. Tôi cũng có một khu vườn nhỏ bên ngoài. Trong vườn có những bông hoa xinh đẹp. Tôi thích chơi với chú chó Max của mình trong vườn. Ngôi nhà của tôi làm tôi hạnh phúc."
+}

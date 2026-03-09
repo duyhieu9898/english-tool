@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-18",
+  "title": "My Wonderful City",
+  "level": "a1",
+  "topic": "My City",
+  "content": "I live in a city. My city is big and beautiful. There are many houses and tall buildings. I live in a yellow house with my family. \nIn my city, there is a big park. I like to play there with my friends. We ride our bikes in the park. There is also a school. I go to school every day. \nMany people live here. They work and study. There are buses and cars on the streets. I like my city very much. It is my home.",
+  "vocabulary_highlights": [
+    {
+      "word": "city",
+      "meaning": "thành phố"
+    },
+    {
+      "word": "beautiful",
+      "meaning": "đẹp"
+    },
+    {
+      "word": "buildings",
+      "meaning": "các tòa nhà"
+    },
+    {
+      "word": "park",
+      "meaning": "công viên"
+    },
+    {
+      "word": "friends",
+      "meaning": "bạn bè"
+    },
+    {
+      "word": "ride",
+      "meaning": "đạp xe/đi xe"
+    },
+    {
+      "word": "streets",
+      "meaning": "các con đường"
+    },
+    {
+      "word": "home",
+      "meaning": "nhà/quê hương"
+    }
+  ],
+  "questions": [
+    {
+      "question": "Is the city small or big?",
+      "options": [
+        "small",
+        "big",
+        "very small"
+      ],
+      "answer": "big",
+      "explanation": "Đoạn văn có ghi: 'My city is big and beautiful.' (Thành phố của tôi to và đẹp.)"
+    },
+    {
+      "question": "What color is the house of the person?",
+      "options": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "answer": "yellow",
+      "explanation": "Đoạn văn có ghi: 'I live in a yellow house with my family.' (Tôi sống trong một ngôi nhà màu vàng cùng gia đình.)"
+    },
+    {
+      "question": "Where does the person play with friends?",
+      "options": [
+        "at school",
+        "in the park",
+        "on the streets"
+      ],
+      "answer": "in the park",
+      "explanation": "Đoạn văn có ghi: 'I like to play there [in the park] with my friends.' (Tôi thích chơi ở đó [trong công viên] với bạn bè của mình.)"
+    }
+  ],
+  "translation": "Tôi sống ở một thành phố. Thành phố của tôi to và đẹp. Có nhiều ngôi nhà và các tòa nhà cao tầng. Tôi sống trong một ngôi nhà màu vàng cùng gia đình. \nTrong thành phố của tôi, có một công viên lớn. Tôi thích chơi ở đó với bạn bè của mình. Chúng tôi đạp xe trong công viên. Cũng có một trường học. Tôi đi học mỗi ngày. \nNhiều người sống ở đây. Họ làm việc và học tập. Có xe buýt và ô tô trên đường phố. Tôi rất thích thành phố của tôi. Đó là nhà của tôi."
+}

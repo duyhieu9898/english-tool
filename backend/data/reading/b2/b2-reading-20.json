@@ -1,0 +1,74 @@
+{
+  "id": "b2-reading-20",
+  "title": "Genetic Engineering: Unlocking Life's Code",
+  "level": "b2",
+  "topic": "Genetic Engineering: Possibilities and Perils",
+  "content": "Genetic engineering, often referred to as gene editing, is a revolutionary scientific field that involves directly manipulating an organism's DNA, the fundamental building block of life. By altering, inserting, or deleting specific genes, scientists can modify the characteristics of plants, animals, and even humans. This technology holds immense promise for addressing some of humanity's most pressing challenges, from curing diseases to improving food security, but it also raises profound ethical and safety concerns.\n\nOne of the most exciting possibilities lies in medicine. Gene therapy offers hope for eradicating inherited diseases like cystic fibrosis, Huntington's disease, and sickle cell anemia by correcting the faulty genes responsible for them. Researchers are also exploring how genetic engineering could enhance the immune system to fight cancers more effectively or even prevent viral infections. The futuristic concept of \"designer babies,\" where embryos could be genetically modified to possess desirable traits or be free from predispositions to certain illnesses, is already a subject of intense debate, highlighting both its potential and its moral complexities.\n\nIn agriculture, genetic engineering has already yielded significant advancements through genetically modified organisms (GMOs). Crops can be engineered to be resistant to pests and herbicides, withstand harsh environmental conditions like drought or extreme temperatures, and even have enhanced nutritional value. This could lead to higher yields, reduced pesticide use, and greater food security for a growing global population. For example, 'Golden Rice' was developed to produce beta-carotene, a precursor to Vitamin A, addressing deficiency in many developing countries.\n\nHowever, the powerful capabilities of genetic engineering come with a set of serious perils and ethical dilemmas. A primary concern is the potential for unforeseen consequences. Altering the genetic makeup of organisms could have unintended effects on the environment, disrupting ecological balance or creating new superweeds or superbugs. There are also worries about the long-term health impacts of consuming genetically modified foods, though extensive research has largely found them to be safe.\n\nEthically, the debate is even more complex. Modifying human embryos or germline cells (which pass changes to future generations) raises questions about human integrity and identity. Critics argue it could lead to a new form of eugenics, where genetic advantages become a commodity, exacerbating social inequalities. Ensuring equitable access to such advanced therapies, should they become widespread, is another significant challenge. Society must carefully grapple with where to draw the line between therapeutic intervention and enhancement.\n\nIn conclusion, genetic engineering stands as a testament to human ingenuity, offering transformative solutions to age-old problems. Yet, its incredible power demands rigorous scientific oversight, robust ethical frameworks, and an ongoing public dialogue. Navigating its possibilities while mitigating its perils will be one of the defining challenges of the 21st century.",
+  "vocabulary_highlights": [
+    {
+      "word": "manipulating",
+      "meaning": "thao túng, điều khiển"
+    },
+    {
+      "word": "eradicating",
+      "meaning": "loại bỏ, tiêu diệt"
+    },
+    {
+      "word": "predispositions",
+      "meaning": "khuynh hướng, xu hướng mắc bệnh"
+    },
+    {
+      "word": "yielded",
+      "meaning": "mang lại, sản sinh ra"
+    },
+    {
+      "word": "ecological balance",
+      "meaning": "cân bằng sinh thái"
+    },
+    {
+      "word": "unforeseen consequences",
+      "meaning": "hậu quả không lường trước"
+    },
+    {
+      "word": "equitable access",
+      "meaning": "tiếp cận công bằng"
+    },
+    {
+      "word": "grapple with",
+      "meaning": "đối phó, vật lộn với"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the primary focus of genetic engineering, according to the passage?",
+      "options": [
+        "a) Studying ancient civilizations.",
+        "b) Directly manipulating an organism's DNA.",
+        "c) Exploring outer space."
+      ],
+      "answer": "b) Directly manipulating an organism's DNA.",
+      "explanation": "Đoạn văn mở đầu bằng cách định nghĩa kỹ thuật di truyền là \"trực tiếp thao túng DNA của một sinh vật.\""
+    },
+    {
+      "question": "Which of the following is NOT mentioned as a potential benefit of genetic engineering in agriculture?",
+      "options": [
+        "a) Crops resistant to pests.",
+        "b) Enhanced nutritional value in foods.",
+        "c) Creating new types of farm animals for pets."
+      ],
+      "answer": "c) Creating new types of farm animals for pets.",
+      "explanation": "Đoạn văn đề cập đến cây trồng kháng sâu bệnh, giá trị dinh dưỡng được cải thiện, nhưng không nói về việc tạo ra các loại động vật nuôi mới cho mục đích làm thú cưng."
+    },
+    {
+      "question": "What is a significant ethical concern raised about genetic engineering in humans?",
+      "options": [
+        "a) Its potential to cause global warming.",
+        "b) The possibility of leading to a new form of eugenics.",
+        "c) Its high cost making it inaccessible to scientists."
+      ],
+      "answer": "b) The possibility of leading to a new form of eugenics.",
+      "explanation": "Đoạn văn nêu rõ mối lo ngại rằng kỹ thuật di truyền có thể \"dẫn đến một hình thức ưu sinh mới.\""
+    }
+  ],
+  "translation": "Kỹ thuật di truyền: Khả năng và Nguy cơ\n\nKỹ thuật di truyền, thường được gọi là chỉnh sửa gen, là một lĩnh vực khoa học mang tính cách mạng liên quan đến việc thao túng trực tiếp DNA của một sinh vật, khối vật liệu xây dựng cơ bản của sự sống. Bằng cách thay đổi, chèn hoặc xóa các gen cụ thể, các nhà khoa học có thể điều chỉnh đặc tính của thực vật, động vật và thậm chí cả con người. Công nghệ này hứa hẹn rất nhiều trong việc giải quyết một số thách thức cấp bách nhất của nhân loại, từ chữa bệnh đến cải thiện an ninh lương thực, nhưng nó cũng đặt ra những lo ngại sâu sắc về đạo đức và an toàn.\n\nMột trong những khả năng thú vị nhất nằm trong lĩnh vực y học. Liệu pháp gen mang lại hy vọng xóa bỏ các bệnh di truyền như xơ nang, bệnh Huntington và thiếu máu hồng cầu hình liềm bằng cách sửa chữa các gen lỗi chịu trách nhiệm gây ra chúng. Các nhà nghiên cứu cũng đang khám phá cách kỹ thuật di truyền có thể tăng cường hệ thống miễn dịch để chống lại ung thư hiệu quả hơn hoặc thậm chí ngăn ngừa nhiễm virus. Khái niệm tương lai về \"em bé thiết kế\" (designer babies), nơi phôi thai có thể được biến đổi gen để sở hữu những đặc điểm mong muốn hoặc không có khuynh hướng mắc một số bệnh nhất định, đã là chủ đề tranh luận gay gắt, làm nổi bật cả tiềm năng lẫn sự phức tạp về mặt đạo đức của nó.\n\nTrong nông nghiệp, kỹ thuật di truyền đã mang lại những tiến bộ đáng kể thông qua các sinh vật biến đổi gen (GMOs). Cây trồng có thể được thiết kế để kháng sâu bệnh và thuốc diệt cỏ, chịu được các điều kiện môi trường khắc nghiệt như hạn hán hoặc nhiệt độ cực đoan, và thậm chí có giá trị dinh dưỡng nâng cao. Điều này có thể dẫn đến năng suất cao hơn, giảm sử dụng thuốc trừ sâu và tăng cường an ninh lương thực cho dân số toàn cầu đang phát triển. Ví dụ, 'Gạo Vàng' được phát triển để sản xuất beta-carotene, tiền chất của Vitamin A, giải quyết tình trạng thiếu hụt ở nhiều nước đang phát triển.\n\nTuy nhiên, những khả năng mạnh mẽ của kỹ thuật di truyền đi kèm với một loạt các nguy cơ và tình thế khó xử về đạo đức nghiêm trọng. Mối lo ngại hàng đầu là tiềm năng về những hậu quả không lường trước. Thay đổi cấu trúc di truyền của các sinh vật có thể có những tác động không mong muốn đến môi trường, phá vỡ cân bằng sinh thái hoặc tạo ra các loại siêu cỏ dại hay siêu vi khuẩn mới. Cũng có những lo lắng về tác động sức khỏe lâu dài của việc tiêu thụ thực phẩm biến đổi gen, mặc dù nghiên cứu rộng rãi đã phần lớn cho thấy chúng an toàn.\n\nVề mặt đạo đức, cuộc tranh luận thậm chí còn phức tạp hơn. Việc thay đổi phôi thai người hoặc tế bào mầm (phần sẽ truyền những thay đổi cho các thế hệ tương lai) đặt ra câu hỏi về tính toàn vẹn và bản sắc của con người. Các nhà phê bình cho rằng nó có thể dẫn đến một hình thức ưu sinh mới, nơi lợi thế di truyền trở thành một mặt hàng, làm trầm trọng thêm bất bình đẳng xã hội. Đảm bảo tiếp cận công bằng các liệu pháp tiên tiến như vậy, nếu chúng trở nên phổ biến, là một thách thức đáng kể khác. Xã hội phải cẩn thận cân nhắc ranh giới giữa can thiệp điều trị và tăng cường khả năng.\n\nTóm lại, kỹ thuật di truyền là minh chứng cho sự khéo léo của con người, mang đến những giải pháp đột phá cho các vấn đề cũ. Tuy nhiên, sức mạnh đáng kinh ngạc của nó đòi hỏi sự giám sát khoa học chặt chẽ, các khuôn khổ đạo đức vững chắc và một cuộc đối thoại công khai liên tục. Điều hướng những khả năng của nó đồng thời giảm thiểu những nguy hiểm sẽ là một trong những thách thức định hình thế kỷ 21."
+}

@@ -1,0 +1,75 @@
+{
+  "id": "c1-participle-clauses",
+  "title": "Mệnh đề phân từ (Participle clauses)",
+  "level": "c1",
+  "description": "Mệnh đề phân từ là công cụ mạnh mẽ giúp bạn rút gọn câu, làm cho văn phong trở nên tinh tế, trang trọng và mượt mà hơn. Chúng thường được dùng để diễn tả các hành động xảy ra đồng thời, trước hoặc sau hành động chính, hoặc giải thích nguyên nhân/kết quả mà không cần lặp lại chủ ngữ.",
+  "theory": "Tưởng tượng bạn có hai câu có cùng chủ ngữ và muốn ghép chúng lại thật gọn. Mệnh đề phân từ giúp bạn 'nén' một mệnh đề phụ (có cả chủ ngữ và động từ) thành một cụm từ ngắn gọn hơn, chỉ dùng V-ing (hiện tại phân từ) hoặc V3/ed (quá khứ phân từ). Nó giúp câu văn không bị lặp chủ ngữ và nghe tự nhiên hơn nhiều.",
+  "structures": [
+    {
+      "name": "Hiện tại phân từ (Present Participle) - V-ing",
+      "formula": "V-ing + ..., S + V ...",
+      "example": "Feeling tired, I went to bed early. (Cảm thấy mệt, tôi đi ngủ sớm. - Diễn tả nguyên nhân hoặc hành động đồng thời, chủ động)"
+    },
+    {
+      "name": "Quá khứ phân từ (Past Participle) - V3/ed",
+      "formula": "V3/ed + ..., S + V ...",
+      "example": "Built in the 15th century, the castle attracts many tourists. (Được xây vào thế kỷ 15, lâu đài thu hút nhiều khách du lịch. - Diễn tả bị động, thường là nguyên nhân hoặc mô tả)"
+    },
+    {
+      "name": "Hoàn thành phân từ (Perfect Participle) - Having V3/ed",
+      "formula": "Having V3/ed + ..., S + V ...",
+      "example": "Having finished her work, she went out for a walk. (Sau khi hoàn thành công việc, cô ấy ra ngoài đi dạo. - Nhấn mạnh hành động xảy ra trước hành động chính)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo 'Chủ động/Bị động' thần tốc:",
+    "- Dùng V-ing nếu chủ ngữ trong mệnh đề phân từ THỰC HIỆN hành động (chủ động).",
+    "- Dùng V3/ed nếu chủ ngữ trong mệnh đề phân từ BỊ TÁC ĐỘNG bởi hành động (bị động).",
+    "💡 Mẹo 'Trước sau rõ ràng' với Having V3/ed:",
+    "- 'Having V3/ed' luôn nói về hành động ĐÃ XONG XUÔI TRƯỚC khi hành động chính xảy ra. Như một cách kể chuyện 'Sau khi làm xong cái A, thì tôi làm cái B'.",
+    "💡 Mẹo 'Thử thay bằng liên từ':",
+    "- Nếu phân vân, hãy thử mở rộng mệnh đề phân từ thành mệnh đề phụ với 'When, While, Because, As...' Nếu ý nghĩa không đổi, bạn đã dùng đúng!"
+  ],
+  "practice": [
+    {
+      "question": "___ the report, I noticed several errors.",
+      "options": [
+        "Reading",
+        "Read",
+        "To read"
+      ],
+      "answer": "Reading",
+      "explanation": "'Reading' là hiện tại phân từ (V-ing). Nó diễn tả hành động chủ động ('tôi' đang đọc) và xảy ra đồng thời với việc 'tôi' nhận thấy lỗi."
+    },
+    {
+      "question": "___ by the beautiful scenery, we decided to stay for another day.",
+      "options": [
+        "Impressing",
+        "Impressed",
+        "To impress"
+      ],
+      "answer": "Impressed",
+      "explanation": "'Impressed' là quá khứ phân từ (V3/ed). Nó diễn tả trạng thái bị động ('chúng tôi' bị ấn tượng bởi) và là nguyên nhân cho quyết định ở lại."
+    },
+    {
+      "question": "___ all the preparations, they started the ceremony.",
+      "options": [
+        "Making",
+        "Made",
+        "Having made"
+      ],
+      "answer": "Having made",
+      "explanation": "'Having made' là hoàn thành phân từ. Nó nhấn mạnh rằng hành động chuẩn bị đã được hoàn tất XONG XUÔI trước khi buổi lễ bắt đầu."
+    },
+    {
+      "question": "The old house, ___ on the hill, offers a magnificent view.",
+      "options": [
+        "standing",
+        "stood",
+        "having stood"
+      ],
+      "answer": "standing",
+      "explanation": "'Standing' là hiện tại phân từ (V-ing). Nó mô tả trạng thái chủ động của ngôi nhà (đang đứng/nằm) trên đồi, tương tự như 'which stands'."
+    }
+  ]
+}

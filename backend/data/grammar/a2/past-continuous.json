@@ -1,0 +1,75 @@
+{
+  "id": "a2-past-continuous",
+  "title": "Thì Quá Khứ Tiếp Diễn (Past Continuous)",
+  "level": "a2",
+  "description": "Thì này giúp bạn kể về những gì ĐANG XẢY RA tại một thời điểm CỤ THỂ trong quá khứ, hoặc khi một hành động đang diễn ra thì bị một hành động khác xen vào.",
+  "theory": "Chúng ta dùng Thì Quá Khứ Tiếp Diễn để nói về: \n1. Một hành động đang diễn ra tại một thời điểm cụ thể trong quá khứ. (Ví dụ: Tối qua lúc 8 giờ, tôi đang xem phim).\n2. Một hành động dài đang diễn ra thì bị một hành động ngắn khác cắt ngang. (Ví dụ: Khi tôi đang tắm thì điện thoại reo).",
+  "structures": [
+    {
+      "name": "Khẳng định (+)",
+      "formula": "S + was / were + V-ing",
+      "example": "I was studying at 8 PM last night. (Tôi đang học lúc 8 giờ tối qua.)\nThey were playing football when it started to rain. (Họ đang chơi bóng đá thì trời bắt đầu mưa.)"
+    },
+    {
+      "name": "Phủ định (-)",
+      "formula": "S + was / were + not + V-ing",
+      "example": "She wasn't watching TV this morning. (Sáng nay cô ấy không đang xem TV.)\nWe weren't listening to music. (Chúng tôi không đang nghe nhạc.)"
+    },
+    {
+      "name": "Nghi vấn (?) (Yes/No questions)",
+      "formula": "Was / Were + S + V-ing?",
+      "example": "Were you sleeping at midnight? (Bạn có đang ngủ lúc nửa đêm không?)\nWas he working yesterday afternoon? (Chiều hôm qua anh ấy có đang làm việc không?)"
+    },
+    {
+      "name": "Nghi vấn (?) (Wh-questions)",
+      "formula": "Wh-word + was / were + S + V-ing?",
+      "example": "What were you doing when I called? (Bạn đang làm gì khi tôi gọi?)\nWhere was she going at that time? (Lúc đó cô ấy đang đi đâu?)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ nhanh 'Was/Were + ING': Cứ thấy 'đang' xảy ra trong quá khứ thì nhớ ngay 'was/were' đi kèm với động từ thêm '-ing'.",
+    "💡 Nhớ dấu hiệu thời gian: Thường đi kèm các mốc thời gian cụ thể trong quá khứ (at 7 PM yesterday, this time last week) hoặc liên từ 'while' (trong khi), 'when' (khi)."
+  ],
+  "practice": [
+    {
+      "question": "She ___ (read) a book when I saw her.",
+      "options": [
+        "was reading",
+        "is reading",
+        "read"
+      ],
+      "answer": "was reading",
+      "explanation": "Hành động 'read' (đọc sách) đang diễn ra (hành động dài) thì hành động 'saw' (nhìn thấy) cắt ngang (hành động ngắn). Chủ ngữ 'She' đi với 'was'."
+    },
+    {
+      "question": "What ___ you ___ at 10 AM yesterday?",
+      "options": [
+        "were / doing",
+        "are / doing",
+        "did / do"
+      ],
+      "answer": "were / doing",
+      "explanation": "Đây là câu hỏi thì Quá Khứ Tiếp Diễn với chủ ngữ 'you' và mốc thời gian cụ thể trong quá khứ '10 AM yesterday'. Công thức là 'Wh-word + were + S + V-ing'."
+    },
+    {
+      "question": "They ___ (not/work) while the boss was away.",
+      "options": [
+        "weren't working",
+        "wasn't working",
+        "didn't work"
+      ],
+      "answer": "weren't working",
+      "explanation": "Hành động 'not work' (không làm việc) đang tiếp diễn trong quá khứ khi sếp vắng mặt. Chủ ngữ 'They' là số nhiều nên dùng 'were not' (weren't)."
+    },
+    {
+      "question": "While I ___ (walk) home, I saw an accident.",
+      "options": [
+        "was walking",
+        "am walking",
+        "walked"
+      ],
+      "answer": "was walking",
+      "explanation": "Hành động 'walk' (đi bộ) đang diễn ra (hành động dài) thì hành động 'saw' (nhìn thấy) xen vào (hành động ngắn). Chủ ngữ 'I' đi với 'was'."
+    }
+  ]
+}

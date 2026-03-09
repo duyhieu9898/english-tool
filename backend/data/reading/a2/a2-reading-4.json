@@ -1,0 +1,74 @@
+{
+  "id": "a2-reading-4",
+  "title": "Technology All Around Us",
+  "level": "a2",
+  "topic": "Technology in Daily Life",
+  "content": "Technology is everywhere in our daily lives. We use it from morning until night. Many people wake up with their smartphone alarm. Then, they might check messages or the weather on the phone. After breakfast, some go to work or school. They might use a computer for studying or working. The internet helps them find information quickly.\n\nIn the kitchen, we have refrigerators to keep food fresh. Some people use smart speakers to play music or ask questions. For lunch, maybe you use a microwave to heat your food. In the afternoon, you might watch TV or play games on a tablet. For dinner, perhaps you order food online using an app. Before bed, you might read an e-book on a tablet or watch a video on your phone. Technology makes our lives easier and more connected. It helps us learn, work, and relax every day.",
+  "vocabulary_highlights": [
+    {
+      "word": "smartphone",
+      "meaning": "điện thoại thông minh"
+    },
+    {
+      "word": "alarm",
+      "meaning": "chuông báo thức"
+    },
+    {
+      "word": "internet",
+      "meaning": "internet / mạng"
+    },
+    {
+      "word": "refrigerator",
+      "meaning": "tủ lạnh"
+    },
+    {
+      "word": "microwave",
+      "meaning": "lò vi sóng"
+    },
+    {
+      "word": "tablet",
+      "meaning": "máy tính bảng"
+    },
+    {
+      "word": "order online",
+      "meaning": "đặt hàng trực tuyến"
+    },
+    {
+      "word": "connected",
+      "meaning": "kết nối"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What do many people use to wake up in the morning?",
+      "options": [
+        "a) A TV",
+        "b) A smartphone alarm",
+        "c) A computer"
+      ],
+      "answer": "b) A smartphone alarm",
+      "explanation": "Đoạn văn có ghi: 'Many people wake up with their smartphone alarm'."
+    },
+    {
+      "question": "What helps people find information quickly?",
+      "options": [
+        "a) A refrigerator",
+        "b) A microwave",
+        "c) The internet"
+      ],
+      "answer": "c) The internet",
+      "explanation": "Đoạn văn nói: 'The internet helps them find information quickly'."
+    },
+    {
+      "question": "How does technology make our lives?",
+      "options": [
+        "a) More difficult and separate",
+        "b) Easier and more connected",
+        "c) Longer and quieter"
+      ],
+      "answer": "b) Easier and more connected",
+      "explanation": "Đoạn văn kết luận: 'Technology makes our lives easier and more connected'."
+    }
+  ],
+  "translation": "Công nghệ có mặt ở khắp mọi nơi trong cuộc sống hàng ngày của chúng ta. Chúng ta sử dụng nó từ sáng đến tối. Nhiều người thức dậy bằng báo thức trên điện thoại thông minh của họ. Sau đó, họ có thể kiểm tra tin nhắn hoặc thời tiết trên điện thoại. Sau bữa sáng, một số người đi làm hoặc đi học. Họ có thể sử dụng máy tính để học tập hoặc làm việc. Internet giúp họ tìm thông tin nhanh chóng.\n\nTrong bếp, chúng ta có tủ lạnh để giữ thực phẩm tươi ngon. Một số người sử dụng loa thông minh để nghe nhạc hoặc đặt câu hỏi. Đối với bữa trưa, có thể bạn dùng lò vi sóng để hâm nóng thức ăn. Vào buổi chiều, bạn có thể xem TV hoặc chơi trò chơi trên máy tính bảng. Đối với bữa tối, có lẽ bạn đặt đồ ăn trực tuyến bằng một ứng dụng. Trước khi đi ngủ, bạn có thể đọc sách điện tử trên máy tính bảng hoặc xem video trên điện thoại. Công nghệ làm cho cuộc sống của chúng ta dễ dàng hơn và kết nối hơn. Nó giúp chúng ta học tập, làm việc và thư giãn mỗi ngày."
+}

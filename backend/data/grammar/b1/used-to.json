@@ -1,0 +1,70 @@
+{
+  "id": "b1-used-to",
+  "title": "Cấu trúc Used to (Thói quen trong quá khứ)",
+  "level": "b1",
+  "description": "Bạn muốn kể về những thói quen, hành động, hoặc tình trạng đã từng xảy ra thường xuyên trong quá khứ nhưng bây giờ thì không còn nữa? Cấu trúc 'used to' là công cụ hoàn hảo dành cho bạn! Bài học này sẽ giúp bạn dùng 'used to' một cách ĐƠN GIẢN, DỄ HIỂU và thực hành ngay để nhớ lâu!",
+  "theory": "'Used to' dùng để nói về những thói quen, hành động lặp lại, hoặc một tình trạng (state) đã từng đúng trong quá khứ, nhưng ở hiện tại thì đã thay đổi hoặc không còn nữa. Nó không diễn tả một hành động cụ thể xảy ra một lần trong quá khứ, mà là một sự việc có tính kéo dài, lặp lại.",
+  "structures": [
+    {
+      "name": "Khẳng định (+)",
+      "formula": "S + used to + V (nguyên mẫu)",
+      "example": "I used to play basketball every day after school. (Tôi từng chơi bóng rổ mỗi ngày sau giờ học.)"
+    },
+    {
+      "name": "Phủ định (-)",
+      "formula": "S + didn't use to + V (nguyên mẫu)",
+      "example": "She didn't use to like spicy food. (Cô ấy từng không thích đồ ăn cay.)"
+    },
+    {
+      "name": "Nghi vấn (?)",
+      "formula": "Did + S + use to + V (nguyên mẫu)?",
+      "example": "Did you use to live in that big house? (Bạn từng sống trong ngôi nhà lớn đó phải không?)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo 'Quên D': Khi dùng trợ động từ 'did' (trong câu hỏi hoặc phủ định 'didn't'), chữ 'd' trong 'used' sẽ biến mất, chỉ còn 'use to' thôi nhé! (Ví dụ: didn't use to, Did you use to...?)",
+    "💡 Mẹo 'Luôn V_nguyên mẫu': Sau 'used to' (hoặc 'use to'), động từ chính luôn ở dạng nguyên mẫu (không 's', không 'ed', không 'ing'). Cứ 'used to + V' là chuẩn!"
+  ],
+  "practice": [
+    {
+      "question": "My grandmother _____ tell me stories when I was a child.",
+      "options": [
+        "used to",
+        "use to",
+        "is used to"
+      ],
+      "answer": "used to",
+      "explanation": "Câu này diễn tả thói quen trong quá khứ của bà nên ta dùng cấu trúc khẳng định 'used to + V nguyên mẫu'."
+    },
+    {
+      "question": "He _____ smoke, but he quit last year.",
+      "options": [
+        "didn't used to",
+        "didn't use to",
+        "isn't used to"
+      ],
+      "answer": "didn't use to",
+      "explanation": "Đây là câu phủ định. Khi dùng 'didn't', 'used to' sẽ chuyển thành 'use to' (bỏ 'd')."
+    },
+    {
+      "question": "_____ you _____ wear glasses when you were younger?",
+      "options": [
+        "Did / used to",
+        "Did / use to",
+        "Do / use to"
+      ],
+      "answer": "Did / use to",
+      "explanation": "Đây là câu hỏi, nên ta dùng trợ động từ 'Did' và 'use to' (không có 'd')."
+    },
+    {
+      "question": "They _____ have a dog, but now they have two cats.",
+      "options": [
+        "used to",
+        "use to",
+        "are used to"
+      ],
+      "answer": "used to",
+      "explanation": "Câu này nói về một tình trạng đã từng đúng trong quá khứ ('từng có một con chó') nhưng bây giờ đã thay đổi, vậy dùng 'used to'."
+    }
+  ]
+}

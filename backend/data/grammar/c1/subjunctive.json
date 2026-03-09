@@ -1,0 +1,78 @@
+{
+  "id": "c1-subjunctive",
+  "title": "Thức giả định (The Subjunctive) - Nâng tầm câu nói",
+  "level": "c1",
+  "description": "Thức giả định giúp bạn thể hiện mong muốn, đề nghị, yêu cầu, hoặc điều kiện không có thật một cách trang trọng, lịch sự và 'ngầu' hơn. Nó làm câu văn của bạn trở nên tinh tế và chuyên nghiệp hơn rất nhiều!",
+  "theory": "Thức giả định (Subjunctive) là một hình thái đặc biệt của động từ (thường là dạng nguyên mẫu không 'to', hoặc 'were' thay vì 'was') được dùng để diễn tả các tình huống KHÔNG CÓ THẬT, MONG MUỐN, YÊU CẦU, LỜI KHUYÊN, hoặc SỰ CẦN THIẾT. Mục đích là để câu nói trang trọng và mang tính chất 'giả định' hơn là khẳng định một sự thật.",
+  "structures": [
+    {
+      "name": "Cấu trúc 1: Yêu cầu, Đề nghị, Quan trọng (V/Adj + that + S + V-nguyên mẫu)",
+      "formula": "S1 + V (suggest, demand, recommend, advise, insist...) + that + S2 + V (nguyên mẫu không 'to')",
+      "example": "It is crucial that she arrive on time. (Điều quan trọng là cô ấy phải đến đúng giờ.)\nThey requested that he submit the report by Friday. (Họ yêu cầu anh ấy nộp báo cáo trước thứ Sáu.)"
+    },
+    {
+      "name": "Cấu trúc 2: Điều ước không có thật (Wish / If only)",
+      "formula": "S + wish(es) / If only + S + V (quá khứ đơn hoặc quá khứ hoàn thành)",
+      "example": "I wish I were taller. (Tôi ước tôi cao hơn.)\nIf only I had known the truth. (Giá mà tôi đã biết sự thật.)"
+    },
+    {
+      "name": "Cấu trúc 3: Như thể là (As if / As though)",
+      "formula": "S1 + V + as if / as though + S2 + V (quá khứ đơn hoặc were)",
+      "example": "He acts as if he knew everything. (Anh ấy hành động như thể anh ấy biết mọi thứ.)\nShe spoke as though she were the boss. (Cô ấy nói chuyện như thể cô ấy là sếp vậy.)"
+    },
+    {
+      "name": "Cấu trúc 4: Đã đến lúc (It's time / It's high time)",
+      "formula": "It's (high) time + S + V (quá khứ đơn)",
+      "example": "It's time we went home. (Đã đến lúc chúng ta về nhà rồi.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo 1: 'Nhất quán' với V-nguyên mẫu, 'biến hóa' với WERE!",
+    "- Khi giả định yêu cầu/quan trọng (sau suggest, demand, it's vital...), động từ theo sau THAT luôn là nguyên mẫu không 'to' (V_inf), dù chủ ngữ là gì (he, she, it...).",
+    "- Khi giả định không có thật (ước, như thể), 'to be' luôn là 'were' (kể cả với I, he, she, it).",
+    "💡 Mẹo 2: Subjunctive = Sang trọng & Trang trọng.",
+    "- Thức giả định thường dùng trong văn viết, phát biểu trang trọng, hoặc khi muốn thể hiện sự lịch sự cao độ. Trong giao tiếp hàng ngày, người bản xứ thường dùng cách nói đơn giản hơn (ví dụ: 'I suggest that you should go' thay vì 'I suggest that you go')."
+  ],
+  "practice": [
+    {
+      "question": "The committee suggested that he ______ more responsibility.",
+      "options": [
+        "takes",
+        "take",
+        "took"
+      ],
+      "answer": "take",
+      "explanation": "Sau động từ 'suggest' trong cấu trúc giả định (yêu cầu/đề nghị), động từ theo sau 'that' phải là nguyên mẫu không 'to', bất kể chủ ngữ là gì (he, she, it đều dùng 'take')."
+    },
+    {
+      "question": "I wish I ______ rich.",
+      "options": [
+        "am",
+        "was",
+        "were"
+      ],
+      "answer": "were",
+      "explanation": "Trong câu điều ước không có thật ở hiện tại với 'wish', động từ 'to be' luôn dùng 'were' cho mọi chủ ngữ (I, he, she, it đều dùng 'were')."
+    },
+    {
+      "question": "It is essential that every student ______ actively in the discussion.",
+      "options": [
+        "participates",
+        "participate",
+        "participated"
+      ],
+      "answer": "participate",
+      "explanation": "Khi diễn tả sự cần thiết, quan trọng (essential), động từ theo sau 'that' phải ở dạng nguyên mẫu không 'to', bất kể chủ ngữ là gì."
+    },
+    {
+      "question": "He speaks as if he ______ the expert on the subject.",
+      "options": [
+        "is",
+        "was",
+        "were"
+      ],
+      "answer": "were",
+      "explanation": "Trong cấu trúc 'as if' (như thể là) diễn tả điều không có thật, động từ 'to be' luôn dùng 'were' cho mọi chủ ngữ."
+    }
+  ]
+}

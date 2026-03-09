@@ -1,0 +1,77 @@
+{
+  "id": "a2-modals-obligation",
+  "title": "Động từ khuyết thiếu (Must, Have to, Should)",
+  "level": "a2",
+  "description": "Trong bài học này, chúng ta sẽ học cách dùng các động từ 'must', 'have to', và 'should' để nói về những việc 'phải làm', 'cần làm' hay 'nên làm' trong tiếng Anh. Đây là những từ rất quan trọng để diễn đạt nghĩa vụ, sự cần thiết hoặc lời khuyên.",
+  "theory": "Các động từ 'must', 'have to' và 'should' đều dùng để diễn tả sự bắt buộc hoặc lời khuyên, nhưng chúng có mức độ và ngữ cảnh sử dụng khác nhau:\n-   **Must**: Diễn tả một nghĩa vụ mạnh mẽ, cấp bách, hoặc một quy tắc, luật lệ. Thường là điều người nói tự cảm thấy cần làm hoặc một quy định chung.\n-   **Have to**: Diễn tả một nghĩa vụ mạnh mẽ, nhưng thường là do hoàn cảnh bên ngoài, một quy định hoặc luật lệ bắt buộc nào đó áp đặt.\n-   **Should**: Diễn tả lời khuyên, gợi ý, hoặc một nghĩa vụ nhẹ nhàng. Nó không mang tính bắt buộc mạnh như 'must' hay 'have to'.",
+  "structures": [
+    {
+      "name": "MUST (Phải làm gì - Nghĩa vụ mạnh, nội tại/quy tắc)",
+      "formula": "S + must + V (nguyên mẫu)",
+      "example": "You must wear a seatbelt in the car. (Bạn phải thắt dây an toàn trong ô tô.)"
+    },
+    {
+      "name": "HAVE TO (Phải làm gì - Nghĩa vụ do hoàn cảnh bên ngoài)",
+      "formula": "S + have/has to + V (nguyên mẫu)",
+      "example": "I have to work tomorrow, so I can't go out. (Tôi phải làm việc ngày mai, nên tôi không thể đi chơi.)"
+    },
+    {
+      "name": "SHOULD (Nên làm gì - Lời khuyên, gợi ý)",
+      "formula": "S + should + V (nguyên mẫu)",
+      "example": "You should eat more vegetables. (Bạn nên ăn nhiều rau hơn.)"
+    },
+    {
+      "name": "MUSTN'T (Không được làm gì - Cấm đoán)",
+      "formula": "S + mustn't + V (nguyên mẫu)",
+      "example": "You mustn't park here. It's forbidden. (Bạn không được đỗ xe ở đây. Điều đó bị cấm.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ nhanh sự khác biệt:",
+    "-   **MUST**: Hãy nghĩ 'M' trong MUST là 'Mệnh lệnh' (bản thân hoặc quy tắc). Nghĩa vụ mạnh, không thể từ chối.",
+    "-   **HAVE TO**: Hãy nghĩ 'H' trong HAVE TO là 'Hoàn cảnh'. Nghĩa vụ do tác động từ bên ngoài (luật, sếp, lịch trình...).",
+    "-   **SHOULD**: Hãy nghĩ 'S' trong SHOULD là 'Suggest' (gợi ý) hoặc 'Lời khuyên'. Nhẹ nhàng, không bắt buộc."
+  ],
+  "practice": [
+    {
+      "question": "You look tired. You ___ take a break.",
+      "options": [
+        "must",
+        "have to",
+        "should"
+      ],
+      "answer": "should",
+      "explanation": "Đây là lời khuyên tử tế dành cho người đang mệt mỏi, không phải là nghĩa vụ bắt buộc."
+    },
+    {
+      "question": "Students ___ wear their school uniform. It's a strict rule.",
+      "options": [
+        "must",
+        "have to",
+        "should"
+      ],
+      "answer": "must",
+      "explanation": "'It's a strict rule' (đây là một quy tắc nghiêm ngặt) cho thấy đây là một nghĩa vụ mạnh mẽ, mang tính quy định."
+    },
+    {
+      "question": "I ___ go to the doctor because I have a high fever.",
+      "options": [
+        "must",
+        "have to",
+        "should"
+      ],
+      "answer": "have to",
+      "explanation": "Việc đi khám bác sĩ là do hoàn cảnh (bị sốt cao) bắt buộc, không phải do tự ý muốn hay lời khuyên."
+    },
+    {
+      "question": "You ___ smoke in the hospital. It's strictly forbidden.",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "shouldn't"
+      ],
+      "answer": "mustn't",
+      "explanation": "'Strictly forbidden' (nghiêm cấm) cho thấy đây là một điều cấm đoán mạnh mẽ, vì vậy dùng 'mustn't'."
+    }
+  ]
+}

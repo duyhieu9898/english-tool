@@ -1,0 +1,72 @@
+{
+  "id": "b2-passive-voice-advanced",
+  "title": "Câu bị động nâng cao (với Modal verbs, các thì hoàn thành)",
+  "level": "b2",
+  "description": "Nâng cấp kỹ năng dùng câu bị động với các động từ khiếm khuyết (can, must, should...) và các thì hoàn thành (hiện tại hoàn thành, quá khứ hoàn thành). Bài này sẽ giúp bạn nói và viết tự nhiên hơn, chuẩn B2!",
+  "theory": "Câu bị động nâng cao giúp bạn nói về hành động được thực hiện mà không cần nhắc chủ thể (người/vật thực hiện), hoặc nhấn mạnh hành động đã hoàn thành. Khi dùng với Modal verbs (như 'can', 'must', 'should'), nó diễn tả khả năng, sự cần thiết, lời khuyên. Khi dùng với các thì hoàn thành (hiện tại hoàn thành, quá khứ hoàn thành), nó nói về hành động đã xảy ra và hoàn tất trước một thời điểm nhất định.",
+  "structures": [
+    {
+      "name": "Câu bị động với Modal verbs (Động từ khiếm khuyết)",
+      "formula": "S + Modal verb + be + V3/ed + (by O)",
+      "example": "The report must be finished by tomorrow. (Báo cáo phải được hoàn thành trước ngày mai.)"
+    },
+    {
+      "name": "Câu bị động với Thì Hiện tại hoàn thành",
+      "formula": "S + have/has + been + V3/ed + (by O)",
+      "example": "Many new houses have been built in this area. (Nhiều ngôi nhà mới đã được xây dựng ở khu vực này.)"
+    },
+    {
+      "name": "Câu bị động với Thì Quá khứ hoàn thành",
+      "formula": "S + had + been + V3/ed + (by O)",
+      "example": "The mistake had been corrected before the final submission. (Lỗi đã được sửa trước khi nộp bản cuối cùng.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo nhớ 'BE' và 'BEEN':",
+    "- Với Modal verbs (can, must, should...): Luôn dùng 'BE' sau Modal verb, sau đó là V3/ed. (Ví dụ: must be done, should be written)",
+    "- Với các thì hoàn thành (have/has/had): Luôn dùng 'BEEN' sau have/has/had, sau đó là V3/ed. (Ví dụ: has been done, had been written)",
+    "💡 Quy tắc 'Chủ ngữ mới là Nạn nhân': Trong câu bị động, đối tượng bị tác động bởi hành động sẽ được đưa lên làm chủ ngữ mới của câu."
+  ],
+  "practice": [
+    {
+      "question": "The broken window ___ immediately.",
+      "options": [
+        "should repair",
+        "should be repaired",
+        "should have repaired"
+      ],
+      "answer": "should be repaired",
+      "explanation": "Cửa sổ bị vỡ là đối tượng chịu tác động nên cần dùng thể bị động. Cấu trúc bị động với Modal 'should' là 'should + be + V3/ed'."
+    },
+    {
+      "question": "All the homework ___ by now.",
+      "options": [
+        "has completed",
+        "have been completed",
+        "has been completed"
+      ],
+      "answer": "has been completed",
+      "explanation": "'All the homework' là chủ ngữ số ít, và hành động đã hoàn thành nên dùng thì hiện tại hoàn thành bị động 'has been + V3/ed'."
+    },
+    {
+      "question": "The ancient artifacts ___ before the museum opened.",
+      "options": [
+        "had discovered",
+        "had been discovered",
+        "were discovered"
+      ],
+      "answer": "had been discovered",
+      "explanation": "Hành động 'khám phá' xảy ra trước một hành động khác trong quá khứ ('museum opened'), và 'artifacts' là đối tượng bị khám phá, nên dùng quá khứ hoàn thành bị động 'had been + V3/ed'."
+    },
+    {
+      "question": "These important documents ___ securely.",
+      "options": [
+        "must keep",
+        "must be kept",
+        "must to be kept"
+      ],
+      "answer": "must be kept",
+      "explanation": "'Documents' là đối tượng cần được giữ, nên dùng thể bị động. Cấu trúc bị động với Modal 'must' là 'must + be + V3/ed'."
+    }
+  ]
+}

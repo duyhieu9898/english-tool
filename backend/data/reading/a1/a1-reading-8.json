@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-8",
+  "title": "My Fun Weekend",
+  "level": "a1",
+  "topic": "Weekend Activities",
+  "content": "Hello! My name is Lily. I like weekends very much. On Saturday, I wake up late. I eat a big breakfast with my family. Then, I go to the park with my friends. We play games and run. In the afternoon, I read a book at home. It is quiet. On Sunday, I visit my grandmother. We talk and eat cake. Sometimes, I watch a movie. I also help my mom clean the house. Weekends are fun and busy. I love my weekends!",
+  "vocabulary_highlights": [
+    {
+      "word": "weekend",
+      "meaning": "cuối tuần"
+    },
+    {
+      "word": "wake up late",
+      "meaning": "thức dậy muộn"
+    },
+    {
+      "word": "park",
+      "meaning": "công viên"
+    },
+    {
+      "word": "friends",
+      "meaning": "bạn bè"
+    },
+    {
+      "word": "read a book",
+      "meaning": "đọc sách"
+    },
+    {
+      "word": "visit",
+      "meaning": "thăm"
+    },
+    {
+      "word": "grandmother",
+      "meaning": "bà"
+    },
+    {
+      "word": "clean the house",
+      "meaning": "dọn nhà"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What does Lily do on Saturday morning?",
+      "options": [
+        "She eats breakfast alone.",
+        "She goes to the park.",
+        "She visits her grandmother."
+      ],
+      "answer": "She goes to the park.",
+      "explanation": "Đoạn văn có ghi: 'Then, I go to the park with my friends'."
+    },
+    {
+      "question": "Who does Lily visit on Sunday?",
+      "options": [
+        "Her friends",
+        "Her grandmother",
+        "Her teacher"
+      ],
+      "answer": "Her grandmother",
+      "explanation": "Đoạn văn có ghi: 'On Sunday, I visit my grandmother'."
+    },
+    {
+      "question": "What does Lily sometimes do on Sunday?",
+      "options": [
+        "She plays games.",
+        "She watches a movie.",
+        "She reads a book."
+      ],
+      "answer": "She watches a movie.",
+      "explanation": "Đoạn văn có ghi: 'Sometimes, I watch a movie'."
+    }
+  ],
+  "translation": "Xin chào! Tên tôi là Lily. Tôi rất thích những ngày cuối tuần. Vào thứ Bảy, tôi thức dậy muộn. Tôi ăn một bữa sáng lớn với gia đình. Sau đó, tôi đi đến công viên với bạn bè. Chúng tôi chơi trò chơi và chạy. Vào buổi chiều, tôi đọc sách ở nhà. Thật yên tĩnh. Vào Chủ Nhật, tôi thăm bà tôi. Chúng tôi nói chuyện và ăn bánh. Đôi khi, tôi xem phim. Tôi cũng giúp mẹ dọn nhà. Cuối tuần thật vui và bận rộn. Tôi yêu những ngày cuối tuần của mình!"
+}

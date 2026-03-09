@@ -1,0 +1,76 @@
+{
+  "id": "b2-future-perfect-continuous",
+  "title": "Khám Phá Thời Gian: Thì Tương Lai Hoàn Thành & Tương Lai Hoàn Thành Tiếp Diễn",
+  "level": "b2",
+  "description": "Bài học này sẽ giúp bạn nắm vững cách dùng Thì Tương Lai Hoàn Thành và Tương Lai Hoàn Thành Tiếp Diễn để diễn tả các hành động sẽ kết thúc hoặc tiếp diễn đến một thời điểm cụ thể trong tương lai. Bạn sẽ biết khi nào dùng cái nào và cách tạo câu chuẩn xác!",
+  "theory": "Hãy tưởng tượng bạn đang nhìn vào một điểm mốc trong tương lai. \n*   **Thì Tương Lai Hoàn Thành (Future Perfect)**: Dùng khi bạn muốn nói một điều gì đó SẼ HOÀN THÀNH/XONG XUÔI trước (hoặc đúng vào) cái điểm mốc tương lai đó. Nó tập trung vào KẾT QUẢ hoặc SỰ HOÀN TẤT.\n    *   Ví dụ: 'By 2025, I will have bought a new car.' (Trước năm 2025, tôi sẽ đã mua một chiếc ô tô mới rồi.)\n*   **Thì Tương Lai Hoàn Thành Tiếp Diễn (Future Perfect Continuous)**: Dùng khi bạn muốn nói một điều gì đó SẼ ĐANG TIẾP DIỄN LIÊN TỤC cho đến cái điểm mốc tương lai đó. Nó nhấn mạnh THỜI GIAN KÉO DÀI của hành động.\n    *   Ví dụ: 'By next month, I will have been working here for 5 years.' (Đến tháng sau, tôi sẽ đã làm việc ở đây được 5 năm rồi.)",
+  "structures": [
+    {
+      "name": "Tương Lai Hoàn Thành (Future Perfect) - Khẳng định (+)",
+      "formula": "S + will have + V3/ed",
+      "example": "By this time tomorrow, she will have finished her report. (Đến giờ này ngày mai, cô ấy sẽ đã hoàn thành xong báo cáo của mình rồi.)"
+    },
+    {
+      "name": "Tương Lai Hoàn Thành (Future Perfect) - Phủ định (-)",
+      "formula": "S + won't (will not) have + V3/ed",
+      "example": "By next week, I won't have received the package yet. (Đến tuần tới, tôi sẽ vẫn chưa nhận được gói hàng đâu.)"
+    },
+    {
+      "name": "Tương Lai Hoàn Thành Tiếp Diễn (Future Perfect Continuous) - Khẳng định (+)",
+      "formula": "S + will have been + V-ing",
+      "example": "By Christmas, we will have been living in this house for a year. (Đến Giáng sinh, chúng tôi sẽ đã sống trong căn nhà này được một năm rồi.)"
+    },
+    {
+      "name": "Tương Lai Hoàn Thành Tiếp Diễn (Future Perfect Continuous) - Câu hỏi (?)",
+      "formula": "Will + S + have been + V-ing...?",
+      "example": "Will you have been waiting for long when I get there? (Bạn sẽ đã chờ lâu chưa khi tôi đến đó?)"
+    }
+  ],
+  "tips": [
+    "💡 **Mẹo nhận biết \"By\":** Cứ thấy 'By + thời gian tương lai' (By next year, By 2030, By the time...) là khả năng cao dùng Tương Lai Hoàn Thành (V3/ed) hoặc Tương Lai Hoàn Thành Tiếp Diễn (V-ing)! Nó chỉ điểm mốc kết thúc hoặc tính đến thời điểm đó.",
+    "💡 **'Xong' vs 'Đang':**\n    *   **Future Perfect (will have V3/ed)**: Hành động SẼ XONG TRƯỚC mốc. Nghĩ đến 'kết quả cuối cùng'.\n    *   **Future Perfect Continuous (will have been V-ing)**: Hành động SẼ ĐANG TIẾP DIỄN ĐẾN mốc. Nghĩ đến 'quá trình, sự kéo dài'.",
+    "💡 **Không dùng với động từ trạng thái:** Tương Lai Hoàn Thành Tiếp Diễn thường không dùng với các động từ chỉ trạng thái (stative verbs) như `know`, `love`, `understand`, `be`, `have` (sở hữu). Thay vào đó, dùng Tương Lai Hoàn Thành."
+  ],
+  "practice": [
+    {
+      "question": "By 2030, scientists _______ a cure for cancer.",
+      "options": [
+        "will discover",
+        "will have discovered",
+        "will have been discovering"
+      ],
+      "answer": "will have discovered",
+      "explanation": "Hành động 'discover' (khám phá) được kỳ vọng sẽ hoàn thành trước một mốc thời gian cụ thể trong tương lai (năm 2030). Nó nhấn mạnh kết quả."
+    },
+    {
+      "question": "Next month, my parents _______ married for 30 years.",
+      "options": [
+        "will have been",
+        "will have been being",
+        "will have been married"
+      ],
+      "answer": "will have been married",
+      "explanation": "Đây là trường hợp của 'Future Perfect' vì 'be married' là trạng thái. Hành động 'kết hôn' sẽ đạt mốc 30 năm vào tháng tới. (Không dùng 'will have been being married' vì 'be' là động từ trạng thái)."
+    },
+    {
+      "question": "When you arrive at the party, I _______ for about an hour.",
+      "options": [
+        "will dance",
+        "will have danced",
+        "will have been dancing"
+      ],
+      "answer": "will have been dancing",
+      "explanation": "Hành động 'dance' sẽ bắt đầu trước khi bạn đến và sẽ tiếp diễn liên tục trong khoảng một giờ cho đến khi bạn xuất hiện. Nhấn mạnh sự kéo dài của hành động."
+    },
+    {
+      "question": "Don't worry, by the time the boss comes, we _______ all the necessary preparations.",
+      "options": [
+        "will make",
+        "will have made",
+        "will have been making"
+      ],
+      "answer": "will have made",
+      "explanation": "Hành động 'make preparations' sẽ hoàn thành trước khi sếp đến (một mốc thời gian trong tương lai). Tập trung vào kết quả là mọi thứ đã sẵn sàng."
+    }
+  ]
+}

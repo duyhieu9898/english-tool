@@ -1,0 +1,82 @@
+{
+  "id": "a2-comparatives-superlatives",
+  "title": "So sánh hơn & So sánh nhất",
+  "level": "a2",
+  "description": "Bạn muốn nói cái gì 'hơn' cái gì khác, hoặc cái gì là 'nhất' trong một nhóm? Bài này sẽ giúp bạn diễn đạt điều đó một cách dễ dàng!",
+  "theory": "Trong tiếng Anh, chúng ta dùng 'So sánh hơn' (Comparative) khi muốn so sánh HAI vật/người/sự việc, để nói cái này NHƯ THẾ NÀO HƠN cái kia. Còn 'So sánh nhất' (Superlative) dùng khi so sánh BA vật/người/sự việc trở lên, để nói cái này LÀ NHƯ THẾ NÀO NHẤT trong cả nhóm.",
+  "structures": [
+    {
+      "name": "1. So sánh hơn (Tính từ ngắn - 1 âm tiết)",
+      "formula": "Tính từ + -er + than",
+      "example": "My cat is smaller than your dog. (Mèo của tôi nhỏ hơn chó của bạn.)"
+    },
+    {
+      "name": "2. So sánh hơn (Tính từ dài - 2 âm tiết trở lên)",
+      "formula": "More + Tính từ + than",
+      "example": "This book is more interesting than that movie. (Cuốn sách này thú vị hơn bộ phim đó.)"
+    },
+    {
+      "name": "3. So sánh nhất (Tính từ ngắn - 1 âm tiết)",
+      "formula": "The + Tính từ + -est",
+      "example": "He is the tallest student in our class. (Anh ấy là học sinh cao nhất lớp chúng tôi.)"
+    },
+    {
+      "name": "4. So sánh nhất (Tính từ dài - 2 âm tiết trở lên)",
+      "formula": "The most + Tính từ",
+      "example": "This is the most beautiful song I've ever heard. (Đây là bài hát hay nhất tôi từng nghe.)"
+    }
+  ],
+  "tips": [
+    "💡 Mẹo đếm âm tiết để chọn cách so sánh:",
+    "-   **Tính từ ngắn (1 âm tiết):** Thêm '-er' cho so sánh hơn và '-est' cho so sánh nhất. (Ví dụ: tall -> taller -> tallest)",
+    "-   **Tính từ dài (2 âm tiết trở lên):** Dùng 'more' cho so sánh hơn và 'the most' cho so sánh nhất. (Ví dụ: expensive -> more expensive -> the most expensive)",
+    "💡 Dấu hiệu nhận biết nhanh:",
+    "-   **So sánh hơn:** Thường đi kèm với từ 'than'. (Ví dụ: bigger than, more difficult than)",
+    "-   **So sánh nhất:** Luôn có mạo từ 'the' đứng trước. (Ví dụ: the biggest, the most difficult)",
+    "💡 Một số trường hợp đặc biệt cần nhớ (ngoại lệ):",
+    "-   good (tốt) -> better (tốt hơn) -> the best (tốt nhất)",
+    "-   bad (tệ) -> worse (tệ hơn) -> the worst (tệ nhất)"
+  ],
+  "practice": [
+    {
+      "question": "My brother is ______ than me.",
+      "options": [
+        "old",
+        "older",
+        "oldest"
+      ],
+      "answer": "older",
+      "explanation": "'old' là tính từ ngắn. Đây là so sánh hơn (có 'than') nên thêm '-er'."
+    },
+    {
+      "question": "This is ______ restaurant in town.",
+      "options": [
+        "the goodest",
+        "the best",
+        "the better"
+      ],
+      "answer": "the best",
+      "explanation": "'good' là một trường hợp đặc biệt. So sánh nhất của 'good' là 'the best'. Có 'the' báo hiệu đây là so sánh nhất."
+    },
+    {
+      "question": "Learning a new language is ______ than learning to ride a bike.",
+      "options": [
+        "difficult",
+        "more difficult",
+        "most difficult"
+      ],
+      "answer": "more difficult",
+      "explanation": "'difficult' là tính từ dài (3 âm tiết). Đây là so sánh hơn (có 'than') nên dùng 'more...than'."
+    },
+    {
+      "question": "She is ______ student in the class; she always gets top scores.",
+      "options": [
+        "the smart",
+        "smarter",
+        "the smartest"
+      ],
+      "answer": "the smartest",
+      "explanation": "Câu này nói cô ấy là 'nhất' trong cả lớp ('in the class') và 'luôn đạt điểm cao nhất'. 'smart' là tính từ ngắn, so sánh nhất là 'the smartest'."
+    }
+  ]
+}

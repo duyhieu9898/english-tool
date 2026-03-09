@@ -1,0 +1,76 @@
+{
+  "id": "c1-discourse-markers",
+  "title": "Từ Nối & Dấu Chuẩn Diễn Ngôn (Discourse Markers) - Nâng tầm sự mạch lạc",
+  "level": "c1",
+  "description": "Bạn muốn bài nói/viết tiếng Anh của mình nghe tự nhiên, logic và thuyết phục hơn? Đây là chìa khóa! Học cách sử dụng các từ nối và dấu chuẩn diễn ngôn (discourse markers) để kết nối ý tưởng một cách mượt mà, thể hiện rõ thái độ và quan điểm của bạn, đúng chuẩn trình độ C1.",
+  "theory": "Discourse markers (từ nối, dấu chuẩn diễn ngôn) là những từ hoặc cụm từ nhỏ (ví dụ: however, in addition, well, you know) giúp chúng ta kết nối các ý tưởng, câu hoặc đoạn văn lại với nhau một cách logic và tự nhiên. Chúng không mang nghĩa chính cho câu mà chủ yếu chỉ ra mối quan hệ giữa các phần của cuộc trò chuyện hoặc bài viết, thể hiện ý định, thái độ của người nói/viết, giúp bài văn/nói mạch lạc hơn rất nhiều.",
+  "structures": [
+    {
+      "name": "Thêm thông tin/Bổ sung (+)",
+      "formula": "[Ý 1]. *Discourse Marker*, [Ý 2].",
+      "example": "The report highlights the economic benefits. *Furthermore*, it addresses environmental concerns. (Báo cáo nêu bật các lợi ích kinh tế. Hơn nữa, nó còn đề cập đến những lo ngại về môi trường.)\nCác từ thường dùng: *Furthermore, Moreover, In addition, What's more*."
+    },
+    {
+      "name": "Đối lập/Tương phản (-)",
+      "formula": "[Ý 1]. *Discourse Marker*, [Ý đối lập].",
+      "example": "He had very little experience. *Nevertheless*, he got the job. (Anh ấy có rất ít kinh nghiệm. Tuy nhiên, anh ấy vẫn nhận được công việc.)\nCác từ thường dùng: *However, Nevertheless, Nonetheless, On the other hand, By contrast*."
+    },
+    {
+      "name": "Giải thích/Làm rõ/Ví dụ (Ex)",
+      "formula": "[Ý chung]. *Discourse Marker*, [Giải thích/Ví dụ cụ thể].",
+      "example": "Some jobs are highly competitive. *For instance*, becoming a doctor takes years of study. (Một số công việc có tính cạnh tranh cao. Chẳng hạn, để trở thành bác sĩ phải mất nhiều năm học tập.)\nCác từ thường dùng: *For instance, For example, In other words, To clarify*."
+    },
+    {
+      "name": "Kết luận/Tóm tắt (Sum)",
+      "formula": "*Discourse Marker*, [Tóm tắt/Kết luận].",
+      "example": "*To sum up*, the committee recommended proceeding with the plan. (Tóm lại, ủy ban đã khuyến nghị tiếp tục kế hoạch.)\nCác từ thường dùng: *In conclusion, To sum up, All in all, Ultimately*."
+    }
+  ],
+  "tips": [
+    "💡 Mẹo 'Nhóm theo mục đích': Thay vì học từng từ riêng lẻ, hãy nhóm các discourse markers lại theo mục đích sử dụng của chúng (ví dụ: nhóm 'thêm thông tin', nhóm 'đối lập', nhóm 'kết luận'). Khi bạn cần diễn đạt một ý, hãy nghĩ đến nhóm đó và chọn từ phù hợp.",
+    "💡 Mẹo 'Cái bảng 4 ô thần kỳ': Tưởng tượng một bảng với 4 ô: CỘNG (+) cho thêm ý, TRỪ (-) cho đối lập, VÍ DỤ (Ex) cho giải thích/ví dụ, và KẾT LUẬN (Sum) cho tổng kết. Gán các từ vào ô phù hợp, giúp dễ dàng hình dung và ghi nhớ chức năng của chúng.",
+    "💡 Mẹo 'Luyện nghe và bắt chước': Nghe nhiều podcast, xem phim, hoặc các bài diễn thuyết của người bản xứ (ví dụ: TED Talks). Chú ý cách họ sử dụng discourse markers trong ngữ cảnh khác nhau. Ghi lại các cụm từ hay và tập bắt chước cách dùng để ngôn ngữ của bạn tự nhiên hơn."
+  ],
+  "practice": [
+    {
+      "question": "The company decided to invest heavily in renewable energy. ______, they also launched a new initiative to reduce plastic waste.",
+      "options": [
+        "Nevertheless",
+        "Furthermore",
+        "On the other hand"
+      ],
+      "answer": "Furthermore",
+      "explanation": "'Furthermore' (hơn nữa) dùng để bổ sung thêm một ý tưởng hoặc thông tin quan trọng khác, củng cố thêm cho hành động của công ty. 'Nevertheless' và 'On the other hand' dùng để thể hiện sự đối lập."
+    },
+    {
+      "question": "The new policy faced strong opposition from some employees. ______, the management proceeded with its implementation.",
+      "options": [
+        "However",
+        "In addition",
+        "For instance"
+      ],
+      "answer": "However",
+      "explanation": "'However' (tuy nhiên) dùng để thể hiện sự đối lập giữa việc chính sách bị phản đối và việc ban quản lý vẫn tiếp tục thực hiện. 'In addition' dùng để bổ sung, 'For instance' dùng để đưa ví dụ."
+    },
+    {
+      "question": "She's always been passionate about animal welfare. ______, she volunteers at a local shelter every weekend and organizes fundraising events.",
+      "options": [
+        "To sum up",
+        "In other words",
+        "For example"
+      ],
+      "answer": "For example",
+      "explanation": "'For example' (ví dụ) dùng để đưa ra các hành động cụ thể minh họa cho 'passion about animal welfare' (đam mê phúc lợi động vật). 'To sum up' dùng để kết luận, 'In other words' dùng để giải thích lại bằng từ khác."
+    },
+    {
+      "question": "The evidence presented in the trial was inconclusive. ______, the jury could not reach a unanimous verdict.",
+      "options": [
+        "Consequently",
+        "By contrast",
+        "Moreover"
+      ],
+      "answer": "Consequently",
+      "explanation": "'Consequently' (do đó/kết quả là) dùng để chỉ kết quả trực tiếp của việc bằng chứng không thuyết phục là bồi thẩm đoàn không thể đưa ra phán quyết đồng thuận. 'By contrast' dùng để so sánh, 'Moreover' dùng để bổ sung."
+    }
+  ]
+}

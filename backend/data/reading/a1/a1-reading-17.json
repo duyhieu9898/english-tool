@@ -1,0 +1,74 @@
+{
+  "id": "a1-reading-17",
+  "title": "My Family's TV Time",
+  "level": "a1",
+  "topic": "Watching TV",
+  "content": "I like to watch TV. It is a fun activity. My family watches TV in the evening. We often sit together on the sofa. My dad likes to watch the news. My mom likes to watch cooking shows. I like to watch cartoons the most. Cartoons are very funny! Sometimes, my brother and I watch movies on the weekend. We drink juice and eat some popcorn. Watching TV makes me happy. It is a good time with my family. We often talk about the shows we see. What do you like to watch on TV?",
+  "vocabulary_highlights": [
+    {
+      "word": "watch TV",
+      "meaning": "xem TV"
+    },
+    {
+      "word": "in the evening",
+      "meaning": "vào buổi tối"
+    },
+    {
+      "word": "sit together",
+      "meaning": "ngồi cùng nhau"
+    },
+    {
+      "word": "cooking shows",
+      "meaning": "chương trình nấu ăn"
+    },
+    {
+      "word": "cartoons",
+      "meaning": "phim hoạt hình"
+    },
+    {
+      "word": "on the weekend",
+      "meaning": "vào cuối tuần"
+    },
+    {
+      "word": "popcorn",
+      "meaning": "bỏng ngô"
+    },
+    {
+      "word": "makes me happy",
+      "meaning": "làm tôi vui"
+    }
+  ],
+  "questions": [
+    {
+      "question": "When does the family watch TV?",
+      "options": [
+        "In the morning",
+        "In the afternoon",
+        "In the evening"
+      ],
+      "answer": "In the evening",
+      "explanation": "Đoạn văn có ghi: 'My family watches TV in the evening.'"
+    },
+    {
+      "question": "What does the writer like to watch the most?",
+      "options": [
+        "The news",
+        "Cooking shows",
+        "Cartoons"
+      ],
+      "answer": "Cartoons",
+      "explanation": "Đoạn văn có ghi: 'I like to watch cartoons the most.'"
+    },
+    {
+      "question": "What do they eat when watching movies?",
+      "options": [
+        "Candy and juice",
+        "Popcorn and juice",
+        "Apples and juice"
+      ],
+      "answer": "Popcorn and juice",
+      "explanation": "Đoạn văn có ghi: 'We drink juice and eat some popcorn.'"
+    }
+  ],
+  "translation": "Tôi thích xem TV. Đó là một hoạt động vui vẻ. Gia đình tôi xem TV vào buổi tối. Chúng tôi thường ngồi cùng nhau trên ghế sofa. Bố tôi thích xem thời sự. Mẹ tôi thích xem các chương trình nấu ăn. Tôi thích xem phim hoạt hình nhất. Phim hoạt hình rất hài hước! Thỉnh thoảng, anh trai tôi và tôi xem phim vào cuối tuần. Chúng tôi uống nước trái cây và ăn bỏng ngô. Xem TV làm tôi vui. Đó là khoảng thời gian tốt đẹp bên gia đình tôi. Chúng tôi thường nói chuyện về các chương trình mà chúng tôi xem. Bạn thích xem gì trên TV?"
+}
