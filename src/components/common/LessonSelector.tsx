@@ -159,7 +159,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
               key={lesson.id}
               type="button"
               className={`
-                group flex flex-col p-6 cursor-pointer text-left w-full
+                group flex flex-col p-5 cursor-pointer text-left w-full
                 ${isCompleted ? 'bg-lime-400 dark:bg-lime-500' : 'bg-white dark:bg-gray-800'}
                 border-4 border-black dark:border-white 
                 rounded-2xl 

@@ -236,13 +236,12 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
   if (!currentWord) return null;
 
   return (
-    <div className="w-full max-w-md mx-auto aspect-3/4 md:aspect-square relative flex flex-col items-center justify-center p-8 bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] text-center transition-all duration-300">
-      <div className="absolute top-0 right-0 m-4 text-xs font-black text-black bg-white dark:bg-gray-400 px-3 py-1 rounded-full border-2 border-black tracking-widest shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-        STAGE {currentIndex + 1} / {queue.length}
-      </div>
-
-      <div className="text-black dark:text-white font-black text-sm uppercase tracking-widest flex items-center gap-2 mb-6 bg-yellow-300 dark:bg-yellow-600 px-4 py-2 rounded-xl border-2 border-black transform -skew-x-12">
+    <div className="w-full max-w-md mx-auto relative flex flex-col items-center justify-center px-4 py-6 bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] text-center transition-all duration-300">
+      <div className="text-black dark:text-white font-black text-sm uppercase tracking-widest flex items-center gap-2 bg-yellow-300 dark:bg-yellow-600 px-4 py-3 rounded-xl border-2 border-black transform -skew-x-12 absolute -top-6">
         <Sparkles className="w-5 h-5" /> DAILY REVIEW: LVL {currentWord.level}
+      </div>
+      <div className="mb-4 ml-auto text-xs font-black text-black bg-white dark:bg-gray-400 px-3 py-1 rounded-full border-2 border-black tracking-widest shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+        STAGE {currentIndex + 1} / {queue.length}
       </div>
 
       <LessonMeaning term={currentWord.term} lessonId={currentWord.lessonId} />
@@ -257,7 +256,7 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
           </div>
           <button
             onClick={advance}
-            className="w-full flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black py-4 px-6 rounded-xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] active:translate-y-0 active:shadow-none transition-all"
+            className="w-full flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black py-2 px-4 rounded-xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] active:translate-y-0 active:shadow-none transition-all"
           >
             Got it <ArrowRight className="w-6 h-6 stroke-3" />
           </button>
@@ -269,18 +268,18 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            placeholder="Type the English word"
-            className="w-full text-center text-4xl font-black py-4 px-4 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-yellow-100 dark:focus:bg-yellow-900 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all lowercase mb-8"
+            placeholder="Enter word"
+            className="w-full text-center text-3xl font-black py-3 px-3 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-yellow-100 dark:focus:bg-yellow-900 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all lowercase mb-6"
             autoComplete="off"
             spellCheck="false"
           />
-          <div className="flex gap-3 w-full max-w-sm mt-8">
+          <div className="flex gap-3 w-full">
             <button
               onClick={handleSubmit}
               disabled={!inputValue.trim()}
-              className="flex-1 flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-4 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
+              className="flex-1 flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-3 px-4 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
             >
-              ATTACK
+              SUBMIT
             </button>
             <button
               onClick={handleMastered}

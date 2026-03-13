@@ -262,7 +262,7 @@ const GeneralReviewEngine: React.FC<{
   if (!currentWord) return null;
 
   return (
-    <div className="w-full max-w-md mx-auto aspect-3/4 md:aspect-square relative flex flex-col items-center justify-center p-8 bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] text-center transition-all duration-300">
+    <div className="w-full max-w-md mx-auto relative flex flex-col items-center justify-center p-6 bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] text-center transition-all duration-300">
       <div className="absolute top-0 right-0 m-4 text-xs font-black text-black bg-white dark:bg-gray-400 px-3 py-1 rounded-full border-2 border-black tracking-widest shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
         STAGE {currentIndex + 1} / {queue.length}
       </div>
@@ -298,8 +298,8 @@ const GeneralReviewEngine: React.FC<{
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            placeholder="Type the English word"
-            className="w-full text-center text-4xl font-black py-4 px-4 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-orange-100 dark:focus:bg-orange-900/50 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all lowercase mb-8"
+            placeholder="Enter word"
+            className="w-full text-center text-3xl font-black py-3 px-3 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-orange-100 dark:focus:bg-orange-900/50 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all lowercase mb-8"
             autoComplete="off"
             spellCheck="false"
           />

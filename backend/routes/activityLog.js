@@ -7,9 +7,9 @@
  * GET  /activityLog   — retrieve all events (newest first), optional ?limit=N
  * DELETE /activityLog — clear all events
  */
-const { Router } = require('express');
-const fs   = require('fs');
-const { ACTIVITY_LOG } = require('../db/paths');
+import { Router } from 'express';
+import fs from 'fs';
+import { ACTIVITY_LOG } from '../db/paths.js';
 
 const router = Router();
 
@@ -55,4 +55,4 @@ router.delete('/', (req, res) => {
   res.json({ cleared: true });
 });
 
-module.exports = router;
+export default router;

@@ -100,7 +100,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
   return (
     <div className="w-full max-w-md mx-auto flex flex-col gap-6">
       <div
-        className="w-full aspect-3/4 perspective-1000 relative"
+        className="w-full aspect-5/6 perspective-1000 relative"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
@@ -111,13 +111,13 @@ export const FlashCard: React.FC<FlashCardProps> = ({
           onClick={handleFlip}
         >
           {/* Front Face */}
-          <div className="absolute w-full h-full backface-hidden bg-white dark:bg-gray-900 rounded-3xl shadow-xl flex flex-col items-center justify-center p-8 text-center border-2 border-transparent hover:border-blue-100 dark:hover:border-blue-900 transition-colors">
+          <div className="absolute w-full h-full backface-hidden bg-white dark:bg-gray-900 rounded-3xl shadow-xl flex flex-col items-center justify-center p-6 text-center border-2 border-transparent">
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 speak(word.term);
               }}
-              className="absolute top-6 right-6 p-3 text-gray-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-gray-800 rounded-full transition-colors z-10"
+              className="absolute top-4 right-4 p-3 text-gray-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-gray-800 rounded-full transition-colors z-10 cursor-pointer"
               title="Listen"
             >
               <Volume2 className="w-6 h-6" />
@@ -137,7 +137,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
               </div>
             )}
 
-            <div className="absolute bottom-8 left-0 right-0 text-center text-sm font-medium text-gray-400 animate-pulse">
+            <div className="absolute bottom-8 left-0 right-0 text-center text-sm font-medium text-gray-400">
               Tap or press Space to flip
             </div>
           </div>
@@ -172,6 +172,9 @@ export const FlashCard: React.FC<FlashCardProps> = ({
                   </p>
                 </div>
               )}
+              <div className="absolute bottom-0 left-0 right-0 text-center text-sm font-medium text-gray-400">
+                Tap or press Space to flip
+              </div>
             </div>
           </div>
         </motion.div>

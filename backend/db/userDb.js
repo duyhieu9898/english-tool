@@ -6,9 +6,9 @@
  *  2. Schema migration — merges DEFAULT_DB with stored data so new fields are
  *     always present even for users who have an older user_db.json
  */
-const fs   = require('fs');
-const path = require('path');
-const { USER_DB_PATH } = require('./paths');
+import fs from 'fs';
+import path from 'path';
+import { USER_DB_PATH } from './paths.js';
 
 const DEFAULT_DB = {
   wordProgress:    [],
@@ -73,4 +73,4 @@ function save(data) {
   fs.renameSync(tmpPath, USER_DB_PATH);
 }
 
-module.exports = { load, save };
+export default { load, save };

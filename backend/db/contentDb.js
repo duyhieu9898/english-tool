@@ -2,9 +2,9 @@
  * db/contentDb.js — read-only loaders with simple in-memory cache.
  * Cache is invalidated only on process restart (appropriate for static JSON files).
  */
-const fs   = require('fs');
-const path = require('path');
-const { CLASSIFIED_PATH, GRAMMAR_DIR, READING_DIR } = require('./paths');
+import fs from 'fs';
+import path from 'path';
+import { CLASSIFIED_PATH, GRAMMAR_DIR, READING_DIR } from './paths.js';
 
 const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c1'];
 
@@ -88,4 +88,4 @@ function loadReading() {
   return _reading;
 }
 
-module.exports = { loadLessons, loadGrammar, loadReading };
+export { loadLessons, loadGrammar, loadReading };

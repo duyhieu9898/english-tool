@@ -39,7 +39,7 @@ export const LessonMeaning: React.FC<LessonMeaningProps> = ({ term, lessonId }) 
       {info.sentences.length > 0 && (
         <div className="p-4 bg-gray-50 dark:bg-gray-900/40 rounded-2xl border-2 border-dashed border-gray-200 dark:border-gray-700 max-w-sm w-full">
           <p className="text-[10px] uppercase font-black text-gray-400 mb-2 tracking-tighter">Usage Examples</p>
-          <p className="text-xs text-gray-500 dark:text-gray-400 italic whitespace-pre-line text-left">
+          <p className="text-gray-500 dark:text-gray-400 italic whitespace-pre-line text-left">
             {info.sentences.map(s => `• ${s}`).join('\n')}
           </p>
         </div>

@@ -3,8 +3,8 @@
  * Generic CRUD for all user collections stored in user_db.json.
  * Handles both singleton objects (stats, settings) and arrays.
  */
-const { Router } = require('express');
-const db = require('../db/userDb');
+import { Router } from 'express';
+import db from '../db/userDb.js';
 
 const router = Router({ mergeParams: true });
 
@@ -111,4 +111,4 @@ COLLECTIONS.forEach(col => {
   });
 });
 
-module.exports = router;
+export default router;

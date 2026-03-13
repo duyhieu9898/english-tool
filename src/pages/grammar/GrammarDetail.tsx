@@ -79,8 +79,8 @@ export const GrammarDetail: React.FC = () => {
 
       <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] overflow-hidden">
         {mode === 'THEORY' && (
-          <div className="p-6 md:p-10 overflow-y-auto">
-            <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-black dark:text-white leading-none mb-4">
+          <div className="p-6 overflow-y-auto">
+            <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-black dark:text-white leading-none mb-4">
               {lesson.title}
             </h1>
             <p className="text-xl font-bold text-gray-500 dark:text-gray-400 mb-8 border-b-4 border-black dark:border-gray-700 pb-6">
@@ -102,7 +102,7 @@ export const GrammarDetail: React.FC = () => {
                     {lesson.structures.map((st, i) => (
                       <div
                         key={i}
-                        className="bg-yellow-100 dark:bg-yellow-900/30 p-6 rounded-2xl border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)]"
+                        className="bg-yellow-100 dark:bg-yellow-900/30 p-4 rounded-2xl border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)]"
                       >
                         <div className="font-black text-xl text-black dark:text-white mb-2 uppercase">
                           {st.name}
@@ -145,8 +145,8 @@ export const GrammarDetail: React.FC = () => {
         )}
 
         {mode === 'QUIZ' && lesson.practice[currentQuestionIndex] && (
-          <div className="p-6 md:p-10 flex flex-col h-full">
-            <div className="flex justify-between items-center mb-8 border-b-4 border-black dark:border-gray-700 pb-4">
+          <div className="p-6 flex flex-col h-full">
+            <div className="flex justify-between items-center mb-4 border-b-4 border-black dark:border-gray-700 pb-4">
               <span className="text-sm font-black text-black dark:text-white tracking-widest uppercase bg-lime-300 dark:bg-lime-600 px-3 py-1 rounded-lg border-2 border-black">
                 PRACTICE QUIZ
               </span>
@@ -164,7 +164,7 @@ export const GrammarDetail: React.FC = () => {
                 <button
                   key={i}
                   onClick={() => !showExplanation && setSelectedOption(opt)}
-                  className={`w-full text-left p-5 rounded-2xl border-4 transition-all font-bold text-lg ${
+                  className={`w-full text-left p-3 rounded-2xl border-4 transition-all font-bold text-lg ${
                     selectedOption === opt
                       ? 'border-black bg-yellow-300 text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-yellow-500'
                       : 'border-black dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]'
@@ -176,18 +176,18 @@ export const GrammarDetail: React.FC = () => {
               ))}
             </div>
 
-            <div className="mt-10">
+            <div className="mt-6">
               {!showExplanation ? (
                 <button
                   disabled={!selectedOption}
                   onClick={checkAnswer}
-                  className="w-full flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black py-4 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
+                  className="w-full flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black py-3 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
                 >
                   Check Answer <Check className="w-6 h-6 stroke-3" />
                 </button>
               ) : (
                 <div className="space-y-6">
-                  <div className="p-6 bg-lime-300 dark:bg-lime-600 text-black dark:text-white rounded-2xl border-4 border-black">
+                  <div className="p-4 bg-lime-300 dark:bg-lime-600 text-black dark:text-white rounded-2xl border-4 border-black">
                     <div className="font-black text-2xl mb-2 flex items-center gap-2">
                       <CheckCircle2 className="w-8 h-8 fill-black text-lime-300 dark:fill-white dark:text-lime-600" />{' '}
                       EXACTLY!
@@ -198,7 +198,7 @@ export const GrammarDetail: React.FC = () => {
                   </div>
                   <button
                     onClick={nextQuestion}
-                    className="w-full flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-4 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none transition-all"
+                    className="w-full flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-3 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none transition-all"
                   >
                     Next Question <ChevronRight className="w-6 h-6 stroke-3" />
                   </button>

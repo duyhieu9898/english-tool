@@ -136,7 +136,7 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
                 autoFocus
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Type the English word"
+                placeholder="Enter word"
                 className="w-full text-center text-4xl font-black py-4 px-4 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-blue-50 dark:focus:bg-blue-900/30 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] text-black dark:text-white lowercase placeholder:text-gray-400 dark:placeholder:text-gray-600 transition-all mb-8"
                 autoComplete="off"
                 autoCorrect="off"

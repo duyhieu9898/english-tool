@@ -1,5 +1,5 @@
-const { Router } = require('express');
-const { loadLessons } = require('../db/contentDb');
+import { Router } from 'express';
+import { loadLessons } from '../db/contentDb.js';
 
 const router = Router();
 
@@ -55,4 +55,4 @@ router.get('/:id', (req, res) => {
   res.json(lesson);
 });
 
-module.exports = router;
+export default router;

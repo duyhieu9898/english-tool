@@ -1,5 +1,5 @@
-const { Router } = require('express');
-const { loadReading } = require('../db/contentDb');
+import { Router } from 'express';
+import { loadReading } from '../db/contentDb.js';
 
 const router = Router();
 
@@ -17,4 +17,4 @@ router.get('/:id', (req, res) => {
   res.json(item);
 });
 
-module.exports = router;
+export default router;
