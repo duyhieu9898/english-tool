@@ -5,8 +5,32 @@
  */
 import { Router } from 'express';
 import db from '../db/userDb.js';
+import { processSessionFinish } from '../services/sessionService.js';
 
 const router = Router({ mergeParams: true });
+
+// Unified Session Finish Route (Bulk Spaced Repetition + Streak + StudyLog)
+router.post('/session/finish', (req, res) => {
+  const { clientDate, reviews } = req.body;
+  if (!clientDate || !Array.isArray(reviews)) {
+    return res.status(400).json({ error: 'Missing clientDate or reviews array' });
+  }
+
+  const snap = db.load();
+  
+  const { wordsLearned, wordsReviewed, graduatedItems } = processSessionFinish(snap, clientDate, reviews);
+
+  // 4. Atomic Database Save
+  db.save(snap);
+  
+  res.status(200).json({
+    success: true,
+    wordsLearned,
+    wordsReviewed,
+    graduatedItems,
+    stats: snap.stats
+  });
+});
 
 const COLLECTIONS = ['wordProgress', 'lessonProgress', 'sessionProgress', 'studyLog', 'stats', 'settings'];
 
@@ -35,7 +59,7 @@ COLLECTIONS.forEach(col => {
     res.json(item);
   });
 
-  // POST — create
+  // POST — create or upsert
   router.post(`/${col}`, (req, res) => {
     const snap = db.load();
     const data = snap[col];
@@ -45,9 +69,15 @@ COLLECTIONS.forEach(col => {
       return res.status(200).json(data);
     }
     const newId = req.body.id !== undefined ? req.body.id : Date.now();
-    if (data.some(d => String(d.id) === String(newId))) {
-      return res.status(409).json({ error: 'Duplicate id', id: newId });
+    const existingIdx = data.findIndex(d => String(d.id) === String(newId));
+    
+    if (existingIdx !== -1) {
+      // Re-use existing entry for "UPSERT" behavior to avoid 409 Conflict
+      data[existingIdx] = { ...data[existingIdx], ...req.body, id: newId };
+      db.save(snap);
+      return res.status(200).json(data[existingIdx]);
     }
+
     const newItem = { ...req.body, id: newId };
     data.push(newItem);
     db.save(snap);

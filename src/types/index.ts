@@ -75,13 +75,13 @@ export interface ReadingLesson {
 }
 
 export interface LessonProgress {
-  id: string; // lesson id, grammar id, or reading id
+  id: string;
   type: 'vocabulary' | 'grammar' | 'reading';
   completedAt: string; // ISO Date
 }
 
 export interface SessionProgress {
-  id: string; // lesson id
+  id: string;
   currentIndex: number;
   lastUpdated: string;
 }
@@ -106,4 +106,11 @@ export interface AppSettings {
   dailyGoal: number;
   theme: 'light' | 'dark';
   soundEnabled?: boolean;
+}
+
+export interface ReviewResult {
+  term: string;
+  lessonId: string;
+  isCorrect: boolean;
+  isBossBattle: boolean;
 }

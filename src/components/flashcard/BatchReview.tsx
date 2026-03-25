@@ -5,6 +5,7 @@ import { useTTS } from '../../hooks/useTTS';
 import { useKeyboard } from '../../hooks/useKeyboard';
 import { sounds } from '../../services/sounds';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { Button } from '../ui/Button';
 
 interface BatchReviewProps {
   words: VocabWord[];
@@ -60,11 +61,8 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
       const fails = (retryCount[currentWord.term] || 0) + 1;
       setRetryCount((prev) => ({ ...prev, [currentWord.term]: fails }));
 
-      if (fails >= 3) {
-        // Auto pass logic or let user see it
-      } else {
-        setQueue((prev) => [...prev, currentWord]);
-      }
+      // Always add back to queue so user eventually gets it right
+      setQueue((prev) => [...prev, currentWord]);
     }
   };
 
@@ -75,6 +73,7 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
       else handleSubmit();
     },
   });
+
 
   const handleNextAfterError = () => {
     setShowError(false);
@@ -103,7 +102,7 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
             <Sparkles className="w-4 h-4" /> TYPE TRANSLATION
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-black text-black dark:text-white mb-2 leading-tight">
+          <h2 className="text-2xl md:text-3xl font-black text-black dark:text-white leading-tight capitalize">
             {currentWord.meaning || 'Mystery Word'}
           </h2>
           <span className="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider mb-10">
@@ -111,19 +110,21 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
           </span>
 
           {showError ? (
-            <div className="w-full animate-shake flex flex-col items-center">
+            <div className="w-full animate-shake flex flex-col items-center w-full">
               <div className="text-red-500 font-black text-2xl uppercase tracking-wide mb-2">
                 Incorrect!
               </div>
               <div className="text-4xl md:text-5xl font-black text-black dark:text-white lowercase mb-8">
                 {currentWord.term}
               </div>
-              <button
+              <Button
+                variant="black"
+                size="lg"
+                fullWidth
                 onClick={handleNextAfterError}
-                className="w-full flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black py-4 px-6 rounded-xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] active:translate-y-0 active:shadow-none transition-all"
               >
                 Got it <ArrowRight className="w-6 h-6 stroke-3 ml-2" />
-              </button>
+              </Button>
               <div className="text-xs font-bold text-gray-500 mt-4 uppercase">
                 Press Enter to continue
               </div>
@@ -142,13 +143,15 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
                 autoCorrect="off"
                 spellCheck="false"
               />
-              <button
+              <Button
+                variant="primary"
+                size="lg"
+                fullWidth
                 onClick={handleSubmit}
                 disabled={!inputValue.trim()}
-                className="w-full flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-4 px-6 rounded-xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
               >
                 Attack <ArrowRight className="w-6 h-6 stroke-3 ml-2" />
-              </button>
+              </Button>
             </div>
           )}
 

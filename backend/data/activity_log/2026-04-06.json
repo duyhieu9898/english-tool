@@ -1,0 +1,150 @@
+[
+  {
+    "ts": "2026-04-06T02:16:14.824Z",
+    "fn": "lesson:loaded",
+    "lesson": "6",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-04-06T02:16:14.828Z",
+    "fn": "session:new",
+    "lesson": "6"
+  },
+  {
+    "ts": "2026-04-06T02:16:16.609Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "afternoon"
+  },
+  {
+    "ts": "2026-04-06T02:16:17.385Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "clock"
+  },
+  {
+    "ts": "2026-04-06T02:16:18.544Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "evening"
+  },
+  {
+    "ts": "2026-04-06T02:16:21.993Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "midnight"
+  },
+  {
+    "ts": "2026-04-06T02:16:23.553Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "morning"
+  },
+  {
+    "ts": "2026-04-06T02:16:24.361Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "night"
+  },
+  {
+    "ts": "2026-04-06T02:16:25.283Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "now"
+  },
+  {
+    "ts": "2026-04-06T02:16:28.313Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "o'clock"
+  },
+  {
+    "ts": "2026-04-06T02:16:32.977Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "quarter"
+  },
+  {
+    "ts": "2026-04-06T02:16:34.385Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "time"
+  },
+  {
+    "ts": "2026-04-06T02:16:35.697Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "today"
+  },
+  {
+    "ts": "2026-04-06T02:16:42.049Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "tomorrow"
+  },
+  {
+    "ts": "2026-04-06T02:16:43.713Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "tonight"
+  },
+  {
+    "ts": "2026-04-06T02:16:45.577Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "week"
+  },
+  {
+    "ts": "2026-04-06T02:16:47.545Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "weekend"
+  },
+  {
+    "ts": "2026-04-06T02:16:49.587Z",
+    "fn": "handleContinue",
+    "lesson": "6",
+    "detail": "yesterday"
+  },
+  {
+    "ts": "2026-04-06T02:16:49.588Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "6",
+    "detail": "queue=16"
+  },
+  {
+    "ts": "2026-04-06T02:19:28.785Z",
+    "fn": "finishSession:start",
+    "lesson": "6",
+    "data": {
+      "continue": 16,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-04-06T02:19:28.839Z",
+    "fn": "finishSession:done",
+    "lesson": "6",
+    "data": {
+      "newWordsCount": 16,
+      "wordsSaved": [
+        "afternoon",
+        "clock",
+        "evening",
+        "midnight",
+        "morning",
+        "night",
+        "now",
+        "o'clock",
+        "quarter",
+        "time",
+        "today",
+        "tomorrow",
+        "tonight",
+        "week",
+        "weekend",
+        "yesterday"
+      ]
+    }
+  }
+]

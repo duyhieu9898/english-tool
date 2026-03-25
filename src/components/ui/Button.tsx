@@ -1,9 +1,10 @@
 import React from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' | 'black' | 'success';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
+  shadow?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -11,36 +12,54 @@ export const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'md',
   fullWidth = false,
+  shadow = true,
   className = '',
   ...props
 }) => {
   const baseStyles =
-    'inline-flex items-center justify-center font-medium rounded-xl transition-colors focus:outline-none disabled:opacity-50 disabled:pointer-events-none active:scale-95';
+    'inline-flex items-center justify-center font-black uppercase tracking-wider transition-all duration-200 disabled:opacity-50 disabled:pointer-events-none focus:outline-none';
 
   const variants = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm',
-    secondary:
-      'bg-gray-100 text-gray-900 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700',
-    outline:
-      'border-2 border-gray-200 text-gray-700 hover:border-blue-600 hover:text-blue-600 dark:border-gray-700 dark:text-gray-300 dark:hover:border-blue-500 dark:hover:text-blue-500',
+    primary:
+      'bg-blue-500 text-white dark:bg-blue-400 dark:text-black border-black dark:border-white',
+    secondary: 'bg-amber-300 text-black border-black',
+    success: 'bg-lime-400 dark:bg-lime-500 text-black border-black',
+    danger: 'bg-red-500 text-white border-black',
+    outline: 'bg-white text-black dark:bg-black dark:text-white border-black dark:border-white',
     ghost:
-      'text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-100',
-    danger: 'bg-red-500 text-white hover:bg-red-600',
+      'border-transparent text-gray-600 dark:text-gray-400 translate-y-0 hover:translate-y-0 active:translate-y-0',
+    black: 'bg-black text-white dark:bg-white dark:text-black border-transparent',
   };
 
   const sizes = {
-    sm: 'h-9 px-4 text-sm',
-    md: 'h-11 px-6 text-base',
-    lg: 'h-14 px-8 text-lg',
+    sm: 'h-10 px-4 text-xs border-2 rounded-lg',
+    md: 'h-14 px-6 text-base border-4 rounded-xl',
+    lg: 'h-17 px-8 text-xl border-4 rounded-2xl',
   };
+
+  const shadowDimensions = {
+    sm: 'shadow-[3px_3px_0px_0px_var(--tw-shadow-color)] hover:shadow-[5px_5px_0px_0px_var(--tw-shadow-color)] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[3px] active:translate-y-[3px] active:shadow-none',
+    md: 'shadow-[4px_4px_0px_0px_var(--tw-shadow-color)] hover:shadow-[6px_6px_0px_0px_var(--tw-shadow-color)] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none',
+    lg: 'shadow-[5px_5px_0px_0px_var(--tw-shadow-color)] hover:shadow-[7px_7px_0px_0px_var(--tw-shadow-color)] hover:-translate-x-1 hover:-translate-y-1 active:translate-x-[5px] active:translate-y-[5px] active:shadow-none',
+    none: '',
+  };
+
+  const shadowColors =
+    variant === 'black' ? 'shadow-gray-400 dark:shadow-gray-600' : 'shadow-black dark:shadow-white';
+
+  const hasShadow = shadow && variant !== 'ghost';
 
   const classes = [
     baseStyles,
     variants[variant],
     sizes[size],
-    fullWidth ? 'w-full' : '',
+    hasShadow && shadowDimensions[size],
+    hasShadow && shadowColors,
+    fullWidth && 'w-full',
     className,
-  ].join(' ');
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <button className={classes} {...props}>

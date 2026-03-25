@@ -18,7 +18,7 @@ export const Card: React.FC<CardProps> = ({
   const paddings = {
     none: '',
     sm: 'p-4',
-    md: 'p-6',
+    md: 'py-6 px-4',
     lg: 'p-8',
   };
 

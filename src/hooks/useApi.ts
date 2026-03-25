@@ -11,15 +11,15 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { api } from '../services/api';
 import { queryKeys } from './queryKeys';
-import { createInitialWordProgress, calculateNextReview } from '../services/spacedRepetition';
 import type {
   VocabWord,
-  WordProgress,
+  Lesson,
   LessonProgress,
   SessionProgress,
   StudyLog,
   AppStats,
   AppSettings,
+  ReviewResult,
 } from '../types';
 
 // ── Lessons ────────────────────────────────────────────────────────────────
@@ -29,11 +29,43 @@ export const useLessons = (level?: string) =>
     queryFn: () => level ? api.getLessonsByLevel(level) : api.getAllLessons(),
   });
 
-export const useLesson = (id: string) =>
+/** Helper to merge duplicate terms (same word, different class/meaning) */
+export const consolidateLessonWords = (data: Lesson): Lesson => {
+  const consolidatedWords: VocabWord[] = [];
+  data.words.forEach((current) => {
+    const existing = consolidatedWords.find(
+      (w) => w.term.toLowerCase() === current.term.toLowerCase(),
+    );
+    if (existing) {
+      // Merge classes (modifiers)
+      if (!existing.modifiers.toLowerCase().includes(current.modifiers.toLowerCase())) {
+        existing.modifiers += `, ${current.modifiers}`;
+      }
+      // Merge meanings
+      if (!existing.meaning.includes(current.meaning)) {
+        existing.meaning += `; ${current.meaning}`;
+      }
+      // Convert full_sentence to a list if it's the second sentence
+      if (!existing.full_sentence.includes(current.full_sentence)) {
+        if (!existing.full_sentence.startsWith('•')) {
+          existing.full_sentence = `• ${existing.full_sentence}\n• ${current.full_sentence}`;
+        } else {
+          existing.full_sentence += `\n• ${current.full_sentence}`;
+        }
+      }
+    } else {
+      consolidatedWords.push({ ...current });
+    }
+  });
+  return { ...data, words: consolidatedWords };
+};
+
+export const useLesson = (id: string, options?: { consolidate?: boolean }) =>
   useQuery({
     queryKey: queryKeys.lessons.detail(id),
     queryFn: () => api.getLessonById(id),
     enabled: !!id,
+    select: options?.consolidate ? consolidateLessonWords : undefined,
   });
 
 /** Flat list of every word in every lesson — used by SearchVocab */
@@ -44,15 +76,6 @@ export const useAllLessonWords = () =>
     staleTime: Infinity, // static content — never changes at runtime
   });
 
-/** Imperative fetcher — use inside effects or async handlers */
-export const useLessonFetcher = () => {
-  const qc = useQueryClient();
-  return (id: string) =>
-    qc.fetchQuery({
-      queryKey: queryKeys.lessons.detail(id),
-      queryFn: () => api.getLessonById(id),
-    });
-};
 
 // ── Grammar ────────────────────────────────────────────────────────────────
 export const useGrammarLessons = (level?: string) =>
@@ -96,21 +119,7 @@ export const useWordProgressByLesson = (lessonId: string) =>
     enabled: !!lessonId,
   });
 
-export const useAddWordProgressMutation = () => {
-  const qc = useQueryClient();
-  return useMutation({
-    mutationFn: (progress: Omit<WordProgress, 'id'>) => api.addWordProgress(progress),
-    onSuccess: () => qc.invalidateQueries({ queryKey: queryKeys.wordProgress.all() }),
-  });
-};
 
-export const useUpdateWordProgressMutation = () => {
-  const qc = useQueryClient();
-  return useMutation({
-    mutationFn: (progress: WordProgress) => api.updateWordProgress(progress),
-    onSuccess: () => qc.invalidateQueries({ queryKey: queryKeys.wordProgress.all() }),
-  });
-};
 
 export const useDeleteWordProgressMutation = () => {
   const qc = useQueryClient();
@@ -136,6 +145,18 @@ export const useAddLessonProgressMutation = () => {
 };
 
 // ── Session Progress ───────────────────────────────────────────────────────
+export const useFinishSessionMutation = () => {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: (payload: Parameters<typeof api.finishSession>[0]) => api.finishSession(payload),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: queryKeys.wordProgress.all() });
+      qc.invalidateQueries({ queryKey: queryKeys.stats() });
+      qc.invalidateQueries({ queryKey: queryKeys.studyLog.all() });
+    },
+  });
+};
+
 export const useAllSessionProgress = () =>
   useQuery({
     queryKey: queryKeys.sessionProgress.all(),
@@ -149,25 +170,16 @@ export const useSessionProgress = (lessonId: string) =>
     queryFn: () => api.getSessionProgress(lessonId),
     enabled: !!lessonId,
     staleTime: 0,
+    refetchOnWindowFocus: false,
   });
 
-/** Imperative fetcher — use inside effects or async handlers */
-export const useSessionProgressFetcher = () => {
-  const qc = useQueryClient();
-  return (lessonId: string) =>
-    qc.fetchQuery({
-      queryKey: queryKeys.sessionProgress.byLesson(lessonId),
-      queryFn: () => api.getSessionProgress(lessonId),
-      staleTime: 0,
-    });
-};
 
 export const useSaveSessionProgressMutation = () => {
   const qc = useQueryClient();
   return useMutation({
     mutationFn: (progress: SessionProgress) => api.saveSessionProgress(progress),
-    onSuccess: (_data, vars) => {
-      qc.invalidateQueries({ queryKey: queryKeys.sessionProgress.byLesson(vars.id) });
+    onSuccess: (data, vars) => {
+      qc.setQueryData(queryKeys.sessionProgress.byLesson(vars.id), data);
       qc.invalidateQueries({ queryKey: queryKeys.sessionProgress.all() });
     },
   });
@@ -289,51 +301,19 @@ export const useFinishVocabSessionMutation = () => {
       };
       const today = localDateStr();
 
-      // 1. Current word progress (uses cache when still fresh)
-      const existingProgress = await qc
-        .fetchQuery({ queryKey: queryKeys.wordProgress.all(), queryFn: api.getWordProgressAll })
-        .catch(() => [] as Awaited<ReturnType<typeof api.getWordProgressAll>>);
-      const existingIds = new Set(existingProgress.map((p) => p.id));
-
-      // 2–4. Run independent writes in parallel
+      // 1-4. Run independent writes in parallel
       const uniqueContinueTerms = [...new Map(wordsToSave.map((w) => [w.term, w])).values()];
       const uniqueRememberedTerms = [...new Map(rememberedWords.map((w) => [w.term, w])).values()];
       
-      const newWordsCount = uniqueContinueTerms.filter(
-        (w) => !existingIds.has(w.term.trim().toLowerCase()),
-      ).length;
+      const newWordsCount = uniqueContinueTerms.length; // Actually, the BE handles exact new/old, but for stats we just count all continue terms as learned 
 
-      // Find existing progress for these terms
-      const existingMap = new Map(existingProgress.map(p => [p.id, p]));
+      const reviews: ReviewResult[] = [];
+      uniqueContinueTerms.forEach(w => reviews.push({ term: w.term, lessonId, isCorrect: false, isBossBattle: false }));
+      uniqueRememberedTerms.forEach(w => reviews.push({ term: w.term, lessonId, isCorrect: true, isBossBattle: false }));
 
       await Promise.all([
-        // 2. Add word progress for brand new words
-        ...uniqueContinueTerms
-          .filter((w) => !existingIds.has(w.term.trim().toLowerCase()))
-          .map((w) => api.addWordProgress(createInitialWordProgress(w.term, lessonId))),
-
-        // 2b. Update existing progress for words in continue queue (Reinforcement)
-        ...uniqueContinueTerms
-          .filter(w => existingIds.has(w.term.trim().toLowerCase()))
-          .map(w => {
-            const p = existingMap.get(w.term.trim().toLowerCase())!;
-            return api.updateWordProgress({ ...p, lastStudied: today });
-          }),
-
-        // 2c. Promote Level for remembered words already in progress (Manual Promotion)
-        ...uniqueRememberedTerms
-          .filter(w => existingIds.has(w.term.trim().toLowerCase()))
-          .map(w => {
-            const p = existingMap.get(w.term.trim().toLowerCase())!;
-            const { newLevel, nextReviewDate } = calculateNextReview(p.level, true);
-            return api.updateWordProgress({
-              ...p,
-              level: newLevel,
-              nextReview: nextReviewDate,
-              lastStudied: today,
-              correctCount: p.correctCount + 1
-            });
-          }),
+        // 2 & 5. Process word progress, stats, and study log atomically on backend
+        api.finishSession({ clientDate: today, reviews }),
 
         // 3. Upsert lesson progress
         api.getLessonProgressAll().then((all) => {
@@ -347,51 +327,6 @@ export const useFinishVocabSessionMutation = () => {
         api.deleteSessionProgressByLessonId(lessonId).catch(() => {}),
       ]);
 
-      // 5. Update stats (uses local date for correct streak calculation)
-      const currentStats = await qc.fetchQuery({
-        queryKey: queryKeys.stats(),
-        queryFn: api.getStats,
-      });
-      const lastDate = currentStats.lastStudyDate;
-      const yesterdayDate = new Date();
-      yesterdayDate.setDate(yesterdayDate.getDate() - 1);
-      const yesterday = `${yesterdayDate.getFullYear()}-${String(yesterdayDate.getMonth() + 1).padStart(2, '0')}-${String(yesterdayDate.getDate()).padStart(2, '0')}`;
-      const newStreak =
-        lastDate === yesterday || lastDate === today
-          ? currentStats.currentStreak + (lastDate === today ? 0 : 1)
-          : 1;
-      const newStudyDays =
-        lastDate === today ? currentStats.totalStudyDays : currentStats.totalStudyDays + 1;
-      await api.updateStats({
-        ...currentStats,
-        totalWordsLearned: currentStats.totalWordsLearned + newWordsCount,
-        currentStreak: newStreak,
-        lastStudyDate: today,
-        totalStudyDays: newStudyDays,
-      });
-
-      // 6. Upsert study log (staleTime:0 ensures we read the latest count)
-      const existingLog = await qc
-        .fetchQuery({
-          queryKey: queryKeys.studyLog.byDate(today),
-          queryFn: () => api.getStudyLogByDate(today),
-          staleTime: 0,
-        })
-        .catch(() => null);
-      if (existingLog) {
-        await api.updateStudyLog({
-          ...existingLog,
-          wordsLearned: existingLog.wordsLearned + newWordsCount,
-        });
-      } else {
-        await api.addStudyLog({
-          id: today,
-          date: today,
-          wordsLearned: newWordsCount,
-          wordsReviewed: 0,
-        });
-      }
-
       return { newWordsCount, wordsSaved: uniqueContinueTerms.map((w) => w.term) };
     },
 
@@ -400,76 +335,6 @@ export const useFinishVocabSessionMutation = () => {
       qc.invalidateQueries({ queryKey: queryKeys.lessonProgress.all() });
       qc.invalidateQueries({ queryKey: queryKeys.sessionProgress.all() });
       qc.invalidateQueries({ queryKey: queryKeys.stats() });
-      qc.invalidateQueries({ queryKey: queryKeys.studyLog.all() });
-    },
-  });
-};/**
- * useFinishDailyReviewMutation
- * Updates stats and study log after a review session (Daily or General).
- */
-export const useFinishDailyReviewMutation = () => {
-  const qc = useQueryClient();
-
-  return useMutation({
-    mutationFn: async ({ reviewedCount }: { reviewedCount: number }) => {
-      const localDateStr = () => {
-        const d = new Date();
-        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-      };
-      const today = localDateStr();
-
-      // 1. Update stats
-      const currentStats = await qc.fetchQuery({
-        queryKey: queryKeys.stats(),
-        queryFn: api.getStats,
-      });
-      const lastDate = currentStats.lastStudyDate;
-      const yesterdayDate = new Date();
-      yesterdayDate.setDate(yesterdayDate.getDate() - 1);
-      const yesterday = `${yesterdayDate.getFullYear()}-${String(yesterdayDate.getMonth() + 1).padStart(2, '0')}-${String(yesterdayDate.getDate()).padStart(2, '0')}`;
-      
-      const newStreak =
-        lastDate === yesterday || lastDate === today
-          ? currentStats.currentStreak + (lastDate === today ? 0 : 1)
-          : 1;
-      const newStudyDays =
-        lastDate === today ? currentStats.totalStudyDays : currentStats.totalStudyDays + 1;
-
-      await api.updateStats({
-        ...currentStats,
-        currentStreak: newStreak,
-        lastStudyDate: today,
-        totalStudyDays: newStudyDays,
-      });
-
-      // 2. Update study log
-      const existingLog = await qc
-        .fetchQuery({
-          queryKey: queryKeys.studyLog.byDate(today),
-          queryFn: () => api.getStudyLogByDate(today),
-          staleTime: 0,
-        })
-        .catch(() => null);
-
-      if (existingLog) {
-        await api.updateStudyLog({
-          ...existingLog,
-          wordsReviewed: (existingLog.wordsReviewed || 0) + reviewedCount,
-        });
-      } else {
-        await api.addStudyLog({
-          id: today,
-          date: today,
-          wordsLearned: 0,
-          wordsReviewed: reviewedCount,
-        });
-      }
-
-      return { reviewedCount };
-    },
-    onSuccess: () => {
-      qc.invalidateQueries({ queryKey: queryKeys.stats() });
-      qc.invalidateQueries({ queryKey: queryKeys.studyLog.all() });
     },
   });
 };

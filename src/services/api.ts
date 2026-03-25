@@ -10,6 +10,7 @@ import {
   StudyLog,
   AppStats,
   AppSettings,
+  ReviewResult,
 } from '../types';
 
 const USER_COLLECTIONS = [
@@ -44,14 +45,7 @@ export const api = {
     http.get<WordProgress[]>('/wordProgress').then((r) => r.data),
   getWordProgressByLesson: (lessonId: string) =>
     http.get<WordProgress[]>(`/wordProgress?lessonId=${lessonId}`).then((r) => r.data),
-  addWordProgress: (progress: Omit<WordProgress, 'id'>) =>
-    http.post<WordProgress>('/wordProgress', {
-      ...progress,
-      id: progress.term.trim().toLowerCase(),
-    }).then((r) => r.data),
-  updateWordProgress: (progress: WordProgress) =>
-    http.put<WordProgress>(`/wordProgress/${encodeURIComponent(progress.id)}`, progress)
-      .then((r) => r.data),
+
   deleteWordProgress: (id: string) =>
     http.delete(`/wordProgress/${encodeURIComponent(id)}`),
 
@@ -64,6 +58,9 @@ export const api = {
     http.put<LessonProgress>(`/lessonProgress/${encodeURIComponent(progress.id)}`, progress).then((r) => r.data),
 
   // --- Session Progress ---
+  finishSession: (payload: { clientDate: string; reviews: ReviewResult[] }) =>
+    http.post<{ success: boolean; wordsLearned: number; wordsReviewed: number; graduatedItems: WordProgress[]; stats: AppStats }>('/session/finish', payload).then((r) => r.data),
+
   getSessionProgress: (id: string) =>
     http.get<SessionProgress[]>(`/sessionProgress?id=${encodeURIComponent(id)}`)
       .then(({ data }) =>

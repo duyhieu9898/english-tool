@@ -15,6 +15,8 @@ import {
   Languages,
   Star,
 } from 'lucide-react';
+import { Button } from '../../components/ui/Button';
+import { QuizOption } from '../../components/ui/QuizOption';
 
 export const ReadingDetail: React.FC = () => {
   const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
@@ -78,7 +80,9 @@ export const ReadingDetail: React.FC = () => {
   return (
     <PageDetail>
       <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
-        <button
+        <Button
+          variant="outline"
+          size="sm"
           onClick={() => {
             if (mode === 'QUIZ') {
               setMode('READING');
@@ -86,10 +90,9 @@ export const ReadingDetail: React.FC = () => {
               navigate(`/reading/${level}`);
             }
           }}
-          className="inline-flex items-center text-sm font-black uppercase text-black dark:text-white bg-white dark:bg-black px-4 py-2 border-2 border-black dark:border-white rounded-xl shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-[0px_0px_0px_0px] transition-all"
         >
           <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> {mode === 'QUIZ' ? 'Back to Reading' : 'Retreat'}
-        </button>
+        </Button>
       </div>
 
       <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] overflow-hidden">
@@ -104,13 +107,14 @@ export const ReadingDetail: React.FC = () => {
 
             <div className="prose dark:prose-invert max-w-none text-lg">
               <div className="mb-4 flex justify-end">
-                <button
+                <Button
+                  variant="outline"
+                  size="sm"
                   onClick={() => setShowTranslation(!showTranslation)}
-                  className="flex items-center gap-2 bg-white dark:bg-gray-800 text-black dark:text-white py-2 px-4 rounded-xl font-bold text-sm uppercase tracking-widest border-2 border-black dark:border-gray-600 hover:-translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none transition-all"
                 >
-                  <Languages className="w-4 h-4" />{' '}
+                  <Languages className="w-5 h-5 mr-2" />{' '}
                   {showTranslation ? 'Hide Translation' : 'View Translation'}
-                </button>
+                </Button>
               </div>
 
               <div className="leading-relaxed font-medium bg-amber-50 dark:bg-gray-800/80 p-8 rounded-2xl whitespace-pre-line mb-8 border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] text-gray-900 dark:text-gray-100">
@@ -132,7 +136,7 @@ export const ReadingDetail: React.FC = () => {
                     {lesson.vocabulary_highlights.map((vh, i) => (
                       <div
                         key={i}
-                        className="flex items-start justify-between p-4 rounded-xl border-4 border-black dark:border-gray-600 bg-teal-50 dark:bg-gray-900"
+                        className="flex items-start justify-between p-4 rounded-xl border-4 border-black dark:border-gray-600 bg-teal-100 dark:bg-gray-900"
                       >
                         <div>
                           <span className="font-black text-xl text-black dark:text-white block mb-1 uppercase">
@@ -142,12 +146,14 @@ export const ReadingDetail: React.FC = () => {
                             {vh.meaning}
                           </span>
                         </div>
-                        <button
+                        <Button
+                          variant="outline"
+                          size="sm"
                           onClick={() => speak(vh.word)}
-                          className="p-3 text-black dark:text-white bg-white dark:bg-black hover:bg-teal-200 dark:hover:bg-gray-700 border-2 border-black rounded-xl hover:-translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-y-0 active:shadow-none"
+                          className="!h-12 !w-12 !p-0"
                         >
                           <Volume2 className="w-6 h-6 stroke-3" />
-                        </button>
+                        </Button>
                       </div>
                     ))}
                   </div>
@@ -156,12 +162,13 @@ export const ReadingDetail: React.FC = () => {
             </div>
 
             <div className="mt-12 flex justify-end">
-              <button
+              <Button
+                variant="black"
+                size="md"
                 onClick={handleStartQuiz}
-                className="flex items-center gap-2 bg-black text-white dark:bg-white dark:text-black py-3 px-6 rounded-xl font-black text-lg uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none transition-all"
               >
-                Reading Quiz <ChevronRight className="w-6 h-6 stroke-3" />
-              </button>
+                Reading Quiz <ChevronRight className="w-6 h-6 stroke-3 ml-2" />
+              </Button>
             </div>
           </div>
         )}
@@ -197,30 +204,29 @@ export const ReadingDetail: React.FC = () => {
 
             <div className="space-y-4 flex-1">
               {lesson.questions[currentQuestionIndex].options.map((opt, i) => (
-                <button
+                <QuizOption
                   key={i}
-                  onClick={() => !showExplanation && setSelectedOption(opt)}
-                  className={`w-full text-left p-3 rounded-2xl border-4 transition-all font-bold text-lg ${
-                    selectedOption === opt
-                      ? 'border-black bg-yellow-200 text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-yellow-900/40 dark:text-yellow-100'
-                      : 'border-black dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]'
-                  } ${showExplanation && opt === lesson.questions[currentQuestionIndex].answer ? 'border-black bg-emerald-200 text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-emerald-900/60 dark:text-emerald-50' : ''}`}
-                  disabled={showExplanation}
-                >
-                  {opt}
-                </button>
+                  label={opt}
+                  isSelected={selectedOption === opt}
+                  showResult={showExplanation}
+                  isCorrect={opt === lesson.questions[currentQuestionIndex].answer}
+                  onClick={() => setSelectedOption(opt)}
+                  variant="reading"
+                />
               ))}
             </div>
 
             <div className="mt-6">
               {!showExplanation ? (
-                <button
+                <Button
+                  variant="black"
+                  size="lg"
+                  fullWidth
                   disabled={!selectedOption}
                   onClick={checkAnswer}
-                  className="w-full flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black py-3 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
                 >
-                  Check Answer <Check className="w-6 h-6 stroke-3" />
-                </button>
+                  Check Answer <Check className="w-6 h-6 stroke-3 ml-2" />
+                </Button>
               ) : (
                 <div className="space-y-6">
                   <div className="p-4 bg-lime-200 dark:bg-lime-900/30 text-black dark:text-white rounded-2xl border-4 border-black dark:border-emerald-800">
@@ -234,12 +240,14 @@ export const ReadingDetail: React.FC = () => {
                       {lesson.questions[currentQuestionIndex].explanation}
                     </div>
                   </div>
-                  <button
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    fullWidth
                     onClick={nextQuestion}
-                    className="w-full flex items-center justify-center gap-2 bg-blue-500 text-white py-3 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-0 active:shadow-none transition-all"
                   >
-                    Next Question <ChevronRight className="w-6 h-6 stroke-3" />
-                  </button>
+                    Next Question <ChevronRight className="w-6 h-6 stroke-3 ml-2" />
+                  </Button>
                 </div>
               )}
             </div>
@@ -262,12 +270,15 @@ export const ReadingDetail: React.FC = () => {
             </div>
 
             <div className="pt-8 w-full max-w-sm">
-              <button
+              <Button
+                variant="black"
+                size="lg"
+                fullWidth
                 onClick={() => navigate(`/reading/${level}`)}
-                className="w-full flex items-center justify-center gap-3 bg-black text-lime-400 dark:bg-white dark:text-black py-4 px-8 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:border-lime-400 dark:hover:border-lime-500 hover:scale-105 active:scale-95 transition-all"
+                className="text-lime-400!"
               >
-                Return to Map <ArrowLeft className="w-6 h-6 rotate-180" />
-              </button>
+                Return to Map <ArrowLeft className="w-6 h-6 rotate-180 ml-2" />
+              </Button>
             </div>
           </div>
         )}

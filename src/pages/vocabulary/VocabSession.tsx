@@ -2,32 +2,39 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import confetti from 'canvas-confetti';
 import {
-  useLessonFetcher,
-  useSessionProgressFetcher,
+  useLesson,
+  useSessionProgress,
   useSaveSessionProgressMutation,
   useFinishVocabSessionMutation,
 } from '../../hooks/useApi';
-import type { Lesson, VocabWord } from '../../types';
+import type { VocabWord } from '../../types';
 import { FlashCard } from '../../components/flashcard/FlashCard';
 import { BatchReview } from '../../components/flashcard/BatchReview';
 import { ArrowLeft, Flag, Star } from 'lucide-react';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
+import { Button } from '../../components/ui/Button';
 import { log } from '../../services/activityLogger';
 
 type SessionState = 'LOADING' | 'FLASHCARDS' | 'REVIEW' | 'COMPLETED';
 
 export const VocabSession: React.FC = () => {
-  const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
+  const { level, lessonId } = useParams<{ level: string; lessonId: string }>();;
+
   const navigate = useNavigate();
 
-  const fetchLesson          = useLessonFetcher();
-  const fetchSessionProgress = useSessionProgressFetcher();
-  const saveProgress         = useSaveSessionProgressMutation();
-  const finishMutation       = useFinishVocabSessionMutation();
+  const {
+    data: lesson,
+    isSuccess: lessonLoaded,
+    error: lessonError,
+  } = useLesson(lessonId || '', { consolidate: true });
+  const { data: sessionProgress, isSuccess: progressLoaded } = useSessionProgress(lessonId || '');
+
+  const saveProgress = useSaveSessionProgressMutation();
+  const finishMutation = useFinishVocabSessionMutation();
 
   const [sessionState, setSessionState] = useState<SessionState>('LOADING');
-  const [lesson, setLesson] = useState<Lesson | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const initialIndexRef = useRef<number | null>(null);
   const [continueQueue, setContinueQueue] = useState<VocabWord[]>([]);
   // Ref mirrors continueQueue so finishSession always gets a non-stale snapshot
   const continueQueueRef = React.useRef<VocabWord[]>([]);
@@ -35,93 +42,72 @@ export const VocabSession: React.FC = () => {
   // ── Initial load ──────────────────────────────────────────────────────────
   // fetchLesson / fetchSessionProgress are stable references from useQueryClient — safe to omit
   useEffect(() => {
-    if (!lessonId) return;
-    let ignore = false;
+    if (sessionState !== 'LOADING') return;
 
-        fetchLesson(lessonId)
-          .then((data) => {
-            if (ignore) return;
+    if (lessonError) {
+      console.error(lessonError);
+      navigate('/vocabulary');
+      return;
+    }
 
-            // --- Consolidate duplicate terms (e.g. exercise noun vs verb) ---
-            const consolidatedWords: VocabWord[] = [];
-            data.words.forEach((current) => {
-              const existing = consolidatedWords.find(
-                (w) => w.term.toLowerCase() === current.term.toLowerCase(),
-              );
-              if (existing) {
-                // Merge classes (modifiers)
-                if (!existing.modifiers.toLowerCase().includes(current.modifiers.toLowerCase())) {
-                  existing.modifiers += `, ${current.modifiers}`;
-                }
-                // Merge meanings
-                if (!existing.meaning.includes(current.meaning)) {
-                  existing.meaning += `; ${current.meaning}`;
-                }
-                // Convert full_sentence to a list if it's the second sentence
-                if (!existing.full_sentence.includes(current.full_sentence)) {
-                  if (!existing.full_sentence.startsWith('•')) {
-                    existing.full_sentence = `• ${existing.full_sentence}\n• ${current.full_sentence}`;
-                  } else {
-                    existing.full_sentence += `\n• ${current.full_sentence}`;
-                  }
-                }
-              } else {
-                consolidatedWords.push({ ...current });
-              }
-            });
-
-            const consolidatedLesson = { ...data, words: consolidatedWords };
-            setLesson(consolidatedLesson);
-            log({
-              fn: 'lesson:loaded',
-              lesson: lessonId,
-              detail: `words=${consolidatedLesson.words.length} (original=${data.words.length})`,
-            });
-
-            if (consolidatedLesson.words.length === 0) {
-              setSessionState('COMPLETED');
-              return;
-            }
-
-            fetchSessionProgress(lessonId)
-              .then((prog) => {
-                if (ignore) return;
-                if (prog) {
-                  log({
-                    fn: 'session:resume',
-                    lesson: lessonId,
-                    detail: `fromIndex=${prog.currentIndex}`,
-                  });
-                  setCurrentIndex(Math.min(prog.currentIndex, consolidatedLesson.words.length - 1));
-                } else {
-                  log({ fn: 'session:new', lesson: lessonId });
-                  setCurrentIndex(0);
-                }
-                setSessionState('FLASHCARDS');
-              })
-          .catch(() => {
-            if (!ignore) {
-              setCurrentIndex(0);
-              setSessionState('FLASHCARDS');
-            }
-          });
-      })
-      .catch((err) => {
-        if (!ignore) {
-          console.error(err);
-          navigate('/vocabulary');
-        }
+    if (lessonLoaded && progressLoaded && lesson) {
+      // 1. Log lesson loaded
+      log({
+        fn: 'lesson:loaded',
+        lesson: lessonId,
+        detail: `words=${lesson.words.length}`,
       });
 
-    return () => { ignore = true; };
-  // eslint-disable-next-line react-hooks/exhaustive-deps -- fetchLesson/fetchSessionProgress are stable (useQueryClient ref)
-  }, [lessonId, navigate]);
+      // 2. Terminate if lesson is empty
+      if (lesson.words.length === 0) {
+        setSessionState('COMPLETED');
+        return;
+      }
+
+      // 3. Set progress
+      if (sessionProgress) {
+        log({
+          fn: 'session:resume',
+          lesson: lessonId,
+          detail: `fromIndex=${sessionProgress.currentIndex}`,
+        });
+        const resumeIndex = Math.min(sessionProgress.currentIndex, lesson.words.length - 1);
+        setCurrentIndex(resumeIndex);
+        initialIndexRef.current = resumeIndex;
+      } else {
+        log({ fn: 'session:new', lesson: lessonId });
+        setCurrentIndex(0);
+        initialIndexRef.current = 0;
+      }
+
+      // 4. Start session
+      setSessionState('FLASHCARDS');
+    }
+  }, [
+    lessonLoaded,
+    progressLoaded,
+    lesson,
+    sessionProgress,
+    lessonId,
+    navigate,
+    lessonError,
+    sessionState,
+  ]);
 
   // ── Auto-save checkpoint whenever currentIndex advances ───────────────────
   useEffect(() => {
-    if (sessionState !== 'FLASHCARDS' || !lessonId) return;
+    // Skip if not study mode or if index hasn't actually advanced beyond initial state
+    if (
+      sessionState !== 'FLASHCARDS' ||
+      !lessonId ||
+      initialIndexRef.current === null ||
+      currentIndex <= initialIndexRef.current
+    ) {
+      return;
+    }
+
     saveProgress.mutate({ id: lessonId, currentIndex, lastUpdated: new Date().toISOString() });
-  // eslint-disable-next-line react-hooks/exhaustive-deps -- saveProgress.mutate is stable (useMutation)
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- saveProgress.mutate is stable (useMutation)
   }, [currentIndex, sessionState, lessonId]);
 
   const rememberedWordsRef = useRef<VocabWord[]>([]);
@@ -151,7 +137,11 @@ export const VocabSession: React.FC = () => {
     if (currentIndex < lesson.words.length - 1) {
       setCurrentIndex((prev) => prev + 1);
     } else {
-      log({ fn: 'advanceFlashcard:end', lesson: lessonId, detail: `queue=${continueQueueRef.current.length}` });
+      log({
+        fn: 'advanceFlashcard:end',
+        lesson: lessonId,
+        detail: `queue=${continueQueueRef.current.length}`,
+      });
       if (continueQueueRef.current.length > 0) {
         setSessionState('REVIEW');
       } else if (!finishMutation.isPending) {
@@ -164,13 +154,13 @@ export const VocabSession: React.FC = () => {
   const finishSession = async () => {
     if (!lessonId || !lesson) return;
 
-    log({ 
-      fn: 'finishSession:start', 
-      lesson: lessonId, 
-      data: { 
+    log({
+      fn: 'finishSession:start',
+      lesson: lessonId,
+      data: {
         continue: continueQueueRef.current.length,
-        remembered: rememberedWordsRef.current.length
-      } 
+        remembered: rememberedWordsRef.current.length,
+      },
     });
 
     try {
@@ -183,7 +173,12 @@ export const VocabSession: React.FC = () => {
       log({ fn: 'finishSession:done', lesson: lessonId, data: result });
 
       setSessionState('COMPLETED');
-      confetti({ particleCount: 200, spread: 90, origin: { y: 0.5 }, colors: ['#000000', '#bef264', '#fde047', '#f87171'] });
+      confetti({
+        particleCount: 200,
+        spread: 90,
+        origin: { y: 0.5 },
+        colors: ['#000000', '#bef264', '#fde047', '#f87171'],
+      });
     } catch (e) {
       log({ fn: 'finishSession:error', lesson: lessonId, detail: String(e) });
       console.error('Error saving progress', e);
@@ -203,15 +198,12 @@ export const VocabSession: React.FC = () => {
     <PageDetail>
       {/* Header */}
       <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
-        <button
-          onClick={() => navigate(`/vocabulary/${level}`)}
-          className="inline-flex items-center text-sm font-black uppercase text-black dark:text-white bg-white dark:bg-black px-4 py-2 border-2 border-black dark:border-white rounded-xl shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-[0px_0px_0px_0px] transition-all"
-        >
+        <Button variant="outline" size="sm" onClick={() => navigate(`/vocabulary/${level}`)}>
           <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> Retreat
-        </button>
+        </Button>
 
         {sessionState === 'FLASHCARDS' && lesson && (
-          <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl transform rotate-2 border-2 border-transparent">
+          <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl transform  border-2 border-transparent">
             <Flag className="w-5 h-5" /> Stage {currentIndex + 1}/{lesson.words.length}
           </div>
         )}
@@ -227,7 +219,11 @@ export const VocabSession: React.FC = () => {
                 style={{ width: `${(currentIndex / lesson.words.length) * 100}%` }}
               />
             </div>
-            <FlashCard word={lesson.words[currentIndex]} onContinue={handleContinue} onKnown={handleKnown} />
+            <FlashCard
+              word={lesson.words[currentIndex]}
+              onContinue={handleContinue}
+              onKnown={handleKnown}
+            />
           </div>
         )}
 
@@ -246,7 +242,7 @@ export const VocabSession: React.FC = () => {
         )}
 
         {sessionState === 'COMPLETED' && (
-          <div className="bg-white dark:bg-gray-800 p-8 md:p-12 rounded-3xl border-4 border-black dark:border-white shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] text-center space-y-8 transform hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white dark:bg-gray-800 p-8 md:p-12 rounded-3xl border-4 border-black dark:border-white shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] text-center space-y-8 transform transition-transform duration-300">
             <div className="inline-flex items-center justify-center w-32 h-32 rounded-full border-4 border-black bg-lime-300 dark:bg-lime-500 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-4 animate-bounce">
               <Star className="w-16 h-16 text-black fill-current" />
             </div>
@@ -263,12 +259,15 @@ export const VocabSession: React.FC = () => {
             </div>
 
             <div className="pt-8">
-              <button
+              <Button
+                variant="black"
+                size="lg"
+                fullWidth
                 onClick={() => navigate(`/vocabulary/${level}`)}
-                className="w-full max-w-sm mx-auto flex items-center justify-center gap-3 bg-black text-lime-400 dark:bg-white dark:text-black py-4 px-8 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:border-lime-400 dark:hover:border-lime-500 hover:scale-105 active:scale-95 transition-all"
+                className="max-w-sm mx-auto text-lime-400!"
               >
-                Return to Map <ArrowLeft className="w-6 h-6 rotate-180" />
-              </button>
+                Return to Map <ArrowLeft className="w-6 h-6 rotate-180 ml-2" />
+              </Button>
             </div>
           </div>
         )}

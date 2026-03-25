@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "data/",
+    "*.tmp",
+    "node_modules"
+  ],
+  "ext": "js,mjs,json"
+}

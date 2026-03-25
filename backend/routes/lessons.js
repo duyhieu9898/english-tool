@@ -23,8 +23,7 @@ router.get('/', (req, res) => {
     lessons = lessons.slice(0, parseInt(_limit, 10));
   }
 
-  // Strip words from list response to keep payload small
-  res.json(lessons.map(({ words: _w, ...rest }) => rest));
+  res.json(lessons);
 });
 
 // GET /lessons/words — flat list of ALL words across all lessons (used by SearchVocab)

@@ -4,18 +4,21 @@ import {
   useWordProgressAll,
   useAllStudyLogs,
   useLessonProgressAll,
-} from '../../hooks/useApi';
-import { Card } from '../../components/ui/Card';
-import { ProgressBar } from '../../components/ui/ProgressBar';
-import { HeatmapCalendar } from '../../components/common/HeatmapCalendar';
+  useSettings,
+} from '@/hooks/useApi';
+import { Card } from '@/components/ui/Card';
+import { ProgressBar } from '@/components/ui/ProgressBar';
+import { HeatmapCalendar } from '@/components/common/HeatmapCalendar';
 import { Layers, Activity, Star, BookOpen, BookType, Hash } from 'lucide-react';
-import { PageContainer } from '../../components/layout/PageContainer';
+import { PageContainer } from '@/components/layout/PageContainer';
 
 export const ProgressPage: React.FC = () => {
   const { data: stats }            = useStats();
   const { data: words = [] }       = useWordProgressAll();
   const { data: logs = [] }        = useAllStudyLogs();
   const { data: lessons = [] }     = useLessonProgressAll();
+  const { data: settings }         = useSettings();
+  const dailyGoal = settings?.dailyGoal ?? 20;
 
   const totalWordsActive = words.length;
   const masteredWords    = Math.max(0, (stats?.totalWordsLearned ?? 0) - totalWordsActive);
@@ -130,7 +133,7 @@ export const ProgressPage: React.FC = () => {
 
       <Card padding="lg">
         <h2 className="text-xl font-bold mb-6">Activity History</h2>
-        <HeatmapCalendar logs={logs} days={180} />
+        <HeatmapCalendar logs={logs} dailyGoal={dailyGoal} />
       </Card>
     </PageContainer>
   );

@@ -3,6 +3,7 @@ import { useAllLessonWords } from '../../hooks/useApi';
 import type { VocabWord } from '../../types';
 import { useTTS } from '../../hooks/useTTS';
 import { Search, Volume2, BookOpen } from 'lucide-react';
+import { Button } from '../../components/ui/Button';
 
 type SearchResult = VocabWord & { lessonId: string; lessonName: string; level: string };
 
@@ -132,14 +133,15 @@ export const SearchVocab: React.FC = () => {
                 </div>
               </div>
 
-              <button
-                type="button"
-                aria-label={`Pronounce ${word.term}`}
+              <Button
+                variant="black"
+                size="sm"
                 onClick={() => speak(word.term)}
-                className="shrink-0 p-3 bg-black text-white dark:bg-white dark:text-black rounded-xl border-2 border-black hover:-translate-y-0.5 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,0.4)] active:translate-y-0 active:shadow-none transition-all"
+                aria-label={`Pronounce ${word.term}`}
+                className="shrink-0 !h-11 !w-11"
               >
                 <Volume2 className="w-5 h-5" />
-              </button>
+              </Button>
             </div>
           ))}
         </div>

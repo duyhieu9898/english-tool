@@ -5,19 +5,17 @@ import {
   useLessonProgressAll,
   useLessons,
   useWordProgressAll,
-  useAddWordProgressMutation,
-  useFinishDailyReviewMutation,
-} from '../../hooks/useApi';
-import { VocabWord } from '../../types';
-import { exportToMarkdown } from '../../services/exportMarkdown';
-import { createInitialWordProgress } from '../../services/spacedRepetition';
-import { Layers, ArrowRight, Save, ArrowLeft, Star, Sparkles } from 'lucide-react';
-import { useTTS } from '../../hooks/useTTS';
-import { useKeyboard } from '../../hooks/useKeyboard';
-import { sounds } from '../../services/sounds';
-import { shuffleArray } from '../../utils/array';
-import { LessonMeaning } from '../../components/vocabulary/LessonMeaning';
-import { PageDetail } from '../../components/layout/PageDetailContainer';
+  useFinishSessionMutation,
+} from '@/hooks/useApi';
+import { VocabWord, ReviewResult } from '@/types';
+import { Layers, ArrowRight, ArrowLeft, Star, Sparkles } from 'lucide-react';
+import { useTTS } from '@/hooks/useTTS';
+import { useKeyboard } from '@/hooks/useKeyboard';
+import { sounds } from '@/services/sounds';
+import { shuffleArray } from '@/utils/array';
+import { LessonMeaning } from '@/components/vocabulary/LessonMeaning';
+import { PageDetail } from '@/components/layout/PageDetailContainer';
+import { Badge } from '@/components/ui/Badge';
 
 type SessionState = 'LOADING' | 'EMPTY' | 'REVIEWING' | 'COMPLETED';
 
@@ -27,7 +25,7 @@ export const GeneralReview: React.FC = () => {
   const { data: lessonProgress = [], isLoading: isLoadingProgress } = useLessonProgressAll();
   const { data: allLessons = [], isLoading: isLoadingLessons } = useLessons();
   const { data: wordProgress = [], isLoading: isLoadingWordProg } = useWordProgressAll();
-
+  console.log('allLessons', allLessons);
   const isLoading = isLoadingProgress || isLoadingLessons || isLoadingWordProg;
 
   // Derive the queue once all data is ready
@@ -42,7 +40,7 @@ export const GeneralReview: React.FC = () => {
     const activeTerms = new Set(wordProgress.map((wp) => wp.term.toLowerCase()));
     const termMap = new Map<string, VocabWord & { lessonId: string }>();
     allLessons.forEach((lesson) => {
-      if (!completedVocabIds.has(lesson.id)) return;
+      if (!completedVocabIds.has(lesson.id.toString())) return;
       lesson.words.forEach((w) => {
         const lowerTerm = w.term.toLowerCase();
         if (!activeTerms.has(lowerTerm)) {
@@ -72,15 +70,18 @@ export const GeneralReview: React.FC = () => {
   const [forgotten, setForgotten] = useState<{ term: string; meaning: string; lesson: string }[]>(
     [],
   );
-  const finishMutation = useFinishDailyReviewMutation();
+  const finishMutation = useFinishSessionMutation();
 
-  const handleComplete = async () => {
+  const handleComplete = async (reviews: ReviewResult[]) => {
+    setIsCompleted(true);
     try {
-      await finishMutation.mutateAsync({ reviewedCount: initialQueue.length });
-      setIsCompleted(true);
+      const today = new Date().toISOString().split('T')[0];
+      await finishMutation.mutateAsync({
+        clientDate: today,
+        reviews,
+      });
     } catch (e) {
       console.error('Failed to finish general review stats', e);
-      setIsCompleted(true);
     }
   };
 
@@ -171,14 +172,6 @@ export const GeneralReview: React.FC = () => {
               >
                 <ArrowLeft className="w-5 h-5 md:w-6 md:h-6 stroke-3" /> Base
               </button>
-              <button
-                onClick={() =>
-                  exportToMarkdown(new Date().toISOString().split('T')[0], remembered, forgotten)
-                }
-                className="flex-1 flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-3 px-6 md:py-4 md:px-6 rounded-2xl font-black text-lg md:text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-0 active:shadow-none transition-all"
-              >
-                <Save className="w-5 h-5 md:w-6 md:h-6 stroke-3" /> Export
-              </button>
             </div>
           </div>
         )}
@@ -192,14 +185,14 @@ const GeneralReviewEngine: React.FC<{
   queue: (VocabWord & { lessonId: string })[];
   onRemembered: (w: { term: string; meaning: string }) => void;
   onForgotten: (w: { term: string; meaning: string; lesson: string }) => void;
-  onComplete: () => void;
+  onComplete: (r: ReviewResult[]) => void;
 }> = ({ queue, onRemembered, onForgotten, onComplete }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inputValue, setInputValue] = useState('');
   const [showError, setShowError] = useState(false);
 
   const { speak } = useTTS();
-  const addWordProgress = useAddWordProgressMutation();
+  const reviewsRef = React.useRef<ReviewResult[]>([]);
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const currentWord = queue[currentIndex];
@@ -220,7 +213,7 @@ const GeneralReviewEngine: React.FC<{
         origin: { y: 0.5 },
         colors: ['#000000', '#bef264', '#fde047', '#f87171'],
       });
-      onComplete();
+      onComplete(reviewsRef.current);
     }
   };
 
@@ -235,7 +228,12 @@ const GeneralReviewEngine: React.FC<{
       onRemembered({ term: currentWord.term, meaning: currentWord.meaning });
 
       // Reward: If they kill the boss, start them at Level 2 for this word!
-      addWordProgress.mutate(createInitialWordProgress(currentWord.term, currentWord.lessonId, 2));
+      reviewsRef.current.push({
+        term: currentWord.term,
+        lessonId: currentWord.lessonId,
+        isCorrect: true,
+        isBossBattle: true,
+      });
 
       advance();
     } else {
@@ -247,7 +245,12 @@ const GeneralReviewEngine: React.FC<{
         meaning: currentWord.meaning,
         lesson: currentWord.lessonId,
       });
-      addWordProgress.mutate(createInitialWordProgress(currentWord.term, currentWord.lessonId, 1));
+      reviewsRef.current.push({
+        term: currentWord.term,
+        lessonId: currentWord.lessonId,
+        isCorrect: false,
+        isBossBattle: true,
+      });
     }
   };
 
@@ -262,13 +265,13 @@ const GeneralReviewEngine: React.FC<{
   if (!currentWord) return null;
 
   return (
-    <div className="w-full max-w-md mx-auto relative flex flex-col items-center justify-center p-6 bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] text-center transition-all duration-300">
-      <div className="absolute top-0 right-0 m-4 text-xs font-black text-black bg-white dark:bg-gray-400 px-3 py-1 rounded-full border-2 border-black tracking-widest shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+    <div className="w-full max-w-md mx-auto relative flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] text-center transition-all duration-300">
+      <Badge className="ml-auto mb-4">
         STAGE {currentIndex + 1} / {queue.length}
-      </div>
+      </Badge>
 
-      <div className="text-black dark:text-white font-black text-sm uppercase tracking-widest flex items-center gap-2 mb-6 bg-orange-300 dark:bg-orange-600 px-4 py-2 rounded-xl border-2 border-black transform -skew-x-12">
-        <Sparkles className="w-5 h-5" /> GENERAL REVIEW BOSS
+      <div className="text-black dark:text-white font-black text-sm uppercase tracking-widest flex items-center gap-2 bg-orange-300 dark:bg-orange-600 px-4 py-2 rounded-xl border-2 border-black transform -skew-x-12 absolute -top-6">
+        <Sparkles className="w-5 h-5" /> GENERAL REVIEW
       </div>
 
       <LessonMeaning term={currentWord.term} lessonId={currentWord.lessonId} />
@@ -299,17 +302,10 @@ const GeneralReviewEngine: React.FC<{
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Enter word"
-            className="w-full text-center text-3xl font-black py-3 px-3 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-orange-100 dark:focus:bg-orange-900/50 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all lowercase mb-8"
+            className="w-full text-center text-3xl font-black py-3 px-3 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-orange-100 dark:focus:bg-orange-900/50 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all lowercase mb-6"
             autoComplete="off"
             spellCheck="false"
           />
-          <button
-            onClick={handleSubmit}
-            disabled={!inputValue.trim()}
-            className="w-full flex items-center justify-center gap-2 bg-orange-500 text-white dark:bg-orange-400 dark:text-black py-4 px-6 rounded-xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
-          >
-            Attack <ArrowRight className="w-6 h-6 stroke-3" />
-          </button>
         </div>
       )}
     </div>

@@ -35,6 +35,7 @@ export const Dashboard: React.FC = () => {
   const todayLog      = studyLogs.find((l) => l.date === today);
   const todayLearned  = todayLog?.wordsLearned ?? 0;
   const todayReviewed = todayLog?.wordsReviewed ?? 0;
+  const todayTotal    = todayLearned + todayReviewed;
 
   const lessonMap = React.useMemo(() => {
     const m: Record<string, Lesson> = {};
@@ -79,22 +80,22 @@ export const Dashboard: React.FC = () => {
 
       {/* Daily Goal Bar */}
       <Card padding="lg">
-        <div className="flex justify-between items-end mb-3">
+        <div className="flex justify-between items-end mb-2">
           <div>
             <h2 className="text-lg font-bold flex items-center gap-2">
               <BookType className="w-5 h-5 text-blue-500" /> Daily Goal
             </h2>
             {todayReviewed > 0 && (
-              <p className="text-[10px] uppercase font-black text-gray-400 tracking-tighter ml-7">
-                + {todayReviewed} reviewed today
+              <p className="text-[12px] uppercase font-black text-gray-400 tracking-tighter ml-7">
+                + {todayReviewed} words
               </p>
             )}
           </div>
           <span className="text-sm font-bold text-gray-500">
-            {todayLearned}/{dailyGoal} words
+            {todayTotal}/{dailyGoal} words
           </span>
         </div>
-        <ProgressBar progress={Math.min((todayLearned / dailyGoal) * 100, 100)} />
+        <ProgressBar progress={Math.min((todayTotal / dailyGoal) * 100, 100)} />
       </Card>
 
       {/* Continue Learning */}
@@ -117,7 +118,7 @@ export const Dashboard: React.FC = () => {
                 navigate(`/vocabulary/${l.level}/${l.id}`);
               }}
             >
-              <Play className="w-4 h-4 mr-2" /> Resume
+              <Play className="w-5 h-5 mr-2" /> Resume
             </Button>
           </div>
         </Card>
@@ -134,7 +135,7 @@ export const Dashboard: React.FC = () => {
               <h3 className="text-lg font-black">{dueWords.length} words need review</h3>
             </div>
             <Button variant="outline" onClick={() => navigate('/review')}>
-              <Book className="w-4 h-4 mr-2" /> Review Now
+              <Book className="w-5 h-5 mr-2" /> Review Now
             </Button>
           </div>
         </Card>
@@ -185,7 +186,7 @@ export const Dashboard: React.FC = () => {
       {/* Heatmap */}
       <Card padding="lg">
         <h2 className="text-xl font-bold mb-6">Study Activity</h2>
-        <HeatmapCalendar logs={studyLogs} days={180} />
+        <HeatmapCalendar logs={studyLogs} dailyGoal={dailyGoal} />
       </Card>
     </PageContainer>
   );

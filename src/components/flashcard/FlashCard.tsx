@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Volume2, ChevronRight, Check } from 'lucide-react';
+import { Button } from '../ui/Button';
 import { VocabWord } from '../../types';
 import { useTTS } from '../../hooks/useTTS';
 import { useKeyboard } from '../../hooks/useKeyboard';
@@ -112,16 +113,18 @@ export const FlashCard: React.FC<FlashCardProps> = ({
         >
           {/* Front Face */}
           <div className="absolute w-full h-full backface-hidden bg-white dark:bg-gray-900 rounded-3xl shadow-xl flex flex-col items-center justify-center p-6 text-center border-2 border-transparent">
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={(e) => {
                 e.stopPropagation();
                 speak(word.term);
               }}
-              className="absolute top-4 right-4 p-3 text-gray-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-gray-800 rounded-full transition-colors z-10 cursor-pointer"
+              className="absolute top-4 right-4 p-3 text-gray-400 hover:text-blue-500 z-10"
               title="Listen"
             >
               <Volume2 className="w-6 h-6" />
-            </button>
+            </Button>
 
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white lowercase">
               {word.term}
@@ -148,16 +151,18 @@ export const FlashCard: React.FC<FlashCardProps> = ({
             style={{ transform: 'rotateY(180deg)' }}
           >
             <div className="flex-1 flex flex-col items-center justify-center text-center relative">
-              <button
+              <Button
+                variant="ghost"
+                size="sm"
                 onClick={(e) => {
                   e.stopPropagation();
                   speak(word.term);
                 }}
-                className="absolute top-0 right-0 p-3 text-gray-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-gray-800 rounded-full transition-colors z-10"
+                className="absolute top-0 right-0 p-3 text-gray-400 hover:text-blue-500 z-10"
                 title="Listen"
               >
                 <Volume2 className="w-6 h-6" />
-              </button>
+              </Button>
 
               <h2 className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white lowercase mt-8">
                 {word.meaning || 'Meaning not updated'}
@@ -186,19 +191,24 @@ export const FlashCard: React.FC<FlashCardProps> = ({
         animate={{ opacity: 1, y: 0 }}
         className="mt-2 flex flex-col items-center gap-3 w-full"
       >
-        <button
+        <Button
+          variant="success"
+          size="lg"
+          fullWidth
           onClick={onContinue}
-          className="w-full sm:w-2/3 md:w-full max-w-xs h-14 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-2xl shadow-lg shadow-green-500/20 transition-all font-bold text-lg flex items-center justify-center hover:-translate-y-0.5 active:translate-y-0"
+          className="sm:w-2/3 md:w-full max-w-xs"
         >
-          Continue <ChevronRight className="w-5 h-5 ml-1" />
-        </button>
+          Continue <ChevronRight className="w-6 h-6 ml-1" />
+        </Button>
 
-        <button
+        <Button
+          variant="ghost"
+          size="md"
           onClick={onKnown}
-          className="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 font-medium py-2 px-6 transition-colors flex items-center gap-2 group"
+          className="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 font-medium"
         >
-          <Check className="w-4 h-4 opacity-70 group-hover:opacity-100" /> Remembered
-        </button>
+          <Check className="w-4 h-4 opacity-70" /> Remembered
+        </Button>
       </motion.div>
     </div>
   );

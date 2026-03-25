@@ -5,6 +5,8 @@ import { useGrammarLesson, useAddLessonProgressMutation } from '../../hooks/useA
 import { sounds } from '../../services/sounds';
 import { ArrowLeft, BookOpen, CheckCircle2, ChevronRight, Check, Star } from 'lucide-react';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
+import { Button } from '../../components/ui/Button';
+import { QuizOption } from '../../components/ui/QuizOption';
 
 export const GrammarDetail: React.FC = () => {
   const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
@@ -69,12 +71,13 @@ export const GrammarDetail: React.FC = () => {
   return (
     <PageDetail>
       <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
-        <button
+        <Button
+          variant="outline"
+          size="sm"
           onClick={() => navigate(`/grammar/${level}`)}
-          className="inline-flex items-center text-sm font-black uppercase text-black dark:text-white bg-white dark:bg-black px-4 py-2 border-2 border-black dark:border-white rounded-xl shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-[0px_0px_0px_0px] transition-all"
         >
           <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> Retreat
-        </button>
+        </Button>
       </div>
 
       <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] overflow-hidden">
@@ -134,12 +137,13 @@ export const GrammarDetail: React.FC = () => {
             </div>
 
             <div className="mt-12 flex justify-end">
-              <button
+              <Button
+                variant="black"
+                size="md"
                 onClick={handleStartQuiz}
-                className="flex items-center gap-2 bg-black text-white dark:bg-white dark:text-black py-3 px-6 rounded-xl font-black text-lg uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none transition-all"
               >
-                Practice Quiz <ChevronRight className="w-6 h-6 stroke-3" />
-              </button>
+                Practice Quiz <ChevronRight className="w-6 h-6 stroke-3 ml-2" />
+              </Button>
             </div>
           </div>
         )}
@@ -161,30 +165,28 @@ export const GrammarDetail: React.FC = () => {
 
             <div className="space-y-4 flex-1">
               {lesson.practice[currentQuestionIndex].options.map((opt, i) => (
-                <button
+                <QuizOption
                   key={i}
-                  onClick={() => !showExplanation && setSelectedOption(opt)}
-                  className={`w-full text-left p-3 rounded-2xl border-4 transition-all font-bold text-lg ${
-                    selectedOption === opt
-                      ? 'border-black bg-yellow-300 text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-yellow-500'
-                      : 'border-black dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]'
-                  } ${showExplanation && opt === lesson.practice[currentQuestionIndex].answer ? 'border-black bg-lime-400 text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-lime-500' : ''}`}
-                  disabled={showExplanation}
-                >
-                  {opt}
-                </button>
+                  label={opt}
+                  isSelected={selectedOption === opt}
+                  showResult={showExplanation}
+                  isCorrect={opt === lesson.practice[currentQuestionIndex].answer}
+                  onClick={() => setSelectedOption(opt)}
+                />
               ))}
             </div>
 
             <div className="mt-6">
               {!showExplanation ? (
-                <button
+                <Button
+                  variant="black"
+                  size="lg"
+                  fullWidth
                   disabled={!selectedOption}
                   onClick={checkAnswer}
-                  className="w-full flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black py-3 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
                 >
-                  Check Answer <Check className="w-6 h-6 stroke-3" />
-                </button>
+                  Check Answer <Check className="w-6 h-6 stroke-3 ml-2" />
+                </Button>
               ) : (
                 <div className="space-y-6">
                   <div className="p-4 bg-lime-300 dark:bg-lime-600 text-black dark:text-white rounded-2xl border-4 border-black">
@@ -196,12 +198,14 @@ export const GrammarDetail: React.FC = () => {
                       {lesson.practice[currentQuestionIndex].explanation}
                     </div>
                   </div>
-                  <button
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    fullWidth
                     onClick={nextQuestion}
-                    className="w-full flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-3 px-6 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none transition-all"
                   >
-                    Next Question <ChevronRight className="w-6 h-6 stroke-3" />
-                  </button>
+                    Next Question <ChevronRight className="w-6 h-6 stroke-3 ml-2" />
+                  </Button>
                 </div>
               )}
             </div>
@@ -224,12 +228,15 @@ export const GrammarDetail: React.FC = () => {
             </div>
 
             <div className="pt-8 w-full max-w-sm">
-              <button
+              <Button
+                variant="black"
+                size="lg"
+                fullWidth
                 onClick={() => navigate(`/grammar/${level}`)}
-                className="w-full flex items-center justify-center gap-3 bg-black text-lime-400 dark:bg-white dark:text-black py-4 px-8 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:border-lime-400 dark:hover:border-lime-500 hover:scale-105 active:scale-95 transition-all"
+               className="text-lime-400!"
               >
-                Return to Map <ArrowLeft className="w-6 h-6 rotate-180" />
-              </button>
+                Return to Map <ArrowLeft className="w-6 h-6 rotate-180 ml-2" />
+              </Button>
             </div>
           </div>
         )}

@@ -1,34 +1,41 @@
 import React from 'react';
 
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
-  color?: 'gray' | 'blue' | 'green' | 'red' | 'yellow' | 'purple';
+  color?: 'white' | 'blue' | 'green' | 'red' | 'yellow' | 'purple';
   size?: 'sm' | 'md';
+  shadow?: boolean;
 }
 
 export const Badge: React.FC<BadgeProps> = ({
   children,
-  color = 'gray',
+  color = 'white',
   size = 'md',
+  shadow = true,
   className = '',
   ...props
 }) => {
-  const baseStyles = 'inline-flex items-center font-medium rounded-full';
+  const baseStyles =
+    'inline-flex items-center font-black uppercase tracking-wider border-2 border-black dark:border-white rounded-full transition-all duration-200';
+
+  const shadowStyles = shadow
+    ? 'shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]'
+    : '';
 
   const colors = {
-    gray: 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-300',
-    blue: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300',
-    green: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300',
-    red: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300',
-    yellow: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-300',
-    purple: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300',
+    white: 'text-black dark:bg-white-700 dark:text-white',
+    blue: 'bg-blue-400 text-black dark:bg-blue-500 dark:text-white',
+    green: 'bg-lime-400 text-black dark:bg-lime-500 dark:text-black',
+    red: 'bg-red-400 text-black dark:bg-red-500 dark:text-white',
+    yellow: 'bg-amber-300 text-black dark:bg-amber-400 dark:text-black',
+    purple: 'bg-purple-400 text-black dark:bg-purple-500 dark:text-white',
   };
 
   const sizes = {
-    sm: 'px-2 py-0.5 text-xs',
-    md: 'px-2.5 py-0.5 text-sm',
+    sm: 'px-2 py-0.5 text-[10px]',
+    md: 'px-3 py-1 text-xs',
   };
 
-  const classes = [baseStyles, colors[color], sizes[size], className].join(' ');
+  const classes = [baseStyles, colors[color], sizes[size], shadowStyles, className].join(' ');
 
   return (
     <span className={classes} {...props}>

@@ -4,18 +4,17 @@ import confetti from 'canvas-confetti';
 import {
   useWordProgressAll,
   useDeleteWordProgressMutation,
-  useUpdateWordProgressMutation,
-  useFinishDailyReviewMutation,
-} from '../../hooks/useApi';
-import { WordProgress } from '../../types';
-import { calculateNextReview } from '../../services/spacedRepetition';
+  useFinishSessionMutation,
+} from '@/hooks/useApi';
+import { WordProgress, ReviewResult } from '@/types';
 import { CheckSquare, ArrowRight, Sparkles, Star, ArrowLeft } from 'lucide-react';
-import { useTTS } from '../../hooks/useTTS';
-import { useKeyboard } from '../../hooks/useKeyboard';
-import { sounds } from '../../services/sounds';
-import { shuffleArray } from '../../utils/array';
-import { LessonMeaning } from '../../components/vocabulary/LessonMeaning';
-import { PageDetail } from '../../components/layout/PageDetailContainer';
+import { useTTS } from '@/hooks/useTTS';
+import { useKeyboard } from '@/hooks/useKeyboard';
+import { sounds } from '@/services/sounds';
+import { shuffleArray } from '@/utils/array';
+import { LessonMeaning } from '@/components/vocabulary/LessonMeaning';
+import { PageDetail } from '@/components/layout/PageDetailContainer';
+import { Badge } from '@/components/ui/Badge';
 
 export const DailyReview: React.FC = () => {
   const navigate = useNavigate();
@@ -28,17 +27,24 @@ export const DailyReview: React.FC = () => {
     return progress.filter((p) => p.nextReview <= today).sort((a, b) => a.level - b.level);
   }, [progress, isLoading]);
 
+  console.log('dueWords', dueWords);
+
   // isCompleted is the only flag we need beyond loading
   const [isCompleted, setIsCompleted] = useState(false);
-  const finishMutation = useFinishDailyReviewMutation();
+  const finishMutation = useFinishSessionMutation();
 
-  const handleComplete = async () => {
+  const [sessionResults, setSessionResults] = useState<{ count: number } | null>(null);
+
+  const handleComplete = async (reviews: ReviewResult[]) => {
+    // Set completion state immediately with count to avoid flicker and data clearing issues
+    setSessionResults({ count: reviews.filter((r) => r.isCorrect).length });
+    setIsCompleted(true);
+
     try {
-      await finishMutation.mutateAsync({ reviewedCount: dueWords.length });
-      setIsCompleted(true);
+      const today = new Date().toISOString().split('T')[0];
+      await finishMutation.mutateAsync({ clientDate: today, reviews });
     } catch (e) {
       console.error('Failed to finish review stats', e);
-      setIsCompleted(true); // Still show success screen
     }
   };
 
@@ -94,7 +100,7 @@ export const DailyReview: React.FC = () => {
                 MISSION CLEAR!
               </h1>
               <p className="text-lg md:text-xl font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest">
-                Defeated {dueWords.length} words
+                Defeated {sessionResults?.count ?? dueWords.length} words
               </p>
             </div>
             <div className="pt-8 w-full max-w-sm">
@@ -113,10 +119,10 @@ export const DailyReview: React.FC = () => {
 };
 
 // ── Engine ─────────────────────────────────────────────────────────────────
-const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => void }> = ({
-  words,
-  onComplete,
-}) => {
+const DailyReviewEngine: React.FC<{
+  words: WordProgress[];
+  onComplete: (r: ReviewResult[]) => void;
+}> = ({ words, onComplete }) => {
   const [queue, setQueue] = useState<WordProgress[]>(() => shuffleArray([...words]));
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inputValue, setInputValue] = useState('');
@@ -124,7 +130,7 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
 
   const { speak } = useTTS();
   const deleteWordProgress = useDeleteWordProgressMutation();
-  const updateWordProgress = useUpdateWordProgressMutation();
+  const reviewsRef = React.useRef<ReviewResult[]>([]);
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const currentWord = queue[currentIndex];
@@ -159,7 +165,7 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
         origin: { y: 0.6 },
         colors: ['#000000', '#bef264', '#fde047', '#f87171'],
       });
-      onComplete();
+      onComplete(reviewsRef.current);
     }
   };
 
@@ -172,25 +178,22 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
       sounds.correct();
       speak(currentWord.term);
 
-      const { newLevel, nextReviewDate } = calculateNextReview(currentWord.level, true);
-
-      if (newLevel === 5) {
-        deleteWordProgress.mutate(currentWord.id);
+      if (currentWord.level === 4 || currentWord.level === 5) {
+        // Will graduate on backend
         confetti({
           particleCount: 50,
           spread: 40,
           origin: { y: 0.8 },
           colors: ['#000000', '#bef264', '#fde047', '#f87171'],
         });
-      } else {
-        updateWordProgress.mutate({
-          ...currentWord,
-          level: newLevel,
-          nextReview: nextReviewDate,
-          correctCount: currentWord.correctCount + 1,
-          lastStudied: new Date().toISOString().split('T')[0],
-        });
       }
+
+      reviewsRef.current.push({
+        term: currentWord.term,
+        lessonId: currentWord.lessonId,
+        isCorrect: true,
+        isBossBattle: false,
+      });
 
       advance();
     } else {
@@ -198,25 +201,21 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
       setShowError(true);
       speak(currentWord.term);
 
-      const { newLevel, nextReviewDate } = calculateNextReview(currentWord.level, false);
-
       // Re-insert word randomly in the remaining queue
-      const remaining = queue.length - currentIndex;
-      if (remaining > 1) {
-        setQueue((prev) => {
-          const insertAt = currentIndex + 1 + Math.floor(Math.random() * (remaining - 1));
-          const next = [...prev];
-          next.splice(insertAt, 0, currentWord);
-          return next;
-        });
-      }
+      setQueue((prev) => {
+        const next = [...prev];
+        const remainingOptions = next.length - (currentIndex + 1);
+        // Randomly insert anywhere in the rest of the queue
+        const insertAt = currentIndex + 1 + Math.floor(Math.random() * (remainingOptions + 1));
+        next.splice(insertAt, 0, currentWord);
+        return next;
+      });
 
-      updateWordProgress.mutate({
-        ...currentWord,
-        level: newLevel,
-        nextReview: nextReviewDate,
-        incorrectCount: currentWord.incorrectCount + 1,
-        lastStudied: new Date().toISOString().split('T')[0],
+      reviewsRef.current.push({
+        term: currentWord.term,
+        lessonId: currentWord.lessonId,
+        isCorrect: false,
+        isBossBattle: false,
       });
     }
   };
@@ -237,12 +236,12 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
 
   return (
     <div className="w-full max-w-md mx-auto relative flex flex-col items-center justify-center px-4 py-6 bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] text-center transition-all duration-300">
-      <div className="text-black dark:text-white font-black text-sm uppercase tracking-widest flex items-center gap-2 bg-yellow-300 dark:bg-yellow-600 px-4 py-3 rounded-xl border-2 border-black transform -skew-x-12 absolute -top-6">
+      <div className="text-black dark:text-white font-black text-sm uppercase tracking-widest flex items-center gap-2 bg-orange-300 dark:bg-orange-600 px-4 py-2 rounded-xl border-2 border-black transform -skew-x-12 absolute -top-6">
         <Sparkles className="w-5 h-5" /> DAILY REVIEW: LVL {currentWord.level}
       </div>
-      <div className="mb-4 ml-auto text-xs font-black text-black bg-white dark:bg-gray-400 px-3 py-1 rounded-full border-2 border-black tracking-widest shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+      <Badge className="ml-auto mb-4">
         STAGE {currentIndex + 1} / {queue.length}
-      </div>
+      </Badge>
 
       <LessonMeaning term={currentWord.term} lessonId={currentWord.lessonId} />
 
@@ -273,20 +272,13 @@ const DailyReviewEngine: React.FC<{ words: WordProgress[]; onComplete: () => voi
             autoComplete="off"
             spellCheck="false"
           />
-          <div className="flex gap-3 w-full">
-            <button
-              onClick={handleSubmit}
-              disabled={!inputValue.trim()}
-              className="flex-1 flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-3 px-4 rounded-2xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none transition-all"
-            >
-              SUBMIT
-            </button>
+          <div className="flex gap-3 w-full justify-center">
             <button
               onClick={handleMastered}
               title="I already mastered this word (Keyboard: 3)"
-              className="px-6 bg-green-400 dark:bg-green-600 text-black dark:text-white rounded-2xl font-black border-4 border-black dark:border-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none transition-all"
+              className="text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white font-bold text-xs uppercase tracking-widest transition-colors flex items-center gap-1"
             >
-              PRO
+              <CheckSquare className="w-3 h-3" /> I already mastered this
             </button>
           </div>
         </div>
