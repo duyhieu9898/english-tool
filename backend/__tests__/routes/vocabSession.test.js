@@ -50,8 +50,8 @@ describe('Vocab Session Backend API Integration (Lessons)', () => {
       const finishPayload = {
         clientDate: '2026-03-24',
         reviews: [
-          { term: 'hello', lessonId: 'lesson-1', isCorrect: true, isBossBattle: false }, // Known right away
-          { term: 'world', lessonId: 'lesson-1', isCorrect: false, isBossBattle: false }, // Struggled initially
+          { term: 'hello', lessonId: 'lesson-1', isCorrect: true, isGeneralReview: false }, // Known right away
+          { term: 'world', lessonId: 'lesson-1', isCorrect: false, isGeneralReview: false }, // Struggled initially
         ],
       };
 
@@ -121,8 +121,8 @@ describe('Vocab Session Backend API Integration (Lessons)', () => {
       const finishPayload = {
         clientDate: '2026-03-24',
         reviews: [
-          { term: 'hello', lessonId: 'lesson-1', isCorrect: true, isBossBattle: false }, // Already known, re-learning
-          { term: 'new-word', lessonId: 'lesson-1', isCorrect: true, isBossBattle: false }, // Actually new
+          { term: 'hello', lessonId: 'lesson-1', isCorrect: true, isGeneralReview: false }, // Already known, re-learning
+          { term: 'new-word', lessonId: 'lesson-1', isCorrect: true, isGeneralReview: false }, // Actually new
         ],
       };
 

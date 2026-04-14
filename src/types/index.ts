@@ -62,6 +62,20 @@ export interface VocabHighlight {
   meaning: string;
 }
 
+export interface ListeningQuestion {
+  id: string;
+  sentence: string;
+}
+
+export interface ListeningLesson {
+  id: string;
+  slug: string;
+  level: string;
+  title: string;
+  topic: string;
+  questions: ListeningQuestion[];
+}
+
 export interface ReadingLesson {
   id: string;
   slug: string;
@@ -76,7 +90,7 @@ export interface ReadingLesson {
 
 export interface LessonProgress {
   id: string;
-  type: 'vocabulary' | 'grammar' | 'reading';
+  type: 'vocabulary' | 'grammar' | 'reading' | 'listening';
   completedAt: string; // ISO Date
 }
 
@@ -112,5 +126,5 @@ export interface ReviewResult {
   term: string;
   lessonId: string;
   isCorrect: boolean;
-  isBossBattle: boolean;
+  isGeneralReview: boolean;
 }

@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-40",
+  "title": "Preparing for Technical Coding Challenges",
+  "level": "b1",
+  "topic": "Career Development",
+  "content": "A technical coding challenge is a common part of the hiring process for frontend developers. These challenges often involve solving logic problems or building a small feature under a time limit. To prepare, you should practice common algorithms and data structures using platforms like LeetCode or HackerRank. It is also important to be comfortable with your chosen framework, whether it is React, Vue, or Angular. During the challenge, focus on writing clean and readable code rather than just finding the fastest solution. Communicate your thought process clearly if it is a live coding session. Interviewers value how you think and how you handle difficult problems just as much as your final answer. Mastering these challenges is a key step to securing a high-quality role in the tech industry.",
+  "vocabulary_highlights": [
+    { "word": "hiring process", "meaning": "quy trình tuyển dụng" },
+    { "word": "algorithms", "meaning": "thuật toán" },
+    { "word": "data structures", "meaning": "cấu trúc dữ liệu" },
+    { "word": "thought process", "meaning": "quá trình suy nghĩ" },
+    { "word": "securing", "meaning": "đạt được, chốt giữ (vị trí)" }
+  ],
+  "questions": [
+    {
+      "question": "What does a technical coding challenge often involve?",
+      "options": ["Designing a business card", "Solving logic problems or building a small feature", "Writing a poem"],
+      "answer": "Solving logic problems or building a small feature",
+      "explanation": "The text says: 'These challenges often involve solving logic problems or building a small feature under a time limit'."
+    },
+    {
+      "question": "What should you focus on during a challenge?",
+      "options": ["Writing the fastest code only", "Writing clean and readable code and communicating your thoughts", "Using as many emojis as possible"],
+      "answer": "Writing clean and readable code and communicating your thoughts",
+      "explanation": "The text suggests focusing on clean code and clearly communicating your thought process."
+    },
+    {
+      "question": "Which platforms are mentioned for practicing algorithms?",
+      "options": ["Facebook and YouTube", "LeetCode or HackerRank", "Spotify"],
+      "answer": "LeetCode or HackerRank",
+      "explanation": "The text states: 'practice common algorithms and data structures using platforms like LeetCode or HackerRank'."
+    }
+  ],
+  "translation": "Thử thách lập trình kỹ thuật (Technical coding challenge) là một phần phổ biến trong quy trình tuyển dụng cho các nhà phát triển frontend. Những thử thách này thường bao gồm việc giải quyết các bài toán logic hoặc xây dựng một tính năng nhỏ trong một khoảng thời gian giới hạn. Để chuẩn bị, bạn nên luyện tập các thuật toán và cấu trúc dữ liệu phổ biến bằng cách sử dụng các nền tảng như LeetCode hoặc HackerRank. Việc thông thạo khung (framework) bạn đã chọn, cho dù đó là React, Vue hay Angular, cũng rất quan trọng. Trong quá trình thi, hãy tập trung vào việc viết mã sạch và dễ đọc thay vì chỉ tìm kiếm giải pháp nhanh nhất. Hãy truyền đạt quá trình suy nghĩ của bạn một cách rõ ràng nếu đó là một buổi lập trình trực tiếp (live coding). Những người phỏng vấn đánh giá cao cách bạn suy nghĩ và cách bạn xử lý các vấn đề khó khăn cũng nhiều như kết quả cuối cùng của bạn. Làm chủ những thử thách này là một bước quan trọng để giành được một vị trí chất lượng cao trong ngành công nghệ."
+}

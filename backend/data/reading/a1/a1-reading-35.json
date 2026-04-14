@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-35",
+  "title": "Watching a Tutorial",
+  "level": "a1",
+  "topic": "Learning Methods",
+  "content": "Technology changes fast, so developers need to learn every day. Watching video tutorials is a great way to learn a new skill. You can find many tutorials on YouTube or Udemy. When you watch a tutorial, it is good to follow along. This is called 'Code Along'. You pause the video and write the same code in your editor. This helps you remember the syntax better. Don't worry if you don't understand everything at first. Practice makes perfect. Joining online communities can also help you find answers to your questions.",
+  "vocabulary_highlights": [
+    { "word": "tutorial", "meaning": "bài hướng dẫn" },
+    { "word": "skill", "meaning": "kỹ năng" },
+    { "word": "code along", "meaning": "vừa học vừa gõ mã theo" },
+    { "word": "syntax", "meaning": "cú pháp" },
+    { "word": "practice", "meaning": "thực hành" }
+  ],
+  "questions": [
+    {
+      "question": "What is a great way to learn a new skill?",
+      "options": ["Reading a novel", "Watching video tutorials", "Sleeping"],
+      "answer": "Watching video tutorials",
+      "explanation": "The text says: 'Watching video tutorials is a great way to learn a new skill'."
+    },
+    {
+      "question": "What is it called when you write the same code as the teacher?",
+      "options": ["Copying", "Code Along", "Fast Coding"],
+      "answer": "Code Along",
+      "explanation": "The text says: 'This is called \"Code Along\". You pause the video and write the same code...'"
+    },
+    {
+      "question": "Where can you find answer to your questions?",
+      "options": ["Online communities", "A bookstore", "In the fridge"],
+      "answer": "Online communities",
+      "explanation": "The text says: 'Joining online communities can also help you find answers to your questions'."
+    }
+  ],
+  "translation": "Công nghệ thay đổi nhanh chóng, vì vậy các nhà phát triển cần học hỏi mỗi ngày. Xem các video hướng dẫn là một cách tuyệt vời để học một kỹ năng mới. Bạn có thể tìm thấy nhiều hướng dẫn trên YouTube hoặc Udemy. Khi bạn xem một hướng dẫn, bạn nên làm theo. Điều này được gọi là 'Code Along' (vừa xem vừa gõ mã). Bạn tạm dừng video và viết cùng một mã đó vào trình soạn thảo của mình. Điều này giúp bạn ghi nhớ cú pháp tốt hơn. Đừng lo lắng nếu ban đầu bạn không hiểu hết mọi thứ. Thực hành tạo nên sự hoàn hảo. Tham gia các cộng đồng trực tuyến cũng có thể giúp bạn tìm thấy câu trả lời cho các câu hỏi của mình."
+}

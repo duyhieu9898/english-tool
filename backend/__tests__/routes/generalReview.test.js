@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json());
 app.use('/', userDataRouter);
 
-describe('General Review (Boss Battle) Backend API Integration', () => {
+describe('General Review Backend API Integration', () => {
   let mockDbSnapshot;
 
   beforeEach(() => {
@@ -39,13 +39,13 @@ describe('General Review (Boss Battle) Backend API Integration', () => {
     db.load.mockReturnValue(mockDbSnapshot);
   });
 
-  describe('Boss Battle Word Submissions & Stats', () => {
+  describe('General Word Submissions & Stats', () => {
     it('should ADD new words and UPDATE stats in a single transaction via POST /session/finish', async () => {
       const payload = {
         clientDate: '2026-03-24', // next day
         reviews: [
-          { term: 'victory', lessonId: '1', isCorrect: true, isBossBattle: true },
-          { term: 'defeat', lessonId: '1', isCorrect: false, isBossBattle: true },
+          { term: 'victory', lessonId: '1', isCorrect: true, isGeneralReview: true },
+          { term: 'defeat', lessonId: '1', isCorrect: false, isGeneralReview: true },
         ],
       };
 
@@ -62,11 +62,11 @@ describe('General Review (Boss Battle) Backend API Integration', () => {
       expect(savedSnapshot.wordProgress).toHaveLength(2);
 
       const savedVictory = savedSnapshot.wordProgress.find((w) => w.term === 'victory');
-      expect(savedVictory.level).toBe(2); // Boss battle + correct = Level 2
+      expect(savedVictory.level).toBe(2); // General review + correct = Level 2
       expect(savedVictory.correctCount).toBe(1);
 
       const savedDefeat = savedSnapshot.wordProgress.find((w) => w.term === 'defeat');
-      expect(savedDefeat.level).toBe(1); // Boss battle + incorrect = Level 1
+      expect(savedDefeat.level).toBe(1); // General review + incorrect = Level 1
       expect(savedDefeat.incorrectCount).toBe(1);
 
       // Stats are updated

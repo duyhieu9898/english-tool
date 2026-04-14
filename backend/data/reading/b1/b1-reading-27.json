@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-27",
+  "title": "Understanding RESTful API Principles",
+  "level": "b1",
+  "topic": "Backend Basics",
+  "content": "REST (Representational State Transfer) is a set of rules that defines how an API should be structured. A RESTful API organizes data into 'Resources', which are accessed via specific URLs. To interact with these resources, we use standard HTTP methods. 'GET' is used to retrieve data, 'POST' is used to create new data, 'PUT' or 'PATCH' is for updating information, and 'DELETE' is for removing it. For example, a GET request to '/users' might return a list of all users. Following REST principles makes an API predictable and easy to use for frontend developers. It allows for a clear separation between the frontend and the backend, making the system more scalable and maintainable over time.",
+  "vocabulary_highlights": [
+    { "word": "structured", "meaning": "được cấu trúc" },
+    { "word": "resources", "meaning": "tài nguyên" },
+    { "word": "retrieve", "meaning": "truy xuất, lấy về" },
+    { "word": "predictable", "meaning": "có thể dự đoán được" },
+    { "word": "scalable", "meaning": "có thể mở rộng" }
+  ],
+  "questions": [
+    {
+      "question": "What does the 'GET' method do in a RESTful API?",
+      "options": ["Creates new data", "Retrieves data", "Deletes data"],
+      "answer": "Retrieves data",
+      "explanation": "The text says: '\"GET\" is used to retrieve data'."
+    },
+    {
+      "question": "What is a 'Resource' in the context of REST?",
+      "options": ["A types of computer", "A unit of data accessed via a URL", "A design tool"],
+      "answer": "A unit of data accessed via a URL",
+      "explanation": "The text states: 'A RESTful API organizes data into \"Resources\", which are accessed via specific URLs'."
+    },
+    {
+      "question": "Why is the separation between frontend and backend beneficial?",
+      "options": ["It makes the internet faster", "It makes the system more scalable and maintainable", "It is for security only"],
+      "answer": "It makes the system more scalable and maintainable",
+      "explanation": "The text explains: 'It allows for a clear separation... making the system more scalable and maintainable over time'."
+    }
+  ],
+  "translation": "REST (Representational State Transfer) là một tập hợp các quy tắc xác định cách một API nên được cấu trúc. Một RESTful API tổ chức dữ liệu thành các 'Tài nguyên' (Resources), vốn được truy cập thông qua các URL cụ thể. Để tương tác với các tài nguyên này, chúng ta sử dụng các phương thức HTTP tiêu chuẩn. 'GET' được sử dụng để truy xuất dữ liệu, 'POST' được sử dụng để tạo dữ liệu mới, 'PUT' hoặc 'PATCH' dùng để cập nhật thông tin, và 'DELETE' dùng để xóa dữ liệu. Ví dụ, một yêu cầu GET đến '/users' có thể trả về danh sách tất cả người dùng. Việc tuân theo các nguyên tắc REST giúp API trở nên dễ dự đoán và dễ sử dụng cho các nhà phát triển frontend. Nó cho phép phân tách rõ ràng giữa frontend và backend, giúp hệ thống có khả năng mở rộng (scalable) và dễ bảo trì hơn theo thời gian."
+}

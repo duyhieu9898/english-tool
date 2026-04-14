@@ -1,0 +1,35 @@
+{
+  "id": "c1-reading-24",
+  "title": "Advanced TypeScript: Leveraging Generics for Reusable Code",
+  "level": "c1",
+  "topic": "Frontend Tools",
+  "content": "As you transition to advanced TypeScript development, 'Generics' become an indispensable tool for creating flexible and reusable components and functions. Generics allow you to define a component that can work with a variety of types while still maintaining 'type safety'. For example, instead of writing separate functions to handle an array of strings and an array of numbers, you can use a generic type parameter—often represented as <T>—to handle any type provided at runtime. Beyond simple generics, mastering 'Mapped Types' and 'Conditional Types' allows for highly sophisticated type transformations, such as creating a read-only version of an existing interface. Utilizing these advanced features leads to a much more robust developer experience, as it provides precise IDE autocompletion and catches potential errors before the code is even run.",
+  "vocabulary_highlights": [
+    { "word": "indispensable", "meaning": "không thể thiếu" },
+    { "word": "type safety", "meaning": "an toàn về kiểu (ngăn chặn lỗi sai kiểu dữ liệu)" },
+    { "word": "runtime", "meaning": "lúc ứng dụng đang chạy" },
+    { "word": "transformations", "meaning": "sự biến đổi" },
+    { "word": "precise", "meaning": "chính xác" }
+  ],
+  "questions": [
+    {
+      "question": "What is the main benefit of using 'Generics' in TypeScript?",
+      "options": ["Making the code run faster", "Creating flexible components that maintain type safety with various types", "Adding more comments to the code"],
+      "answer": "Creating flexible components that maintain type safety with various types",
+      "explanation": "The text explains: 'Generics allow you to define a component that can work with a variety of types while still maintaining \"type safety\".'"
+    },
+    {
+      "question": "What does a generic type parameter like '<T>' allow a function to do?",
+      "options": ["Handle only strings", "Handle any type provided at runtime", "Increase the font size"],
+      "answer": "Handle any type provided at runtime",
+      "explanation": "The text says: 'you can use a generic type parameter... to handle any type provided at runtime'."
+    },
+    {
+      "question": "How do advanced features like Mapped Types improve the developer experience?",
+      "options": ["By adding more emojis", "By providing precise autocompletion and catching errors early", "By deleting unused code"],
+      "answer": "By providing precise autocompletion and catching errors early",
+      "explanation": "The text states that these features provide 'precise IDE autocompletion and catches potential errors before the code is even run'."
+    }
+  ],
+  "translation": "Khi bạn chuyển sang phát triển TypeScript nâng cao, 'Generics' trở thành một công cụ không thể thiếu (indispensable) để tạo ra các thành phần và hàm linh hoạt và có khả năng tái sử dụng. Generics cho phép bạn xác định một thành phần có thể hoạt động với nhiều kiểu dữ liệu khác nhau trong khi vẫn duy trì 'an toàn về kiểu' (type safety). Ví dụ, thay vì viết các hàm riêng biệt để xử lý một mảng chuỗi và một mảng số, bạn có thể sử dụng một tham số kiểu generic — thường được biểu diễn là <T> — để xử lý bất kỳ kiểu dữ liệu nào được cung cấp lúc chạy (runtime). Vượt ra ngoài các generics đơn giản, việc làm chủ 'Mapped Types' (kiểu ánh xạ) và 'Conditional Types' (kiểu điều kiện) cho phép thực hiện các phép biến đổi kiểu (transformations) vô cùng tinh vi, chẳng hạn như tạo ra một phiên bản chỉ đọc (read-only) của một interface hiện có. Việc tận dụng các tính năng nâng cao này mang lại trải nghiệm phát triển mạnh mẽ hơn nhiều, vì nó cung cấp tính năng tự động hoàn thành của IDE một cách chính xác (precise) và phát hiện các lỗi tiềm ẩn trước khi mã thậm chí được thực thi."
+}

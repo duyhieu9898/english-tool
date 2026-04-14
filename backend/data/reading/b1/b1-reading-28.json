@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-28",
+  "title": "Designing for Real People: User Personas",
+  "level": "b1",
+  "topic": "UX Design",
+  "content": "A common mistake in web development is building a website for yourself instead of the actual users. To avoid this, designers create 'User Personas'. A persona is a fictional character that represents a specific type of user who will use your product. It includes details like their age, job, goals, and technical skills. For example, a persona for a banking app might be 'Peter, a 50-year-old accountant who is not very tech-savvy and values security'. By referring to these personas, developers and designers can make better decisions about layout, features, and content. Personas help the team stay empathetic and focused on solving real problems for real people.",
+  "vocabulary_highlights": [
+    { "word": "fictional", "meaning": "hư cấu" },
+    { "word": "goals", "meaning": "mục tiêu" },
+    { "word": "tech-savvy", "meaning": "am hiểu công nghệ" },
+    { "word": "empathetic", "meaning": "thấu cảm, đồng cảm" },
+    { "word": "avoid", "meaning": "tránh" }
+  ],
+  "questions": [
+    {
+      "question": "What is a 'User Persona'?",
+      "options": ["A real person using the site", "A fictional character representing a user type", "A type of software tool"],
+      "answer": "A fictional character representing a user type",
+      "explanation": "The text says: 'A persona is a fictional character that represents a specific type of user who will use your product'."
+    },
+    {
+      "question": "What kind of details are usually included in a persona?",
+      "options": ["Only their name and address", "Age, job, goals, and technical skills", "Their favorite food"],
+      "answer": "Age, job, goals, and technical skills",
+      "explanation": "The text explains personas include details like age, job, goals, and technical skills."
+    },
+    {
+      "question": "How do personas help the development team?",
+      "options": ["To make the code faster", "To stay empathetic and focused on solving real problems", "To save money on design"],
+      "answer": "To stay empathetic and focused on solving real problems",
+      "explanation": "The text says: 'Personas help the team stay empathetic and focused on solving real problems for real people'."
+    }
+  ],
+  "translation": "Một sai lầm phổ biến trong phát triển web là xây dựng trang web cho chính mình thay vì cho đối tượng người dùng thực tế. Để tránh điều này, các nhà thiết kế tạo ra các 'Chân dung người dùng' (User Personas). Một persona là một nhân vật hư cấu đại diện cho một loại người dùng cụ thể sẽ sử dụng sản phẩm của bạn. Nó bao gồm các chi tiết như độ tuổi, nghề nghiệp, mục tiêu và kỹ năng công nghệ của họ. Ví dụ, một persona cho một ứng dụng ngân hàng có thể là 'Peter, một kế toán viên 50 tuổi không am hiểu nhiều về công nghệ và coi trọng tính bảo mật'. Bằng cách tham khảo các persona này, các nhà phát triển và thiết kế có thể đưa ra các quyết định tốt hơn về bố cục, tính năng và nội dung. Personas giúp nhóm duy trì tính thấu cảm và tập trung vào việc giải quyết các vấn đề thực tế cho con người thực."
+}

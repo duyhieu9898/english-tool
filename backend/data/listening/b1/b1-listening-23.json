@@ -1,0 +1,32 @@
+{
+  "id": "b1-listening-23",
+  "title": "Clean Code Principles for Frontend Developers",
+  "level": "b1",
+  "topic": "Clean Code",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Writing code that works is only the first half of a developer's job; the second half is writing code that remains maintainable."
+    },
+    {
+      "id": "2",
+      "sentence": "'Clean Code' is a set of principles that focus on readability and simplicity."
+    },
+    {
+      "id": "3",
+      "sentence": "One of the most important rules is choosing meaningful names for variables and functions."
+    },
+    {
+      "id": "4",
+      "sentence": "A good function name should also be a verb that describes exactly what it does."
+    },
+    {
+      "id": "5",
+      "sentence": "If a function is too long, it should be broken down into smaller, specialized helper functions."
+    },
+    {
+      "id": "6",
+      "sentence": "By following these clean code practices, you make it much easier for yourself and your teammates to understand and debug the code in the future."
+    }
+  ]
+}

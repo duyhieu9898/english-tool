@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-23",
+  "title": "The Open-Closed Principle in Software Design",
+  "level": "b2",
+  "topic": "Software Engineering",
+  "content": "The Open-Closed Principle (OCP) is one of the five SOLID principles of object-oriented design, but it applies equally to functional frontend development. It states that software entities—such as modules, classes, or functions—should be 'open for extension, but closed for modification'. This means you should be able to add new functionality to a component without changing its existing code. In React or Vue, this is often achieved through high-level patterns like 'Composition' or 'Render Props'. For example, instead of adding multiple 'if' statements to a Button component for every new icon, you can design it to accept an icon as a prop. Following the OCP reduces the risk of introducing bugs when adding new features, making your codebase more robust and stable over time.",
+  "vocabulary_highlights": [
+    { "word": "entities", "meaning": "thực thể" },
+    { "word": "extension", "meaning": "sự mở rộng" },
+    { "word": "modification", "meaning": "sự sửa đổi" },
+    { "word": "composition", "meaning": "phương pháp kết hợp (composition)" },
+    { "word": "robust", "meaning": "ổn định và mạnh mẽ" }
+  ],
+  "questions": [
+    {
+      "question": "What does the Open-Closed Principle state?",
+      "options": ["Modules should be open for modification", "Software entities should be open for extension, but closed for modification", "Code should be written in a single file"],
+      "answer": "Software entities should be open for extension, but closed for modification",
+      "explanation": "The text explicitly states: 'software entities... should be \"open for extension, but closed for modification\".'"
+    },
+    {
+      "question": "How can you achieve OCP in a component-based framework?",
+      "options": ["By adding more 'if' statements", "Through patterns like Composition or Render Props", "By deleting old code"],
+      "answer": "Through patterns like Composition or Render Props",
+      "explanation": "The text mentions Composition and Render Props as ways to achieve extension without modification."
+    },
+    {
+      "question": "What is the main benefit of following the OCP?",
+      "options": ["It makes the browser faster", "It reduces the risk of introducing bugs when adding new features", "It is for backend only"],
+      "answer": "It reduces the risk of introducing bugs when adding new features",
+      "explanation": "The text says: 'Following the OCP reduces the risk of introducing bugs when adding new features'."
+    }
+  ],
+  "translation": "Nguyên tắc Đóng/Mở (Open-Closed Principle - OCP) là một trong năm nguyên tắc SOLID của thiết kế hướng đối tượng, nhưng nó cũng áp dụng tương tự cho việc phát triển frontend theo hướng hàm. Nguyên tắc này phát biểu rằng các thực thể phần mềm — chẳng hạn như các mô-đun, lớp hoặc hàm — nên 'mở cho việc mở rộng, nhưng đóng cho việc sửa đổi'. Điều này có nghĩa là bạn có thể thêm các tính năng mới vào một thành phần mà không cần thay đổi mã nguồn hiện có của nó. Trong React hoặc Vue, điều này thường được đạt được thông qua các mô hình cấp cao như 'Composition' (kết hợp) hoặc 'Render Props'. Ví dụ, thay vì thêm nhiều câu lệnh 'if' vào một thành phần Button cho mỗi biểu tượng mới, bạn có thể thiết kế nó để chấp nhận một biểu tượng dưới dạng một prop. Tuân theo OCP giúp giảm rủi ro gây ra lỗi khi thêm các tính năng mới, giúp cơ sở mã của bạn trở nên mạnh mẽ và ổn định hơn theo thời gian."
+}

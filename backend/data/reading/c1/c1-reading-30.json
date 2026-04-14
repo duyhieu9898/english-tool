@@ -1,0 +1,35 @@
+{
+  "id": "c1-reading-30",
+  "title": "API Design Strategies: GraphQL vs. REST",
+  "level": "c1",
+  "topic": "Backend Basics",
+  "content": "Choosing the right API architectural style is a critical decision that impacts frontend development speed and application performance. For years, REST has been the industry standard due to its simplicity and stateless nature. However, REST often leads to 'over-fetching' (receiving more data than needed) or 'under-fetching' (needing multiple requests to gather all data). 'GraphQL', a query language for APIs developed by Facebook, addresses these issues by allowing the frontend to request the exact data it needs in a single request. This eliminates unnecessary data transfer and simplifies the frontend state management. While GraphQL offers greater flexibility and precision, it introduces complexity on the server side and can be harder to cache than traditional REST endpoints. Senior developers must evaluate the specific data requirements and team expertise to decide which strategy provides the best balance of performance and maintainability.",
+  "vocabulary_highlights": [
+    { "word": "architectural style", "meaning": "phong cách kiến trúc/cấu trúc" },
+    { "word": "stateless", "meaning": "không trạng thái (mỗi request là độc lập)" },
+    { "word": "over-fetching", "meaning": "lấy dư dữ liệu" },
+    { "word": "under-fetching", "meaning": "lấy thiếu dữ liệu (phải gọi thêm request)" },
+    { "word": "cache", "meaning": "bộ nhớ đệm" }
+  ],
+  "questions": [
+    {
+      "question": "What is a main problem with traditional REST APIs mentioned in the text?",
+      "options": ["They are too slow", "They often lead to over-fetching or under-fetching of data", "They are for mobile only"],
+      "answer": "They often lead to over-fetching or under-fetching of data",
+      "explanation": "The text states: 'REST often leads to \"over-fetching\"... or \"under-fetching\"'."
+    },
+    {
+      "question": "How does GraphQL solve the over-fetching problem?",
+      "options": ["By deleting the data", "By allowing the frontend to request exact data in a single request", "By making the server faster"],
+      "answer": "By allowing the frontend to request exact data in a single request",
+      "explanation": "The text explains GraphQL 'allows the frontend to request the exact data it needs in a single request'."
+    },
+    {
+      "question": "What is a disadvantage of GraphQL compared to REST?",
+      "options": ["It is too new", "It introduces server-side complexity and can be harder to cache", "It only works with React"],
+      "answer": "It introduces server-side complexity and can be harder to cache",
+      "explanation": "The text mentions: 'it introduces complexity on the server side and can be harder to cache than traditional REST'."
+    }
+  ],
+  "translation": "Chọn đúng phong cách kiến trúc API là một quyết định quan trọng ảnh hưởng đến tốc độ phát triển frontend và hiệu suất ứng dụng. Trong nhiều năm, REST đã là tiêu chuẩn của ngành nhờ tính đơn giản và bản chất phi trạng thái (stateless). Tuy nhiên, REST thường dẫn đến tình trạng 'over-fetching' (nhận nhiều dữ liệu hơn mức cần thiết) hoặc 'under-fetching' (cần nhiều yêu cầu để thu thập đủ dữ liệu). 'GraphQL', một ngôn ngữ truy vấn cho API được phát triển bởi Facebook, giải quyết các vấn đề này bằng cách cho phép frontend yêu cầu chính xác dữ liệu nó cần trong một yêu cầu (request) duy nhất. Điều này loại bỏ việc truyền tải dữ liệu không cần thiết và đơn giản hóa việc quản lý trạng thái ở frontend. Mặc dù GraphQL mang lại tính linh hoạt và độ chính xác cao hơn, nhưng nó lại gây ra sự phức tạp ở phía máy chủ và có thể khó lưu bộ nhớ đệm (cache) hơn so với các đầu cuối (endpoints) REST truyền thống. Các nhà phát triển cấp cao phải đánh giá các yêu cầu dữ liệu cụ thể và chuyên môn của đội ngũ để quyết định chiến lược nào mang lại sự cân bằng tốt nhất giữa hiệu suất và khả năng bảo trì."
+}

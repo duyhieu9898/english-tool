@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-23",
+  "title": "Programming Colors",
+  "level": "a1",
+  "topic": "Frontend Design",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Web designers use code to choose colors for a website."
+    },
+    {
+      "id": "2",
+      "sentence": "RGB, which stands for Red, Green, and Blue."
+    },
+    {
+      "id": "3",
+      "sentence": "Each code represents a specific color."
+    },
+    {
+      "id": "4",
+      "sentence": "White is #FFFFFF and Black is #000000."
+    },
+    {
+      "id": "5",
+      "sentence": "Choosing the right colors is important for User Experience (UX)."
+    },
+    {
+      "id": "6",
+      "sentence": "Good contrast makes text easy to read for everyone."
+    }
+  ]
+}

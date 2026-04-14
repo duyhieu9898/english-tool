@@ -1,0 +1,32 @@
+{
+  "id": "b2-listening-3",
+  "title": "Navigating the Moral Maze: The Ethics of Artificial Intelligence",
+  "level": "b2",
+  "topic": "The Ethics of Artificial Intelligence",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Artificial intelligence (AI) is no longer a concept confined to science fiction; it's a driving force reshaping industries, economies, and daily lives worldwide."
+    },
+    {
+      "id": "2",
+      "sentence": "However, as AI systems become increasingly sophisticated and integrated into our society, profound ethical dilemmas emerge, demanding careful consideration and proactive solutions."
+    },
+    {
+      "id": "3",
+      "sentence": "One of the most pressing concerns revolves around algorithmic bias."
+    },
+    {
+      "id": "4",
+      "sentence": "Another significant challenge is data privacy."
+    },
+    {
+      "id": "5",
+      "sentence": "Accountability and transparency also pose complex questions."
+    },
+    {
+      "id": "6",
+      "sentence": "Ultimately, the goal is to develop 'human-centric AI' – technology that augments human capabilities, respects fundamental rights, and contributes positively to societal well-being."
+    }
+  ]
+}

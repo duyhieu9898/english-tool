@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-21",
+  "title": "Managing Component State with the useState Hook",
+  "level": "b1",
+  "topic": "React.js",
+  "content": "In React, managing a component's internal data is a core responsibility. The 'useState' hook is the primary tool for this task in functional components. When you call useState, it returns a pair: the current state value and a function that lets you update it. For instance, 'const [count, setCount] = useState(0)' initializes a counter at zero. The most important feature of state is that when it's updated via the setter function, React automatically triggers a re-render of the component. This ensures that the user interface always reflects the most recent data. Understanding how to use state effectively—and knowing when to lift it up to a parent component—is a major step in transitioning from a beginner to an intermediate frontend developer.",
+  "vocabulary_highlights": [
+    { "word": "responsibility", "meaning": "trách nhiệm, vai trò" },
+    { "word": "initializes", "meaning": "khởi tạo" },
+    { "word": "triggers", "meaning": "kích hoạt" },
+    { "word": "re-render", "meaning": "vẽ lại giao diện (khi dữ liệu thay đổi)" },
+    { "word": "reflects", "meaning": "phản ánh" }
+  ],
+  "questions": [
+    {
+      "question": "What does the 'useState' hook return?",
+      "options": ["A single value", "A pair: current state and an updater function", "A new HTML element"],
+      "answer": "A pair: current state and an updater function",
+      "explanation": "The text states: 'it returns a pair: the current state value and a function that lets you update it'."
+    },
+    {
+      "question": "What happens when you update the state in a React component?",
+      "options": ["The page reloads", "React triggers a re-render", "The CSS changes"],
+      "answer": "React triggers a re-render",
+      "explanation": "The text says: 'when it's updated... React automatically triggers a re-render of the component'."
+    },
+    {
+      "question": "What is the benefit of using hooks like useState?",
+      "options": ["It makes the browser faster", "It ensures the UI reflects the most recent data", "It removes the need for CSS"],
+      "answer": "It ensures the UI reflects the most recent data",
+      "explanation": "The text explains that updating state via the setter ensures the UI reflects local data changes."
+    }
+  ],
+  "translation": "Trong React, việc quản lý dữ liệu nội bộ của một thành phần là một trách nhiệm cốt lõi. Hook 'useState' là công cụ chính cho nhiệm vụ này trong các functional components. Khi bạn gọi useState, nó trả về một cặp: giá trị trạng thái hiện tại và một hàm cho phép bạn cập nhật nó. Ví dụ, 'const [count, setCount] = useState(0)' khởi tạo một bộ đếm bắt đầu từ số không. Đặc điểm quan trọng nhất của state là khi nó được cập nhật thông qua hàm setter, React sẽ tự động kích hoạt việc vẽ lại (re-render) thành phần đó. Điều này đảm bảo rằng giao diện người dùng luôn phản ánh dữ liệu mới nhất. Hiểu cách sử dụng state một cách hiệu quả — và biết khi nào nên đưa (lift) nó lên một thành phần cha — là một bước tiến lớn trong việc chuyển đổi từ một nhà phát triển frontend sơ cấp sang trung cấp."
+}

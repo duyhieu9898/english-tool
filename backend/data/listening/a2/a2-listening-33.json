@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-33",
+  "title": "Introduction to NPM (Node Package Manager)",
+  "level": "a2",
+  "topic": "Frontend Ecosystem",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Most modern web projects use many external tools and libraries."
+    },
+    {
+      "id": "2",
+      "sentence": "NPM stands for Node Package Manager."
+    },
+    {
+      "id": "3",
+      "sentence": "Consider NPM as a huge supermarket of code."
+    },
+    {
+      "id": "4",
+      "sentence": "You can search for a package and install it using a simple command."
+    },
+    {
+      "id": "5",
+      "sentence": "All the tools your project needs are listed in a file called 'package.json'."
+    },
+    {
+      "id": "6",
+      "sentence": "Learning how to use NPM is essential for modern frontend development."
+    }
+  ]
+}

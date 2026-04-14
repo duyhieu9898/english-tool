@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-37",
+  "title": "Search Engine Optimization (SEO) for Developers",
+  "level": "b1",
+  "topic": "Frontend Performance",
+  "content": "SEO is not just about keywords and content; it also depends heavily on a website's technical performance. Search engines like Google prioritize websites that are fast, secure, and mobile-friendly. As a developer, you can improve SEO using technical practices like 'Server-Side Rendering' (SSR) or 'Static Site Generation' (SSG), which help search engines crawl and index your content more easily. Additionally, using semantic HTML tags—such as <header>, <main>, <article>, and <footer>—provides clear meaning to your content. Proper use of 'Meta Tags' in the HTML <head> section allowed you to control the title and description that appear in search results. By optimizing these technical aspects, you ensure that your website is not only useful for people but also easy for search engines to find.",
+  "vocabulary_highlights": [
+    { "word": "prioritize", "meaning": "ưu tiên" },
+    { "word": "crawl", "meaning": "quét (dữ liệu bởi bot tìm kiếm)" },
+    { "word": "index", "meaning": "lập chỉ mục" },
+    { "word": "semantic", "meaning": "ngữ nghĩa" },
+    { "word": "aspects", "meaning": "khía cạnh" }
+  ],
+  "questions": [
+    {
+      "question": "What kind of websites do search engines prioritize?",
+      "options": ["Slow and colorful websites", "Fast, secure, and mobile-friendly websites", "Websites with many images"],
+      "answer": "Fast, secure, and mobile-friendly websites",
+      "explanation": "The text states: 'Search engines like Google prioritize websites that are fast, secure, and mobile-friendly'."
+    },
+    {
+      "question": "How does using semantic HTML help SEO?",
+      "options": ["It makes the fonts larger", "It provides clear meaning to your content", "It saves battery life"],
+      "answer": "It provides clear meaning to your content",
+      "explanation": "The text explains: 'using semantic HTML tags... provides clear meaning to your content'."
+    },
+    {
+      "question": "What do Meta Tags allow you to control?",
+      "options": ["The background color", "The title and description in search results", "The speed of the mouse"],
+      "answer": "The title and description in search results",
+      "explanation": "The text says: 'Proper use of \"Meta Tags\"... allowed you to control the title and description that appear in search results'."
+    }
+  ],
+  "translation": "SEO không chỉ liên quan đến từ khóa và nội dung; nó còn phụ thuộc rất nhiều vào hiệu suất kỹ thuật của một trang web. Các công cụ tìm kiếm như Google ưu tiên các trang web nhanh, an toàn và thân thiện với di động. Với tư cách là một nhà phát triển, bạn có thể cải thiện SEO bằng cách sử dụng các thực hành kỹ thuật như 'Server-Side Rendering' (SSR) hoặc 'Static Site Generation' (SSG), giúp các công cụ tìm kiếm thu thập thông tin (crawl) và lập chỉ mục (index) nội dung của bạn dễ dàng hơn. Ngoài ra, việc sử dụng các thẻ HTML ngữ nghĩa (semantic)—chẳng hạn như <header>, <main>, <article> và <footer>—cung cấp ý nghĩa rõ ràng cho nội dung của bạn. Việc sử dụng đúng các 'Meta Tags' trong phần <head> của HTML cho phép bạn kiểm soát tiêu đề và mô tả xuất hiện trong kết quả tìm kiếm. Bằng cách tối ưu hóa các khía cạnh kỹ thuật này, bạn đảm bảo rằng trang web của mình không chỉ hữu ích cho mọi người mà còn dễ dàng để các công cụ tìm kiếm tìm thấy."
+}

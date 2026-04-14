@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-15",
+  "title": "Buying New Clothes",
+  "level": "a1",
+  "topic": "Shopping for Clothes",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Today is Saturday."
+    },
+    {
+      "id": "2",
+      "sentence": "I want to buy new clothes."
+    },
+    {
+      "id": "3",
+      "sentence": "I go to the clothes shop with my mom."
+    },
+    {
+      "id": "4",
+      "sentence": "The shop has many shirts and dresses."
+    },
+    {
+      "id": "5",
+      "sentence": "I like a red shirt, but it is too big."
+    },
+    {
+      "id": "6",
+      "sentence": "I am happy with my new yellow dress."
+    }
+  ]
+}

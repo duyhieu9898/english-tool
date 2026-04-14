@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-34",
+  "title": "Professional Communication: Constructive Feedback",
+  "level": "b2",
+  "topic": "Career Development",
+  "content": "In a professional development environment, feedback is one of the most powerful tools for personal and team growth. However, giving and receiving it effectively requires strong 'Soft Skills'. Constructive feedback should always be specific, objective, and focused on the work rather than the person. When giving feedback, use 'I' statements, such as 'I noticed a small performance issue here' instead of 'Your code is slow'. When receiving feedback, listen actively without becoming defensive. Remember that the goal is not to criticize, but to improve the product and learn from each other. Building a culture of honest and respectful feedback encourages continuous learning and leads to more successful and stable software products.",
+  "vocabulary_highlights": [
+    { "word": "personal growth", "meaning": "sự phát triển cá nhân" },
+    { "word": "constructive", "meaning": "có tính xây dựng" },
+    { "word": "defensive", "meaning": "mang tính thủ thế, tự vệ (thường là để bảo vệ ý kiến sai)" },
+    { "word": "criticize", "meaning": "chỉ trích" },
+    { "word": "respectful", "meaning": "tôn trọng" }
+  ],
+  "questions": [
+    {
+      "question": "What should constructive feedback focus on?",
+      "options": ["The person writing the code", "The work itself", "The color of the code editor"],
+      "answer": "The work itself",
+      "explanation": "The text states: 'Constructive feedback should always be... focused on the work rather than the person'."
+    },
+    {
+      "question": "How should you respond when receiving feedback?",
+      "options": ["By becoming defensive immediately", "By listening actively without being defensive", "By ignoring the feedback"],
+      "answer": "By listening actively without being defensive",
+      "explanation": "The text says: 'When receiving feedback, listen actively without becoming defensive'."
+    },
+    {
+      "question": "What is the goal of a professional feedback culture?",
+      "options": ["To find who to fire", "To improve the product and learn from each other", "To make reviews longer"],
+      "answer": "To improve the product and learn from each other",
+      "explanation": "The text explains: 'the goal is not to criticize, but to improve the product and learn from each other'."
+    }
+  ],
+  "translation": "Trong một môi trường phát triển chuyên nghiệp, phản hồi là một trong những công cụ mạnh mẽ nhất cho sự phát triển của cá nhân và đội ngũ. Tuy nhiên, việc đưa ra và tiếp nhận nó một cách hiệu quả đòi hỏi các 'Kỹ năng mềm' (Soft Skills) vững vàng. Phản hồi có tính xây dựng (constructive feedback) phải luôn cụ thể, khách quan và tập trung vào công việc thay vì vào con người. Khi đưa ra phản hồi, hãy sử dụng các câu khẳng định bắt đầu bằng 'Tôi' (I), chẳng hạn như 'Tôi nhận thấy một vấn đề nhỏ về hiệu năng ở đây' thay vì 'Mã của bạn chậm quá'. Khi nhận được phản hồi, hãy lắng nghe một cách tích cực mà không nảy sinh tâm lý phòng thủ (defensive). Hãy nhớ rằng mục tiêu không phải là để chỉ trích (criticize), mà là để cải thiện sản phẩm và học hỏi lẫn nhau. Xây dựng một văn hóa phản hồi trung thực và tôn trọng sẽ khuyến khích việc học hỏi liên tục và dẫn đến các sản phẩm phần mềm thành công và ổn định hơn."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-7",
+  "title": "Molly's Awful Morning",
+  "level": "a2",
+  "topic": "A Bad Day",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Molly woke up late."
+    },
+    {
+      "id": "2",
+      "sentence": "Her alarm didn't ring."
+    },
+    {
+      "id": "3",
+      "sentence": "She grabbed her bag and ran to the bus stop."
+    },
+    {
+      "id": "4",
+      "sentence": "When she finally arrived at work, her boss looked at her."
+    },
+    {
+      "id": "5",
+      "sentence": "The hot coffee spilled all over her new white shirt."
+    },
+    {
+      "id": "6",
+      "sentence": "She hoped for a good night's sleep and a fresh start."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "b1-listening-32",
+  "title": "Understanding the Virtual DOM in React and Vue",
+  "level": "b1",
+  "topic": "Frontend Frameworks",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "One of the key concepts behind the high performance of React and Vue is the 'Virtual DOM'."
+    },
+    {
+      "id": "2",
+      "sentence": "Updating the actual DOM of a web browser is a slow and expensive process."
+    },
+    {
+      "id": "3",
+      "sentence": "To optimize this, these frameworks maintain a 'Virtual DOM', which is a lightweight copy of the real DOM in JavaScript memory."
+    },
+    {
+      "id": "4",
+      "sentence": "When a component's state changes, the framework updates the Virtual DOM first."
+    },
+    {
+      "id": "5",
+      "sentence": "Finally, it 'Patches' the real DOM by updating only the elements that have changed."
+    },
+    {
+      "id": "6",
+      "sentence": "This approach prevents unnecessary re-renders of the entire page, resulting in a much faster and smoother user experience."
+    }
+  ]
+}

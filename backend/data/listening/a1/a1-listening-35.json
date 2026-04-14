@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-35",
+  "title": "Watching a Tutorial",
+  "level": "a1",
+  "topic": "Learning Methods",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Technology changes fast, so developers need to learn every day."
+    },
+    {
+      "id": "2",
+      "sentence": "Watching video tutorials is a great way to learn a new skill."
+    },
+    {
+      "id": "3",
+      "sentence": "You can find many tutorials on YouTube or Udemy."
+    },
+    {
+      "id": "4",
+      "sentence": "You pause the video and write the same code in your editor."
+    },
+    {
+      "id": "5",
+      "sentence": "Practice makes perfect."
+    },
+    {
+      "id": "6",
+      "sentence": "Joining online communities can also help you find answers to your questions."
+    }
+  ]
+}

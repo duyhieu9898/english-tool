@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-36",
+  "title": "Web Design Tools",
+  "level": "a1",
+  "topic": "Frontend UI",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Before writing code, designers create a visual plan for the website."
+    },
+    {
+      "id": "2",
+      "sentence": "They use special tools like Figma or Adobe XD."
+    },
+    {
+      "id": "3",
+      "sentence": "Figma is very popular because it is 'collaborative'."
+    },
+    {
+      "id": "4",
+      "sentence": "Many people can work on the same design at the same time."
+    },
+    {
+      "id": "5",
+      "sentence": "You can also use Canva to create simple images or banners."
+    },
+    {
+      "id": "6",
+      "sentence": "These tools help them choose colors, fonts, and layouts."
+    }
+  ]
+}

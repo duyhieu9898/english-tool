@@ -1,0 +1,28 @@
+{
+  "id": "b1-listening-21",
+  "title": "Managing Component State with the useState Hook",
+  "level": "b1",
+  "topic": "React.js",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "In React, managing a component's internal data is a core responsibility."
+    },
+    {
+      "id": "2",
+      "sentence": "The 'useState' hook is the primary tool for this task in functional components."
+    },
+    {
+      "id": "3",
+      "sentence": "When you call useState, it returns a pair: the current state value and a function that lets you update it."
+    },
+    {
+      "id": "4",
+      "sentence": "The most important feature of state is that when it's updated via the setter function, React automatically triggers a re-render of the component."
+    },
+    {
+      "id": "5",
+      "sentence": "This ensures that the user interface always reflects the most recent data."
+    }
+  ]
+}

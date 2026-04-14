@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-35",
+  "title": "Following a Design System",
+  "level": "a2",
+  "topic": "Frontend Design",
+  "content": "A design system is a collection of reusable components and clear standards. It helps a company keep their websites consistent. For a developer, following a design system means you don't have to choose colors or font sizes yourself. You use the predefined 'tokens' and components provided by the design team. For example, instead of choosing a random blue, you use the color 'primary-500'. This ensures that the button you build looks exactly like the buttons on every other page of the company's website. Using a design system makes development faster and results in a more professional product.",
+  "vocabulary_highlights": [
+    { "word": "reusable", "meaning": "có thể tái sử dụng" },
+    { "word": "consistent", "meaning": "nhất quán" },
+    { "word": "predefined", "meaning": "được định nghĩa trước" },
+    { "word": "tokens", "meaning": "định danh, mã thông báo (thường dùng cho các giá trị thiết kế)" },
+    { "word": "ensures", "meaning": "đảm bảo" }
+  ],
+  "questions": [
+    {
+      "question": "What is a design system?",
+      "options": ["A new coding language", "A collection of reusable components and standards", "A type of computer"],
+      "answer": "A collection of reusable components and standards",
+      "explanation": "The text says: 'A design system is a collection of reusable components and clear standards'."
+    },
+    {
+      "question": "What are the predefined values in a design system called?",
+      "options": ["Tokens", "Buttons", "Labels"],
+      "answer": "Tokens",
+      "explanation": "The text mentions using predefined 'tokens'."
+    },
+    {
+      "question": "Why is a design system helpful for a developer?",
+      "options": ["It makes the computer faster", "You don't have to choose colors or sizes yourself", "It is for back-end developers only"],
+      "answer": "You don't have to choose colors or sizes yourself",
+      "explanation": "The text explains that following a design system means you use predefined values instead of choosing them yourself."
+    }
+  ],
+  "translation": "Hệ thống thiết kế (Design System) là một tập hợp các thành phần có thể tái sử dụng và các tiêu chuẩn rõ ràng. Nó giúp một công ty giữ cho các trang web của họ được nhất quán. Đối với một nhà phát triển, việc tuân theo một hệ thống thiết kế có nghĩa là bạn không phải tự mình chọn màu sắc hoặc kích cỡ phông chữ. Bạn sử dụng các 'tokens' và các thành phần đã được định nghĩa trước bởi đội ngũ thiết kế. Ví dụ, thay vì chọn một màu xanh ngẫu nhiên, bạn sử dụng màu 'primary-500'. Điều này đảm bảo rằng nút bấm bạn xây dựng trông hoàn toàn giống với các nút bấm trên mọi trang khác của trang web công ty. Sử dụng hệ thống thiết kế giúp việc phát triển nhanh hơn và tạo ra một sản phẩm chuyên nghiệp hơn."
+}

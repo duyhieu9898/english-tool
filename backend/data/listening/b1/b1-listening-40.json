@@ -1,0 +1,32 @@
+{
+  "id": "b1-listening-40",
+  "title": "Preparing for Technical Coding Challenges",
+  "level": "b1",
+  "topic": "Career Development",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A technical coding challenge is a common part of the hiring process for frontend developers."
+    },
+    {
+      "id": "2",
+      "sentence": "These challenges often involve solving logic problems or building a small feature under a time limit."
+    },
+    {
+      "id": "3",
+      "sentence": "To prepare, you should practice common algorithms and data structures using platforms like LeetCode or HackerRank."
+    },
+    {
+      "id": "4",
+      "sentence": "During the challenge, focus on writing clean and readable code rather than just finding the fastest solution."
+    },
+    {
+      "id": "5",
+      "sentence": "Communicate your thought process clearly if it is a live coding session."
+    },
+    {
+      "id": "6",
+      "sentence": "Interviewers value how you think and how you handle difficult problems just as much as your final answer."
+    }
+  ]
+}

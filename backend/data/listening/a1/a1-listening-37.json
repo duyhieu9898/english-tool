@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-37",
+  "title": "Bug Reports and Tickets",
+  "level": "a1",
+  "topic": "Dev Workflow",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A bug is a mistake in the code that makes the website work incorrectly."
+    },
+    {
+      "id": "2",
+      "sentence": "When someone finds a bug, they create a 'Ticket' or a 'Bug Report'."
+    },
+    {
+      "id": "3",
+      "sentence": "A good report includes a title, a description, and the steps to find the bug."
+    },
+    {
+      "id": "4",
+      "sentence": "Developers use tools like Jira or Trello to manage these tickets."
+    },
+    {
+      "id": "5",
+      "sentence": "Fixing bugs is a big part of a developer's job."
+    },
+    {
+      "id": "6",
+      "sentence": "Testing the website helps find bugs before users see them."
+    }
+  ]
+}

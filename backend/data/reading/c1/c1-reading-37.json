@@ -1,0 +1,35 @@
+{
+  "id": "c1-reading-37",
+  "title": "Professional Growth through Open Source Contribution",
+  "level": "c1",
+  "topic": "Career Development",
+  "content": "Contributing to 'Open Source Software' (OSS) is one of the most effective ways to accelerate your professional growth as a developer. Beyond just using libraries like React or Vue, contributing back to their repositories allowed you to learn from world-class developers and demonstrate your technical expertise to a global audience. Effective contribution strategy begins with finding a project you use frequently and checking its 'Issues' list for beginner-friendly tasks often labeled as 'good first issue'. You should start by improving documentation or fixing small bugs before proposing major feature changes. Engaging with the maintainers in a respectful and helpful way is crucial for getting your 'Pull Request' (PR) approved. A strong history of OSS contributions serves as a powerful portfolio piece that provides evidence of your ability to collaborate on large-scale and complex codebases.",
+  "vocabulary_highlights": [
+    { "word": "repositories", "meaning": "kho lưu trữ (trên các nền tảng như GitHub)" },
+    { "word": "world-class", "meaning": "tầm cỡ thế giới" },
+    { "word": "frequently", "meaning": "thường xuyên" },
+    { "word": "maintainers", "meaning": "người duy trì (dự án)" },
+    { "word": "portfolio piece", "meaning": "phần quan trọng trong hồ sơ giới thiệu năng lực (portfolio)" }
+  ],
+  "questions": [
+    {
+      "question": "What is one benefit of contributing to open source mentioned in the text?",
+      "options": ["It makes your computer faster", "Learning from world-class developers and demonstrating technical expertise", "It is required for using the software"],
+      "answer": "Learning from world-class developers and demonstrating technical expertise",
+      "explanation": "The text states contributing to OSS 'allowed you to learn from world-class developers and demonstrate your technical expertise'."
+    },
+    {
+      "question": "Where should you start your contribution for the first time?",
+      "options": ["Rewrite the entire project", "Choose 'good first issue' labels for documentation or small bug fixes", "Request to be the project manager"],
+      "answer": "Choose 'good first issue' labels for documentation or small bug fixes",
+      "explanation": "The text suggests starting with labels like 'good first issue' for documentation or small bug fixes."
+    },
+    {
+      "question": "Why is a history of OSS contributions valuable for your career?",
+      "options": ["It saves you money on licenses", "It provides evidence of your ability to collaborate on large-scale codebases", "It is for junior developers only"],
+      "answer": "It provides evidence of your ability to collaborate on large-scale codebases",
+      "explanation": "The text says a strong history of OSS contributions 'provides evidence of your ability to collaborate on large-scale and complex codebases'."
+    }
+  ],
+  "translation": "Đóng góp cho 'Phần mềm Nguồn mở' (OSS) là một trong những cách hiệu quả nhất để thúc đẩy sự phát triển nghề nghiệp của bạn với tư cách là một nhà phát triển. Ngoài việc chỉ sử dụng các thư viện như React hoặc Vue, việc đóng góp ngược lại cho các kho lưu trữ (repositories) của chúng cho phép bạn học hỏi từ các nhà phát triển tầm cỡ thế giới (world-class) và chứng minh chuyên môn kỹ thuật của mình trước khán giả toàn cầu. Một chiến lược đóng góp hiệu quả bắt đầu bằng việc tìm một dự án mà bạn sử dụng thường xuyên (frequently) và kiểm tra danh sách 'Issues' để tìm các nhiệm vụ thân thiện với người mới bắt đầu thường được gắn nhãn là 'good first issue'. Bạn nên bắt đầu bằng việc cải thiện tài liệu hoặc sửa các lỗi nhỏ trước khi đề xuất các thay đổi tính năng lớn. Tham gia với những người duy trì (maintainers) dự án một cách tôn trọng và hữu ích là điều cốt yếu để bản PR (Pull Request) của bạn được chấp thuận. Một lịch sử đóng góp OSS mạnh mẽ đóng vai trò như một phần quan trọng trong hồ sơ năng lực (portfolio piece) giúp cung cấp bằng chứng về khả năng cộng tác của bạn trên các cơ sở mã phức tạp và quy mô lớn."
+}

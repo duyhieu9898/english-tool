@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-27",
+  "title": "Project Folders and Files",
+  "level": "a1",
+  "topic": "Dev Workflow",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A web project has many files."
+    },
+    {
+      "id": "2",
+      "sentence": "It is important to organize them in folders."
+    },
+    {
+      "id": "3",
+      "sentence": "The main HTML file is often named 'index.html'."
+    },
+    {
+      "id": "4",
+      "sentence": "This is the first file the browser looks for."
+    },
+    {
+      "id": "5",
+      "sentence": "Developers use a code editor to manage these files."
+    },
+    {
+      "id": "6",
+      "sentence": "You should use clear names for your files."
+    }
+  ]
+}

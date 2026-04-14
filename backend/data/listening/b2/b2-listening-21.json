@@ -1,0 +1,32 @@
+{
+  "id": "b2-listening-21",
+  "title": "Mastering Side Effects with the useEffect Hook",
+  "level": "b2",
+  "topic": "React.js",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "In React, a 'side effect' is anything that happens outside the scope of rendering a component, such as fetching data from an API, manually updating the DOM, or setting up a subscription."
+    },
+    {
+      "id": "2",
+      "sentence": "The 'useEffect' hook is the standard way to handle these effects in functional components."
+    },
+    {
+      "id": "3",
+      "sentence": "Effectively using useEffect requires a deep understanding of its dependency array."
+    },
+    {
+      "id": "4",
+      "sentence": "If the array is empty, the effect runs only once after the initial mount."
+    },
+    {
+      "id": "5",
+      "sentence": "Failing to manage dependencies correctly can lead to performance issues or infinite loops."
+    },
+    {
+      "id": "6",
+      "sentence": "Furthermore, you must often return a 'cleanup function' to prevent memory leaks, such as clearing a timer or unsubscribing from a service."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-23",
+  "title": "Clean Code Principles for Frontend Developers",
+  "level": "b1",
+  "topic": "Clean Code",
+  "content": "Writing code that works is only the first half of a developer's job; the second half is writing code that remains maintainable. 'Clean Code' is a set of principles that focus on readability and simplicity. One of the most important rules is choosing meaningful names for variables and functions. Instead of naming a variable 'd', call it 'daysElapsed'. A good function name should also be a verb that describes exactly what it does, such as 'fetchUserData()' instead of just 'data()'. Furthermore, functions should ideally do only one thing. If a function is too long, it should be broken down into smaller, specialized helper functions. By following these clean code practices, you make it much easier for yourself and your teammates to understand and debug the code in the future.",
+  "vocabulary_highlights": [
+    { "word": "maintainable", "meaning": "có thể bảo trì" },
+    { "word": "meaningful", "meaning": "có ý nghĩa" },
+    { "word": "elapsed", "meaning": "đã trôi qua" },
+    { "word": "ideally", "meaning": "một cách lý tưởng" },
+    { "word": "specialized", "meaning": "chuyên biệt" }
+  ],
+  "questions": [
+    {
+      "question": "What is the primary focus of 'Clean Code' principles?",
+      "options": ["Making code faster", "Readability and simplicity", "Reducing file size"],
+      "answer": "Readability and simplicity",
+      "explanation": "The text states: '\"Clean Code\" is a set of principles that focus on readability and simplicity'."
+    },
+    {
+      "question": "What is an example of a good variable name mentioned in the text?",
+      "options": ["d", "daysElapsed", "variable1"],
+      "answer": "daysElapsed",
+      "explanation": "The text suggests using 'daysElapsed' instead of 'd'."
+    },
+    {
+      "question": "What should you do if a function is too long?",
+      "options": ["Delete it", "Leave it as it is", "Break it down into smaller helper functions"],
+      "answer": "Break it down into smaller helper functions",
+      "explanation": "The text says: 'If a function is too long, it should be broken down into smaller, specialized helper functions'."
+    }
+  ],
+  "translation": "Viết mã hoạt động được mới chỉ là một nửa công việc của nhà phát triển; nửa còn lại là viết mã có thể duy trì (maintainable) được. 'Clean Code' (Mã sạch) là một bộ quy tắc tập trung vào khả năng đọc hiểu và sự đơn giản. Một trong những quy tắc quan trọng nhất là chọn tên có ý nghĩa cho các biến và hàm. Thay vì đặt tên biến là 'd', hãy gọi nó là 'daysElapsed'. Một tên hàm tốt cũng nên là một động từ mô tả chính xác những gì nó làm, chẳng hạn như 'fetchUserData()' thay vì chỉ là 'data()'. Hơn nữa, lý tưởng nhất là các hàm chỉ nên làm một việc duy nhất. Nếu một hàm quá dài, nó nên được chia nhỏ thành các hàm hỗ trợ chuyên biệt hơn. Bằng cách tuân theo các thực hành mã sạch này, bạn giúp bản thân và đồng đội dễ dàng hiểu và gỡ lỗi mã hơn trong tương lai."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-32",
+  "title": "Using the Terminal for Web Development",
+  "level": "a2",
+  "topic": "Dev Tools",
+  "content": "The terminal, or command line, is a powerful tool for developers. Instead of using a mouse, you type commands to talk to your computer. Most frontend developers use the terminal daily to manage their projects. Common commands include 'ls' to list files, 'cd' to change folders, and 'mkdir' to create a new folder. You also use the terminal to run tools like Vite or React. While it might look scary at first, using the terminal is often much faster than using a Graphical User Interface (GUI). Once you learn the basic commands, you will feel more comfortable and efficient in your development workflow.",
+  "vocabulary_highlights": [
+    { "word": "instead of", "meaning": "thay vì" },
+    { "word": "scary", "meaning": "đáng sợ" },
+    { "word": "graphical user interface", "meaning": "giao diện người dùng đồ họa" },
+    { "word": "efficient", "meaning": "hiệu quả" },
+    { "word": "workflow", "meaning": "quy trình làm việc" }
+  ],
+  "questions": [
+    {
+      "question": "What is another name for the terminal?",
+      "options": ["The keyboard", "The command line", "The screen"],
+      "answer": "The command line",
+      "explanation": "The text says: 'The terminal, or command line, is a powerful tool'."
+    },
+    {
+      "question": "What does the 'ls' command do?",
+      "options": ["List files", "Change folders", "Delete files"],
+      "answer": "List files",
+      "explanation": "The text explains: 'Common commands include \"ls\" to list files'."
+    },
+    {
+      "question": "Why do developers prefer the terminal over a GUI?",
+      "options": ["It is more colorful", "It is often much faster", "It is easier to use for beginners"],
+      "answer": "It is often much faster",
+      "explanation": "The text says: 'using the terminal is often much faster than using a Graphical User Interface (GUI)'."
+    }
+  ],
+  "translation": "Terminal, hay dòng lệnh (command line), là một công cụ mạnh mẽ dành cho các nhà phát triển. Thay vì sử dụng chuột, bạn nhập các lệnh để giao tiếp với máy tính của mình. Hầu hết các nhà phát triển frontend sử dụng terminal hàng ngày để quản lý các dự án của họ. Các lệnh phổ biến bao gồm 'ls' để liệt kê các tệp, 'cd' để chuyển đổi thư mục và 'mkdir' để tạo thư mục mới. Bạn cũng sử dụng terminal để chạy các công cụ như Vite hoặc React. Mặc dù ban đầu nó có vẻ đáng sợ, nhưng việc sử dụng terminal thường nhanh hơn nhiều so với việc sử dụng Giao diện người dùng đồ họa (GUI). Một khi bạn đã học được các lệnh cơ bản, bạn sẽ cảm thấy thoải mái và hiệu quả hơn trong quy trình phát triển của mình."
+}

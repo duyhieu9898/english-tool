@@ -15,7 +15,7 @@ function getYesterdayString(dateString) {
  * 
  * @param {Object} dbSnapshot - The current database snapshot.
  * @param {string} clientDate - The local YYYY-MM-DD string from the client.
- * @param {Array} reviews - Array of review items: { term, lessonId, isCorrect, isBossBattle }.
+ * @param {Array} reviews - Array of review items: { term, lessonId, isCorrect, isGeneralReview }.
  * @returns {Object} Summary counts of the processed session.
  */
 export function processSessionFinish(dbSnapshot, clientDate, reviews) {
@@ -27,7 +27,7 @@ export function processSessionFinish(dbSnapshot, clientDate, reviews) {
   const graduatedItems = [];
 
   // 1. Process all word reviews
-  reviews.forEach(({ term, lessonId, isCorrect, isBossBattle }) => {
+  reviews.forEach(({ term, lessonId, isCorrect, isGeneralReview }) => {
     const existingIdx = wordsData.findIndex(d => String(d.id) === String(term));
     
     if (existingIdx !== -1) {
@@ -54,7 +54,7 @@ export function processSessionFinish(dbSnapshot, clientDate, reviews) {
     } else {
       // Learning a new word
       wordsLearned++;
-      const initialLevel = (isCorrect && isBossBattle) ? 2 : 1;
+      const initialLevel = (isCorrect && isGeneralReview) ? 2 : 1;
       const newItem = createInitialWordProgress(term, lessonId, initialLevel);
       
       newItem.correctCount = isCorrect ? 1 : 0;

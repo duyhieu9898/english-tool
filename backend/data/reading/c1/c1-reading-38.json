@@ -1,0 +1,35 @@
+{
+  "id": "c1-reading-38",
+  "title": "Mastering Asynchronous Streams with RxJS",
+  "level": "c1",
+  "topic": "Frontend Tools",
+  "content": "Reactive programming is a declarative paradigm that focuses on data streams and the propagation of change. In the frontend world, 'RxJS' is the most powerful library for implementing this approach. Instead of thinking about single events, RxJS allows you to treat everything as an 'Observable' stream of data over time—from user clicks and mouse movements to HTTP requests. Using a variety of 'Operators' like 'map', 'filter', and 'switchMap', you can transform and combine these streams in a highly sophisticated way. This is particularly useful for handling complex asynchronous scenarios, such as search-as-you-type inputs or managing web sockets. While RxJS has a steep learning curve, mastering it provides a level of control over asynchronous logic that is difficult to achieve with standard Promises alone.",
+  "vocabulary_highlights": [
+    { "word": "paradigm", "meaning": "hình mẫu/mô hình tư duy" },
+    { "word": "propagation", "meaning": "sự lan truyền" },
+    { "word": "steep learning curve", "meaning": "đường cong học tập dốc (vô cùng khó học lúc đầu)" },
+    { "word": "transform", "meaning": "biến đổi (dữ liệu)" },
+    { "word": "sophisticated", "meaning": "tinh vi, tinh xảo" }
+  ],
+  "questions": [
+    {
+      "question": "What is 'Reactive Programming'?",
+      "options": ["A types of CSS tool", "A declarative paradigm focusing on data streams and change propagation", "Writing only synchronous code"],
+      "answer": "A declarative paradigm focusing on data streams and change propagation",
+      "explanation": "The text explains: 'Reactive programming is a declarative paradigm that focuses on data streams and the propagation of change'."
+    },
+    {
+      "question": "What does RxJS allow you to treat as a stream?",
+      "options": ["Everything, including user clicks and HTTP requests", "Only images", "Only the backend code"],
+      "answer": "Everything, including user clicks and HTTP requests",
+      "explanation": "The text says: 'RxJS allows you to treat everything as an \"Observable\" stream of data over time—from user clicks... to HTTP requests'."
+    },
+    {
+      "question": "What is an 'Operator' in RxJS used for?",
+      "options": ["To design icons", "To transform and combine data streams", "To build servers"],
+      "answer": "To transform and combine data streams",
+      "explanation": "The text mentions using operators like 'map' and 'filter' to 'transform and combine these streams'."
+    }
+  ],
+  "translation": "Lập trình Phản ứng (Reactive programming) là một mô hình (paradigm) khai báo tập trung vào các luồng dữ liệu (data streams) và sự lan truyền (propagation) của sự thay đổi. Trong thế giới frontend, 'RxJS' là thư viện mạnh mẽ nhất để triển khai cách tiếp cận này. Thay vì suy nghĩ về từng sự kiện đơn lẻ, RxJS cho phép bạn coi mọi thứ như một luồng 'Observable' (có thể quan sát được) theo thời gian — từ các lần nhấp chuột và di chuyển chuột của người dùng cho đến các yêu cầu HTTP. Bằng cách sử dụng nhiều loại 'Operators' (toán tử) như 'map', 'filter' và 'switchMap', bạn có thể biến đổi (transform) và kết hợp các luồng này một cách vô cùng tinh vi (sophisticated). Điều này đặc biệt hữu ích để xử lý các kịch bản bất đồng bộ phức tạp, chẳng hạn như ô nhập liệu tìm kiếm theo thời gian thực (search-as-you-type) hoặc quản lý các web sockets. Mặc dù RxJS có đường cong học tập dốc (steep learning curve), việc thành thạo nó mang lại một mức độ kiểm soát logic bất đồng bộ mà cực kỳ khó đạt được chỉ với các Promises tiêu chuẩn."
+}

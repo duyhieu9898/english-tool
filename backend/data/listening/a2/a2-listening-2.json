@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-2",
+  "title": "My Sweet Dream Job",
+  "level": "a2",
+  "topic": "My Dream Job",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "My name is Anna, and I often think about my future."
+    },
+    {
+      "id": "2",
+      "sentence": "I have a dream job."
+    },
+    {
+      "id": "3",
+      "sentence": "I want to be a baker!"
+    },
+    {
+      "id": "4",
+      "sentence": "The kitchen smells wonderful, full of fresh bread and sweet cakes."
+    },
+    {
+      "id": "5",
+      "sentence": "I would mix flour, sugar, eggs, and milk."
+    },
+    {
+      "id": "6",
+      "sentence": "Being a baker means making tasty things and sharing joy every day."
+    }
+  ]
+}

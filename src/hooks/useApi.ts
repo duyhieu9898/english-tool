@@ -105,6 +105,20 @@ export const useReadingLesson = (id: string) =>
     enabled: !!id,
   });
 
+// ── Listening ─────────────────────────────────────────────────────────────
+export const useListeningLessons = (level?: string) =>
+  useQuery({
+    queryKey: level ? queryKeys.listening.byLevel(level) : queryKeys.listening.all(),
+    queryFn: () => level ? api.getListeningLessonsByLevel(level) : api.getListeningLessonsByLevel(''),
+  });
+
+export const useListeningLesson = (id: string) =>
+  useQuery({
+    queryKey: queryKeys.listening.detail(id),
+    queryFn: () => api.getListeningLessonById(id),
+    enabled: !!id,
+  });
+
 // ── Word Progress ──────────────────────────────────────────────────────────
 export const useWordProgressAll = () =>
   useQuery({
@@ -308,8 +322,8 @@ export const useFinishVocabSessionMutation = () => {
       const newWordsCount = uniqueContinueTerms.length; // Actually, the BE handles exact new/old, but for stats we just count all continue terms as learned 
 
       const reviews: ReviewResult[] = [];
-      uniqueContinueTerms.forEach(w => reviews.push({ term: w.term, lessonId, isCorrect: false, isBossBattle: false }));
-      uniqueRememberedTerms.forEach(w => reviews.push({ term: w.term, lessonId, isCorrect: true, isBossBattle: false }));
+      uniqueContinueTerms.forEach(w => reviews.push({ term: w.term, lessonId, isCorrect: false, isGeneralReview: false }));
+      uniqueRememberedTerms.forEach(w => reviews.push({ term: w.term, lessonId, isCorrect: true, isGeneralReview: false }));
 
       await Promise.all([
         // 2 & 5. Process word progress, stats, and study log atomically on backend

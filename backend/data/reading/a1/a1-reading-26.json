@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-26",
+  "title": "Navigation and Links",
+  "level": "a1",
+  "topic": "Frontend Basics",
+  "content": "Navigation is how users move around a website. We use links to connect different pages. A navigation bar is usually at the top of the page. It has links like 'Home', 'About', and 'Contact'. When you hover your mouse over a link, the color often changes. This is a visual cue for the user. In HTML, we use the <a> tag to make a link. The 'href' attribute tells the browser where to go. Good navigation is simple and easy to find. It helps users find information quickly without getting lost.",
+  "vocabulary_highlights": [
+    { "word": "navigation", "meaning": "điều hướng" },
+    { "word": "connect", "meaning": "kết nối" },
+    { "word": "hover", "meaning": "di chuột qua" },
+    { "word": "visual cue", "meaning": "tín hiệu hình ảnh" },
+    { "word": "attribute", "meaning": "thuộc tính" }
+  ],
+  "questions": [
+    {
+      "question": "Where is the navigation bar usually located?",
+      "options": ["At the top", "In the footer", "Behind an image"],
+      "answer": "At the top",
+      "explanation": "The text says: 'A navigation bar is usually at the top of the page'."
+    },
+    {
+      "question": "What HTML tag is used to create a link?",
+      "options": ["<link>", "<a>", "<p>"],
+      "answer": "<a>",
+      "explanation": "The text says: 'In HTML, we use the <a> tag to make a link'."
+    },
+    {
+      "question": "What happens when you hover over a link sometimes?",
+      "options": ["The computer turns off", "The text disappears", "The color changes"],
+      "answer": "The color changes",
+      "explanation": "The text says: 'When you hover your mouse over a link, the color often changes'."
+    }
+  ],
+  "translation": "Điều hướng là cách người dùng di chuyển xung quanh một trang web. Chúng ta sử dụng các liên kết để kết nối các trang khác nhau. Một thanh điều hướng thường ở phía trên cùng của trang. Nó có các liên kết như 'Trang chủ', 'Giới thiệu' và 'Liên hệ'. Khi bạn di chuột lên một liên kết, màu sắc thường thay đổi. Đây là một tín hiệu hình ảnh cho người dùng. Trong HTML, chúng ta sử dụng thẻ <a> để tạo một liên kết. Thuộc tính 'href' cho trình duyệt biết cần đi đến đâu. Điều hướng tốt thì đơn giản và dễ tìm. Nó giúp người dùng tìm thấy thông tin nhanh chóng mà không bị lạc."
+}

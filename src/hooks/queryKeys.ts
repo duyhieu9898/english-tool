@@ -21,6 +21,11 @@ export const queryKeys = {
     byLevel: (level: string) => ['reading', 'level', level] as const,
     detail: (id: string) => ['reading', 'detail', id] as const,
   },
+  listening: {
+    all: () => ['listening'] as const,
+    byLevel: (level: string) => ['listening', 'level', level] as const,
+    detail: (id: string) => ['listening', 'detail', id] as const,
+  },
 
   // ── User data (mutable) ───────────────────────────────────────────────
   wordProgress: {

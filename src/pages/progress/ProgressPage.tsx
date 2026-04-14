@@ -9,7 +9,7 @@ import {
 import { Card } from '@/components/ui/Card';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { HeatmapCalendar } from '@/components/common/HeatmapCalendar';
-import { Layers, Activity, Star, BookOpen, BookType, Hash } from 'lucide-react';
+import { Layers, Activity, Star, BookOpen, BookType, Hash, Headphones } from 'lucide-react';
 import { PageContainer } from '@/components/layout/PageContainer';
 
 export const ProgressPage: React.FC = () => {
@@ -27,9 +27,10 @@ export const ProgressPage: React.FC = () => {
     count: words.filter((w) => w.level === lvl).length,
   }));
 
-  const completedVocab   = lessons.filter((l) => l.type === 'vocabulary').length;
-  const completedGrammar = lessons.filter((l) => l.type === 'grammar').length;
-  const completedReading = lessons.filter((l) => l.type === 'reading').length;
+  const completedVocab     = lessons.filter((l) => l.type === 'vocabulary').length;
+  const completedGrammar   = lessons.filter((l) => l.type === 'grammar').length;
+  const completedReading   = lessons.filter((l) => l.type === 'reading').length;
+  const completedListening = lessons.filter((l) => l.type === 'listening').length;
 
   return (
     <PageContainer className="space-y-8">
@@ -126,6 +127,15 @@ export const ProgressPage: React.FC = () => {
                 <span className="font-bold text-lg">Reading</span>
               </div>
               <span className="text-2xl font-black">{completedReading}</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-600 rounded-lg">
+                  <Headphones className="w-5 h-5" />
+                </div>
+                <span className="font-bold text-lg">Listening</span>
+              </div>
+              <span className="text-2xl font-black">{completedListening}</span>
             </div>
           </div>
         </Card>

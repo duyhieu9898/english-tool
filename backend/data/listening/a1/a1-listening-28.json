@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-28",
+  "title": "Website Buttons",
+  "level": "a1",
+  "topic": "Frontend UI",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Buttons are essential for interaction on a website."
+    },
+    {
+      "id": "2",
+      "sentence": "A button tells the user to take an action."
+    },
+    {
+      "id": "3",
+      "sentence": "Common actions are 'Submit', 'Buy', or 'Search'."
+    },
+    {
+      "id": "4",
+      "sentence": "Designers use 'rounded corners' to make buttons look friendly."
+    },
+    {
+      "id": "5",
+      "sentence": "In HTML, we use the <button> tag to create one."
+    },
+    {
+      "id": "6",
+      "sentence": "Good buttons are big enough for your finger on a mobile phone."
+    }
+  ]
+}

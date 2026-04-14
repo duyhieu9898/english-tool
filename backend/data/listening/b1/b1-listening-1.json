@@ -1,0 +1,32 @@
+{
+  "id": "b1-listening-1",
+  "title": "Unlock Your Best Self: The Power of Good Sleep",
+  "level": "b1",
+  "topic": "The Importance of Sleep",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "We all know sleep is important, but do we truly understand how much it affects our daily lives?"
+    },
+    {
+      "id": "2",
+      "sentence": "When we sleep, our bodies and minds rest and repair themselves."
+    },
+    {
+      "id": "3",
+      "sentence": "Good sleep plays a huge role in our ability to learn, remember things, and solve problems."
+    },
+    {
+      "id": "4",
+      "sentence": "Lack of sleep can cause you to feel tired and sluggish all day."
+    },
+    {
+      "id": "5",
+      "sentence": "Long-term sleep deprivation can weaken your immune system."
+    },
+    {
+      "id": "6",
+      "sentence": "Experts generally recommend that adults get between 7 to 9 hours of sleep per night."
+    }
+  ]
+}

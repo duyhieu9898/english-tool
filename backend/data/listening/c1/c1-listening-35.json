@@ -1,0 +1,28 @@
+{
+  "id": "c1-listening-35",
+  "title": "Integrating Automated Accessibility Testing into the CI/CD Pipeline",
+  "level": "c1",
+  "topic": "DevOps for Frontend",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Ensuring continuous web accessibility across large and fast-moving frontend projects is a significant challenge."
+    },
+    {
+      "id": "2",
+      "sentence": "To maintain compliance with 'WCAG' standards, manual audits are not enough."
+    },
+    {
+      "id": "3",
+      "sentence": "High-performing teams integrate automated accessibility testing directly into their CI/CD pipelines."
+    },
+    {
+      "id": "4",
+      "sentence": "While automated tools cannot catch 100% of accessibility problems, they can identify up to 50% of the most common issues before the code even reaches production."
+    },
+    {
+      "id": "5",
+      "sentence": "This proactive approach ensures that your application remains inclusive for all users and reduces the long-term cost of fixing accessibility debt."
+    }
+  ]
+}

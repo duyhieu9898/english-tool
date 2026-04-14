@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-34",
+  "title": "Pair Programming: Learning Together",
+  "level": "a2",
+  "topic": "Dev Workflow",
+  "content": "Pair programming is a technique where two developers work together at one computer. One person, the 'Driver', writes the code. The other person, the 'Navigator', reviews each line of code as it is written. They switch roles frequently. This method is excellent for sharing knowledge and catching bugs early. It also helps junior developers learn faster by working with senior colleagues. While it might seem slower to have two people on one task, the quality of the code is often much higher. Good communication is the most important part of successful pair programming.",
+  "vocabulary_highlights": [
+    { "word": "technique", "meaning": "kỹ thuật" },
+    { "word": "driver", "meaning": "người lái (trong lập trình cặp)" },
+    { "word": "navigator", "meaning": "người điều hướng" },
+    { "word": "frequently", "meaning": "thường xuyên" },
+    { "word": "colleagues", "meaning": "đồng nghiệp" }
+  ],
+  "questions": [
+    {
+      "question": "What does the 'Driver' do in pair programming?",
+      "options": ["Reviews the code", "Writes the code", "Gets coffee"],
+      "answer": "Writes the code",
+      "explanation": "The text says: 'One person, the \"Driver\", writes the code'."
+    },
+    {
+      "question": "What is the benefit of pair programming?",
+      "options": ["It is faster for every task", "It helps catch bugs early and share knowledge", "It is easier to talk to friends"],
+      "answer": "It helps catch bugs early and share knowledge",
+      "explanation": "The text mentions sharing knowledge and catching bugs early as benefits."
+    },
+    {
+      "question": "How often should developers switch roles?",
+      "options": ["Once a week", "Frequently", "Never"],
+      "answer": "Frequently",
+      "explanation": "The text says: 'They switch roles frequently'."
+    }
+  ],
+  "translation": "Lập trình cặp (Pair programming) là một kỹ thuật trong đó hai nhà phát triển cùng làm việc trên một máy tính. Một người, được gọi là 'Driver' (Người lái), sẽ viết mã. Người kia, 'Navigator' (Người điều hướng), sẽ xem lại từng dòng mã khi nó được viết ra. Họ thay đổi vai trò thường xuyên. Phương pháp này rất tuyệt vời để chia sẻ kiến thức và phát hiện lỗi sớm. Nó cũng giúp các nhà phát triển sơ cấp (junior) học hỏi nhanh hơn bằng cách làm việc cùng các đồng nghiệp cấp cao (senior). Mặc dù việc có hai người cùng làm một nhiệm vụ có vẻ chậm hơn, nhưng chất lượng mã nguồn thường cao hơn nhiều. Giao tiếp tốt là phần quan trọng nhất để lập trình cặp thành công."
+}

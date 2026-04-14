@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-24",
+  "title": "Writing Good Git Commit Messages",
+  "level": "a2",
+  "topic": "Dev Workflow",
+  "content": "A commit message explains what changes you made to the code. It is a vital part of version control. Good messages help you and your teammates understand the history of the project. A standard commit message has a short summary. It often starts with a verb like 'Add', 'Fix', or 'Update'. For example: 'Fix button color on mobile' or 'Add new login validation'. Avoid vague messages like 'fixed stuff' or 'oops'. Following a consistent style makes the Git history easy to read. Many teams use the 'Imperative' mood, which sounds like a command, to keep messages clear and direct.",
+  "vocabulary_highlights": [
+    { "word": "vital", "meaning": "quan trọng, sống còn" },
+    { "word": "history", "meaning": "lịch sử" },
+    { "word": "vague", "meaning": "mơ hồ, không rõ ràng" },
+    { "word": "consistent", "meaning": "nhất quán" },
+    { "word": "imperative", "meaning": "mệnh lệnh" }
+  ],
+  "questions": [
+    {
+      "question": "What is the purpose of a Git commit message?",
+      "options": ["To increase code speed", "To explain changes to the code", "To talk to users"],
+      "answer": "To explain changes to the code",
+      "explanation": "The text says: 'A commit message explains what changes you made to the code'."
+    },
+    {
+      "question": "Which of these is a bad commit message?",
+      "options": ["Fix typo in header", "Add user migration", "Fixed stuff"],
+      "answer": "Fixed stuff",
+      "explanation": "The text says: 'Avoid vague messages like \"fixed stuff\" or \"oops\"'."
+    },
+    {
+      "question": "How should a standard message often start?",
+      "options": ["With a noun", "With a verb like Add or Fix", "With a number"],
+      "answer": "With a verb like Add or Fix",
+      "explanation": "The text says: 'It often starts with a verb like \"Add\", \"Fix\", or \"Update\"'."
+    }
+  ],
+  "translation": "Một thông điệp commit (commit message) giải thích những thay đổi bạn đã thực hiện đối với mã nguồn. Đó là một phần quan trọng của quản lý phiên bản. Các thông điệp tốt giúp bạn và đồng đội hiểu được lịch sử của dự án. Một thông điệp commit tiêu chuẩn có một bản tóm tắt ngắn gọn. Nó thường bắt đầu bằng một động từ như 'Add' (Thêm), 'Fix' (Sửa) hoặc 'Update' (Cập nhật). Ví dụ: 'Fix button color on mobile' hoặc 'Add new login validation'. Tránh các thông điệp mơ hồ như 'fixed stuff' hoặc 'oops'. Tuân theo một phong cách nhất quán giúp lịch sử Git dễ đọc hơn. Nhiều nhóm sử dụng thể 'Mệnh lệnh' (Imperative), nghe giống như một câu lệnh, để giữ cho các thông điệp rõ ràng và trực diện."
+}

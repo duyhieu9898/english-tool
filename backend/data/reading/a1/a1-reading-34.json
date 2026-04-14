@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-34",
+  "title": "Login and Security",
+  "level": "a1",
+  "topic": "Web Security",
+  "content": "Security is important for every website. Users need to login to see their private data. A login form usually has two fields: 'Username' and 'Password'. You should use a strong password with letters, numbers, and symbols. Some websites use 'Two-Factor Authentication' (2FA). This means you get a code on your phone to login safely. Developers must protect user information from hackers. We use 'HTTPS' to encrypt the data. This makes the connection between the browser and the server secure.",
+  "vocabulary_highlights": [
+    { "word": "private data", "meaning": "dữ liệu cá nhân" },
+    { "word": "authentication", "meaning": "xác thực" },
+    { "word": "hackers", "meaning": "tin tặc" },
+    { "word": "encrypt", "meaning": "mã hóa" },
+    { "word": "secure", "meaning": "an toàn, bảo mật" }
+  ],
+  "questions": [
+    {
+      "question": "What are the two common fields in a login form?",
+      "options": ["Name and Age", "Username and Password", "Email and Phone"],
+      "answer": "Username and Password",
+      "explanation": "The text says: 'A login form usually has two fields: \"Username\" and \"Password\"'."
+    },
+    {
+      "question": "What is 2FA?",
+      "options": ["A second password", "Getting a code on your phone to login safely", "A fast computer"],
+      "answer": "Getting a code on your phone to login safely",
+      "explanation": "The text says: 'This means you get a code on your phone to login safely'."
+    },
+    {
+      "question": "What do we use to encrypt data on the web?",
+      "options": ["HTTP", "HTTPS", "HTML"],
+      "answer": "HTTPS",
+      "explanation": "The text says: 'We use \"HTTPS\" to encrypt the data'."
+    }
+  ],
+  "translation": "Bảo mật là điều quan trọng đối với mọi trang web. Người dùng cần đăng nhập để xem dữ liệu cá nhân của họ. Một biểu mẫu đăng nhập thường có hai trường: 'Tên người dùng' (Username) và 'Mật khẩu' (Password). Bạn nên sử dụng một mật khẩu mạnh với các chữ cái, con số và biểu tượng. Một số trang web sử dụng 'Xác thực hai yếu tố' (2FA). Điều này có nghĩa là bạn sẽ nhận được một mã trên điện thoại của mình để đăng nhập an toàn. Các nhà phát triển phải bảo vệ thông tin người dùng khỏi các tin tặc. Chúng ta sử dụng 'HTTPS' để mã hóa dữ liệu. Điều này làm cho sự kết nối giữa trình duyệt và máy chủ trở nên an toàn."
+}

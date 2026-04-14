@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-26",
+  "title": "Designing a Website Header with Flexbox",
+  "level": "a2",
+  "topic": "Frontend CSS",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A header is the most visible part of a website."
+    },
+    {
+      "id": "2",
+      "sentence": "It usually contains the logo and the navigation menu."
+    },
+    {
+      "id": "3",
+      "sentence": "Flexbox is a CSS layout tool that helps you distribute space between items."
+    },
+    {
+      "id": "4",
+      "sentence": "By setting 'display: flex', you can align items horizontally or vertically."
+    },
+    {
+      "id": "5",
+      "sentence": "For a header, we often use 'justify-content: space-between'."
+    },
+    {
+      "id": "6",
+      "sentence": "Flexbox makes it simple to center items or create equal gaps between them."
+    }
+  ]
+}

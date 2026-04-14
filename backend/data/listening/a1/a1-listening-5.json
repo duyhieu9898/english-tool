@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-5",
+  "title": "My Fun School Day",
+  "level": "a1",
+  "topic": "A Day at School",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Every morning, I wake up at 7 o'clock."
+    },
+    {
+      "id": "2",
+      "sentence": "Our first class is English."
+    },
+    {
+      "id": "3",
+      "sentence": "We learn new words."
+    },
+    {
+      "id": "4",
+      "sentence": "After lunch, we play in the playground."
+    },
+    {
+      "id": "5",
+      "sentence": "In the afternoon, we have Art class."
+    },
+    {
+      "id": "6",
+      "sentence": "My school day is fun!"
+    }
+  ]
+}

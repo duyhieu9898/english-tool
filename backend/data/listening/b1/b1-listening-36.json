@@ -1,0 +1,32 @@
+{
+  "id": "b1-listening-36",
+  "title": "Automating Tasks with NPM Scripts",
+  "level": "b1",
+  "topic": "Frontend Tools",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "As a web project grows, you often need to run repetitive tasks like starting a development server, building the project for production, or running tests."
+    },
+    {
+      "id": "2",
+      "sentence": "In a Node.js project, you can automate these tasks using 'NPM Scripts' defined in the 'scripts' section of your 'package.json' file."
+    },
+    {
+      "id": "3",
+      "sentence": "Each script is a command you can run in your terminal."
+    },
+    {
+      "id": "4",
+      "sentence": "For example, a common script is '\"start\": \"vite\"', which allows you to start the server by typing 'npm start'."
+    },
+    {
+      "id": "5",
+      "sentence": "By using NPM scripts, you can keep your development workflow consistent and easy for new team members to learn."
+    },
+    {
+      "id": "6",
+      "sentence": "It also allows you to integrate your project with automated build and deployment tools."
+    }
+  ]
+}

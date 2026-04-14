@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-27",
+  "title": "Creating Forms and Handling User Inputs",
+  "level": "a2",
+  "topic": "Frontend Basics",
+  "content": "Forms allow websites to collect information from users. A simple form includes various 'input' elements. For example, 'type=text' is for names, and 'type=email' is for email addresses. Each input should have a 'label' so the user knows what to type. When a user finishes, they click a 'submit' button. Before sending the data to a server, developers often use 'Validation'. This checks if the data is correct. For instance, it ensures the email has an '@' symbol. Good forms also show 'error messages' to help the user fix mistakes. Providing a clear and easy-to-use form is essential for a good user experience.",
+  "vocabulary_highlights": [
+    { "word": "collect", "meaning": "thu thập" },
+    { "word": "various", "meaning": "đa dạng, nhiều loại" },
+    { "word": "submit", "meaning": "gửi đi" },
+    { "word": "validation", "meaning": "sự xác thực" },
+    { "word": "essential", "meaning": "cực kỳ quan trọng, thiết yếu" }
+  ],
+  "questions": [
+    {
+      "question": "What is the purpose of a 'label' in a form?",
+      "options": ["To make the form beautiful", "So the user knows what to type", "To hide the input"],
+      "answer": "So the user knows what to type",
+      "explanation": "The text says: 'Each input should have a \"label\" so the user knows what to type'."
+    },
+    {
+      "question": "What is 'Validation' used for?",
+      "options": ["To check if the data is correct", "To make the form fast", "To delete user data"],
+      "answer": "To check if the data is correct",
+      "explanation": "The text says: 'Before sending the data to a server, developers often use \"Validation\". This checks if the data is correct'."
+    },
+    {
+      "question": "Which input type is mentioned for email addresses?",
+      "options": ["type=text", "type=password", "type=email"],
+      "answer": "type=email",
+      "explanation": "The text says: 'and \"type=email\" is for email addresses'."
+    }
+  ],
+  "translation": "Các biểu mẫu (forms) cho phép các trang web thu thập thông tin từ người dùng. Một biểu mẫu đơn giản bao gồm nhiều phần tử 'input' khác nhau. Ví dụ, 'type=text' dùng cho tên, và 'type=email' dùng cho địa chỉ email. Mỗi ô nhập liệu (input) nên có một 'nhãn' (label) để người dùng biết phải nhập nội dung gì. Khi người dùng hoàn tất, họ nhấp vào nút 'gửi' (submit). Trước khi gửi dữ liệu đến máy chủ, các nhà phát triển thường sử dụng 'Validation' (xác thực). Bước này kiểm tra xem dữ liệu có chính xác không. Ví dụ, nó đảm bảo email có ký hiệu '@'. Các biểu mẫu tốt cũng sẽ hiển thị các 'thông báo lỗi' để giúp người dùng sửa chữa sai sót. Cung cấp một biểu mẫu rõ ràng và dễ sử dụng là yếu tố thiết yếu cho một trải nghiệm người dùng tốt."
+}

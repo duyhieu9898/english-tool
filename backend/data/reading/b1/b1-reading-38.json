@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-38",
+  "title": "Modern Styling with Utility-First CSS Frameworks",
+  "level": "b1",
+  "topic": "Frontend CSS",
+  "content": "As web development evolves, the way we write CSS is also changing. Traditionally, developers wrote custom CSS in separate files using class names like '.navbar' or '.card'. A modern alternative is using a 'Utility-First' framework like Tailwind CSS. Instead of writing custom styles, you use predefined utility classes directly in your HTML, such as 'bg-blue-500', 'p-4', or 'flex'. This avoids the need to jump back and forth between HTML and CSS files, making development much faster. While it might look messy at first to have many classes in your HTML, it results in a very consistent UI and helps prevent the CSS file from becoming too large over time. Learning Tailwind CSS is now a popular requirement for many modern frontend developer roles.",
+  "vocabulary_highlights": [
+    { "word": "evolves", "meaning": "tiến hóa, phát triển" },
+    { "word": "alternative", "meaning": "giải pháp thay thế" },
+    { "word": "utility classes", "meaning": "các lớp tiện ích" },
+    { "word": "messy", "meaning": "bừa bộn, lộn xộn" },
+    { "word": "requirement", "meaning": "yêu cầu" }
+  ],
+  "questions": [
+    {
+      "question": "What is the main idea of a 'Utility-First' framework like Tailwind?",
+      "options": ["Writing CSS in a separate file", "Using predefined utility classes directly in HTML", "Using only images for styling"],
+      "answer": "Using predefined utility classes directly in HTML",
+      "explanation": "The text states: 'Instead of writing custom styles, you use predefined utility classes directly in your HTML'."
+    },
+    {
+      "question": "How does Tailwind help prevent large CSS files?",
+      "options": ["By deleting the CSS file", "By using a limited set of utility classes", "By making the fonts smaller"],
+      "answer": "By using a limited set of utility classes",
+      "explanation": "The text mentions that using utility classes helps prevent the CSS file from becoming too large over time."
+    },
+    {
+      "question": "What is one benefit of using utility-first CSS mentioned in the text?",
+      "options": ["It makes the browser faster", "It avoids jumping back and forth between HTML and CSS files", "It is for backend only"],
+      "answer": "It avoids jumping back and forth between HTML and CSS files",
+      "explanation": "The text explains: 'This avoids the need to jump back and forth between HTML and CSS files, making development much faster'."
+    }
+  ],
+  "translation": "Khi quá trình phát triển web phát triển, cách chúng ta viết CSS cũng đang thay đổi. Theo truyền thống, các nhà phát triển đã viết CSS tùy chỉnh trong các tệp riêng biệt bằng cách sử dụng các tên lớp như '.navbar' hoặc '.card'. Một giải pháp thay thế hiện đại là sử dụng khung (framework) 'Utility-First' (ưu tiên tiện ích) như Tailwind CSS. Thay vì viết các kiểu định dạng tùy chỉnh, bạn sử dụng các lớp tiện ích đã được định nghĩa trước trực tiếp trong mã HTML của mình, chẳng hạn như 'bg-blue-500', 'p-4', hoặc 'flex'. Điều này tránh việc phải nhảy qua lại giữa các tệp HTML và CSS, giúp quá trình phát triển nhanh hơn nhiều. Mặc dù ban đầu việc có nhiều lớp trong HTML có vẻ hơi lộn xộn, nhưng nó mang lại một giao diện người dùng rất nhất quán và giúp ngăn tệp CSS trở nên quá lớn theo thời gian. Học Tailwind CSS hiện là một yêu cầu phổ biến đối với nhiều vai trò nhà phát triển frontend hiện đại."
+}

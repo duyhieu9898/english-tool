@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-25",
+  "title": "Introduction to HTML",
+  "level": "a1",
+  "topic": "Coding Basics",
+  "content": "HTML is the skeleton of a web page. It stands for HyperText Markup Language. We use HTML tags to tell the browser what is on the page. A tag looks like this: <h1>. This is a heading tag. It makes text big and bold. Another tag is <p>, which is for a paragraph. We also use <img> for images and <a> for links. Every HTML file starts with a 'doctype' to tell the browser it is a modern web page. Without HTML, we cannot have content on the internet. It is the first thing every frontend developer learns.",
+  "vocabulary_highlights": [
+    { "word": "skeleton", "meaning": "khung xương, bộ khung" },
+    { "word": "tags", "meaning": "thẻ" },
+    { "word": "heading", "meaning": "tiêu đề" },
+    { "word": "paragraph", "meaning": "đoạn văn" },
+    { "word": "modern", "meaning": "hiện đại" }
+  ],
+  "questions": [
+    {
+      "question": "What does HTML stand for?",
+      "options": ["HyperText Markup Language", "High Tech Modern Logo", "Home Tool Main List"],
+      "answer": "HyperText Markup Language",
+      "explanation": "The text says: 'It stands for HyperText Markup Language'."
+    },
+    {
+      "question": "Which tag makes text big and bold?",
+      "options": ["<p>", "<img>", "<h1>"],
+      "answer": "<h1>",
+      "explanation": "The text says: '<h1>. This is a heading tag. It makes text big and bold'."
+    },
+    {
+      "question": "What do we use the <a> tag for?",
+      "options": ["Images", "Links", "Paragraphs"],
+      "answer": "Links",
+      "explanation": "The text says: 'and <a> for links'."
+    }
+  ],
+  "translation": "HTML là bộ khung của một trang web. Nó viết tắt của HyperText Markup Language. Chúng ta sử dụng các thẻ HTML để cho trình duyệt biết những gì có trên trang. Một thẻ trông như thế này: <h1>. Đây là một thẻ tiêu đề. Nó làm cho văn bản to và đậm. Một thẻ khác là <p>, dành cho đoạn văn. Chúng ta cũng sử dụng <img> cho hình ảnh và <a> cho các liên kết. Mọi tệp HTML đều bắt đầu bằng một 'doctype' để báo cho trình duyệt đây là một trang web hiện đại. Không có HTML, chúng ta không thể có nội dung trên internet. Đó là điều đầu tiên mà mọi nhà phát triển frontend đều học."
+}

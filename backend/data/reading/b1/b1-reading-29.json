@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-29",
+  "title": "Professional Networking on LinkedIn for Developers",
+  "level": "b1",
+  "topic": "Career Development",
+  "content": "LinkedIn is the most important platform for professional networking and finding a job in the tech industry. For a developer, a strong LinkedIn profile can open many doors. Your profile should include a clear headline that highlights your current role and main tech stack, such as 'Frontend Developer | React & Vue Expert'. You should also have an 'About' section that tells your professional story and your passion for coding. Sharing your projects from GitHub or writing posts about things you've learned can also help you stand out. By connecting with other developers, recruiters, and companies, you increase your chances of finding exciting new opportunities and staying updated on the latest tech trends.",
+  "vocabulary_highlights": [
+    { "word": "networking", "meaning": "mạng lưới kết nối, giao lưu phối hợp" },
+    { "word": "highlights", "meaning": "làm nổi bật" },
+    { "word": "passion", "meaning": "đam mê" },
+    { "word": "stand out", "meaning": "nổi bật, tạo sự chú ý" },
+    { "word": "recruiters", "meaning": "nhà tuyển dụng" }
+  ],
+  "questions": [
+    {
+      "question": "What is the most important professional networking platform mentioned?",
+      "options": ["Facebook", "LinkedIn", "Instagram"],
+      "answer": "LinkedIn",
+      "explanation": "The text says: 'LinkedIn is the most important platform for professional networking'."
+    },
+    {
+      "question": "What should a developer's LinkedIn headline include?",
+      "options": ["Their age and address", "Their role and main tech stack", "Their favorite music"],
+      "answer": "Their role and main tech stack",
+      "explanation": "The text suggests a headline like: 'Frontend Developer | React & Vue Expert'."
+    },
+    {
+      "question": "How can a developer stand out on LinkedIn?",
+      "options": ["Sharing projects and writing about things they've learned", "Adding many strangers", "Using a lot of emojis"],
+      "answer": "Sharing projects and writing about things they've learned",
+      "explanation": "The text says: 'Sharing your projects from GitHub or writing posts about things you've learned can also help you stand out'."
+    }
+  ],
+  "translation": "LinkedIn là nền tảng quan trọng nhất để kết nối chuyên nghiệp (networking) và tìm kiếm việc làm trong ngành công nghiệp công nghệ. Đối với một nhà phát triển, một hồ sơ LinkedIn mạnh mẽ có thể mở ra nhiều cánh cửa. Hồ sơ của bạn nên bao gồm một tiêu đề (headline) rõ ràng làm nổi bật vai trò hiện tại và bộ kỹ năng kỹ thuật chính của bạn, chẳng hạn như 'Frontend Developer | React & Vue Expert'. Bạn cũng nên có một phần 'About' kể về câu chuyện chuyên môn và niềm đam mê lập trình của mình. Việc chia sẻ các dự án từ GitHub hoặc viết các bài đăng về những gì bạn đã học cũng có thể giúp bạn nổi bật. Bằng cách kết nối với các nhà phát triển khác, các nhà tuyển dụng và các công ty, bạn sẽ tăng cơ hội tìm thấy những cơ hội mới thú vị và luôn cập nhật được các xu hướng công nghệ mới nhất."
+}

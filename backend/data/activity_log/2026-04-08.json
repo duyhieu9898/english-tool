@@ -1,0 +1,202 @@
+[
+  {
+    "ts": "2026-04-08T07:25:47.653Z",
+    "fn": "lesson:loaded",
+    "lesson": "7",
+    "detail": "words=22"
+  },
+  {
+    "ts": "2026-04-08T07:25:47.658Z",
+    "fn": "session:new",
+    "lesson": "7"
+  },
+  {
+    "ts": "2026-04-08T07:26:05.324Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "again"
+  },
+  {
+    "ts": "2026-04-08T07:26:07.111Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "agree"
+  },
+  {
+    "ts": "2026-04-08T07:26:08.302Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "answer"
+  },
+  {
+    "ts": "2026-04-08T07:26:09.047Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "ask"
+  },
+  {
+    "ts": "2026-04-08T07:26:09.903Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "call"
+  },
+  {
+    "ts": "2026-04-08T07:26:19.271Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "difference"
+  },
+  {
+    "ts": "2026-04-08T07:26:20.209Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "help"
+  },
+  {
+    "ts": "2026-04-08T07:26:37.423Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "let"
+  },
+  {
+    "ts": "2026-04-08T07:26:42.808Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "listen"
+  },
+  {
+    "ts": "2026-04-08T07:26:46.312Z",
+    "fn": "handleKnown",
+    "lesson": "7",
+    "detail": "meet"
+  },
+  {
+    "ts": "2026-04-08T07:26:53.592Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "opinion"
+  },
+  {
+    "ts": "2026-04-08T07:26:54.597Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "question"
+  },
+  {
+    "ts": "2026-04-08T07:26:55.761Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "repeat"
+  },
+  {
+    "ts": "2026-04-08T07:26:56.912Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "say"
+  },
+  {
+    "ts": "2026-04-08T07:26:57.623Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "send"
+  },
+  {
+    "ts": "2026-04-08T07:26:58.359Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "share"
+  },
+  {
+    "ts": "2026-04-08T07:26:59.199Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "sound"
+  },
+  {
+    "ts": "2026-04-08T07:27:00.055Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "speak"
+  },
+  {
+    "ts": "2026-04-08T07:27:00.751Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "talk"
+  },
+  {
+    "ts": "2026-04-08T07:27:01.608Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "telephone"
+  },
+  {
+    "ts": "2026-04-08T07:27:02.287Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "tell"
+  },
+  {
+    "ts": "2026-04-08T07:27:04.366Z",
+    "fn": "handleContinue",
+    "lesson": "7",
+    "detail": "understand"
+  },
+  {
+    "ts": "2026-04-08T07:27:04.369Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "7",
+    "detail": "queue=21"
+  },
+  {
+    "ts": "2026-04-08T07:31:22.139Z",
+    "fn": "finishSession:start",
+    "lesson": "7",
+    "data": {
+      "continue": 21,
+      "remembered": 1
+    }
+  },
+  {
+    "ts": "2026-04-08T07:31:22.194Z",
+    "fn": "finishSession:done",
+    "lesson": "7",
+    "data": {
+      "newWordsCount": 21,
+      "wordsSaved": [
+        "again",
+        "agree",
+        "answer",
+        "ask",
+        "call",
+        "difference",
+        "help",
+        "let",
+        "listen",
+        "opinion",
+        "question",
+        "repeat",
+        "say",
+        "send",
+        "share",
+        "sound",
+        "speak",
+        "talk",
+        "telephone",
+        "tell",
+        "understand"
+      ]
+    }
+  },
+  {
+    "ts": "2026-04-08T08:34:28.054Z",
+    "fn": "lesson:loaded",
+    "lesson": "7",
+    "detail": "words=22"
+  },
+  {
+    "ts": "2026-04-08T08:34:28.059Z",
+    "fn": "session:new",
+    "lesson": "7"
+  }
+]

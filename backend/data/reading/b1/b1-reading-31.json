@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-31",
+  "title": "Introduction to TypeScript and Static Typing",
+  "level": "b1",
+  "topic": "Frontend Tools",
+  "content": "TypeScript is a popular superset of JavaScript that adds static typing to the language. While JavaScript is dynamically typed, meaning a variable's type can change at any time, TypeScript allows you to define types for your variables, functions, and components. For example, if you declare a variable as a 'number', TypeScript will give you an error if you try to assign a string to it. This 'Type Checking' happens during development, allowing you to catch bugs early and make your code more predictable. Many large frontend projects, especially those using React or Vue, now use TypeScript to improve code quality and developer productivity. Learning TypeScript is a valuable skill that is highly sought after by employers in the tech industry.",
+  "vocabulary_highlights": [
+    { "word": "superset", "meaning": "siêu tập hợp (mở rộng từ cái khác)" },
+    { "word": "static typing", "meaning": "định kiểu tĩnh" },
+    { "word": "dynamically typed", "meaning": "định kiểu động" },
+    { "word": "assign", "meaning": "gán (giá trị)" },
+    { "word": "sought after", "meaning": "được săn đón, tìm kiếm" }
+  ],
+  "questions": [
+    {
+      "question": "What is the main difference between JavaScript and TypeScript mentioned in the text?",
+      "options": ["TypeScript adds static typing", "TypeScript is for backend only", "There is no difference"],
+      "answer": "TypeScript adds static typing",
+      "explanation": "The text states: 'TypeScript is a popular superset of JavaScript that adds static typing to the language'."
+    },
+    {
+      "question": "What is 'Type Checking' used for?",
+      "options": ["To make the website more colorful", "To catch bugs early during development", "To speed up the internet"],
+      "answer": "To catch bugs early during development",
+      "explanation": "The text explains: 'This \"Type Checking\" happens during development, allowing you to catch bugs early'."
+    },
+    {
+      "question": "Why do large frontend projects use TypeScript?",
+      "options": ["It is free", "To improve code quality and productivity", "Because it is required by Google"],
+      "answer": "To improve code quality and productivity",
+      "explanation": "The text says: 'Many large frontend projects... now use TypeScript to improve code quality and developer productivity'."
+    }
+  ],
+  "translation": "TypeScript là một siêu tập hợp (superset) phổ biến của JavaScript giúp bổ sung tính năng định kiểu tĩnh (static typing) vào ngôn ngữ. Trong khi JavaScript là ngôn ngữ định kiểu động, nghĩa là kiểu của một biến có thể thay đổi bất cứ lúc nào, TypeScript cho phép bạn xác định kiểu cho các biến, các hàm và các thành phần (components). Ví dụ, nếu bạn khai báo một biến là 'number' (số), TypeScript sẽ đưa ra lỗi nếu bạn cố gắng gán một chuỗi (string) cho nó. Việc 'Kiểm tra kiểu' (Type Checking) này diễn ra trong quá trình phát triển, cho phép bạn phát hiện lỗi sớm và làm cho mã nguồn trở nên dễ dự đoán hơn. Nhiều dự án frontend lớn, đặc biệt là những dự án sử dụng React hoặc Vue, hiện đang sử dụng TypeScript để cải thiện chất lượng mã và năng suất của nhà phát triển. Học TypeScript là một kỹ năng giá trị đang được săn đón rộng rãi bởi các nhà tuyển dụng trong ngành công nghiệp công nghệ."
+}

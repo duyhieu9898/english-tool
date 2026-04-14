@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-22",
+  "title": "Component Communication Patterns in Vue.js",
+  "level": "b2",
+  "topic": "Vue.js",
+  "content": "Building scalable Vue.js applications requires a clear strategy for communication between components. The most fundamental pattern is 'Props down, Events up'. This means parent components pass data down to children using 'Props', which are read-only properties. If a child component needs to trigger a change or notify the parent, it 'Emits' an event using the '$emit' function. This keeps the data flow predictable and follows the principle of 'one-way data flow'. For more complex scenarios involving multiple levels of components, developers might use 'Provide/Inject' or a dedicated state management library like Pinia. Understanding these patterns is crucial for managing application state without creating 'prop drilling'—the anti-pattern of passing props through many layers of components that don't need the data themselves.",
+  "vocabulary_highlights": [
+    { "word": "scalable", "meaning": "có khả năng mở rộng" },
+    { "word": "dedicated", "meaning": "chuyên dụng" },
+    { "word": "one-way data flow", "meaning": "luồng dữ liệu một chiều" },
+    { "word": "prop drilling", "meaning": "truyền prop qua nhiều lớp trung gian (dư thừa)" },
+    { "word": "anti-pattern", "meaning": "phương mẫu tiêu cực (cần tránh)" }
+  ],
+  "questions": [
+    {
+      "question": "What is the standard pattern for component communication in Vue?",
+      "options": ["Props up, Events down", "Props down, Events up", "Direct DOM manipulation"],
+      "answer": "Props down, Events up",
+      "explanation": "The text states: 'The most fundamental pattern is \"Props down, Events up\".'"
+    },
+    {
+      "question": "What should a child component do to notify its parent of a change?",
+      "options": ["Modify the prop directly", "Emit an event using $emit", "Change the parent's data"],
+      "answer": "Emit an event using $emit",
+      "explanation": "The text explains: 'If a child component needs to... notify the parent, it \"Emits\" an event using the \"$emit\" function'."
+    },
+    {
+      "question": "What is 'prop drilling'?",
+      "options": ["A tool for drilling holes", "Passing props through many component layers that don't need them", "A type of database optimization"],
+      "answer": "Passing props through many component layers that don't need them",
+      "explanation": "The text defines 'prop drilling' as the anti-pattern of passing props through layers that don't need the data."
+    }
+  ],
+  "translation": "Việc xây dựng các ứng dụng Vue.js có khả năng mở rộng đòi hỏi một chiến lược rõ ràng cho việc giao tiếp giữa các thành phần (components). Mô hình cơ bản nhất là 'Props down, Events up' (Props xuống, Sự kiện lên). Điều này có nghĩa là các component cha truyền dữ liệu xuống các con bằng cách sử dụng 'Props', vốn là các thuộc tính chỉ đọc. Nếu một component con cần kích hoạt một thay đổi hoặc thông báo cho cha, nó sẽ 'Phát' (Emit) một sự kiện bằng cách sử dụng hàm '$emit'. Điều này giữ cho luồng dữ liệu dễ dự đoán và tuân theo nguyên tắc 'luồng dữ liệu một chiều'. Đối với các kịch bản phức tạp hơn liên quan đến nhiều lớp component, các nhà phát triển có thể sử dụng 'Provide/Inject' hoặc một thư viện quản lý trạng thái chuyên dụng như Pinia. Hiểu các mô hình này là vô cùng quan trọng để quản lý trạng thái ứng dụng mà không tạo ra 'prop drilling' — một phương mẫu tiêu cực (anti-pattern) của việc truyền props qua nhiều lớp component vốn không tự sử dụng dữ liệu đó."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-25",
+  "title": "Making Websites Responsive with Media Queries",
+  "level": "a2",
+  "topic": "Frontend CSS",
+  "content": "A responsive website works well on desktops, tablets, and phones. To achieve this, developers use CSS 'Media Queries'. A media query allows you to apply styles based on the device's screen size. For example, you can tell the browser: 'If the screen is smaller than 600 pixels, change the font size to 14 pixels'. The most common break-point is based on the width of the screen. We usually use 'min-width' or 'max-width' rules. Modern web development often follows a 'Mobile-first' approach. This means you design for small screens first and then add more styles for larger screens using media queries.",
+  "vocabulary_highlights": [
+    { "word": "achieve", "meaning": "đạt được" },
+    { "word": "pixels", "meaning": "điểm ảnh" },
+    { "word": "break-point", "meaning": "điểm ngắt" },
+    { "word": "approach", "meaning": "cách tiếp cận" },
+    { "word": "responsive", "meaning": "đáp ứng, tương thích" }
+  ],
+  "questions": [
+    {
+      "question": "What CSS tool is used to make websites responsive?",
+      "options": ["Flexbox", "Media Queries", "Animations"],
+      "answer": "Media Queries",
+      "explanation": "The text says: 'developers use CSS \"Media Queries\"'."
+    },
+    {
+      "question": "What is the 'Mobile-first' approach?",
+      "options": ["Designing for laptops first", "Designing for small screens first", "Using only mobile phones"],
+      "answer": "Designing for small screens first",
+      "explanation": "The text says: 'This means you design for small screens first and then add more styles for larger screens'."
+    },
+    {
+      "question": "What property is usually used to define break-points?",
+      "options": ["Color", "Height", "Width"],
+      "answer": "Width",
+      "explanation": "The text says: 'The most common break-point is based on the width of the screen'."
+    }
+  ],
+  "translation": "Một trang web đáp ứng (responsive) hoạt động tốt trên máy tính để bàn, máy tính bảng và điện thoại. Để đạt được điều này, các nhà phát triển sử dụng CSS 'Media Queries'. Một media query cho phép bạn áp dụng các kiểu định dạng dựa trên kích thước màn hình của thiết bị. Ví dụ, bạn có thể bảo trình duyệt: 'Nếu màn hình nhỏ hơn 600 pixel, hãy thay đổi cỡ chữ thành 14 pixel'. Điểm ngắt phổ biến nhất dựa trên chiều rộng của màn hình. Chúng ta thường sử dụng các quy tắc 'min-width' hoặc 'max-width'. Phát triển web hiện đại thường tuân theo cách tiếp cận 'Mobile-first' (ưu tiên di động). Điều này có nghĩa là bạn thiết kế cho màn hình nhỏ trước, sau đó thêm nhiều kiểu định dạng hơn cho các màn hình lớn hơn bằng cách sử dụng media queries."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-36",
+  "title": "Introduction to Containerization with Docker",
+  "level": "b2",
+  "topic": "DevOps for Frontend",
+  "content": "A common problem in development is 'it works on my machine but not in production'. This is often caused by differences in environment settings, such as different versions of Node.js or operating systems. 'Docker' solves this through 'Containerization'. A Docker container is a lightweight, standalone package that includes everything needed to run an application: code, runtime, system tools, and libraries. By using a 'Dockerfile', you can define the exact environment your app needs. This ensures that the application behaves identically whether it is running on a local laptop, a staging server, or a production environment. Understanding the basics of Docker is incredibly helpful for frontend developers today as it simplifies the setup process and improves collaboration between development and operations teams.",
+  "vocabulary_highlights": [
+    { "word": "containerization", "meaning": "công nghệ đóng gói ứng dụng (containerization)" },
+    { "word": "standalone", "meaning": "độc lập" },
+    { "word": "identically", "meaning": "một cách giống hệt nhau" },
+    { "word": "collaboration", "meaning": "sự cộng tác" },
+    { "word": "operations", "meaning": "vận hành (thường nói đến đội ngũ Ops)" }
+  ],
+  "questions": [
+    {
+      "question": "What problem does Docker help solve?",
+      "options": ["Slow internet speed", "The 'it works on my machine' problem", "Designing better logos"],
+      "answer": "The 'it works on my machine' problem",
+      "explanation": "The text says: 'A common problem in development is \"it works on my machine but not in production\"... Docker solves this through \"Containerization\".'"
+    },
+    {
+      "question": "What is included in a Docker container?",
+      "options": ["Only the source code", "Code, runtime, system tools, and libraries", "A whole operating system like Windows"],
+      "answer": "Code, runtime, system tools, and libraries",
+      "explanation": "The text defines a container as a package that 'includes everything needed to run an application: code, runtime, system tools, and libraries'."
+    },
+    {
+      "question": "How do you define the environment in Docker?",
+      "options": ["Using a Word document", "Using a 'Dockerfile'", "By calling tech support"],
+      "answer": "Using a 'Dockerfile'",
+      "explanation": "The text mentions: 'By using a \"Dockerfile\", you can define the exact environment your app needs'."
+    }
+  ],
+  "translation": "Một vấn đề phổ biến trong phát triển phần mềm là 'nó chạy tốt trên máy tôi nhưng không chạy trên production'. Điều này thường do sự khác biệt trong cài đặt môi trường, như các phiên bản Node.js hoặc hệ điều hành khác nhau. 'Docker' giải quyết vấn đề này thông qua công nghệ 'Đóng gói' (Containerization). Một Docker container là một gói phần mềm nhẹ, độc lập (standalone) bao gồm mọi thứ cần thiết để chạy một ứng dụng: mã nguồn, thời gian chạy (runtime), các công cụ hệ thống và các thư viện. Bằng cách sử dụng một 'Dockerfile', bạn có thể xác định chính xác môi trường mà ứng dụng của bạn cần. Điều này đảm bảo rằng ứng dụng hoạt động giống hệt nhau (identically) cho dù nó đang chạy trên máy tính cá nhân, máy chủ thử nghiệm (staging) hay môi trường thực tế (production). Hiểu các kiến thức cơ bản về Docker là điều vô cùng hữu ích cho các nhà phát triển frontend ngày nay vì nó đơn giản hóa quy trình thiết lập và cải thiện sự cộng tác giữa các đội ngũ phát triển (Dev) và vận hành (Ops)."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "b2-listening-25",
+  "title": "Mastering CSS Grid for Complex Layouts",
+  "level": "b2",
+  "topic": "Frontend CSS",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "CSS Grid is a powerful two-dimensional layout system that allows developers to create complex web designs with ease."
+    },
+    {
+      "id": "2",
+      "sentence": "Unlike Flexbox, which is primarily one-dimensional (row or column), Grid handles both rows and columns at the same time."
+    },
+    {
+      "id": "3",
+      "sentence": "One of the unique features of Grid is the 'fr' unit, which represents a fraction of the available space."
+    },
+    {
+      "id": "4",
+      "sentence": "Phrases like 'grid-area' allow you to name specific parts of your layout and position elements based on those names."
+    },
+    {
+      "id": "5",
+      "sentence": "By combining Grid for overall page structure and Flexbox for individual component alignment, you can achieve a sophisticated and responsive user interface with minimal code."
+    }
+  ]
+}

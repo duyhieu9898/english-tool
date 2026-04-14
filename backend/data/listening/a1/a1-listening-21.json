@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-21",
+  "title": "What is a Website?",
+  "level": "a1",
+  "topic": "Frontend Basics",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A website is a collection of web pages."
+    },
+    {
+      "id": "2",
+      "sentence": "It has a header at the top."
+    },
+    {
+      "id": "3",
+      "sentence": "It has a footer at the bottom."
+    },
+    {
+      "id": "4",
+      "sentence": "We use a browser like Chrome or Safari to see websites."
+    },
+    {
+      "id": "5",
+      "sentence": "Developers write code to create websites."
+    },
+    {
+      "id": "6",
+      "sentence": "HTML is the basic language for all websites."
+    }
+  ]
+}

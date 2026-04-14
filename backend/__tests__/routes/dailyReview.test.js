@@ -65,8 +65,8 @@ describe('Daily Review Backend API Integration (userData Router)', () => {
       const payload = {
         clientDate: '2026-03-24', // yesterday is '2026-03-23' which matches the mock lastStudyDate
         reviews: [
-          { term: 'apple', lessonId: '1', isCorrect: true, isBossBattle: false }, // Existing word: UPGRADE
-          { term: 'orange', lessonId: '1', isCorrect: true, isBossBattle: true }, // New word: LEARN (level 2)
+          { term: 'apple', lessonId: '1', isCorrect: true, isGeneralReview: false }, // Existing word: UPGRADE
+          { term: 'orange', lessonId: '1', isCorrect: true, isGeneralReview: true }, // New word: LEARN (level 2)
         ],
       };
 
@@ -104,8 +104,8 @@ describe('Daily Review Backend API Integration (userData Router)', () => {
       const payload = {
         clientDate: '2026-03-26', // Gap day, 2 days after '2026-03-23'
         reviews: [
-          { term: 'apple', lessonId: '1', isCorrect: false, isBossBattle: false }, // Level 1 -> 1 (incorrect)
-          { term: 'banana', lessonId: '1', isCorrect: true, isBossBattle: false }, // Level 4 -> 5 (graduate)
+          { term: 'apple', lessonId: '1', isCorrect: false, isGeneralReview: false }, // Level 1 -> 1 (incorrect)
+          { term: 'banana', lessonId: '1', isCorrect: true, isGeneralReview: false }, // Level 4 -> 5 (graduate)
         ],
       };
 
@@ -131,7 +131,7 @@ describe('Daily Review Backend API Integration (userData Router)', () => {
     it('should MAINTAIN streak and LOG properly when studying multiple times the same day', async () => {
       const payload = {
         clientDate: '2026-03-23', // Same day as mock lastStudyDate
-        reviews: [{ term: 'apple', lessonId: '1', isCorrect: true, isBossBattle: false }],
+        reviews: [{ term: 'apple', lessonId: '1', isCorrect: true, isGeneralReview: false }],
       };
 
       const response = await request(app).post('/session/finish').send(payload);

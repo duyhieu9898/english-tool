@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-33",
+  "title": "A Developer's Guide to Web Accessibility (WCAG)",
+  "level": "b1",
+  "topic": "Frontend Standards",
+  "content": "Web accessibility means ensuring that websites are usable by everyone, including people with disabilities. To achieve this, developers follow the 'Web Content Accessibility Guidelines' (WCAG). WCAG is based on four main principles: 'Perceivable', 'Operable', 'Understandable', and 'Robust'. For example, 'Perceivable' means providing alternatives for non-text content, like alt text for images. 'Operable' means making all functionality available from a keyboard, so users don't have to rely on a mouse. Many countries now have laws requiring websites to meet WCAG standards. Beyond legal requirements, building accessible websites is a core professional responsibility that ensures your product is inclusive and provides a better experience for all users worldwide.",
+  "vocabulary_highlights": [
+    { "word": "accessibility", "meaning": "tính tiếp cận" },
+    { "word": "disabilities", "meaning": "khuyết tật" },
+    { "word": "perceivable", "meaning": "có thể nhận thức được" },
+    { "word": "robust", "meaning": "ổn định, bền vững" },
+    { "word": "inclusive", "meaning": "trọn vẹn, tính bao trùm" }
+  ],
+  "questions": [
+    {
+      "question": "What is the primary goal of web accessibility?",
+      "options": ["Making websites faster", "Ensuring websites are usable by everyone", "Changing background colors"],
+      "answer": "Ensuring websites are usable by everyone",
+      "explanation": "The text says: 'Web accessibility means ensuring that websites are usable by everyone'."
+    },
+    {
+      "question": "What does 'Operable' mean in WCAG?",
+      "options": ["Providing alt text for images", "Making functionality available from a keyboard", "Using only mobile phones"],
+      "answer": "Making functionality available from a keyboard",
+      "explanation": "The text states: '\"Operable\" means making all functionality available from a keyboard'."
+    },
+    {
+      "question": "Is following WCAG a legal requirement in some countries?",
+      "options": ["No, it's just a suggestion", "Yes, many countries have laws about it", "Only for personal blogs"],
+      "answer": "Yes, many countries have laws about it",
+      "explanation": "The text mentions that 'Many countries now have laws requiring websites to meet WCAG standards'."
+    }
+  ],
+  "translation": "Tính tiếp cận web (Web accessibility) có nghĩa là đảm bảo rằng các trang web có thể được sử dụng bởi tất cả mọi người, bao gồm cả những người khuyết tật. Để đạt được điều này, các nhà phát triển tuân theo 'Nguyên tắc hướng dẫn về khả năng tiếp cận nội dung web' (WCAG). WCAG dựa trên bốn nguyên tắc chính: 'Có thể nhận thức được' (Perceivable), 'Có thể vận hành được' (Operable), 'Có thể hiểu được' (Understandable) và 'Bền vững' (Robust). Ví dụ, 'Có thể nhận thức được' có nghĩa là cung cấp các giải pháp thay thế cho nội dung không phải đoạn văn bản, như văn bản Alt cho hình ảnh. 'Có thể vận hành được' có nghĩa là cung cấp tất cả các chức năng từ bàn phím, để người dùng không phải phụ thuộc vào chuột. Nhiều quốc gia hiện có luật yêu cầu các trang web đáp ứng các tiêu chuẩn WCAG. Ngoài các yêu cầu pháp lý, xây dựng các trang web dễ tiếp cận là một trách nhiệm nghề nghiệp cốt lõi nhằm đảm bảo sản phẩm của bạn mang tính bao trùm (inclusive) và cung cấp trải nghiệm tốt hơn cho tất cả người dùng trên toàn thế giới."
+}

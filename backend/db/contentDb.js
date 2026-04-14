@@ -4,7 +4,7 @@
  */
 import fs from 'fs';
 import path from 'path';
-import { CLASSIFIED_PATH, GRAMMAR_DIR, READING_DIR } from './paths.js';
+import { CLASSIFIED_PATH, GRAMMAR_DIR, READING_DIR, LISTENING_DIR } from './paths.js';
 
 const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c1'];
 
@@ -12,6 +12,7 @@ const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c1'];
 let _lessons = null;
 let _grammar = null;
 let _reading = null;
+let _listening = null;
 
 // ── helpers ────────────────────────────────────────────────────────────────
 function readJsonFiles(dir) {
@@ -88,4 +89,21 @@ function loadReading() {
   return _reading;
 }
 
-export { loadLessons, loadGrammar, loadReading };
+function loadListening() {
+  if (_listening) return _listening;
+  let id = 1;
+  _listening = LEVELS.flatMap(level => {
+    const files = readJsonFiles(path.join(LISTENING_DIR, level));
+    return files.map(({ file, content }) => ({
+      id:        id++,
+      slug:      content.id || `${level}-${file}`,
+      level:     content.level || level,
+      title:     content.title || file,
+      topic:     content.topic || '',
+      questions: content.questions || [],
+    }));
+  });
+  return _listening;
+}
+
+export { loadLessons, loadGrammar, loadReading, loadListening };

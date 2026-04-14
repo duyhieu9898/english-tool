@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-39",
+  "title": "Choosing the Right CSS Units",
+  "level": "a2",
+  "topic": "Frontend CSS",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "CSS provides many different units to define sizes like width and height."
+    },
+    {
+      "id": "2",
+      "sentence": "These are divided into absolute and relative units."
+    },
+    {
+      "id": "3",
+      "sentence": "'Pixels' are absolute units and look the same on most screens."
+    },
+    {
+      "id": "4",
+      "sentence": "However, modern developers prefer relative units like 'rem' and 'em'."
+    },
+    {
+      "id": "5",
+      "sentence": "Percentage is useful for layout, such as setting a sidebar width."
+    },
+    {
+      "id": "6",
+      "sentence": "Choosing the correct unit is important for creating a flexible design."
+    }
+  ]
+}

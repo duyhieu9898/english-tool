@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-23",
+  "title": "Programming Colors",
+  "level": "a1",
+  "topic": "Frontend Design",
+  "content": "Web designers use code to choose colors for a website. There are two common ways to name colors in code. The first is RGB, which stands for Red, Green, and Blue. By mixing these three colors, you can make any color you want. The second way is Hex codes. A Hex code starts with a hashtag, like #FF5733. Each code represents a specific color. White is #FFFFFF and Black is #000000. Choosing the right colors is important for User Experience (UX). Good contrast makes text easy to read for everyone.",
+  "vocabulary_highlights": [
+    { "word": "mixing", "meaning": "pha trộn" },
+    { "word": "hashtag", "meaning": "dấu thăng" },
+    { "word": "represent", "meaning": "đại diện cho" },
+    { "word": "specific", "meaning": "cụ thể" },
+    { "word": "contrast", "meaning": "độ tương phản" }
+  ],
+  "questions": [
+    {
+      "question": "What does RGB stand for?",
+      "options": ["Red, Green, Blue", "Real, Great, Best", "Run, Get, Buy"],
+      "answer": "Red, Green, Blue",
+      "explanation": "The text says: 'RGB, which stands for Red, Green, and Blue'."
+    },
+    {
+      "question": "What does a Hex code start with?",
+      "options": ["A dot", "A hashtag", "A slash"],
+      "answer": "A hashtag",
+      "explanation": "The text says: 'A Hex code starts with a hashtag'."
+    },
+    {
+      "question": "What is the Hex code for Black?",
+      "options": ["#FFFFFF", "#000000", "#FF0000"],
+      "answer": "#000000",
+      "explanation": "The text says: 'Black is #000000'."
+    }
+  ],
+  "translation": "Các nhà thiết kế web sử dụng mã để chọn màu sắc cho một trang web. Có hai cách phổ biến để đặt tên màu sắc trong mã. Đầu tiên là RGB, viết tắt của Red (Đỏ), Green (Xanh lá) và Blue (Xanh dương). Bằng cách trộn ba màu này, bạn có thể tạo ra bất kỳ màu nào bạn muốn. Cách thứ hai là mã Hex. Một mã Hex bắt đầu bằng dấu thăng, như #FF5733. Mỗi mã đại diện cho một màu cụ thể. Màu trắng là #FFFFFF và màu đen là #000000. Chọn đúng màu sắc là điều quan trọng đối với Trải nghiệm người dùng (UX). Độ tương phản tốt giúp văn bản dễ đọc đối với mọi người."
+}

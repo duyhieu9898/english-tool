@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-39",
+  "title": "Handling Errors Gracefully with Try and Catch",
+  "level": "b1",
+  "topic": "JavaScript Programming",
+  "content": "In a real-world application, errors are inevitable. A network request might fail, or an API might send back unexpected data. If these errors are not handled, the entire application can crash. To prevent this, developers use 'try...catch' blocks in JavaScript. The 'try' block contains the code that might cause an error. If an error occurs, the execution immediately jumps to the 'catch' block. In the catch block, you can handle the error, such as showing a friendly message to the user or logging the error for debugging. This approach ensures that your application remains stable and provides a professional experience even when things go wrong. Mastering error handling is crucial for building robust and reliable frontend applications.",
+  "vocabulary_highlights": [
+    { "word": "inevitable", "meaning": "không thể tránh khỏi" },
+    { "word": "crash", "meaning": "bị sập, ngừng hoạt động đột ngột" },
+    { "word": "execution", "meaning": "việc thực thi" },
+    { "word": "gracefully", "meaning": "một cách lịch thiệp/mượt mà" },
+    { "word": "robust", "meaning": "ổn định và mạnh mẽ" }
+  ],
+  "questions": [
+    {
+      "question": "What happens if a JavaScript error is not handled?",
+      "options": ["The computer turns off", "The entire application can crash", "The website gets faster"],
+      "answer": "The entire application can crash",
+      "explanation": "The text states: 'If these errors are not handled, the entire application can crash'."
+    },
+    {
+      "question": "Which block contains the code that might cause an error?",
+      "options": ["The catch block", "The try block", "The finally block"],
+      "answer": "The try block",
+      "explanation": "The text says: 'The \"try\" block contains the code that might cause an error'."
+    },
+    {
+      "question": "What is the benefit of using try...catch?",
+      "options": ["It deletes all bugs", "It ensures the application remains stable and professional", "It replaces the need for CSS"],
+      "answer": "It ensures the application remains stable and professional",
+      "explanation": "The text explains that try...catch ensures the application remains stable and provides a professional experience when errors occur."
+    }
+  ],
+  "translation": "Trong một ứng dụng thực tế, các lỗi là điều không thể tránh khỏi. Một yêu cầu mạng có thể thất bại, hoặc một API có thể gửi lại dữ liệu không mong đợi. Nếu những lỗi này không được xử lý, toàn bộ ứng dụng có thể bị sập (crash). Để ngăn chặn điều này, các nhà phát triển sử dụng các khối 'try...catch' trong JavaScript. Khối 'try' chứa mã nguồn có thể gây ra lỗi. Nếu lỗi xảy ra, việc thực thi sẽ ngay lập tức nhảy sang khối 'catch'. Trong khối catch, bạn có thể xử lý lỗi, chẳng hạn như hiển thị một thông báo thân thiện cho người dùng hoặc log lỗi để phục vụ việc gỡ lỗi. Cách tiếp cận này đảm bảo rằng ứng dụng của bạn vẫn ổn định và mang lại trải nghiệm chuyên nghiệp ngay cả khi có sự cố xảy ra. Thành thạo việc xử lý lỗi là điều cốt yếu để xây dựng các ứng dụng frontend mạnh mẽ (robust) và đáng tin cậy."
+}

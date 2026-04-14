@@ -7,6 +7,7 @@ import {
   useAllSessionProgress,
   useAllStudyLogs,
   useLessons,
+  useLessonProgressAll,
 } from '../hooks/useApi';
 import { Lesson } from '../types';
 import { Card } from '../components/ui/Card';
@@ -14,7 +15,7 @@ import { Button } from '../components/ui/Button';
 import { ProgressBar } from '../components/ui/ProgressBar';
 import { HeatmapCalendar } from '../components/common/HeatmapCalendar';
 import { PageContainer } from '../components/layout/PageContainer';
-import { Flame, Play, Clock, BookType, Book, Map, Sparkles } from 'lucide-react';
+import { Flame, Play, Clock, BookType, Book, Map, Sparkles, Headphones } from 'lucide-react';
 
 export const Dashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -25,8 +26,9 @@ export const Dashboard: React.FC = () => {
   const { data: lessons = [], isLoading: isLoadingLessons }  = useLessons();
   const { data: studyLogs = [], isLoading: isLoadingLogs }   = useAllStudyLogs();
   const { data: sessions = [], isLoading: isLoadingSessions } = useAllSessionProgress();
+  const { data: lessonProgress = [], isLoading: isLoadingLP } = useLessonProgressAll();
 
-  const isLoading = isLoadingStats || isLoadingSettings || isLoadingWP || isLoadingLessons || isLoadingLogs || isLoadingSessions;
+  const isLoading = isLoadingStats || isLoadingSettings || isLoadingWP || isLoadingLessons || isLoadingLogs || isLoadingSessions || isLoadingLP;
 
   const today        = new Date().toISOString().split('T')[0];
   const dueWords     = wordProgress.filter((p) => p.nextReview <= today);
@@ -36,6 +38,8 @@ export const Dashboard: React.FC = () => {
   const todayLearned  = todayLog?.wordsLearned ?? 0;
   const todayReviewed = todayLog?.wordsReviewed ?? 0;
   const todayTotal    = todayLearned + todayReviewed;
+
+  const completedListening = lessonProgress.filter((l) => l.type === 'listening').length;
 
   const lessonMap = React.useMemo(() => {
     const m: Record<string, Lesson> = {};
@@ -142,7 +146,7 @@ export const Dashboard: React.FC = () => {
       )}
 
       {/* Quick Nav */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <button
           onClick={() => navigate('/vocabulary')}
           className="p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 flex items-center gap-3 transition-all text-left group"
@@ -153,6 +157,19 @@ export const Dashboard: React.FC = () => {
           <div>
             <div className="font-bold">Vocabulary</div>
             <div className="text-xs text-gray-500">{stats?.totalWordsLearned ?? 0} learned</div>
+          </div>
+        </button>
+
+        <button
+          onClick={() => navigate('/listening')}
+          className="p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:bg-yellow-50 dark:hover:bg-yellow-900/10 flex items-center gap-3 transition-all text-left group"
+        >
+          <div className="w-12 h-12 rounded-xl bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <Headphones className="w-6 h-6 text-yellow-500" />
+          </div>
+          <div>
+            <div className="font-bold">Listening</div>
+            <div className="text-xs text-gray-500">{completedListening} completed</div>
           </div>
         </button>
 

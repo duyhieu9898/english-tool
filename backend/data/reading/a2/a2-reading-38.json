@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-38",
+  "title": "Introduction to Code Reviews",
+  "level": "a2",
+  "topic": "Collaboration",
+  "content": "A Code Review is a process where developers check each other’s code before it is merged into the main project. The goal is to improve code quality and find mistakes. If you are reviewing someone’s code, be helpful and kind. Instead of saying 'This is bad', you can suggest: 'Maybe we can use a more clear variable name here'. If your code is being reviewed, don't take the feedback personally. Everyone makes mistakes, and reviews are a great way to learn from your colleagues. A successful code review culture helps build a stronger team and a better product.",
+  "vocabulary_highlights": [
+    { "word": "merged", "meaning": "được hợp nhất" },
+    { "word": "quality", "meaning": "chất lượng" },
+    { "word": "suggest", "meaning": "đề xuất" },
+    { "word": "personally", "meaning": "có tính cá nhân, tự ái (trong ngữ cảnh này)" },
+    { "word": "culture", "meaning": "văn hóa" }
+  ],
+  "questions": [
+    {
+      "question": "What is the goal of a code review?",
+      "options": ["To find someone to blame", "To improve code quality and find mistakes", "To make coding slower"],
+      "answer": "To improve code quality and find mistakes",
+      "explanation": "The text says: 'The goal is to improve code quality and find mistakes'."
+    },
+    {
+      "question": "How should you give feedback in a review?",
+      "options": ["By being unkind", "By being helpful and kind", "By not saying anything"],
+      "answer": "By being helpful and kind",
+      "explanation": "The text says: 'If you are reviewing someone’s code, be helpful and kind'."
+    },
+    {
+      "question": "What should you do if your code is being reviewed?",
+      "options": ["Don't take feedback personally", "Stop coding", "Delete the code"],
+      "answer": "Don't take feedback personally",
+      "explanation": "The text says: 'If your code is being reviewed, don't take the feedback personally'."
+    }
+  ],
+  "translation": "Đánh giá mã (Code Review) là một quy trình trong đó các nhà phát triển kiểm tra mã của nhau trước khi nó được hợp nhất vào dự án chính. Mục tiêu là cải thiện chất lượng mã và tìm ra sai sót. Nếu bạn đang xem lại mã của ai đó, hãy tỏ ra hữu ích và tử tế. Thay vì nói 'Cái này tệ quá', bạn có thể đề nghị: 'Có lẽ chúng ta có thể sử dụng tên biến rõ ràng hơn ở đây'. Nếu mã của bạn đang được xem xét, đừng coi những phản hồi đó là công kích cá nhân. Mọi người đều mắc sai lầm, và việc review là một cách tuyệt vời để học hỏi từ các đồng nghiệp. Một văn hóa review mã thành công giúp xây dựng một đội ngũ mạnh hơn và một sản phẩm tốt hơn."
+}

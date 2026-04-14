@@ -4,6 +4,7 @@ import cors    from 'cors';
 import lessonsRouter     from './routes/lessons.js';
 import grammarRouter     from './routes/grammar.js';
 import readingRouter     from './routes/reading.js';
+import listeningRouter   from './routes/listening.js';
 import activityLogRouter from './routes/activityLog.js';
 import userDataRouter    from './routes/userData.js';
 import { loadLessons }   from './db/contentDb.js';
@@ -30,6 +31,7 @@ app.use((req, res, next) => {
 app.use('/lessons',     lessonsRouter);
 app.use('/grammar',     grammarRouter);
 app.use('/reading',     readingRouter);
+app.use('/listening',   listeningRouter);
 app.use('/activityLog', activityLogRouter);
 app.use('/',            userDataRouter);
 

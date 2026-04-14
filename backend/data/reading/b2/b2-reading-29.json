@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-29",
+  "title": "Salary Negotiation Strategies for Developers",
+  "level": "b2",
+  "topic": "Career Development",
+  "content": "Salary negotiation is a critical skill that can significantly impact your career trajectory and long-term financial health. When you receive a job offer, it is important to remember that it is often just a starting point. To negotiate effectively, you must first research the market rate for someone with your skills and experience in your specific location. Use platforms like Glassdoor, Levels.fyi, or local salary surveys to gather data. When presenting your counter-offer, focus on the value you bring to the company—such as your technical expertise, your previous projects, or your ability to mentor others. Beyond the base salary, you can also negotiate other benefits like remote work options, flexible hours, professional development budgets, or stock options. Approach the conversation professionally and confidently, knowing that you are advocating for your worth in the competitive tech market.",
+  "vocabulary_highlights": [
+    { "word": "trajectory", "meaning": "quỹ đạo, hướng phát triển" },
+    { "word": "market rate", "meaning": "mức giá thị trường" },
+    { "word": "counter-offer", "meaning": "đề nghị ngược lại (để thương thảo)" },
+    { "word": "expertise", "meaning": "chuyên môn kỹ thuật" },
+    { "word": "advocating", "meaning": "vận động, ủng hộ, đấu tranh cho (quyền lợi)" }
+  ],
+  "questions": [
+    {
+      "question": "What is the first step in effective salary negotiation?",
+      "options": ["Saying 'yes' immediately", "Researching the market rate for your skills and location", "Asking for double the offer"],
+      "answer": "Researching the market rate for your skills and location",
+      "explanation": "The text says: 'To negotiate effectively, you must first research the market rate for someone with your skills and experience in your specific location'."
+    },
+    {
+      "question": "What should you focus on when presenting a counter-offer?",
+      "options": ["Your personal bills", "The value you bring to the company", "How long the interview was"],
+      "answer": "The value you bring to the company",
+      "explanation": "The text states: 'When presenting your counter-offer, focus on the value you bring to the company'."
+    },
+    {
+      "question": "What other benefits can you negotiate besides the base salary?",
+      "options": ["Nothing else", "Remote work, flexible hours, and professional development budgets", "Which computer you will use"],
+      "answer": "Remote work, flexible hours, and professional development budgets",
+      "explanation": "The text mentions: 'you can also negotiate other benefits like remote work options, flexible hours, professional development budgets...'"
+    }
+  ],
+  "translation": "Đàm phán lương (Salary negotiation) là một kỹ năng quan trọng có thể ảnh hưởng đáng kể đến quỹ đạo sự nghiệp (trajectory) và tình hình tài chính dài hạn của bạn. Khi bạn nhận được một lời mời làm việc, điều quan trọng cần nhớ là nó thường chỉ là điểm khởi đầu. Để đàm phán hiệu quả, trước tiên bạn phải nghiên cứu mức giá thị trường (market rate) cho một người có kỹ năng và kinh nghiệm như bạn tại địa điểm cụ thể của bạn. Sử dụng các nền tảng như Glassdoor, Levels.fyi hoặc các khảo sát lương địa phương để thu thập dữ liệu. Khi đưa ra đề nghị ngược lại (counter-offer), hãy tập trung vào giá trị bạn mang lại cho công ty — chẳng hạn như chuyên môn kỹ thuật, các dự án trước đây của bạn hoặc khả năng hướng dẫn người khác. Ngoài mức lương cơ bản, bạn cũng có thể thương lượng các lợi ích khác như các tùy chọn làm việc từ xa, giờ làm việc linh hoạt, ngân sách phát triển chuyên môn hoặc quyền chọn cổ phiếu. Hãy tiếp cận cuộc trò chuyện một cách chuyên nghiệp và tự tin, biết rằng bạn đang đấu tranh (advocating) cho giá trị của mình trong thị trường công nghệ đầy tính cạnh tranh."
+}

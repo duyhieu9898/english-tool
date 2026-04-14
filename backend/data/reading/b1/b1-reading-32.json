@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-32",
+  "title": "Understanding the Virtual DOM in React and Vue",
+  "level": "b1",
+  "topic": "Frontend Frameworks",
+  "content": "One of the key concepts behind the high performance of React and Vue is the 'Virtual DOM'. Updating the actual DOM of a web browser is a slow and expensive process. To optimize this, these frameworks maintain a 'Virtual DOM', which is a lightweight copy of the real DOM in JavaScript memory. When a component's state changes, the framework updates the Virtual DOM first. It then compares the new Virtual DOM with a previous version—a process called 'Diffing'—to identify the exact changes. Finally, it 'Patches' the real DOM by updating only the elements that have changed. This approach prevents unnecessary re-renders of the entire page, resulting in a much faster and smoother user experience.",
+  "vocabulary_highlights": [
+    { "word": "high performance", "meaning": "hiệu năng cao" },
+    { "word": "lightweight", "meaning": "kiểu mẫu nhẹ, gọn nhẹ" },
+    { "word": "diffing", "meaning": "so sánh sự khác biệt" },
+    { "word": "patches", "meaning": "sửa đổi cục bộ (trong context này là patch lại DOM)" },
+    { "word": "unnecessary", "meaning": "không cần thiết" }
+  ],
+  "questions": [
+    {
+      "question": "Why is updating the actual DOM considered 'expensive'?",
+      "options": ["It costs money", "It is for backend only", "It is slow and resource-heavy"],
+      "answer": "It is slow and resource-heavy",
+      "explanation": "The text says: 'Updating the actual DOM of a web browser is a slow and expensive process'."
+    },
+    {
+      "question": "What is the 'Virtual DOM'?",
+      "options": ["A second browser window", "A lightweight copy of the real DOM in JavaScript memory", "A type of physical hardware"],
+      "answer": "A lightweight copy of the real DOM in JavaScript memory",
+      "explanation": "The text defines it as 'a lightweight copy of the real DOM in JavaScript memory'."
+    },
+    {
+      "question": "What is 'Diffing' in the context of the Virtual DOM?",
+      "options": ["Creating a new page", "Comparing the new Virtual DOM with a previous version to see changes", "Designing a new logo"],
+      "answer": "Comparing the new Virtual DOM with a previous version to see changes",
+      "explanation": "The text explains diffing as comparing versions to identify exact changes."
+    }
+  ],
+  "translation": "Một trong những khái niệm quan trọng đứng sau hiệu năng cao của React và Vue là 'Virtual DOM' (DOM ảo). Việc cập nhật trực tiếp DOM thực của trình duyệt web là một quy trình chậm và tốn kém tài nguyên. Để tối ưu hóa điều này, các khung (frameworks) này duy trì một 'Virtual DOM', vốn là một bản sao gọn nhẹ của DOM thực trong bộ nhớ JavaScript. Khi trạng thái của một thành phần (component) thay đổi, framework sẽ cập nhật Virtual DOM trước. Sau đó, nó sẽ so sánh Virtual DOM mới với phiên bản trước đó — một quá trình được gọi là 'Diffing' — để xác định những thay đổi chính xác. Cuối cùng, nó 'Patches' (vá) lại DOM thực bằng cách chỉ cập nhật những phần tử đã thay đổi. Cách tiếp cận này ngăn việc vẽ lại toàn bộ trang không cần thiết, giúp tạo ra trải nghiệm người dùng nhanh hơn và mượt mà hơn."
+}

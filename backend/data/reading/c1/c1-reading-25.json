@@ -1,0 +1,35 @@
+{
+  "id": "c1-reading-25",
+  "title": "Optimizing the Critical Rendering Path",
+  "level": "c1",
+  "topic": "Frontend Performance",
+  "content": "The 'Critical Rendering Path' (CRP) refers to the sequence of steps the browser takes to convert HTML, CSS, and JavaScript into pixels on the screen. Optimizing this path is the key to achieving high scores in Google's 'Core Web Vitals'. The process involves several stages: constructing the DOM (Document Object Model), creating the CSSOM (CSS Object Model), combining them into a Render Tree, calculating the layout of each element, and finally 'Painting' the pixels. Bottlenecks often occur when large CSS or JavaScript files block the rendering process. To speed up the CRP, senior developers use techniques like 'Inlining' critical CSS, deferring non-essential JavaScript, and prioritizing the 'Above-the-Fold' content. A deep understanding of the CRP allows you to create blazingly fast websites that provide an instant and fluid experience for the user.",
+  "vocabulary_highlights": [
+    { "word": "sequence", "meaning": "trình tự, chuỗi" },
+    { "word": "constructing", "meaning": "xây dựng" },
+    { "word": "deferred", "meaning": "trì hoãn" },
+    { "word": "above-the-fold", "meaning": "phần trên của trang web (vùng nhìn thấy ngay không cần cuộn)" },
+    { "word": "bottlenecks", "meaning": "điểm nghẽn" }
+  ],
+  "questions": [
+    {
+      "question": "What is the 'Critical Rendering Path' (CRP)?",
+      "options": ["A types of CSS framework", "The sequence of steps the browser takes to display pixels", "A project management strategy"],
+      "answer": "The sequence of steps the browser takes to display pixels",
+      "explanation": "The text defines CRP as 'the sequence of steps the browser takes to convert HTML, CSS, and JavaScript into pixels on the screen'."
+    },
+    {
+      "question": "Which combination creates the 'Render Tree'?",
+      "options": ["HTML and JavaScript", "DOM and CSSOM", "Images and Text"],
+      "answer": "DOM and CSSOM",
+      "explanation": "The text states: 'constructing the DOM... creating the CSSOM... combining them into a Render Tree'."
+    },
+    {
+      "question": "What is a technique used to speed up the CRP?",
+      "options": ["Inlining critical CSS and deferring non-essential JavaScript", "Adding more images", "Deleting the HTML file"],
+      "answer": "Inlining critical CSS and deferring non-essential JavaScript",
+      "explanation": "The text mentions 'Inlining critical CSS, deferring non-essential JavaScript' as techniques to speed up the CRP."
+    }
+  ],
+  "translation": "'Lộ trình Hiển thị Thiết yếu' (Critical Rendering Path - CRP) đề cập đến trình tự (sequence) các bước mà trình duyệt thực hiện để chuyển đổi HTML, CSS và JavaScript thành các điểm ảnh trên màn hình. Tối ưu hóa lộ trình này là chìa khóa để đạt được điểm số cao trong 'Core Web Vitals' của Google. Quy trình này bao gồm một vài giai đoạn: xây dựng DOM (Document Object Model), tạo ra CSSOM (CSS Object Model), kết hợp chúng thành một Cây Hiển thị (Render Tree), tính toán bố cục của từng phần tử và cuối cùng là 'Vẽ' (Painting) các điểm ảnh. Các điểm nghẽn (bottlenecks) thường xảy ra khi các tệp CSS hoặc JavaScript lớn làm nghẽn quá trình hiển thị. Để tăng tốc CRP, các nhà phát triển cấp cao sử dụng các kỹ thuật như 'Inlining' (chèn trực tiếp) các CSS thiết yếu, trì hoãn (deferring) các JavaScript không quan trọng và ưu tiên các nội dung 'Above-the-Fold' (phần đầu trang nhìn thấy ngay). Hiểu biết sâu sắc về CRP cho phép bạn tạo ra các trang web cực nhanh mang lại trải nghiệm tức thì và mượt mà cho người dùng."
+}

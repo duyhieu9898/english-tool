@@ -192,7 +192,7 @@ const DailyReviewEngine: React.FC<{
         term: currentWord.term,
         lessonId: currentWord.lessonId,
         isCorrect: true,
-        isBossBattle: false,
+        isGeneralReview: false,
       });
 
       advance();
@@ -215,7 +215,7 @@ const DailyReviewEngine: React.FC<{
         term: currentWord.term,
         lessonId: currentWord.lessonId,
         isCorrect: false,
-        isBossBattle: false,
+        isGeneralReview: false,
       });
     }
   };

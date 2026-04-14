@@ -1,0 +1,32 @@
+{
+  "id": "b1-listening-26",
+  "title": "Introduction to Node.js and the Express Framework",
+  "level": "b1",
+  "topic": "Node.js",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Node.js is a runtime environment that allows you to run JavaScript on the server, outside of a web browser."
+    },
+    {
+      "id": "2",
+      "sentence": "This enables frontend developers to use their existing JavaScript skills to build full-stack applications."
+    },
+    {
+      "id": "3",
+      "sentence": "To make server-side development even simpler, many developers use 'Express.js', a minimalist web framework for Node.js."
+    },
+    {
+      "id": "4",
+      "sentence": "Express provides a set of features to handle common backend tasks like routing, which determines how an application responds to a specific URL request."
+    },
+    {
+      "id": "5",
+      "sentence": "For example, using Express, you can easily create a route that sends back product information when a user visits '/api/products'."
+    },
+    {
+      "id": "6",
+      "sentence": "Understanding Node.js and Express is a significant milestone for any frontend developer looking to understand the complete application lifecycle."
+    }
+  ]
+}

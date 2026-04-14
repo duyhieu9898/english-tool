@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-35",
+  "title": "Following a Design System",
+  "level": "a2",
+  "topic": "Frontend Design",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A design system is a collection of reusable components and clear standards."
+    },
+    {
+      "id": "2",
+      "sentence": "It helps a company keep their websites consistent."
+    },
+    {
+      "id": "3",
+      "sentence": "Developers don't have to choose colors or font sizes themselves."
+    },
+    {
+      "id": "4",
+      "sentence": "You use the predefined 'tokens' and components provided by the design team."
+    },
+    {
+      "id": "5",
+      "sentence": "This ensures that the button you build looks exactly like others on the website."
+    },
+    {
+      "id": "6",
+      "sentence": "Using a design system makes development faster and result in a more professional product."
+    }
+  ]
+}

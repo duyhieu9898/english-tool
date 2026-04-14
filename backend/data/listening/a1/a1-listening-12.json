@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-12",
+  "title": "The Four Seasons",
+  "level": "a1",
+  "topic": "Weather and Seasons",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "The weather changes every day."
+    },
+    {
+      "id": "2",
+      "sentence": "We have four seasons in a year."
+    },
+    {
+      "id": "3",
+      "sentence": "In spring, the weather is often warm."
+    },
+    {
+      "id": "4",
+      "sentence": "In summer, it is very hot."
+    },
+    {
+      "id": "5",
+      "sentence": "Leaves fall from trees."
+    },
+    {
+      "id": "6",
+      "sentence": "We wear warm coats."
+    }
+  ]
+}

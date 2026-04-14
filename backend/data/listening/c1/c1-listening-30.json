@@ -1,0 +1,28 @@
+{
+  "id": "c1-listening-30",
+  "title": "API Design Strategies: GraphQL vs. REST",
+  "level": "c1",
+  "topic": "Backend Basics",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Choosing the right API architectural style is a critical decision that impacts frontend development speed and application performance."
+    },
+    {
+      "id": "2",
+      "sentence": "For years, REST has been the industry standard due to its simplicity and stateless nature."
+    },
+    {
+      "id": "3",
+      "sentence": "However, REST often leads to 'over-fetching' (receiving more data than needed) or 'under-fetching' (needing multiple requests to gather all data)."
+    },
+    {
+      "id": "4",
+      "sentence": "'GraphQL', a query language for APIs developed by Facebook, addresses these issues by allowing the frontend to request the exact data it needs in a single request."
+    },
+    {
+      "id": "5",
+      "sentence": "While GraphQL offers greater flexibility and precision, it introduces complexity on the server side and can be harder to cache than traditional REST endpoints."
+    }
+  ]
+}

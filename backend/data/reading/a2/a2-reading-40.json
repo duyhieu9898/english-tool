@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-40",
+  "title": "Creating Your First Pull Request",
+  "level": "a2",
+  "topic": "Dev Workflow",
+  "content": "A Pull Request (PR) is how you propose your code changes to a project on platform like GitHub. After you finish your task on a separate branch, you create a PR to merge it into the main code. In the PR description, you should explain what you did and why. Many teams also include a screenshot or a video to show the new UI changes. A teammate will then review your code. They might ask for some changes, or they might 'Approve' it. Once it is approved, the code is merged. Completing your first PR is a big milestone for any junior developer, as it shows you can contribute to a real-world project.",
+  "vocabulary_highlights": [
+    { "word": "propose", "meaning": "đề xuất" },
+    { "word": "separate branch", "meaning": "nhánh riêng biệt" },
+    { "word": "merge", "meaning": "hợp nhất" },
+    { "word": "approve", "meaning": "chấp thuận" },
+    { "word": "milestone", "meaning": "cột mốc" }
+  ],
+  "questions": [
+    {
+      "question": "What is a Pull Request (PR) used for?",
+      "options": ["To delete the project", "To propose code changes", "To talk to a manager"],
+      "answer": "To propose code changes",
+      "explanation": "The text says: 'A Pull Request (PR) is how you propose your code changes to a project'."
+    },
+    {
+      "question": "What should you include in a PR description?",
+      "options": ["An explanation of what you did and why", "Your favorite song", "The price of your laptop"],
+      "answer": "An explanation of what you did and why",
+      "explanation": "The text suggests explaining what you did and why in the PR description."
+    },
+    {
+      "question": "What happens after a PR is approved?",
+      "options": ["The project ends", "The code is merged", "The developer is fired"],
+      "answer": "The code is merged",
+      "explanation": "The text says: 'Once it is approved, the code is merged'."
+    }
+  ],
+  "translation": "Một yêu cầu kéo (Pull Request - PR) là cách bạn đề xuất các thay đổi mã của mình cho một dự án trên các nền tảng như GitHub. Sau khi bạn hoàn thành nhiệm vụ trên một nhánh (branch) riêng biệt, bạn tạo một PR để hợp nhất nó vào mã nguồn chính. Trong phần mô tả PR, bạn nên giải thích những gì bạn đã làm và tại sao. Nhiều nhóm cũng bao gồm một ảnh chụp màn hình hoặc một video để hiển thị các thay đổi giao diện người dùng mới. Sau đó, một đồng đội sẽ xem xét mã của bạn. Họ có thể yêu cầu một số thay đổi, hoặc họ có thể 'Chấp thuận' (Approve) nó. Khi đã được chấp thuận, mã sẽ được hợp nhất. Hoàn thành bản PR đầu tiên là một cột mốc lớn đối với bất kỳ nhà phát triển sơ cấp nào, vì nó cho thấy bạn có thể đóng góp vào một dự án thực tế."
+}

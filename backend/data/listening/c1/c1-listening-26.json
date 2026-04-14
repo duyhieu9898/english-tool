@@ -1,0 +1,28 @@
+{
+  "id": "c1-listening-26",
+  "title": "Mitigating Cross-Site Scripting (XSS) Vulnerabilities",
+  "level": "c1",
+  "topic": "Web Security",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Cross-Site Scripting (XSS) is one of the most common and dangerous security vulnerabilities in modern web applications."
+    },
+    {
+      "id": "2",
+      "sentence": "An XSS attack occurs when a malicious actor injects client-side scripts into a webpage viewed by other users."
+    },
+    {
+      "id": "3",
+      "sentence": "To prevent XSS, developers must follow strict security protocols, such as 'Sanitizing' all user-controlled inputs to remove potentially harmful code."
+    },
+    {
+      "id": "4",
+      "sentence": "Furthermore, using a 'Content Security Policy' (CSP) provides an additional layer of defense by restricting the sources from which scripts can be loaded and executed."
+    },
+    {
+      "id": "5",
+      "sentence": "Modern frameworks like React and Vue have built-in protections that escape data by default, but developers must still stay vigilant and avoid patterns that bypass these safety measures, such as using 'dangerouslySetInnerHTML'."
+    }
+  ]
+}

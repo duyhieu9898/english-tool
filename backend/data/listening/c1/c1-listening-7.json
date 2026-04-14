@@ -1,0 +1,28 @@
+{
+  "id": "c1-listening-7",
+  "title": "The Linguistic Lens: How Language Shapes Our World",
+  "level": "c1",
+  "topic": "Linguistic Determinism and Thought",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "The intricate relationship between language and thought has captivated philosophers, linguists, and cognitive scientists for centuries."
+    },
+    {
+      "id": "2",
+      "sentence": "Does the language we speak merely serve as a tool for expressing pre-formed ideas, or does it fundamentally shape the very way we perceive, conceptualize, and understand the world around us?"
+    },
+    {
+      "id": "3",
+      "sentence": "Linguistic determinism, often considered the \"strong\" version, suggests that language determines thought; individuals are confined to think only in ways that their language permits."
+    },
+    {
+      "id": "4",
+      "sentence": "Linguistic relativism, the \"weak\" version, proposes that language influences thought and perception, making certain concepts more salient or easier to process, without necessarily imposing strict boundaries on cognitive capabilities."
+    },
+    {
+      "id": "5",
+      "sentence": "The modern consensus largely gravitates towards linguistic relativism, acknowledging that language can exert a powerful, yet not absolute, influence on thought."
+    }
+  ]
+}

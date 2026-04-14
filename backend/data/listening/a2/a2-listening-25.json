@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-25",
+  "title": "Making Websites Responsive with Media Queries",
+  "level": "a2",
+  "topic": "Frontend CSS",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A responsive website works well on desktops, tablets, and phones."
+    },
+    {
+      "id": "2",
+      "sentence": "To achieve this, developers use CSS 'Media Queries'."
+    },
+    {
+      "id": "3",
+      "sentence": "A media query allows you to apply styles based on the device's screen size."
+    },
+    {
+      "id": "4",
+      "sentence": "The most common break-point is based on the width of the screen."
+    },
+    {
+      "id": "5",
+      "sentence": "Modern web development often follows a 'Mobile-first' approach."
+    },
+    {
+      "id": "6",
+      "sentence": "You design for small screens first and then add more styles for larger screens."
+    }
+  ]
+}

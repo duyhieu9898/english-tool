@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-21",
+  "title": "What is a Website?",
+  "level": "a1",
+  "topic": "Frontend Basics",
+  "content": "A website is a collection of web pages. You see websites on the internet. A website has many parts. It has a header at the top. It has a footer at the bottom. The middle part is the body. The body has text and images. We use a browser like Chrome or Safari to see websites. Developers write code to create websites. HTML is the basic language for all websites. When you click a link, you go to another page. Millions of people use websites every day to learn, work, and play.",
+  "vocabulary_highlights": [
+    { "word": "collection", "meaning": "bộ sưu tập, tập hợp" },
+    { "word": "header", "meaning": "phần đầu trang" },
+    { "word": "footer", "meaning": "phần chân trang" },
+    { "word": "browser", "meaning": "trình duyệt" },
+    { "word": "link", "meaning": "liên kết" }
+  ],
+  "questions": [
+    {
+      "question": "Where is the header located on a website?",
+      "options": ["At the bottom", "In the middle", "At the top"],
+      "answer": "At the top",
+      "explanation": "The text says: 'It has a header at the top'."
+    },
+    {
+      "question": "What language is basic for all websites?",
+      "options": ["Python", "HTML", "Java"],
+      "answer": "HTML",
+      "explanation": "The text says: 'HTML is the basic language for all websites'."
+    },
+    {
+      "question": "What tool do we use to see websites?",
+      "options": ["A browser", "A printer", "A mouse"],
+      "answer": "A browser",
+      "explanation": "The text says: 'We use a browser like Chrome or Safari to see websites'."
+    }
+  ],
+  "translation": "Một trang web là một tập hợp các trang web. Bạn thấy các trang web trên internet. Một trang web có nhiều phần. Nó có một phần đầu trang (header) ở trên cùng. Nó có một phần chân trang (footer) ở dưới cùng. Phần giữa là thân trang (body). Thân trang có văn bản và hình ảnh. Chúng ta sử dụng một trình duyệt như Chrome hoặc Safari để xem các trang web. Các nhà phát triển viết mã để tạo ra các trang web. HTML là ngôn ngữ cơ bản cho tất cả các trang web. Khi bạn nhấp vào một liên kết, bạn sẽ đi đến một trang khác. Hàng triệu người sử dụng trang web mỗi ngày để học tập, làm việc và giải trí."
+}

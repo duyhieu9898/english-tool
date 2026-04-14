@@ -1,0 +1,28 @@
+{
+  "id": "b2-listening-30",
+  "title": "Introduction to CI/CD: Continuous Integration and Deployment",
+  "level": "b2",
+  "topic": "DevOps for Frontend",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "In a modern development environment, manually deploying code can lead to human error and inconsistent releases."
+    },
+    {
+      "id": "2",
+      "sentence": "CI (Continuous Integration) is the practice of automatically building and testing your code every time you push changes to a shared repository."
+    },
+    {
+      "id": "3",
+      "sentence": "CD (Continuous Deployment) takes this a step further by automatically deploying the code to a staging or production environment after successful testing."
+    },
+    {
+      "id": "4",
+      "sentence": "Common tools for managing these pipelines include GitHub Actions, Jenkins, and GitLab CI."
+    },
+    {
+      "id": "5",
+      "sentence": "Implementing a robust CI/CD workflow allows teams to release updates more frequently, improves software quality, and reduces the stress associated with manual deployments."
+    }
+  ]
+}

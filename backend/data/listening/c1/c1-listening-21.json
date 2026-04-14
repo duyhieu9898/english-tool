@@ -1,0 +1,28 @@
+{
+  "id": "c1-listening-21",
+  "title": "Optimizing React Performance: useMemo and useCallback",
+  "level": "c1",
+  "topic": "React.js",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "As applications scale, unnecessary re-renders can significantly degrade the performance and user experience."
+    },
+    {
+      "id": "2",
+      "sentence": "To mitigate this, React provides optimization hooks like 'useMemo' and 'useCallback'."
+    },
+    {
+      "id": "3",
+      "sentence": "'useMemo' is designed to memoize the result of expensive calculations, ensuring they are only re-computed when their dependencies change."
+    },
+    {
+      "id": "4",
+      "sentence": "Conversely, 'useCallback' memoizes the function definition itself, preventing child components—especially those wrapped in 'React.memo'—from re-rendering when a parent's state changes."
+    },
+    {
+      "id": "5",
+      "sentence": "A senior developer must carefully weigh the performance benefits against the increased complexity, using profiling tools like the React DevTools to identify genuine bottlenecks before implementing these optimizations."
+    }
+  ]
+}

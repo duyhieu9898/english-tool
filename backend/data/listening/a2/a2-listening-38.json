@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-38",
+  "title": "Introduction to Code Reviews",
+  "level": "a2",
+  "topic": "Collaboration",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A Code Review is a process where developers check each other’s code."
+    },
+    {
+      "id": "2",
+      "sentence": "The goal is to improve code quality and find mistakes."
+    },
+    {
+      "id": "3",
+      "sentence": "If you are reviewing someone’s code, be helpful and kind."
+    },
+    {
+      "id": "4",
+      "sentence": "If your code is being reviewed, don't take the feedback personally."
+    },
+    {
+      "id": "5",
+      "sentence": "Everyone makes mistakes, and reviews are a great way to learn from your colleagues."
+    },
+    {
+      "id": "6",
+      "sentence": "A successful code review culture helps build a stronger team and a better product."
+    }
+  ]
+}

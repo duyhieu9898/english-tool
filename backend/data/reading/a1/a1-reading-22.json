@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-22",
+  "title": "My First Computer Setup",
+  "level": "a1",
+  "topic": "Hardware Basics",
+  "content": "A developer needs a good computer setup to work well. First, you need a laptop or a desktop computer. A large monitor is very helpful. It lets you see more code at once. You also need a comfortable chair for your back. A mechanical keyboard is popular among developers. It feels good to type on. A fast internet connection is important for downloading tools. Some people like to have two monitors. This makes multitasking easy. A clean desk helps you focus on your tasks.",
+  "vocabulary_highlights": [
+    { "word": "setup", "meaning": "sự thiết lập, cấu hình" },
+    { "word": "monitor", "meaning": "màn hình" },
+    { "word": "mechanical keyboard", "meaning": "bàn phím cơ" },
+    { "word": "multitasking", "meaning": "đa nhiệm" },
+    { "word": "comfortable", "meaning": "thoải mái" }
+  ],
+  "questions": [
+    {
+      "question": "Why is a large monitor helpful?",
+      "options": ["To watch movies", "To see more code at once", "To play games"],
+      "answer": "To see more code at once",
+      "explanation": "The text says: 'It lets you see more code at once'."
+    },
+    {
+      "question": "What is popular among developers for typing?",
+      "options": ["A mouse", "A mechanical keyboard", "A printer"],
+      "answer": "A mechanical keyboard",
+      "explanation": "The text says: 'A mechanical keyboard is popular among developers'."
+    },
+    {
+      "question": "How many monitors do some people like to have?",
+      "options": ["One", "Two", "Three"],
+      "answer": "Two",
+      "explanation": "The text says: 'Some people like to have two monitors'."
+    }
+  ],
+  "translation": "Một nhà phát triển cần một thiết lập máy tính tốt để làm việc hiệu quả. Đầu tiên, bạn cần một chiếc máy tính xách tay hoặc máy tính để bàn. Một màn hình lớn rất hữu ích. Nó cho phép bạn xem được nhiều mã hơn cùng một lúc. Bạn cũng cần một chiếc ghế thoải mái cho lưng của mình. Bàn phím cơ rất phổ biến đối với các nhà phát triển. Nó tạo cảm giác tốt khi gõ. Một kết nối internet nhanh rất quan trọng để tải xuống các công cụ. Một số người thích có hai màn hình. Điều này giúp việc đa nhiệm trở nên dễ dàng. Một chiếc bàn sạch sẽ giúp bạn tập trung vào các nhiệm vụ của mình."
+}

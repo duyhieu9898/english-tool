@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-17",
+  "title": "My Family's TV Time",
+  "level": "a1",
+  "topic": "Watching TV",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "I like to watch TV."
+    },
+    {
+      "id": "2",
+      "sentence": "My family watches TV in the evening."
+    },
+    {
+      "id": "3",
+      "sentence": "We often sit together on the sofa."
+    },
+    {
+      "id": "4",
+      "sentence": "I like to watch cartoons the most."
+    },
+    {
+      "id": "5",
+      "sentence": "Cartoons are very funny!"
+    },
+    {
+      "id": "6",
+      "sentence": "Watching TV makes me happy."
+    }
+  ]
+}

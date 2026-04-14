@@ -964,181 +964,391 @@
       "id": "afternoon",
       "term": "afternoon",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "clock",
       "term": "clock",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "evening",
       "term": "evening",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "midnight",
       "term": "midnight",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
-      "incorrectCount": 1
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
+      "incorrectCount": 2
     },
     {
       "id": "morning",
       "term": "morning",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
-      "incorrectCount": 1
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
+      "incorrectCount": 2
     },
     {
       "id": "night",
       "term": "night",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "now",
       "term": "now",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "o'clock",
       "term": "o'clock",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
-      "incorrectCount": 1
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
+      "incorrectCount": 2
     },
     {
       "id": "quarter",
       "term": "quarter",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
-      "incorrectCount": 1
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
+      "incorrectCount": 2
     },
     {
       "id": "time",
       "term": "time",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "today",
       "term": "today",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "tomorrow",
       "term": "tomorrow",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "tonight",
       "term": "tonight",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "week",
       "term": "week",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "weekend",
       "term": "weekend",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "yesterday",
       "term": "yesterday",
       "lessonId": "6",
-      "level": 1,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-07",
-      "correctCount": 0,
+      "level": 2,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-11",
+      "correctCount": 1,
       "incorrectCount": 1
     },
     {
       "id": "CD",
       "term": "CD",
       "lessonId": "3",
-      "level": 2,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-09",
-      "correctCount": 2,
+      "level": 4,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-22",
+      "correctCount": 4,
       "incorrectCount": 0
     },
     {
-      "id": "DVD",
-      "term": "DVD",
-      "lessonId": "3",
-      "level": 3,
-      "lastStudied": "2026-04-06",
-      "nextReview": "2026-04-13",
-      "correctCount": 2,
+      "id": "again",
+      "term": "again",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
       "incorrectCount": 1
+    },
+    {
+      "id": "agree",
+      "term": "agree",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "answer",
+      "term": "answer",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "ask",
+      "term": "ask",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "call",
+      "term": "call",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "difference",
+      "term": "difference",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "help",
+      "term": "help",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "let",
+      "term": "let",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "listen",
+      "term": "listen",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "opinion",
+      "term": "opinion",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "question",
+      "term": "question",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "repeat",
+      "term": "repeat",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "say",
+      "term": "say",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "send",
+      "term": "send",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "share",
+      "term": "share",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "sound",
+      "term": "sound",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "speak",
+      "term": "speak",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "talk",
+      "term": "talk",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "telephone",
+      "term": "telephone",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "tell",
+      "term": "tell",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "understand",
+      "term": "understand",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 0,
+      "incorrectCount": 1
+    },
+    {
+      "id": "meet",
+      "term": "meet",
+      "lessonId": "7",
+      "level": 1,
+      "lastStudied": "2026-04-08",
+      "nextReview": "2026-04-09",
+      "correctCount": 1,
+      "incorrectCount": 0
     }
   ],
   "lessonProgress": [
@@ -1196,6 +1406,46 @@
       "id": "a1-singular-plural-nouns",
       "type": "grammar",
       "completedAt": "2026-04-06T03:05:00.683Z"
+    },
+    {
+      "id": "7",
+      "type": "vocabulary",
+      "completedAt": "2026-04-08T07:31:22.166Z"
+    },
+    {
+      "id": "a1-can-ability",
+      "type": "grammar",
+      "completedAt": "2026-04-08T07:44:56.374Z"
+    },
+    {
+      "id": "a1-prepositions-place-time",
+      "type": "grammar",
+      "completedAt": "2026-04-08T07:47:55.457Z"
+    },
+    {
+      "id": "a1-articles-a-an-the",
+      "type": "grammar",
+      "completedAt": "2026-04-08T07:54:43.280Z"
+    },
+    {
+      "id": "a1-present-simple",
+      "type": "grammar",
+      "completedAt": "2026-04-08T07:57:45.860Z"
+    },
+    {
+      "id": "a1-reading-11",
+      "type": "reading",
+      "completedAt": "2026-04-08T08:01:32.761Z"
+    },
+    {
+      "id": "a1-reading-15",
+      "type": "reading",
+      "completedAt": "2026-04-08T08:02:57.915Z"
+    },
+    {
+      "id": "a1-reading-20",
+      "type": "reading",
+      "completedAt": "2026-04-08T08:04:26.877Z"
     }
   ],
   "sessionProgress": [],
@@ -1223,13 +1473,19 @@
       "date": "2026-04-06",
       "wordsLearned": 18,
       "wordsReviewed": 117
+    },
+    {
+      "id": "2026-04-08",
+      "date": "2026-04-08",
+      "wordsLearned": 22,
+      "wordsReviewed": 24
     }
   ],
   "stats": {
-    "totalWordsLearned": 105,
+    "totalWordsLearned": 127,
     "currentStreak": 1,
-    "lastStudyDate": "2026-04-06",
-    "totalStudyDays": 4,
+    "lastStudyDate": "2026-04-08",
+    "totalStudyDays": 5,
     "id": 1
   },
   "settings": {

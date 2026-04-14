@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-25",
+  "title": "Introduction to HTML",
+  "level": "a1",
+  "topic": "Coding Basics",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "HTML is the skeleton of a web page."
+    },
+    {
+      "id": "2",
+      "sentence": "It stands for HyperText Markup Language."
+    },
+    {
+      "id": "3",
+      "sentence": "We use HTML tags to tell the browser what is on the page."
+    },
+    {
+      "id": "4",
+      "sentence": "A tag looks like this: <h1>."
+    },
+    {
+      "id": "5",
+      "sentence": "This is a heading tag."
+    },
+    {
+      "id": "6",
+      "sentence": "It makes text big and bold."
+    }
+  ]
+}

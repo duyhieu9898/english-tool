@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-10",
+  "title": "City Life or Country Life?",
+  "level": "a2",
+  "topic": "Living in the City vs Country",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Living in the city is very different from living in the country."
+    },
+    {
+      "id": "2",
+      "sentence": "Cities are often busy and noisy."
+    },
+    {
+      "id": "3",
+      "sentence": "In the country, life is usually calmer and quieter."
+    },
+    {
+      "id": "4",
+      "sentence": "There are green fields, trees, and fresh air."
+    },
+    {
+      "id": "5",
+      "sentence": "You can hear birds singing instead of cars."
+    },
+    {
+      "id": "6",
+      "sentence": "Both city life and country life have good and bad points."
+    }
+  ]
+}

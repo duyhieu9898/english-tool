@@ -1,0 +1,35 @@
+{
+  "id": "b1-reading-22",
+  "title": "Dynamic Templates with Vue.js Directives",
+  "level": "b1",
+  "topic": "Vue.js",
+  "content": "One of the most powerful features of Vue.js is its use of directives. Directives are special attributes with the 'v-' prefix that apply reactive behavior to the DOM. Two of the most commonly used directives are 'v-if' and 'v-for'. The 'v-if' directive is used for conditional rendering; it adds or removes an element based on the truthiness of an expression. For example, you can show a 'Login' button only when a user is logged out. The 'v-for' directive is used to render a list of items based on an array. By using 'v-for=\"item in items\"', you can efficiently display a series of products or blog posts without repeating code. Mastering these directives allows developers to create highly interactive and data-driven user interfaces with minimal effort.",
+  "vocabulary_highlights": [
+    { "word": "directives", "meaning": "chỉ thị (trong lập trình)" },
+    { "word": "prefix", "meaning": "tiền tố" },
+    { "word": "reactive", "meaning": "phản ứng, có tính phản hồi" },
+    { "word": "conditional rendering", "meaning": "vẽ giao diện có điều kiện" },
+    { "word": "minimal effort", "meaning": "nỗ lực tối thiểu" }
+  ],
+  "questions": [
+    {
+      "question": "What is the purpose of the 'v-if' directive in Vue.js?",
+      "options": ["To loop through an array", "For conditional rendering", "To style an element"],
+      "answer": "For conditional rendering",
+      "explanation": "The text says: 'The \"v-if\" directive is used for conditional rendering'."
+    },
+    {
+      "question": "Which directive should you use to display a list of blog posts?",
+      "options": ["v-show", "v-if", "v-for"],
+      "answer": "v-for",
+      "explanation": "The text says: 'The \"v-for\" directive is used to render a list of items based on an array'."
+    },
+    {
+      "question": "What prefix do all Vue.js directives share?",
+      "options": ["vue-", "v-", "@"],
+      "answer": "v-",
+      "explanation": "The text states: 'Directives are special attributes with the \"v-\" prefix'."
+    }
+  ],
+  "translation": "Một trong những tính năng mạnh mẽ nhất của Vue.js là việc sử dụng các chỉ thị (directives). Directives là các thuộc tính đặc biệt có tiền tố 'v-' giúp áp dụng các hành vi phản ứng (reactive) vào DOM. Hai trong số các chỉ thị phổ biến nhất là 'v-if' và 'v-for'. Chỉ thị 'v-if' được sử dụng để vẽ giao diện có điều kiện (conditional rendering); nó thêm hoặc xóa một phần tử dựa trên tính đúng/sai của một biểu thức. Ví dụ: bạn có thể chỉ hiển thị nút 'Đăng nhập' khi người dùng đã đăng xuất. Chỉ thị 'v-for' được sử dụng để vẽ một danh sách các mục dựa trên một mảng. Bằng cách sử dụng 'v-for=\"item in items\"', bạn có thể hiển thị một loạt sản phẩm hoặc bài đăng blog một cách hiệu quả mà không cần lặp lại mã. Thành thạo các chỉ thị này giúp các nhà phát triển tạo ra các giao diện người dùng có tính tương tác cao và dựa trên dữ liệu với nỗ lực tối thiểu."
+}

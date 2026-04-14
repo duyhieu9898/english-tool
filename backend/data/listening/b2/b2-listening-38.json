@@ -1,0 +1,28 @@
+{
+  "id": "b2-listening-38",
+  "title": "Scaling State Management: Redux, Vuex, and Pinia",
+  "level": "b2",
+  "topic": "Frontend Frameworks",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "As applications grow, sharing state between many components can become difficult and lead to 'prop drilling'."
+    },
+    {
+      "id": "2",
+      "sentence": "To manage this complexity, developers use 'Global State Management' libraries."
+    },
+    {
+      "id": "3",
+      "sentence": "In Vue, 'Pinia' (the successor to 'Vuex') offers a more modern and intuitive way to manage global state with native TypeScript support."
+    },
+    {
+      "id": "4",
+      "sentence": "These libraries centralize the application's data in a single 'Store', making it predictable and easier to debug."
+    },
+    {
+      "id": "5",
+      "sentence": "While not every project needs a global store, understanding these patterns is essential for building large-scale, enterprise applications where many unrelated components need to access and modify the same data consistently."
+    }
+  ]
+}

@@ -860,7 +860,7 @@
       {
         "word": "say",
         "class": "verb",
-        "meaning": "nói, phát biểu",
+        "meaning": "nói, phát biểu (Nói ra một nội dung cụ thể)",
         "full_sentence": "Please say your name clearly when you introduce yourself."
       },
       {
@@ -890,13 +890,13 @@
       {
         "word": "speak",
         "class": "verb",
-        "meaning": "nói, phát biểu",
+        "meaning": "Nói (Nói mang tính trang trọng hoặc khả năng ngôn ngữ)",
         "full_sentence": "Can you speak louder, please? I can't hear you."
       },
       {
         "word": "talk",
         "class": "verb",
-        "meaning": "nói chuyện, trò chuyện",
+        "meaning": "Nói chuyện, trao đổi qua lại",
         "full_sentence": "Can we talk for a few minutes after the meeting?"
       },
       {

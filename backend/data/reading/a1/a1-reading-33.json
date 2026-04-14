@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-33",
+  "title": "Working in a Team",
+  "level": "a1",
+  "topic": "Professional English",
+  "content": "Developers usually work in a team. A team has developers, designers, and managers. They have a short meeting every morning. This is often called a 'Stand-up' meeting. In the meeting, they talk about their tasks. They use words like 'Done', 'In Progress', or 'Blocked'. If you are blocked, it means you have a problem and need help. It is good to ask for help early. Sharing knowledge makes the team stronger. We use tools like Slack or Microsoft Teams to talk to each other throughout the day.",
+  "vocabulary_highlights": [
+    { "word": "meeting", "meaning": "cuộc họp" },
+    { "word": "stand-up", "meaning": "họp đứng (nhanh)" },
+    { "word": "tasks", "meaning": "nhiệm vụ" },
+    { "word": "blocked", "meaning": "bị tắc nghẽn (gặp khó khăn)" },
+    { "word": "knowledge", "meaning": "kiến thức" }
+  ],
+  "questions": [
+    {
+      "question": "What is the short morning meeting called?",
+      "options": ["Sit-down", "Stand-up", "Sleep-in"],
+      "answer": "Stand-up",
+      "explanation": "The text says: 'This is often called a \"Stand-up\" meeting'."
+    },
+    {
+      "question": "What does 'Blocked' mean in a team?",
+      "options": ["The task is finished", "You have a problem and need help", "You are going home"],
+      "answer": "You have a problem and need help",
+      "explanation": "The text says: 'If you are blocked, it means you have a problem and need help'."
+    },
+    {
+      "question": "Which tool is mentioned for talking to teammates?",
+      "options": ["Facebook", "Slack", "Netflix"],
+      "answer": "Slack",
+      "explanation": "The text says: 'We use tools like Slack or Microsoft Teams to talk to each other'."
+    }
+  ],
+  "translation": "Các nhà phát triển thường làm việc theo nhóm. Một nhóm gồm có các nhà phát triển, nhà thiết kế và quản lý. Họ có một cuộc họp ngắn vào mỗi buổi sáng. Cuộc họp này thường được gọi là họp 'Stand-up'. Trong cuộc họp, họ nói về các nhiệm vụ của mình. Họ sử dụng các từ như 'Hoàn thành' (Done), 'Đang thực hiện' (In Progress), hoặc 'Bị tắc' (Blocked). Nếu bạn bị 'blocked', điều đó có nghĩa là bạn đang gặp vấn đề và cần sự giúp đỡ. Sẽ rất tốt nếu bạn yêu cầu sự giúp đỡ sớm. Chia sẻ kiến thức giúp nhóm trở nên mạnh mẽ hơn. Chúng ta sử dụng các công cụ như Slack hoặc Microsoft Teams để nói chuyện với nhau trong suốt cả ngày."
+}

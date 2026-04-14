@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-21",
+  "title": "Mastering Side Effects with the useEffect Hook",
+  "level": "b2",
+  "topic": "React.js",
+  "content": "In React, a 'side effect' is anything that happens outside the scope of rendering a component, such as fetching data from an API, manually updating the DOM, or setting up a subscription. The 'useEffect' hook is the standard way to handle these effects in functional components. Effectively using useEffect requires a deep understanding of its dependency array. If the array is empty, the effect runs only once after the initial mount. If it contains variables, the effect re-runs whenever those variables change. Failing to manage dependencies correctly can lead to performance issues or infinite loops. Furthermore, you must often return a 'cleanup function' to prevent memory leaks, such as clearing a timer or unsubscribing from a service. Mastery of useEffect is essential for building complex, data-driven React applications.",
+  "vocabulary_highlights": [
+    { "word": "side effect", "meaning": "tác động phụ/ngoại biên (trong lập trình)" },
+    { "word": "subscription", "meaning": "đăng ký (theo dõi dữ liệu/sự kiện)" },
+    { "word": "dependency array", "meaning": "mảng phụ thuộc" },
+    { "word": "memory leaks", "meaning": "rò rỉ bộ nhớ" },
+    { "word": "infinite loops", "meaning": "vòng lặp vô tận" }
+  ],
+  "questions": [
+    {
+      "question": "What is considered a 'side effect' in a React component?",
+      "options": ["Rendering HTML", "Fetching data from an API", "Adding two numbers"],
+      "answer": "Fetching data from an API",
+      "explanation": "The text defines a side effect as 'anything that happens outside the scope of rendering... such as fetching data from an API'."
+    },
+    {
+      "question": "When does the effect run if the dependency array is empty?",
+      "options": ["On every re-render", "Only once after the initial mount", "Never"],
+      "answer": "Only once after the initial mount",
+      "explanation": "The text states: 'If the array is empty, the effect runs only once after the initial mount'."
+    },
+    {
+      "question": "Why is a cleanup function sometimes necessary in useEffect?",
+      "options": ["To make the code look better", "To prevent memory leaks", "To restart the browser"],
+      "answer": "To prevent memory leaks",
+      "explanation": "The text mentions: 'you must often return a \"cleanup function\" to prevent memory leaks'."
+    }
+  ],
+  "translation": "Trong React, 'tác động phụ' (side effect) là bất cứ điều gì xảy ra bên ngoài phạm vi vẽ lại (rendering) một thành phần, chẳng hạn như lấy dữ liệu từ một API, cập nhật DOM thủ công hoặc thiết lập một đăng ký (subscription). Hook 'useEffect' là cách tiêu chuẩn để xử lý các tác động này trong các functional components. Việc sử dụng useEffect hiệu quả đòi hỏi sự hiểu biết sâu sắc về mảng phụ thuộc (dependency array) của nó. Nếu mảng trống, hiệu ứng chỉ chạy một lần sau lần gắn kết (mount) ban đầu. Nếu nó chứa các biến, hiệu ứng sẽ chạy lại bất cứ khi nào các biến đó thay đổi. Việc không quản lý các phụ thuộc một cách chính xác có thể dẫn đến các vấn đề về hiệu năng hoặc vòng lặp vô tận. Hơn nữa, bạn thường phải trả về một 'hàm dọn dẹp' (cleanup function) để ngăn chặn rò rỉ bộ nhớ, chẳng hạn như xóa một bộ hẹn giờ hoặc hủy đăng ký khỏi một dịch vụ. Thành thạo useEffect là điều thiết yếu để xây dựng các ứng dụng React phức tạp và dựa trên dữ liệu."
+}

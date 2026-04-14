@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-24",
+  "title": "Writing Good Git Commit Messages",
+  "level": "a2",
+  "topic": "Dev Workflow",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "A commit message explains what changes you made to the code."
+    },
+    {
+      "id": "2",
+      "sentence": "It is a vital part of version control."
+    },
+    {
+      "id": "3",
+      "sentence": "Good messages help you and your teammates understand the history of the project."
+    },
+    {
+      "id": "4",
+      "sentence": "It often starts with a verb like 'Add', 'Fix', or 'Update'."
+    },
+    {
+      "id": "5",
+      "sentence": "Avoid vague messages like 'fixed stuff' or 'oops'."
+    },
+    {
+      "id": "6",
+      "sentence": "Following a consistent style makes the Git history easy to read."
+    }
+  ]
+}

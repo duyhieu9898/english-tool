@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-31",
+  "title": "The Role of Module Bundlers: Introduction to Webpack",
+  "level": "b2",
+  "topic": "Frontend Tools",
+  "content": "Modern frontend applications are composed of hundreds of different files, including JavaScript modules, CSS files, and images. Browsers cannot efficiently handle this many separate files, which is where 'Module Bundlers' like Webpack come in. Webpack acts as a central hub that takes all these different files and their dependencies and bundles them together into a few optimized assets—usually a single JavaScript file and a single CSS file. Beyond simple bundling, Webpack also performs tasks like 'Minification' (removing extra spaces to reduce file size) and 'Transpilation' (converting modern JavaScript into a version compatible with older browsers). Understanding how bundlers work behind the scenes is crucial for optimizing your application's loading speed and ensuring a smooth deployment process.",
+  "vocabulary_highlights": [
+    { "word": "composed of", "meaning": "được cấu thành từ" },
+    { "word": "dependencies", "meaning": "các sự phụ thuộc" },
+    { "word": "assets", "meaning": "tài sản, các file tài nguyên (ảnh, js, css...)" },
+    { "word": "minification", "meaning": "việc nén mã (xóa bỏ khoảng trắng, đổi tên biến cho ngắn)" },
+    { "word": "transpilation", "meaning": "việc chuyển đổi mã (từ version này sang version khác)" }
+  ],
+  "questions": [
+    {
+      "question": "What is the primary purpose of a 'Module Bundler' like Webpack?",
+      "options": ["To design logos", "To combine many separate files into a few optimized assets", "To host a website"],
+      "answer": "To combine many separate files into a few optimized assets",
+      "explanation": "The text says: 'Webpack acts as a central hub that takes all these different files... and bundles them together into a few optimized assets'."
+    },
+    {
+      "question": "What does 'Minification' do?",
+      "options": ["Adds more comments to the code", "Removes extra spaces to reduce file size", "Increases the font size"],
+      "answer": "Removes extra spaces to reduce file size",
+      "explanation": "The text defines minification as 'removing extra spaces to reduce file size'."
+    },
+    {
+      "question": "Why is 'Transpilation' important?",
+      "options": ["It makes the code more secret", "It converts modern JavaScript into a version compatible with older browsers", "It is for backend devs only"],
+      "answer": "It converts modern JavaScript into a version compatible with older browsers",
+      "explanation": "The text explains transpilation as 'converting modern JavaScript into a version compatible with older browsers'."
+    }
+  ],
+  "translation": "Các ứng dụng frontend hiện đại được cấu thành từ hàng trăm tệp khác nhau, bao gồm các mô-đun JavaScript, tệp CSS và hình ảnh. Các trình duyệt không thể xử lý hiệu quả số lượng tệp riêng biệt lớn như vậy, đó là lúc các 'Bộ đóng gói mô-đun' (Module Bundlers) như Webpack phát huy tác dụng. Webpack đóng vai trò như một trung tâm tiếp nhận tất cả các tệp khác nhau này cùng các sự phụ thuộc (dependencies) của chúng và đóng gói chúng lại thành một vài tài nguyên (assets) đã được tối ưu hóa — thường là một tệp JavaScript duy nhất và một tệp CSS duy nhất. Ngoài việc đóng gói đơn giản, Webpack còn thực hiện các tác vụ như 'Minification' (nén mã - loại bỏ các khoảng trắng dư thừa để giảm kích thước tệp) và 'Transpilation' (chuyển đổi mã - chuyển đổi JavaScript hiện đại thành phiên bản tương thích với các trình duyệt cũ hơn). Hiểu cách các bộ đóng gói hoạt động đằng sau hậu trường là điều quan trọng để tối ưu hóa tốc độ tải ứng dụng của bạn và đảm bảo quy trình triển khai diễn ra suôn sẻ."
+}

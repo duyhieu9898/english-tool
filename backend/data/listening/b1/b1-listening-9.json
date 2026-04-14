@@ -1,0 +1,32 @@
+{
+  "id": "b1-listening-9",
+  "title": "Understanding Artificial Intelligence: A Basic Introduction",
+  "level": "b1",
+  "topic": "Artificial Intelligence Basics",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Artificial Intelligence is a fascinating field that is changing our world rapidly."
+    },
+    {
+      "id": "2",
+      "sentence": "Simply put, AI refers to machines or computer systems that can think and learn like humans."
+    },
+    {
+      "id": "3",
+      "sentence": "You probably use AI every day without even realizing it."
+    },
+    {
+      "id": "4",
+      "sentence": "At its core, AI uses algorithms, which are like step-by-step instructions."
+    },
+    {
+      "id": "5",
+      "sentence": "These algorithms allow computers to analyze large amounts of information and find patterns."
+    },
+    {
+      "id": "6",
+      "sentence": "AI has a huge impact on many areas, from healthcare to transportation."
+    }
+  ]
+}

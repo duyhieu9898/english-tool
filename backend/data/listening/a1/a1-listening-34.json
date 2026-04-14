@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-34",
+  "title": "Login and Security",
+  "level": "a1",
+  "topic": "Web Security",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Security is important for every website."
+    },
+    {
+      "id": "2",
+      "sentence": "Users need to login to see their private data."
+    },
+    {
+      "id": "3",
+      "sentence": "A login form usually has two fields: 'Username' and 'Password'."
+    },
+    {
+      "id": "4",
+      "sentence": "You should use a strong password with letters, numbers, and symbols."
+    },
+    {
+      "id": "5",
+      "sentence": "Developers must protect user information from hackers."
+    },
+    {
+      "id": "6",
+      "sentence": "We use 'HTTPS' to encrypt the data."
+    }
+  ]
+}

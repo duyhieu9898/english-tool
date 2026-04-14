@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-38",
+  "title": "The Coding Community",
+  "level": "a1",
+  "topic": "Internet Culture",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Developers are not alone."
+    },
+    {
+      "id": "2",
+      "sentence": "There is a huge online community where people help each other."
+    },
+    {
+      "id": "3",
+      "sentence": "Stack Overflow is the most important website for this."
+    },
+    {
+      "id": "4",
+      "sentence": "If you have a problem with your code, you can ask a question there."
+    },
+    {
+      "id": "5",
+      "sentence": "Other developers from all over the world provide answers."
+    },
+    {
+      "id": "6",
+      "sentence": "Learning together is one of the best parts of being a developer."
+    }
+  ]
+}

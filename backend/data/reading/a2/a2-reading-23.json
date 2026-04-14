@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-23",
+  "title": "The Daily Stand-up Meeting",
+  "level": "a2",
+  "topic": "Professional English",
+  "content": "The Daily Stand-up is a key part of the 'Agile' workflow. It is a short meeting, usually 15 minutes, where everyone answers three questions. First, 'What did I do yesterday?'. Second, 'What will I do today?'. Third, 'Are there any blockers?'. This helps the team stay focused and organized. When it is your turn to speak, keep your update brief. For example, you can say: 'Yesterday, I finished the login form styles. Today, I will start working on the validation logic. I have no blockers.' Sharing these details ensures that everyone knows the project status and can help if someone is stuck.",
+  "vocabulary_highlights": [
+    { "word": "key part", "meaning": "phần then chốt" },
+    { "word": "brief", "meaning": "ngắn gọn" },
+    { "word": "validation", "meaning": "xác thực (dữ liệu)" },
+    { "word": "status", "meaning": "trạng thái" },
+    { "word": "stuck", "meaning": "bị mắc kẹt" }
+  ],
+  "questions": [
+    {
+      "question": "How long is a typical Daily Stand-up meeting?",
+      "options": ["1 hour", "15 minutes", "30 minutes"],
+      "answer": "15 minutes",
+      "explanation": "The text says: 'It is a short meeting, usually 15 minutes'."
+    },
+    {
+      "question": "Which question is NOT usually asked in a stand-up?",
+      "options": ["What did I do yesterday?", "What is for lunch?", "Are there any blockers?"],
+      "answer": "What is for lunch?",
+      "explanation": "The three questions mentioned are: what I did yesterday, what I will do today, and blockers."
+    },
+    {
+      "question": "What is the purpose of keeping updates brief?",
+      "options": ["To save time and stay focused", "To hide information", "Because people are standing"],
+      "answer": "To save time and stay focused",
+      "explanation": "Brief updates help the meeting stay within the 15-minute limit and keep everyone focused on current progress."
+    }
+  ],
+  "translation": "Họp đứng hàng ngày (Daily Stand-up) là một phần then chốt của quy trình làm việc 'Agile'. Đó là một cuộc họp ngắn, thường là 15 phút, nơi mọi người trả lời ba câu hỏi. Đầu tiên, 'Tôi đã làm gì hôm qua?'. Thứ hai, 'Tôi sẽ làm gì hôm nay?'. Thứ ba, 'Có rào cản nào không?'. Điều này giúp nhóm tập trung và có tổ chức. Khi đến lượt bạn nói, hãy giữ cho phần cập nhật của mình ngắn gọn. Ví dụ, bạn có thể nói: 'Hôm qua, tôi đã hoàn thành các kiểu định dạng cho biểu mẫu đăng nhập. Hôm nay, tôi sẽ bắt đầu làm việc với logic xác thực. Tôi không có rào cản nào.' Việc chia sẻ những chi tiết này đảm bảo rằng mọi người đều biết trạng thái dự án và có thể giúp đỡ nếu ai đó bị mắc kẹt."
+}

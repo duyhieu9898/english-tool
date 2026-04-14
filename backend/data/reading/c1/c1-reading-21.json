@@ -1,0 +1,35 @@
+{
+  "id": "c1-reading-21",
+  "title": "Optimizing React Performance: useMemo and useCallback",
+  "level": "c1",
+  "topic": "React.js",
+  "content": "As applications scale, unnecessary re-renders can significantly degrade the performance and user experience. To mitigate this, React provides optimization hooks like 'useMemo' and 'useCallback'. 'useMemo' is designed to memoize the result of expensive calculations, ensuring they are only re-computed when their dependencies change. Conversely, 'useCallback' memoizes the function definition itself, preventing child components—especially those wrapped in 'React.memo'—from re-rendering when a parent's state changes. However, these hooks should not be applied indiscriminately, as they introduce their own overhead and can make code more difficult to read. A senior developer must carefully weigh the performance benefits against the increased complexity, using profiling tools like the React DevTools to identify genuine bottlenecks before implementing these optimizations.",
+  "vocabulary_highlights": [
+    { "word": "mitigate", "meaning": "giảm thiểu, xoa dịu" },
+    { "word": "memoize", "meaning": "ghi nhớ (lưu trữ kết quả tính toán)" },
+    { "word": "indiscriminately", "meaning": "một cách bừa bãi, không phân biệt" },
+    { "word": "overhead", "meaning": "chi phí phụ trợ (tài nguyên tốn thêm)" },
+    { "word": "bottlenecks", "meaning": "điểm nghẽn" }
+  ],
+  "questions": [
+    {
+      "question": "What is the primary purpose of 'useMemo'?",
+      "options": ["To update the DOM", "To memoize the result of expensive calculations", "To handle API requests"],
+      "answer": "To memoize the result of expensive calculations",
+      "explanation": "The text states: '\"useMemo\" is designed to memoize the result of expensive calculations'."
+    },
+    {
+      "question": "What does 'useCallback' memoize?",
+      "options": ["The resulting value", "The function definition itself", "The CSS styles"],
+      "answer": "The function definition itself",
+      "explanation": "The text says: '\"useCallback\" memoizes the function definition itself'."
+    },
+    {
+      "question": "Should these hooks be used for every function or calculation?",
+      "options": ["Yes, for better speed always", "No, they should not be applied indiscriminately due to overhead", "Only on mobile devices"],
+      "answer": "No, they should not be applied indiscriminately due to overhead",
+      "explanation": "The text warns that they should not be applied indiscriminately as they introduce overhead and complexity."
+    }
+  ],
+  "translation": "Khi các ứng dụng mở rộng quy mô, việc vẽ lại (re-renders) không cần thiết có thể làm giảm đáng kể hiệu năng và trải nghiệm người dùng. Để giảm thiểu điều này, React cung cấp các hook tối ưu hóa như 'useMemo' và 'useCallback'. 'useMemo' được thiết kế để ghi nhớ (memoize) kết quả của các tính toán tốn kém, đảm bảo chúng chỉ được tính toán lại khi các sự phụ thuộc (dependencies) thay đổi. Ngược lại, 'useCallback' ghi nhớ chính định nghĩa hàm, ngăn các thành phần con — đặc biệt là những thành phần được bao bọc trong 'React.memo' — vẽ lại khi trạng thái của thành phần cha thay đổi. Tuy nhiên, các hook này không nên được áp dụng một cách bừa bãi (indiscriminately), vì chúng tạo ra chi phí phụ trợ (overhead) riêng và có thể làm cho mã nguồn khó đọc hơn. Một nhà phát triển cấp cao phải cân nhắc kỹ lưỡng giữa lợi ích hiệu năng với sự phức tạp tăng thêm, sử dụng các công cụ phân tích hiệu năng (profiling) như React DevTools để xác định các điểm nghẽn (bottlenecks) thực sự trước khi triển khai các tối ưu hóa này."
+}

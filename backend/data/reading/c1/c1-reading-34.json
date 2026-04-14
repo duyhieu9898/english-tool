@@ -1,0 +1,35 @@
+{
+  "id": "c1-reading-34",
+  "title": "Professional Leadership: Managing Team Conflict",
+  "level": "c1",
+  "topic": "Career Development",
+  "content": "In any high-performing engineering team, differences in opinion are inevitable and can actually be healthy for innovation. However, if not managed correctly, these differences can escalate into destructive 'Conflict'. Effective conflict management requires strong interpersonal 'Soft Skills'. A leader must approach conflict by focusing on interests rather than positions. Instead of arguing over which technology is better, focus on the project's requirements and which tool provides the best balance of speed and maintainability. It is also important to practice 'Active Listening' and encourage 'Open Communication' where all team members feel heard and respected. High-quality leadership is about transforming conflict into a constructive dialogue that strengthens the team and leads to better decision-making.",
+  "vocabulary_highlights": [
+    { "word": "innovation", "meaning": "sự đổi mới/sáng tạo" },
+    { "word": "inevitable", "meaning": "không thể tránh khỏi" },
+    { "word": "escalate", "meaning": "leo thang" },
+    { "word": "destructive", "meaning": "mang tính hủy diệt" },
+    { "word": "dialogue", "meaning": "đối thoại" }
+  ],
+  "questions": [
+    {
+      "question": "What is the result of healthy differences in opinion in a team?",
+      "options": ["It leads to conflict only", "It can be good for innovation", "It slows down the project"],
+      "answer": "It can be good for innovation",
+      "explanation": "The text says: 'differences in opinion are inevitable and can actually be healthy for innovation'."
+    },
+    {
+      "question": "What should a leader focus on when managing conflict?",
+      "options": ["Their own position", "Interests rather than positions", "The loudest person only"],
+      "answer": "Interests rather than positions",
+      "explanation": "The text says: 'A leader must approach conflict by focusing on interests rather than positions'."
+    },
+    {
+      "question": "What is the goal of transforming conflict into dialogue?",
+      "options": ["To win the argument", "To strengthen the team and lead to better decisions", "To talk forever"],
+      "answer": "To strengthen the team and lead to better decisions",
+      "explanation": "The text mentions: 'transforming conflict into a constructive dialogue that strengthens the team and leads to better decision-making'."
+    }
+  ],
+  "translation": "Trong bất kỳ đội ngũ kỹ thuật hiệu suất cao nào, sự khác biệt về ý kiến là điều không thể tránh khỏi (inevitable) và thực tế có thể có lợi cho sự đổi mới (innovation). Tuy nhiên, nếu không được quản lý đúng cách, những khác biệt này có thể leo thang (escalate) thành các 'Xung đột' (Conflict) mang tính hủy diệt (destructive). Quản lý xung đột hiệu quả đòi hỏi các 'Kỹ năng Mềm' (Soft Skills) về mặt giao tiếp mạnh mẽ. Một người lãnh đạo phải tiếp cận xung đột bằng cách tập trung vào lợi ích chung thay vì các quan điểm cá nhân (positions). Thay vì tranh cãi xem công nghệ nào tốt hơn, hãy tập trung vào các yêu cầu của dự án và xem công cụ nào mang lại sự cân bằng tốt nhất giữa tốc độ và khả năng bảo trì. Việc thực hành 'Lắng nghe Chủ động' (Active Listening) và khuyến khích 'Giao tiếp Mở' (Open Communication) cũng rất quan trọng để tất cả các thành viên trong nhóm đều cảm thấy tiếng nói của mình được lắng nghe và tôn trọng. Lãnh đạo chất lượng cao là biết cách biến đổi (transforming) xung đột thành một cuộc đối thoại (dialogue) mang tính xây dựng, giúp củng cố đội ngũ và đưa ra các quyết định tốt hơn."
+}

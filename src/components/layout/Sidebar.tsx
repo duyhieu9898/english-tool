@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { BookOpen, BookType, Book, CheckSquare, Layers, Settings, Activity } from 'lucide-react';
+import { BookOpen, BookType, Book, CheckSquare, Layers, Settings, Activity, Headphones } from 'lucide-react';
 
 export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
   isOpen,
@@ -11,6 +11,7 @@ export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
     { to: '/vocabulary', icon: <BookType className="w-5 h-5" />, label: 'Vocabulary' },
     { to: '/grammar', icon: <Book className="w-5 h-5" />, label: 'Grammar' },
     { to: '/reading', icon: <BookOpen className="w-5 h-5" />, label: 'Reading' },
+    { to: '/listening', icon: <Headphones className="w-5 h-5" />, label: 'Listening' },
     { to: '/review', icon: <CheckSquare className="w-5 h-5" />, label: 'Review' },
     { to: '/progress', icon: <Layers className="w-5 h-5" />, label: 'Progress' },
   ];

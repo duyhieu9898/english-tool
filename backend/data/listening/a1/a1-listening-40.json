@@ -1,0 +1,32 @@
+{
+  "id": "a1-listening-40",
+  "title": "The Future of AI in Coding",
+  "level": "a1",
+  "topic": "AI in Tech",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Artificial Intelligence, or AI, is changing how we write code."
+    },
+    {
+      "id": "2",
+      "sentence": "AI tools can suggest code, fix bugs, and explain complex logic."
+    },
+    {
+      "id": "3",
+      "sentence": "This makes coding much faster."
+    },
+    {
+      "id": "4",
+      "sentence": "However, developers still need to think."
+    },
+    {
+      "id": "5",
+      "sentence": "AI can sometimes make mistakes."
+    },
+    {
+      "id": "6",
+      "sentence": "Learning how to use AI is a new and important skill."
+    }
+  ]
+}

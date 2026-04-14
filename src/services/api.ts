@@ -5,6 +5,7 @@ import {
   WordProgress,
   GrammarLesson,
   ReadingLesson,
+  ListeningLesson,
   LessonProgress,
   SessionProgress,
   StudyLog,
@@ -39,6 +40,12 @@ export const api = {
     http.get<ReadingLesson[]>(`/reading?level=${level}`).then((r) => r.data),
   getReadingLessonById: (id: string) =>
     http.get<ReadingLesson>(`/reading/${id}`).then((r) => r.data),
+  
+  // --- Listening ---
+  getListeningLessonsByLevel: (level: string) =>
+    http.get<ListeningLesson[]>(`/listening?level=${level}`).then((r) => r.data),
+  getListeningLessonById: (id: string) =>
+    http.get<ListeningLesson>(`/listening/${id}`).then((r) => r.data),
 
   // --- Word Progress ---
   getWordProgressAll: () =>

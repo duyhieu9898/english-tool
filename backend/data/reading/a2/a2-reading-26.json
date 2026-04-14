@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-26",
+  "title": "Designing a Website Header with Flexbox",
+  "level": "a2",
+  "topic": "Frontend CSS",
+  "content": "A header is the most visible part of a website. It usually contains the logo and the navigation menu. To align these items easily, developers use 'Flexbox'. Flexbox is a CSS layout tool that helps you distribute space between items in a container. By setting 'display: flex', you can align items horizontally or vertically. For a header, we often use 'justify-content: space-between'. This pushes the logo to the left and the menu to the right. Flexbox makes it simple to center items or create equal gaps between them without using complex math. It is one of the most powerful tools in a frontend developer's toolkit.",
+  "vocabulary_highlights": [
+    { "word": "align", "meaning": "căn chỉnh" },
+    { "word": "distribute", "meaning": "phân phối" },
+    { "word": "container", "meaning": "thùng chứa, bộ khung chứa" },
+    { "word": "horizontally", "meaning": "theo chiều ngang" },
+    { "word": "toolkit", "meaning": "bộ công cụ" }
+  ],
+  "questions": [
+    {
+      "question": "What CSS tool is best for aligning items in a header?",
+      "options": ["Grid", "Flexbox", "Tables"],
+      "answer": "Flexbox",
+      "explanation": "The text says: 'To align these items easily, developers use \"Flexbox\"'."
+    },
+    {
+      "question": "What does 'justify-content: space-between' do?",
+      "options": ["Centers all items", "Pushes items to opposite sides", "Hides the items"],
+      "answer": "Pushes items to opposite sides",
+      "explanation": "The text says: 'This pushes the logo to the left and the menu to the right'."
+    },
+    {
+      "question": "How do you activate Flexbox in CSS?",
+      "options": ["display: block", "display: flex", "align-items: center"],
+      "answer": "display: flex",
+      "explanation": "The text says: 'By setting \"display: flex\", you can align items horizontally or vertically'."
+    }
+  ],
+  "translation": "Phần đầu trang (header) là phần dễ nhìn thấy nhất của một trang web. Nó thường chứa logo và menu điều hướng. Để căn chỉnh các mục này một cách dễ dàng, các nhà phát triển sử dụng 'Flexbox'. Flexbox là một công cụ bố cục CSS giúp bạn phân phối không gian giữa các mục trong một khung chứa. Bằng cách thiết lập 'display: flex', bạn có thể căn chỉnh các mục theo chiều ngang hoặc chiều dọc. Đối với một header, chúng ta thường sử dụng 'justify-content: space-between'. Việc này đẩy logo sang bên trái và menu sang bên phải. Flexbox giúp đơn giản hóa việc căn giữa các mục hoặc tạo ra các khoảng cách bằng nhau giữa chúng mà không cần sử dụng các phép toán phức tạp. Đây là một trong những công cụ mạnh mẽ nhất trong bộ công cụ của nhà phát triển frontend."
+}

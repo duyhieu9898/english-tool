@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-29",
+  "title": "Images and Alt Text",
+  "level": "a1",
+  "topic": "Accessibility",
+  "content": "Images make a website beautiful and interesting. We use the <img> tag in HTML to show pictures. An important part of an image is the 'Alt text'. 'Alt' stands for alternative. This is a short description of the image. If the image does not load, the browser shows the Alt text instead. It is also very important for people who cannot see well. Screen readers read the Alt text to explain what is in the picture. Good Alt text is clear and short. For example: 'A blue car on a sunny day'. Every image on the web should have Alt text.",
+  "vocabulary_highlights": [
+    { "word": "alternative", "meaning": "thay thế" },
+    { "word": "description", "meaning": "mô tả" },
+    { "word": "load", "meaning": "tải (dữ liệu)" },
+    { "word": "screen reader", "meaning": "trình đọc màn hình" },
+    { "word": "explain", "meaning": "giải thích" }
+  ],
+  "questions": [
+    {
+      "question": "What does Alt stand for?",
+      "options": ["Always", "Alternative", "Altitude"],
+      "answer": "Alternative",
+      "explanation": "The text says: '\"Alt\" stands for alternative'."
+    },
+    {
+      "question": "When does the browser show the Alt text?",
+      "options": ["If the image does not load", "If the computer is fast", "When you click a button"],
+      "answer": "If the image does not load",
+      "explanation": "The text says: 'If the image does not load, the browser shows the Alt text instead'."
+    },
+    {
+      "question": "Who uses screen readers?",
+      "options": ["People who see very well", "People who cannot see well", "Developers only"],
+      "answer": "People who cannot see well",
+      "explanation": "The text says: 'It is also very important for people who cannot see well. Screen readers read the Alt text...'."
+    }
+  ],
+  "translation": "Hình ảnh làm cho một trang web trở nên đẹp mắt và thú vị. Chúng ta sử dụng thẻ <img> trong HTML để hiển thị hình ảnh. Một phần quan trọng của hình ảnh là 'Alt text'. 'Alt' viết tắt của 'alternative' (thay thế). Đây là một đoạn mô tả ngắn về hình ảnh. Nếu hình ảnh không tải được, trình duyệt sẽ hiển thị văn bản Alt thay thế. Nó cũng rất quan trọng đối với những người không nhìn rõ. Trình đọc màn hình sẽ đọc văn bản Alt để giải thích những gì có trong bức ảnh. Văn bản Alt tốt thì rõ ràng và ngắn gọn. Ví dụ: 'Một chiếc xe hơi màu xanh vào một ngày nắng'. Mọi hình ảnh trên web đều nên có văn bản Alt."
+}

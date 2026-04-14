@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-38",
+  "title": "The Coding Community",
+  "level": "a1",
+  "topic": "Internet Culture",
+  "content": "Developers are not alone. There is a huge online community where people help each other. Stack Overflow is the most important website for this. If you have a problem with your code, you can ask a question there. Other developers from all over the world provide answers. You can also search for your problem to find existing solutions. Open Source projects on GitHub are another part of the community. Many people work together to build free software. Learning together is one of the best parts of being a developer.",
+  "vocabulary_highlights": [
+    { "word": "huge", "meaning": "khổng lồ" },
+    { "word": "solutions", "meaning": "giải pháp" },
+    { "word": "open source", "meaning": "nguồn mở" },
+    { "word": "all over the world", "meaning": "trên khắp thế giới" },
+    { "word": "free software", "meaning": "phần mềm miễn phí" }
+  ],
+  "questions": [
+    {
+      "question": "What is Stack Overflow used for?",
+      "options": ["To watch movies", "To ask and answer coding questions", "To buy food"],
+      "answer": "To ask and answer coding questions",
+      "explanation": "The text says: 'If you have a problem with your code, you can ask a question there'."
+    },
+    {
+      "question": "Where can people work together on free software?",
+      "options": ["On GitHub", "In a park", "At a supermarket"],
+      "answer": "On GitHub",
+      "explanation": "The text says: 'Open Source projects on GitHub are another part of the community. Many people work together to build free software'."
+    },
+    {
+      "question": "Is it good to search for your problem first?",
+      "options": ["Yes, to find existing solutions", "No, it is a waste of time", "Only on weekends"],
+      "answer": "Yes, to find existing solutions",
+      "explanation": "The text says: 'You can also search for your problem to find existing solutions'."
+    }
+  ],
+  "translation": "Các nhà phát triển không đơn độc. Có một cộng đồng trực tuyến khổng lồ nơi mọi người giúp đỡ lẫn nhau. Stack Overflow là trang web quan trọng nhất cho việc này. Nếu bạn gặp vấn đề với mã của mình, bạn có thể đặt câu hỏi ở đó. Các nhà phát triển khác từ khắp nơi trên thế giới sẽ đưa ra câu trả lời. Bạn cũng có thể tìm kiếm vấn đề của mình để tìm các giải pháp hiện có. Các dự án Nguồn mở (Open Source) trên GitHub là một phần khác của cộng đồng. Nhiều người cùng nhau làm việc để xây dựng phần mềm miễn phí. Cùng nhau học tập là một trong những phần tuyệt vời nhất khi trở thành nhà phát triển."
+}

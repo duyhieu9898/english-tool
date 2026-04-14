@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-31",
+  "title": "What is an API?",
+  "level": "a2",
+  "topic": "Backend Basics",
+  "content": "An API (Application Programming Interface) is like a bridge that allows different software systems to talk to each other. For a frontend developer, an API is usually how the website gets data from a server. For example, when you see a list of products on an e-commerce site, the frontend sends a 'Request' to an API, and the server sends back a 'Response' with the product data. This data is usually in a format called 'JSON'. JSON is easy for both humans and computers to read. Understanding how to fetch data from an API and display it on the screen is a fundamental skill for building dynamic web applications.",
+  "vocabulary_highlights": [
+    { "word": "bridge", "meaning": "cây cầu" },
+    { "word": "request", "meaning": "yêu cầu" },
+    { "word": "response", "meaning": "phản hồi" },
+    { "word": "format", "meaning": "định dạng" },
+    { "word": "dynamic", "meaning": "động (biến đổi linh hoạt)" }
+  ],
+  "questions": [
+    {
+      "question": "What is an API compared to in the text?",
+      "options": ["A wall", "A bridge", "A car"],
+      "answer": "A bridge",
+      "explanation": "The text says: 'An API... is like a bridge that allows different software systems to talk to each other'."
+    },
+    {
+      "question": "What is the common format for data sent by an API?",
+      "options": ["HTML", "PDF", "JSON"],
+      "answer": "JSON",
+      "explanation": "The text says: 'This data is usually in a format called \"JSON\"'."
+    },
+    {
+      "question": "What does the frontend send to an API to get data?",
+      "options": ["A response", "A request", "A message"],
+      "answer": "A request",
+      "explanation": "The text says: 'the frontend sends a \"Request\" to an API'."
+    }
+  ],
+  "translation": "Một API (Giao diện lập trình ứng dụng) giống như một cây cầu cho phép các hệ thống phần mềm khác nhau giao tiếp với nhau. Đối với một nhà phát triển frontend, API thường là cách trang web lấy dữ liệu từ máy chủ. Ví dụ, khi bạn nhìn thấy danh sách sản phẩm trên một trang thương mại điện tử, frontend sẽ gửi một 'Yêu cầu' (Request) đến một API và máy chủ sẽ gửi lại một 'Phản hồi' (Response) kèm theo dữ liệu sản phẩm. Dữ liệu này thường ở một định dạng được gọi là 'JSON'. JSON dễ đọc cho cả con người và máy tính. Hiểu cách lấy (fetch) dữ liệu từ API và hiển thị nó trên màn hình là một kỹ năng cơ bản để xây dựng các ứng dụng web động."
+}

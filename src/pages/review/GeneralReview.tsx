@@ -232,7 +232,7 @@ const GeneralReviewEngine: React.FC<{
         term: currentWord.term,
         lessonId: currentWord.lessonId,
         isCorrect: true,
-        isBossBattle: true,
+        isGeneralReview: true,
       });
 
       advance();
@@ -249,7 +249,7 @@ const GeneralReviewEngine: React.FC<{
         term: currentWord.term,
         lessonId: currentWord.lessonId,
         isCorrect: false,
-        isBossBattle: true,
+        isGeneralReview: true,
       });
     }
   };

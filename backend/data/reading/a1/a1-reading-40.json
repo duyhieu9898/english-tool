@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-40",
+  "title": "The Future of AI in Coding",
+  "level": "a1",
+  "topic": "AI in Tech",
+  "content": "Artificial Intelligence, or AI, is changing how we write code. Today, there are tools like GitHub Copilot or ChatGPT that help developers. These AI tools can suggest code, fix bugs, and explain complex logic. This makes coding much faster. However, developers still need to think. AI can sometimes make mistakes. You must always check the code that AI suggests. In the future, AI will be a helpful partner for every coder. Learning how to use AI is a new and important skill. It is an exciting time to be a frontend developer!",
+  "vocabulary_highlights": [
+    { "word": "artificial intelligence", "meaning": "trí tuệ nhân tạo" },
+    { "word": "suggest", "meaning": "đề xuất" },
+    { "word": "complex logic", "meaning": "logic phức tạp" },
+    { "word": "partner", "meaning": "đối tác, người đồng hành" },
+    { "word": "exciting", "meaning": "thú vị, hào hứng" }
+  ],
+  "questions": [
+    {
+      "question": "Which tools are mentioned that use AI for coding?",
+      "options": ["Facebook and TikTok", "GitHub Copilot and ChatGPT", "Jira and Trello"],
+      "answer": "GitHub Copilot and ChatGPT",
+      "explanation": "The text says: 'Today, there are tools like GitHub Copilot or ChatGPT that help developers'."
+    },
+    {
+      "question": "Can AI make mistakes?",
+      "options": ["No, never", "Yes, sometimes", "Only on Mondays"],
+      "answer": "Yes, sometimes",
+      "explanation": "The text says: 'AI can sometimes make mistakes'."
+    },
+    {
+      "question": "Is AI a replacement for developers in the future?",
+      "options": ["Yes, completely", "No, it will be a helpful partner", "It will only write CSS"],
+      "answer": "No, it will be a helpful partner",
+      "explanation": "The text says: 'In the future, AI will be a helpful partner for every coder'."
+    }
+  ],
+  "translation": "Trí tuệ nhân tạo, hay AI, đang thay đổi cách chúng ta viết mã. Ngày nay, có những công cụ như GitHub Copilot hoặc ChatGPT giúp đỡ các nhà phát triển. Những công cụ AI này có thể đề xuất mã, sửa lỗi và giải thích các thiết lập logic phức tạp. Điều này giúp việc lập trình nhanh hơn nhiều. Tuy nhiên, các nhà phát triển vẫn cần phải suy nghĩ. AI đôi khi có thể mắc lỗi. Bạn phải luôn kiểm tra mã mà AI đề xuất. Trong tương lai, AI sẽ là một người đồng hành hữu ích cho mọi lập trình viên. Học cách sử dụng AI là một kỹ năng mới và quan trọng. Đây là một thời điểm thú vị để trở thành một nhà phát triển frontend!"
+}

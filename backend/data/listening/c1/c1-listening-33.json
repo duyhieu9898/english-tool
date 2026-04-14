@@ -1,0 +1,28 @@
+{
+  "id": "c1-listening-33",
+  "title": "Optimizing Web Performance: Advanced Image Strategies",
+  "level": "c1",
+  "topic": "Frontend Performance",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Images are often the largest assets on a webpage and can significantly impact the loading speed of your application."
+    },
+    {
+      "id": "2",
+      "sentence": "Adopting advanced image optimization strategies is essential for passing Google's 'Lighthouse' audits."
+    },
+    {
+      "id": "3",
+      "sentence": "One of the most effective modern techniques is using next-generation image formats like 'WebP' or 'AVIF'."
+    },
+    {
+      "id": "4",
+      "sentence": "These formats provide superior compression compared to traditional JPEG and PNG files, often reducing file size by up to 50% without a noticeable loss in quality."
+    },
+    {
+      "id": "5",
+      "sentence": "Combining these techniques with 'Lazy Loading' (using the loading='lazy' attribute) ensures that users only download the assets they need, providing a faster and more efficient experience for everyone."
+    }
+  ]
+}

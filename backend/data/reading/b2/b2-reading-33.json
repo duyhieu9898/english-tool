@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-33",
+  "title": "Optimizing Performance: Lazy Loading and Code Splitting",
+  "level": "b2",
+  "topic": "Frontend Performance",
+  "content": "As modern web applications grow in size, loading the entire application at once can result in a slow initial experience for users. Two powerful techniques to combat this are 'Code Splitting' and 'Lazy Loading'. Code splitting involves breaking your large JavaScript bundle into smaller, manageable chunks. Lazy loading is the practice of delaying the loading of these chunks until they are actually needed. For example, your app can load only the 'Home' page code initially and wait until the user clicks on 'Profile' to load the profile-related code. Most modern frameworks like React (using React.lazy) and Vue (using async components) provide built-in support for these patterns. Implementing these strategies significantly reduces the initial bundle size, leading to faster load times and a more responsive feel for the end user.",
+  "vocabulary_highlights": [
+    { "word": "combat", "meaning": "đấu tranh, chống lại" },
+    { "word": "manageable", "meaning": "dễ quản lý" },
+    { "word": "chunks", "meaning": "các mảng, khối dữ liệu nhỏ" },
+    { "word": "delaying", "meaning": "trì hoãn" },
+    { "word": "built-in support", "meaning": "hỗ trợ tích hợp sẵn" }
+  ],
+  "questions": [
+    {
+      "question": "What is 'Code Splitting'?",
+      "options": ["Deleting parts of the code", "Breaking a large bundle into smaller chunks", "Writing code in different languages"],
+      "answer": "Breaking a large bundle into smaller chunks",
+      "explanation": "The text says: 'Code splitting involves breaking your large JavaScript bundle into smaller, manageable chunks'."
+    },
+    {
+      "question": "How does 'Lazy Loading' work?",
+      "options": ["It makes the developer lazy", "It delays loading code until it is actually needed", "It loads everything as fast as possible"],
+      "answer": "It delays loading code until it is actually needed",
+      "explanation": "The text defines lazy loading as 'the practice of delaying the loading of these chunks until they are actually needed'."
+    },
+    {
+      "question": "What is the main benefit of implementing these techniques?",
+      "options": ["Better colors on the site", "Reduced initial bundle size and faster load times", "It saves battery life on the server"],
+      "answer": "Reduced initial bundle size and faster load times",
+      "explanation": "The text says: 'Implementing these strategies significantly reduces the initial bundle size, leading to faster load times'."
+    }
+  ],
+  "translation": "Khi các ứng dụng web hiện đại tăng về kích thước, việc tải toàn bộ ứng dụng cùng một lúc có thể dẫn đến trải nghiệm ban đầu chậm chạp cho người dùng. Hai kỹ thuật mạnh mẽ để chống lại (combat) điều này là 'Code Splitting' (Tách mã) và 'Lazy Loading' (Tải lười). Tách mã liên quan đến việc chia nhỏ gói JavaScript lớn của bạn thành các khối (chunks) nhỏ hơn, dễ quản lý hơn. Tải lười là việc trì hoãn việc tải các khối này cho đến khi chúng thực sự cần thiết. Ví dụ, ứng dụng của bạn có thể chỉ tải mã của trang 'Home' ban đầu và đợi cho đến khi người dùng nhấp vào 'Profile' mới tải mã liên quan đến hồ sơ. Hầu hết các khung (frameworks) hiện đại như React (sử dụng React.lazy) và Vue (sử dụng async components) đều cung cấp hỗ trợ tích hợp sẵn cho các mô hình này. Việc triển khai các chiến lược này làm giảm đáng kể kích thước gói (bundle) ban đầu, dẫn đến thời gian tải nhanh hơn và cảm giác tương tác mượt mà hơn cho người dùng cuối."
+}

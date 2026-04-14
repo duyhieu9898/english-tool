@@ -1,0 +1,35 @@
+{
+  "id": "a2-reading-21",
+  "title": "Understanding the CSS Box Model",
+  "level": "a2",
+  "topic": "Frontend CSS",
+  "content": "In CSS, every element on a web page is treated as a rectangular box. This is known as the 'Box Model'. It consists of four main parts: content, padding, border, and margin. The content is where text and images appear. Padding is the space inside the box, around the content. The border goes around the padding. Finally, the margin is the space outside the box, creating distance between other elements. Understanding how these parts work together is crucial for creating accurate layouts. For instance, if you want more space inside a button, you increase the padding. If you want more space between two buttons, you increase the margin.",
+  "vocabulary_highlights": [
+    { "word": "rectangular", "meaning": "hình chữ nhật" },
+    { "word": "consists of", "meaning": "bao gồm" },
+    { "word": "crucial", "meaning": "quan trọng, cốt yếu" },
+    { "word": "accurate", "meaning": "chính xác" },
+    { "word": "increase", "meaning": "tăng lên" }
+  ],
+  "questions": [
+    {
+      "question": "What are the four parts of the CSS Box Model?",
+      "options": ["Top, Bottom, Left, Right", "Content, Padding, Border, Margin", "Header, Footer, Body, Sidebar"],
+      "answer": "Content, Padding, Border, Margin",
+      "explanation": "The text states: 'It consists of four main parts: content, padding, border, and margin'."
+    },
+    {
+      "question": "What should you change to create space inside a button?",
+      "options": ["The margin", "The padding", "The border"],
+      "answer": "The padding",
+      "explanation": "The text says: 'If you want more space inside a button, you increase the padding'."
+    },
+    {
+      "question": "Which part creates space outside the box to separate it from other elements?",
+      "options": ["The margin", "The content", "The padding"],
+      "answer": "The margin",
+      "explanation": "The text says: 'the margin is the space outside the box, creating distance between other elements'."
+    }
+  ],
+  "translation": "Trong CSS, mọi phần tử trên một trang web đều được xử lý như một chiếc hộp hình chữ nhật. Điều này được gọi là 'Box Model'. Nó bao gồm bốn phần chính: nội dung (content), đệm (padding), viền (border) và lề (margin). Nội dung là nơi văn bản và hình ảnh xuất hiện. Padding là không gian bên trong hộp, xung quanh phần nội dung. Border bao quanh phần padding. Cuối cùng, margin là không gian bên ngoài hộp, tạo khoảng cách giữa các phần tử khác. Hiểu cách các phần này hoạt động cùng nhau là rất quan trọng để tạo ra các bố cục chính xác. Ví dụ, nếu bạn muốn thêm không gian bên trong một nút bấm, bạn tăng padding. Nếu bạn muốn thêm không gian giữa hai nút bấm, bạn tăng margin."
+}

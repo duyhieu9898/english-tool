@@ -20,14 +20,14 @@ if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
 }
 
 export function useTTS() {
-  const speak = useCallback((text: string) => {
+  const speak = useCallback((text: string, options?: { rate?: number }) => {
     if (!('speechSynthesis' in window)) throw new Error('Speech synthesis not supported');
 
     window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
-    utterance.rate = 0.9;
+    utterance.rate = options?.rate ?? 0.9;
 
     const voice = getEnglishVoice();
     if (voice) utterance.voice = voice;

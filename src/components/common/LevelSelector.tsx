@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BookType, Book, BookOpen, Stars, Zap, Flame, Crown, Diamond } from 'lucide-react';
+import { BookType, Book, BookOpen, Headphones, Stars, Zap, Flame, Crown, Diamond } from 'lucide-react';
 import { PageContainer } from '../layout/PageContainer';
 
 interface LevelSelectorProps {
-  moduleType: 'vocabulary' | 'grammar' | 'reading';
+  moduleType: 'vocabulary' | 'grammar' | 'reading' | 'listening';
   title: string;
   description: string;
 }
@@ -24,6 +24,7 @@ export const LevelSelector: React.FC<LevelSelectorProps> = ({ moduleType, title,
     vocabulary: BookType,
     grammar: Book,
     reading: BookOpen,
+    listening: Headphones,
   };
 
   const ModuleIcon = icons[moduleType];

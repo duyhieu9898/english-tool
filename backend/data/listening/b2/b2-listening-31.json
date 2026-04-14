@@ -1,0 +1,24 @@
+{
+  "id": "b2-listening-31",
+  "title": "The Role of Module Bundlers: Introduction to Webpack",
+  "level": "b2",
+  "topic": "Frontend Tools",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Modern frontend applications are composed of hundreds of different files, including JavaScript modules, CSS files, and images."
+    },
+    {
+      "id": "2",
+      "sentence": "Webpack acts as a central hub that takes all these different files and their dependencies and bundles them together into a few optimized assets—usually a single JavaScript file and a single CSS file."
+    },
+    {
+      "id": "3",
+      "sentence": "Beyond simple bundling, Webpack also performs tasks like 'Minification' (removing extra spaces to reduce file size) and 'Transpilation' (converting modern JavaScript into a version compatible with older browsers)."
+    },
+    {
+      "id": "4",
+      "sentence": "Understanding how bundlers work behind the scenes is crucial for optimizing your application's loading speed and ensuring a smooth deployment process."
+    }
+  ]
+}

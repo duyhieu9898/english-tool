@@ -1,0 +1,35 @@
+{
+  "id": "a1-reading-39",
+  "title": "The End User",
+  "level": "a1",
+  "topic": "UX Design",
+  "content": "When we build a website, we must always think about the 'User'. The user is the person who uses the website. We want the user to have a good experience. This is called 'UX' or User Experience. A good website is fast and easy to navigate. It shouldn't be confusing. If a website is hard to use, people will leave quickly. We should also think about different users, like people using slow phones or people who are colorblind. Designing for everyone is very important. Happy users are the goal of every developer.",
+  "vocabulary_highlights": [
+    { "word": "experience", "meaning": "trải nghiệm" },
+    { "word": "confusing", "meaning": "gây bối rối, khó hiểu" },
+    { "word": "leave", "meaning": "rời đi" },
+    { "word": "colorblind", "meaning": "mù màu" },
+    { "word": "goal", "meaning": "mục tiêu" }
+  ],
+  "questions": [
+    {
+      "question": "What does UX stand for?",
+      "options": ["User Experience", "Under X-ray", "Universal X-link"],
+      "answer": "User Experience",
+      "explanation": "The text says: 'This is called \"UX\" or User Experience'."
+    },
+    {
+      "question": "What happens if a website is hard to use?",
+      "options": ["People will use it more", "People will leave quickly", "The computer will crash"],
+      "answer": "People will leave quickly",
+      "explanation": "The text says: 'If a website is hard to use, people will leave quickly'."
+    },
+    {
+      "question": "What is the goal of every developer?",
+      "options": ["To make money only", "To have happy users", "To write many lines of code"],
+      "answer": "To have happy users",
+      "explanation": "The text says: 'Happy users are the goal of every developer'."
+    }
+  ],
+  "translation": "Khi chúng ta xây dựng một trang web, chúng ta phải luôn nghĩ về 'Người dùng' (User). Người dùng là người sử dụng trang web đó. Chúng ta muốn người dùng có một trải nghiệm tốt. Điều này gọi là 'UX' hay Trải nghiệm người dùng. Một trang web tốt thì nhanh và dễ điều hướng. Nó không nên gây bối rối. Nếu một trang web khó sử dụng, mọi người sẽ rời đi nhanh chóng. Chúng ta cũng nên nghĩ về các đối tượng người dùng khác nhau, như những người sử dụng điện thoại chậm hoặc những người bị mù màu. Thiết kế cho tất cả mọi người là rất quan trọng. Người dùng hạnh phúc là mục tiêu của mọi nhà phát triển."
+}

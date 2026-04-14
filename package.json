@@ -1,8 +1,11 @@
 {
-  "name": "english-tool",
+  "name": "lingo-me",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "license": "MIT",
+  "author": "Hieu Nguyen",
+  "description": "LingoMe is a web application for learning English.",
   "scripts": {
     "dev": "concurrently \"yarn dev:fe\" \"yarn dev:be\"",
     "dev:fe": "vite",
@@ -16,6 +19,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@google/genai": "^1.49.0",
     "@tailwindcss/vite": "^4.2.1",
     "@tanstack/react-query": "^5.90.21",
     "@tanstack/react-query-devtools": "^5.91.3",
@@ -34,33 +38,33 @@
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^5.0.2",
     "@eslint/js": "^9.39.1",
+    "@storybook/addon-a11y": "^10.3.3",
+    "@storybook/addon-docs": "^10.3.3",
+    "@storybook/addon-onboarding": "^10.3.3",
+    "@storybook/addon-vitest": "^10.3.3",
+    "@storybook/react-vite": "^10.3.3",
     "@types/node": "^25.3.2",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react-swc": "^4.2.2",
+    "@vitest/browser-playwright": "4.1.1",
+    "@vitest/coverage-v8": "4.1.1",
     "concurrently": "^9.2.1",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "eslint-plugin-storybook": "^10.3.3",
     "globals": "^16.5.0",
     "nodemon": "^3.1.14",
+    "playwright": "^1.58.2",
     "prettier": "^3.8.1",
+    "storybook": "^10.3.3",
     "supertest": "^7.2.2",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.48.0",
     "vite": "^7.3.1",
-    "vitest": "^4.1.1",
-    "storybook": "^10.3.3",
-    "@storybook/react-vite": "^10.3.3",
-    "@chromatic-com/storybook": "^5.0.2",
-    "@storybook/addon-vitest": "^10.3.3",
-    "@storybook/addon-a11y": "^10.3.3",
-    "@storybook/addon-docs": "^10.3.3",
-    "@storybook/addon-onboarding": "^10.3.3",
-    "eslint-plugin-storybook": "^10.3.3",
-    "playwright": "^1.58.2",
-    "@vitest/browser-playwright": "4.1.1",
-    "@vitest/coverage-v8": "4.1.1"
+    "vitest": "^4.1.1"
   }
 }

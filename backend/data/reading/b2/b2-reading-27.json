@@ -1,0 +1,35 @@
+{
+  "id": "b2-reading-27",
+  "title": "Choosing Between SQL and NoSQL Databases",
+  "level": "b2",
+  "topic": "Backend Basics",
+  "content": "Although frontend developers primarily work with the UI, understanding how data is stored in the backend is vital for building efficient applications. Databases are generally divided into two main types: SQL and NoSQL. SQL databases (like PostgreSQL or MySQL) are relational, meaning they store data in tables with predefined schemas. They are excellent for complex queries and ensuring data integrity. On the other hand, NoSQL databases (like MongoDB or Firebase Firestore) are non-relational and store data in a more flexible format, often resembling JSON objects. NoSQL databases are typically easier to scale horizontally and are ideal for applications with rapidly changing data structures. Choosing the right database depends on the specific needs of your project, such as data complexity, scalability requirements, and the speed of development.",
+  "vocabulary_highlights": [
+    { "word": "relational", "meaning": "có quan hệ, thuộc về quan hệ" },
+    { "word": "schemas", "meaning": "lược đồ, cấu trúc (dữ liệu)" },
+    { "word": "integrity", "meaning": "tính toàn vẹn" },
+    { "word": "horizontally", "meaning": "theo chiều ngang" },
+    { "word": "scalability", "meaning": "khả năng mở rộng" }
+  ],
+  "questions": [
+    {
+      "question": "What is a characteristic of SQL databases?",
+      "options": ["They store data as flexible JSON objects", "They are relational and use predefined schemas", "They are only for mobile apps"],
+      "answer": "They are relational and use predefined schemas",
+      "explanation": "The text states: 'SQL databases... are relational, meaning they store data in tables with predefined schemas'."
+    },
+    {
+      "question": "Which type of database is typically easier to scale horizontally?",
+      "options": ["SQL", "NoSQL", "Excel"],
+      "answer": "NoSQL",
+      "explanation": "The text says: 'NoSQL databases are typically easier to scale horizontally'."
+    },
+    {
+      "question": "What format do NoSQL databases often resemble?",
+      "options": ["PDF files", "Table rows", "JSON objects"],
+      "answer": "JSON objects",
+      "explanation": "The text mentions that NoSQL databases store data in a flexible format, 'often resembling JSON objects'."
+    }
+  ],
+  "translation": "Mặc dù các nhà phát triển frontend chủ yếu làm việc với giao diện người dùng (UI), việc hiểu cách dữ liệu được lưu trữ ở backend là điều tối quan trọng để xây dựng các ứng dụng hiệu quả. Cơ sở dữ liệu thường được chia thành hai loại chính: SQL và NoSQL. Các cơ sở dữ liệu SQL (như PostgreSQL hoặc MySQL) là các cơ sở dữ liệu quan hệ, nghĩa là chúng lưu trữ dữ liệu trong các bảng với các lược đồ (schemas) được định nghĩa trước. Chúng rất tuyệt vời cho các truy vấn phức tạp và đảm bảo tính toàn vẹn của dữ liệu. Mặt khác, các cơ sở dữ liệu NoSQL (như MongoDB hoặc Firebase Firestore) là phi quan hệ và lưu trữ dữ liệu ở định dạng linh hoạt hơn, thường giống như các đối tượng JSON. Các cơ sở dữ liệu NoSQL thường dễ dàng mở rộng theo chiều ngang hơn và lý tưởng cho các ứng dụng có cấu trúc dữ liệu thay đổi nhanh chóng. Việc chọn đúng cơ sở dữ liệu phụ thuộc vào nhu cầu cụ thể của dự án của bạn, chẳng hạn như độ phức tạp của dữ liệu, yêu cầu về khả năng mở rộng (scalability) và tốc độ phát triển."
+}

@@ -12,6 +12,7 @@ const DATA_ROOT = process.env.VERCEL ? '/tmp' : path.join(ROOT, 'data');
 export const CLASSIFIED_PATH  = path.join(ROOT, 'oxford_classified.json');
 export const GRAMMAR_DIR      = path.join(DATA_ROOT, 'grammar');
 export const READING_DIR      = path.join(DATA_ROOT, 'reading');
+export const LISTENING_DIR    = path.join(DATA_ROOT, 'listening');
 
 export const USER_DB_PATH     = path.join(DATA_ROOT, 'user_db.json');
 export const ACTIVITY_LOG_DIR = path.join(DATA_ROOT, 'activity_log');

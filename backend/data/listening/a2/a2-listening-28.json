@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-28",
+  "title": "Introduction to React Components",
+  "level": "a2",
+  "topic": "Frontend Frameworks",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "React is a popular JavaScript library for building user interfaces."
+    },
+    {
+      "id": "2",
+      "sentence": "The main idea of React is 'Components'."
+    },
+    {
+      "id": "3",
+      "sentence": "A component is a small, reusable piece of code."
+    },
+    {
+      "id": "4",
+      "sentence": "Components use 'Props' and 'State' to handle data."
+    },
+    {
+      "id": "5",
+      "sentence": "'Props' are like arguments passed to a function."
+    },
+    {
+      "id": "6",
+      "sentence": "When the state changes, React automatically updates the UI."
+    }
+  ]
+}

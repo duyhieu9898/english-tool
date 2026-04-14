@@ -1,0 +1,32 @@
+{
+  "id": "a2-listening-37",
+  "title": "Working with AI Coding Assistants",
+  "level": "a2",
+  "topic": "Dev Tools",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "AI coding assistants are changing the way developers write code."
+    },
+    {
+      "id": "2",
+      "sentence": "These tools use artificial intelligence to suggest code while you type."
+    },
+    {
+      "id": "3",
+      "sentence": "They can complete functions, write CSS rules, and even help you find bugs."
+    },
+    {
+      "id": "4",
+      "sentence": "Think of an AI assistant as a smart teammate who never sleeps."
+    },
+    {
+      "id": "5",
+      "sentence": "While these tools are very helpful, you should not trust them blindly."
+    },
+    {
+      "id": "6",
+      "sentence": "Using AI responsibly can make you a more productive and efficient frontend developer."
+    }
+  ]
+}

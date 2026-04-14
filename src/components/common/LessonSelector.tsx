@@ -4,9 +4,10 @@ import {
   useLessons,
   useGrammarLessons,
   useReadingLessons,
+  useListeningLessons,
   useLessonProgressAll,
 } from '../../hooks/useApi';
-import { Lesson, GrammarLesson, ReadingLesson } from '../../types';
+import { Lesson, GrammarLesson, ReadingLesson, ListeningLesson } from '../../types';
 import { PageContainer } from '../layout/PageContainer';
 import {
   ArrowLeft,
@@ -34,7 +35,7 @@ import {
 } from 'lucide-react';
 
 interface LessonSelectorProps {
-  moduleType: 'vocabulary' | 'grammar' | 'reading';
+  moduleType: 'vocabulary' | 'grammar' | 'reading' | 'listening';
 }
 
 const MODULE_CONFIG = {
@@ -79,6 +80,19 @@ const MODULE_CONFIG = {
       'bg-red-300',
     ],
   },
+  listening: {
+    hook: useListeningLessons,
+    backPath: '/listening',
+    icons: [Compass, Map, Search, BookOpen, Target, Sparkles],
+    bgColors: [
+      'bg-yellow-300',
+      'bg-lime-300',
+      'bg-emerald-300',
+      'bg-sky-300',
+      'bg-orange-300',
+      'bg-rose-300',
+    ],
+  },
 };
 
 export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) => {
@@ -90,26 +104,30 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
   const { data: progressData = [] } = useLessonProgressAll();
 
   const lessons = React.useMemo(() => {
-    return (rawLessons as Array<Lesson | GrammarLesson | ReadingLesson>)
+    return (rawLessons as Array<Lesson | GrammarLesson | ReadingLesson | ListeningLesson>)
       .map((l) => {
         const isVocab = moduleType === 'vocabulary';
         const isGrammar = moduleType === 'grammar';
         const isReading = moduleType === 'reading';
+        const isListening = moduleType === 'listening';
 
         const vocab = isVocab ? (l as Lesson) : null;
         const grammar = isGrammar ? (l as GrammarLesson) : null;
         const reading = isReading ? (l as ReadingLesson) : null;
+        const listening = isListening ? (l as ListeningLesson) : null;
 
         return {
           id: l.id,
           slug: l.slug || l.id,
-          title: grammar?.title || reading?.title || vocab?.name || '',
+          title: grammar?.title || reading?.title || listening?.title || vocab?.name || '',
           description: grammar?.description || '',
           badgeLabel: isVocab
             ? `${vocab?.wordCount || 0} words`
             : isGrammar
               ? 'GRAMMAR'
-              : reading?.topic || 'General',
+              : isReading
+                ? reading?.topic || 'General'
+                : listening?.topic || 'Listening',
         };
       })
       .sort((a, b) => a.title.localeCompare(b.title));

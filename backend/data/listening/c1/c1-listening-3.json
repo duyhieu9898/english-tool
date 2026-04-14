@@ -1,0 +1,28 @@
+{
+  "id": "c1-listening-3",
+  "title": "Synthetic Realities: The Deepfake Challenge to Truth and Democracy",
+  "level": "c1",
+  "topic": "The Sociopolitical Impact of Deepfakes",
+  "questions": [
+    {
+      "id": "1",
+      "sentence": "Deepfakes, a portmanteau of \"deep learning\" and \"fake,\" represent a sophisticated form of synthetic media in which a person in an existing image or video is replaced with someone else's likeness."
+    },
+    {
+      "id": "2",
+      "sentence": "One of the most insidious sociopolitical impacts of deepfakes is the profound erosion of public trust."
+    },
+    {
+      "id": "3",
+      "sentence": "Deepfakes can be weaponised to influence public opinion, manipulate electoral outcomes, and destabilise geopolitical relations."
+    },
+    {
+      "id": "4",
+      "sentence": "The emergence of deepfakes presents an array of formidable legal and ethical dilemmas."
+    },
+    {
+      "id": "5",
+      "sentence": "Addressing the multifaceted threat of deepfakes necessitates a comprehensive, multi-pronged approach involving technological innovation, robust policy development, and widespread public education."
+    }
+  ]
+}
