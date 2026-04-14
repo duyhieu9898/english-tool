@@ -142,7 +142,7 @@ useState để toggle modal
 
 ## 2. Tách Logic khỏi Component
 
-Nguyên tắc cốt lõi: **Component chỉ nên chứa JSX, event handler delegation, và composition của hooks.** Mọi logic khác — tính toán, gọi API, quản lý state phức tạp — đều nên được extract ra ngoài.
+Nguyên tắc cốt lõi: **Component chỉ nên chứa JSX, event handler delegation, và composition của hooks.** Logic nặng — tính toán phức tạp, gọi API, quản lý nhiều state đan xen — nên được extract ra ngoài. Tuy nhiên, UI side effects đơn giản gắn liền với user action (confetti, sound effect, toast notification) được phép nằm trong event handler của component — tách chúng ra thường là over-engineering.
 
 Section này hướng dẫn cách tách từng loại logic ra khỏi component, với ví dụ before/after cụ thể.
 
@@ -773,7 +773,10 @@ export function VocabularySearch({
 - Logic debounce, keyboard navigation, scroll được **đóng gói** — dễ debug, dễ test riêng
 - Tách biệt rõ ràng: **hook** quản lý "state + behavior", **component** quản lý "hiển thị thế nào"
 
-> 💡 **Khi nào cần extract UI logic ra hook?** Khi component có ≥3 `useState` liên quan đến cùng một tính năng UI, hoặc khi `useEffect` bắt đầu phụ thuộc lẫn nhau. Nếu chỉ có 1 `useState` đơn giản (toggle modal), giữ trong component là đủ.
+> 💡 **Khi nào cần extract UI logic ra hook?**
+> - ✅ **Bắt buộc** khi: cùng stateful logic lặp lại ở **≥2 component** (ví dụ: `useQuizFlow` dùng chung cho Grammar, Reading, Listening).
+> - ⚠️ **Cân nhắc** khi: component quá lớn và nhiều state đan xen — nhưng đây là quyết định của developer, không phải quy tắc cứng.
+> - 🔄 **Thay thế**: trước khi nghĩ đến hook, hãy xét **chia nhỏ component** trước. Tách sub-component (ví dụ: `QuizCard`, `HintPanel`, `SpeedControl`) giảm kích thước mà không thêm abstraction layer. Hook chỉ cần khi logic có state phức tạp cần đóng gói, không phải khi JSX dài.
 
 ### 2.4 Application Logic → Zustand Store
 
@@ -1015,7 +1018,7 @@ httpClient.interceptors.request.use((config) => {
 
 ### 2.5 Component Rule — Quy tắc vàng
 
-> **Component chỉ nên chứa JSX, event handler delegation, và composition của hooks — mọi logic khác phải được extract ra ngoài.**
+> **Component chỉ nên chứa JSX, event handler delegation, và composition của hooks — logic nặng nên được extract ra ngoài.**
 
 Đây là tổng kết của toàn bộ Section 2. Nếu bạn chỉ nhớ một quy tắc duy nhất, hãy nhớ quy tắc này.
 
@@ -1027,6 +1030,7 @@ httpClient.interceptors.request.use((config) => {
 | Hook composition | `useWordList(deckId)`, `useAuthStore((s) => s.user)` |
 | Event handler delegation | `onClick={() => mutation.mutate(data)}` |
 | Derived values đơn giản | `const isReady = data && !isPending` |
+| UI side effects gắn liền action | `confetti()`, `sounds.correct()`, `toast.success()` trong handler |
 
 **❌ Cần extract ra ngoài:**
 
@@ -1036,6 +1040,14 @@ httpClient.interceptors.request.use((config) => {
 | API call / HTTP request | `services/` + `hooks/` — React Query (§2.2) |
 | Nhiều useState đan xen cho 1 tính năng | Custom hook trong feature folder (§2.3) |
 | Global / shared state | `stores/` — Zustand (§2.4) |
+
+**⚠️ Không cần extract:**
+
+| Tình huống | Lý do giữ trong component |
+|---|---|
+| UI feedback đơn giản (confetti, sound, toast) | Gắn chặt với user action, tách ra chỉ thêm indirection mà không có lợi ích test hay reuse |
+| 1-2 `useState` đơn giản (toggle, local input) | Chưa đủ phức tạp để justify một custom hook |
+| Derived value 1 dòng | `const isEmpty = items.length === 0` — không cần utils |
 
 **So sánh nhanh:**
 
@@ -1053,7 +1065,7 @@ return <JSX />
 
 **Checklist khi review component:**
 
-- [ ] Component có ≤ 1-2 `useState` đơn giản không? (Nếu ≥3 liên quan → extract hook)
+- [ ] Component có nhiều useState nhưng logic không lặp lại ở component khác? (Nếu lặp → extract shared hook. Nếu không → cân nhắc chia nhỏ component trước)
 - [ ] Không có `useEffect` gọi API? (→ React Query)
 - [ ] Không có tính toán/transform phức tạp inline? (→ `utils/`)
 - [ ] Không đọc/ghi localStorage trực tiếp? (→ Zustand persist)

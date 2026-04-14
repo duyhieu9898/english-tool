@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import confetti from 'canvas-confetti';
-import { useListeningLesson, useAddLessonProgressMutation } from '../../hooks/useApi';
-import { sounds } from '../../services/sounds';
+import { useListeningLesson } from '../../hooks/useApi';
+import { useQuizFlow } from '../../hooks/useQuizFlow';
 import { useTTS } from '../../hooks/useTTS';
+import { normalizeText, generateMaskedSentence } from './listening.utils';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
 import {
   ArrowLeft,
@@ -22,33 +22,32 @@ export const ListeningDetail: React.FC = () => {
   const { speak } = useTTS();
 
   const { data: lesson, isLoading } = useListeningLesson(lessonId!);
-  const addProgressMutation = useAddLessonProgressMutation();
 
   const [mode, setMode] = useState<'STUDY' | 'COMPLETED'>('STUDY');
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userInput, setUserInput] = useState('');
   const [showHint, setShowHint] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(0.9);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [attempts, setAttempts] = useState(0);
 
-  const generateMaskedSentence = useCallback((sentence: string) => {
-    return sentence.split('').map(char => {
-      // Preserve spaces and punctuation
-      if (!/[a-zA-Z0-9]/.test(char)) return char;
-      // 50% chance to mask characters
-      return Math.random() > 0.5 ? char : '_';
-    }).join('');
-  }, []);
+  const onComplete = useCallback(() => setMode('COMPLETED'), []);
+
+  const {
+    currentQuestionIndex,
+    isCorrect,
+    nextQuestion: advanceQuestion,
+    markCorrect,
+    markIncorrect,
+  } = useQuizFlow({
+    totalQuestions: lesson?.questions?.length ?? 0,
+    lessonSlug: lesson?.slug ?? '',
+    lessonType: 'listening',
+    onComplete,
+  });
 
   const maskedSentence = React.useMemo(() => {
     if (!lesson) return '';
     return generateMaskedSentence(lesson.questions[currentQuestionIndex].sentence);
-  }, [lesson, currentQuestionIndex, generateMaskedSentence]);
-
-  const normalizeText = useCallback((text: string) => {
-    return text.toLowerCase().replace(/[.,/#!$%^&*:{}=\-_`~()]/g, "").replace(/\s{2,}/g, " ").trim();
-  }, []);
+  }, [lesson, currentQuestionIndex]);
 
   const handlePlayAudio = useCallback(() => {
     if (lesson) {
@@ -56,31 +55,12 @@ export const ListeningDetail: React.FC = () => {
     }
   }, [lesson, currentQuestionIndex, playbackRate, speak]);
 
-  const completeLesson = useCallback(async () => {
-    confetti({
-      particleCount: 200,
-      spread: 90,
-      origin: { y: 0.5 },
-      colors: ['#000000', '#bef264', '#fde047', '#f87171'],
-    });
-    setMode('COMPLETED');
-    addProgressMutation.mutate({
-      id: lesson!.slug,
-      type: 'listening',
-      completedAt: new Date().toISOString(),
-    });
-  }, [lesson, addProgressMutation]);
-
   const nextQuestion = useCallback(() => {
     setUserInput('');
-    setIsCorrect(null);
     setShowHint(false);
-    if (lesson && currentQuestionIndex < lesson.questions.length - 1) {
-      setCurrentQuestionIndex(prev => prev + 1);
-    } else {
-      completeLesson();
-    }
-  }, [lesson, currentQuestionIndex, completeLesson]);
+    setAttempts(0);
+    advanceQuestion();
+  }, [advanceQuestion]);
 
   const checkAnswer = useCallback(() => {
     if (!lesson) return;
@@ -89,17 +69,15 @@ export const ListeningDetail: React.FC = () => {
     const normalizedAnswer = normalizeText(currentQuestion.sentence);
 
     if (normalizedInput === normalizedAnswer) {
-      setIsCorrect(true);
-      sounds.correct();
+      markCorrect();
       setAttempts(0);
     } else {
-      setIsCorrect(false);
-      sounds.incorrect();
+      markIncorrect();
       const newAttempts = attempts + 1;
       setAttempts(newAttempts);
       if (newAttempts >= 2) setShowHint(true);
     }
-  }, [lesson, currentQuestionIndex, userInput, attempts, normalizeText]);
+  }, [lesson, currentQuestionIndex, userInput, attempts, markCorrect, markIncorrect]);
 
   // Keyboard Shortcuts
   useEffect(() => {

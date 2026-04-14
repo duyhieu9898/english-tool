@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import confetti from 'canvas-confetti';
-import { useReadingLesson, useAddLessonProgressMutation } from '../../hooks/useApi';
-import { sounds } from '../../services/sounds';
+import { useReadingLesson } from '../../hooks/useApi';
+import { useQuizFlow } from '../../hooks/useQuizFlow';
 import { useTTS } from '../../hooks/useTTS';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
 import {
@@ -24,14 +23,27 @@ export const ReadingDetail: React.FC = () => {
   const { speak } = useTTS();
 
   const { data: lesson } = useReadingLesson(lessonId!);
-  const addProgressMutation = useAddLessonProgressMutation();
 
   const [mode, setMode] = useState<'READING' | 'QUIZ' | 'COMPLETED'>('READING');
   const [showTranslation, setShowTranslation] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
   const [showReference, setShowReference] = useState(false);
+
+  const onComplete = useCallback(() => setMode('COMPLETED'), []);
+
+  const {
+    currentQuestionIndex,
+    isCorrect,
+    nextQuestion: advanceQuestion,
+    markCorrect,
+    markIncorrect,
+  } = useQuizFlow({
+    totalQuestions: lesson?.questions?.length ?? 0,
+    lessonSlug: lesson?.slug ?? '',
+    lessonType: 'reading',
+    onComplete,
+  });
 
   if (!lesson)
     return (
@@ -42,7 +54,7 @@ export const ReadingDetail: React.FC = () => {
 
   const handleStartQuiz = () => {
     if (!lesson.questions || lesson.questions.length === 0) {
-      completeLesson();
+      onComplete();
     } else {
       setMode('QUIZ');
       setShowReference(false);
@@ -53,10 +65,10 @@ export const ReadingDetail: React.FC = () => {
     if (!selectedOption) return;
     const q = lesson.questions[currentQuestionIndex];
     if (selectedOption === q.answer) {
-      sounds.correct();
+      markCorrect();
       setShowExplanation(true);
     } else {
-      sounds.incorrect();
+      markIncorrect();
       setSelectedOption(null);
     }
   };
@@ -64,17 +76,7 @@ export const ReadingDetail: React.FC = () => {
   const nextQuestion = () => {
     setSelectedOption(null);
     setShowExplanation(false);
-    if (currentQuestionIndex < lesson.questions.length - 1) {
-      setCurrentQuestionIndex((curr) => curr + 1);
-    } else {
-      completeLesson();
-    }
-  };
-
-  const completeLesson = async () => {
-    confetti({ particleCount: 200, spread: 90, origin: { y: 0.5 }, colors: ['#000000', '#bef264', '#fde047', '#f87171'] });
-    setMode('COMPLETED');
-    addProgressMutation.mutate({ id: lesson!.slug, type: 'reading', completedAt: new Date().toISOString() });
+    advanceQuestion();
   };
 
   return (

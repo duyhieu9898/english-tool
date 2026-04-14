@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import confetti from 'canvas-confetti';
-import { useGrammarLesson, useAddLessonProgressMutation } from '../../hooks/useApi';
-import { sounds } from '../../services/sounds';
+import { useGrammarLesson } from '../../hooks/useApi';
+import { useQuizFlow } from '../../hooks/useQuizFlow';
 import { ArrowLeft, BookOpen, CheckCircle2, ChevronRight, Check, Star } from 'lucide-react';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
 import { Button } from '../../components/ui/Button';
@@ -13,12 +12,25 @@ export const GrammarDetail: React.FC = () => {
   const navigate = useNavigate();
 
   const { data: lesson } = useGrammarLesson(lessonId!);
-  const addProgressMutation = useAddLessonProgressMutation();
 
   const [mode, setMode] = useState<'THEORY' | 'QUIZ' | 'COMPLETED'>('THEORY');
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
+
+  const onComplete = useCallback(() => setMode('COMPLETED'), []);
+
+  const {
+    currentQuestionIndex,
+    isCorrect,
+    nextQuestion: advanceQuestion,
+    markCorrect,
+    markIncorrect,
+  } = useQuizFlow({
+    totalQuestions: lesson?.practice?.length ?? 0,
+    lessonSlug: lesson?.slug ?? '',
+    lessonType: 'grammar',
+    onComplete,
+  });
 
   if (!lesson)
     return (
@@ -29,7 +41,7 @@ export const GrammarDetail: React.FC = () => {
 
   const handleStartQuiz = () => {
     if (!lesson.practice || lesson.practice.length === 0) {
-      completeLesson();
+      onComplete();
     } else {
       setMode('QUIZ');
     }
@@ -39,11 +51,10 @@ export const GrammarDetail: React.FC = () => {
     if (!selectedOption) return;
     const q = lesson.practice[currentQuestionIndex];
     if (selectedOption === q.answer) {
-      sounds.correct();
+      markCorrect();
       setShowExplanation(true);
     } else {
-      sounds.incorrect();
-      // On incorrect, user can try again (don't show explanation yet, just shake/red)
+      markIncorrect();
       setSelectedOption(null);
     }
   };
@@ -51,21 +62,7 @@ export const GrammarDetail: React.FC = () => {
   const nextQuestion = () => {
     setSelectedOption(null);
     setShowExplanation(false);
-    if (currentQuestionIndex < lesson.practice.length - 1) {
-      setCurrentIndex((curr) => curr + 1);
-    } else {
-      completeLesson();
-    }
-  };
-
-  const setCurrentIndex = (updater: (prev: number) => number) => {
-    setCurrentQuestionIndex(updater);
-  };
-
-  const completeLesson = async () => {
-    confetti({ particleCount: 200, spread: 90, origin: { y: 0.5 }, colors: ['#000000', '#bef264', '#fde047', '#f87171'] });
-    setMode('COMPLETED');
-    addProgressMutation.mutate({ id: lesson!.slug, type: 'grammar', completedAt: new Date().toISOString() });
+    advanceQuestion();
   };
 
   return (
