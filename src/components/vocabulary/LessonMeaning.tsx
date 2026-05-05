@@ -38,8 +38,11 @@ export const LessonMeaning: React.FC<LessonMeaningProps> = ({ term, lessonId }) 
       </span>
       {info.sentences.length > 0 && (
         <div className="p-4 bg-gray-50 dark:bg-gray-900/40 rounded-2xl border-2 border-dashed border-gray-200 dark:border-gray-700 max-w-sm w-full">
-          <p className="text-gray-800 dark:text-gray-400 italic whitespace-pre-line text-left text-xl">
-            {info.sentences.map(s => `• ${s}`.replace(new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '_'.repeat(term.length))).join('\n')}
+          <p className="text-gray-800 dark:text-gray-400 italic whitespace-pre-line text-left text-xl leading-relaxed">
+            {info.sentences.map(s => `• ${s}`.replace(
+              new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), 
+              '_ '.repeat(term.length).trim()
+            )).join('\n')}
           </p>
         </div>
       )}

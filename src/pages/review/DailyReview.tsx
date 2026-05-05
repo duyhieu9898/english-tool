@@ -15,6 +15,7 @@ import { shuffleArray } from '@/utils/array';
 import { LessonMeaning } from '@/components/vocabulary/LessonMeaning';
 import { PageDetail } from '@/components/layout/PageDetailContainer';
 import { Badge } from '@/components/ui/Badge';
+import { AnswerInput } from '@/components/ui/AnswerInput';
 
 export const DailyReview: React.FC = () => {
   const navigate = useNavigate();
@@ -262,15 +263,13 @@ const DailyReviewEngine: React.FC<{
         </div>
       ) : (
         <div className="w-full mt-8 flex flex-col items-center">
-          <input
+          <AnswerInput
             ref={inputRef}
-            type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Enter word"
-            className="w-full text-center text-3xl font-black py-3 px-3 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-yellow-100 dark:focus:bg-yellow-900 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all lowercase mb-6"
-            autoComplete="off"
-            spellCheck="false"
+            variant="yellow"
+            size="md"
           />
           <div className="flex gap-3 w-full justify-center">
             <button

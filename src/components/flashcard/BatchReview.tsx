@@ -6,16 +6,19 @@ import { useKeyboard } from '../../hooks/useKeyboard';
 import { sounds } from '../../services/sounds';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '../ui/Button';
-
+import { LessonMeaning } from '../vocabulary/LessonMeaning';
+import { AnswerInput } from '../ui/AnswerInput';
 interface BatchReviewProps {
   words: VocabWord[];
   onComplete: () => void;
+  lessonId?: string;
   soundEnabled?: boolean;
 }
 
 export const BatchReview: React.FC<BatchReviewProps> = ({
   words,
   onComplete,
+  lessonId,
   soundEnabled = true,
 }) => {
   const [queue, setQueue] = useState<VocabWord[]>(() => {
@@ -102,15 +105,23 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
             <Sparkles className="w-4 h-4" /> TYPE TRANSLATION
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-black text-black dark:text-white leading-tight capitalize">
-            {currentWord.meaning || 'Mystery Word'}
-          </h2>
-          <span className="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider mb-10">
-            {currentWord.modifiers || 'noun'}
-          </span>
+         <div className='mb-6'>
+           {lessonId ? (
+             <LessonMeaning term={currentWord.term} lessonId={lessonId} />
+           ) : (
+             <>
+               <h2 className="text-2xl md:text-3xl font-black text-black dark:text-white leading-tight capitalize">
+                 {currentWord.meaning || 'Mystery Word'}
+               </h2>
+               <span className="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider mb-10">
+                 {currentWord.modifiers || 'noun'}
+               </span>
+             </>
+           )}
+         </div>
 
           {showError ? (
-            <div className="w-full animate-shake flex flex-col items-center w-full">
+            <div className="w-full animate-shake flex flex-col items-center">
               <div className="text-red-500 font-black text-2xl uppercase tracking-wide mb-2">
                 Incorrect!
               </div>
@@ -131,27 +142,16 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
             </div>
           ) : (
             <div className="w-full flex flex-col items-center">
-              <input
+              <AnswerInput
                 ref={inputRef}
-                type="text"
                 autoFocus
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Enter word"
-                className="w-full text-center text-4xl font-black py-4 px-4 bg-gray-100 dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl outline-none focus:bg-blue-50 dark:focus:bg-blue-900/30 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:focus:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] text-black dark:text-white lowercase placeholder:text-gray-400 dark:placeholder:text-gray-600 transition-all mb-8"
-                autoComplete="off"
-                autoCorrect="off"
-                spellCheck="false"
+                variant="blue"
+                size="md"
+                className="mb-8"
               />
-              <Button
-                variant="primary"
-                size="lg"
-                fullWidth
-                onClick={handleSubmit}
-                disabled={!inputValue.trim()}
-              >
-                Attack <ArrowRight className="w-6 h-6 stroke-3 ml-2" />
-              </Button>
             </div>
           )}
 

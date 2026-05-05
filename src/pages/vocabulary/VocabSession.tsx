@@ -237,7 +237,7 @@ export const VocabSession: React.FC = () => {
                 {continueQueue.length} targets remaining
               </p>
             </div>
-            <BatchReview words={continueQueue} onComplete={finishSession} />
+            <BatchReview words={continueQueue} onComplete={finishSession} lessonId={lessonId} />
           </div>
         )}
 

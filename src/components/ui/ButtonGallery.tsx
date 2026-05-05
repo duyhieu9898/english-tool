@@ -1,15 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import { 
-  ArrowLeft, 
-  Play, 
-  Sword, 
-  Volume2, 
-  Check, 
-  ChevronRight, 
-  Languages, 
-  ArrowRight
-} from 'lucide-react';
+import { ArrowLeft, Play, Sword, ChevronRight } from 'lucide-react';
 
 export const ButtonGallery: React.FC = () => {
   return (
@@ -89,11 +80,13 @@ export const ButtonGallery: React.FC = () => {
         <h2 className="text-2xl font-black uppercase text-gray-400">
           Raw Reference (From Codebase)
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Action Ref */}
           <div className="space-y-4">
-            <p className="text-sm font-bold text-gray-400 uppercase tracking-widest leading-none">Attack Button Pattern</p>
+            <p className="text-sm font-bold text-gray-400 uppercase tracking-widest leading-none">
+              Attack Button Pattern
+            </p>
             <button className="w-full flex items-center justify-center gap-2 bg-blue-500 text-white dark:bg-blue-400 dark:text-black py-4 px-6 rounded-xl font-black text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-y-0 active:shadow-none transition-all">
               Attack <Sword className="w-6 h-6 stroke-3 ml-2" />
             </button>
@@ -101,7 +94,9 @@ export const ButtonGallery: React.FC = () => {
 
           {/* Nav Ref */}
           <div className="space-y-4">
-            <p className="text-sm font-bold text-gray-400 uppercase tracking-widest leading-none">Nav Button Pattern</p>
+            <p className="text-sm font-bold text-gray-400 uppercase tracking-widest leading-none">
+              Nav Button Pattern
+            </p>
             <button className="inline-flex items-center text-sm font-black uppercase text-black dark:text-white bg-white dark:bg-black px-4 py-2 border-2 border-black dark:border-white rounded-xl shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-[0px_0px_0px_0px] transition-all">
               <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> Retreat
             </button>
