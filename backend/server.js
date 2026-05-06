@@ -14,11 +14,9 @@ import { USER_DB_PATH }  from './db/paths.js';
 import { logger }        from './utils/logger.js';
 import { connectDB }     from './db/mongo.js';
 
-// Connect to MongoDB
-connectDB();
-
 const app  = express();
 const PORT = 3001;
+
 
 app.use(cors());
 app.use(express.json());
@@ -54,15 +52,22 @@ const isMain = process.argv[1] && fileURLToPath(import.meta.url) === fs.realpath
 const isNodemon = process.argv[1]?.endsWith('server.js');
 
 if (isMain || isNodemon) {
-  app.listen(PORT, () => {
-    try {
-      const lessons = loadLessons();
-      console.log(`🚀 Server running at http://localhost:${PORT}`);
-      console.log(`   Lessons: ${lessons.length}  |  User DB: ${USER_DB_PATH}`);
-    } catch (err) {
-      logger.error('Failed to initialize content DB:', err);
-    }
-  });
+  connectDB()
+    .then(() => {
+      app.listen(PORT, () => {
+        try {
+          const lessons = loadLessons();
+          console.log(`🚀 Server running at http://localhost:${PORT}`);
+          console.log(`   Lessons: ${lessons.length}  |  User DB: ${USER_DB_PATH}`);
+        } catch (err) {
+          logger.error('Failed to initialize content DB:', err);
+        }
+      });
+    })
+    .catch((err) => {
+      logger.error('Failed to connect to MongoDB:', err);
+      process.exit(1);
+    });
 }
 
 export default app;
