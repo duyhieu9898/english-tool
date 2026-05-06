@@ -649,5 +649,65 @@
     "fn": "session:resume",
     "lesson": "10",
     "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:18:14.476Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:18:14.493Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:18:15.278Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:18:15.287Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:18:15.640Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:18:15.643Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:18:15.684Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "without"
+  },
+  {
+    "ts": "2026-05-06T10:18:15.689Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "10",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:18:16.094Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:18:16.102Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
   }
 ]

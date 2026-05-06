@@ -1568,7 +1568,7 @@
       "lastStudied": "2026-05-06",
       "nextReview": "2026-05-06",
       "correctCount": 3,
-      "incorrectCount": 7
+      "incorrectCount": 8
     },
     {
       "id": "CD",
@@ -1771,7 +1771,7 @@
       "id": "2026-05-06",
       "date": "2026-05-06",
       "wordsLearned": 0,
-      "wordsReviewed": 113
+      "wordsReviewed": 114
     }
   ],
   "stats": {
