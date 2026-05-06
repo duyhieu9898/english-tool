@@ -148,6 +148,7 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Enter word"
+                aria-label="Enter translation"
                 variant="blue"
                 size="md"
                 className="mb-8"

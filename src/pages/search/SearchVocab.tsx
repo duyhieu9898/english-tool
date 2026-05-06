@@ -76,6 +76,7 @@ export const SearchVocab: React.FC = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by English word or Vietnamese meaning..."
+          aria-label="Search vocabulary"
           className="w-full pl-14 pr-6 py-4 bg-white dark:bg-gray-900 border-4 border-black dark:border-white rounded-2xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] focus:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] outline-none text-lg font-bold transition-all"
           autoComplete="off"
           spellCheck="false"

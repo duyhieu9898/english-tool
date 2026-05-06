@@ -1,0 +1,653 @@
+[
+  {
+    "ts": "2026-05-06T08:32:39.230Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:32:39.236Z",
+    "fn": "session:new",
+    "lesson": "10"
+  },
+  {
+    "ts": "2026-05-06T08:32:39.515Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:32:39.516Z",
+    "fn": "session:new",
+    "lesson": "10"
+  },
+  {
+    "ts": "2026-05-06T08:32:39.601Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "at"
+  },
+  {
+    "ts": "2026-05-06T08:32:59.768Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:32:59.771Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=1"
+  },
+  {
+    "ts": "2026-05-06T08:33:00.058Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:33:00.061Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=1"
+  },
+  {
+    "ts": "2026-05-06T08:33:00.178Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "between"
+  },
+  {
+    "ts": "2026-05-06T08:34:21.591Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:34:21.597Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=2"
+  },
+  {
+    "ts": "2026-05-06T08:34:22.006Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "by"
+  },
+  {
+    "ts": "2026-05-06T08:34:22.197Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:34:22.204Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=3"
+  },
+  {
+    "ts": "2026-05-06T08:34:32.085Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:34:32.087Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=3"
+  },
+  {
+    "ts": "2026-05-06T08:35:10.398Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:35:10.408Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=3"
+  },
+  {
+    "ts": "2026-05-06T08:35:10.840Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "from"
+  },
+  {
+    "ts": "2026-05-06T08:35:11.356Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:35:11.377Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=4"
+  },
+  {
+    "ts": "2026-05-06T08:36:11.280Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:36:11.286Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=4"
+  },
+  {
+    "ts": "2026-05-06T08:36:11.578Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:36:11.591Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=4"
+  },
+  {
+    "ts": "2026-05-06T08:36:11.921Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "in"
+  },
+  {
+    "ts": "2026-05-06T08:37:57.906Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:37:57.913Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=5"
+  },
+  {
+    "ts": "2026-05-06T08:37:58.215Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T08:37:58.219Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=5"
+  },
+  {
+    "ts": "2026-05-06T08:37:58.582Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "into"
+  },
+  {
+    "ts": "2026-05-06T09:43:51.627Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:43:51.638Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=6"
+  },
+  {
+    "ts": "2026-05-06T09:43:51.830Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:43:51.837Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=6"
+  },
+  {
+    "ts": "2026-05-06T09:43:52.226Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "like"
+  },
+  {
+    "ts": "2026-05-06T09:50:14.996Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:50:14.999Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=7"
+  },
+  {
+    "ts": "2026-05-06T09:50:15.903Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T09:50:15.908Z",
+    "fn": "session:new",
+    "lesson": "1"
+  },
+  {
+    "ts": "2026-05-06T09:50:16.241Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "dictionary"
+  },
+  {
+    "ts": "2026-05-06T09:52:06.601Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:52:06.609Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=7"
+  },
+  {
+    "ts": "2026-05-06T09:52:07.560Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:52:07.566Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=7"
+  },
+  {
+    "ts": "2026-05-06T09:52:07.907Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "of"
+  },
+  {
+    "ts": "2026-05-06T09:52:59.977Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:52:59.986Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=8"
+  },
+  {
+    "ts": "2026-05-06T09:53:00.388Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "on"
+  },
+  {
+    "ts": "2026-05-06T09:53:01.744Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:53:01.749Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=9"
+  },
+  {
+    "ts": "2026-05-06T09:53:33.824Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:53:33.826Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=9"
+  },
+  {
+    "ts": "2026-05-06T09:53:33.973Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:53:33.974Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=9"
+  },
+  {
+    "ts": "2026-05-06T09:53:34.223Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "through"
+  },
+  {
+    "ts": "2026-05-06T09:58:54.937Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T09:58:54.941Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=1"
+  },
+  {
+    "ts": "2026-05-06T09:58:56.230Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:58:56.232Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=10"
+  },
+  {
+    "ts": "2026-05-06T09:58:57.046Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:58:57.048Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=10"
+  },
+  {
+    "ts": "2026-05-06T09:58:57.387Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "to"
+  },
+  {
+    "ts": "2026-05-06T09:59:52.824Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:59:52.844Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=11"
+  },
+  {
+    "ts": "2026-05-06T09:59:53.315Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T09:59:53.318Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=11"
+  },
+  {
+    "ts": "2026-05-06T09:59:53.742Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "with"
+  },
+  {
+    "ts": "2026-05-06T09:59:54.156Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T09:59:54.160Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=1"
+  },
+  {
+    "ts": "2026-05-06T09:59:54.570Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "example"
+  },
+  {
+    "ts": "2026-05-06T09:59:54.850Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "geography"
+  },
+  {
+    "ts": "2026-05-06T09:59:55.116Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "history"
+  },
+  {
+    "ts": "2026-05-06T09:59:55.382Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "mistake"
+  },
+  {
+    "ts": "2026-05-06T09:59:55.666Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "practice"
+  },
+  {
+    "ts": "2026-05-06T09:59:55.934Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "problem"
+  },
+  {
+    "ts": "2026-05-06T09:59:56.199Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "reading"
+  },
+  {
+    "ts": "2026-05-06T09:59:56.467Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "report"
+  },
+  {
+    "ts": "2026-05-06T09:59:56.716Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "result"
+  },
+  {
+    "ts": "2026-05-06T09:59:56.966Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "science"
+  },
+  {
+    "ts": "2026-05-06T09:59:57.233Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "section"
+  },
+  {
+    "ts": "2026-05-06T09:59:57.500Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "skill"
+  },
+  {
+    "ts": "2026-05-06T09:59:57.773Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "spelling"
+  },
+  {
+    "ts": "2026-05-06T09:59:58.033Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "subject"
+  },
+  {
+    "ts": "2026-05-06T09:59:58.299Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T09:59:58.300Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=15"
+  },
+  {
+    "ts": "2026-05-06T10:01:13.402Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:01:13.405Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:01:14.157Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:01:14.169Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:01:14.538Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "without"
+  },
+  {
+    "ts": "2026-05-06T10:01:14.540Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "10",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:01:15.989Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:01:15.993Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:01:16.418Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:01:16.419Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:05:29.092Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:05:29.100Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:05:29.495Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "without"
+  },
+  {
+    "ts": "2026-05-06T10:05:29.502Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "10",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:05:29.875Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:05:29.881Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:05:31.579Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:05:31.582Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:05:32.027Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:05:32.029Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:11:52.642Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:11:52.645Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  }
+]

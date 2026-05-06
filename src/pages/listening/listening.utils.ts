@@ -9,7 +9,7 @@
 export function normalizeText(text: string): string {
   return text
     .toLowerCase()
-    .replace(/[.,/#!$%^&*:{}=\-_`~()']/g, '')
+    .replace(/[.,/#!?$%^&*:{}=\-_`~()'"[\]]/g, '')
     .replace(/\s{2,}/g, ' ')
     .trim();
 }

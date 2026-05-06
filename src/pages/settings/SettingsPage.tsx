@@ -179,10 +179,14 @@ export const SettingsPage: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row sm:items-end gap-4">
             <div className="flex-1 max-w-[200px]">
-              <div className="font-bold text-gray-900 dark:text-gray-100 mb-2">
+              <label 
+                htmlFor="daily-goal-input"
+                className="block font-bold text-gray-900 dark:text-gray-100 mb-2 cursor-pointer"
+              >
                 Daily Goal (Words)
-              </div>
+              </label>
               <input
+                id="daily-goal-input"
                 type="number"
                 min={1}
                 max={200}
@@ -243,10 +247,12 @@ export const SettingsPage: React.FC = () => {
               </Button>
               <input
                 type="file"
+                id="restore-backup-input"
                 accept=".json"
                 onChange={handleImport}
                 className="absolute inset-0 opacity-0 cursor-pointer z-10 w-full h-full"
                 title="Upload JSON backup"
+                aria-label="Upload JSON backup file to restore data"
               />
             </div>
           </div>

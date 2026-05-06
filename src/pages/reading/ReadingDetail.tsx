@@ -34,7 +34,6 @@ export const ReadingDetail: React.FC = () => {
 
   const {
     currentQuestionIndex,
-    isCorrect,
     nextQuestion: advanceQuestion,
     markCorrect,
     markIncorrect,

@@ -2,7 +2,7 @@ import React from 'react';
 
 interface ProgressBarProps {
   progress: number; // 0 to 100
-  color?: 'blue' | 'green' | 'orange' | 'purple';
+  color?: 'blue' | 'green' | 'orange' | 'teal';
   height?: 'sm' | 'md' | 'lg';
   label?: string;
   showValue?: boolean;
@@ -25,7 +25,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
     blue: 'bg-blue-500',
     green: 'bg-green-500',
     orange: 'bg-orange-500',
-    purple: 'bg-purple-500',
+    teal: 'bg-teal-500',
   };
 
   return (

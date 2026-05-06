@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
-  color?: 'white' | 'blue' | 'green' | 'red' | 'yellow' | 'purple';
+  color?: 'white' | 'blue' | 'green' | 'red' | 'yellow' | 'teal';
   size?: 'sm' | 'md';
   shadow?: boolean;
 }
@@ -27,7 +27,7 @@ export const Badge: React.FC<BadgeProps> = ({
     green: 'bg-lime-400 text-black dark:bg-lime-500 dark:text-black',
     red: 'bg-red-400 text-black dark:bg-red-500 dark:text-white',
     yellow: 'bg-amber-300 text-black dark:bg-amber-400 dark:text-black',
-    purple: 'bg-purple-400 text-black dark:bg-purple-500 dark:text-white',
+    teal: 'bg-teal-400 text-black dark:bg-teal-500 dark:text-white',
   };
 
   const sizes = {

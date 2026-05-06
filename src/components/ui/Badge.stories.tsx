@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Badge } from './Badge';
 
 const meta: Meta<typeof Badge> = {
@@ -11,7 +11,7 @@ const meta: Meta<typeof Badge> = {
   argTypes: {
     color: {
       control: 'select',
-      options: ['white', 'blue', 'green', 'red', 'yellow', 'purple'],
+      options: ['white', 'blue', 'green', 'red', 'yellow', 'teal'],
     },
     size: {
       control: 'select',
@@ -65,10 +65,10 @@ export const Yellow: Story = {
   },
 };
 
-export const Purple: Story = {
+export const Teal: Story = {
   args: {
-    children: 'Purple Badge',
-    color: 'purple',
+    children: 'Teal Badge',
+    color: 'teal',
   },
 };
 

@@ -1564,21 +1564,21 @@
       "id": "DVD",
       "term": "DVD",
       "lessonId": "3",
-      "level": 3,
+      "level": 1,
       "lastStudied": "2026-05-06",
-      "nextReview": "2026-05-09",
+      "nextReview": "2026-05-06",
       "correctCount": 3,
-      "incorrectCount": 0
+      "incorrectCount": 7
     },
     {
       "id": "CD",
       "term": "CD",
       "lessonId": "3",
-      "level": 3,
+      "level": 1,
       "lastStudied": "2026-05-06",
-      "nextReview": "2026-05-09",
+      "nextReview": "2026-05-06",
       "correctCount": 3,
-      "incorrectCount": 0
+      "incorrectCount": 3
     }
   ],
   "lessonProgress": [
@@ -1718,6 +1718,16 @@
       "id": "3",
       "currentIndex": 24,
       "lastUpdated": "2026-04-23T07:42:08.041Z"
+    },
+    {
+      "id": "10",
+      "currentIndex": 12,
+      "lastUpdated": "2026-05-06T09:59:53.755Z"
+    },
+    {
+      "id": "1",
+      "currentIndex": 15,
+      "lastUpdated": "2026-05-06T09:59:58.038Z"
     }
   ],
   "studyLog": [
@@ -1761,7 +1771,7 @@
       "id": "2026-05-06",
       "date": "2026-05-06",
       "wordsLearned": 0,
-      "wordsReviewed": 103
+      "wordsReviewed": 113
     }
   ],
   "stats": {

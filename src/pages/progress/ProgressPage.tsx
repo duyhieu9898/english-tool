@@ -68,11 +68,11 @@ export const ProgressPage: React.FC = () => {
             Day Streak
           </div>
         </Card>
-        <Card className="text-center bg-purple-50 dark:bg-purple-900/10 border-purple-100 dark:border-purple-900/30">
-          <div className="text-4xl font-black text-purple-600 dark:text-purple-400 mb-1">
+        <Card className="text-center bg-teal-50 dark:bg-teal-900/10 border-teal-100 dark:border-teal-900/30">
+          <div className="text-4xl font-black text-teal-600 dark:text-teal-400 mb-1">
             {stats?.totalStudyDays ?? 0}
           </div>
-          <div className="text-sm font-bold text-purple-800/60 dark:text-purple-200 uppercase tracking-wide">
+          <div className="text-sm font-bold text-teal-800/60 dark:text-teal-200 uppercase tracking-wide">
             Study Days
           </div>
         </Card>
@@ -112,7 +112,7 @@ export const ProgressPage: React.FC = () => {
             </div>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-purple-100 dark:bg-purple-900/40 text-purple-600 rounded-lg">
+                <div className="p-2 bg-teal-100 dark:bg-teal-900/40 text-teal-600 rounded-lg">
                   <Hash className="w-5 h-5" />
                 </div>
                 <span className="font-bold text-lg">Grammar</span>

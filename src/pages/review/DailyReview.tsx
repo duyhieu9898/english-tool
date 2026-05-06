@@ -32,7 +32,6 @@ export const DailyReview: React.FC = () => {
 
   // isCompleted is the only flag we need beyond loading
   const [isCompleted, setIsCompleted] = useState(false);
-  const finishMutation = useFinishSessionMutation();
 
   const [sessionResults, setSessionResults] = useState<{ count: number } | null>(null);
 
@@ -276,6 +275,7 @@ const DailyReviewEngine: React.FC<{
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Enter word"
+            aria-label="Enter word translation"
             variant="yellow"
             size="md"
           />

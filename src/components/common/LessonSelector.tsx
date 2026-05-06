@@ -62,7 +62,7 @@ const MODULE_CONFIG = {
       'bg-amber-300',
       'bg-cyan-300',
       'bg-sky-400',
-      'bg-fuchsia-300',
+      'bg-indigo-400',
       'bg-indigo-300',
       'bg-orange-300',
     ],
@@ -74,7 +74,7 @@ const MODULE_CONFIG = {
     bgColors: [
       'bg-rose-300',
       'bg-blue-300',
-      'bg-violet-300',
+      'bg-teal-300',
       'bg-pink-300',
       'bg-teal-300',
       'bg-red-300',
