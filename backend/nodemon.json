@@ -1,7 +1,7 @@
 {
   "ignore": [
-    "data/",
-    "*.tmp",
+    "backend/data/",
+    "backend/*.tmp",
     "node_modules"
   ],
   "ext": "js,mjs,json"

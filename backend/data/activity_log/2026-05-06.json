@@ -709,5 +709,820 @@
     "fn": "advanceFlashcard:end",
     "lesson": "1",
     "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:29:42.951Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:29:42.954Z",
+    "fn": "session:new",
+    "lesson": "1"
+  },
+  {
+    "ts": "2026-05-06T10:29:43.941Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:29:43.944Z",
+    "fn": "session:new",
+    "lesson": "1"
+  },
+  {
+    "ts": "2026-05-06T10:29:44.325Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "dictionary"
+  },
+  {
+    "ts": "2026-05-06T10:29:45.455Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:29:45.460Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=1"
+  },
+  {
+    "ts": "2026-05-06T10:29:45.881Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "example"
+  },
+  {
+    "ts": "2026-05-06T10:29:46.166Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "geography"
+  },
+  {
+    "ts": "2026-05-06T10:29:46.447Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "history"
+  },
+  {
+    "ts": "2026-05-06T10:29:46.719Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "mistake"
+  },
+  {
+    "ts": "2026-05-06T10:29:47.006Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "practice"
+  },
+  {
+    "ts": "2026-05-06T10:29:47.298Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "problem"
+  },
+  {
+    "ts": "2026-05-06T10:29:47.649Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "reading"
+  },
+  {
+    "ts": "2026-05-06T10:29:47.946Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "report"
+  },
+  {
+    "ts": "2026-05-06T10:29:48.209Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "result"
+  },
+  {
+    "ts": "2026-05-06T10:29:48.477Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "science"
+  },
+  {
+    "ts": "2026-05-06T10:29:48.748Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "section"
+  },
+  {
+    "ts": "2026-05-06T10:29:49.015Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "skill"
+  },
+  {
+    "ts": "2026-05-06T10:29:49.309Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "spelling"
+  },
+  {
+    "ts": "2026-05-06T10:29:49.563Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "subject"
+  },
+  {
+    "ts": "2026-05-06T10:29:49.853Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:29:49.858Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=15"
+  },
+  {
+    "ts": "2026-05-06T10:30:23.065Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:30:23.068Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:30:24.037Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:30:24.040Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:30:24.391Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:30:24.399Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:30:25.414Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:30:25.418Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:30:25.844Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:30:25.845Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:31:04.142Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:31:04.146Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:31:05.166Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:31:05.191Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:31:05.593Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:31:05.622Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:31:05.904Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:31:05.910Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:31:06.281Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:31:06.289Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:34:20.574Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:34:20.578Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:34:21.706Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:34:21.709Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:34:22.073Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:34:22.074Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:34:23.033Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:34:23.037Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:34:23.436Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:34:23.437Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:35:12.537Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:35:12.541Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:35:13.568Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:35:13.575Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:35:13.933Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:35:13.934Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:35:14.971Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:35:14.975Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:35:15.370Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:35:15.372Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:39:55.519Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:39:55.523Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:39:56.738Z",
+    "fn": "lesson:loaded",
+    "lesson": "10",
+    "detail": "words=13"
+  },
+  {
+    "ts": "2026-05-06T10:39:56.746Z",
+    "fn": "session:resume",
+    "lesson": "10",
+    "detail": "fromIndex=12"
+  },
+  {
+    "ts": "2026-05-06T10:39:57.144Z",
+    "fn": "handleContinue",
+    "lesson": "10",
+    "detail": "without"
+  },
+  {
+    "ts": "2026-05-06T10:39:57.152Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "10",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:39:57.251Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:39:57.254Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:39:57.627Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:39:57.629Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:40:42.405Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:40:42.407Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:40:43.387Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:40:43.390Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:40:51.981Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:40:51.995Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:40:51.996Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:40:52.006Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-06T10:40:58.748Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:40:58.750Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:41:13.017Z",
+    "fn": "finishSession:start",
+    "lesson": "1",
+    "data": {
+      "continue": 1,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-05-06T10:41:13.099Z",
+    "fn": "finishSession:error",
+    "lesson": "1",
+    "detail": "AxiosError: Request failed with status code 404"
+  },
+  {
+    "ts": "2026-05-06T10:41:14.612Z",
+    "fn": "finishSession:start",
+    "lesson": "1",
+    "data": {
+      "continue": 1,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-05-06T10:41:14.679Z",
+    "fn": "finishSession:error",
+    "lesson": "1",
+    "detail": "AxiosError: Request failed with status code 404"
+  },
+  {
+    "ts": "2026-05-06T10:41:15.422Z",
+    "fn": "finishSession:start",
+    "lesson": "1",
+    "data": {
+      "continue": 1,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-05-06T10:41:15.483Z",
+    "fn": "finishSession:error",
+    "lesson": "1",
+    "detail": "AxiosError: Request failed with status code 404"
+  },
+  {
+    "ts": "2026-05-06T10:41:16.263Z",
+    "fn": "finishSession:start",
+    "lesson": "1",
+    "data": {
+      "continue": 1,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-05-06T10:41:16.317Z",
+    "fn": "finishSession:error",
+    "lesson": "1",
+    "detail": "AxiosError: Request failed with status code 404"
+  },
+  {
+    "ts": "2026-05-06T10:41:19.982Z",
+    "fn": "finishSession:start",
+    "lesson": "1",
+    "data": {
+      "continue": 1,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-05-06T10:41:20.057Z",
+    "fn": "finishSession:error",
+    "lesson": "1",
+    "detail": "AxiosError: Request failed with status code 404"
+  },
+  {
+    "ts": "2026-05-06T10:41:34.919Z",
+    "fn": "finishSession:start",
+    "lesson": "1",
+    "data": {
+      "continue": 1,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-05-06T10:41:34.997Z",
+    "fn": "finishSession:error",
+    "lesson": "1",
+    "detail": "AxiosError: Request failed with status code 404"
+  },
+  {
+    "ts": "2026-05-06T10:42:21.276Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:42:21.280Z",
+    "fn": "session:new",
+    "lesson": "1"
+  },
+  {
+    "ts": "2026-05-06T10:42:24.678Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "dictionary"
+  },
+  {
+    "ts": "2026-05-06T10:42:28.982Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "example"
+  },
+  {
+    "ts": "2026-05-06T10:42:29.334Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "geography"
+  },
+  {
+    "ts": "2026-05-06T10:42:29.535Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "history"
+  },
+  {
+    "ts": "2026-05-06T10:42:29.710Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "mistake"
+  },
+  {
+    "ts": "2026-05-06T10:42:29.879Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "practice"
+  },
+  {
+    "ts": "2026-05-06T10:42:30.062Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "problem"
+  },
+  {
+    "ts": "2026-05-06T10:42:30.232Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "reading"
+  },
+  {
+    "ts": "2026-05-06T10:42:30.379Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "report"
+  },
+  {
+    "ts": "2026-05-06T10:42:30.552Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "result"
+  },
+  {
+    "ts": "2026-05-06T10:42:30.710Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "science"
+  },
+  {
+    "ts": "2026-05-06T10:42:30.889Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "section"
+  },
+  {
+    "ts": "2026-05-06T10:42:31.067Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "skill"
+  },
+  {
+    "ts": "2026-05-06T10:42:31.230Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "spelling"
+  },
+  {
+    "ts": "2026-05-06T10:42:31.431Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "subject"
+  },
+  {
+    "ts": "2026-05-06T10:42:31.632Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-06T10:42:31.635Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=16"
+  },
+  {
+    "ts": "2026-05-06T10:44:10.363Z",
+    "fn": "finishSession:start",
+    "lesson": "1",
+    "data": {
+      "continue": 16,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-05-06T10:44:10.470Z",
+    "fn": "finishSession:error",
+    "lesson": "1",
+    "detail": "AxiosError: Request failed with status code 404"
+  },
+  {
+    "ts": "2026-05-06T10:45:24.483Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:45:24.490Z",
+    "fn": "session:new",
+    "lesson": "1"
+  },
+  {
+    "ts": "2026-05-06T10:49:30.403Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-06T10:49:30.412Z",
+    "fn": "session:new",
+    "lesson": "1"
+  },
+  {
+    "ts": "2026-05-06T10:49:39.538Z",
+    "fn": "lesson:loaded",
+    "lesson": "2",
+    "detail": "words=23"
+  },
+  {
+    "ts": "2026-05-06T10:49:39.548Z",
+    "fn": "session:new",
+    "lesson": "2"
+  },
+  {
+    "ts": "2026-05-06T10:49:41.493Z",
+    "fn": "lesson:loaded",
+    "lesson": "3",
+    "detail": "words=25"
+  },
+  {
+    "ts": "2026-05-06T10:49:41.501Z",
+    "fn": "session:resume",
+    "lesson": "3",
+    "detail": "fromIndex=24"
+  },
+  {
+    "ts": "2026-05-06T10:49:43.655Z",
+    "fn": "lesson:loaded",
+    "lesson": "3",
+    "detail": "words=25"
+  },
+  {
+    "ts": "2026-05-06T10:49:43.664Z",
+    "fn": "session:resume",
+    "lesson": "3",
+    "detail": "fromIndex=24"
+  },
+  {
+    "ts": "2026-05-06T10:49:43.668Z",
+    "fn": "lesson:loaded",
+    "lesson": "3",
+    "detail": "words=25"
+  },
+  {
+    "ts": "2026-05-06T10:49:43.694Z",
+    "fn": "session:resume",
+    "lesson": "3",
+    "detail": "fromIndex=24"
+  },
+  {
+    "ts": "2026-05-06T10:49:45.985Z",
+    "fn": "handleContinue",
+    "lesson": "3",
+    "detail": "watch"
+  },
+  {
+    "ts": "2026-05-06T10:49:45.991Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "3",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-06T10:49:49.242Z",
+    "fn": "finishSession:start",
+    "lesson": "3",
+    "data": {
+      "continue": 1,
+      "remembered": 0
+    }
+  },
+  {
+    "ts": "2026-05-06T10:49:49.910Z",
+    "fn": "finishSession:done",
+    "lesson": "3",
+    "data": {
+      "newWordsCount": 1,
+      "wordsSaved": [
+        "watch"
+      ]
+    }
   }
 ]

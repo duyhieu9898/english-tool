@@ -12,6 +12,10 @@ import userDataRouter    from './routes/userData.js';
 import { loadLessons }   from './db/contentDb.js';
 import { USER_DB_PATH }  from './db/paths.js';
 import { logger }        from './utils/logger.js';
+import { connectDB }     from './db/mongo.js';
+
+// Connect to MongoDB
+connectDB();
 
 const app  = express();
 const PORT = 3001;

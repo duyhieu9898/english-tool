@@ -10,6 +10,9 @@ test.describe('Review Modules', () => {
     const caughtUp = page.locator('text=ALL CAUGHT UP!');
     const reviewEngine = page.locator('text=DAILY REVIEW');
 
+    // Wait for either state to appear (handling loading state)
+    await expect(caughtUp.or(reviewEngine)).toBeVisible({ timeout: 15000 });
+
     if (await caughtUp.isVisible()) {
       console.log('No words due today, testing "Return Home"');
       await page.click('text=Return Home');
