@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "I have two pets."
+      "sentence": "I have two pets"
     },
     {
       "id": "2",
-      "sentence": "Max is a dog."
+      "sentence": "Max is a dog"
     },
     {
       "id": "3",
-      "sentence": "He is brown and white."
+      "sentence": "He is brown and white"
     },
     {
       "id": "4",
-      "sentence": "Luna is a cat."
+      "sentence": "Luna is a cat"
     },
     {
       "id": "5",
-      "sentence": "She sleeps on my bed."
+      "sentence": "She sleeps on my bed"
     },
     {
       "id": "6",
-      "sentence": "My pets are my best friends."
+      "sentence": "My pets are my best friend's"
     }
   ]
 }

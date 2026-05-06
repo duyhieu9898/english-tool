@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Every Saturday, my family has a special tradition."
+      "sentence": "Every Saturday my family has a special tradition"
     },
     {
       "id": "2",
-      "sentence": "We cook dinner together."
+      "sentence": "We cook dinner together"
     },
     {
       "id": "3",
-      "sentence": "She has a secret recipe for chicken soup that everyone loves."
+      "sentence": "She has a secret recipe for chicken soup that everyone loves"
     },
     {
       "id": "4",
-      "sentence": "My dad buys fresh vegetables like carrots and potatoes."
+      "sentence": "My dad buys fresh vegetables like carrots and potatoes"
     },
     {
       "id": "5",
-      "sentence": "In the afternoon, we start cooking in the kitchen."
+      "sentence": "In the afternoon we start cooking in the kitchen"
     },
     {
       "id": "6",
-      "sentence": "This tradition makes us feel happy and close to each other."
+      "sentence": "This tradition makes us feel happy and close to each other"
     }
   ]
 }

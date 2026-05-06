@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "A search engine is a website that helps you find information on the internet."
+      "sentence": "A search engine is a website that helps you find information on the internet"
     },
     {
       "id": "2",
-      "sentence": "Google is the most famous search engine."
+      "sentence": "Google is the most famous search engine"
     },
     {
       "id": "3",
-      "sentence": "You type keywords into the search box."
+      "sentence": "You type keywords into the search box"
     },
     {
       "id": "4",
-      "sentence": "Then, the search engine shows you a list of results."
+      "sentence": "Then the search engine shows you a list of results"
     },
     {
       "id": "5",
-      "sentence": "This list is called a SERP (Search Engine Results Page)."
+      "sentence": "This list is called a SERP Search Engine Result's Page"
     },
     {
       "id": "6",
-      "sentence": "Good SEO makes a website easy for Google to find."
+      "sentence": "Good SEO makes a website easy for Google to find"
     }
   ]
 }

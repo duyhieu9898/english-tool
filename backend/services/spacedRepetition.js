@@ -22,8 +22,7 @@ export const calculateNextReview = (currentLevel, isCorrect) => {
     newLevel = 1;
   }
 
-  const daysToAdd = INTERVALS[newLevel] || 1;
-
+  const daysToAdd = isCorrect ? (INTERVALS[currentLevel] || 1) : 0;
   const date = new Date();
   date.setDate(date.getDate() + daysToAdd);
 

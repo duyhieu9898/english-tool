@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "In modern web applications, secure user authentication is paramount."
+      "sentence": "In modern web applications secure user authentication is paramount"
     },
     {
       "id": "2",
-      "sentence": "A JWT is a compact, self-contained way for securely transmitting information between parties as a JSON object."
+      "sentence": "A JWT is a compact self contained way for securely transmitting information between parties as a JSON object"
     },
     {
       "id": "3",
-      "sentence": "The browser stores this token (usually in local storage or a cookie) and includes it in the header of future API requests to verify the user's identity."
+      "sentence": "The browser stores this token usually in local storage or a cookie and includes it in the header of future API requests to verify the users identity"
     },
     {
       "id": "4",
-      "sentence": "OAuth, on the other hand, is an open-standard authorization protocol that allows users to grant third-party applications access to their information without sharing passwords—such as 'Login with Google'."
+      "sentence": "OAuth on the other hand is an open standard authorization protocol that allows users to grant third party applications access to their information without sharing passwords such as Login with Google"
     },
     {
       "id": "5",
-      "sentence": "While JWT handles authentication (who you are), OAuth is primarily about authorization (what you can do)."
+      "sentence": "While JWT handles authentication who you are OAuth is primarily about authorization what you can do"
     }
   ]
 }

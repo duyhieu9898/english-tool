@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "The terminal, or command line, is a powerful tool for developers."
+      "sentence": "The terminal or command line is a powerful tool for developers"
     },
     {
       "id": "2",
-      "sentence": "Instead of using a mouse, you type commands to talk to your computer."
+      "sentence": "Instead of using a mouse you type commands to talk to your computer"
     },
     {
       "id": "3",
-      "sentence": "Most frontend developers use the terminal daily to manage their projects."
+      "sentence": "Most front end developers use the terminal daily to manage their projects"
     },
     {
       "id": "4",
-      "sentence": "Common commands include 'ls' to list files and 'cd' to change folders."
+      "sentence": "Common commands include ls to list files and cd to change folders"
     },
     {
       "id": "5",
-      "sentence": "Using the terminal is often much faster than using a Graphical User Interface."
+      "sentence": "Using the terminal is often much faster than using a Graphical User Interface"
     },
     {
       "id": "6",
-      "sentence": "Once you learn the basic commands, you will feel more comfortable and efficient."
+      "sentence": "Once you learn the basic commands you will feel more comfortable and efficient"
     }
   ]
 }

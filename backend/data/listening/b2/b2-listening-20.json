@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Genetic engineering, often referred to as gene editing, is a revolutionary scientific field that involves directly manipulating an organism's DNA, the fundamental building block of life."
+      "sentence": "Genetic engineering often referred to as gene editing is a revolutionary scientific field that involves directly manipulating an organisms DNA the fundamental building block of life"
     },
     {
       "id": "2",
-      "sentence": "This technology holds immense promise for addressing some of humanity's most pressing challenges, from curing diseases to improving food security, but it also raises profound ethical and safety concerns."
+      "sentence": "This technology holds immense promise for addressing some of humanity's most pressing challenges from curing diseases to improving food security but it also raises profound ethical and safety concerns"
     },
     {
       "id": "3",
-      "sentence": "One of the most exciting possibilities lies in medicine."
+      "sentence": "One of the most exciting possibilities lies in medicine"
     },
     {
       "id": "4",
-      "sentence": "However, the powerful capabilities of genetic engineering come with a set of serious perils and ethical dilemmas."
+      "sentence": "However the powerful capabilities of genetic engineering come with a set of serious perils and ethical dilemmas"
     },
     {
       "id": "5",
-      "sentence": "In conclusion, genetic engineering stands as a testament to human ingenuity, offering transformative solutions to age-old problems."
+      "sentence": "In conclusion genetic engineering stands as a testament to human ingenuity offering transformative solutions to age old problems"
     }
   ]
 }

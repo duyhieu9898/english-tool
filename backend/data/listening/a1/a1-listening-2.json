@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Hello! My name is Lily."
+      "sentence": "Hello My name is Lily"
     },
     {
       "id": "2",
-      "sentence": "I have a small family."
+      "sentence": "I have a small family"
     },
     {
       "id": "3",
-      "sentence": "This is my father."
+      "sentence": "This is my father"
     },
     {
       "id": "4",
-      "sentence": "His name is Tom."
+      "sentence": "Hi's name is Tom"
     },
     {
       "id": "5",
-      "sentence": "He is a doctor."
+      "sentence": "He is a doctor"
     },
     {
       "id": "6",
-      "sentence": "This is my mother."
+      "sentence": "This is my mother"
     }
   ]
 }

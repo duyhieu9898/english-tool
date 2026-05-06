@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "I go to school every day."
+      "sentence": "I go to school every day"
     },
     {
       "id": "2",
-      "sentence": "The bus stop is near my house."
+      "sentence": "The bus stop is near my house"
     },
     {
       "id": "3",
-      "sentence": "The bus is big and red."
+      "sentence": "The bus is big and red"
     },
     {
       "id": "4",
-      "sentence": "I buy a ticket from the driver."
+      "sentence": "I buy a ticket from the driver"
     },
     {
       "id": "5",
-      "sentence": "I like to sit next to the window."
+      "sentence": "I like to sit next to the window"
     },
     {
       "id": "6",
-      "sentence": "Taking the bus is easy and good for the city!"
+      "sentence": "Taking the bus is easy and good for the city"
     }
   ]
 }

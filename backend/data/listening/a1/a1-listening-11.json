@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Today, I feel sick."
+      "sentence": "Today I feel sick"
     },
     {
       "id": "2",
-      "sentence": "My head hurts, and I have a cough."
+      "sentence": "My head hurts and I have a cough"
     },
     {
       "id": "3",
-      "sentence": "The doctor is a kind woman."
+      "sentence": "The doctor is a kind woman"
     },
     {
       "id": "4",
-      "sentence": "She looks at my throat."
+      "sentence": "She looks at my throat"
     },
     {
       "id": "5",
-      "sentence": "You need some medicine."
+      "sentence": "You need some medicine"
     },
     {
       "id": "6",
-      "sentence": "Soon, I feel a little better."
+      "sentence": "Soon I feel a little better"
     }
   ]
 }

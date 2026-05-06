@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Progressive Web Apps (PWAs) aim to bridge the gap between websites and native mobile applications, providing a fast, reliable, and engaging experience."
+      "sentence": "Progressive Web App's PWAs aim to bridge the gap between websites and native mobile applications providing a fast reliable and engaging experience"
     },
     {
       "id": "2",
-      "sentence": "The core technology that enables traditional web pages to behave like native apps is the 'Service Worker'."
+      "sentence": "The core technology that enables traditional web pages to behave like native apps is the Service Worker"
     },
     {
       "id": "3",
-      "sentence": "A service worker is a specialized JavaScript file that runs in the background, separate from the main browser thread."
+      "sentence": "A service worker is a specialized JavaScript file that runs in the background separate from the main browser thread"
     },
     {
       "id": "4",
-      "sentence": "It acts as a programmable network proxy, allowing you to intercept network requests and cache resources for offline use."
+      "sentence": "It acts as a programmable network proxy allowing you to intercept network requests and cache resources for offline use"
     },
     {
       "id": "5",
-      "sentence": "By implementing a PWA strategy, developers can ensure their applications remain functional and responsive even in low-connectivity environments, significantly improving the overall user retention and satisfaction."
+      "sentence": "By implementing a PWA strategy developers can ensure their applications remain functional and responsive even in low connectivity environments significantly improving the overall user retention and satisfaction"
     }
   ]
 }

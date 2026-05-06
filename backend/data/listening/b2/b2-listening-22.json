@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Building scalable Vue.js applications requires a clear strategy for communication between components."
+      "sentence": "Building scalable Vuejs applications requires a clear strategy for communication between components"
     },
     {
       "id": "2",
-      "sentence": "The most fundamental pattern is 'Props down, Events up'."
+      "sentence": "The most fundamental pattern is Props down Events up"
     },
     {
       "id": "3",
-      "sentence": "If a child component needs to trigger a change or notify the parent, it 'Emits' an event using the '$emit' function."
+      "sentence": "If a child component needs to trigger a change or notify the parent it Emits an event using the emit function"
     },
     {
       "id": "4",
-      "sentence": "This keeps the data flow predictable and follows the principle of 'one-way data flow'."
+      "sentence": "This keeps the data flow predictable and follows the principle of one way data flow"
     },
     {
       "id": "5",
-      "sentence": "Understanding these patterns is crucial for managing application state without creating 'prop drilling'—the anti-pattern of passing props through many layers of components that don't need the data themselves."
+      "sentence": "Understanding these patterns is crucial for managing application state without creating prop drilling the anti pattern of passing props through many layers of components that don't need the data themselves"
     }
   ]
 }

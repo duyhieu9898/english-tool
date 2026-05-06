@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "An API is like a bridge that allows different software systems to talk to each other."
+      "sentence": "An API is like a bridge that allows different software systems to talk to each other"
     },
     {
       "id": "2",
-      "sentence": "For a frontend developer, an API is how the website gets data from a server."
+      "sentence": "For a front end developer an API is how the website gets data from a server"
     },
     {
       "id": "3",
-      "sentence": "The frontend sends a 'Request' to an API, and the server sends back a 'Response'."
+      "sentence": "The front end sends a Request to an API and the server sends back a Response"
     },
     {
       "id": "4",
-      "sentence": "This data is usually in a format called 'JSON'."
+      "sentence": "This data is usually in a format called JSON"
     },
     {
       "id": "5",
-      "sentence": "JSON is easy for both humans and computers to read."
+      "sentence": "JSON is easy for both humans and computers to read"
     },
     {
       "id": "6",
-      "sentence": "Understanding how to fetch data from an API is a fundamental skill."
+      "sentence": "Understanding how to fetch data from an API is a fundamental skill"
     }
   ]
 }

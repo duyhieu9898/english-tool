@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Reactive programming is a declarative paradigm that focuses on data streams and the propagation of change."
+      "sentence": "Reactive programming is a declarative paradigm that focuses on data streams and the propagation of change"
     },
     {
       "id": "2",
-      "sentence": "In the frontend world, 'RxJS' is the most powerful library for implementing this approach."
+      "sentence": "In the front end world RxJS is the most powerful library for implementing this approach"
     },
     {
       "id": "3",
-      "sentence": "Instead of thinking about single events, RxJS allows you to treat everything as an 'Observable' stream of data over time—from user clicks and mouse movements to HTTP requests."
+      "sentence": "Instead of thinking about single events RxJS allows you to treat everything as an Observable stream of data over time from user clicks and mouse movements to HTTP requests"
     },
     {
       "id": "4",
-      "sentence": "Using a variety of 'Operators' like 'map', 'filter', and 'switchMap', you can transform and combine these streams in a highly sophisticated way."
+      "sentence": "Using a variety of Operator's like map filter and switchMap you can transform and combine these streams in a highly sophisticated way"
     },
     {
       "id": "5",
-      "sentence": "While RxJS has a steep learning curve, mastering it provides a level of control over asynchronous logic that is difficult to achieve with standard Promises alone."
+      "sentence": "While RxJS has a steep learning curve mastering it provides a level of control over asynchronous logic that is difficult to achieve with standard Promises alone"
     }
   ]
 }

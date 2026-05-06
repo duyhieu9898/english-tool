@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "One of the most powerful features of Vue.js is its use of directives."
+      "sentence": "One of the most powerful features of Vuejs is its use of directives"
     },
     {
       "id": "2",
-      "sentence": "Directives are special attributes with the 'v-' prefix that apply reactive behavior to the DOM."
+      "sentence": "Directive's are special attributes with the v prefix that apply reactive behavior to the DOM"
     },
     {
       "id": "3",
-      "sentence": "Two of the most commonly used directives are 'v-if' and 'v-for'."
+      "sentence": "Two of the most commonly used directives are v-if and v-for"
     },
     {
       "id": "4",
-      "sentence": "The 'v-if' directive is used for conditional rendering; it adds or removes an element based on the truthiness of an expression."
+      "sentence": "The v-if directive is used for conditional rendering it adds or removes an element based on the truthiness of an expression"
     },
     {
       "id": "5",
-      "sentence": "The 'v-for' directive is used to render a list of items based on an array."
+      "sentence": "The v-for directive is used to render a list of items based on an array"
     },
     {
       "id": "6",
-      "sentence": "Mastering these directives allows developers to create highly interactive and data-driven user interfaces with minimal effort."
+      "sentence": "Mastering these directives allows developers to create highly interactive and data driven user interfaces with minimal effort"
     }
   ]
 }

@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "CSS provides many different units to define sizes like width and height."
+      "sentence": "CSS provides many different units to define sizes like width and height"
     },
     {
       "id": "2",
-      "sentence": "These are divided into absolute and relative units."
+      "sentence": "These are divided into absolute and relative units"
     },
     {
       "id": "3",
-      "sentence": "'Pixels' are absolute units and look the same on most screens."
+      "sentence": "Pixel's are absolute units and look the same on most screens"
     },
     {
       "id": "4",
-      "sentence": "However, modern developers prefer relative units like 'rem' and 'em'."
+      "sentence": "However modern developers prefer relative units like rem and em"
     },
     {
       "id": "5",
-      "sentence": "Percentage is useful for layout, such as setting a sidebar width."
+      "sentence": "Percentage is useful for layout such as setting a sidebar width"
     },
     {
       "id": "6",
-      "sentence": "Choosing the correct unit is important for creating a flexible design."
+      "sentence": "Choosing the correct unit is important for creating a flexible design"
     }
   ]
 }

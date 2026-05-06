@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Today is Mia's birthday."
+      "sentence": "Today is Mia's birthday"
     },
     {
       "id": "2",
-      "sentence": "She is seven years old."
+      "sentence": "She is seven years old"
     },
     {
       "id": "3",
-      "sentence": "Her house is full of balloons."
+      "sentence": "Her house is full of balloons"
     },
     {
       "id": "4",
-      "sentence": "Mia's mom brings a big chocolate cake."
+      "sentence": "Mia's mom brings a big chocolate cake"
     },
     {
       "id": "5",
-      "sentence": "She blows out the candles."
+      "sentence": "She blows out the candles"
     },
     {
       "id": "6",
-      "sentence": "Then, she opens her presents."
+      "sentence": "Then she opens her presents"
     }
   ]
 }

@@ -36,17 +36,10 @@ export const DailyReview: React.FC = () => {
 
   const [sessionResults, setSessionResults] = useState<{ count: number } | null>(null);
 
-  const handleComplete = async (reviews: ReviewResult[]) => {
+  const handleComplete = (reviews: ReviewResult[]) => {
     // Set completion state immediately with count to avoid flicker and data clearing issues
     setSessionResults({ count: reviews.filter((r) => r.isCorrect).length });
     setIsCompleted(true);
-
-    try {
-      const today = new Date().toISOString().split('T')[0];
-      await finishMutation.mutateAsync({ clientDate: today, reviews });
-    } catch (e) {
-      console.error('Failed to finish review stats', e);
-    }
   };
 
   if (isLoading) {
@@ -130,6 +123,7 @@ const DailyReviewEngine: React.FC<{
   const [showError, setShowError] = useState(false);
 
   const { speak } = useTTS();
+  const finishMutation = useFinishSessionMutation();
   const deleteWordProgress = useDeleteWordProgressMutation();
   const reviewsRef = React.useRef<ReviewResult[]>([]);
   const inputRef = React.useRef<HTMLInputElement>(null);
@@ -170,10 +164,24 @@ const DailyReviewEngine: React.FC<{
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!currentWord || showError || !inputValue.trim()) return;
 
     const isCorrect = inputValue.trim().toLowerCase() === currentWord.term.toLowerCase();
+    const today = new Date().toISOString().split('T')[0];
+
+    // Save result to DB immediately
+    finishMutation.mutate({
+      clientDate: today,
+      reviews: [
+        {
+          term: currentWord.term,
+          lessonId: currentWord.lessonId,
+          isCorrect,
+          isGeneralReview: false,
+        },
+      ],
+    });
 
     if (isCorrect) {
       sounds.correct();

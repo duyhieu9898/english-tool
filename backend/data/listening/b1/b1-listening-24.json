@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "As development teams grow, managing code changes becomes more complex."
+      "sentence": "As development teams grow managing code changes becomes more complex"
     },
     {
       "id": "2",
-      "sentence": "This is where branching strategies like 'Gitflow' are helpful."
+      "sentence": "This is where branching strategies like Git flow are helpful"
     },
     {
       "id": "3",
-      "sentence": "The 'main' branch contains the production-ready code."
+      "sentence": "The main branch contains the production ready code"
     },
     {
       "id": "4",
-      "sentence": "When a developer starts working on a new task, they create a 'feature' branch from develop."
+      "sentence": "When a developer starts working on a new task they create a feature branch from develop"
     },
     {
       "id": "5",
-      "sentence": "For urgent bug fixes in production, a 'hotfix' branch is created directly from main."
+      "sentence": "For urgent bug fixes in production a hotfix branch is created directly from main"
     },
     {
       "id": "6",
-      "sentence": "Using a consistent branching strategy like this prevents developers from overwriting each other's work and ensures a stable release process."
+      "sentence": "Using a consistent branching strategy like this prevents developers from overwriting each others work and ensures a stable release process"
     }
   ]
 }

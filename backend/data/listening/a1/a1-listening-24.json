@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "A keyboard is a very important tool for a frontend developer."
+      "sentence": "A keyboard is a very important tool for a front end developer"
     },
     {
       "id": "2",
-      "sentence": "Developers use special buttons called shortcuts to work faster."
+      "sentence": "Developer's use special buttons called shortcuts to work faster"
     },
     {
       "id": "3",
-      "sentence": "Ctrl + C is for 'Copy' and Ctrl + V is for 'Paste'."
+      "sentence": "Ctrl C is for Copy and Ctrl V is for Paste"
     },
     {
       "id": "4",
-      "sentence": "These shortcuts save a lot of time."
+      "sentence": "These shortcuts save a lot of time"
     },
     {
       "id": "5",
-      "sentence": "Another common shortcut is Ctrl + Z to 'Undo'."
+      "sentence": "Another common shortcut is Ctrl Z to Undo"
     },
     {
       "id": "6",
-      "sentence": "Learning these shortcuts helps you write code with fewer mouse clicks."
+      "sentence": "Learning these shortcuts helps you write code with fewer mouse clicks"
     }
   ]
 }

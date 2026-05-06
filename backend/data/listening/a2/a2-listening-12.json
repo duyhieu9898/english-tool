@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Last summer, I had my first trip abroad."
+      "sentence": "Last summer I had my first trip abroad"
     },
     {
       "id": "2",
-      "sentence": "I went to Thailand with my family."
+      "sentence": "I went to Thailand with my family"
     },
     {
       "id": "3",
-      "sentence": "Thailand is a beautiful country."
+      "sentence": "Thailand is a beautiful country"
     },
     {
       "id": "4",
-      "sentence": "We saw old temples with golden roofs."
+      "sentence": "We saw old temples with golden roofs"
     },
     {
       "id": "5",
-      "sentence": "The people in Thailand were very friendly."
+      "sentence": "The people in Thailand were very friendly"
     },
     {
       "id": "6",
-      "sentence": "My favorite part was visiting a floating market."
+      "sentence": "My favorite part was visiting a floating market"
     }
   ]
 }

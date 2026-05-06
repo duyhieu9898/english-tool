@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "The Dependency Inversion Principle (DIP) is the final piece of the SOLID acronym and is crucial for building decoupled and testable frontend architectures."
+      "sentence": "The Dependency Inversion Principle DIP is the final piece of the SOLID acronym and is crucial for building decoupled and testable front end architectures"
     },
     {
       "id": "2",
-      "sentence": "DIP states two main things: high-level modules should not depend on low-level modules—both should depend on abstractions—and abstractions should not depend on details."
+      "sentence": "DIP states two main things high level modules should not depend on low level modules both should depend on abstractions and abstractions should not depend on details"
     },
     {
       "id": "3",
-      "sentence": "In a React or Vue application, this often means your UI components should not directly instantiate API services or data providers."
+      "sentence": "In a React or Vue application this often means your UI components should not directly instantiate API services or data providers"
     },
     {
       "id": "4",
-      "sentence": "Instead, you should inject these dependencies (Dependency Injection) through props or specialized providers."
+      "sentence": "Instead you should inject these dependencies Dependency Injection through props or specialized providers"
     },
     {
       "id": "5",
-      "sentence": "Adhering to DIP makes your codebase more flexible and allows for a clearer separation of concerns between your business logic and your presentation layer."
+      "sentence": "Adhering to DIP makes your codebase more flexible and allows for a clearer separation of concerns between your business logic and your presentation layer"
     }
   ]
 }

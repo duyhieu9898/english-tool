@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "While unit tests are great for testing individual functions, they don't ensure that different parts of your system work together correctly."
+      "sentence": "While unit tests are great for testing individual functions they don't ensure that different parts of your system work together correctly"
     },
     {
       "id": "2",
-      "sentence": "Integration tests check how multiple components or services interact, while E2E tests simulate a real user's experience across the entire application."
+      "sentence": "Integration tests check how multiple components or services interact while E2E tests simulate a real users experience across the entire application"
     },
     {
       "id": "3",
-      "sentence": "Popular modern tools for this include 'Cypress' and 'Playwright'."
+      "sentence": "Popular modern tools for this include Cypress and Playwright"
     },
     {
       "id": "4",
-      "sentence": "These tools allow you to write scripts that automatically open a browser, click buttons, fill in forms, and verify that the correct results appear."
+      "sentence": "These tools allow you to write scripts that automatically open a browser click buttons fill in forms and verify that the correct results appear"
     },
     {
       "id": "5",
-      "sentence": "Although writing these tests is more time-consuming than unit tests, they provide the highest level of confidence that your application is ready for production and that your most important user flows are truly working."
+      "sentence": "Although writing these tests is more time consuming than unit tests they provide the highest level of confidence that your application is ready for production and that your most important user flows are truly working"
     }
   ]
 }

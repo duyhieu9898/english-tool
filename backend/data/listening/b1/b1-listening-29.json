@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "LinkedIn is the most important platform for professional networking and finding a job in the tech industry."
+      "sentence": "LinkedIn is the most important platform for professional networking and finding a job in the tech industry"
     },
     {
       "id": "2",
-      "sentence": "For a developer, a strong LinkedIn profile can open many doors."
+      "sentence": "For a developer a strong LinkedIn profile can open many doors"
     },
     {
       "id": "3",
-      "sentence": "Your profile should include a clear headline that highlights your current role and main tech stack."
+      "sentence": "Your profile should include a clear headline that highlights your current role and main tech stack"
     },
     {
       "id": "4",
-      "sentence": "You should also have an 'About' section that tells your professional story and your passion for coding."
+      "sentence": "You should also have an About section that tells your professional story and your passion for coding"
     },
     {
       "id": "5",
-      "sentence": "Sharing your projects from GitHub or writing posts about things you've learned can also help you stand out."
+      "sentence": "Sharing your projects from GitHub or writing posts about things youve learned can also help you stand out"
     },
     {
       "id": "6",
-      "sentence": "By connecting with other developers, recruiters, and companies, you increase your chances of finding exciting new opportunities and staying updated on the latest tech trends."
+      "sentence": "By connecting with other developers recruiters and companies you increase your chances of finding exciting new opportunities and staying updated on the latest tech trends"
     }
   ]
 }

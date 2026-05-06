@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "To build reliable web applications, manual testing is not enough."
+      "sentence": "To build reliable web applications manual testing is not enough"
     },
     {
       "id": "2",
-      "sentence": "This is where automated testing comes in."
+      "sentence": "This is where automated testing comes in"
     },
     {
       "id": "3",
-      "sentence": "A unit test focuses on verifying the individual blocks of code, usually a single function or component, to ensure they work correctly in isolation."
+      "sentence": "A unit test focuses on verifying the individual blocks of code usually a single function or component to ensure they work correctly in isolation"
     },
     {
       "id": "4",
-      "sentence": "Popular tools for this in the frontend ecosystem include 'Jest' and 'Vitest'."
+      "sentence": "Popular tools for this in the front end ecosystem include Jest and Vitest"
     },
     {
       "id": "5",
-      "sentence": "While writing tests takes extra time initially, it saves a lot of effort in the long run by catching bugs as soon as they are introduced."
+      "sentence": "While writing tests takes extra time initially it saves a lot of effort in the long run by catching bugs as soon as they are introduced"
     },
     {
       "id": "6",
-      "sentence": "Automated tests also give developers more confidence in their code when making changes or refactoring."
+      "sentence": "Automated tests also give developers more confidence in their code when making changes or refactoring"
     }
   ]
 }

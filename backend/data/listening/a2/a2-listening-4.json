@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Technology is everywhere in our daily lives."
+      "sentence": "Technology is everywhere in our daily lives"
     },
     {
       "id": "2",
-      "sentence": "Many people wake up with their smartphone alarm."
+      "sentence": "Many people wake up with their smartphone alarm"
     },
     {
       "id": "3",
-      "sentence": "The internet helps them find information quickly."
+      "sentence": "The internet helps them find information quickly"
     },
     {
       "id": "4",
-      "sentence": "In the kitchen, we have refrigerators to keep food fresh."
+      "sentence": "In the kitchen we have refrigerators to keep food fresh"
     },
     {
       "id": "5",
-      "sentence": "Technology makes our lives easier and more connected."
+      "sentence": "Technology makes our lives easier and more connected"
     },
     {
       "id": "6",
-      "sentence": "It helps us learn, work, and relax every day."
+      "sentence": "It helps us learn work and relax every day"
     }
   ]
 }

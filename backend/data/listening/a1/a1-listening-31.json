@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "A browser is a program you use to see websites."
+      "sentence": "A browser is a program you use to see websites"
     },
     {
       "id": "2",
-      "sentence": "Google Chrome is the most popular browser."
+      "sentence": "Google Chrome is the most popular browser"
     },
     {
       "id": "3",
-      "sentence": "Browsers read HTML and CSS to show you a beautiful page."
+      "sentence": "Browser's read HTML and CSS to show you a beautiful page"
     },
     {
       "id": "4",
-      "sentence": "Each browser can be a little different."
+      "sentence": "Each browser can be a little different"
     },
     {
       "id": "5",
-      "sentence": "Developers need to test their websites on many browsers."
+      "sentence": "Developer's need to test their websites on many browsers"
     },
     {
       "id": "6",
-      "sentence": "Keeping your browser updated is important for safety and speed."
+      "sentence": "Keeping your browser updated is important for safety and speed"
     }
   ]
 }

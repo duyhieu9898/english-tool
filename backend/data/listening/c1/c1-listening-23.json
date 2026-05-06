@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Design patterns provide standardized solutions to common software design problems."
+      "sentence": "Design patterns provide standardized solutions to common software design problems"
     },
     {
       "id": "2",
-      "sentence": "Two critical patterns for managing object creation in JavaScript are the 'Factory' and 'Singleton' patterns."
+      "sentence": "Two critical patterns for managing object creation in JavaScript are the Factory and Singleton patterns"
     },
     {
       "id": "3",
-      "sentence": "The Factory pattern involves a dedicated function or class that creates other objects based on specific input, allowing you to centralize object creation logic and decouple it from the rest of the application."
+      "sentence": "The Factory pattern involves a dedicated function or class that creates other objects based on specific input allowing you to centralize object creation logic and decouple it from the rest of the application"
     },
     {
       "id": "4",
-      "sentence": "The Singleton pattern, conversely, ensures that a class has only one instance and provides a global point of access to it."
+      "sentence": "The Singleton pattern conversely ensures that a class has only one instance and provides a global point of access to it"
     },
     {
       "id": "5",
-      "sentence": "A skilled developer must recognize the specific scenarios where these patterns add genuine value without over-complicating the system architecture."
+      "sentence": "A skilled developer must recognize the specific scenarios where these patterns add genuine value without overcomplicating the system architecture"
     }
   ]
 }

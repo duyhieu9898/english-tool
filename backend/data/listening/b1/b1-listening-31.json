@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "TypeScript is a popular superset of JavaScript that adds static typing to the language."
+      "sentence": "TypeScript is a popular superset of JavaScript that adds static typing to the language"
     },
     {
       "id": "2",
-      "sentence": "While JavaScript is dynamically typed, meaning a variable's type can change at any time, TypeScript allows you to define types for your variables, functions, and components."
+      "sentence": "While JavaScript is dynamically typed meaning a variables type can change at any time TypeScript allows you to define types for your variables functions and components"
     },
     {
       "id": "3",
-      "sentence": "For example, if you declare a variable as a 'number', TypeScript will give you an error if you try to assign a string to it."
+      "sentence": "For example if you declare a variable as a number TypeScript will give you an error if you try to assign a string to it"
     },
     {
       "id": "4",
-      "sentence": "This 'Type Checking' happens during development, allowing you to catch bugs early and make your code more predictable."
+      "sentence": "This Type Checking happens during development allowing you to catch bugs early and make your code more predictable"
     },
     {
       "id": "5",
-      "sentence": "Many large frontend projects, especially those using React or Vue, now use TypeScript to improve code quality and developer productivity."
+      "sentence": "Many large front end projects especially those using React or Vue now use TypeScript to improve code quality and developer productivity"
     },
     {
       "id": "6",
-      "sentence": "Learning TypeScript is a valuable skill that is highly sought after by employers in the tech industry."
+      "sentence": "Learning TypeScript is a valuable skill that is highly sought after by employers in the tech industry"
     }
   ]
 }

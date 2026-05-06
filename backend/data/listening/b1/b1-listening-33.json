@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Web accessibility means ensuring that websites are usable by everyone, including people with disabilities."
+      "sentence": "Web accessibility means ensuring that websites are usable by everyone including people with disabilities"
     },
     {
       "id": "2",
-      "sentence": "To achieve this, developers follow the 'Web Content Accessibility Guidelines' (WCAG)."
+      "sentence": "To achieve this developers follow the Web Content Accessibility Guideline's WCAG"
     },
     {
       "id": "3",
-      "sentence": "WCAG is based on four main principles: 'Perceivable', 'Operable', 'Understandable', and 'Robust'."
+      "sentence": "WCAG is based on four main principles Perceivable Operable Understandable and Robust"
     },
     {
       "id": "4",
-      "sentence": "For example, 'Perceivable' means providing alternatives for non-text content, like alt text for images."
+      "sentence": "For example Perceivable means providing alternatives for nontext content like alt text for images"
     },
     {
       "id": "5",
-      "sentence": "'Operable' means making all functionality available from a keyboard, so users don't have to rely on a mouse."
+      "sentence": "Operable means making all functionality available from a keyboard so users don't have to rely on a mouse"
     },
     {
       "id": "6",
-      "sentence": "Many countries now have laws requiring websites to meet WCAG standards."
+      "sentence": "Many countries now have laws requiring websites to meet WCAG standards"
     }
   ]
 }

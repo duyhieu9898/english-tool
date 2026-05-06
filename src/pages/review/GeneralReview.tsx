@@ -71,19 +71,9 @@ export const GeneralReview: React.FC = () => {
   const [forgotten, setForgotten] = useState<{ term: string; meaning: string; lesson: string }[]>(
     [],
   );
-  const finishMutation = useFinishSessionMutation();
 
-  const handleComplete = async (reviews: ReviewResult[]) => {
+  const handleComplete = () => {
     setIsCompleted(true);
-    try {
-      const today = new Date().toISOString().split('T')[0];
-      await finishMutation.mutateAsync({
-        clientDate: today,
-        reviews,
-      });
-    } catch (e) {
-      console.error('Failed to finish general review stats', e);
-    }
   };
 
   if (sessionState === 'LOADING') {
@@ -193,6 +183,7 @@ const GeneralReviewEngine: React.FC<{
   const [showError, setShowError] = useState(false);
 
   const { speak } = useTTS();
+  const finishMutation = useFinishSessionMutation();
   const reviewsRef = React.useRef<ReviewResult[]>([]);
   const inputRef = React.useRef<HTMLInputElement>(null);
 
@@ -218,10 +209,24 @@ const GeneralReviewEngine: React.FC<{
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!currentWord || showError || !inputValue.trim()) return;
 
     const isCorrect = inputValue.trim().toLowerCase() === currentWord.term.toLowerCase();
+    const today = new Date().toISOString().split('T')[0];
+
+    // Save result to DB immediately
+    finishMutation.mutate({
+      clientDate: today,
+      reviews: [
+        {
+          term: currentWord.term,
+          lessonId: currentWord.lessonId,
+          isCorrect,
+          isGeneralReview: true,
+        },
+      ],
+    });
 
     if (isCorrect) {
       sounds.correct();

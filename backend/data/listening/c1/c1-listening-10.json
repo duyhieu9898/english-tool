@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "The digital era has undeniably ushered in a period of unprecedented information abundance, simultaneously challenging and redefining our very understanding of truth."
+      "sentence": "The digital era has undeniably ushered in a period of unprecedented information abundance simultaneously challenging and redefining our very understanding of truth"
     },
     {
       "id": "2",
-      "sentence": "This information overload creates fertile ground for misinformation – inaccurate information shared without malicious intent – and disinformation – deliberately fabricated content designed to deceive."
+      "sentence": "This information overload creates fertile ground for misinformation inaccurate information shared without malicious intent and disinformation deliberately fabricated content designed to deceive"
     },
     {
       "id": "3",
-      "sentence": "Furthermore, sophisticated algorithms play a pivotal, often insidious, role in shaping our perceived realities."
+      "sentence": "Furthermore sophisticated algorithms play a pivotal often insidious role in shaping our perceived realities"
     },
     {
       "id": "4",
-      "sentence": "The rapid spread of deepfakes and AI-generated content further complicates matters, as visual and auditory evidence, once considered robust, can now be convincingly manufactured, eroding trust in even seemingly direct observations."
+      "sentence": "The rapid spread of deepfakes and AIgenerated content further complicates matters as visual and auditory evidence once considered robust can now be convincingly manufactured eroding trust in even seemingly direct observations"
     },
     {
       "id": "5",
-      "sentence": "Combating this epistemic disarray requires a multi-faceted approach."
+      "sentence": "Combating this epistemic disarray requires a multifaceted approach"
     }
   ]
 }

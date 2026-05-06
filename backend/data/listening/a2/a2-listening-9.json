@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "My name is Lisa, and I love music very much."
+      "sentence": "My name is Lisa and I love music very much"
     },
     {
       "id": "2",
-      "sentence": "Music is a big part of my day."
+      "sentence": "Music is a big part of my day"
     },
     {
       "id": "3",
-      "sentence": "I really like pop music because it's usually happy and has a good beat."
+      "sentence": "I really like pop music because its usually happy and has a good beat"
     },
     {
       "id": "4",
-      "sentence": "Classical music is very calm and helps me relax."
+      "sentence": "Classical music is very calm and helps me relax"
     },
     {
       "id": "5",
-      "sentence": "If I feel sad, a happy pop song can cheer me up."
+      "sentence": "If I feel sad a happy pop song can cheer me up"
     },
     {
       "id": "6",
-      "sentence": "I can't imagine a day without my favorite tunes."
+      "sentence": "I can't imagine a day without my favorite tunes"
     }
   ]
 }

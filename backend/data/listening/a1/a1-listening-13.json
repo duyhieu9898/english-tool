@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "My favorite food is pizza!"
+      "sentence": "My favorite food is pizza"
     },
     {
       "id": "2",
-      "sentence": "I love pizza very much."
+      "sentence": "I love pizza very much"
     },
     {
       "id": "3",
-      "sentence": "It is so delicious."
+      "sentence": "It is so delicious"
     },
     {
       "id": "4",
-      "sentence": "Pizza has bread, tomato sauce, and cheese."
+      "sentence": "Pizza has bread tomato sauce and cheese"
     },
     {
       "id": "5",
-      "sentence": "We often eat it together on Fridays."
+      "sentence": "We often eat it together on Friday's"
     },
     {
       "id": "6",
-      "sentence": "It makes me happy."
+      "sentence": "It makes me happy"
     }
   ]
 }

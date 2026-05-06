@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "A website should look good on all devices."
+      "sentence": "A website should look good on all devices"
     },
     {
       "id": "2",
-      "sentence": "Small screens like mobile phones have a vertical layout."
+      "sentence": "Small screens like mobile phones have a vertical layout"
     },
     {
       "id": "3",
-      "sentence": "Large screens like desktops have more space."
+      "sentence": "Large screens like desktops have more space"
     },
     {
       "id": "4",
-      "sentence": "This is called 'Responsive Design'."
+      "sentence": "This is called Responsive Design"
     },
     {
       "id": "5",
-      "sentence": "Designers use 'breakpoints' to change the layout between mobile and desktop."
+      "sentence": "Designer's use breakpoints to change the layout between mobile and desktop"
     },
     {
       "id": "6",
-      "sentence": "Most people use the internet on their phones today."
+      "sentence": "Most people use the internet on their phones today"
     }
   ]
 }

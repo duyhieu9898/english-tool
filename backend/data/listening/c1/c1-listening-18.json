@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "The intricate dance between humanity and the microbial world, often overlooked or perceived solely through the lens of pathology, is in fact a foundational pillar of our health."
+      "sentence": "The intricate dance between humanity and the microbial world often overlooked or perceived solely through the lens of pathology is in fact a foundational pillar of our health"
     },
     {
       "id": "2",
-      "sentence": "These SCFAs serve as crucial energy sources for our intestinal cells, maintain gut barrier integrity, and exert anti-inflammatory effects throughout the body."
+      "sentence": "These SCFAs serve as crucial energy sources for our intestinal cells maintain gut barrier integrity and exert antiinflammatory effects throughout the body"
     },
     {
       "id": "3",
-      "sentence": "From birth, exposure to a diverse array of microbes educates developing immune cells, teaching them to distinguish between harmless commensals and dangerous pathogens."
+      "sentence": "From birth exposure to a diverse array of microbes educates developing immune cells teaching them to distinguish between harmless commensals and dangerous pathogens"
     },
     {
       "id": "4",
-      "sentence": "Dysbiosis is increasingly implicated in a wide spectrum of chronic conditions, including inflammatory bowel diseases (IBD), irritable bowel syndrome (IBS), obesity, type 2 diabetes, cardiovascular disease, and even neurodevelopmental and psychiatric disorders through the intricate gut-brain axis."
+      "sentence": "Dysbiosi's is increasingly implicated in a wide spectrum of chronic conditions including inflammatory bowel diseases IBD irritable bowel syndrome IBS obesity type 2 diabetes cardiovascular disease and even neurodevelopmental and psychiatric disorders through the intricate gutbrain axis"
     },
     {
       "id": "5",
-      "sentence": "Acknowledging and nurturing our microbiome is paramount for maintaining robust health and preventing disease."
+      "sentence": "Acknowledging and nurturing our microbiome is paramount for maintaining robust health and preventing disease"
     }
   ]
 }

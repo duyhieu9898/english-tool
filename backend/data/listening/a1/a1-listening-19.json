@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Today is a sunny day."
+      "sentence": "Today is a sunny day"
     },
     {
       "id": "2",
-      "sentence": "I see many tall trees and colorful flowers."
+      "sentence": "I see many tall trees and colorful flowers"
     },
     {
       "id": "3",
-      "sentence": "Some kids are on the swings."
+      "sentence": "Some kids are on the swings"
     },
     {
       "id": "4",
-      "sentence": "Others go down the slide."
+      "sentence": "Other's go down the slide"
     },
     {
       "id": "5",
-      "sentence": "My mom sits on a bench under a tree."
+      "sentence": "My mom sits on a bench under a tree"
     },
     {
       "id": "6",
-      "sentence": "It is a very fun day!"
+      "sentence": "It is a very fun day"
     }
   ]
 }

@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Space exploration is our human effort to travel into space and discover new things about the universe."
+      "sentence": "Space exploration is our human effort to travel into space and discover new things about the universe"
     },
     {
       "id": "2",
-      "sentence": "For centuries, people have looked up at the stars and wondered what was out there."
+      "sentence": "For centuries people have looked up at the stars and wondered what was out there"
     },
     {
       "id": "3",
-      "sentence": "One of the most famous moments in space exploration was in 1969."
+      "sentence": "One of the most famous moments in space exploration was in 1969"
     },
     {
       "id": "4",
-      "sentence": "We have sent robotic probes to explore distant planets like Mars and Jupiter."
+      "sentence": "We have sent robotic probes to explore distant planets like Mar's and Jupiter"
     },
     {
       "id": "5",
-      "sentence": "It helps us understand the origin of our universe and Earth itself."
+      "sentence": "It helps us understand the origin of our universe and Earth itself"
     },
     {
       "id": "6",
-      "sentence": "Space research often leads to new technologies that benefit us directly on Earth."
+      "sentence": "Space research often leads to new technologies that benefit us directly on Earth"
     }
   ]
 }

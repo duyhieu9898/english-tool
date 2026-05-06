@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Pair programming is a technique where two developers work together at one computer."
+      "sentence": "Pair programming is a technique where two developers work together at one computer"
     },
     {
       "id": "2",
-      "sentence": "The Driver writes the code, while the Navigator reviews each line."
+      "sentence": "The Driver writes the code while the Navigator reviews each line"
     },
     {
       "id": "3",
-      "sentence": "They switch roles frequently during the process."
+      "sentence": "They switch roles frequently during the process"
     },
     {
       "id": "4",
-      "sentence": "This method is excellent for sharing knowledge and catching bugs early."
+      "sentence": "This method is excellent for sharing knowledge and catching bugs early"
     },
     {
       "id": "5",
-      "sentence": "While it might seem slower, the quality of the code is often much higher."
+      "sentence": "While it might seem slower the quality of the code is often much higher"
     },
     {
       "id": "6",
-      "sentence": "Good communication is the most important part of successful pair programming."
+      "sentence": "Good communication is the most important part of successful pair programming"
     }
   ]
 }

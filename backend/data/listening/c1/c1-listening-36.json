@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Infrastructure as Code (IaC) is the practice of managing and provisioning your application's infrastructure through machine-readable definition files, rather than manual hardware configuration."
+      "sentence": "Infrastructure as Code IaC is the practice of managing and provisioning your applications infrastructure through machinereadable definition files rather than manual hardware configuration"
     },
     {
       "id": "2",
-      "sentence": "For a frontend architect, IaC allows you to define your hosting environment, CDNs, and API gateways in a declarative way."
+      "sentence": "For a front end architect IaC allows you to define your hosting environment CDNs and API gateways in a declarative way"
     },
     {
       "id": "3",
-      "sentence": "Popular tools like 'Terraform' or AWS 'CloudFormation' are used to write these scripts."
+      "sentence": "Popular tools like Terraform or AWS CloudFormation are used to write these scripts"
     },
     {
       "id": "4",
-      "sentence": "The main benefit of IaC is consistency; you can recreate the exact same environment in multiple regions or for different stages (staging, production) with minimal effort."
+      "sentence": "The main benefit of IaC is consistency you can recreate the exact same environment in multiple regions or for different stages staging production with minimal effort"
     },
     {
       "id": "5",
-      "sentence": "Furthermore, because the infrastructure is defined as code, it can be version-controlled in the same way as your application's source code."
+      "sentence": "Furthermore because the infrastructure is defined as code it can be versioncontrolled in the same way as your applications source code"
     }
   ]
 }

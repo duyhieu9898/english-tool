@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "A common mistake in web development is building a website for yourself instead of the actual users."
+      "sentence": "A common mistake in web development is building a website for yourself instead of the actual users"
     },
     {
       "id": "2",
-      "sentence": "To avoid this, designers create 'User Personas'."
+      "sentence": "To avoid this designers create User Persona's"
     },
     {
       "id": "3",
-      "sentence": "A persona is a fictional character that represents a specific type of user who will use your product."
+      "sentence": "A persona is a fictional character that represents a specific type of user who will use your product"
     },
     {
       "id": "4",
-      "sentence": "It includes details like their age, job, goals, and technical skills."
+      "sentence": "It includes details like their age job goals and technical skills"
     },
     {
       "id": "5",
-      "sentence": "By referring to these personas, developers and designers can make better decisions about layout, features, and content."
+      "sentence": "By referring to these personas developers and designers can make better decisions about layout features and content"
     },
     {
       "id": "6",
-      "sentence": "Personas help the team stay empathetic and focused on solving real problems for real people."
+      "sentence": "Persona's help the team stay empathetic and focused on solving real problems for real people"
     }
   ]
 }

@@ -1,28 +1,28 @@
 {
   "id": "c1-listening-22",
-  "title": "Scaling Frontends with Micro-Frontend Architecture",
+  "title": "Scaling Front ends with Micro-Frontend Architecture",
   "level": "c1",
   "topic": "Software Architecture",
   "questions": [
     {
       "id": "1",
-      "sentence": "As enterprise organizations scale, large monolithic frontend applications often become difficult to maintain and deploy."
+      "sentence": "As enterprise organizations scale large monolithic front end applications often become difficult to maintain and deploy"
     },
     {
       "id": "2",
-      "sentence": "'Micro-Frontend Architecture' addresses this by breaking a large application into smaller, independent, and loosely coupled sub-applications."
+      "sentence": "MicroFrontend Architecture addresses this by breaking a large application into smaller independent and loosely coupled sub applications"
     },
     {
       "id": "3",
-      "sentence": "Each micro-frontend can be developed, tested, and deployed by a different team using their own choice of technology stack."
+      "sentence": "Each micro front end can be developed tested and deployed by a different team using their own choice of technology stack"
     },
     {
       "id": "4",
-      "sentence": "These independent units are then integrated into a single 'Host' or 'Shell' application that manages routing and shared state."
+      "sentence": "These independent units are then integrated into a single Host or Shell application that manages routing and shared state"
     },
     {
       "id": "5",
-      "sentence": "While micro-frontends offer greater flexibility and faster deployment cycles, they introduce significant challenges in terms of governance, consistent styling, and bundle size."
+      "sentence": "While micro front ends offer greater flexibility and faster deployment cycles they introduce significant challenges in terms of governance consistent styling and bundle size"
     }
   ]
 }

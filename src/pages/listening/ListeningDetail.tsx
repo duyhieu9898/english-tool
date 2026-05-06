@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useListeningLesson } from '../../hooks/useApi';
 import { useQuizFlow } from '../../hooks/useQuizFlow';
 import { useTTS } from '../../hooks/useTTS';
-import { normalizeText, generateMaskedSentence } from './listening.utils';
+import { normalizeText } from './listening.utils';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
 import {
   ArrowLeft,
@@ -11,10 +11,9 @@ import {
   Check,
   ChevronRight,
   Trophy,
-  Eye,
-  EyeOff,
 } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
+import { Textarea } from '../../components/ui/Textarea';
 
 export const ListeningDetail: React.FC = () => {
   const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
@@ -25,9 +24,11 @@ export const ListeningDetail: React.FC = () => {
 
   const [mode, setMode] = useState<'STUDY' | 'COMPLETED'>('STUDY');
   const [userInput, setUserInput] = useState('');
-  const [showHint, setShowHint] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(0.9);
   const [attempts, setAttempts] = useState(0);
+  const [revealedIndices, setRevealedIndices] = useState<number[]>([]);
+  const [wordResults, setWordResults] = useState<(boolean | null)[]>([]);
+  const [isChecked, setIsChecked] = useState(false);
 
   const onComplete = useCallback(() => setMode('COMPLETED'), []);
 
@@ -44,10 +45,14 @@ export const ListeningDetail: React.FC = () => {
     onComplete,
   });
 
-  const maskedSentence = React.useMemo(() => {
-    if (!lesson) return '';
-    return generateMaskedSentence(lesson.questions[currentQuestionIndex].sentence);
+  const targetWords = React.useMemo(() => {
+    if (!lesson) return [];
+    return lesson.questions[currentQuestionIndex].sentence.split(/\s+/);
   }, [lesson, currentQuestionIndex]);
+
+  const maskWord = (word: string) => {
+    return word.split('').map(char => /[a-zA-Z0-9]/.test(char) ? '*' : char).join('');
+  };
 
   const handlePlayAudio = useCallback(() => {
     if (lesson) {
@@ -57,7 +62,9 @@ export const ListeningDetail: React.FC = () => {
 
   const nextQuestion = useCallback(() => {
     setUserInput('');
-    setShowHint(false);
+    setRevealedIndices([]);
+    setWordResults([]);
+    setIsChecked(false);
     setAttempts(0);
     advanceQuestion();
   }, [advanceQuestion]);
@@ -68,6 +75,16 @@ export const ListeningDetail: React.FC = () => {
     const normalizedInput = normalizeText(userInput);
     const normalizedAnswer = normalizeText(currentQuestion.sentence);
 
+    const inputWords = normalizedInput.split(/\s+/);
+    const results = targetWords.map((targetWord, index) => {
+      const normalizedTarget = normalizeText(targetWord);
+      const normalizedInputWord = inputWords[index] ? normalizeText(inputWords[index]) : '';
+      return normalizedTarget === normalizedInputWord;
+    });
+
+    setWordResults(results);
+    setIsChecked(true);
+
     if (normalizedInput === normalizedAnswer) {
       markCorrect();
       setAttempts(0);
@@ -75,9 +92,14 @@ export const ListeningDetail: React.FC = () => {
       markIncorrect();
       const newAttempts = attempts + 1;
       setAttempts(newAttempts);
-      if (newAttempts >= 2) setShowHint(true);
     }
-  }, [lesson, currentQuestionIndex, userInput, attempts, markCorrect, markIncorrect]);
+  }, [lesson, currentQuestionIndex, userInput, attempts, markCorrect, markIncorrect, targetWords]);
+
+  const toggleWordReveal = (index: number) => {
+    setRevealedIndices(prev => 
+      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    );
+  };
 
   // Keyboard Shortcuts
   useEffect(() => {
@@ -87,10 +109,12 @@ export const ListeningDetail: React.FC = () => {
         e.preventDefault();
         handlePlayAudio();
       }
-      // Alt + H to toggle hint
+      // Alt + H to toggle hint (reveal all)
       if (e.altKey && e.key.toLowerCase() === 'h') {
         e.preventDefault();
-        setShowHint(prev => !prev);
+        setRevealedIndices(prev => 
+          prev.length === targetWords.length ? [] : targetWords.map((_, i) => i)
+        );
       }
     };
 
@@ -187,19 +211,37 @@ export const ListeningDetail: React.FC = () => {
 
               <div className="space-y-4">
                 <div className="flex justify-between items-center px-1">
-                  <div className="text-xs font-black uppercase tracking-widest opacity-40">Your transcription</div>
-                  <button 
-                    type="button"
-                    onClick={() => setShowHint(!showHint)}
-                    className={`flex items-center gap-1.5 text-xs font-black uppercase transition-colors ${showHint ? 'text-blue-500' : 'text-gray-400 hover:text-gray-600'}`}
-                  >
-                    {showHint ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                    {showHint ? 'Hide Hint' : 'Show Hint'}
-                  </button>
+                  <div className="text-[10px] font-black uppercase tracking-widest opacity-40">Sentence Structure (Click to reveal)</div>
                 </div>
 
-                <textarea
-                  className="w-full p-4 text-xl font-bold bg-gray-50 dark:bg-gray-900 border-4 border-black dark:border-gray-700 rounded-2xl focus:outline-none focus:ring-0 min-h-[120px] resize-none"
+                <div className="flex flex-wrap items-center gap-2 p-3 bg-gray-50 dark:bg-gray-900 border-2 border-black dark:border-gray-700 rounded-2xl min-h-[60px]">
+                  {targetWords.map((word, index) => {
+                    const isRevealed = revealedIndices.includes(index);
+                    const isCorrectWord = wordResults[index] === true;
+                    const isWrongWord = isChecked && wordResults[index] === false;
+
+                    let badgeClass = "bg-white dark:bg-gray-800 text-black dark:text-white border-black dark:border-white";
+                    if (isCorrectWord) badgeClass = "bg-white dark:bg-gray-800 text-black dark:text-white border-lime-500 dark:border-lime-400 shadow-[1.5px_1.5px_0px_0px_rgba(132,204,22,1)]";
+                    else if (isWrongWord) badgeClass = "bg-white dark:bg-gray-800 text-black dark:text-white border-red-500 dark:border-red-400 shadow-[1.5px_1.5px_0px_0px_rgba(239,68,68,1)]";
+
+                    return (
+                      <button
+                        key={index}
+                        onClick={() => toggleWordReveal(index)}
+                        className={`px-2 py-0.5 rounded-lg border-2 border-black font-mono font-bold text-sm shadow-[1.5px_1.5px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-none ${badgeClass}`}
+                      >
+                        {isRevealed || isCorrectWord ? word : maskWord(word)}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <div className="flex justify-between items-center px-1">
+                  <div className="text-[10px] font-black uppercase tracking-widest opacity-40">Your transcription</div>
+                </div>
+
+                <Textarea
+                  variant="compact"
                   placeholder="What did you hear?"
                   value={userInput}
                   onChange={(e) => setUserInput(e.target.value)}
@@ -207,18 +249,9 @@ export const ListeningDetail: React.FC = () => {
                   disabled={isCorrect === true}
                   autoFocus
                 />
-
-                {showHint && (
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border-2 border-dashed border-blue-400 rounded-xl animate-in fade-in zoom-in-95 duration-200">
-                    <div className="text-[10px] font-black text-blue-500 uppercase tracking-tighter mb-1 select-none">Cloze Hint</div>
-                    <div className="text-xl font-mono font-bold tracking-[0.2em] text-blue-700 dark:text-blue-300 wrap-break-word leading-relaxed">
-                      {maskedSentence}
-                    </div>
-                  </div>
-                )}
               </div>
 
-              <div className="flex gap-4">
+              <div className="pt-4 flex gap-4">
                 {isCorrect === true ? (
                   <Button
                     variant="primary"
@@ -256,12 +289,6 @@ export const ListeningDetail: React.FC = () => {
                 </span>
               </div>
             </div>
-
-            {isCorrect === false && (
-              <div className="p-4 bg-red-100 dark:bg-red-900/30 border-4 border-red-500 rounded-2xl text-red-600 dark:text-red-400 font-black uppercase animate-shake">
-                Not quite right. Try again!
-              </div>
-            )}
           </div>
         )}
 

@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "I live in a city."
+      "sentence": "I live in a city"
     },
     {
       "id": "2",
-      "sentence": "My city is big and beautiful."
+      "sentence": "My city is big and beautiful"
     },
     {
       "id": "3",
-      "sentence": "I live in a yellow house with my family."
+      "sentence": "I live in a yellow house with my family"
     },
     {
       "id": "4",
-      "sentence": "I like to play there with my friends."
+      "sentence": "I like to play there with my friend's"
     },
     {
       "id": "5",
-      "sentence": "We ride our bikes in the park."
+      "sentence": "We ride our bikes in the park"
     },
     {
       "id": "6",
-      "sentence": "Many people live here."
+      "sentence": "Many people live here"
     }
   ]
 }

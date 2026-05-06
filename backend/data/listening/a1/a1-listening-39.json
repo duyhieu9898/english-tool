@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "When we build a website, we must always think about the 'User'."
+      "sentence": "When we build a website we must always think about the User"
     },
     {
       "id": "2",
-      "sentence": "The user is the person who uses the website."
+      "sentence": "The user is the person who uses the website"
     },
     {
       "id": "3",
-      "sentence": "This is called 'UX' or User Experience."
+      "sentence": "This is called UX or User Experience"
     },
     {
       "id": "4",
-      "sentence": "A good website is fast and easy to navigate."
+      "sentence": "A good website is fast and easy to navigate"
     },
     {
       "id": "5",
-      "sentence": "If a website is hard to use, people will leave quickly."
+      "sentence": "If a website is hard to use people will leave quickly"
     },
     {
       "id": "6",
-      "sentence": "Designing for everyone is very important."
+      "sentence": "Designing for everyone is very important"
     }
   ]
 }

@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Today is Saturday."
+      "sentence": "Today is Saturday"
     },
     {
       "id": "2",
-      "sentence": "I want to buy new clothes."
+      "sentence": "I want to buy new clothes"
     },
     {
       "id": "3",
-      "sentence": "I go to the clothes shop with my mom."
+      "sentence": "I go to the clothes shop with my mom"
     },
     {
       "id": "4",
-      "sentence": "The shop has many shirts and dresses."
+      "sentence": "The shop has many shirts and dresses"
     },
     {
       "id": "5",
-      "sentence": "I like a red shirt, but it is too big."
+      "sentence": "I like a red shirt but it is too big"
     },
     {
       "id": "6",
-      "sentence": "I am happy with my new yellow dress."
+      "sentence": "I am happy with my new yellow dress"
     }
   ]
 }

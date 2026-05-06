@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Agile is a iterative approach to software development and project management that helps teams deliver value to their customers faster."
+      "sentence": "Agile is a iterative approach to software development and project management that helps teams deliver value to their customers faster"
     },
     {
       "id": "2",
-      "sentence": "One of the most popular Agile frameworks is Scrum."
+      "sentence": "One of the most popular Agile frameworks is Scrum"
     },
     {
       "id": "3",
-      "sentence": "In Scrum, work is broken down into small units called 'Sprints'—usually lasting two to four weeks."
+      "sentence": "In Scrum work is broken down into small units called Sprints usually lasting two to four weeks"
     },
     {
       "id": "4",
-      "sentence": "During the 'Sprint Planning' meeting, the team decides which tasks to complete."
+      "sentence": "During the Sprint Planning meeting the team decides which tasks to complete"
     },
     {
       "id": "5",
-      "sentence": "By the end of each sprint, the goal is to have a potentially shippable product increment."
+      "sentence": "By the end of each sprint the goal is to have a potentially shippable product increment"
     },
     {
       "id": "6",
-      "sentence": "This allows the team to be flexible and respond quickly to changes or user feedback."
+      "sentence": "This allows the team to be flexible and respond quickly to changes or user feedback"
     }
   ]
 }

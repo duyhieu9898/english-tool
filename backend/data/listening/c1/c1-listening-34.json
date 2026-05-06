@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "In any high-performing engineering team, differences in opinion are inevitable and can actually be healthy for innovation."
+      "sentence": "In any high performing engineering team differences in opinion are inevitable and can actually be healthy for innovation"
     },
     {
       "id": "2",
-      "sentence": "However, if not managed correctly, these differences can escalate into destructive 'Conflict'."
+      "sentence": "However if not managed correctly these differences can escalate into destructive Conflict"
     },
     {
       "id": "3",
-      "sentence": "A leader must approach conflict by focusing on interests rather than positions."
+      "sentence": "A leader must approach conflict by focusing on interests rather than positions"
     },
     {
       "id": "4",
-      "sentence": "Instead of arguing over which technology is better, focus on the project's requirements and which tool provides the best balance of speed and maintainability."
+      "sentence": "Instead of arguing over which technology is better focus on the projects requirements and which tool provides the best balance of speed and maintainability"
     },
     {
       "id": "5",
-      "sentence": "High-quality leadership is about transforming conflict into a constructive dialogue that strengthens the team and leads to better decision-making."
+      "sentence": "High quality leadership is about transforming conflict into a constructive dialogue that strengthens the team and leads to better decision making"
     }
   ]
 }

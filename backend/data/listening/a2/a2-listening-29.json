@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "In a job interview, the first question is often 'Tell us about yourself'."
+      "sentence": "In a job interview the first question is often Tell us about yourself"
     },
     {
       "id": "2",
-      "sentence": "This is an opportunity to highlight your skills and projects."
+      "sentence": "This is an opportunity to highlight your skills and projects"
     },
     {
       "id": "3",
-      "sentence": "You should start with a brief summary of your background."
+      "sentence": "You should start with a brief summary of your background"
     },
     {
       "id": "4",
-      "sentence": "Mention a project you are proud of and the problems you solved."
+      "sentence": "Mention a project you are proud of and the problems you solved"
     },
     {
       "id": "5",
-      "sentence": "Keeping your answer positive and professional shows that you are ready for a professional role."
+      "sentence": "Keeping your answer positive and professional shows that you are ready for a professional role"
     },
     {
       "id": "6",
-      "sentence": "Practice your introduction multiple times to feel more confident."
+      "sentence": "Practice your introduction multiple times to feel more confident"
     }
   ]
 }

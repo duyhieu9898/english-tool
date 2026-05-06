@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Node.js is a runtime environment that allows you to run JavaScript on the server, outside of a web browser."
+      "sentence": "Nodejs is a runtime environment that allows you to run JavaScript on the server outside of a web browser"
     },
     {
       "id": "2",
-      "sentence": "This enables frontend developers to use their existing JavaScript skills to build full-stack applications."
+      "sentence": "This enables front end developers to use their existing JavaScript skills to build fullstack applications"
     },
     {
       "id": "3",
-      "sentence": "To make server-side development even simpler, many developers use 'Express.js', a minimalist web framework for Node.js."
+      "sentence": "To make serverside development even simpler many developers use Expressjs a minimalist web framework for Nodejs"
     },
     {
       "id": "4",
-      "sentence": "Express provides a set of features to handle common backend tasks like routing, which determines how an application responds to a specific URL request."
+      "sentence": "Expres provides a set of features to handle common back end tasks like routing which determines how an application responds to a specific URL request"
     },
     {
       "id": "5",
-      "sentence": "For example, using Express, you can easily create a route that sends back product information when a user visits '/api/products'."
+      "sentence": "For example using Expres you can easily create a route that sends back product information when a user visits apiproducts"
     },
     {
       "id": "6",
-      "sentence": "Understanding Node.js and Express is a significant milestone for any frontend developer looking to understand the complete application lifecycle."
+      "sentence": "Understanding Nodejs and Expres is a significant milestone for any front end developer looking to understand the complete application lifecycle"
     }
   ]
 }

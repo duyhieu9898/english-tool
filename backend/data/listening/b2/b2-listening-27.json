@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Although frontend developers primarily work with the UI, understanding how data is stored in the backend is vital for building efficient applications."
+      "sentence": "Although front end developers primarily work with the UI understanding how data is stored in the back end is vital for building efficient applications"
     },
     {
       "id": "2",
-      "sentence": "Databases are generally divided into two main types: SQL and NoSQL."
+      "sentence": "Databases are generally divided into two main types SQL and NoSQL"
     },
     {
       "id": "3",
-      "sentence": "SQL databases (like PostgreSQL or MySQL) are relational, meaning they store data in tables with predefined schemas."
+      "sentence": "SQL databases like PostgreSQL or MySQL are relational meaning they store data in tables with predefined schemas"
     },
     {
       "id": "4",
-      "sentence": "On the other hand, NoSQL databases (like MongoDB or Firebase Firestore) are non-relational and store data in a more flexible format, often resembling JSON objects."
+      "sentence": "On the other hand NoSQL databases like MongoDB or Firebase Firestore are non relational and store data in a more flexible format often resembling JSON objects"
     },
     {
       "id": "5",
-      "sentence": "Choosing the right database depends on the specific needs of your project, such as data complexity, scalability requirements, and the speed of development."
+      "sentence": "Choosing the right database depends on the specific needs of your project such as data complexity scalability requirements and the speed of development"
     }
   ]
 }

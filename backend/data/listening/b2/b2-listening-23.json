@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "The Open-Closed Principle (OCP) is one of the five SOLID principles of object-oriented design, but it applies equally to functional frontend development."
+      "sentence": "The Open Closed Principle OCP is one of the five SOLID principles of object oriented design but it applies equally to functional front end development"
     },
     {
       "id": "2",
-      "sentence": "It states that software entities—such as modules, classes, or functions—should be 'open for extension, but closed for modification'."
+      "sentence": "It states that software entities such as modules classes or functions should be open for extension but closed for modification"
     },
     {
       "id": "3",
-      "sentence": "This means you should be able to add new functionality to a component without changing its existing code."
+      "sentence": "This means you should be able to add new functionality to a component without changing its existing code"
     },
     {
       "id": "4",
-      "sentence": "In React or Vue, this is often achieved through high-level patterns like 'Composition' or 'Render Props'."
+      "sentence": "In React or Vue this is often achieved through high level patterns like Composition or Render Props"
     },
     {
       "id": "5",
-      "sentence": "Following the OCP reduces the risk of introducing bugs when adding new features, making your codebase more robust and stable over time."
+      "sentence": "Following the OCP reduces the risk of introducing bugs when adding new features making your codebase more robust and stable over time"
     }
   ]
 }

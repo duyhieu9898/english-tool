@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "In a real-world application, errors are inevitable."
+      "sentence": "In a real world application errors are inevitable"
     },
     {
       "id": "2",
-      "sentence": "A network request might fail, or an API might send back unexpected data."
+      "sentence": "A network request might fail or an API might send back unexpected data"
     },
     {
       "id": "3",
-      "sentence": "If these errors are not handled, the entire application can crash."
+      "sentence": "If these errors are not handled the entire application can crash"
     },
     {
       "id": "4",
-      "sentence": "To prevent this, developers use 'try...catch' blocks in JavaScript."
+      "sentence": "To prevent this developers use try catch blocks in JavaScript"
     },
     {
       "id": "5",
-      "sentence": "The 'try' block contains the code that might cause an error."
+      "sentence": "The try block contains the code that might cause an error"
     },
     {
       "id": "6",
-      "sentence": "Mastering error handling is crucial for building robust and reliable frontend applications."
+      "sentence": "Mastering error handling is crucial for building robust and reliable front end applications"
     }
   ]
 }

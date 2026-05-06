@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Contributing to 'Open Source Software' (OSS) is one of the most effective ways to accelerate your professional growth as a developer."
+      "sentence": "Contributing to Open Source Software OSS is one of the most effective ways to accelerate your professional growth as a developer"
     },
     {
       "id": "2",
-      "sentence": "Beyond just using libraries like React or Vue, contributing back to their repositories allowed you to learn from world-class developers and demonstrate your technical expertise to a global audience."
+      "sentence": "Beyond just using libraries like React or Vue contributing back to their repositories allowed you to learn from world class developers and demonstrate your technical expertise to a global audience"
     },
     {
       "id": "3",
-      "sentence": "Effective contribution strategy begins with finding a project you use frequently and checking its 'Issues' list for beginner-friendly tasks often labeled as 'good first issue'."
+      "sentence": "Effective contribution strategy begins with finding a project you use frequently and checking its Issue's list for beginner friendly tasks often labeled as good first issue"
     },
     {
       "id": "4",
-      "sentence": "You should start by improving documentation or fixing small bugs before proposing major feature changes."
+      "sentence": "You should start by improving documentation or fixing small bugs before proposing major feature changes"
     },
     {
       "id": "5",
-      "sentence": "A strong history of OSS contributions serves as a powerful portfolio piece that provides evidence of your ability to collaborate on large-scale and complex codebases."
+      "sentence": "A strong history of OSS contributions serves as a powerful portfolio piece that provides evidence of your ability to collaborate on large scale and complex codebases"
     }
   ]
 }

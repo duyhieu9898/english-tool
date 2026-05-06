@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "As modern web applications grow in size, loading the entire application at once can result in a slow initial experience for users."
+      "sentence": "As modern web applications grow in size loading the entire application at once can result in a slow initial experience for users"
     },
     {
       "id": "2",
-      "sentence": "Two powerful techniques to combat this are 'Code Splitting' and 'Lazy Loading'."
+      "sentence": "Two powerful techniques to combat this are Code Splitting and Lazy Loading"
     },
     {
       "id": "3",
-      "sentence": "Code splitting involves breaking your large JavaScript bundle into smaller, manageable chunks."
+      "sentence": "Code splitting involves breaking your large JavaScript bundle into smaller manageable chunks"
     },
     {
       "id": "4",
-      "sentence": "Lazy loading is the practice of delaying the loading of these chunks until they are actually needed."
+      "sentence": "Lazy loading is the practice of delaying the loading of these chunks until they are actually needed"
     },
     {
       "id": "5",
-      "sentence": "Implementing these strategies significantly reduces the initial bundle size, leading to faster load times and a more responsive feel for the end user."
+      "sentence": "Implementing these strategies significantly reduces the initial bundle size leading to faster load times and a more responsive feel for the end user"
     }
   ]
 }

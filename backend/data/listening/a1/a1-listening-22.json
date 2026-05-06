@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "A developer needs a good computer setup to work well."
+      "sentence": "A developer needs a good computer setup to work well"
     },
     {
       "id": "2",
-      "sentence": "First, you need a laptop or a desktop computer."
+      "sentence": "First you need a laptop or a desktop computer"
     },
     {
       "id": "3",
-      "sentence": "A large monitor is very helpful."
+      "sentence": "A large monitor is very helpful"
     },
     {
       "id": "4",
-      "sentence": "It lets you see more code at once."
+      "sentence": "It lets you see more code at once"
     },
     {
       "id": "5",
-      "sentence": "A mechanical keyboard is popular among developers."
+      "sentence": "A mechanical keyboard is popular among developers"
     },
     {
       "id": "6",
-      "sentence": "A clean desk helps you focus on your tasks."
+      "sentence": "A clean desk helps you focus on your tasks"
     }
   ]
 }

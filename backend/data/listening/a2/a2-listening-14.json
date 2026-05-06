@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Climate control helps us feel good inside our homes."
+      "sentence": "Climate control helps us feel good inside our homes"
     },
     {
       "id": "2",
-      "sentence": "We use special machines to change the temperature indoors."
+      "sentence": "We use special machines to change the temperature indoors"
     },
     {
       "id": "3",
-      "sentence": "The air conditioner blows cool air into the room."
+      "sentence": "The air conditioner blows cool air into the room"
     },
     {
       "id": "4",
-      "sentence": "The heater helps to warm up the house so we don't feel chilly."
+      "sentence": "The heater helps to warm up the house so we don't feel chilly"
     },
     {
       "id": "5",
-      "sentence": "The thermostat lets us choose the exact temperature we want."
+      "sentence": "The thermostat lets us choose the exact temperature we want"
     },
     {
       "id": "6",
-      "sentence": "Our homes are always just right, no matter the weather outside."
+      "sentence": "Our homes are always just right no matter the weather outside"
     }
   ]
 }

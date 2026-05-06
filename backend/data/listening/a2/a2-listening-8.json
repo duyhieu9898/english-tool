@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Last Saturday, my family and I went to the City Museum."
+      "sentence": "Last Saturday my family and I went to the City Museum"
     },
     {
       "id": "2",
-      "sentence": "Inside, the museum was full of interesting objects."
+      "sentence": "Inside the museum was full of interesting objects"
     },
     {
       "id": "3",
-      "sentence": "First, we saw very old tools from many years ago."
+      "sentence": "First we saw very old tools from many years ago"
     },
     {
       "id": "4",
-      "sentence": "My favorite painting was of a tall ship on the sea."
+      "sentence": "My favorite painting was of a tall ship on the sea"
     },
     {
       "id": "5",
-      "sentence": "There were huge dinosaur bones!"
+      "sentence": "There were huge dinosaur bones"
     },
     {
       "id": "6",
-      "sentence": "It was a really fun and educational day."
+      "sentence": "It was a really fun and educational day"
     }
   ]
 }

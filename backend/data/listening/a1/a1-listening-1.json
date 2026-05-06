@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "My name is John."
+      "sentence": "My name is John"
     },
     {
       "id": "2",
-      "sentence": "I am a student."
+      "sentence": "I am a student"
     },
     {
       "id": "3",
-      "sentence": "I wake up at 7 o'clock every morning."
+      "sentence": "I wake up at 7 o'clock every morning"
     },
     {
       "id": "4",
-      "sentence": "Then, I have breakfast with my family."
+      "sentence": "Then I have breakfast with my family"
     },
     {
       "id": "5",
-      "sentence": "At 8 o'clock, I go to school by bus."
+      "sentence": "At 8 o'clock I go to school by bus"
     },
     {
       "id": "6",
-      "sentence": "In the evening, I watch TV or read a book."
+      "sentence": "In the evening I watch TV or read a book"
     }
   ]
 }

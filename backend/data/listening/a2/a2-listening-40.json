@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "A Pull Request is how you propose your code changes to a project."
+      "sentence": "A Pull Request is how you propose your code changes to a project"
     },
     {
       "id": "2",
-      "sentence": "After you finish your task on a separate branch, you create a PR."
+      "sentence": "After you finish your task on a separate branch you create a PR"
     },
     {
       "id": "3",
-      "sentence": "In the PR description, you should explain what you did and why."
+      "sentence": "In the PR description you should explain what you did and why"
     },
     {
       "id": "4",
-      "sentence": "Many teams also include a screenshot to show the new UI changes."
+      "sentence": "Many teams also include a screenshot to show the new UI changes"
     },
     {
       "id": "5",
-      "sentence": "Once it is approved, the code is merged into the main project."
+      "sentence": "Once it is approved the code is merged into the main project"
     },
     {
       "id": "6",
-      "sentence": "Completing your first PR is a big milestone for any junior developer."
+      "sentence": "Completing your first PR is a big milestone for any junior developer"
     }
   ]
 }

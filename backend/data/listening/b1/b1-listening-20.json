@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "The Earth's climate is always changing, but recently, these changes have become much faster and more noticeable."
+      "sentence": "The Earth's climate is always changing but recently these changes have become much faster and more noticeable"
     },
     {
       "id": "2",
-      "sentence": "Scientists agree that human activities are the main cause."
+      "sentence": "Scientist's agree that human activities are the main cause"
     },
     {
       "id": "3",
-      "sentence": "The effects of climate change are already visible around the world."
+      "sentence": "The effects of climate change are already visible around the world"
     },
     {
       "id": "4",
-      "sentence": "Glaciers and ice caps are melting, which causes sea levels to rise."
+      "sentence": "Glacier's and ice caps are melting which causes sea levels to rise"
     },
     {
       "id": "5",
-      "sentence": "We need to use more renewable energy sources like solar and wind power."
+      "sentence": "We need to use more renewable energy sources like solar and wind power"
     },
     {
       "id": "6",
-      "sentence": "Solving climate change requires everyone to work together."
+      "sentence": "Solving climate change requires everyone to work together"
     }
   ]
 }

@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "My family wants to go on a vacation."
+      "sentence": "My family wants to go on a vacation"
     },
     {
       "id": "2",
-      "sentence": "First, we need to choose a place."
+      "sentence": "First we need to choose a place"
     },
     {
       "id": "3",
-      "sentence": "My sister wants to go to the beach."
+      "sentence": "My sister wants to go to the beach"
     },
     {
       "id": "4",
-      "sentence": "My parents want a quiet place in the mountains."
+      "sentence": "My parents want a quiet place in the mountains"
     },
     {
       "id": "5",
-      "sentence": "Finally, we decided on a beach vacation!"
+      "sentence": "Finally we decided on a beach vacation"
     },
     {
       "id": "6",
-      "sentence": "Planning a vacation is fun, but choosing is the hardest part!"
+      "sentence": "Planning a vacation is fun but choosing is the hardest part"
     }
   ]
 }

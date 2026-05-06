@@ -6,23 +6,23 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "As you transition to advanced TypeScript development, 'Generics' become an indispensable tool for creating flexible and reusable components and functions."
+      "sentence": "As you transition to advanced TypeScript development Generic's become an indispensable tool for creating flexible and reusable components and functions"
     },
     {
       "id": "2",
-      "sentence": "Generics allow you to define a component that can work with a variety of types while still maintaining 'type safety'."
+      "sentence": "Generic's allow you to define a component that can work with a variety of types while still maintaining type safety"
     },
     {
       "id": "3",
-      "sentence": "For example, instead of writing separate functions to handle an array of strings and an array of numbers, you can use a generic type parameter—often represented as <T>—to handle any type provided at runtime."
+      "sentence": "For example instead of writing separate functions to handle an array of strings and an array of numbers you can use a generic type parameteroften represented as Tto handle any type provided at runtime"
     },
     {
       "id": "4",
-      "sentence": "Beyond simple generics, mastering 'Mapped Types' and 'Conditional Types' allows for highly sophisticated type transformations, such as creating a read-only version of an existing interface."
+      "sentence": "Beyond simple generics mastering Mapped Type's and Conditional Type's allows for highly sophisticated type transformations such as creating a readonly version of an existing interface"
     },
     {
       "id": "5",
-      "sentence": "Utilizing these advanced features leads to a much more robust developer experience, as it provides precise IDE autocompletion and catches potential errors before the code is even run."
+      "sentence": "Utilizing these advanced features leads to a much more robust developer experience as it provides precise IDE autocompletion and catches potential errors before the code is even run"
     }
   ]
 }

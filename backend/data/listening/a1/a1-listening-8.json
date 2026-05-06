@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "I like weekends very much."
+      "sentence": "I like weekends very much"
     },
     {
       "id": "2",
-      "sentence": "I eat a big breakfast with my family."
+      "sentence": "I eat a big breakfast with my family"
     },
     {
       "id": "3",
-      "sentence": "Then, I go to the park with my friends."
+      "sentence": "Then I go to the park with my friend's"
     },
     {
       "id": "4",
-      "sentence": "On Sunday, I visit my grandmother."
+      "sentence": "On Sunday I visit my grandmother"
     },
     {
       "id": "5",
-      "sentence": "Sometimes, I watch a movie."
+      "sentence": "Sometimes I watch a movie"
     },
     {
       "id": "6",
-      "sentence": "I also help my mom clean the house."
+      "sentence": "I also help my mom clean the house"
     }
   ]
 }

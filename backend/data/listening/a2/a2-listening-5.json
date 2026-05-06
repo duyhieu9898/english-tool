@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Every day, I try to live a healthy life."
+      "sentence": "Every day I try to live a healthy life"
     },
     {
       "id": "2",
-      "sentence": "I drink a lot of water throughout the day."
+      "sentence": "I drink a lot of water throughout the day"
     },
     {
       "id": "3",
-      "sentence": "Moving my body makes me happy and strong."
+      "sentence": "Moving my body makes me happy and strong"
     },
     {
       "id": "4",
-      "sentence": "In the evening, I eat dinner with my family."
+      "sentence": "In the evening I eat dinner with my family"
     },
     {
       "id": "5",
-      "sentence": "Getting enough sleep is very important."
+      "sentence": "Getting enough sleep is very important"
     },
     {
       "id": "6",
-      "sentence": "Healthy habits make me happy!"
+      "sentence": "Healthy habits make me happy"
     }
   ]
 }

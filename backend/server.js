@@ -1,5 +1,7 @@
 import express from 'express';
 import cors    from 'cors';
+import fs      from 'fs';
+import { fileURLToPath } from 'url';
 
 import lessonsRouter     from './routes/lessons.js';
 import grammarRouter     from './routes/grammar.js';
@@ -10,7 +12,6 @@ import userDataRouter    from './routes/userData.js';
 import { loadLessons }   from './db/contentDb.js';
 import { USER_DB_PATH }  from './db/paths.js';
 import { logger }        from './utils/logger.js';
-import { fileURLToPath } from 'url';
 
 const app  = express();
 const PORT = 3001;
@@ -28,6 +29,9 @@ app.use((req, res, next) => {
   next();
 });
 
+// Health check
+app.get('/health', (req, res) => res.json({ status: 'ok', timestamp: new Date().toISOString() }));
+
 app.use('/lessons',     lessonsRouter);
 app.use('/grammar',     grammarRouter);
 app.use('/reading',     readingRouter);
@@ -41,13 +45,19 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal Server Error' });
 });
 
-const isMain = process.argv[1] && fileURLToPath(import.meta.url) === (await import('fs')).realpathSync(process.argv[1]);
+// Start server if this is the main entry point
+const isMain = process.argv[1] && fileURLToPath(import.meta.url) === fs.realpathSync(process.argv[1]);
+const isNodemon = process.argv[1]?.endsWith('server.js');
 
-if (isMain || process.argv[1]?.endsWith('server.js')) {
+if (isMain || isNodemon) {
   app.listen(PORT, () => {
-    const lessons = loadLessons();
-    console.log(`🚀 Server running at http://localhost:${PORT}`);
-    console.log(`   Lessons: ${lessons.length}  |  User DB: ${USER_DB_PATH}`);
+    try {
+      const lessons = loadLessons();
+      console.log(`🚀 Server running at http://localhost:${PORT}`);
+      console.log(`   Lessons: ${lessons.length}  |  User DB: ${USER_DB_PATH}`);
+    } catch (err) {
+      logger.error('Failed to initialize content DB:', err);
+    }
   });
 }
 

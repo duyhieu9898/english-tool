@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Every day, I use different types of transport to go places."
+      "sentence": "Every day I use different types of transport to go places"
     },
     {
       "id": "2",
-      "sentence": "In the morning, I usually walk to the bus stop."
+      "sentence": "In the morning I usually walk to the bus stop"
     },
     {
       "id": "3",
-      "sentence": "The bus takes me to school."
+      "sentence": "The bus takes me to school"
     },
     {
       "id": "4",
-      "sentence": "My school is not far, so the bus ride is only fifteen minutes."
+      "sentence": "My school is not far so the bus ride is only fifteen minutes"
     },
     {
       "id": "5",
-      "sentence": "In the sunny weekend, my family goes to the park by bicycle."
+      "sentence": "In the sunny weekend my family goes to the park by bicycle"
     },
     {
       "id": "6",
-      "sentence": "Transport is important because it helps us explore new places."
+      "sentence": "Transport is important because it helps us explore new places"
     }
   ]
 }

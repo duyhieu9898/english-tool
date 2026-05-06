@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "As web development evolves, the way we write CSS is also changing."
+      "sentence": "As web development evolves the way we write CSS is also changing"
     },
     {
       "id": "2",
-      "sentence": "Traditionally, developers wrote custom CSS in separate files using class names like '.navbar' or '.card'."
+      "sentence": "Traditionally developers wrote custom CSS in separate files using class names like navbar or card"
     },
     {
       "id": "3",
-      "sentence": "A modern alternative is using a 'Utility-First' framework like Tailwind CSS."
+      "sentence": "A modern alternative is using a UtilityFirst framework like Tailwind CSS"
     },
     {
       "id": "4",
-      "sentence": "Instead of writing custom styles, you use predefined utility classes directly in your HTML, such as 'bg-blue-500', 'p-4', or 'flex'."
+      "sentence": "Instead of writing custom styles you use predefined utility classes directly in your HTML such as bgblue500 p4 or flex"
     },
     {
       "id": "5",
-      "sentence": "This avoids the need to jump back and forth between HTML and CSS files, making development much faster."
+      "sentence": "This avoids the need to jump back and forth between HTML and CSS files making development much faster"
     },
     {
       "id": "6",
-      "sentence": "Learning Tailwind CSS is now a popular requirement for many modern frontend developer roles."
+      "sentence": "Learning Tailwind CSS is now a popular requirement for many modern front end developer roles"
     }
   ]
 }

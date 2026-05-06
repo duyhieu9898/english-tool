@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "SEO is not just about keywords and content; it also depends heavily on a website's technical performance."
+      "sentence": "SEO is not just about keywords and content it also depends heavily on a websites technical performance"
     },
     {
       "id": "2",
-      "sentence": "Search engines like Google prioritize websites that are fast, secure, and mobile-friendly."
+      "sentence": "Search engines like Google prioritize websites that are fast secure and mobile friendly"
     },
     {
       "id": "3",
-      "sentence": "As a developer, you can improve SEO using technical practices like 'Server-Side Rendering' (SSR) or 'Static Site Generation' (SSG), which help search engines crawl and index your content more easily."
+      "sentence": "As a developer you can improve SEO using technical practices like ServerSide Rendering SSR or Static Site Generation SSG which help search engines crawl and index your content more easily"
     },
     {
       "id": "4",
-      "sentence": "Additionally, using semantic HTML tags—such as <header>, <main>, <article>, and <footer>—provides clear meaning to your content."
+      "sentence": "Additionally using semantic HTML tags such as header main article and footer provides clear meaning to your content"
     },
     {
       "id": "5",
-      "sentence": "Proper use of 'Meta Tags' in the HTML <head> section allowed you to control the title and description that appear in search results."
+      "sentence": "Proper use of Meta Tag's in the HTML head section allowed you to control the title and description that appear in search results"
     },
     {
       "id": "6",
-      "sentence": "By optimizing these technical aspects, you ensure that your website is not only useful for people but also easy for search engines to find."
+      "sentence": "By optimizing these technical aspects you ensure that your website is not only useful for people but also easy for search engines to find"
     }
   ]
 }

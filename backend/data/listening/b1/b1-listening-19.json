@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "For a long time, most people commuted to an office or a specific workplace every day."
+      "sentence": "For a long time most people commuted to an office or a specific workplace every day"
     },
     {
       "id": "2",
-      "sentence": "However, the world of work began to change with the development of technology."
+      "sentence": "However the world of work began to change with the development of technology"
     },
     {
       "id": "3",
-      "sentence": "New tools like video conferencing platforms and cloud storage allowed teams to collaborate effectively."
+      "sentence": "New tools like video conferencing platforms and cloud storage allowed teams to collaborate effectively"
     },
     {
       "id": "4",
-      "sentence": "Suddenly, many companies had to switch to remote work very quickly."
+      "sentence": "Suddenly many companies had to switch to remote work very quickly"
     },
     {
       "id": "5",
-      "sentence": "Despite these advantages, remote work also presents challenges."
+      "sentence": "Despite these advantages remote work also presents challenges"
     },
     {
       "id": "6",
-      "sentence": "Many companies are now adopting hybrid models, mixing office days with remote days."
+      "sentence": "Many companies are now adopting hybrid models mixing office days with remote days"
     }
   ]
 }

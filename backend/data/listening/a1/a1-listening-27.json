@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "A web project has many files."
+      "sentence": "A web project has many files"
     },
     {
       "id": "2",
-      "sentence": "It is important to organize them in folders."
+      "sentence": "It is important to organize them in folders"
     },
     {
       "id": "3",
-      "sentence": "The main HTML file is often named 'index.html'."
+      "sentence": "The main HTML file is often named index html"
     },
     {
       "id": "4",
-      "sentence": "This is the first file the browser looks for."
+      "sentence": "This is the first file the browser looks for"
     },
     {
       "id": "5",
-      "sentence": "Developers use a code editor to manage these files."
+      "sentence": "Developer's use a code editor to manage these files"
     },
     {
       "id": "6",
-      "sentence": "You should use clear names for your files."
+      "sentence": "You should use clear names for your files"
     }
   ]
 }

@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Today, I want to cook a simple meal."
+      "sentence": "Today I want to cook a simple meal"
     },
     {
       "id": "2",
-      "sentence": "I will make eggs and vegetables."
+      "sentence": "I will make eggs and vegetables"
     },
     {
       "id": "3",
-      "sentence": "First, I take a pan."
+      "sentence": "First I take a pan"
     },
     {
       "id": "4",
-      "sentence": "I put a little oil in it."
+      "sentence": "I put a little oil in it"
     },
     {
       "id": "5",
-      "sentence": "Finally, I put the meal on a plate."
+      "sentence": "Finally I put the meal on a plate"
     },
     {
       "id": "6",
-      "sentence": "I eat it with rice."
+      "sentence": "I eat it with rice"
     }
   ]
 }

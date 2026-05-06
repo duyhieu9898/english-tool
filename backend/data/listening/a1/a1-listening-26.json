@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Navigation is how users move around a website."
+      "sentence": "Navigation is how users move around a website"
     },
     {
       "id": "2",
-      "sentence": "We use links to connect different pages."
+      "sentence": "We use links to connect different pages"
     },
     {
       "id": "3",
-      "sentence": "A navigation bar is usually at the top of the page."
+      "sentence": "A navigation bar is usually at the top of the page"
     },
     {
       "id": "4",
-      "sentence": "When you hover your mouse over a link, the color often changes."
+      "sentence": "When you hover your mouse over a link the color often changes"
     },
     {
       "id": "5",
-      "sentence": "In HTML, we use the <a> tag to make a link."
+      "sentence": "In HTML we use the a tag to make a link"
     },
     {
       "id": "6",
-      "sentence": "Good navigation is simple and easy to find."
+      "sentence": "Good navigation is simple and easy to find"
     }
   ]
 }

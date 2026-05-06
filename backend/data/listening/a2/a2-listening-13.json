@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Shopping online is very popular now."
+      "sentence": "Shopping online is very popular now"
     },
     {
       "id": "2",
-      "sentence": "Many people like to buy things from their homes."
+      "sentence": "Many people like to buy things from their homes"
     },
     {
       "id": "3",
-      "sentence": "You just need a computer or a phone and internet access."
+      "sentence": "You just need a computer or a phone and internet access"
     },
     {
       "id": "4",
-      "sentence": "You can find many different things such as clothes, books, and electronics."
+      "sentence": "You can find many different things such as clothes books and electronics"
     },
     {
       "id": "5",
-      "sentence": "Most people use a credit card or pay when the item arrives."
+      "sentence": "Most people use a credit card or pay when the item arrives"
     },
     {
       "id": "6",
-      "sentence": "A delivery person brings it to your door, usually in a few days."
+      "sentence": "A delivery person brings it to your door usually in a few days"
     }
   ]
 }

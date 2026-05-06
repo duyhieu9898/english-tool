@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "I live in a nice house."
+      "sentence": "I live in a nice house"
     },
     {
       "id": "2",
-      "sentence": "My house has three rooms."
+      "sentence": "My house has three rooms"
     },
     {
       "id": "3",
-      "sentence": "In the living room, I watch TV with my family."
+      "sentence": "In the living room I watch TV with my family"
     },
     {
       "id": "4",
-      "sentence": "The kitchen is where my mom cooks yummy food."
+      "sentence": "The kitchen is where my mom cooks yummy food"
     },
     {
       "id": "5",
-      "sentence": "My bedroom is my favorite place."
+      "sentence": "My bedroom is my favorite place"
     },
     {
       "id": "6",
-      "sentence": "I also have a small garden outside."
+      "sentence": "I also have a small garden outside"
     }
   ]
 }

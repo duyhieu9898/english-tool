@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Forms allow websites to collect information from users."
+      "sentence": "Form's allow websites to collect information from users"
     },
     {
       "id": "2",
-      "sentence": "A simple form includes various 'input' elements."
+      "sentence": "A simple form includes various input elements"
     },
     {
       "id": "3",
-      "sentence": "Each input should have a 'label' so the user knows what to type."
+      "sentence": "Each input should have a label so the user knows what to type"
     },
     {
       "id": "4",
-      "sentence": "When a user finishes, they click a 'submit' button."
+      "sentence": "When a user finishes they click a submit button"
     },
     {
       "id": "5",
-      "sentence": "Before sending the data to a server, developers often use 'Validation'."
+      "sentence": "Before sending the data to a server developers often use Validation"
     },
     {
       "id": "6",
-      "sentence": "Good forms also show 'error messages' to help the user fix mistakes."
+      "sentence": "Good forms also show error messages to help the user fix mistakes"
     }
   ]
 }

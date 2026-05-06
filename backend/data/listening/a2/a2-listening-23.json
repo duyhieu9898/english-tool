@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "The Daily Stand-up is a key part of the 'Agile' workflow."
+      "sentence": "The Daily Standup is a key part of the Agile workflow"
     },
     {
       "id": "2",
-      "sentence": "It is a short meeting, usually 15 minutes."
+      "sentence": "It is a short meeting usually 15 minutes"
     },
     {
       "id": "3",
-      "sentence": "Everyone answers three questions during the meeting."
+      "sentence": "Everyone answers three questions during the meeting"
     },
     {
       "id": "4",
-      "sentence": "This helps the team stay focused and organized."
+      "sentence": "This helps the team stay focused and organized"
     },
     {
       "id": "5",
-      "sentence": "When it is your turn to speak, keep your update brief."
+      "sentence": "When it is your turn to speak keep your update brief"
     },
     {
       "id": "6",
-      "sentence": "Everyone knows the project status and can help if someone is stuck."
+      "sentence": "Everyone knows the project status and can help if someone is stuck"
     }
   ]
 }

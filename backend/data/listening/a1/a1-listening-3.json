@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Today is Saturday."
+      "sentence": "Today is Saturday"
     },
     {
       "id": "2",
-      "sentence": "I go to the supermarket with my mom."
+      "sentence": "I go to the supermarket with my mom"
     },
     {
       "id": "3",
-      "sentence": "First, we buy some fruit."
+      "sentence": "First we buy some fruit"
     },
     {
       "id": "4",
-      "sentence": "Then, we buy some vegetables."
+      "sentence": "Then we buy some vegetables"
     },
     {
       "id": "5",
-      "sentence": "My mom also buys milk and bread for breakfast."
+      "sentence": "My mom also buys milk and bread for breakfast"
     },
     {
       "id": "6",
-      "sentence": "I am happy to help my mom."
+      "sentence": "I am happy to help my mom"
     }
   ]
 }

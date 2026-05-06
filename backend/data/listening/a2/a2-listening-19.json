@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "Last Saturday, my family decided to eat out."
+      "sentence": "Last Saturday my family decided to eat out"
     },
     {
       "id": "2",
-      "sentence": "We went to a new Italian restaurant in town."
+      "sentence": "We went to a new Italian restaurant in town"
     },
     {
       "id": "3",
-      "sentence": "A friendly waiter showed us to our table near the window."
+      "sentence": "A friendly waiter showed us to our table near the window"
     },
     {
       "id": "4",
-      "sentence": "After about fifteen minutes, our food arrived."
+      "sentence": "After about fifteen minutes our food arrived"
     },
     {
       "id": "5",
-      "sentence": "My dad's pasta was creamy and hot."
+      "sentence": "My dad's pasta was creamy and hot"
     },
     {
       "id": "6",
-      "sentence": "My dad asked the waiter for the bill and paid with his credit card."
+      "sentence": "My dad asked the waiter for the bill and paid with his credit card"
     }
   ]
 }

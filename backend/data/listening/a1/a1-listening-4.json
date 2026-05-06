@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "1",
-      "sentence": "My name is Linh."
+      "sentence": "My name is Linh"
     },
     {
       "id": "2",
-      "sentence": "I have a favorite hobby."
+      "sentence": "I have a favorite hobby"
     },
     {
       "id": "3",
-      "sentence": "It is reading books."
+      "sentence": "It is reading books"
     },
     {
       "id": "4",
-      "sentence": "Sometimes, I read adventure stories."
+      "sentence": "Sometimes I read adventure stories"
     },
     {
       "id": "5",
-      "sentence": "Reading makes me happy."
+      "sentence": "Reading makes me happy"
     },
     {
       "id": "6",
-      "sentence": "It is relaxing and fun."
+      "sentence": "It is relaxing and fun"
     }
   ]
 }
