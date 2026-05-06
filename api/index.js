@@ -25,6 +25,8 @@ function getApp() {
 module.exports = async (req, res) => {
   try {
     const app = await getApp();
+    // Strip /api prefix — Vercel passes full URL but Express routes don't have it
+    req.url = req.url.replace(/^\/api/, '') || '/';
     return app(req, res);
   } catch (err) {
     console.error('Failed to initialize server:', err.message);
