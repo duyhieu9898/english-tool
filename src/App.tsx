@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { LazyMotion, domMax } from 'framer-motion';
+import { useSettings } from './hooks/useApi';
 import { AppLayout } from './components/layout/AppLayout';
 import { Dashboard } from './pages/Dashboard';
 
@@ -25,6 +26,15 @@ const PageLoader = () => (
 );
 
 function App() {
+  const { data: settings } = useSettings();
+
+  // Sync theme with settings
+  React.useEffect(() => {
+    if (settings?.theme) {
+      document.documentElement.classList.toggle('dark', settings.theme === 'dark');
+    }
+  }, [settings?.theme]);
+
   return (
     <LazyMotion features={domMax} strict>
       <BrowserRouter>

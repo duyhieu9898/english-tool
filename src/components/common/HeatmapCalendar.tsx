@@ -126,7 +126,7 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({ logs, dailyGoa
 
 
   return (
-    <div className="w-full flex items-start gap-6">
+    <div className="w-full flex items-start gap-4 md:gap-6">
       {/* Main heatmap area */}
       <div className="flex-1 min-w-0">
         {/* Grid area: day labels + cells */}
@@ -190,6 +190,8 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({ logs, dailyGoa
                       <div
                         key={cell.date}
                         title={`${cell.date}: ${cell.details}`}
+                        aria-label={`${cell.date}: ${cell.details}`}
+                        role="gridcell"
                         style={{ width: CELL_SIZE, height: CELL_SIZE }}
                         className={[
                           'rounded-[3px] border border-black/5 dark:border-white/5 cursor-pointer transition-opacity hover:opacity-80',
@@ -205,7 +207,7 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({ logs, dailyGoa
         </div>
 
         {/* Legend */}
-        <div className="flex flex-col sm:flex-row justify-between items-center text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+        <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
           <div className="flex items-center gap-3">
             <span>Less</span>
             <div className="flex gap-1">
@@ -232,7 +234,7 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({ logs, dailyGoa
               'px-3 py-1.5 rounded-lg text-left transition-all',
               selectedYear === y
                 ? 'bg-blue-500 text-white dark:bg-blue-400 dark:text-black'
-                : 'text-gray-400 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white',
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white',
             ].join(' ')}
           >
             {y}

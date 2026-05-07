@@ -15,7 +15,7 @@ import {
   Star,
 } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
-import { QuizOption } from '../../components/ui/QuizOption';
+import { QuizOption } from '../../components/common/QuizOption';
 
 export const ReadingDetail: React.FC = () => {
   const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
@@ -96,9 +96,9 @@ export const ReadingDetail: React.FC = () => {
         </Button>
       </div>
 
-      <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] overflow-hidden">
+      <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative">
         {mode === 'READING' && (
-          <div className="p-6 overflow-y-auto">
+          <div>
             <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-black dark:text-white leading-none mb-4">
               {lesson.title}
             </h1>
@@ -118,7 +118,7 @@ export const ReadingDetail: React.FC = () => {
                 </Button>
               </div>
 
-              <div className="leading-relaxed font-medium bg-amber-50 dark:bg-gray-800/80 p-8 rounded-2xl whitespace-pre-line mb-8 border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] text-gray-900 dark:text-gray-100">
+              <div className="leading-relaxed font-medium bg-amber-50 dark:bg-gray-800/80 p-4 md:p-8 rounded-2xl whitespace-pre-line mb-8 border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] text-gray-900 dark:text-gray-100">
                 {lesson.content}
               </div>
 
@@ -129,7 +129,7 @@ export const ReadingDetail: React.FC = () => {
               )}
 
               {lesson.vocabulary_highlights && lesson.vocabulary_highlights.length > 0 && (
-                <div className="mt-12 bg-white dark:bg-gray-800 rounded-2xl border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] p-6">
+                <div className="mt-6 md:mt-12 bg-white dark:bg-gray-800 rounded-2xl border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] p-6">
                   <h3 className="text-2xl font-black uppercase tracking-tight text-black dark:text-white flex items-center gap-2 mb-6 border-b-4 border-black dark:border-gray-700 pb-4">
                     <BookOpen className="w-6 h-6 stroke-3" /> Vocabulary Highlights
                   </h3>

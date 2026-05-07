@@ -130,7 +130,7 @@ export const ProgressPage: React.FC = () => {
             </div>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-600 rounded-lg">
+                <div className="p-2 bg-yellow-100 dark:bg-yellow-300 text-yellow-600 rounded-lg">
                   <Headphones className="w-5 h-5" />
                 </div>
                 <span className="font-bold text-lg">Listening</span>

@@ -33,8 +33,8 @@ export const Button: React.FC<ButtonProps> = ({
 
   const sizes = {
     sm: 'h-10 px-4 text-xs border-2 rounded-lg',
-    md: 'h-14 px-6 text-base border-4 rounded-xl',
-    lg: 'h-17 px-8 text-xl border-4 rounded-2xl',
+    md: 'h-14 px-4 md:px-6 text-base border-4 rounded-xl',
+    lg: 'h-17 px-6 md:px-8 text-xl border-4 rounded-2xl',
   };
 
   const shadowDimensions = {

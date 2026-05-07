@@ -7,7 +7,7 @@ import { sounds } from '../../services/sounds';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { LessonMeaning } from '../vocabulary/LessonMeaning';
-import { AnswerInput } from '../ui/AnswerInput';
+import { AnswerInput } from '../common/AnswerInput';
 interface BatchReviewProps {
   words: VocabWord[];
   onComplete: () => void;

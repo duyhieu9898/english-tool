@@ -143,9 +143,9 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
 
   if (isLoading)
     return (
-      <div className="p-6 md:p-8 flex justify-center">
+      <PageContainer className="flex justify-center">
         <div className="w-8 h-8 rounded-full border-4 border-black dark:border-white border-t-transparent animate-spin" />
-      </div>
+      </PageContainer>
     );
 
   return (
@@ -178,7 +178,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
               type="button"
               className={`
                 group flex flex-col p-5 cursor-pointer text-left w-full
-                ${isCompleted ? 'bg-lime-400 dark:bg-lime-500' : 'bg-white dark:bg-gray-800'}
+                ${isCompleted ? 'bg-green-300 dark:bg-green-600' : 'bg-white dark:bg-gray-800'}
                 border-4 border-black dark:border-white 
                 rounded-2xl 
                 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]
@@ -188,7 +188,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
               `}
               onClick={() => navigate(`/${moduleType}/${level}/${lesson.id}`)}
             >
-              <div className="flex justify-between items-start mb-6">
+              <div className="flex justify-between items-start mb-4 md:mb-6">
                 <div
                   className={`
                   w-14 h-14 flex items-center justify-center rounded-xl border-4 border-black dark:border-gray-900 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]
@@ -219,8 +219,8 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
                 </p>
               )}
 
-              <div className="mt-auto pt-4 flex justify-between items-center text-black dark:text-white border-t-2 border-dashed border-black/20 dark:border-white/20">
-                <span className="text-base font-black uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-2 transition-transform mt-4">
+              <div className="mt-auto pt-4 md:pt-6 flex justify-between items-center text-black dark:text-white border-t-2 border-dashed border-black/20 dark:border-white/20">
+                <span className="text-base font-black uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-2 transition-transform">
                   {isCompleted
                     ? moduleType === 'vocabulary'
                       ? 'Replay Stage'

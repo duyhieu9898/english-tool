@@ -15,7 +15,40 @@ import { Button } from '../components/ui/Button';
 import { ProgressBar } from '../components/ui/ProgressBar';
 import { HeatmapCalendar } from '../components/common/HeatmapCalendar';
 import { PageContainer } from '../components/layout/PageContainer';
+import { QuickNavCard, QuickNavItem } from '../components/common/QuickNavCard';
 import { Flame, Play, Clock, BookType, Book, Map, Sparkles, Headphones } from 'lucide-react';
+
+const NAV_ITEMS_CONFIG = [
+  {
+    id: 'vocabulary',
+    title: 'Vocabulary',
+    path: '/vocabulary',
+    icon: BookType,
+    color: 'blue' as const,
+  },
+  {
+    id: 'listening',
+    title: 'Listening',
+    path: '/listening',
+    icon: Headphones,
+    color: 'yellow' as const,
+  },
+  {
+    id: 'review',
+    title: 'Boss Battle',
+    path: '/review/general',
+    icon: Sparkles,
+    color: 'orange' as const,
+    titleColor: 'text-orange-600 dark:text-orange-400',
+  },
+  {
+    id: 'progress',
+    title: 'Progress',
+    path: '/progress',
+    icon: Map,
+    color: 'green' as const,
+  },
+];
 
 export const Dashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -54,6 +87,28 @@ export const Dashboard: React.FC = () => {
     )[0];
   }, [sessions]);
 
+  const navItems: QuickNavItem[] = React.useMemo(
+    () => [
+      {
+        ...NAV_ITEMS_CONFIG[0],
+        subtitle: `${stats?.totalWordsLearned ?? 0} learned`,
+      },
+      {
+        ...NAV_ITEMS_CONFIG[1],
+        subtitle: `${completedListening} completed`,
+      },
+      {
+        ...NAV_ITEMS_CONFIG[2],
+        subtitle: 'General Review',
+      },
+      {
+        ...NAV_ITEMS_CONFIG[3],
+        subtitle: `${stats?.totalStudyDays ?? 0} study days`,
+      },
+    ],
+    [stats, completedListening],
+  );
+
   if (isLoading)
     return (
       <div className="flex items-center justify-center min-h-[400px]">
@@ -62,7 +117,7 @@ export const Dashboard: React.FC = () => {
     );
 
   return (
-    <PageContainer className="space-y-8">
+    <PageContainer className="space-y-6 md:space-y-8">
       {/* Welcome & Streak */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
@@ -105,12 +160,12 @@ export const Dashboard: React.FC = () => {
       {/* Continue Learning */}
       {activeSession && lessonMap[activeSession.id] && (
         <Card padding="lg" className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/10">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <div className="text-xs font-bold uppercase tracking-widest text-blue-500 mb-1">
                 <Clock className="w-3 h-3 inline mr-1" /> Continue Learning
               </div>
-              <h3 className="text-lg font-black">{lessonMap[activeSession.id].name}</h3>
+              <h3 className="text-xl md:text-lg font-black">{lessonMap[activeSession.id].name}</h3>
               <p className="text-sm text-gray-500">
                 Card {activeSession.currentIndex + 1} of{' '}
                 {lessonMap[activeSession.id].wordCount}
@@ -131,7 +186,7 @@ export const Dashboard: React.FC = () => {
       {/* Due Words */}
       {dueWords.length > 0 && (
         <Card padding="lg" className="border-orange-200 dark:border-orange-800 bg-orange-50 dark:bg-orange-900/10">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <div className="text-xs font-bold uppercase tracking-widest text-orange-500 mb-1">
                 Review Due
@@ -147,57 +202,9 @@ export const Dashboard: React.FC = () => {
 
       {/* Quick Nav */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <button
-          onClick={() => navigate('/vocabulary')}
-          className="p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 flex items-center gap-3 transition-all text-left group"
-        >
-          <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
-            <BookType className="w-6 h-6 text-blue-500" />
-          </div>
-          <div>
-            <div className="font-bold">Vocabulary</div>
-            <div className="text-xs text-gray-500">{stats?.totalWordsLearned ?? 0} learned</div>
-          </div>
-        </button>
-
-        <button
-          onClick={() => navigate('/listening')}
-          className="p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:bg-yellow-50 dark:hover:bg-yellow-900/10 flex items-center gap-3 transition-all text-left group"
-        >
-          <div className="w-12 h-12 rounded-xl bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Headphones className="w-6 h-6 text-yellow-500" />
-          </div>
-          <div>
-            <div className="font-bold">Listening</div>
-            <div className="text-xs text-gray-500">{completedListening} completed</div>
-          </div>
-        </button>
-
-        <button
-          onClick={() => navigate('/review/general')}
-          className="p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/10 flex items-center gap-3 transition-all text-left group"
-        >
-          <div className="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Sparkles className="w-6 h-6 text-orange-500" />
-          </div>
-          <div>
-            <div className="font-bold text-orange-600 dark:text-orange-400">Boss Battle</div>
-            <div className="text-xs text-gray-500">General Review</div>
-          </div>
-        </button>
-
-        <button
-          onClick={() => navigate('/progress')}
-          className="p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-green-400 hover:bg-green-50 dark:hover:bg-green-900/10 flex items-center gap-3 transition-all text-left group"
-        >
-          <div className="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Map className="w-6 h-6 text-green-500" />
-          </div>
-          <div>
-            <div className="font-bold">Progress</div>
-            <div className="text-xs text-gray-500">{stats?.totalStudyDays ?? 0} study days</div>
-          </div>
-        </button>
+        {navItems.map((item) => (
+          <QuickNavCard key={item.path} item={item} />
+        ))}
       </div>
 
       {/* Heatmap */}

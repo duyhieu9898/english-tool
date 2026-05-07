@@ -4,11 +4,12 @@ import {
   useUpdateSettingsMutation,
   useResetAllDataMutation,
   useImportBackupMutation,
-} from '../../hooks/useApi';
-import { api } from '../../services/api';
-import { AppSettings } from '../../types';
-import { Card } from '../../components/ui/Card';
-import { Button } from '../../components/ui/Button';
+} from '@/hooks/useApi';
+import { api } from '@/services/api';
+import { AppSettings } from '@/types';
+import { Card } from '@/components/ui/Card';
+import { Button } from '@/components/ui/Button';
+import { PageContainer } from '@/components/layout/PageContainer';
 import {
   Settings,
   Save,
@@ -25,7 +26,10 @@ import {
 export const SettingsPage: React.FC = () => {
   const { data: settings, isLoading } = useSettings();
   const [localSettings, setLocalSettings] = useState<AppSettings>({
-    id: 1, dailyGoal: 20, theme: 'dark', soundEnabled: true,
+    id: 1,
+    dailyGoal: 20,
+    theme: 'dark',
+    soundEnabled: true,
   });
 
   // Sync server settings into local state when loaded
@@ -33,13 +37,13 @@ export const SettingsPage: React.FC = () => {
     if (settings) setLocalSettings(settings);
   }, [settings]);
 
-  const updateMutation    = useUpdateSettingsMutation();
-  const resetMutation     = useResetAllDataMutation();
-  const importMutation    = useImportBackupMutation();
+  const updateMutation = useUpdateSettingsMutation();
+  const resetMutation = useResetAllDataMutation();
+  const importMutation = useImportBackupMutation();
 
-  const [savedOk, setSavedOk]                           = useState(false);
-  const [showResetConfirm, setShowResetConfirm]         = useState(false);
-  const [pendingImportData, setPendingImportData]       = useState<Record<string, unknown> | null>(null);
+  const [savedOk, setSavedOk] = useState(false);
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [pendingImportData, setPendingImportData] = useState<Record<string, unknown> | null>(null);
 
   const handleSave = async () => {
     setSavedOk(false);
@@ -95,9 +99,14 @@ export const SettingsPage: React.FC = () => {
     reader.onload = async (event) => {
       try {
         const data = JSON.parse(event.target?.result as string);
-        if (!data.settings || !data.stats) { alert('Invalid backup file — missing required fields.'); return; }
+        if (!data.settings || !data.stats) {
+          alert('Invalid backup file — missing required fields.');
+          return;
+        }
         setPendingImportData(data);
-      } catch { alert('Failed to parse backup file.'); }
+      } catch {
+        alert('Failed to parse backup file.');
+      }
     };
     reader.readAsText(file);
     e.target.value = '';
@@ -134,7 +143,7 @@ export const SettingsPage: React.FC = () => {
     );
 
   return (
-    <div className="p-6 md:p-8 max-w-3xl mx-auto space-y-8">
+    <PageContainer className="space-y-6 md:space-y-8">
       <h1 className="text-3xl font-black mb-2 flex items-center gap-3">
         <Settings className="w-8 h-8 text-blue-500" /> Settings
       </h1>
@@ -179,7 +188,7 @@ export const SettingsPage: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row sm:items-end gap-4">
             <div className="flex-1 max-w-[200px]">
-              <label 
+              <label
                 htmlFor="daily-goal-input"
                 className="block font-bold text-gray-900 dark:text-gray-100 mb-2 cursor-pointer"
               >
@@ -192,20 +201,33 @@ export const SettingsPage: React.FC = () => {
                 max={200}
                 value={localSettings.dailyGoal}
                 onChange={(e) =>
-                  setLocalSettings((s) => ({ ...s, dailyGoal: Math.max(1, parseInt(e.target.value) || 1) }))
+                  setLocalSettings((s) => ({
+                    ...s,
+                    dailyGoal: Math.max(1, parseInt(e.target.value) || 1),
+                  }))
                 }
                 className="w-full px-4 py-3 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-xl focus:border-blue-500 dark:focus:border-blue-500 outline-none transition-colors font-bold"
               />
             </div>
             <div className="flex items-center gap-3">
-              <Button 
-                onClick={handleSave} 
-                disabled={updateMutation.isPending || settings?.dailyGoal === localSettings.dailyGoal}
+              <Button
+                onClick={handleSave}
+                disabled={
+                  updateMutation.isPending || settings?.dailyGoal === localSettings.dailyGoal
+                }
               >
-                {updateMutation.isPending ? 'Saving...' : <><Save className="w-5 h-5 mr-2" /> Save Goal</>}
+                {updateMutation.isPending ? (
+                  'Saving...'
+                ) : (
+                  <>
+                    <Save className="w-5 h-5 mr-2" /> Save Goal
+                  </>
+                )}
               </Button>
               {savedOk && (
-                <span className="text-sm font-bold text-green-600 dark:text-green-400 whitespace-nowrap">✓ Saved!</span>
+                <span className="text-sm font-bold text-green-600 dark:text-green-400 whitespace-nowrap">
+                  ✓ Saved!
+                </span>
               )}
             </div>
           </div>
@@ -265,11 +287,7 @@ export const SettingsPage: React.FC = () => {
                 Warning: Permanently delete all your learning progress and logs.
               </div>
             </div>
-            <Button
-              variant="danger"
-              onClick={() => setShowResetConfirm(true)}
-              className="shrink-0"
-            >
+            <Button variant="danger" onClick={() => setShowResetConfirm(true)} className="shrink-0">
               <Trash2 className="w-5 h-5 mr-2" /> Reset Everything
             </Button>
           </div>
@@ -285,14 +303,19 @@ export const SettingsPage: React.FC = () => {
                 <Trash2 className="w-6 h-6 text-red-600" />
               </div>
               <div>
-                <h3 className="font-black text-lg text-gray-900 dark:text-white">Reset User Data?</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">This action cannot be undone.</p>
+                <h3 className="font-black text-lg text-gray-900 dark:text-white">
+                  Reset User Data?
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  This action cannot be undone.
+                </p>
               </div>
             </div>
 
             <p className="text-sm text-gray-700 dark:text-gray-300 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-3">
               All <strong>word progress</strong>, <strong>lesson progress</strong>,{' '}
-              <strong>study streaks</strong>, and <strong>session data</strong> will be permanently deleted.
+              <strong>study streaks</strong>, and <strong>session data</strong> will be permanently
+              deleted.
             </p>
 
             <div className="flex gap-3">
@@ -311,9 +334,14 @@ export const SettingsPage: React.FC = () => {
                 className="flex-1 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 border-2 border-red-500 font-black text-white uppercase tracking-wide transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
               >
                 {resetMutation.isPending ? (
-                  <><div className="w-4 h-4 rounded-full border-2 border-white border-t-transparent animate-spin" /> Resetting...</>
+                  <>
+                    <div className="w-4 h-4 rounded-full border-2 border-white border-t-transparent animate-spin" />{' '}
+                    Resetting...
+                  </>
                 ) : (
-                  <><Trash2 className="w-4 h-4" /> Yes, Reset</>
+                  <>
+                    <Trash2 className="w-4 h-4" /> Yes, Reset
+                  </>
                 )}
               </button>
             </div>
@@ -330,30 +358,46 @@ export const SettingsPage: React.FC = () => {
                 <Upload className="w-6 h-6 text-orange-600" />
               </div>
               <div>
-                <h3 className="font-black text-lg text-gray-900 dark:text-white">Restore Backup?</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">This action cannot be undone.</p>
+                <h3 className="font-black text-lg text-gray-900 dark:text-white">
+                  Restore Backup?
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  This action cannot be undone.
+                </p>
               </div>
             </div>
             <p className="text-sm text-gray-700 dark:text-gray-300 bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-xl p-3">
-              All current <strong>progress, streaks, and settings</strong> will be replaced by the backup file.
+              All current <strong>progress, streaks, and settings</strong> will be replaced by the
+              backup file.
             </p>
             <div className="flex gap-3">
-              <button onClick={() => setPendingImportData(null)} disabled={importMutation.isPending}
-                className="flex-1 py-2.5 rounded-xl border-2 border-gray-300 dark:border-gray-700 font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors disabled:opacity-50">
+              <button
+                onClick={() => setPendingImportData(null)}
+                disabled={importMutation.isPending}
+                className="flex-1 py-2.5 rounded-xl border-2 border-gray-300 dark:border-gray-700 font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors disabled:opacity-50"
+              >
                 Cancel
               </button>
-              <button onClick={confirmImport} disabled={importMutation.isPending}
-                className="flex-1 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 border-2 border-orange-400 font-black text-white uppercase tracking-wide transition-colors disabled:opacity-50 flex items-center justify-center gap-2">
+              <button
+                onClick={confirmImport}
+                disabled={importMutation.isPending}
+                className="flex-1 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 border-2 border-orange-400 font-black text-white uppercase tracking-wide transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+              >
                 {importMutation.isPending ? (
-                  <><div className="w-4 h-4 rounded-full border-2 border-white border-t-transparent animate-spin" /> Restoring...</>
+                  <>
+                    <div className="w-4 h-4 rounded-full border-2 border-white border-t-transparent animate-spin" />{' '}
+                    Restoring...
+                  </>
                 ) : (
-                  <><Upload className="w-4 h-4" /> Yes, Restore</>
+                  <>
+                    <Upload className="w-4 h-4" /> Yes, Restore
+                  </>
                 )}
               </button>
             </div>
           </div>
         </div>
       )}
-    </div>
+    </PageContainer>
   );
 };

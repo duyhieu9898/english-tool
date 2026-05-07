@@ -4,6 +4,7 @@ import type { VocabWord } from '../../types';
 import { useTTS } from '../../hooks/useTTS';
 import { Search, Volume2, BookOpen } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
+import { PageContainer } from '@/components/layout/PageContainer';
 
 type SearchResult = VocabWord & { lessonId: string; lessonName: string; level: string };
 
@@ -24,7 +25,7 @@ export const SearchVocab: React.FC = () => {
   const term = query.trim().toLowerCase();
   const results: SearchResult[] = React.useMemo(() => {
     if (term.length < 2) return [];
-    
+
     const filtered = (allWords as SearchResult[]).filter(
       (w) =>
         w.term.toLowerCase().includes(term) ||
@@ -52,7 +53,7 @@ export const SearchVocab: React.FC = () => {
   }, [allWords, term]);
 
   return (
-    <div className="p-6 md:p-8 max-w-4xl mx-auto space-y-6">
+    <PageContainer className="space-y-6">
       {/* Header */}
       <div>
         <h1 className="text-3xl md:text-4xl font-black flex items-center gap-3 mb-2 tracking-tight">
@@ -91,7 +92,9 @@ export const SearchVocab: React.FC = () => {
       )}
 
       {!isLoading && term.length > 0 && term.length < 2 && (
-        <p className="text-center py-8 text-gray-500 font-medium">Type at least 2 characters to search</p>
+        <p className="text-center py-8 text-gray-500 font-medium">
+          Type at least 2 characters to search
+        </p>
       )}
 
       {!isLoading && term.length >= 2 && results.length === 0 && (
@@ -114,9 +117,13 @@ export const SearchVocab: React.FC = () => {
             >
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-3 mb-1 flex-wrap">
-                  <span className="text-2xl font-black lowercase text-black dark:text-white">{word.term}</span>
+                  <span className="text-2xl font-black lowercase text-black dark:text-white">
+                    {word.term}
+                  </span>
                   {word.modifiers && (
-                    <span className="text-sm font-bold text-gray-500 dark:text-gray-400 italic">{word.modifiers}</span>
+                    <span className="text-sm font-bold text-gray-500 dark:text-gray-400 italic">
+                      {word.modifiers}
+                    </span>
                   )}
                 </div>
 
@@ -125,7 +132,9 @@ export const SearchVocab: React.FC = () => {
                 </p>
 
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className={`text-xs font-black uppercase tracking-wider px-2.5 py-1 rounded-lg border-2 border-black ${LEVEL_COLORS[word.level] ?? 'bg-gray-200 text-black'}`}>
+                  <span
+                    className={`text-xs font-black uppercase tracking-wider px-2.5 py-1 rounded-lg border-2 border-black ${LEVEL_COLORS[word.level] ?? 'bg-gray-200 text-black'}`}
+                  >
                     {word.level.toUpperCase()}
                   </span>
                   <span className="inline-flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 font-medium">
@@ -147,6 +156,6 @@ export const SearchVocab: React.FC = () => {
           ))}
         </div>
       )}
-    </div>
+    </PageContainer>
   );
 };

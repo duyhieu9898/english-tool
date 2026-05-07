@@ -1,0 +1,24 @@
+[
+  {
+    "ts": "2026-05-07T08:16:25.388Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-07T08:16:25.393Z",
+    "fn": "session:new",
+    "lesson": "1"
+  },
+  {
+    "ts": "2026-05-07T08:35:07.736Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-07T08:35:07.750Z",
+    "fn": "session:new",
+    "lesson": "1"
+  }
+]

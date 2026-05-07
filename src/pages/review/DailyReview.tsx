@@ -15,7 +15,7 @@ import { shuffleArray } from '@/utils/array';
 import { LessonMeaning } from '@/components/vocabulary/LessonMeaning';
 import { PageDetail } from '@/components/layout/PageDetailContainer';
 import { Badge } from '@/components/ui/Badge';
-import { AnswerInput } from '@/components/ui/AnswerInput';
+import { AnswerInput } from '@/components/common/AnswerInput';
 
 export const DailyReview: React.FC = () => {
   const navigate = useNavigate();
@@ -51,7 +51,7 @@ export const DailyReview: React.FC = () => {
 
   return (
     <PageDetail>
-      <div className="flex-1 flex flex-col justify-center w-full mx-auto relative">
+      <div className="h-full flex items-center justify-center w-full mx-auto relative">
         {/* No words due today */}
         {!isCompleted && dueWords.length === 0 && (
           <div className="text-center space-y-8 animate-in fade-in zoom-in duration-500 flex flex-col items-center">

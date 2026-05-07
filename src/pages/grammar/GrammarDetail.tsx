@@ -5,7 +5,7 @@ import { useQuizFlow } from '../../hooks/useQuizFlow';
 import { ArrowLeft, BookOpen, CheckCircle2, ChevronRight, Check, Star } from 'lucide-react';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
 import { Button } from '../../components/ui/Button';
-import { QuizOption } from '../../components/ui/QuizOption';
+import { QuizOption } from '../../components/common/QuizOption';
 
 export const GrammarDetail: React.FC = () => {
   const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
@@ -76,9 +76,9 @@ export const GrammarDetail: React.FC = () => {
         </Button>
       </div>
 
-      <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] overflow-hidden">
+      <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative">
         {mode === 'THEORY' && (
-          <div className="p-6 overflow-y-auto">
+          <div>
             <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-black dark:text-white leading-none mb-4">
               {lesson.title}
             </h1>
@@ -101,7 +101,7 @@ export const GrammarDetail: React.FC = () => {
                     {lesson.structures.map((st, i) => (
                       <div
                         key={i}
-                        className="bg-yellow-100 dark:bg-yellow-900/30 p-4 rounded-2xl border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)]"
+                        className="bg-yellow-100 dark:bg-yellow-300 p-4 rounded-2xl border-4 border-black dark:border-gray-700 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)]"
                       >
                         <div className="font-black text-xl text-black dark:text-white mb-2 uppercase">
                           {st.name}
@@ -132,7 +132,7 @@ export const GrammarDetail: React.FC = () => {
               )}
             </div>
 
-            <div className="mt-12 flex justify-end">
+            <div className="mt-6 md:mt-12 flex justify-end">
               <Button
                 variant="black"
                 size="md"

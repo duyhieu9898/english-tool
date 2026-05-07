@@ -50,7 +50,7 @@ export const LevelSelector: React.FC<LevelSelectorProps> = ({ moduleType, title,
               type="button"
               onClick={() => navigate(`/${moduleType}/${level.id}`)}
               className={`
-                group flex flex-col relative overflow-hidden p-6 cursor-pointer text-left
+                group flex flex-col relative overflow-hidden p-4 md:p-6 cursor-pointer text-left
                 ${level.color} 
                 border-4 border-black dark:border-white 
                 rounded-2xl 
@@ -63,7 +63,7 @@ export const LevelSelector: React.FC<LevelSelectorProps> = ({ moduleType, title,
               {/* Background Decoration */}
               <div className="absolute top-0 right-0 w-32 h-32 transform translate-x-12 -translate-y-12 rounded-full opacity-20 bg-white transition-transform group-hover:scale-125 duration-500" />
 
-              <div className="flex justify-between items-start mb-6 text-black relative z-10">
+              <div className="flex justify-between items-start mb-4 md:mb-6 text-black relative z-10">
                 <span className="text-5xl font-black uppercase tracking-tighter">{level.id}</span>
                 <div className="p-3 bg-white/40 backdrop-blur-sm border-2 border-black rounded-xl transform group-hover:rotate-12 transition-transform">
                   <Icon className="w-8 h-8" strokeWidth={2.5} />

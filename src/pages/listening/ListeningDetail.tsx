@@ -172,7 +172,7 @@ export const ListeningDetail: React.FC = () => {
             </div>
 
             {/* Dictation Card */}
-            <div className="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] space-y-8">
+            <div className="space-y-4 md:space-y-8">
               <div className="flex flex-col items-center gap-6">
                 <h2 className="text-2xl font-black uppercase text-center text-gray-800 dark:text-gray-100 italic">
                   Listen and type
@@ -251,7 +251,7 @@ export const ListeningDetail: React.FC = () => {
                 />
               </div>
 
-              <div className="pt-4 flex gap-4">
+              <div className="pt-4 flex">
                 {isCorrect === true ? (
                   <Button
                     variant="primary"
@@ -277,7 +277,7 @@ export const ListeningDetail: React.FC = () => {
               </div>
 
               {/* Shortcut Hint */}
-              <div className="hidden md:flex justify-center gap-6 text-[10px] font-black uppercase tracking-widest text-gray-400 dark:text-gray-500">
+              <div className="hidden md:flex mt-4 justify-center gap-6 text-[10px] font-black uppercase tracking-widest text-gray-400 dark:text-gray-500">
                 <span className="flex items-center gap-1">
                   <kbd className="px-1.5 py-0.5 border border-gray-300 rounded bg-gray-100 text-gray-600">Enter</kbd> to {isCorrect === true ? 'continue' : 'check'}
                 </span>

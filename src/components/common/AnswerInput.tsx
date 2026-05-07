@@ -9,8 +9,8 @@ export const AnswerInput = forwardRef<HTMLInputElement, AnswerInputProps>(
   ({ className, variant = 'blue', size = 'md', ...props }, ref) => {
     const variantStyles = {
       blue: 'focus:bg-blue-50 dark:focus:bg-blue-900/30',
-      yellow: 'focus:bg-yellow-100 dark:focus:bg-yellow-900',
-      orange: 'focus:bg-orange-100 dark:focus:bg-orange-900/50',
+      yellow: 'focus:bg-yellow-100 dark:focus:bg-yellow-500',
+      orange: 'focus:bg-orange-100 dark:focus:bg-orange-500/50',
     };
 
     const sizeStyles = {

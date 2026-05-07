@@ -16,7 +16,7 @@ import { shuffleArray } from '@/utils/array';
 import { LessonMeaning } from '@/components/vocabulary/LessonMeaning';
 import { PageDetail } from '@/components/layout/PageDetailContainer';
 import { Badge } from '@/components/ui/Badge';
-import { AnswerInput } from '@/components/ui/AnswerInput';
+import { AnswerInput } from '@/components/common/AnswerInput';
 
 type SessionState = 'LOADING' | 'EMPTY' | 'REVIEWING' | 'COMPLETED';
 
@@ -86,7 +86,7 @@ export const GeneralReview: React.FC = () => {
 
   return (
     <PageDetail>
-      <div className="flex-1 flex flex-col justify-center w-full mx-auto relative">
+      <div className="h-full flex items-center justify-center w-full mx-auto relative">
         {/* No battle available */}
         {sessionState === 'EMPTY' && (
           <div className="text-center space-y-8 animate-in fade-in zoom-in duration-500 flex flex-col items-center">
