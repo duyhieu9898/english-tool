@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Volume2, ChevronRight, Check } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { VocabWord } from '../../types';
@@ -105,7 +105,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <motion.div
+        <m.div
           className="w-full h-full relative preserve-3d cursor-pointer"
           animate={{ rotateY: flipped ? 180 : 0 }}
           transition={{ duration: 0.6, type: 'spring', stiffness: 260, damping: 20 }}
@@ -182,11 +182,11 @@ export const FlashCard: React.FC<FlashCardProps> = ({
               </div>
             </div>
           </div>
-        </motion.div>
+        </m.div>
       </div>
 
       {/* Control Buttons - Always Visible */}
-      <motion.div
+      <m.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         className="mt-2 flex flex-col items-center gap-3 w-full"
@@ -209,7 +209,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
         >
           <Check className="w-4 h-4 opacity-70" /> Remembered
         </Button>
-      </motion.div>
+      </m.div>
     </div>
   );
 };
