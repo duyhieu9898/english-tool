@@ -13,7 +13,6 @@ import { Lesson } from '../types';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { ProgressBar } from '../components/ui/ProgressBar';
-import { HeatmapCalendar } from '../components/common/HeatmapCalendar';
 import { PageContainer } from '../components/layout/PageContainer';
 import { QuickNavCard, QuickNavItem } from '../components/common/QuickNavCard';
 import { Flame, Play, Clock, BookType, Book, Map, Sparkles, Headphones } from 'lucide-react';
@@ -207,11 +206,6 @@ export const Dashboard: React.FC = () => {
         ))}
       </div>
 
-      {/* Heatmap */}
-      <Card padding="lg">
-        <h2 className="text-xl font-bold mb-6">Study Activity</h2>
-        <HeatmapCalendar logs={studyLogs} dailyGoal={dailyGoal} />
-      </Card>
     </PageContainer>
   );
 };
