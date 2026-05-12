@@ -1,6 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { BookOpen, BookType, Book, CheckSquare, Layers, Settings, Activity, Headphones } from 'lucide-react';
+import {
+  BookOpen,
+  BookType,
+  Book,
+  CheckSquare,
+  Layers,
+  Settings,
+  Activity,
+  Headphones,
+} from 'lucide-react';
 
 export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
   isOpen,
@@ -20,10 +29,7 @@ export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
     <>
       {/* Mobile Overlay */}
       {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/50 z-51 transition-opacity"
-          onClick={onClose}
-        />
+        <div className="fixed inset-0 bg-black/50 z-51 transition-opacity" onClick={onClose} />
       )}
 
       {/* Sidebar */}
@@ -34,9 +40,9 @@ export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
       >
         <div className="h-16 flex items-center justify-between px-6 border-b border-gray-200 dark:border-gray-800 shrink-0">
           <NavLink to="/" className="flex items-center gap-3" onClick={onClose}>
-            <img 
-              src="/logo.png" 
-              alt="LingoMe Logo" 
+            <img
+              src="/logo.png"
+              alt="LingoMe Logo"
               className="w-8 h-8 rounded-lg shadow-xs object-cover"
             />
             <span className="text-xl font-bold bg-linear-to-r from-[#008c89] to-teal-400 bg-clip-text text-transparent">
