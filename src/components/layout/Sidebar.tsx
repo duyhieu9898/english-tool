@@ -34,11 +34,11 @@ export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
       >
         <div className="h-16 flex items-center justify-between px-6 border-b border-gray-200 dark:border-gray-800 shrink-0">
           <NavLink to="/" className="flex items-center gap-3" onClick={onClose}>
-            <div className="w-8 h-8 rounded-lg bg-linear-to-r from-blue-600 to-indigo-600 flex items-center justify-center text-white font-bold">
-              E
+            <div className="w-10 h-10 rounded-xl overflow-hidden shadow-sm">
+              <img src="/manifest-icon-192.maskable.png" alt="LingoMe Logo" className="w-full h-full object-cover" />
             </div>
-            <span className="text-xl font-bold bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              EnglishFlow
+            <span className="text-xl font-bold bg-linear-to-r from-teal-500 to-cyan-600 bg-clip-text text-transparent">
+              LingoMe
             </span>
           </NavLink>
 
