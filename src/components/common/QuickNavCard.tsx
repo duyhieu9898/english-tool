@@ -46,7 +46,7 @@ export const QuickNavCard: React.FC<QuickNavCardProps> = ({ item }) => {
   return (
     <button
       onClick={() => navigate(item.path)}
-      className={`p-4 md:p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 ${style.hover} flex items-center gap-3 transition-all text-left group`}
+      className={`p-4 md:p-5 rounded-2xl border-2 border-transparent dark:border-gray-800 shadow-sm ${style.hover} flex items-center gap-3 transition-all text-left group bg-white`}
     >
       <div
         className={`w-12 h-12 rounded-xl ${style.iconBg} flex items-center justify-center group-hover:scale-110 transition-transform`}
