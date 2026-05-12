@@ -30,9 +30,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon-196.png', 'apple-icon-180.png', 'manifest-icon-192.maskable.png'],
       manifest: {
-        name: 'LingoMe - Học Tiếng Anh',
+        name: 'LingoMe - English Learning',
         short_name: 'LingoMe',
-        description: 'LingoMe là ứng dụng học tiếng Anh hiệu quả.',
+        description: 'LingoMe is an effective English learning application.',
         theme_color: '#ffffff',
         icons: [
           {
