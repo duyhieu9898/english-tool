@@ -11,6 +11,7 @@ import { AnswerInput } from '../common/AnswerInput';
 interface BatchReviewProps {
   words: VocabWord[];
   onComplete: () => void;
+  onWordCorrect?: () => void;
   lessonId?: string;
   soundEnabled?: boolean;
 }
@@ -18,6 +19,7 @@ interface BatchReviewProps {
 export const BatchReview: React.FC<BatchReviewProps> = ({
   words,
   onComplete,
+  onWordCorrect,
   lessonId,
   soundEnabled = true,
 }) => {
@@ -51,6 +53,7 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
     if (isCorrect) {
       if (soundEnabled) sounds.correct();
       setInputValue('');
+      onWordCorrect?.();
       if (currentIndex < queue.length - 1) {
         setCurrentIndex((prev) => prev + 1);
       } else {
@@ -81,6 +84,7 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
   const handleNextAfterError = () => {
     setShowError(false);
     setInputValue('');
+    onWordCorrect?.();
     if (currentIndex < queue.length - 1) {
       setCurrentIndex((prev) => prev + 1);
     } else {

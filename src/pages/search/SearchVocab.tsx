@@ -148,7 +148,7 @@ export const SearchVocab: React.FC = () => {
                 size="sm"
                 onClick={() => speak(word.term)}
                 aria-label={`Pronounce ${word.term}`}
-                className="shrink-0 !h-11 !w-11"
+                className="shrink-0 h-11! w-11!"
               >
                 <Volume2 className="w-5 h-5" />
               </Button>

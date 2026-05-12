@@ -7,7 +7,7 @@ interface PageDetailProps {
 
 export const PageDetail: React.FC<PageDetailProps> = ({ children, className = '' }) => {
   return (
-    <div className={`flex-1 p-4 md:p-8 ${className}`}>
+    <div className={`flex-1 h-full p-4 md:p-8 ${className}`}>
       {children}
     </div>
   );

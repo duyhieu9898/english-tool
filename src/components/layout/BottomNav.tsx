@@ -1,15 +1,19 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Home, BookType, Hash, BookOpen, Sparkles } from 'lucide-react';
+import { Home, BookType, Sparkles, Headphones, Menu } from 'lucide-react';
 
-export const BottomNav: React.FC = () => {
+interface BottomNavProps {
+  onMenuClick: () => void;
+}
+
+export const BottomNav: React.FC<BottomNavProps> = ({ onMenuClick }) => {
   const location = useLocation();
   const navItems = [
     { to: '/vocabulary', icon: <BookType className="w-5 h-5 md:w-6 md:h-6" />, label: 'Vocab' },
-    { to: '/grammar', icon: <Hash className="w-5 h-5 md:w-6 md:h-6" />, label: 'Grammar' },
+    { to: '/listening', icon: <Headphones className="w-5 h-5 md:w-6 md:h-6" />, label: 'Listen' },
     { to: '/', icon: <Home className="w-5 h-5 md:w-6 md:h-6" />, label: 'Home' },
-    { to: '/reading', icon: <BookOpen className="w-5 h-5 md:w-6 md:h-6" />, label: 'Reading' },
     { to: '/review', icon: <Sparkles className="w-5 h-5 md:w-6 md:h-6" />, label: 'Review' },
+    { to: '#', icon: <Menu className="w-5 h-5 md:w-6 md:h-6" />, label: 'Menu', isMenu: true },
   ];
 
   return (
@@ -17,7 +21,29 @@ export const BottomNav: React.FC = () => {
       <nav className="bg-white dark:bg-gray-950 border-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] rounded-2xl p-1.5 overflow-hidden">
         <div className="flex justify-around items-center h-14">
           {navItems.map((item) => {
-            const isActive = location.pathname === item.to;
+            const isActive = location.pathname === item.to && !item.isMenu;
+            
+            const content = (
+              <>
+                {item.icon}
+                <span className="text-[10px] font-black uppercase tracking-tighter mt-1 leading-none">
+                  {item.label}
+                </span>
+              </>
+            );
+
+            if (item.isMenu) {
+              return (
+                <button
+                  key="menu-trigger"
+                  onClick={onMenuClick}
+                  className="flex flex-col items-center justify-center flex-1 h-full rounded-xl transition-all duration-200 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                >
+                  {content}
+                </button>
+              );
+            }
+
             return (
               <NavLink
                 key={item.to}
@@ -28,10 +54,7 @@ export const BottomNav: React.FC = () => {
                     : 'text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white'
                 }`}
               >
-                {item.icon}
-                <span className="text-[10px] font-black uppercase tracking-tighter mt-1 leading-none">
-                  {item.label}
-                </span>
+                {content}
               </NavLink>
             );
           })}

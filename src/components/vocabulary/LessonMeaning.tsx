@@ -30,7 +30,7 @@ export const LessonMeaning: React.FC<LessonMeaningProps> = ({ term, lessonId }) 
 
   return (
     <div className="flex flex-col items-center">
-      <h2 className="text-3xl font-black text-black dark:text-white leading-tight capitalize">
+      <h2 className="text-xl md:text-3xl font-black text-black dark:text-white leading-tight capitalize">
         {info.meaning}
       </h2>
       <span className="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-6">
@@ -38,7 +38,7 @@ export const LessonMeaning: React.FC<LessonMeaningProps> = ({ term, lessonId }) 
       </span>
       {info.sentences.length > 0 && (
         <div className="p-4 bg-gray-50 dark:bg-gray-900/40 rounded-2xl border-2 border-dashed border-gray-200 dark:border-gray-700 max-w-sm w-full">
-          <p className="text-gray-800 dark:text-gray-400 italic whitespace-pre-line text-left text-xl leading-relaxed">
+          <p className="text-gray-800 dark:text-gray-400 italic whitespace-pre-line text-left text-lg md:text-xl leading-relaxed">
             {info.sentences.map(s => `• ${s}`.replace(
               new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), 
               '_ '.repeat(term.length).trim()

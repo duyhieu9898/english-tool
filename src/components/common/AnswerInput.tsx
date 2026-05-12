@@ -14,7 +14,7 @@ export const AnswerInput = forwardRef<HTMLInputElement, AnswerInputProps>(
     };
 
     const sizeStyles = {
-      md: 'text-3xl py-3 px-3',
+      md: 'text-xl md:text-3xl py-2.5 md:py-3 px-3',
     };
 
     return (

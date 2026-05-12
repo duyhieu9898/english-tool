@@ -10,15 +10,16 @@ import {
 import type { VocabWord } from '../../types';
 import { FlashCard } from '../../components/flashcard/FlashCard';
 import { BatchReview } from '../../components/flashcard/BatchReview';
-import { ArrowLeft, Flag, Star } from 'lucide-react';
+import { ArrowLeft, Flag, Star, Sparkles } from 'lucide-react';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
 import { Button } from '../../components/ui/Button';
+import { ProgressBar } from '../../components/ui/ProgressBar';
 import { log } from '../../services/activityLogger';
 
 type SessionState = 'LOADING' | 'FLASHCARDS' | 'REVIEW' | 'COMPLETED';
 
 export const VocabSession: React.FC = () => {
-  const { level, lessonId } = useParams<{ level: string; lessonId: string }>();;
+  const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
 
   const navigate = useNavigate();
 
@@ -34,6 +35,7 @@ export const VocabSession: React.FC = () => {
 
   const [sessionState, setSessionState] = useState<SessionState>('LOADING');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [masteredCount, setMasteredCount] = useState(0);
   const initialIndexRef = useRef<number | null>(null);
   const [continueQueue, setContinueQueue] = useState<VocabWord[]>([]);
   // Ref mirrors continueQueue so finishSession always gets a non-stale snapshot
@@ -117,6 +119,7 @@ export const VocabSession: React.FC = () => {
     const word = lesson?.words[currentIndex];
     if (word) {
       rememberedWordsRef.current.push(word);
+      setMasteredCount((prev) => prev + 1);
       log({ fn: 'handleKnown', lesson: lessonId, detail: word.term });
     }
     advanceFlashcard();
@@ -195,17 +198,46 @@ export const VocabSession: React.FC = () => {
   }
 
   return (
-    <PageDetail>
+    <PageDetail className="flex flex-col justify-between gap-4">
       {/* Header */}
-      <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
-        <Button variant="outline" size="sm" onClick={() => navigate(`/vocabulary/${level}`)}>
-          <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> Retreat
-        </Button>
+      <div>
+        <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
+          <Button variant="outline" size="sm" onClick={() => navigate(`/vocabulary/${level}`)}>
+            <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> Retreat
+          </Button>
 
-        {sessionState === 'FLASHCARDS' && lesson && (
-          <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl transform  border-2 border-transparent">
-            <Flag className="w-5 h-5" /> Stage {currentIndex + 1}/{lesson.words.length}
-          </div>
+          {lesson && (
+            <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl transform border-2 border-transparent">
+              {sessionState === 'FLASHCARDS' ? (
+                <>
+                  <Flag className="w-5 h-5" /> Stage {currentIndex + 1}/{lesson.words.length}
+                </>
+              ) : sessionState === 'REVIEW' ? (
+                <>
+                  <Sparkles className="w-5 h-5" /> Boss Fight: {continueQueue.length} targets
+                </>
+              ) : (
+                <>
+                  <Star className="w-5 h-5" /> Mission Cleared
+                </>
+              )}
+            </div>
+          )}
+        </div>
+
+        {lesson && (
+          <ProgressBar
+            progress={
+              (((sessionState === 'REVIEW' || sessionState === 'COMPLETED'
+                ? lesson.words.length
+                : currentIndex) +
+                masteredCount) /
+                (lesson.words.length * 2)) *
+              100
+            }
+            color="lime"
+            height="xl"
+          />
         )}
       </div>
 
@@ -213,12 +245,6 @@ export const VocabSession: React.FC = () => {
       <div className="flex-1 flex flex-col justify-center max-w-lg md:max-w-2xl w-full mx-auto relative z-10">
         {sessionState === 'FLASHCARDS' && lesson && (
           <div className="space-y-8">
-            <div className="relative h-6 bg-white dark:bg-gray-800 border-4 border-black dark:border-gray-600 rounded-full overflow-hidden shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-              <div
-                className="absolute inset-y-0 left-0 bg-lime-400 border-r-4 border-black transition-all duration-300 ease-out"
-                style={{ width: `${(currentIndex / lesson.words.length) * 100}%` }}
-              />
-            </div>
             <FlashCard
               word={lesson.words[currentIndex]}
               onContinue={handleContinue}
@@ -228,16 +254,17 @@ export const VocabSession: React.FC = () => {
         )}
 
         {sessionState === 'REVIEW' && (
-          <div className="space-y-8 bg-white dark:bg-gray-800 p-6 md:p-8 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
-            <div className="text-center">
-              <h2 className="text-3xl font-black uppercase tracking-tight text-black dark:text-white inline-block transform -rotate-2">
-                Boss Fight!
-              </h2>
-              <p className="font-bold text-gray-600 dark:text-gray-300 mt-2 uppercase">
-                {continueQueue.length} targets remaining
-              </p>
-            </div>
-            <BatchReview words={continueQueue} onComplete={finishSession} lessonId={lessonId} />
+          <div className="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
+            <BatchReview
+              words={continueQueue}
+              onComplete={finishSession}
+              onWordCorrect={() => {
+                setMasteredCount((prev) => prev + 1);
+                // We don't remove from continueQueue here, BatchReview handles its own queue
+                // But we can update the display count if we want, or just wait for finishSession
+              }}
+              lessonId={lessonId}
+            />
           </div>
         )}
 

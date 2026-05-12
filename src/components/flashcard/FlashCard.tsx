@@ -101,7 +101,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
   return (
     <div className="w-full max-w-md mx-auto flex flex-col gap-6">
       <div
-        className="w-full aspect-5/6 perspective-1000 relative"
+        className="w-full aspect-9/10 md:aspect-5/6 perspective-1000 relative"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
@@ -189,7 +189,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
       <m.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="mt-2 flex flex-col items-center gap-3 w-full"
+        className="flex flex-col items-center gap-3 w-full"
       >
         <Button
           variant="success"
@@ -203,7 +203,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
 
         <Button
           variant="ghost"
-          size="md"
+          size="sm"
           onClick={onKnown}
           className="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 font-medium"
         >

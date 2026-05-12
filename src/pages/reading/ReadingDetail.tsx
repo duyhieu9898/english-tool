@@ -151,7 +151,7 @@ export const ReadingDetail: React.FC = () => {
                           variant="outline"
                           size="sm"
                           onClick={() => speak(vh.word)}
-                          className="!h-12 !w-12 !p-0"
+                          className="h-12! w-12! p-0!"
                         >
                           <Volume2 className="w-6 h-6 stroke-3" />
                         </Button>
