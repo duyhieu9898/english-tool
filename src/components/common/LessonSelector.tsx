@@ -200,7 +200,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
 
                 {isCompleted ? (
                   <div className="bg-black text-lime-400 px-3 py-1.5 font-black text-xs uppercase border-2 border-black rounded-lg transform rotate-6 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.5)]">
-                    CLEARED
+                    {lesson.badgeLabel}
                   </div>
                 ) : (
                   <div className="bg-white dark:bg-gray-700 text-black dark:text-white px-3 py-1 font-bold text-sm border-2 border-black dark:border-gray-500 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(100,100,100,1)]">
