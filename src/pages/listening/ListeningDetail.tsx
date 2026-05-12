@@ -5,13 +5,7 @@ import { useQuizFlow } from '../../hooks/useQuizFlow';
 import { useTTS } from '../../hooks/useTTS';
 import { normalizeText } from './listening.utils';
 import { PageDetail } from '../../components/layout/PageDetailContainer';
-import {
-  ArrowLeft,
-  Volume2,
-  Check,
-  ChevronRight,
-  Trophy,
-} from 'lucide-react';
+import { ArrowLeft, Volume2, Check, ChevronRight, Trophy } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
 import { Textarea } from '../../components/ui/Textarea';
 
@@ -51,7 +45,10 @@ export const ListeningDetail: React.FC = () => {
   }, [lesson, currentQuestionIndex]);
 
   const maskWord = (word: string) => {
-    return word.split('').map(char => /[a-zA-Z0-9]/.test(char) ? '*' : char).join('');
+    return word
+      .split('')
+      .map((char) => (/[a-zA-Z0-9]/.test(char) ? '*' : char))
+      .join('');
   };
 
   const handlePlayAudio = useCallback(() => {
@@ -96,8 +93,8 @@ export const ListeningDetail: React.FC = () => {
   }, [lesson, currentQuestionIndex, userInput, attempts, markCorrect, markIncorrect, targetWords]);
 
   const toggleWordReveal = (index: number) => {
-    setRevealedIndices(prev => 
-      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    setRevealedIndices((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
     );
   };
 
@@ -112,8 +109,8 @@ export const ListeningDetail: React.FC = () => {
       // Alt + H to toggle hint (reveal all)
       if (e.altKey && e.key.toLowerCase() === 'h') {
         e.preventDefault();
-        setRevealedIndices(prev => 
-          prev.length === targetWords.length ? [] : targetWords.map((_, i) => i)
+        setRevealedIndices((prev) =>
+          prev.length === targetWords.length ? [] : targetWords.map((_, i) => i),
         );
       }
     };
@@ -144,11 +141,7 @@ export const ListeningDetail: React.FC = () => {
     <PageDetail>
       {/* Header */}
       <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => navigate(`/listening/${level}`)}
-        >
+        <Button variant="outline" size="sm" onClick={() => navigate(`/listening/${level}`)}>
           <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> Retreat
         </Button>
 
@@ -173,31 +166,33 @@ export const ListeningDetail: React.FC = () => {
 
             {/* Dictation Card */}
             <div className="space-y-4 md:space-y-8">
-              <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col items-center gap-4 md:gap-6">
                 <h2 className="text-2xl font-black uppercase text-center text-gray-800 dark:text-gray-100 italic">
                   Listen and type
                 </h2>
-                
+
                 <div className="flex items-center gap-4">
                   <Button
                     variant="primary"
                     size="lg"
-                    className="w-24! h-24! rounded-full! p-0! border-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                    className="w-24! h-24! rounded-full! p-0! border-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
                     onClick={handlePlayAudio}
                   >
                     <Volume2 className="w-12 h-12 stroke-3" />
                   </Button>
-                  
+
                   <div className="flex flex-col gap-2">
-                    <span className="text-xs font-black uppercase tracking-widest opacity-50">Speed</span>
+                    <span className="text-xs font-black uppercase tracking-widest opacity-50">
+                      Speed
+                    </span>
                     <div className="flex gap-2">
-                      {[0.75, 0.9, 1.1].map(rate => (
+                      {[0.75, 0.9, 1.1].map((rate) => (
                         <button
                           key={rate}
                           onClick={() => setPlaybackRate(rate)}
                           className={`px-3 py-1 rounded-lg border-2 border-black font-bold text-sm transition-all ${
-                            playbackRate === rate 
-                              ? 'bg-black text-white dark:bg-white dark:text-black' 
+                            playbackRate === rate
+                              ? 'bg-black text-white dark:bg-white dark:text-black'
                               : 'bg-white text-black hover:bg-gray-100'
                           }`}
                         >
@@ -209,9 +204,11 @@ export const ListeningDetail: React.FC = () => {
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <div className="flex justify-between items-center px-1">
-                  <div className="text-[10px] font-black uppercase tracking-widest opacity-40">Sentence Structure (Click to reveal)</div>
+                  <div className="text-[10px] font-black uppercase tracking-widest opacity-40">
+                    Sentence Structure (Click to reveal)
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-2 p-3 bg-gray-50 dark:bg-gray-900 border-2 border-black dark:border-gray-700 rounded-2xl min-h-[60px]">
@@ -220,9 +217,14 @@ export const ListeningDetail: React.FC = () => {
                     const isCorrectWord = wordResults[index] === true;
                     const isWrongWord = isChecked && wordResults[index] === false;
 
-                    let badgeClass = "bg-white dark:bg-gray-800 text-black dark:text-white border-black dark:border-white";
-                    if (isCorrectWord) badgeClass = "bg-white dark:bg-gray-800 text-black dark:text-white border-lime-500 dark:border-lime-400 shadow-[1.5px_1.5px_0px_0px_rgba(132,204,22,1)]";
-                    else if (isWrongWord) badgeClass = "bg-white dark:bg-gray-800 text-black dark:text-white border-red-500 dark:border-red-400 shadow-[1.5px_1.5px_0px_0px_rgba(239,68,68,1)]";
+                    let badgeClass =
+                      'bg-white dark:bg-gray-800 text-black dark:text-white border-black dark:border-white';
+                    if (isCorrectWord)
+                      badgeClass =
+                        'bg-white dark:bg-gray-800 text-black dark:text-white border-lime-500 dark:border-lime-400 shadow-[1.5px_1.5px_0px_0px_rgba(132,204,22,1)]';
+                    else if (isWrongWord)
+                      badgeClass =
+                        'bg-white dark:bg-gray-800 text-black dark:text-white border-red-500 dark:border-red-400 shadow-[1.5px_1.5px_0px_0px_rgba(239,68,68,1)]';
 
                     return (
                       <button
@@ -237,7 +239,9 @@ export const ListeningDetail: React.FC = () => {
                 </div>
 
                 <div className="flex justify-between items-center px-1">
-                  <div className="text-[10px] font-black uppercase tracking-widest opacity-40">Your transcription</div>
+                  <div className="text-[10px] font-black uppercase tracking-widest opacity-40">
+                    Your transcription
+                  </div>
                 </div>
 
                 <Textarea
@@ -248,10 +252,11 @@ export const ListeningDetail: React.FC = () => {
                   onKeyDown={handleTextareaKeyDown}
                   disabled={isCorrect === true}
                   autoFocus
+                  rows={2}
                 />
               </div>
 
-              <div className="pt-4 flex">
+              <div className="flex">
                 {isCorrect === true ? (
                   <Button
                     variant="primary"
@@ -279,13 +284,22 @@ export const ListeningDetail: React.FC = () => {
               {/* Shortcut Hint */}
               <div className="hidden md:flex mt-4 justify-center gap-6 text-[10px] font-black uppercase tracking-widest text-gray-400 dark:text-gray-500">
                 <span className="flex items-center gap-1">
-                  <kbd className="px-1.5 py-0.5 border border-gray-300 rounded bg-gray-100 text-gray-600">Enter</kbd> to {isCorrect === true ? 'continue' : 'check'}
+                  <kbd className="px-1.5 py-0.5 border border-gray-300 rounded bg-gray-100 text-gray-600">
+                    Enter
+                  </kbd>{' '}
+                  to {isCorrect === true ? 'continue' : 'check'}
                 </span>
                 <span className="flex items-center gap-1">
-                  <kbd className="px-1.5 py-0.5 border border-gray-300 rounded bg-gray-100 text-gray-600">Ctrl+Space</kbd> to replay
+                  <kbd className="px-1.5 py-0.5 border border-gray-300 rounded bg-gray-100 text-gray-600">
+                    Ctrl+Space
+                  </kbd>{' '}
+                  to replay
                 </span>
                 <span className="flex items-center gap-1">
-                  <kbd className="px-1.5 py-0.5 border border-gray-300 rounded bg-gray-100 text-gray-600">Alt+H</kbd> hint
+                  <kbd className="px-1.5 py-0.5 border border-gray-300 rounded bg-gray-100 text-gray-600">
+                    Alt+H
+                  </kbd>{' '}
+                  hint
                 </span>
               </div>
             </div>

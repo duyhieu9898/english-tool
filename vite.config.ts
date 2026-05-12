@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import viteCompression from 'vite-plugin-compression';
 
+import { VitePWA } from 'vite-plugin-pwa';
+
 // https://vite.dev/config/
 import { fileURLToPath } from 'node:url';
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
@@ -24,6 +26,42 @@ export default defineConfig({
       algorithm: 'brotliCompress',
       ext: '.br',
     }),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon-196.png', 'apple-icon-180.png', 'manifest-icon-192.maskable.png'],
+      manifest: {
+        name: 'LingoMe - Học Tiếng Anh',
+        short_name: 'LingoMe',
+        description: 'LingoMe là ứng dụng học tiếng Anh hiệu quả.',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: 'manifest-icon-192.maskable.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'any'
+          },
+          {
+            src: 'manifest-icon-192.maskable.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'maskable'
+          },
+          {
+            src: 'manifest-icon-512.maskable.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any'
+          },
+          {
+            src: 'manifest-icon-512.maskable.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable'
+          }
+        ]
+      }
+    })
   ],
   resolve: {
     alias: {
