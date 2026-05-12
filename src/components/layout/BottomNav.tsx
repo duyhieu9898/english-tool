@@ -17,8 +17,8 @@ export const BottomNav: React.FC<BottomNavProps> = ({ onMenuClick }) => {
   ];
 
   return (
-    <div className="md:hidden fixed bottom-2 left-1/2 -translate-x-1/2 w-[95%] max-w-md z-50">
-      <nav className="bg-white dark:bg-gray-950 border-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] rounded-2xl p-1.5 overflow-hidden">
+    <div className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 w-[95%] max-w-md z-50">
+      <nav className="bg-white dark:bg-gray-950 border-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] rounded-3xl p-1.5 overflow-hidden">
         <div className="flex justify-around items-center h-14">
           {navItems.map((item) => {
             const isActive = location.pathname === item.to && !item.isMenu;
