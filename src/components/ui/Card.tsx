@@ -1,19 +1,19 @@
-import React from 'react';
+import type { FC, HTMLAttributes } from 'react';
+import { cn } from '@/utils/cn';
 
-interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface CardProps extends HTMLAttributes<HTMLDivElement> {
   padding?: 'none' | 'sm' | 'md' | 'lg';
   hoverable?: boolean;
 }
 
-export const Card: React.FC<CardProps> = ({
+export const Card: FC<CardProps> = ({
   children,
   padding = 'md',
   hoverable = false,
   className = '',
   ...props
 }) => {
-  const baseStyles =
-    'bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden';
+  const baseStyles = 'bg-white dark:bg-gray-900 rounded-2xl shadow-sm overflow-hidden';
 
   const paddings = {
     none: '',
@@ -22,14 +22,12 @@ export const Card: React.FC<CardProps> = ({
     lg: 'px-4 py-6 md:p-8',
   };
 
-  const classes = [
+  const classes = cn(
     baseStyles,
     paddings[padding],
-    hoverable
-      ? 'transition-all hover:shadow-md hover:border-blue-200 dark:hover:border-gray-700 cursor-pointer'
-      : '',
-    className,
-  ].join(' ');
+    hoverable && 'transition-all hover:shadow-md hover:border-blue-200 dark:hover:border-gray-700 cursor-pointer',
+    className
+  );
 
   return (
     <div className={classes} {...props}>

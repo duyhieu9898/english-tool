@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useListeningLesson } from '../../hooks/useApi';
-import { useQuizFlow } from '../../hooks/useQuizFlow';
-import { useTTS } from '../../hooks/useTTS';
+import { useListeningLesson } from '@/hooks/useApi';
+import { useQuizFlow } from '@/hooks/useQuizFlow';
+import { useTTS } from '@/hooks/useTTS';
 import { normalizeText } from './listening.utils';
-import { PageDetail } from '../../components/layout/PageDetailContainer';
+import { PageDetail } from '@/components/layout/PageDetailContainer';
 import { ArrowLeft, Volume2, Check, ChevronRight, Trophy } from 'lucide-react';
-import { Button } from '../../components/ui/Button';
-import { Textarea } from '../../components/ui/Textarea';
+import { Button } from '@/components/ui/Button';
+import { Textarea } from '@/components/ui/Textarea';
 
 export const ListeningDetail: React.FC = () => {
   const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
@@ -138,9 +138,9 @@ export const ListeningDetail: React.FC = () => {
   }
 
   return (
-    <PageDetail>
+    <PageDetail className="max-w-4xl w-full mx-auto">
       {/* Header */}
-      <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
+      <div className=" mb-6 flex justify-between items-center relative z-20">
         <Button variant="outline" size="sm" onClick={() => navigate(`/listening/${level}`)}>
           <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> Retreat
         </Button>

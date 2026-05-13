@@ -36,7 +36,7 @@ export const LevelSelector: React.FC<LevelSelectorProps> = ({ moduleType, title,
           <span className="p-2 bg-black text-white dark:bg-white dark:text-black rounded-lg transform -rotate-6 border-2 border-transparent">
             <ModuleIcon className="w-8 h-8" strokeWidth={2.5} />
           </span>
-          {title.toUpperCase()} MAP
+          {title.toUpperCase()}
         </h1>
         <p className="text-gray-600 dark:text-gray-400 text-lg font-medium">{description}</p>
       </div>

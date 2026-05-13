@@ -6,15 +6,15 @@ import {
   useSessionProgress,
   useSaveSessionProgressMutation,
   useFinishVocabSessionMutation,
-} from '../../hooks/useApi';
-import type { VocabWord } from '../../types';
-import { FlashCard } from '../../components/flashcard/FlashCard';
-import { BatchReview } from '../../components/flashcard/BatchReview';
+} from '@/hooks/useApi';
+import type { VocabWord } from '@/types';
+import { FlashCard } from '@/components/flashcard/FlashCard';
+import { BatchReview } from '@/components/flashcard/BatchReview';
 import { ArrowLeft, Flag, Star, Sparkles } from 'lucide-react';
-import { PageDetail } from '../../components/layout/PageDetailContainer';
-import { Button } from '../../components/ui/Button';
-import { ProgressBar } from '../../components/ui/ProgressBar';
-import { log } from '../../services/activityLogger';
+import { PageDetail } from '@/components/layout/PageDetailContainer';
+import { Button } from '@/components/ui/Button';
+import { ProgressBar } from '@/components/ui/ProgressBar';
+import { log } from '@/services/activityLogger';
 
 type SessionState = 'LOADING' | 'FLASHCARDS' | 'REVIEW' | 'COMPLETED';
 
@@ -198,10 +198,10 @@ export const VocabSession: React.FC = () => {
   }
 
   return (
-    <PageDetail className="flex flex-col justify-between gap-4">
+    <PageDetail className="flex flex-col justify-between gap-4 max-w-4xl w-full mx-auto">
       {/* Header */}
       <div>
-        <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
+        <div className=" mb-6 flex justify-between items-center relative z-20">
           <Button variant="outline" size="sm" onClick={() => navigate(`/vocabulary/${level}`)}>
             <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> Retreat
           </Button>

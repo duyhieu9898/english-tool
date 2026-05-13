@@ -1,13 +1,14 @@
-import React from 'react';
+import type { FC, ButtonHTMLAttributes } from 'react';
+import { cn } from '@/utils/cn';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' | 'black' | 'success';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
   shadow?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   children,
   variant = 'primary',
   size = 'md',
@@ -49,17 +50,15 @@ export const Button: React.FC<ButtonProps> = ({
 
   const hasShadow = shadow && variant !== 'ghost';
 
-  const classes = [
+  const classes = cn(
     baseStyles,
     variants[variant],
     sizes[size],
     hasShadow && shadowDimensions[size],
     hasShadow && shadowColors,
     fullWidth && 'w-full',
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ');
+    className
+  );
 
   return (
     <button className={classes} {...props}>

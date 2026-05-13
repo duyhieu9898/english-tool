@@ -1,12 +1,13 @@
-import React from 'react';
+import type { FC, HTMLAttributes } from 'react';
+import { cn } from '@/utils/cn';
 
-interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
+interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   color?: 'white' | 'blue' | 'green' | 'red' | 'yellow' | 'teal';
   size?: 'sm' | 'md';
   shadow?: boolean;
 }
 
-export const Badge: React.FC<BadgeProps> = ({
+export const Badge: FC<BadgeProps> = ({
   children,
   color = 'white',
   size = 'md',
@@ -35,7 +36,13 @@ export const Badge: React.FC<BadgeProps> = ({
     md: 'px-3 py-1 text-xs',
   };
 
-  const classes = [baseStyles, colors[color], sizes[size], shadowStyles, className].join(' ');
+  const classes = cn(
+    baseStyles,
+    colors[color],
+    sizes[size],
+    shadowStyles,
+    className
+  );
 
   return (
     <span className={classes} {...props}>

@@ -15,6 +15,8 @@
     "format": "prettier --write .",
     "preview": "vite preview",
     "test": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -26,6 +28,7 @@
     "@types/canvas-confetti": "^1.9.0",
     "axios": "^1.13.6",
     "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
@@ -36,6 +39,7 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.1",
+    "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
@@ -59,6 +63,7 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "eslint-plugin-storybook": "^10.3.3",
     "globals": "^16.5.0",
+    "mongodb-memory-server": "^11.1.0",
     "nodemon": "^3.1.14",
     "playwright": "1.58.2",
     "prettier": "^3.8.1",

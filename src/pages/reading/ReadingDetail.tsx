@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useReadingLesson } from '../../hooks/useApi';
-import { useQuizFlow } from '../../hooks/useQuizFlow';
-import { useTTS } from '../../hooks/useTTS';
-import { PageDetail } from '../../components/layout/PageDetailContainer';
+import { useReadingLesson } from '@/hooks/useApi';
+import { useQuizFlow } from '@/hooks/useQuizFlow';
+import { useTTS } from '@/hooks/useTTS';
+import { PageDetail } from '@/components/layout/PageDetailContainer';
 import {
   ArrowLeft,
   BookOpen,
@@ -14,8 +14,8 @@ import {
   Languages,
   Star,
 } from 'lucide-react';
-import { Button } from '../../components/ui/Button';
-import { QuizOption } from '../../components/common/QuizOption';
+import { Button } from '@/components/ui/Button';
+import { QuizOption } from '@/components/common/QuizOption';
 
 export const ReadingDetail: React.FC = () => {
   const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
@@ -79,8 +79,8 @@ export const ReadingDetail: React.FC = () => {
   };
 
   return (
-    <PageDetail>
-      <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
+    <PageDetail className="max-w-4xl w-full mx-auto">
+      <div className=" mb-6 flex justify-between items-center relative z-20">
         <Button
           variant="outline"
           size="sm"
@@ -92,11 +92,12 @@ export const ReadingDetail: React.FC = () => {
             }
           }}
         >
-          <ArrowLeft className="w-5 h-5 mr-2 stroke-3" /> {mode === 'QUIZ' ? 'Back to Reading' : 'Retreat'}
+          <ArrowLeft className="w-5 h-5 mr-2 stroke-3" />{' '}
+          {mode === 'QUIZ' ? 'Back to Reading' : 'Retreat'}
         </Button>
       </div>
 
-      <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative">
+      <div className="flex-1 flex flex-col relative">
         {mode === 'READING' && (
           <div>
             <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-black dark:text-white leading-none mb-4">
@@ -163,11 +164,7 @@ export const ReadingDetail: React.FC = () => {
             </div>
 
             <div className="mt-12 flex justify-end">
-              <Button
-                variant="black"
-                size="md"
-                onClick={handleStartQuiz}
-              >
+              <Button variant="black" size="md" onClick={handleStartQuiz}>
                 Reading Quiz <ChevronRight className="w-6 h-6 stroke-3 ml-2" />
               </Button>
             </div>
@@ -241,12 +238,7 @@ export const ReadingDetail: React.FC = () => {
                       {lesson.questions[currentQuestionIndex].explanation}
                     </div>
                   </div>
-                  <Button
-                    variant="primary"
-                    size="lg"
-                    fullWidth
-                    onClick={nextQuestion}
-                  >
+                  <Button variant="primary" size="lg" fullWidth onClick={nextQuestion}>
                     Next Question <ChevronRight className="w-6 h-6 stroke-3 ml-2" />
                   </Button>
                 </div>

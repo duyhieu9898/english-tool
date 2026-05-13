@@ -1,11 +1,11 @@
 import React, { useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useGrammarLesson } from '../../hooks/useApi';
-import { useQuizFlow } from '../../hooks/useQuizFlow';
+import { useGrammarLesson } from '@/hooks/useApi';
+import { useQuizFlow } from '@/hooks/useQuizFlow';
 import { ArrowLeft, BookOpen, CheckCircle2, ChevronRight, Check, Star } from 'lucide-react';
-import { PageDetail } from '../../components/layout/PageDetailContainer';
-import { Button } from '../../components/ui/Button';
-import { QuizOption } from '../../components/common/QuizOption';
+import { PageDetail } from '@/components/layout/PageDetailContainer';
+import { Button } from '@/components/ui/Button';
+import { QuizOption } from '@/components/common/QuizOption';
 
 export const GrammarDetail: React.FC = () => {
   const { level, lessonId } = useParams<{ level: string; lessonId: string }>();
@@ -65,8 +65,8 @@ export const GrammarDetail: React.FC = () => {
   };
 
   return (
-    <PageDetail>
-      <div className="max-w-4xl w-full mx-auto mb-6 flex justify-between items-center relative z-20">
+    <PageDetail className="max-w-4xl w-full mx-auto">
+      <div className=" mb-6 flex justify-between items-center relative z-20">
         <Button
           variant="outline"
           size="sm"
@@ -76,7 +76,7 @@ export const GrammarDetail: React.FC = () => {
         </Button>
       </div>
 
-      <div className="flex-1 flex flex-col max-w-4xl w-full mx-auto relative">
+      <div className="flex-1 flex flex-col relative">
         {mode === 'THEORY' && (
           <div>
             <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-black dark:text-white leading-none mb-4">

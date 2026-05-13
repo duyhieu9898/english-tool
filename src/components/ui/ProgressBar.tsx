@@ -1,4 +1,5 @@
 import React from 'react';
+import { cn } from '@/utils/cn';
 
 interface ProgressBarProps {
   progress: number; // 0 to 100
@@ -37,20 +38,20 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   const resolvedHeight = heights[height] || height;
   const resolvedColor = colors[color] || color;
 
-  const containerClasses = [
+  const containerClasses = cn(
     'w-full',
     className
-  ].filter(Boolean).join(' ');
+  );
 
-  const barContainerClasses = [
+  const barContainerClasses = cn(
     'relative bg-white dark:bg-gray-800 border-3 border-black dark:border-gray-600 rounded-full overflow-hidden',
     resolvedHeight
-  ].filter(Boolean).join(' ');
+  );
 
-  const barClasses = [
+  const barClasses = cn(
     'absolute inset-y-0 left-0 border-r-4 border-black transition-all duration-300 ease-out',
     resolvedColor
-  ].filter(Boolean).join(' ');
+  );
 
   return (
     <div className={containerClasses}>

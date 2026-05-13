@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useAllLessonWords } from '../../hooks/useApi';
-import type { VocabWord } from '../../types';
-import { useTTS } from '../../hooks/useTTS';
+import { useAllLessonWords } from '@/hooks/useApi';
+import type { VocabWord } from '@/types';
+import { useTTS } from '@/hooks/useTTS';
 import { Search, Volume2, BookOpen } from 'lucide-react';
-import { Button } from '../../components/ui/Button';
+import { Button } from '@/components/ui/Button';
 import { PageContainer } from '@/components/layout/PageContainer';
 
 type SearchResult = VocabWord & { lessonId: string; lessonName: string; level: string };

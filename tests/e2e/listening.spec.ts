@@ -14,7 +14,7 @@ test.describe('Listening Module', () => {
     await expect(page).toHaveURL(/\/listening\/a1$/);
 
     // 4. Select the first Lesson
-    const firstLesson = page.locator('button:has-text("Start Play")').first();
+    const firstLesson = page.locator('button:has-text("Start Play"), button:has-text("Review"), button:has-text("Replay Stage")').first();
     await expect(firstLesson).toBeVisible({ timeout: 10000 });
     await firstLesson.click();
 
@@ -26,7 +26,7 @@ test.describe('Listening Module', () => {
   test('should allow typing and checking an answer', async ({ page }) => {
     // Navigate directly to an A1 session
     await page.goto('/listening/a1');
-    const firstLesson = page.locator('button:has-text("Start Play")').first();
+    const firstLesson = page.locator('button:has-text("Start Play"), button:has-text("Review"), button:has-text("Replay Stage")').first();
     await firstLesson.click();
 
     // 1. Check if textarea is visible
@@ -45,7 +45,7 @@ test.describe('Listening Module', () => {
 
   test('should show hint when clicking a masked word', async ({ page }) => {
     await page.goto('/listening/a1');
-    const firstLesson = page.locator('button:has-text("Start Play")').first();
+    const firstLesson = page.locator('button:has-text("Start Play"), button:has-text("Review"), button:has-text("Replay Stage")').first();
     await firstLesson.click();
 
     // 1. Lấy danh sách TẤT CẢ các nút từ (cả ẩn và hiện)

@@ -52,24 +52,31 @@ const NAV_ITEMS_CONFIG = [
 export const Dashboard: React.FC = () => {
   const navigate = useNavigate();
 
-  const { data: stats, isLoading: isLoadingStats }           = useStats();
-  const { data: settings, isLoading: isLoadingSettings }     = useSettings();
-  const { data: wordProgress = [], isLoading: isLoadingWP }  = useWordProgressAll();
-  const { data: lessons = [], isLoading: isLoadingLessons }  = useLessons();
-  const { data: studyLogs = [], isLoading: isLoadingLogs }   = useAllStudyLogs();
+  const { data: stats, isLoading: isLoadingStats } = useStats();
+  const { data: settings, isLoading: isLoadingSettings } = useSettings();
+  const { data: wordProgress = [], isLoading: isLoadingWP } = useWordProgressAll();
+  const { data: lessons = [], isLoading: isLoadingLessons } = useLessons();
+  const { data: studyLogs = [], isLoading: isLoadingLogs } = useAllStudyLogs();
   const { data: sessions = [], isLoading: isLoadingSessions } = useAllSessionProgress();
   const { data: lessonProgress = [], isLoading: isLoadingLP } = useLessonProgressAll();
 
-  const isLoading = isLoadingStats || isLoadingSettings || isLoadingWP || isLoadingLessons || isLoadingLogs || isLoadingSessions || isLoadingLP;
+  const isLoading =
+    isLoadingStats ||
+    isLoadingSettings ||
+    isLoadingWP ||
+    isLoadingLessons ||
+    isLoadingLogs ||
+    isLoadingSessions ||
+    isLoadingLP;
 
-  const today        = new Date().toISOString().split('T')[0];
-  const dueWords     = wordProgress.filter((p) => p.nextReview <= today);
-  const dailyGoal    = settings?.dailyGoal ?? 20;
-  
-  const todayLog      = studyLogs.find((l) => l.date === today);
-  const todayLearned  = todayLog?.wordsLearned ?? 0;
+  const today = new Date().toISOString().split('T')[0];
+  const dueWords = wordProgress.filter((p) => p.nextReview <= today);
+  const dailyGoal = settings?.dailyGoal ?? 20;
+
+  const todayLog = studyLogs.find((l) => l.date === today);
+  const todayLearned = todayLog?.wordsLearned ?? 0;
   const todayReviewed = todayLog?.wordsReviewed ?? 0;
-  const todayTotal    = todayLearned + todayReviewed;
+  const todayTotal = todayLearned + todayReviewed;
 
   const completedListening = lessonProgress.filter((l) => l.type === 'listening').length;
 
@@ -123,7 +130,7 @@ export const Dashboard: React.FC = () => {
           <h1 className="text-3xl font-black mb-1">Welcome back! 👋</h1>
           <p className="text-gray-500 dark:text-gray-400">Ready to learn something new today?</p>
         </div>
-        <div className="flex items-center gap-3 bg-white dark:bg-gray-900 py-2 px-4 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+        <Card className="flex items-center gap-3 md:py-4">
           <Flame
             className={`w-8 h-8 ${stats?.currentStreak ? 'text-orange-500' : 'text-gray-300 dark:text-gray-700'}`}
           />
@@ -133,7 +140,7 @@ export const Dashboard: React.FC = () => {
               Day Streak
             </div>
           </div>
-        </div>
+        </Card>
       </div>
 
       {/* Daily Goal Bar */}
@@ -158,7 +165,10 @@ export const Dashboard: React.FC = () => {
 
       {/* Continue Learning */}
       {activeSession && lessonMap[activeSession.id] && (
-        <Card padding="lg" className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/10">
+        <Card
+          padding="lg"
+          className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/10"
+        >
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <div className="text-xs font-bold uppercase tracking-widest text-blue-500 mb-1">
@@ -166,8 +176,7 @@ export const Dashboard: React.FC = () => {
               </div>
               <h3 className="text-xl md:text-lg font-black">{lessonMap[activeSession.id].name}</h3>
               <p className="text-sm text-gray-500">
-                Card {activeSession.currentIndex + 1} of{' '}
-                {lessonMap[activeSession.id].wordCount}
+                Card {activeSession.currentIndex + 1} of {lessonMap[activeSession.id].wordCount}
               </p>
             </div>
             <Button
@@ -184,7 +193,10 @@ export const Dashboard: React.FC = () => {
 
       {/* Due Words */}
       {dueWords.length > 0 && (
-        <Card padding="lg" className="border-orange-200 dark:border-orange-800 bg-orange-50 dark:bg-orange-900/10">
+        <Card
+          padding="lg"
+          className="border-orange-200 dark:border-orange-800 bg-orange-50 dark:bg-orange-900/10"
+        >
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <div className="text-xs font-bold uppercase tracking-widest text-orange-500 mb-1">
@@ -205,7 +217,6 @@ export const Dashboard: React.FC = () => {
           <QuickNavCard key={item.path} item={item} />
         ))}
       </div>
-
     </PageContainer>
   );
 };

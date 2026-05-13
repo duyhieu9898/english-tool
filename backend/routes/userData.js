@@ -28,32 +28,33 @@ router.post('/session/finish', async (req, res) => {
       return res.status(400).json({ error: 'Missing clientDate or reviews array' });
     }
 
-    // 1. Fetch all necessary data for processSessionFinish
-    const [wordProgress, statsArr, studyLog] = await Promise.all([
-      WordProgress.find({}).lean(),
-      Stats.find({}).lean(),
-      StudyLog.find({}).lean()
+    // 1. Fetch only necessary data
+    const terms = reviews.map(r => r.term);
+    const [existingWords, stats, todayLog] = await Promise.all([
+      WordProgress.find({ id: { $in: terms } }).lean(),
+      Stats.findOne({ id: 1 }).lean(),
+      StudyLog.findOne({ id: clientDate }).lean()
     ]);
 
-    const stats = statsArr[0] || { totalWordsLearned: 0, currentStreak: 0, lastStudyDate: '', totalStudyDays: 0 };
-    const snap = { wordProgress, stats, studyLog };
-
-    // 2. Run the legacy business logic
-    const { wordsLearned, wordsReviewed, graduatedItems } = processSessionFinish(snap, clientDate, reviews);
+    // 2. Run the business logic
+    const { 
+      wordsLearned, wordsReviewed, updatedWords, graduatedWords, 
+      updatedStats, updatedLog 
+    } = processSessionFinish({ existingWords, stats, todayLog }, clientDate, reviews);
 
     // 3. Persist changes back to MongoDB
-    // Note: sessionService mutates 'snap'. We need to save each part.
     
     // Save Word Progress (Upsert each modified word)
-    const wordOps = snap.wordProgress.map(w => ({
+    const wordOps = updatedWords.map(w => ({
       updateOne: {
         filter: { id: w.id },
         update: { $set: w },
         upsert: true
       }
     }));
+    
     // Remove graduated items
-    const deleteOps = graduatedItems.map(w => ({
+    const deleteOps = graduatedWords.map(w => ({
       deleteOne: { filter: { id: w.id } }
     }));
 
@@ -61,32 +62,32 @@ router.post('/session/finish', async (req, res) => {
     const statsOp = {
       updateOne: {
         filter: { id: 1 },
-        update: { $set: snap.stats },
+        update: { $set: updatedStats },
         upsert: true
       }
     };
 
     // Save Study Log
-    const logOps = snap.studyLog.map(l => ({
+    const logOps = updatedLog ? [{
       updateOne: {
-        filter: { id: l.id },
-        update: { $set: l },
+        filter: { id: updatedLog.id },
+        update: { $set: updatedLog },
         upsert: true
       }
-    }));
+    }] : [];
 
     await Promise.all([
-      WordProgress.bulkWrite([...wordOps, ...deleteOps]),
+      wordOps.length > 0 || deleteOps.length > 0 ? WordProgress.bulkWrite([...wordOps, ...deleteOps]) : Promise.resolve(),
       Stats.bulkWrite([statsOp]),
-      StudyLog.bulkWrite(logOps)
+      logOps.length > 0 ? StudyLog.bulkWrite(logOps) : Promise.resolve()
     ]);
     
     res.status(200).json({
       success: true,
       wordsLearned,
       wordsReviewed,
-      graduatedItems,
-      stats: snap.stats
+      graduatedItems: graduatedWords,
+      stats: updatedStats
     });
   } catch (error) {
     console.error('Session finish error:', error);
