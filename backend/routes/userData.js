@@ -116,6 +116,9 @@ COLLECTIONS.forEach(col => {
         } else if (key.endsWith('_ne')) {
           const realKey = key.replace('_ne', '');
           query[realKey] = { ...query[realKey], $ne: val };
+        } else if (key.endsWith('_like')) {
+          const realKey = key.replace('_like', '');
+          query[realKey] = { $regex: val, $options: 'i' };
         } else {
           query[key] = val;
         }

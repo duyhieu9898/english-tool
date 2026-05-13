@@ -187,5 +187,65 @@
     "fn": "advanceFlashcard:end",
     "lesson": "1",
     "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-13T03:13:21.082Z",
+    "fn": "lesson:loaded",
+    "lesson": "11",
+    "detail": "words=25"
+  },
+  {
+    "ts": "2026-05-13T03:13:21.089Z",
+    "fn": "session:resume",
+    "lesson": "11",
+    "detail": "fromIndex=1"
+  },
+  {
+    "ts": "2026-05-13T03:13:21.503Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-13T03:13:21.508Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-13T03:13:21.910Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-13T03:13:21.914Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
+  },
+  {
+    "ts": "2026-05-13T03:13:22.325Z",
+    "fn": "lesson:loaded",
+    "lesson": "1",
+    "detail": "words=16"
+  },
+  {
+    "ts": "2026-05-13T03:13:22.327Z",
+    "fn": "session:resume",
+    "lesson": "1",
+    "detail": "fromIndex=15"
+  },
+  {
+    "ts": "2026-05-13T03:13:22.677Z",
+    "fn": "handleContinue",
+    "lesson": "1",
+    "detail": "test"
+  },
+  {
+    "ts": "2026-05-13T03:13:22.679Z",
+    "fn": "advanceFlashcard:end",
+    "lesson": "1",
+    "detail": "queue=1"
   }
 ]
