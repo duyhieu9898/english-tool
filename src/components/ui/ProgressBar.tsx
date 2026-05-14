@@ -57,7 +57,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
     <div className={containerClasses}>
       {(label || showValue) && (
         <div className="flex justify-between items-center mb-1.5 text-sm font-black uppercase tracking-tight">
-          {label && <span className="text-black dark:text-white">{label}</span>}
+          {label && <span data-testid="e2e-progress-label" className="text-black dark:text-white">{label}</span>}
           {showValue && (
             <span className="text-black dark:text-white">{Math.round(safeProgress)}%</span>
           )}

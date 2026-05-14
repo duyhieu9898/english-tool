@@ -10,8 +10,7 @@ export interface Lesson {
   slug: string;
   level: string; // "a1", "a2", "b1", "b2", "c1"
   name: string;
-  wordCount: number;
-  words: VocabWord[];
+  words?: VocabWord[];
 }
 
 export interface WordProgress {
@@ -44,10 +43,10 @@ export interface GrammarLesson {
   level: string;
   title: string;
   description: string;
-  theory: string;
-  structures: GrammarStructure[];
-  tips: string[];
-  practice: GrammarQuestion[];
+  theory?: string;
+  structures?: GrammarStructure[];
+  tips?: string[];
+  practice?: GrammarQuestion[];
 }
 
 export interface ReadingQuestion {
@@ -73,7 +72,7 @@ export interface ListeningLesson {
   level: string;
   title: string;
   topic: string;
-  questions: ListeningQuestion[];
+  questions?: ListeningQuestion[];
 }
 
 export interface ReadingLesson {
@@ -82,10 +81,10 @@ export interface ReadingLesson {
   level: string;
   title: string;
   topic: string;
-  content: string;
-  vocabulary_highlights: VocabHighlight[];
-  questions: ReadingQuestion[];
-  translation: string;
+  content?: string;
+  vocabulary_highlights?: VocabHighlight[];
+  questions?: ReadingQuestion[];
+  translation?: string;
 }
 
 export interface LessonProgress {
@@ -98,6 +97,8 @@ export interface SessionProgress {
   id: string;
   currentIndex: number;
   lastUpdated: string;
+  continueQueueTerms?: string[];
+  rememberedTerms?: string[];
 }
 
 export interface StudyLog {

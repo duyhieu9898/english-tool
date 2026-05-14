@@ -126,13 +126,17 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
 
           {showError ? (
             <div className="w-full animate-shake flex flex-col items-center">
-              <div className="text-red-500 font-black text-2xl uppercase tracking-wide mb-2">
+              <div 
+                data-testid="e2e-feedback-status"
+                className="text-red-500 font-black text-2xl uppercase tracking-wide mb-2"
+              >
                 Incorrect!
               </div>
               <div className="text-4xl md:text-5xl font-black text-black dark:text-white lowercase mb-8">
                 {currentWord.term}
               </div>
               <Button
+                data-testid="e2e-feedback-action-btn"
                 variant="black"
                 size="lg"
                 fullWidth
@@ -148,6 +152,7 @@ export const BatchReview: React.FC<BatchReviewProps> = ({
             <div className="w-full flex flex-col items-center">
               <AnswerInput
                 ref={inputRef}
+                data-testid="e2e-review-input"
                 autoFocus
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}

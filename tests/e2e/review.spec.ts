@@ -1,74 +1,122 @@
 import { test, expect } from '@playwright/test';
+import { E2E_SELECTORS } from './e2e-constants';
 
-test.describe('Review Modules', () => {
-  
-  test('Daily Review Flow', async ({ page }) => {
-    // 1. Navigate to Daily Review
-    await page.goto('/review');
-    
-    // Check if we are "All Caught Up" or in the Engine
-    const caughtUp = page.locator('text=ALL CAUGHT UP!');
-    const reviewEngine = page.locator('text=DAILY REVIEW');
+test.describe('Review Modules (Functional - Mocked)', () => {
+  test.describe('Daily Review', () => {
+    test('should show completion screen when all caught up', async ({ page }) => {
+      // Mock: No words due today
+      await page.route('**/wordProgress', async (route) => {
+        await route.fulfill({ status: 200, body: JSON.stringify([]) });
+      });
 
-    // Wait for either state to appear (handling loading state)
-    await expect(caughtUp.or(reviewEngine)).toBeVisible({ timeout: 15000 });
+      await page.goto('/review');
 
-    if (await caughtUp.isVisible()) {
-      console.log('No words due today, testing "Return Home"');
-      await page.click('text=Return Home');
+      await expect(page.getByTestId(E2E_SELECTORS.COMPLETION_TITLE)).toBeVisible();
+      await page.getByTestId(E2E_SELECTORS.RETURN_HOME_BTN).click();
       await expect(page).toHaveURL('/');
-    } else {
-      await expect(reviewEngine).toBeVisible();
-      
-      // 2. Test Incorrect Answer Flow
-      const input = page.locator('input[aria-label="Enter word translation"]');
-      await input.fill('wrong_answer_test');
+    });
+
+    test('should run review engine when words are pending', async ({ page }) => {
+      const today = new Date().toISOString().split('T')[0];
+
+      // Mock: 1 word due today
+      await page.route('**/wordProgress', async (route) => {
+        await route.fulfill({
+          status: 200,
+          body: JSON.stringify([
+            {
+              id: 'test-word-1',
+              term: 'apple',
+              definition: 'quả táo',
+              lessonId: '1',
+              nextReview: today,
+              level: 1,
+            },
+          ]),
+        });
+      });
+
+      // Mock: Submit session
+      await page.route('**/session/finish', async (route) => {
+        await route.fulfill({ status: 200, body: JSON.stringify({ success: true }) });
+      });
+
+      await page.goto('/review');
+
+      await expect(page.getByTestId(E2E_SELECTORS.REVIEW.BADGE)).toBeVisible();
+      await expect(page.getByTestId(E2E_SELECTORS.PROGRESS_LABEL)).toBeVisible();
+
+      // Submit incorrect answer
+      const input = page.getByTestId(E2E_SELECTORS.REVIEW.INPUT);
+      await input.fill('wrong_answer');
       await page.keyboard.press('Enter');
-      
-      // Should show error state
-      await expect(page.locator('text=Incorrect!')).toBeVisible();
-      
-      // Click "Got it" to continue
-      await page.click('text=Got it');
-      
-      // Input should be cleared
+
+      await expect(page.getByTestId(E2E_SELECTORS.ERROR_CONTAINER)).toBeVisible();
+      await expect(page.getByTestId(E2E_SELECTORS.FEEDBACK_STATUS)).toBeVisible();
+
+      // Continue
+      await page.keyboard.press('Enter');
       await expect(input).toHaveValue('');
-    }
+    });
   });
 
+  test.describe('Boss Battle (General Review)', () => {
+    test('should show no enemies screen when empty', async ({ page }) => {
+      // Mock all required APIs for General Review logic
+      await page.route('**/lessonProgress', async (route) => {
+        await route.fulfill({ status: 200, body: JSON.stringify([]) });
+      });
+      await page.route('**/lessons', async (route) => {
+        await route.fulfill({ status: 200, body: JSON.stringify([]) });
+      });
+      await page.route('**/wordProgress', async (route) => {
+        await route.fulfill({ status: 200, body: JSON.stringify([]) });
+      });
 
-  test('Boss Battle (General Review) Flow', async ({ page }) => {
-    // 1. Navigate to General Review (Boss Battle)
-    await page.goto('/review/general');
-    
-    // 2. Wait for the page to finish loading (either NO ENEMIES heading or the Engine Badge)
-    const noEnemiesHeading = page.getByRole('heading', { name: 'NO ENEMIES!' });
-    const reviewBadge = page.locator('div').filter({ hasText: /^GENERAL REVIEW$/ });
-    
-    // Wait for either one to become visible
-    await expect(noEnemiesHeading.or(reviewBadge)).toBeVisible({ timeout: 20000 });
+      await page.goto('/review/general');
 
-    if (await noEnemiesHeading.isVisible()) {
-      console.log('No Boss Battle available, testing "Learn Vocab" navigation');
-      await page.click('text=Learn Vocab');
-      await expect(page).toHaveURL(/\/vocabulary$/);
-    } else {
-      // Review Engine is visible
-      await expect(page.locator('text=GENERAL REVIEW')).toBeVisible();
-      
-      // 3. Test interaction
-      const input = page.locator('input[placeholder="Enter word"]');
-      await input.fill('boss_test');
+      await expect(page.getByTestId(E2E_SELECTORS.COMPLETION_TITLE)).toBeVisible();
+      await page.getByTestId(E2E_SELECTORS.RETURN_HOME_BTN).click();
+      await expect(page).toHaveURL(/\/vocabulary$/, { timeout: 10000 });
+    });
+
+    test('should run boss battle engine when enemies exist', async ({ page }) => {
+      const mockLesson = {
+        id: '1',
+        name: 'Test Lesson',
+        words: [{ term: 'sword', meaning: 'thanh kiếm' }],
+      };
+
+      // Mock to satisfy the "Boss Battle" condition:
+      // 1. Must have a completed vocabulary lesson
+      // 2. The word must NOT be in active wordProgress (meaning it's ready for general review)
+      await page.route('**/lessonProgress', async (route) => {
+        await route.fulfill({
+          status: 200,
+          body: JSON.stringify([{ id: '1', type: 'vocabulary', completed: true }]),
+        });
+      });
+      await page.route('**/lessons', async (route) => {
+        await route.fulfill({ status: 200, body: JSON.stringify([mockLesson]) });
+      });
+      await page.route('**/wordProgress', async (route) => {
+        await route.fulfill({ status: 200, body: JSON.stringify([]) });
+      });
+
+      await page.route('**/session/finish', async (route) => {
+        await route.fulfill({ status: 200, body: JSON.stringify({ success: true }) });
+      });
+
+      await page.goto('/review/general');
+
+      await expect(page.getByTestId(E2E_SELECTORS.REVIEW.BADGE)).toBeVisible();
+
+      const input = page.getByTestId(E2E_SELECTORS.REVIEW.INPUT);
+      await input.fill('wrong_boss_answer');
       await page.keyboard.press('Enter');
-      
-      // Should show error state "Defeated!" in Boss Battle
-      await expect(page.locator('text=Defeated!')).toBeVisible();
-      
-      // Click "Continue" to proceed
-      await page.click('text=Continue');
-      
-      await expect(input).toHaveValue('');
-    }
-  });
 
+      await expect(page.getByTestId(E2E_SELECTORS.ERROR_CONTAINER)).toBeVisible();
+      await expect(page.getByTestId(E2E_SELECTORS.FEEDBACK_STATUS)).toBeVisible();
+    });
+  });
 });

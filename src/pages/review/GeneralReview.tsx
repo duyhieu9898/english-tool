@@ -94,7 +94,10 @@ export const GeneralReview: React.FC = () => {
               <Layers className="w-16 h-16 text-black" strokeWidth={2.5} />
             </div>
             <div>
-              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black dark:text-white leading-none mb-4">
+              <h1 
+                data-testid="e2e-completion-title"
+                className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black dark:text-white leading-none mb-4"
+              >
                 NO ENEMIES!
               </h1>
               <p className="text-lg md:text-xl font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest max-w-md mx-auto">
@@ -103,6 +106,7 @@ export const GeneralReview: React.FC = () => {
             </div>
             <div className="pt-8 w-full max-w-sm">
               <button
+                data-testid="e2e-return-home-btn"
                 onClick={() => navigate('/vocabulary')}
                 className="w-full flex items-center justify-center gap-3 bg-black text-white dark:bg-white dark:text-black py-3 px-6 md:py-4 md:px-8 rounded-2xl font-black text-lg md:text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] active:translate-y-0 active:shadow-none transition-all"
               >
@@ -129,7 +133,10 @@ export const GeneralReview: React.FC = () => {
               <Star className="w-16 h-16 fill-black text-black" strokeWidth={2.5} />
             </div>
             <div>
-              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black dark:text-white leading-none mb-4">
+              <h1 
+                data-testid="e2e-completion-title"
+                className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black dark:text-white leading-none mb-4"
+              >
                 BATTLE COMPLETE!
               </h1>
               <p className="text-lg md:text-xl font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest">
@@ -158,6 +165,7 @@ export const GeneralReview: React.FC = () => {
 
             <div className="pt-8 flex flex-col sm:flex-row justify-center gap-4 w-full max-w-lg">
               <button
+                data-testid="e2e-return-home-btn"
                 onClick={() => navigate('/')}
                 className="flex-1 flex items-center justify-center gap-2 bg-white dark:bg-gray-800 text-black dark:text-white py-3 px-6 md:py-4 md:px-6 rounded-2xl font-black text-lg md:text-xl uppercase tracking-wider border-4 border-black hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-0 active:shadow-none transition-all"
               >
@@ -272,19 +280,29 @@ const GeneralReviewEngine: React.FC<{
 
   return (
     <div className="w-full max-w-md mx-auto relative flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-3xl border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] text-center transition-all duration-300">
-      <Badge className="ml-auto mb-4">
+      <Badge 
+        data-testid="e2e-progress-label"
+        data-current-stage={currentIndex + 1}
+        className="ml-auto mb-4"
+      >
         STAGE {currentIndex + 1} / {queue.length}
       </Badge>
 
-      <div className="text-black dark:text-white font-black text-sm uppercase tracking-widest flex items-center gap-2 bg-orange-300 dark:bg-orange-600 px-4 py-2 rounded-xl border-2 border-black transform -skew-x-12 absolute -top-6">
+      <div 
+        data-testid="e2e-review-badge"
+        className="text-black dark:text-white font-black text-sm uppercase tracking-widest flex items-center gap-2 bg-orange-300 dark:bg-orange-600 px-4 py-2 rounded-xl border-2 border-black transform -skew-x-12 absolute -top-6"
+      >
         <Sparkles className="w-5 h-5" /> GENERAL REVIEW
       </div>
 
       <LessonMeaning term={currentWord.term} lessonId={currentWord.lessonId} />
 
       {showError ? (
-        <div className="w-full mt-8 flex flex-col items-center animate-in zoom-in duration-200">
-          <div className="text-red-500 font-black text-2xl uppercase tracking-wide mb-2">
+        <div className="w-full mt-8 flex flex-col items-center animate-in zoom-in duration-200" data-testid="e2e-error-container">
+          <div 
+            data-testid="e2e-feedback-status"
+            className="text-red-500 font-black text-2xl uppercase tracking-wide mb-2"
+          >
             Defeated!
           </div>
           <div className="text-5xl font-black lowercase mb-4 text-black dark:text-white">
@@ -294,6 +312,7 @@ const GeneralReviewEngine: React.FC<{
             Banished to Daily Review
           </div>
           <button
+            data-testid="e2e-feedback-action-btn"
             onClick={advance}
             className="w-full flex items-center justify-center gap-2 bg-black text-white dark:bg-white dark:text-black py-4 px-6 rounded-xl font-black text-xl uppercase tracking-wider border-4 border-transparent hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] active:translate-y-0 active:shadow-none transition-all"
           >
@@ -304,6 +323,7 @@ const GeneralReviewEngine: React.FC<{
         <div className="w-full mt-8 flex flex-col items-center">
           <AnswerInput
             ref={inputRef}
+            data-testid="e2e-review-input"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Enter word"

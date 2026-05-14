@@ -1,78 +1,97 @@
 import { test, expect } from '@playwright/test';
+import { E2E_SELECTORS } from './e2e-constants';
 
-test.describe('Listening Module', () => {
+test.describe('Listening Module (Smoke - Real Data)', () => {
   test('should navigate to listening level and lesson', async ({ page }) => {
-    // 1. Go to Home
-    await page.goto('/');
-
-    // 2. Click Listening card
-    await page.click('text=Listening');
-    await expect(page).toHaveURL(/\/listening$/);
-
-    // 3. Select Level A1
-    await page.click('text=A1');
-    await expect(page).toHaveURL(/\/listening\/a1$/);
-
-    // 4. Select the first Lesson
-    const firstLesson = page.locator('button:has-text("Start Play"), button:has-text("Review"), button:has-text("Replay Stage")').first();
-    await expect(firstLesson).toBeVisible({ timeout: 10000 });
-    await firstLesson.click();
-
-    // 5. Verify we are in the listening session
-    await expect(page).toHaveURL(/\/listening\/a1\/.+$/);
-    await expect(page.locator('text=Listen and type')).toBeVisible();
-  });
-
-  test('should allow typing and checking an answer', async ({ page }) => {
-    // Navigate directly to an A1 session
-    await page.goto('/listening/a1');
-    const firstLesson = page.locator('button:has-text("Start Play"), button:has-text("Review"), button:has-text("Replay Stage")').first();
-    await firstLesson.click();
-
-    // 1. Check if textarea is visible
-    const textarea = page.locator('textarea[placeholder="What did you hear?"]');
-    await expect(textarea).toBeVisible();
-
-    // 2. Type something (even if wrong)
-    await textarea.fill('test answer');
-
-    // 3. Click Check button
-    await page.click('button:has-text("Check")');
-
-    // 4. Verify that feedback is shown
-    await expect(page.locator('button[disabled]')).toBeHidden();
-  });
-
-  test('should show hint when clicking a masked word', async ({ page }) => {
-    await page.goto('/listening/a1');
-    const firstLesson = page.locator('button:has-text("Start Play"), button:has-text("Review"), button:has-text("Replay Stage")').first();
-    await firstLesson.click();
-
-    // 1. Lấy danh sách TẤT CẢ các nút từ (cả ẩn và hiện)
-    const allWordButtons = page.locator('div.flex-wrap button');
-
-    // 2. Tìm xem cái nút ĐẦU TIÊN có dấu sao đang nằm ở vị trí thứ mấy (Index)
-    const targetIndex = await allWordButtons.evaluateAll((buttons) => {
-      return buttons.findIndex((btn) => btn.textContent?.includes('*'));
+    await test.step('navigate to level A1', async () => {
+      await page.goto('/listening');
+      await page.getByTestId(E2E_SELECTORS.LEVEL_A1).click();
+      await expect(page).toHaveURL(/\/listening\/a1$/);
     });
 
-    if (targetIndex === -1) {
-      console.log('Không tìm thấy từ nào bị ẩn!');
-      return;
-    }
+    await test.step('select first lesson and verify session starts', async () => {
+      await page.getByTestId(E2E_SELECTORS.START_PLAY_BTN).first().click();
+      await expect(page).toHaveURL(/\/listening\/a1\/.+$/);
+      await expect(page.getByTestId(E2E_SELECTORS.LISTENING.INPUT)).toBeVisible();
+    });
+  });
 
-    // 3. Khóa chặt vào cái nút ở Index đó (không dùng filter nữa)
+  test('should show error feedback when typing wrong answer', async ({ page }) => {
+    await page.goto('/listening/a1');
+    await page.getByTestId(E2E_SELECTORS.START_PLAY_BTN).first().click();
+
+    await page.getByTestId(E2E_SELECTORS.LISTENING.INPUT).fill('completely wrong answer');
+    await page.getByTestId(E2E_SELECTORS.LISTENING.CHECK_BTN).click();
+
+    const wrongWordBadge = page
+      .getByTestId(E2E_SELECTORS.LISTENING.WORD_BADGE)
+      .and(page.locator('[data-status="error"]'))
+      .first();
+    await expect(wrongWordBadge).toBeVisible();
+  });
+
+  test('should reveal hint when clicking a masked word', async ({ page }) => {
+    await page.goto('/listening/a1');
+    await page.getByTestId(E2E_SELECTORS.START_PLAY_BTN).first().click();
+
+    const allWordButtons = page.getByTestId(E2E_SELECTORS.LISTENING.WORD_BADGE);
+    // waitFor as technical sync (30s default) — not an assertion
+    await allWordButtons.first().waitFor({ state: 'visible' });
+
+    // evaluateAll for data extraction (find index by content) — legitimate use
+    const targetIndex = await allWordButtons.evaluateAll((buttons) =>
+      buttons.findIndex((btn) => btn.textContent?.includes('*'))
+    );
+
+    // Fail the test if no masked word is found, rather than passing silently
+    expect(targetIndex, 'Should find at least one masked word to test hint').not.toBe(-1);
     const targetButton = allWordButtons.nth(targetIndex);
 
-    const htmlBefore = await targetButton.evaluate((el) => el.outerHTML);
-    console.log(`--- DEBUG: BEFORE CLICK (Index ${targetIndex}) ---`, htmlBefore);
-
     await targetButton.click();
-
-    const htmlAfter = await targetButton.evaluate((el) => el.outerHTML);
-    console.log(`--- DEBUG: AFTER CLICK (Index ${targetIndex}) ---`, htmlAfter);
-
-    // 4. Kiểm tra đúng cái nút ở Index đó xem đã hiện chữ chưa
     await expect(targetButton).not.toHaveText(/\*/);
+  });
+
+  test('should allow progressing when correct answer is submitted via hints', async ({ page }) => {
+    await page.goto('/listening/a1');
+    await page.getByTestId(E2E_SELECTORS.START_PLAY_BTN).first().click();
+
+    const allWordButtons = page.getByTestId(E2E_SELECTORS.LISTENING.WORD_BADGE);
+
+    await test.step('reveal full sentence via hints', async () => {
+      await allWordButtons.first().waitFor({ state: 'visible' });
+      const count = await allWordButtons.count();
+      for (let i = 0; i < count; i++) {
+        await allWordButtons.nth(i).click();
+      }
+    });
+
+    await test.step('build sentence from revealed words', async () => {
+      const count = await allWordButtons.count();
+      const words: string[] = [];
+      for (let i = 0; i < count; i++) {
+        words.push(await allWordButtons.nth(i).innerText());
+      }
+      const fullSentence = words.join(' ').trim();
+      await page.getByTestId(E2E_SELECTORS.LISTENING.INPUT).fill(fullSentence);
+      await page.getByTestId(E2E_SELECTORS.LISTENING.CHECK_BTN).click();
+    });
+
+    await test.step('verify success state and continue', async () => {
+      const continueBtn = page.getByTestId(E2E_SELECTORS.LISTENING.CONTINUE_BTN);
+      await expect(continueBtn).toBeVisible();
+
+      const successBadge = page
+        .getByTestId(E2E_SELECTORS.LISTENING.WORD_BADGE)
+        .and(page.locator('[data-status="success"]'))
+        .first();
+      await expect(successBadge).toBeVisible();
+
+      await continueBtn.click();
+      await expect(page.getByTestId(E2E_SELECTORS.PROGRESS_LABEL)).toHaveAttribute(
+        'data-current-stage',
+        '2',
+        { timeout: 10000 },
+      );
+    });
   });
 });

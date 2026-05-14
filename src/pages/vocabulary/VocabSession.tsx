@@ -66,24 +66,51 @@ export const VocabSession: React.FC = () => {
         return;
       }
 
-      // 3. Set progress
       if (sessionProgress) {
         log({
           fn: 'session:resume',
           lesson: lessonId,
           detail: `fromIndex=${sessionProgress.currentIndex}`,
         });
-        const resumeIndex = Math.min(sessionProgress.currentIndex, lesson.words.length - 1);
+        let resumeIndex = Math.min(sessionProgress.currentIndex, lesson.words.length - 1);
+
+        let restoredCount = 0;
+        // Restore queues
+        if (sessionProgress.continueQueueTerms) {
+          const toReview = lesson.words.filter(w => sessionProgress.continueQueueTerms?.includes(w.term));
+          continueQueueRef.current = toReview;
+          setContinueQueue(toReview);
+          restoredCount += toReview.length;
+        }
+        if (sessionProgress.rememberedTerms) {
+          const mastered = lesson.words.filter(w => sessionProgress.rememberedTerms?.includes(w.term));
+          rememberedWordsRef.current = mastered;
+          setMasteredCount(mastered.length);
+          restoredCount += mastered.length;
+        }
+
+        // Fix for legacy sessions without saved queues:
+        // If we don't have the queue data for the cards we supposedly answered,
+        // we must rollback the index to match what we actually have, to prevent skipping words.
+        if (restoredCount < resumeIndex) {
+          log({ fn: 'session:legacy_fix', detail: `Resetting index from ${resumeIndex} to ${restoredCount}` });
+          resumeIndex = restoredCount;
+        }
+
         setCurrentIndex(resumeIndex);
         initialIndexRef.current = resumeIndex;
+
+        if (restoredCount === lesson.words.length && lesson.words.length > 0) {
+          setSessionState('REVIEW');
+        } else {
+          setSessionState('FLASHCARDS');
+        }
       } else {
         log({ fn: 'session:new', lesson: lessonId });
         setCurrentIndex(0);
         initialIndexRef.current = 0;
+        setSessionState('FLASHCARDS');
       }
-
-      // 4. Start session
-      setSessionState('FLASHCARDS');
     }
   }, [
     lessonLoaded,
@@ -98,17 +125,23 @@ export const VocabSession: React.FC = () => {
 
   // ── Auto-save checkpoint whenever currentIndex advances ───────────────────
   useEffect(() => {
-    // Skip if not study mode or if index hasn't actually advanced beyond initial state
-    if (
-      sessionState !== 'FLASHCARDS' ||
-      !lessonId ||
-      initialIndexRef.current === null ||
-      currentIndex <= initialIndexRef.current
-    ) {
+    if (!lessonId || initialIndexRef.current === null) return;
+
+    // Only save if we advanced in FLASHCARDS, or we just reached REVIEW phase
+    const isAdvancing = sessionState === 'FLASHCARDS' && currentIndex > initialIndexRef.current;
+    const isReview = sessionState === 'REVIEW';
+
+    if (!isAdvancing && !isReview) {
       return;
     }
 
-    saveProgress.mutate({ id: lessonId, currentIndex, lastUpdated: new Date().toISOString() });
+    saveProgress.mutate({
+      id: lessonId,
+      currentIndex,
+      lastUpdated: new Date().toISOString(),
+      continueQueueTerms: continueQueueRef.current.map(w => w.term),
+      rememberedTerms: rememberedWordsRef.current.map(w => w.term),
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps -- saveProgress.mutate is stable (useMutation)
   }, [currentIndex, sessionState, lessonId]);
 
@@ -207,7 +240,12 @@ export const VocabSession: React.FC = () => {
           </Button>
 
           {lesson && (
-            <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl transform border-2 border-transparent">
+            <div 
+              data-testid="e2e-progress-label" 
+              data-state={sessionState.toLowerCase()}
+              data-current-stage={currentIndex + 1}
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl transform border-2 border-transparent"
+            >
               {sessionState === 'FLASHCARDS' ? (
                 <>
                   <Flag className="w-5 h-5" /> Stage {currentIndex + 1}/{lesson.words.length}
@@ -275,7 +313,10 @@ export const VocabSession: React.FC = () => {
             </div>
 
             <div>
-              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black dark:text-white leading-none mb-4">
+              <h1 
+                data-testid="e2e-completion-title"
+                className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black dark:text-white leading-none mb-4"
+              >
                 STAGE CLEARED!
               </h1>
               <p className="text-xl font-bold text-gray-600 dark:text-gray-400 uppercase tracking-widest">
@@ -287,6 +328,7 @@ export const VocabSession: React.FC = () => {
 
             <div className="pt-8">
               <Button
+                data-testid="e2e-return-home-btn"
                 variant="black"
                 size="lg"
                 fullWidth

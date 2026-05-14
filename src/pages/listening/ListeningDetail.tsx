@@ -146,7 +146,11 @@ export const ListeningDetail: React.FC = () => {
         </Button>
 
         {mode === 'STUDY' && (
-          <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl border-2 border-transparent">
+          <div 
+            data-testid="e2e-progress-label"
+            data-current-stage={currentQuestionIndex + 1}
+            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl border-2 border-transparent"
+          >
             Stage {currentQuestionIndex + 1}/{lesson.questions.length}
           </div>
         )}
@@ -229,6 +233,8 @@ export const ListeningDetail: React.FC = () => {
                     return (
                       <button
                         key={index}
+                        data-testid="e2e-listening-word-badge"
+                        data-status={isCorrectWord ? 'success' : isWrongWord ? 'error' : 'idle'}
                         onClick={() => toggleWordReveal(index)}
                         className={`px-2 py-0.5 rounded-lg border-2 border-black font-mono font-bold text-sm shadow-[1.5px_1.5px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-none ${badgeClass}`}
                       >
@@ -247,6 +253,7 @@ export const ListeningDetail: React.FC = () => {
                 <Textarea
                   variant="compact"
                   placeholder="What did you hear?"
+                  data-testid="e2e-listening-input"
                   value={userInput}
                   onChange={(e) => setUserInput(e.target.value)}
                   onKeyDown={handleTextareaKeyDown}
@@ -263,6 +270,7 @@ export const ListeningDetail: React.FC = () => {
                     size="lg"
                     fullWidth
                     onClick={nextQuestion}
+                    data-testid="e2e-continue-btn"
                     className="bg-lime-400 text-black border-4"
                   >
                     Continue <ChevronRight className="w-6 h-6 stroke-3 ml-2" />
@@ -275,6 +283,7 @@ export const ListeningDetail: React.FC = () => {
                     disabled={!userInput.trim()}
                     onClick={checkAnswer}
                     className="border-4"
+                    data-testid="e2e-listening-check-btn"
                   >
                     Check <Check className="w-6 h-6 stroke-3 ml-2" />
                   </Button>
@@ -313,7 +322,10 @@ export const ListeningDetail: React.FC = () => {
             </div>
 
             <div>
-              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black dark:text-white leading-none mb-4">
+              <h1 
+                data-testid="e2e-completion-title"
+                className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black dark:text-white leading-none mb-4"
+              >
                 LEVEL CLEARED!
               </h1>
               <p className="text-xl font-bold text-gray-600 dark:text-gray-400 uppercase tracking-widest">
@@ -323,6 +335,7 @@ export const ListeningDetail: React.FC = () => {
 
             <div className="pt-8">
               <Button
+                data-testid="e2e-return-home-btn"
                 variant="black"
                 size="lg"
                 fullWidth

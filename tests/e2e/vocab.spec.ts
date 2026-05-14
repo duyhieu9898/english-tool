@@ -1,85 +1,96 @@
 import { test, expect } from '@playwright/test';
+import { E2E_SELECTORS } from './e2e-constants';
 
-test('should navigate through vocab selection and start a session', async ({ page }) => {
-  // 1. Go to Home
-  await page.goto('/');
+test.describe('Vocabulary Flow (Functional - Mocked)', () => {
+  const MOCK_LESSON = {
+    id: '1',
+    name: 'Unit 1: Greetings',
+    level: 'a1',
+    words: [
+      { term: 'hello', meaning: 'xin chào', full_sentence: 'Hello there!', modifiers: 'Greeting' },
+      { term: 'goodbye', meaning: 'tạm biệt', full_sentence: 'Goodbye!', modifiers: 'Farewell' }
+    ]
+  };
 
-  // 2. Click Vocabulary card
-  await page.click('text=Vocabulary');
-  await expect(page).toHaveURL(/\/vocabulary$/);
+  test('Standard Lifecycle (Finish a lesson)', async ({ page }) => {
+    // 1. Mock API calls
+    await page.route('**/lessons/1', async (route) => {
+      await route.fulfill({ status: 200, body: JSON.stringify(MOCK_LESSON) });
+    });
 
-  // 3. Select Level A1
-  await page.click('text=A1');
-  await expect(page).toHaveURL(/\/vocabulary\/a1$/);
+    await page.route('**/sessionProgress?id=1', async (route) => {
+      await route.fulfill({ status: 200, body: JSON.stringify([]) }); // No existing progress
+    });
 
-  // 4. Select the first Lesson
-  const firstLesson = page.locator('button:has-text("Start Play")').first();
-  await expect(firstLesson).toBeVisible({ timeout: 10000 });
-  await firstLesson.click();
+    await page.route('**/lessonProgress', async (route) => {
+      await route.fulfill({ status: 200, body: JSON.stringify([]) });
+    });
 
-  // 5. Verify we are in the session
-  await expect(page).toHaveURL(/\/vocabulary\/a1\/.+$/);
+    await page.route('**/session/finish', async (route) => {
+      await route.fulfill({ status: 200, body: JSON.stringify({ success: true }) });
+    });
 
-  // 6. Verify FlashCard is visible
-  await expect(page.locator('text=Tap or press Space to flip').first()).toBeVisible();
-});
+    // 2. Start Test
+    await page.goto('/vocabulary/a1/1');
 
-test('should be able to flip a flashcard and continue', async ({ page }) => {
-  // Navigate directly to a session
-  await page.goto('/vocabulary/a1');
-  const firstLesson = page.locator('button:has-text("Start Play")').first();
-  await firstLesson.click();
+    const flashcard = page.getByTestId(E2E_SELECTORS.VOCAB.FLASHCARD).first();
+    const rememberedBtn = page.getByTestId(E2E_SELECTORS.VOCAB.REMEMBERED_BTN);
+    const progressLabel = page.getByTestId(E2E_SELECTORS.PROGRESS_LABEL).first();
 
-  // Click the card to flip
-  await page.locator('text=Tap or press Space to flip').first().click();
+    // Word 1: Hello
+    await test.step('process first word', async () => {
+      await expect(progressLabel).toHaveAttribute('data-current-stage', '1');
+      await flashcard.click();
+      await rememberedBtn.click();
+    });
 
-  // Verify buttons
-  await expect(page.locator('text=Continue')).toBeVisible();
-  await expect(page.locator('text=Remembered')).toBeVisible();
+    // Word 2: Goodbye
+    await test.step('process second word', async () => {
+      await expect(progressLabel).toHaveAttribute('data-current-stage', '2');
+      await flashcard.click();
+      await rememberedBtn.click();
+    });
 
-  // Click Continue
-  await page.click('text=Continue');
+    // 3. Verify Completion
+    await test.step('verify completion screen', async () => {
+      await expect(page.getByTestId(E2E_SELECTORS.COMPLETION_TITLE)).toBeVisible();
+      await expect(page.getByTestId(E2E_SELECTORS.RETURN_HOME_BTN)).toBeVisible();
+    });
+  });
 
-  await expect(page).toHaveURL(/\/vocabulary\/a1\/.+$/);
-});
+  test('Resume Flow (Start from middle)', async ({ page }) => {
+    // Mock API: Session already has 1 word finished
+    await page.route('**/lessons/1', async (route) => {
+      await route.fulfill({ status: 200, body: JSON.stringify(MOCK_LESSON) });
+    });
 
-test('should complete a full lesson lifecycle (Flashcards -> Batch Review -> Completion)', async ({
-  page,
-}) => {
-  // 1. Vào bài học Vocabulary A1
-  await page.goto('/vocabulary/a1');
-  const startBtn = page.locator('button:has-text("Play")').first();
-  await startBtn.click();
+    await page.route('**/sessionProgress?id=1', async (route) => {
+      await route.fulfill({
+        status: 200,
+        body: JSON.stringify([{
+          id: '1',
+          currentIndex: 1, // Start at index 1 (second word)
+          rememberedTerms: ['hello'], // IMPORTANT: Must match currentIndex for consistency check
+          continueQueueTerms: [],
+          lastUpdated: new Date().toISOString()
+        }])
+      });
+    });
 
-  // 2. Vượt qua Flashcards
-  // Chúng ta sẽ lặp lại việc nhấn "Continue" cho đến khi thấy "Boss Fight!"
-  const continueBtn = page.locator('button:has-text("Continue")');
-  const bossFightHeader = page.locator('text=Boss Fight!');
+    await page.route('**/lessonProgress', async (route) => {
+      await route.fulfill({ status: 200, body: JSON.stringify([]) });
+    });
 
-  // Robot sẽ kiên trì nhấn Continue cho đến khi màn hình thay đổi
-  for (let i = 0; i < 15; i++) {
-    if (await bossFightHeader.isVisible()) break;
-    try {
-      await continueBtn.click({ timeout: 2000 });
-      await page.waitForTimeout(200); // Đợi animation
-    } catch (e) {
-      console.log(e);
-      // Nếu không thấy nút Continue nữa thì có thể đã hết từ
-      break;
-    }
-  }
+    await page.goto('/vocabulary/a1/1');
 
-  // 3. Kiểm tra và thực hiện Batch Review
-  await expect(page.locator('text=TYPE TRANSLATION')).toBeVisible();
-  const input = page.locator('input[aria-label="Enter translation"]');
+    // Verify we started at Stage 2 immediately
+    const progressLabel = page.getByTestId(E2E_SELECTORS.PROGRESS_LABEL).first();
+    await expect(progressLabel).toHaveAttribute('data-current-stage', '2');
 
-  // Thử nhập sai để test feedback
-  await input.fill('wrong_answer');
-  await page.keyboard.press('Enter');
-  await expect(page.locator('text=Incorrect!')).toBeVisible();
-  await page.click('text=Got it');
+    // Finish the last word
+    await page.getByTestId(E2E_SELECTORS.VOCAB.FLASHCARD).first().click();
+    await page.getByTestId(E2E_SELECTORS.VOCAB.REMEMBERED_BTN).click();
 
-  // 4. Hoàn thành bài học (confetti sẽ bắn ra ở đây)
-  // Lưu ý: Trong môi trường test, chúng ta có thể không cần đợi hết cả bài
-  // nhưng đây là minh chứng cho việc flow đã thông suốt.
+    await expect(page.getByTestId(E2E_SELECTORS.COMPLETION_TITLE)).toBeVisible();
+  });
 });

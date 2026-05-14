@@ -122,7 +122,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
           title: grammar?.title || reading?.title || listening?.title || vocab?.name || '',
           description: grammar?.description || '',
           badgeLabel: isVocab
-            ? `${vocab?.wordCount || 0} words`
+            ? `${vocab?.words?.length || 0} words`
             : isGrammar
               ? 'GRAMMAR'
               : isReading
@@ -187,6 +187,7 @@ export const LessonSelector: React.FC<LessonSelectorProps> = ({ moduleType }) =>
                 transition-all duration-200
               `}
               onClick={() => navigate(`/${moduleType}/${level}/${lesson.id}`)}
+              data-testid="e2e-start-play-btn"
             >
               <div className="flex justify-between items-start mb-4 md:mb-6">
                 <div

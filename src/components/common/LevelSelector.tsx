@@ -48,6 +48,7 @@ export const LevelSelector: React.FC<LevelSelectorProps> = ({ moduleType, title,
             <button
               key={level.id}
               type="button"
+              data-testid={`e2e-level-${level.id.toLowerCase()}`}
               onClick={() => navigate(`/${moduleType}/${level.id}`)}
               className={`
                 group flex flex-col relative overflow-hidden p-4 md:p-6 cursor-pointer text-left

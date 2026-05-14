@@ -99,7 +99,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
   };
 
   return (
-    <div className="w-full max-w-md mx-auto flex flex-col gap-6">
+    <div className="w-full max-w-md mx-auto flex flex-col gap-6" data-testid="e2e-flashcard">
       <div
         className="w-full aspect-9/10 md:aspect-5/6 perspective-1000 relative"
         onTouchStart={handleTouchStart}
@@ -110,6 +110,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
           animate={{ rotateY: flipped ? 180 : 0 }}
           transition={{ duration: 0.6, type: 'spring', stiffness: 260, damping: 20 }}
           onClick={handleFlip}
+          data-testid="e2e-vocab-flashcard"
         >
           {/* Front Face */}
           <div className="absolute w-full h-full backface-hidden bg-white dark:bg-gray-900 rounded-3xl shadow-xl flex flex-col items-center justify-center p-6 text-center border-2 border-transparent">
@@ -197,6 +198,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
           fullWidth
           onClick={onContinue}
           className="sm:w-2/3 md:w-full max-w-xs"
+          data-testid="e2e-vocab-continue-btn"
         >
           Continue <ChevronRight className="w-6 h-6 ml-1" />
         </Button>
@@ -206,6 +208,7 @@ export const FlashCard: React.FC<FlashCardProps> = ({
           size="sm"
           onClick={onKnown}
           className="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 font-medium"
+          data-testid="e2e-vocab-remembered-btn"
         >
           <Check className="w-4 h-4 opacity-70" /> Remembered
         </Button>

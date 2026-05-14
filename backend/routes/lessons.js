@@ -1,57 +1,78 @@
+/**
+ * routes/lessons.js
+ * Vocabulary lessons migrated to MongoDB.
+ */
 import { Router } from 'express';
-import { loadLessons } from '../db/contentDb.js';
+import { Lesson } from '../models/ContentModels.js';
 
 const router = Router();
 
 // GET /lessons
-router.get('/', (req, res) => {
-  const { level, name, slug, _limit, _page } = req.query;
-  let lessons = loadLessons();
+router.get('/', async (req, res) => {
+  try {
+    const { level, name, slug, _limit, _page } = req.query;
+    let query = { type: 'vocabulary' };
 
-  if (level) lessons = lessons.filter(l => l.level === level);
-  if (name)  lessons = lessons.filter(l => l.name.toLowerCase().includes(name.toLowerCase()));
-  if (slug)  lessons = lessons.filter(l => l.slug === slug);
+    if (level) query.level = level;
+    if (slug) query.slug = slug;
+    if (name) query.name = { $regex: name, $options: 'i' };
 
-  const total = lessons.length;
-  res.setHeader('X-Total-Count', total);
+    const total = await Lesson.countDocuments(query);
+    res.setHeader('X-Total-Count', total);
 
-  if (_page && _limit) {
-    const page  = parseInt(_page, 10);
-    const limit = parseInt(_limit, 10);
-    lessons = lessons.slice((page - 1) * limit, page * limit);
-  } else if (_limit) {
-    lessons = lessons.slice(0, parseInt(_limit, 10));
+    let dbQuery = Lesson.find(query);
+
+    if (_page && _limit) {
+      const page = parseInt(_page, 10);
+      const limit = parseInt(_limit, 10);
+      dbQuery = dbQuery.skip((page - 1) * limit).limit(limit);
+    } else if (_limit) {
+      dbQuery = dbQuery.limit(parseInt(_limit, 10));
+    }
+
+    const lessons = await dbQuery.lean();
+    res.json(lessons);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
-
-  res.json(lessons);
 });
 
 // GET /lessons/words — flat list of ALL words across all lessons (used by SearchVocab)
-// Must be defined BEFORE /:id to avoid Express matching "words" as an id param
-router.get('/words', (req, res) => {
-  const lessons = loadLessons();
-  const words = lessons.flatMap(lesson =>
-    lesson.words.map(w => ({
-      ...w,
-      lessonId:   lesson.id,
-      lessonName: lesson.name,
-      level:      lesson.level,
-    })),
-  );
-  res.setHeader('X-Total-Count', words.length);
-  res.json(words);
+router.get('/words', async (req, res) => {
+  try {
+    const lessons = await Lesson.find({ type: 'vocabulary' }).lean();
+    const words = lessons.flatMap(lesson =>
+      (lesson.words || []).map(w => ({
+        ...w,
+        lessonId: lesson.id,
+        lessonName: lesson.name,
+        level: lesson.level,
+      })),
+    );
+    res.setHeader('X-Total-Count', words.length);
+    res.json(words);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 // GET /lessons/:id — full lesson with words
-router.get('/:id', (req, res) => {
-  const { id } = req.params;
-  const lessons = loadLessons();
-  const lesson =
-    lessons.find(l => String(l.id) === id) ||
-    lessons.find(l => l.slug === decodeURIComponent(id));
+router.get('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const lesson = await Lesson.findOne({
+      type: 'vocabulary',
+      $or: [
+        { id: id },
+        { slug: decodeURIComponent(id) }
+      ]
+    }).lean();
 
-  if (!lesson) return res.status(404).json({ error: 'Lesson not found' });
-  res.json(lesson);
+    if (!lesson) return res.status(404).json({ error: 'Lesson not found' });
+    res.json(lesson);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 export default router;

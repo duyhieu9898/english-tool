@@ -8,8 +8,10 @@ import {
   useAllStudyLogs,
   useLessons,
   useLessonProgressAll,
+  useGrammarLessons,
+  useReadingLessons,
+  useListeningLessons,
 } from '../hooks/useApi';
-import { Lesson } from '../types';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { ProgressBar } from '../components/ui/ProgressBar';
@@ -55,7 +57,10 @@ export const Dashboard: React.FC = () => {
   const { data: stats, isLoading: isLoadingStats } = useStats();
   const { data: settings, isLoading: isLoadingSettings } = useSettings();
   const { data: wordProgress = [], isLoading: isLoadingWP } = useWordProgressAll();
-  const { data: lessons = [], isLoading: isLoadingLessons } = useLessons();
+  const { data: vocabLessons = [] } = useLessons();
+  const { data: grammarLessons = [] } = useGrammarLessons();
+  const { data: readingLessons = [] } = useReadingLessons();
+  const { data: listeningLessons = [] } = useListeningLessons();
   const { data: studyLogs = [], isLoading: isLoadingLogs } = useAllStudyLogs();
   const { data: sessions = [], isLoading: isLoadingSessions } = useAllSessionProgress();
   const { data: lessonProgress = [], isLoading: isLoadingLP } = useLessonProgressAll();
@@ -64,7 +69,6 @@ export const Dashboard: React.FC = () => {
     isLoadingStats ||
     isLoadingSettings ||
     isLoadingWP ||
-    isLoadingLessons ||
     isLoadingLogs ||
     isLoadingSessions ||
     isLoadingLP;
@@ -80,11 +84,14 @@ export const Dashboard: React.FC = () => {
 
   const completedListening = lessonProgress.filter((l) => l.type === 'listening').length;
 
-  const lessonMap = React.useMemo(() => {
-    const m: Record<string, Lesson> = {};
-    lessons.forEach((l) => (m[l.id] = l));
+  const contentMap = React.useMemo(() => {
+    const m: Record<string, { id: string; name: string; level: string; type: string; count: number }> = {};
+    vocabLessons.forEach((l) => (m[l.id] = { id: l.id, name: l.name, level: l.level, type: 'vocabulary', count: l.words?.length || 0 }));
+    grammarLessons.forEach((l) => (m[l.id] = { id: l.id, name: l.title, level: l.level, type: 'grammar', count: l.practice?.length || 0 }));
+    readingLessons.forEach((l) => (m[l.id] = { id: l.id, name: l.title, level: l.level, type: 'reading', count: l.questions?.length || 0 }));
+    listeningLessons.forEach((l) => (m[l.id] = { id: l.id, name: l.title, level: l.level, type: 'listening', count: l.questions?.length || 0 }));
     return m;
-  }, [lessons]);
+  }, [vocabLessons, grammarLessons, readingLessons, listeningLessons]);
 
   const activeSession = React.useMemo(() => {
     if (!sessions.length) return null;
@@ -164,7 +171,7 @@ export const Dashboard: React.FC = () => {
       </Card>
 
       {/* Continue Learning */}
-      {activeSession && lessonMap[activeSession.id] && (
+      {activeSession && contentMap[activeSession.id] && (
         <Card
           padding="lg"
           className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/10"
@@ -174,15 +181,15 @@ export const Dashboard: React.FC = () => {
               <div className="text-xs font-bold uppercase tracking-widest text-blue-500 mb-1">
                 <Clock className="w-3 h-3 inline mr-1" /> Continue Learning
               </div>
-              <h3 className="text-xl md:text-lg font-black">{lessonMap[activeSession.id].name}</h3>
+              <h3 className="text-xl md:text-lg font-black">{contentMap[activeSession.id].name}</h3>
               <p className="text-sm text-gray-500">
-                Card {activeSession.currentIndex + 1} of {lessonMap[activeSession.id].wordCount}
+                {contentMap[activeSession.id].type === 'vocabulary' ? 'Card' : 'Question'} {activeSession.currentIndex + 1} of {contentMap[activeSession.id].count}
               </p>
             </div>
             <Button
               onClick={() => {
-                const l = lessonMap[activeSession.id];
-                navigate(`/vocabulary/${l.level}/${l.id}`);
+                const l = contentMap[activeSession.id];
+                navigate(`/${l.type}/${l.level}/${l.id}`);
               }}
             >
               <Play className="w-5 h-5 mr-2" /> Resume

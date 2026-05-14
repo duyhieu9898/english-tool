@@ -2,7 +2,10 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import fs from 'fs';
 import path from 'path';
 import { logger } from '../../utils/logger.js';
-import { LOGS_DIR } from '../../db/paths.js';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const LOGS_DIR = path.join(__dirname, '..', '..', 'logs');
 
 // Mock fs to avoid writing real files during unit tests
 vi.mock('fs', async (importOriginal) => {

@@ -9,8 +9,7 @@ import readingRouter     from './routes/reading.js';
 import listeningRouter   from './routes/listening.js';
 import activityLogRouter from './routes/activityLog.js';
 import userDataRouter    from './routes/userData.js';
-import { loadLessons }   from './db/contentDb.js';
-import { USER_DB_PATH }  from './db/paths.js';
+import { Lesson }      from './models/ContentModels.js';
 import { logger }        from './utils/logger.js';
 import { connectDB }     from './db/mongo.js';
 
@@ -54,11 +53,11 @@ const isNodemon = process.argv[1]?.endsWith('server.js');
 if (isMain || isNodemon) {
   connectDB()
     .then(() => {
-      app.listen(PORT, () => {
+      app.listen(PORT, async () => {
         try {
-          const lessons = loadLessons();
+          const lessonsCount = await Lesson.countDocuments();
           console.log(`🚀 Server running at http://localhost:${PORT}`);
-          console.log(`   Lessons: ${lessons.length}  |  User DB: ${USER_DB_PATH}`);
+          console.log(`   Lessons: ${lessonsCount}  |  Mode: MongoDB`);
         } catch (err) {
           logger.error('Failed to initialize content DB:', err);
         }

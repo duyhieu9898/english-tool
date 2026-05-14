@@ -1,6 +1,9 @@
 import fs from 'fs';
 import path from 'path';
-import { LOGS_DIR } from '../db/paths.js';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const LOGS_DIR = path.join(__dirname, '..', 'logs');
 
 class Logger {
   constructor() {

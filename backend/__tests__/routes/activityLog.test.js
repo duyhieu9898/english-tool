@@ -1,34 +1,26 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, beforeAll, afterAll } from 'vitest';
 import request from 'supertest';
 import express from 'express';
-import fs from 'fs';
-import path from 'path';
 import activityLogRouter from '../../routes/activityLog.js';
-import { ACTIVITY_LOG_DIR } from '../../db/paths.js';
-
-vi.mock('fs', async (importOriginal) => {
-  const actual = await importOriginal();
-  return {
-    ...actual,
-    default: {
-      ...actual,
-      existsSync: vi.fn(),
-      mkdirSync: vi.fn(),
-      readFileSync: vi.fn(),
-      writeFileSync: vi.fn(),
-      renameSync: vi.fn(),
-      readdirSync: vi.fn(),
-    },
-  };
-});
+import { connectTestDB, closeTestDB, clearTestDB } from '../utils/dbSetup.js';
+import { ActivityLog } from '../../models/UserModels.js';
 
 const app = express();
 app.use(express.json());
 app.use('/activityLog', activityLogRouter);
 
-describe('activityLog Router', () => {
-  beforeEach(() => {
+describe('activityLog Router Integration (MongoDB)', () => {
+  beforeAll(async () => {
+    await connectTestDB();
+  });
+
+  afterAll(async () => {
+    await closeTestDB();
+  });
+
+  beforeEach(async () => {
     vi.clearAllMocks();
+    await clearTestDB();
     vi.useFakeTimers();
     vi.setSystemTime(new Date('2026-03-24T12:00:00Z'));
   });
@@ -37,82 +29,68 @@ describe('activityLog Router', () => {
     vi.useRealTimers();
   });
 
-  const todayStr = '2026-03-24';
-  const mockFilePath = path.join(ACTIVITY_LOG_DIR, `${todayStr}.json`);
-
-  it('GET /activityLog - should return empty array if no file exists', async () => {
-    fs.existsSync.mockReturnValue(false); // No file exists
-
+  it('GET /activityLog - should return empty array if no logs for today', async () => {
     const response = await request(app).get('/activityLog');
-
     expect(response.status).toBe(200);
     expect(response.body).toEqual([]);
   });
 
-  it('GET /activityLog - should return parsed entries reversed', async () => {
-    fs.existsSync.mockImplementation((targetPath) => targetPath === mockFilePath);
-    const mockData = [{ id: 1 }, { id: 2 }];
-    fs.readFileSync.mockReturnValue(JSON.stringify(mockData));
+  it('GET /activityLog - should return today logs newest first', async () => {
+    await ActivityLog.create([
+      { action: 'first', ts: '2026-03-24T10:00:00Z', date: '2026-03-24' },
+      { action: 'second', ts: '2026-03-24T11:00:00Z', date: '2026-03-24' },
+      { action: 'other-day', ts: '2026-03-23T12:00:00Z', date: '2026-03-23' },
+    ]);
 
     const response = await request(app).get('/activityLog');
-
     expect(response.status).toBe(200);
-    expect(response.body).toEqual([{ id: 2 }, { id: 1 }]); // Reversed
-    expect(fs.readFileSync).toHaveBeenCalledWith(mockFilePath, 'utf-8');
+    expect(response.body).toHaveLength(2);
+    expect(response.body[0].action).toBe('second');
+    expect(response.body[1].action).toBe('first');
   });
 
-  it('GET /activityLog/files - should list available log files sorted newest first', async () => {
-    fs.existsSync.mockImplementation((targetPath) => targetPath === ACTIVITY_LOG_DIR);
-    fs.readdirSync.mockReturnValue([
-      '2026-03-20.json',
-      '2026-03-24.json',
-      '2026-03-22.json',
-      'other.txt',
+  it('GET /activityLog/files - should list unique log dates sorted newest first', async () => {
+    await ActivityLog.create([
+      { action: 'a', date: '2026-03-20' },
+      { action: 'b', date: '2026-03-24' },
+      { action: 'c', date: '2026-03-22' },
     ]);
 
     const response = await request(app).get('/activityLog/files');
-
     expect(response.status).toBe(200);
-    expect(response.body).toEqual(['2026-03-24', '2026-03-22', '2026-03-20']); // Sorted reverse alphabetical, txt filtered out
+    expect(response.body).toEqual(['2026-03-24', '2026-03-22', '2026-03-20']);
   });
 
-  it('GET /activityLog/:date - should return 404 if log not found', async () => {
-    fs.existsSync.mockReturnValue(false);
-
+  it('GET /activityLog/:date - should return 404 if date has no logs', async () => {
     const response = await request(app).get('/activityLog/2026-01-01');
-
     expect(response.status).toBe(404);
-    expect(response.body).toEqual({ error: 'Log not found' });
+    expect(response.body.error).toBe('Log not found');
   });
 
-  it('POST /activityLog - should write new entry and return it', async () => {
-    fs.existsSync.mockReturnValue(true);
-    fs.readFileSync.mockReturnValue('[]'); // Empty initially
-
+  it('POST /activityLog - should create new log entry', async () => {
     const payload = { action: 'test_action' };
     const response = await request(app).post('/activityLog').send(payload);
 
     expect(response.status).toBe(201);
     expect(response.body.action).toBe('test_action');
+    expect(response.body.date).toBe('2026-03-24');
     expect(response.body.ts).toBe('2026-03-24T12:00:00.000Z');
 
-    expect(fs.writeFileSync).toHaveBeenCalledTimes(1);
-    expect(fs.renameSync).toHaveBeenCalledWith(`${mockFilePath}.tmp`, mockFilePath);
-
-    const writeArg = JSON.parse(fs.writeFileSync.mock.calls[0][1]);
-    expect(writeArg).toHaveLength(1);
-    expect(writeArg[0].action).toBe('test_action');
+    const inDb = await ActivityLog.findOne({ action: 'test_action' });
+    expect(inDb).toBeDefined();
   });
 
-  it('DELETE /activityLog - should clear today log contents', async () => {
+  it('DELETE /activityLog - should clear today log', async () => {
+    await ActivityLog.create({ action: 'clear-me', date: '2026-03-24' });
+    await ActivityLog.create({ action: 'keep-me', date: '2026-03-23' });
+
     const response = await request(app).delete('/activityLog');
-
     expect(response.status).toBe(200);
-    expect(response.body).toEqual({ cleared: true });
+    expect(response.body.cleared).toBe(true);
 
-    // Check that it wrote an empty array
-    expect(fs.writeFileSync).toHaveBeenCalled();
-    const writeArg = fs.writeFileSync.mock.calls[0][1];
-    expect(writeArg).toBe('[]'); // Beautified empty array
+    const countToday = await ActivityLog.countDocuments({ date: '2026-03-24' });
+    const countYesterday = await ActivityLog.countDocuments({ date: '2026-03-23' });
+    expect(countToday).toBe(0);
+    expect(countYesterday).toBe(1);
   });
 });
