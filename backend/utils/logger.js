@@ -1,27 +1,12 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const LOGS_DIR = path.join(__dirname, '..', 'logs');
+import mongoose from 'mongoose';
+import { SystemLog } from '../models/SystemLog.js';
 
 class Logger {
   constructor() {
-    this.ensureLogDir();
+    // No file directory creation or file handles needed anymore!
   }
 
-  ensureLogDir() {
-    if (!fs.existsSync(LOGS_DIR)) {
-      fs.mkdirSync(LOGS_DIR, { recursive: true });
-    }
-  }
-
-  getTodayLogPath() {
-    const today = new Date().toISOString().split('T')[0];
-    return path.join(LOGS_DIR, `${today}.log`);
-  }
-
-  _write(level, message, meta = {}) {
+  async _write(level, message, meta = {}) {
     const ts = new Date().toISOString();
     let metaString = '';
     
@@ -29,7 +14,6 @@ class Logger {
       if (meta instanceof Error || meta.stack) {
         metaString = ` ${meta.stack || meta.message || meta}`;
       } else {
-
         try {
           metaString = ` ${JSON.stringify(meta)}`;
         } catch {
@@ -38,20 +22,40 @@ class Logger {
       }
     }
 
-    const logLine = `[${ts}] [${level}] ${message}${metaString}\n`;
-    
-    try {
-      this.ensureLogDir();
-      fs.appendFileSync(this.getTodayLogPath(), logLine, 'utf8');
-      
-      // Also write to stdout if not in test/production environment (optional, keeping it simple for now)
-      if (level === 'ERROR') {
-        console.error(`[${level}] ${message}`, meta);
-      } else {
-        console.log(`[${level}] ${message}`, Object.keys(meta).length > 0 ? meta : '');
+    // 1. Always output to Console (standard output is captured by Vercel/Lambda/docker logs)
+    const logLine = `[${ts}] [${level}] ${message}${metaString}`;
+    if (level === 'ERROR') {
+      console.error(logLine);
+    } else if (level === 'WARN') {
+      console.warn(logLine);
+    } else if (level === 'DEBUG') {
+      console.debug(logLine);
+    } else {
+      console.log(logLine);
+    }
+
+    // 2. Save to MongoDB in a non-blocking fire-and-forget way if connected
+    if (mongoose.connection && mongoose.connection.readyState === 1) {
+      try {
+        let metaObj = {};
+        if (meta instanceof Error) {
+          metaObj = { name: meta.name, message: meta.message, stack: meta.stack };
+        } else if (typeof meta === 'object' && meta !== null) {
+          metaObj = meta;
+        } else if (meta !== undefined) {
+          metaObj = { value: meta };
+        }
+
+        // Capped collection in MongoDB automatically maintains the size/document limit
+        await SystemLog.create({
+          level,
+          message,
+          meta: metaObj
+        });
+      } catch (dbError) {
+        // Log to console but do not throw or crash, to prevent cascading errors
+        console.error('Failed to save log to MongoDB:', dbError.message);
       }
-    } catch (e) {
-      console.error('Failed to write to log file:', e);
     }
   }
 

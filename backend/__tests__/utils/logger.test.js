@@ -1,90 +1,78 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import fs from 'fs';
-import path from 'path';
+import mongoose from 'mongoose';
 import { logger } from '../../utils/logger.js';
-import { fileURLToPath } from 'url';
+import { SystemLog } from '../../models/SystemLog.js';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const LOGS_DIR = path.join(__dirname, '..', '..', 'logs');
-
-// Mock fs to avoid writing real files during unit tests
-vi.mock('fs', async (importOriginal) => {
-  const actual = await importOriginal();
+// Mock SystemLog model to avoid real DB connections in unit tests
+vi.mock('../../models/SystemLog.js', () => {
   return {
-    ...actual,
-    default: {
-      ...actual,
-      existsSync: vi.fn(),
-      mkdirSync: vi.fn(),
-      appendFileSync: vi.fn(),
+    SystemLog: {
+      create: vi.fn().mockResolvedValue({}),
     }
   };
 });
 
-describe('Logger Utility', () => {
+describe('Logger Utility (MongoDB & Console)', () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    // Spy on console to keep test output clean and verify console behavior
+    
+    // Spy on console methods to verify their calls and keep clean output
     vi.spyOn(console, 'log').mockImplementation(() => {});
     vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    vi.spyOn(console, 'debug').mockImplementation(() => {});
+    
+    // Mock mongoose.connection state
+    if (!mongoose.connection) {
+      mongoose.connection = {};
+    }
   });
 
   afterEach(() => {
     vi.restoreAllMocks();
   });
 
-  it('should create the logs directory if it does not exist', () => {
-    fs.existsSync.mockReturnValue(false);
-    logger.ensureLogDir();
-    expect(fs.mkdirSync).toHaveBeenCalledWith(LOGS_DIR, { recursive: true });
+  it('should write an INFO message to console.log', async () => {
+    // Force readyState to 0 (disconnected) so it doesn't write to DB in this test
+    vi.spyOn(mongoose.connection, 'readyState', 'get').mockReturnValue(0);
+
+    await logger.info('Test info message', { userId: 123 });
+    
+    expect(console.log).toHaveBeenCalledWith(
+      expect.stringContaining('[INFO] Test info message {"userId":123}')
+    );
   });
 
-  it('should not create the logs directory if it already exists', () => {
-    fs.existsSync.mockReturnValue(true);
-    logger.ensureLogDir();
-    expect(fs.mkdirSync).not.toHaveBeenCalled();
-  });
+  it('should write an ERROR message to console.error and format error details', async () => {
+    vi.spyOn(mongoose.connection, 'readyState', 'get').mockReturnValue(0);
 
-  it('should generate the correct daily log path', () => {
-    // Mock Date to ensure deterministic output
-    const mockDate = new Date('2026-03-24T12:00:00Z');
-    vi.setSystemTime(mockDate);
-    
-    const expectedPath = path.join(LOGS_DIR, '2026-03-24.log');
-    expect(logger.getTodayLogPath()).toBe(expectedPath);
-    
-    vi.useRealTimers();
-  });
-
-  it('should write an INFO message correctly', () => {
-    fs.existsSync.mockReturnValue(true);
-    
-    logger.info('Test info message', { userId: 123 });
-    
-    expect(fs.appendFileSync).toHaveBeenCalledTimes(1);
-    const [filePath, content] = fs.appendFileSync.mock.calls[0];
-    
-    expect(filePath).toContain('.log');
-    expect(content).toContain('[INFO]');
-    expect(content).toContain('Test info message');
-    expect(content).toContain('{"userId":123}');
-    expect(console.log).toHaveBeenCalled();
-  });
-
-  it('should write an ERROR message correctly and extract error stack', () => {
-    fs.existsSync.mockReturnValue(true);
-    
     const testError = new Error('Something went wrong');
     testError.stack = 'MockStack';
     
-    logger.error('Test error message', testError);
+    await logger.error('Test error message', testError);
     
-    expect(fs.appendFileSync).toHaveBeenCalledTimes(1);
-    const [, content] = fs.appendFileSync.mock.calls[0];
+    expect(console.error).toHaveBeenCalledWith(
+      expect.stringContaining('[ERROR] Test error message MockStack')
+    );
+  });
+
+  it('should not save to MongoDB if mongoose is not connected', async () => {
+    vi.spyOn(mongoose.connection, 'readyState', 'get').mockReturnValue(0);
     
-    expect(content).toContain('[ERROR]');
-    expect(content).toContain('Test error message');
-    expect(content).toContain('MockStack');
-    expect(console.error).toHaveBeenCalled();
+    await logger.info('Test log without DB', { test: true });
+    
+    expect(SystemLog.create).not.toHaveBeenCalled();
+  });
+
+  it('should save to MongoDB if mongoose is connected', async () => {
+    vi.spyOn(mongoose.connection, 'readyState', 'get').mockReturnValue(1);
+    
+    await logger.info('Test log with DB', { test: true });
+    
+    expect(SystemLog.create).toHaveBeenCalledWith({
+      level: 'INFO',
+      message: 'Test log with DB',
+      meta: { test: true }
+    });
   });
 });

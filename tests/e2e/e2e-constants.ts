@@ -4,7 +4,6 @@
  */
 export const E2E_SELECTORS = {
   // Navigation
-  QUICK_NAV_VOCAB: 'e2e-quick-nav-vocab',
   LEVEL_A1: 'e2e-level-a1',
   START_PLAY_BTN: 'e2e-start-play-btn',
 
@@ -34,6 +33,5 @@ export const E2E_SELECTORS = {
   COMPLETION_TITLE: 'e2e-completion-title',
   ERROR_CONTAINER: 'e2e-error-container',
   FEEDBACK_STATUS: 'e2e-feedback-status',
-  FEEDBACK_ACTION_BTN: 'e2e-feedback-action-btn',
   RETURN_HOME_BTN: 'e2e-return-home-btn',
 };
