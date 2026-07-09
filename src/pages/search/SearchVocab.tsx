@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useDeferredValue } from 'react';
 import { useAllLessonWords } from '@/hooks/useApi';
 import type { VocabWord } from '@/types';
 import { useTTS } from '@/hooks/useTTS';
@@ -18,11 +18,12 @@ const LEVEL_COLORS: Record<string, string> = {
 
 export const SearchVocab: React.FC = () => {
   const [query, setQuery] = useState('');
+  const deferredQuery = useDeferredValue(query);
   const { speak } = useTTS();
 
   const { data: allWords = [], isLoading } = useAllLessonWords();
 
-  const term = query.trim().toLowerCase();
+  const term = deferredQuery.trim().toLowerCase();
   const results: SearchResult[] = React.useMemo(() => {
     if (term.length < 2) return [];
 

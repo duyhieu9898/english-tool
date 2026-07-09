@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useTransition } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import confetti from 'canvas-confetti';
 import {
@@ -34,6 +34,7 @@ export const VocabSession: React.FC = () => {
   const finishMutation = useFinishVocabSessionMutation();
 
   const [sessionState, setSessionState] = useState<SessionState>('LOADING');
+  const [isPending, startTransition] = useTransition();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [masteredCount, setMasteredCount] = useState(0);
   const initialIndexRef = useRef<number | null>(null);
@@ -179,7 +180,9 @@ export const VocabSession: React.FC = () => {
         detail: `queue=${continueQueueRef.current.length}`,
       });
       if (continueQueueRef.current.length > 0) {
-        setSessionState('REVIEW');
+        startTransition(() => {
+          setSessionState('REVIEW');
+        });
       } else if (!finishMutation.isPending) {
         finishSession();
       }
@@ -280,7 +283,7 @@ export const VocabSession: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="flex-1 flex flex-col justify-center max-w-lg md:max-w-2xl w-full mx-auto relative z-10">
+      <div className={`flex-1 flex flex-col justify-center max-w-lg md:max-w-2xl w-full mx-auto relative z-10 transition-opacity duration-200 ${isPending ? 'opacity-50 pointer-events-none' : ''}`}>
         {sessionState === 'FLASHCARDS' && lesson && (
           <div className="space-y-8">
             <FlashCard
