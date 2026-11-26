@@ -290,7 +290,7 @@ export const ListeningDetail: React.FC = () => {
                 />
                 {isChecked && isCorrect === false && extraWords.length > 0 && (
                   <p className="text-xs font-bold text-red-600 dark:text-red-400 px-1">
-                    Extra word(s):{' '}
+                    Unmatched word(s):{' '}
                     {extraWords.map((w, i) => (
                       <span key={i} className="underline decoration-2 mx-0.5">
                         {w}

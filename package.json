@@ -36,6 +36,7 @@
     "json-server": "^1.0.0-beta.12",
     "lucide-react": "^0.575.0",
     "mongoose": "^9.6.1",
+    "msedge-tts": "^2.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.1",

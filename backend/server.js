@@ -9,6 +9,7 @@ import readingRouter     from './routes/reading.js';
 import listeningRouter   from './routes/listening.js';
 import activityLogRouter from './routes/activityLog.js';
 import userDataRouter    from './routes/userData.js';
+import ttsRouter         from './routes/tts.js';
 import { Lesson }      from './models/ContentModels.js';
 import { logger }        from './utils/logger.js';
 import { connectDB }     from './db/mongo.js';
@@ -38,6 +39,7 @@ app.use('/grammar',     grammarRouter);
 app.use('/reading',     readingRouter);
 app.use('/listening',   listeningRouter);
 app.use('/activityLog', activityLogRouter);
+app.use('/tts',         ttsRouter);
 app.use('/',            userDataRouter);
 
 // Error handling middleware
