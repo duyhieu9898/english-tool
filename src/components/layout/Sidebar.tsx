@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import {
   BookOpen,
@@ -15,6 +15,18 @@ export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
   isOpen,
   onClose,
 }) => {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const onChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+
+  const isHiddenOnMobile = isMobile && !isOpen;
   const navItems = [
     { to: '/', icon: <Activity className="w-5 h-5" />, label: 'Dashboard' },
     { to: '/vocabulary', icon: <BookType className="w-5 h-5" />, label: 'Vocabulary' },
@@ -34,6 +46,8 @@ export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
 
       {/* Sidebar */}
       <aside
+        inert={isHiddenOnMobile ? true : undefined}
+        aria-hidden={isHiddenOnMobile ? true : undefined}
         className={`fixed inset-y-0 left-0 z-60 w-64 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 transform transition-transform duration-300 ease-in-out flex flex-col ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } md:translate-x-0 md:h-screen md:sticky md:top-0`}
@@ -52,7 +66,7 @@ export const Sidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
 
           <button
             onClick={onClose}
-            className="md:hidden p-2 -mr-2 text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+            className="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center -mr-2 text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
             aria-label="Close menu"
           >
             <svg

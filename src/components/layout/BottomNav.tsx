@@ -17,7 +17,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ onMenuClick }) => {
   ];
 
   return (
-    <div className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 w-[95%] max-w-md z-50">
+    <div className="md:hidden fixed bottom-[max(1rem,env(safe-area-inset-bottom))] left-1/2 -translate-x-1/2 w-[95%] max-w-md z-50">
       <nav className="bg-white dark:bg-gray-950 border-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] rounded-3xl p-1.5 overflow-hidden">
         <div className="flex justify-around items-center h-14">
           {navItems.map((item) => {
@@ -26,7 +26,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ onMenuClick }) => {
             const content = (
               <>
                 {item.icon}
-                <span className="text-[10px] font-black uppercase tracking-tighter mt-1 leading-none">
+                <span className="text-[11px] font-black uppercase tracking-tighter mt-1 leading-none">
                   {item.label}
                 </span>
               </>

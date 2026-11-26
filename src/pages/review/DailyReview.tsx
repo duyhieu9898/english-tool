@@ -303,7 +303,7 @@ const DailyReviewEngine: React.FC<{
             <button
               onClick={handleMastered}
               title="I already mastered this word (Keyboard: 3)"
-              className="text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white font-bold text-xs uppercase tracking-widest transition-colors flex items-center gap-1"
+              className="min-h-[44px] px-3 py-2 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white font-bold text-xs uppercase tracking-widest transition-colors flex items-center gap-1.5"
             >
               <CheckSquare className="w-3 h-3" /> I already mastered this
             </button>

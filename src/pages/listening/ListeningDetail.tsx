@@ -220,7 +220,7 @@ export const ListeningDetail: React.FC = () => {
                         <button
                           key={rate}
                           onClick={() => setPlaybackRate(rate)}
-                          className={`px-3 py-1 rounded-lg border-2 border-black font-bold text-sm transition-all ${
+                          className={`px-3 py-1.5 rounded-lg border-2 border-black font-bold text-sm transition-all ${
                             playbackRate === rate
                               ? 'bg-black text-white dark:bg-white dark:text-black'
                               : 'bg-white text-black hover:bg-gray-100'
@@ -262,7 +262,7 @@ export const ListeningDetail: React.FC = () => {
                         data-testid="e2e-listening-word-badge"
                         data-status={isCorrectWord ? 'success' : isWrongWord ? 'error' : 'idle'}
                         onClick={() => toggleWordReveal(index)}
-                        className={`px-2 py-0.5 rounded-lg border-2 border-black font-mono font-bold text-sm shadow-[1.5px_1.5px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-none ${badgeClass}`}
+                        className={`min-h-[36px] min-w-[36px] px-2.5 py-1 rounded-lg border-2 border-black font-mono font-bold text-sm shadow-[1.5px_1.5px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-none ${badgeClass}`}
                       >
                         {isRevealed || isCorrectWord ? word : maskWord(word)}
                       </button>
