@@ -81,7 +81,9 @@ export const ListeningDetail: React.FC = () => {
     const sentence = lesson.questions[currentQuestionIndex].sentence;
     const timer = setTimeout(() => {
       speak(sentence, { rate: playbackRateRef.current });
-      textareaRef.current?.focus();
+      if (window.innerWidth >= 768) {
+        textareaRef.current?.focus();
+      }
     }, 250);
     return () => clearTimeout(timer);
   }, [mode, lesson, currentQuestionIndex, speak]);

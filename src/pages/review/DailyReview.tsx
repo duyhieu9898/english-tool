@@ -298,8 +298,9 @@ const DailyReviewEngine: React.FC<{
             aria-label="Enter word translation"
             variant="yellow"
             size="md"
+            className="mb-2!"
           />
-          <div className="flex gap-3 w-full justify-center">
+          <div className="flex gap-3 w-full justify-center -mb-3">
             <button
               onClick={handleMastered}
               title="I already mastered this word (Keyboard: 3)"
