@@ -175,7 +175,7 @@ export const ListeningDetail: React.FC = () => {
           <div 
             data-testid="e2e-progress-label"
             data-current-stage={currentQuestionIndex + 1}
-            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl border-2 border-transparent"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm sm:gap-2 sm:px-4 sm:py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl border-2 border-transparent"
           >
             Stage {currentQuestionIndex + 1}/{lesson.questions.length}
           </div>
@@ -285,7 +285,9 @@ export const ListeningDetail: React.FC = () => {
                   onChange={(e) => setUserInput(e.target.value)}
                   onKeyDown={handleTextareaKeyDown}
                   disabled={isCorrect === true}
-                  autoFocus
+                  autoFocus={typeof window !== 'undefined' && window.innerWidth >= 768}
+                  autoCapitalize="none"
+                  enterKeyHint="go"
                   rows={2}
                 />
                 {isChecked && isCorrect === false && extraWords.length > 0 && (

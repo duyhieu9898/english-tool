@@ -247,7 +247,7 @@ export const VocabSession: React.FC = () => {
               data-testid="e2e-progress-label" 
               data-state={sessionState.toLowerCase()}
               data-current-stage={currentIndex + 1}
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl transform border-2 border-transparent"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm sm:gap-2 sm:px-4 sm:py-2 bg-black text-white dark:bg-white dark:text-black font-black uppercase tracking-widest rounded-xl transform border-2 border-transparent"
             >
               {sessionState === 'FLASHCARDS' ? (
                 <>

@@ -67,7 +67,7 @@ export const GrammarDetail: React.FC = () => {
 
   return (
     <PageDetail className="max-w-4xl w-full mx-auto">
-      <div className=" mb-6 flex justify-between items-center relative z-20">
+      <div className="mb-4 sm:mb-6 flex justify-between items-center sticky top-0 md:static z-20 py-2 -mx-4 px-4 md:mx-0 md:px-0 md:py-0 bg-[#f4f4f0]/90 dark:bg-gray-950/90 backdrop-blur-xs md:bg-transparent">
         <Button
           variant="outline"
           size="sm"
