@@ -26,6 +26,7 @@ export const GrammarDetail: React.FC = () => {
     markIncorrect,
   } = useQuizFlow({
     totalQuestions: lesson?.practice?.length ?? 0,
+    lessonId: lesson?.id ?? '',
     lessonSlug: lesson?.slug ?? '',
     lessonType: 'grammar',
     onComplete,

@@ -18,47 +18,62 @@ const USER_COLLECTIONS = [
   'wordProgress', 'lessonProgress', 'sessionProgress', 'studyLog',
 ] as const;
 
+const ensureArray = <T>(data: unknown): T[] => {
+  if (Array.isArray(data)) return data as T[];
+  if (
+    data &&
+    typeof data === 'object' &&
+    'data' in data &&
+    Array.isArray((data as { data: unknown }).data)
+  ) {
+    return (data as { data: T[] }).data;
+  }
+  return [];
+};
+
 export const api = {
   // --- Lessons ---
   getLessonsByLevel: (level: string) =>
-    http.get<Lesson[]>(`/lessons?level=${level}`).then((r) => r.data),
+    http.get<Lesson[]>(`/lessons?level=${level}`).then((r) => ensureArray<Lesson>(r.data)),
   getLessonById: (id: string) =>
     http.get<Lesson>(`/lessons/${id}`).then((r) => r.data),
   getAllLessons: () =>
-    http.get<Lesson[]>('/lessons').then((r) => r.data),
+    http.get<Lesson[]>('/lessons').then((r) => ensureArray<Lesson>(r.data)),
   getAllLessonWords: () =>
-    http.get<(VocabWord & { lessonId: string; lessonName: string; level: string })[]>('/lessons/words').then((r) => r.data),
+    http
+      .get<(VocabWord & { lessonId: string; lessonName: string; level: string })[]>('/lessons/words')
+      .then((r) => ensureArray<VocabWord & { lessonId: string; lessonName: string; level: string }>(r.data)),
 
   // --- Grammar ---
   getGrammarLessonsByLevel: (level: string) =>
-    http.get<GrammarLesson[]>(`/grammar?level=${level}`).then((r) => r.data),
+    http.get<GrammarLesson[]>(`/grammar?level=${level}`).then((r) => ensureArray<GrammarLesson>(r.data)),
   getGrammarLessonById: (id: string) =>
     http.get<GrammarLesson>(`/grammar/${id}`).then((r) => r.data),
 
   // --- Reading ---
   getReadingLessonsByLevel: (level: string) =>
-    http.get<ReadingLesson[]>(`/reading?level=${level}`).then((r) => r.data),
+    http.get<ReadingLesson[]>(`/reading?level=${level}`).then((r) => ensureArray<ReadingLesson>(r.data)),
   getReadingLessonById: (id: string) =>
     http.get<ReadingLesson>(`/reading/${id}`).then((r) => r.data),
   
   // --- Listening ---
   getListeningLessonsByLevel: (level: string) =>
-    http.get<ListeningLesson[]>(`/listening?level=${level}`).then((r) => r.data),
+    http.get<ListeningLesson[]>(`/listening?level=${level}`).then((r) => ensureArray<ListeningLesson>(r.data)),
   getListeningLessonById: (id: string) =>
     http.get<ListeningLesson>(`/listening/${id}`).then((r) => r.data),
 
   // --- Word Progress ---
   getWordProgressAll: () =>
-    http.get<WordProgress[]>('/wordProgress').then((r) => r.data),
+    http.get<WordProgress[]>('/wordProgress').then((r) => ensureArray<WordProgress>(r.data)),
   getWordProgressByLesson: (lessonId: string) =>
-    http.get<WordProgress[]>(`/wordProgress?lessonId=${lessonId}`).then((r) => r.data),
+    http.get<WordProgress[]>(`/wordProgress?lessonId=${lessonId}`).then((r) => ensureArray<WordProgress>(r.data)),
 
   deleteWordProgress: (id: string) =>
     http.delete(`/wordProgress/${encodeURIComponent(id)}`),
 
   // --- Lesson Progress ---
   getLessonProgressAll: () =>
-    http.get<LessonProgress[]>('/lessonProgress').then((r) => r.data),
+    http.get<LessonProgress[]>('/lessonProgress').then((r) => ensureArray<LessonProgress>(r.data)),
   addLessonProgress: (progress: LessonProgress) =>
     http.post<LessonProgress>('/lessonProgress', progress).then((r) => r.data),
   updateLessonProgress: (progress: LessonProgress) =>
@@ -70,17 +85,19 @@ export const api = {
 
   getSessionProgress: (id: string) =>
     http.get<SessionProgress[]>(`/sessionProgress?id=${encodeURIComponent(id)}`)
-      .then(({ data }) =>
-        data.length > 0
-          ? data.sort((a, b) => new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime())[0]
-          : null,
-      ),
+      .then(({ data }) => {
+        const list = ensureArray<SessionProgress>(data);
+        return list.length > 0
+          ? list.sort((a, b) => new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime())[0]
+          : null;
+      }),
   getAllSessionProgress: () =>
-    http.get<SessionProgress[]>('/sessionProgress').then((r) => r.data),
+    http.get<SessionProgress[]>('/sessionProgress').then((r) => ensureArray<SessionProgress>(r.data)),
   saveSessionProgress: async (progress: SessionProgress) => {
-    const { data: existing } = await http.get<SessionProgress[]>(
+    const { data } = await http.get<SessionProgress[]>(
       `/sessionProgress?id=${encodeURIComponent(progress.id)}`,
     );
+    const existing = ensureArray<SessionProgress>(data);
     if (existing.length > 0) {
       const latest = existing.sort(
         (a, b) => new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime(),
@@ -94,18 +111,22 @@ export const api = {
     http.delete(`/sessionProgress/${encodeURIComponent(id)}`),
   // Delete all session records matching a business lesson id (may have multiple rows)
   deleteSessionProgressByLessonId: async (lessonId: string) => {
-    const { data: records } = await http.get<Array<{ id: number | string }>>(
+    const { data } = await http.get<Array<{ id: number | string }>>(
       `/sessionProgress?id=${encodeURIComponent(lessonId)}`,
     );
+    const records = ensureArray<{ id: number | string }>(data);
     await Promise.all(records.map((rec) => http.delete(`/sessionProgress/${rec.id}`)));
   },
 
   // --- Study Log ---
   getAllStudyLogs: () =>
-    http.get<StudyLog[]>('/studyLog').then((r) => r.data),
+    http.get<StudyLog[]>('/studyLog').then((r) => ensureArray<StudyLog>(r.data)),
   getStudyLogByDate: (date: string) =>
     http.get<StudyLog[]>(`/studyLog?date=${date}`)
-      .then(({ data }) => (data.length > 0 ? data[0] : null)),
+      .then(({ data }) => {
+        const list = ensureArray<StudyLog>(data);
+        return list.length > 0 ? list[0] : null;
+      }),
   addStudyLog: (log: StudyLog) =>
     http.post<StudyLog>('/studyLog', log).then((r) => r.data),
   updateStudyLog: (log: StudyLog) =>

@@ -8,12 +8,18 @@
 
 import { useState, useCallback } from 'react';
 import confetti from 'canvas-confetti';
-import { useAddLessonProgressMutation } from './useApi';
+import {
+  useAddLessonProgressMutation,
+  useSessionProgress,
+  useSaveSessionProgressMutation,
+  useDeleteSessionProgressMutation,
+} from './useApi';
 import { sounds } from '../services/sounds';
 import type { LessonProgress } from '../types';
 
 interface UseQuizFlowOptions {
   totalQuestions: number;
+  lessonId?: string;
   lessonSlug: string;
   lessonType: LessonProgress['type'];
   /** Called when all questions are done (after confetti). Use to set page-level mode. */
@@ -35,14 +41,29 @@ interface UseQuizFlowReturn {
 
 export function useQuizFlow({
   totalQuestions,
+  lessonId,
   lessonSlug,
   lessonType,
   onComplete,
 }: UseQuizFlowOptions): UseQuizFlowReturn {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const sessionId = lessonId || lessonSlug;
+  const [localIndex, setLocalIndex] = useState<number | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
+  const { data: savedSession } = useSessionProgress(sessionId);
+  const saveSessionMutation = useSaveSessionProgressMutation();
+  const deleteSessionMutation = useDeleteSessionProgressMutation();
   const addProgressMutation = useAddLessonProgressMutation();
+
+  const currentQuestionIndex =
+    localIndex !== null
+      ? localIndex
+      : savedSession &&
+          totalQuestions > 0 &&
+          savedSession.currentIndex >= 0 &&
+          savedSession.currentIndex < totalQuestions
+        ? savedSession.currentIndex
+        : 0;
 
   const completeLesson = useCallback(() => {
     confetti({
@@ -51,22 +72,33 @@ export function useQuizFlow({
       origin: { y: 0.5 },
       colors: ['#000000', '#bef264', '#fde047', '#f87171'],
     });
+    if (sessionId) {
+      deleteSessionMutation.mutate(sessionId);
+    }
     addProgressMutation.mutate({
       id: lessonSlug,
       type: lessonType,
       completedAt: new Date().toISOString(),
     });
     onComplete();
-  }, [lessonSlug, lessonType, addProgressMutation, onComplete]);
+  }, [sessionId, lessonSlug, lessonType, deleteSessionMutation, addProgressMutation, onComplete]);
 
   const nextQuestion = useCallback(() => {
     setIsCorrect(null);
     if (currentQuestionIndex < totalQuestions - 1) {
-      setCurrentQuestionIndex((prev) => prev + 1);
+      const nextIndex = currentQuestionIndex + 1;
+      setLocalIndex(nextIndex);
+      if (sessionId) {
+        saveSessionMutation.mutate({
+          id: sessionId,
+          currentIndex: nextIndex,
+          lastUpdated: new Date().toISOString(),
+        });
+      }
     } else {
       completeLesson();
     }
-  }, [currentQuestionIndex, totalQuestions, completeLesson]);
+  }, [currentQuestionIndex, totalQuestions, sessionId, saveSessionMutation, completeLesson]);
 
   const markCorrect = useCallback(() => {
     setIsCorrect(true);

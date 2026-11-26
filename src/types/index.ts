@@ -3,6 +3,7 @@ export interface VocabWord {
   meaning: string;
   full_sentence: string;
   modifiers: string;
+  phonetic?: string;
 }
 
 export interface Lesson {

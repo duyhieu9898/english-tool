@@ -121,6 +121,11 @@ export const SearchVocab: React.FC = () => {
                   <span className="text-2xl font-black lowercase text-black dark:text-white">
                     {word.term}
                   </span>
+                  {word.phonetic && (
+                    <span className="text-sm font-mono text-gray-500 dark:text-gray-400">
+                      {word.phonetic}
+                    </span>
+                  )}
                   {word.modifiers && (
                     <span className="text-sm font-bold text-gray-500 dark:text-gray-400 italic">
                       {word.modifiers}

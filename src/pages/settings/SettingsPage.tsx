@@ -186,8 +186,8 @@ export const SettingsPage: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-end gap-4">
-            <div className="flex-1 max-w-[200px]">
+          <div className="flex flex-col sm:flex-row sm:items-end gap-3">
+            <div className="flex-1 max-w-[160px]">
               <label
                 htmlFor="daily-goal-input"
                 className="block font-bold text-gray-900 dark:text-gray-100 mb-2 cursor-pointer"
@@ -206,11 +206,12 @@ export const SettingsPage: React.FC = () => {
                     dailyGoal: Math.max(1, parseInt(e.target.value) || 1),
                   }))
                 }
-                className="w-full px-4 py-3 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-xl focus:border-blue-500 dark:focus:border-blue-500 outline-none transition-colors font-bold"
+                className="w-full h-10 px-3 text-sm bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-lg focus:border-blue-500 dark:focus:border-blue-500 outline-none transition-colors font-bold"
               />
             </div>
             <div className="flex items-center gap-3">
               <Button
+                size="sm"
                 onClick={handleSave}
                 disabled={
                   updateMutation.isPending || settings?.dailyGoal === localSettings.dailyGoal
@@ -220,7 +221,7 @@ export const SettingsPage: React.FC = () => {
                   'Saving...'
                 ) : (
                   <>
-                    <Save className="w-5 h-5 mr-2" /> Save Goal
+                    <Save className="w-4 h-4 mr-1.5" /> Save Goal
                   </>
                 )}
               </Button>
@@ -249,10 +250,11 @@ export const SettingsPage: React.FC = () => {
             </div>
             <Button
               variant="outline"
+              size="sm"
               onClick={handleExport}
               className="border-blue-200 text-blue-600 hover:bg-blue-100 dark:border-blue-800 dark:text-blue-400 shrink-0"
             >
-              <Download className="w-5 h-5 mr-2" /> Export
+              <Download className="w-4 h-4 mr-1.5" /> Export
             </Button>
           </div>
 
@@ -264,8 +266,8 @@ export const SettingsPage: React.FC = () => {
               </div>
             </div>
             <div className="relative shrink-0">
-              <Button variant="danger" className="relative z-0 pointer-events-none">
-                <Upload className="w-5 h-5 mr-2" /> Restore
+              <Button variant="danger" size="sm" className="relative z-0 pointer-events-none">
+                <Upload className="w-4 h-4 mr-1.5" /> Restore
               </Button>
               <input
                 type="file"
@@ -287,8 +289,8 @@ export const SettingsPage: React.FC = () => {
                 Warning: Permanently delete all your learning progress and logs.
               </div>
             </div>
-            <Button variant="danger" onClick={() => setShowResetConfirm(true)} className="shrink-0">
-              <Trash2 className="w-5 h-5 mr-2" /> Reset Everything
+            <Button variant="danger" size="sm" onClick={() => setShowResetConfirm(true)} className="shrink-0">
+              <Trash2 className="w-4 h-4 mr-1.5" /> Reset Everything
             </Button>
           </div>
         </div>

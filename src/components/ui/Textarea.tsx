@@ -4,18 +4,21 @@ import { cn } from '@/utils/cn';
 interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   error?: boolean;
   variant?: 'default' | 'compact';
+  ref?: React.Ref<HTMLTextAreaElement>;
 }
 
 export const Textarea: React.FC<TextareaProps> = ({
   error,
   variant = 'default',
   className = '',
+  ref,
   ...props
 }) => {
   const borderWeight = variant === 'compact' ? 'border-2' : 'border-4';
 
   return (
     <textarea
+      ref={ref}
       className={cn(
         'w-full p-4 text-xl font-bold bg-gray-50 dark:bg-gray-900',
         borderWeight,

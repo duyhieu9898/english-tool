@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useListeningLesson } from '@/hooks/useApi';
 import { useQuizFlow } from '@/hooks/useQuizFlow';
 import { useTTS } from '@/hooks/useTTS';
-import { normalizeText } from './listening.utils';
+import { normalizeText, diffWords } from './listening.utils';
 import { PageDetail } from '@/components/layout/PageDetailContainer';
 import { ArrowLeft, Volume2, Check, ChevronRight, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -22,7 +22,14 @@ export const ListeningDetail: React.FC = () => {
   const [attempts, setAttempts] = useState(0);
   const [revealedIndices, setRevealedIndices] = useState<number[]>([]);
   const [wordResults, setWordResults] = useState<(boolean | null)[]>([]);
+  const [extraWords, setExtraWords] = useState<string[]>([]);
   const [isChecked, setIsChecked] = useState(false);
+
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const playbackRateRef = useRef(playbackRate);
+  useEffect(() => {
+    playbackRateRef.current = playbackRate;
+  }, [playbackRate]);
 
   const onComplete = useCallback(() => setMode('COMPLETED'), []);
 
@@ -34,6 +41,7 @@ export const ListeningDetail: React.FC = () => {
     markIncorrect,
   } = useQuizFlow({
     totalQuestions: lesson?.questions?.length ?? 0,
+    lessonId: lesson?.id ?? '',
     lessonSlug: lesson?.slug ?? '',
     lessonType: 'listening',
     onComplete,
@@ -61,10 +69,31 @@ export const ListeningDetail: React.FC = () => {
     setUserInput('');
     setRevealedIndices([]);
     setWordResults([]);
+    setExtraWords([]);
     setIsChecked(false);
     setAttempts(0);
     advanceQuestion();
   }, [advanceQuestion]);
+
+  // Auto-play audio and focus input when moving to a new question
+  useEffect(() => {
+    if (mode !== 'STUDY' || !lesson?.questions?.[currentQuestionIndex]) return;
+    const sentence = lesson.questions[currentQuestionIndex].sentence;
+    const timer = setTimeout(() => {
+      speak(sentence, { rate: playbackRateRef.current });
+      textareaRef.current?.focus();
+    }, 250);
+    return () => clearTimeout(timer);
+  }, [mode, lesson, currentQuestionIndex, speak]);
+
+  // Auto-advance to the next question shortly after a correct answer
+  useEffect(() => {
+    if (isCorrect !== true) return;
+    const timer = setTimeout(() => {
+      nextQuestion();
+    }, 700);
+    return () => clearTimeout(timer);
+  }, [isCorrect, nextQuestion]);
 
   const checkAnswer = useCallback(() => {
     if (!lesson) return;
@@ -72,14 +101,11 @@ export const ListeningDetail: React.FC = () => {
     const normalizedInput = normalizeText(userInput);
     const normalizedAnswer = normalizeText(currentQuestion.sentence);
 
-    const inputWords = normalizedInput.split(/\s+/);
-    const results = targetWords.map((targetWord, index) => {
-      const normalizedTarget = normalizeText(targetWord);
-      const normalizedInputWord = inputWords[index] ? normalizeText(inputWords[index]) : '';
-      return normalizedTarget === normalizedInputWord;
-    });
+    const inputWords = normalizedInput ? normalizedInput.split(/\s+/) : [];
+    const { matched, extraWords: extra } = diffWords(targetWords, inputWords);
 
-    setWordResults(results);
+    setWordResults(matched);
+    setExtraWords(extra);
     setIsChecked(true);
 
     if (normalizedInput === normalizedAnswer) {
@@ -251,6 +277,7 @@ export const ListeningDetail: React.FC = () => {
                 </div>
 
                 <Textarea
+                  ref={textareaRef}
                   variant="compact"
                   placeholder="What did you hear?"
                   data-testid="e2e-listening-input"
@@ -261,6 +288,16 @@ export const ListeningDetail: React.FC = () => {
                   autoFocus
                   rows={2}
                 />
+                {isChecked && isCorrect === false && extraWords.length > 0 && (
+                  <p className="text-xs font-bold text-red-600 dark:text-red-400 px-1">
+                    Extra word(s):{' '}
+                    {extraWords.map((w, i) => (
+                      <span key={i} className="underline decoration-2 mx-0.5">
+                        {w}
+                      </span>
+                    ))}
+                  </p>
+                )}
               </div>
 
               <div className="flex">

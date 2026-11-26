@@ -39,6 +39,7 @@ export const ReadingDetail: React.FC = () => {
     markIncorrect,
   } = useQuizFlow({
     totalQuestions: lesson?.questions?.length ?? 0,
+    lessonId: lesson?.id ?? '',
     lessonSlug: lesson?.slug ?? '',
     lessonType: 'reading',
     onComplete,

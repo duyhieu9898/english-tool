@@ -130,7 +130,12 @@ export const FlashCard: React.FC<FlashCardProps> = ({
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white lowercase">
               {word.term}
             </h2>
-            <span className="text-lg font-medium text-blue-600 dark:text-blue-400 mb-4">
+            {word.phonetic && (
+              <span className="text-base font-mono text-gray-500 dark:text-gray-400 mt-1">
+                {word.phonetic}
+              </span>
+            )}
+            <span className="text-lg font-medium text-blue-600 dark:text-blue-400 mt-1 mb-4">
               {word.modifiers || 'word'}
             </span>
             {word.full_sentence && (
